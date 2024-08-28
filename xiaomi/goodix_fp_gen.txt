@@ -1,0 +1,29 @@
+resource goodix_fp_fd[fd]
+
+openat$goodix_fp_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/goodix_fp"]], flags flags[open_flags], mode const[0]) goodix_fp_fd
+ioctl$goodix_fp_Group6704_0(fd goodix_fp_fd, cmd const[26372], arg intptr) 
+ioctl$goodix_fp_Group6702_0(fd goodix_fp_fd, cmd const[26370], arg intptr) 
+ioctl$goodix_fp_Group6703_0(fd goodix_fp_fd, cmd const[26371], arg intptr) 
+ioctl$goodix_fp_Group80016700_0(fd goodix_fp_fd, cmd const[2147575552], arg ptr[out, array[int8]]) 
+ioctl$goodix_fp_Group8001670b_0(fd goodix_fp_fd, cmd const[2147575563], arg intptr) 
+goodix_fp_Group4008670d_0_struct_1 {
+    goodix_fp_Group4008670d_0_buffer_2  int8
+    goodix_fp_Group4008670d_0_buffer_3  int8
+    goodix_fp_Group4008670d_0_buffer_4  int8
+    goodix_fp_Group4008670d_0_buffer_5  array[int8, 5]
+} [packed]
+ioctl$goodix_fp_Group4008670d_0(fd goodix_fp_fd, cmd const[1074292493], arg ptr[in, goodix_fp_Group4008670d_0_struct_1]) 
+ioctl$goodix_fp_Group40046705_0(fd goodix_fp_fd, cmd const[1074030341], arg intptr) 
+goodix_fp_Group40086709_0_struct_1 {
+    goodix_fp_Group40086709_0_const_2  const[1, int32]
+    goodix_fp_Group40086709_0_buffer_3  int32
+} [packed]
+ioctl$goodix_fp_Group40086709_0(fd goodix_fp_fd, cmd const[1074292489], arg ptr[in, goodix_fp_Group40086709_0_struct_1]) 
+goodix_fp_Group40086709_1_flag_2 = 2, 5
+goodix_fp_Group40086709_1_struct_1 {
+    goodix_fp_Group40086709_1_flag_2  flags[goodix_fp_Group40086709_1_flag_2, int32]
+    goodix_fp_Group40086709_1_const_3  const[1, int32]
+} [packed]
+ioctl$goodix_fp_Group40086709_1(fd goodix_fp_fd, cmd const[1074292489], arg ptr[in, goodix_fp_Group40086709_1_struct_1]) 
+ioctl$goodix_fp_Group4004670e_0(fd goodix_fp_fd, cmd const[1074030350], arg ptr[in, int32[1:10]]) 
+ioctl$goodix_fp_Group4004670e_1(fd goodix_fp_fd, cmd const[1074030350], arg ptr[in, int32]) 

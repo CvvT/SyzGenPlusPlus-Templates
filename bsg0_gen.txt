@@ -1,0 +1,41 @@
+resource bsg0_fd[fd]
+
+openat$bsg0_syzgen_0(fd const[AT_FDCWD], file ptr[in, string["/dev/bsg/0:0:0:0"]], flags flags[open_flags], mode const[0]) bsg0_fd
+openat$bsg0_syzgen_1(fd const[AT_FDCWD], file ptr[in, string["/dev/bsg/1:0:0:0"]], flags flags[open_flags], mode const[0]) bsg0_fd
+
+read$bsg0_syzgen(fd bsg0_fd, data ptr[out, array[int8]], size len[data]) 
+ioctl$bsg0_Group5382_0(fd bsg0_fd, cmd const[21378], arg ptr[out, int32]) 
+ioctl$bsg0_Group2202_0(fd bsg0_fd, cmd const[8706], arg intptr) 
+ioctl$bsg0_Group5386_0(fd bsg0_fd, cmd const[21382], arg ptr[out, int32]) 
+ioctl$bsg0_Group2275_0(fd bsg0_fd, cmd const[8821], arg ptr[in, int32]) 
+ioctl$bsg0_Group2282_0(fd bsg0_fd, cmd const[8834], arg ptr[out, int32]) 
+ioctl$bsg0_Group2272_0(fd bsg0_fd, cmd const[8818], arg ptr[out, int32]) 
+ioctl$bsg0_Group2271_0(fd bsg0_fd, cmd const[8817], arg ptr[in, int32[1:2147483647]]) 
+bsg0_Group2285_0_struct_1 {
+    bsg0_Group2285_0_const_2  const[81, int8]
+    bsg0_Group2285_0_const_3  const[0, int8]
+    bsg0_Group2285_0_const_4  const[0, int8]
+    bsg0_Group2285_0_const_5  const[0, int8]
+    bsg0_Group2285_0_const_6  const[0, int8]
+    bsg0_Group2285_0_const_7  const[0, int8]
+    bsg0_Group2285_0_const_8  const[0, int8]
+    bsg0_Group2285_0_const_9  const[0, int8]
+    bsg0_Group2285_0_const_10  const[0, int8]
+    bsg0_Group2285_0_const_11  const[0, int8]
+    bsg0_Group2285_0_const_12  const[0, int8]
+    bsg0_Group2285_0_const_13  const[0, int8]
+    bsg0_Group2285_0_buffer_14  int32
+    bsg0_Group2285_0_ptr_16  ptr[in, array[int8, 4096]]
+    bsg0_Group2285_0_buffer_17  array[int8, 36]
+    bsg0_Group2285_0_buffer_18  int32
+    bsg0_Group2285_0_buffer_19  array[int8, 24]
+    bsg0_Group2285_0_buffer_20  int8
+    bsg0_Group2285_0_buffer_21  int8
+    bsg0_Group2285_0_buffer_22  int8
+    bsg0_Group2285_0_range_23  int8[0:127]
+    bsg0_Group2285_0_buffer_24  array[int8, 64]
+} [packed]
+ioctl$bsg0_Group2285_0(fd bsg0_fd, cmd const[8837], arg ptr[in, bsg0_Group2285_0_struct_1]) 
+ioctl$bsg0_Group2270_0(fd bsg0_fd, cmd const[8816], arg ptr[out, int32]) 
+ioctl$bsg0_Group2203_0(fd bsg0_fd, cmd const[8707], arg ptr[out, int32]) 
+ioctl$bsg0_Group2201_0(fd bsg0_fd, cmd const[8705], arg ptr[in, int32]) 

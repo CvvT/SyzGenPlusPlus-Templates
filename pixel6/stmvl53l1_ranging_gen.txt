@@ -1,0 +1,366 @@
+resource stmvl53l1_ranging_fd[fd]
+
+openat$stmvl53l1_ranging_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/stmvl53l1_ranging"]], flags flags[open_flags], mode const[0]) stmvl53l1_ranging_fd
+stmvl53l1_ranging_Groupc110700c_0_struct_1 {
+    stmvl53l1_ranging_Groupc110700c_0_buffer_2  int32
+    stmvl53l1_ranging_Groupc110700c_0_buffer_3  int32
+    stmvl53l1_ranging_Groupc110700c_0_buffer_4  int32
+    stmvl53l1_ranging_Groupc110700c_0_buffer_5  int32
+    stmvl53l1_ranging_Groupc110700c_0_buffer_6  int64
+    stmvl53l1_ranging_Groupc110700c_0_buffer_7  array[int8, 16]
+    stmvl53l1_ranging_Groupc110700c_0_buffer_8  int32
+    stmvl53l1_ranging_Groupc110700c_0_buffer_9  int8
+    stmvl53l1_ranging_Groupc110700c_0_buffer_10  int8
+    stmvl53l1_ranging_Groupc110700c_0_buffer_11  int8
+    stmvl53l1_ranging_Groupc110700c_0_buffer_12  int8
+    stmvl53l1_ranging_Groupc110700c_0_buffer_13  array[int8, 224]
+} [packed]
+ioctl$stmvl53l1_ranging_Groupc110700c_0(fd stmvl53l1_ranging_fd, cmd const[3239079948], arg ptr[inout, stmvl53l1_ranging_Groupc110700c_0_struct_1]) 
+stmvl53l1_ranging_Groupc110700c_1_struct_1 {
+    stmvl53l1_ranging_Groupc110700c_1_range_2  int32[1:4294967295]
+    stmvl53l1_ranging_Groupc110700c_1_buffer_3  int32
+    stmvl53l1_ranging_Groupc110700c_1_range_4  int32[1:256]
+    stmvl53l1_ranging_Groupc110700c_1_buffer_5  array[int8, 260]
+} [packed]
+ioctl$stmvl53l1_ranging_Groupc110700c_1(fd stmvl53l1_ranging_fd, cmd const[3239079948], arg ptr[inout, stmvl53l1_ranging_Groupc110700c_1_struct_1]) 
+stmvl53l1_ranging_Groupc19c7012_0_struct_1 {
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_2  int8
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_3  int8
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_4  int8
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_5  int8
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_6  int8
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_7  int8
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_8  int8
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_9  int8
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_10  int8
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_11  int32
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_12  int32
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_13  array[int8, 3]
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_14  int16
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_15  int16
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_16  int16
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_17  int16
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_18  int64
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_19  int64
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_20  int16
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_21  int64
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_22  int16
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_23  int64
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_24  array[int8, 248]
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_25  int32
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_26  int64
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_27  int64
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_28  int64
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_29  int64
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_30  int64
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_31  int64
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_32  int64
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_33  int32
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_34  int64
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_35  int32
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_36  int32
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_37  int32
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_38  int32
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_39  int32
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_40  int32
+    stmvl53l1_ranging_Groupc19c7012_0_buffer_41  int32
+} [packed]
+ioctl$stmvl53l1_ranging_Groupc19c7012_0(fd stmvl53l1_ranging_fd, cmd const[3248254994], arg ptr[inout, stmvl53l1_ranging_Groupc19c7012_0_struct_1]) 
+stmvl53l1_ranging_Groupc19c7012_1_struct_1 {
+    stmvl53l1_ranging_Groupc19c7012_1_const_2  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_1_const_3  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_1_const_4  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_1_const_5  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_1_const_6  const[34, int8]
+    stmvl53l1_ranging_Groupc19c7012_1_const_7  const[1, int8]
+    stmvl53l1_ranging_Groupc19c7012_1_const_8  const[171, int8]
+    stmvl53l1_ranging_Groupc19c7012_1_const_9  const[236, int8]
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_10  int8
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_11  int32
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_12  int32
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_13  array[int8, 3]
+    stmvl53l1_ranging_Groupc19c7012_1_range_14  int32[0:4294934527]
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_15  int16
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_16  int16
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_17  int64
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_18  int64
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_19  int16
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_20  int64
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_21  int16
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_22  int64
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_23  array[int8, 248]
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_24  int32
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_25  int64
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_26  int64
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_27  int64
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_28  int64
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_29  int64
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_30  int64
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_31  int64
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_32  int32
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_33  int64
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_34  int32
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_35  int32
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_36  int32
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_37  int32
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_38  int32
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_39  int32
+    stmvl53l1_ranging_Groupc19c7012_1_buffer_40  int32
+} [packed]
+ioctl$stmvl53l1_ranging_Groupc19c7012_1(fd stmvl53l1_ranging_fd, cmd const[3248254994], arg ptr[inout, stmvl53l1_ranging_Groupc19c7012_1_struct_1]) 
+stmvl53l1_ranging_Groupc19c7012_2_flag_6 = 3970629906, 3970629890
+stmvl53l1_ranging_Groupc19c7012_2_struct_1 {
+    stmvl53l1_ranging_Groupc19c7012_2_const_2  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_2_const_3  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_2_const_4  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_2_const_5  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_2_flag_6  flags[stmvl53l1_ranging_Groupc19c7012_2_flag_6, int32]
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_7  int8
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_8  int32
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_9  int32
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_10  array[int8, 3]
+    stmvl53l1_ranging_Groupc19c7012_2_range_11  int32[0:4294934527]
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_12  int16
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_13  int16
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_14  int64
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_15  int64
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_16  int16
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_17  int64
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_18  int16
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_19  int64
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_20  array[int8, 248]
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_21  int32
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_22  int64
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_23  int64
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_24  int64
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_25  int64
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_26  int64
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_27  int64
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_28  int64
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_29  int32
+    stmvl53l1_ranging_Groupc19c7012_2_buffer_30  array[int8, 36]
+} [packed]
+ioctl$stmvl53l1_ranging_Groupc19c7012_2(fd stmvl53l1_ranging_fd, cmd const[3248254994], arg ptr[inout, stmvl53l1_ranging_Groupc19c7012_2_struct_1]) 
+stmvl53l1_ranging_Groupc19c7012_3_struct_1 {
+    stmvl53l1_ranging_Groupc19c7012_3_const_2  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_3_const_3  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_3_const_4  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_3_const_5  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_3_const_6  const[34, int8]
+    stmvl53l1_ranging_Groupc19c7012_3_const_7  const[1, int8]
+    stmvl53l1_ranging_Groupc19c7012_3_const_8  const[171, int8]
+    stmvl53l1_ranging_Groupc19c7012_3_const_9  const[236, int8]
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_10  int8
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_11  int32
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_12  int32
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_13  array[int8, 3]
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_14  int32
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_15  int16
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_16  int16
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_17  int64
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_18  int64
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_19  int16
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_20  int64
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_21  int16
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_22  int64
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_23  array[int8, 248]
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_24  int32
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_25  int64
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_26  int64
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_27  int64
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_28  int64
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_29  int64
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_30  int64
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_31  int64
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_32  int32
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_33  int64
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_34  int32
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_35  int32
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_36  int32
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_37  int32
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_38  int32
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_39  int32
+    stmvl53l1_ranging_Groupc19c7012_3_buffer_40  int32
+} [packed]
+ioctl$stmvl53l1_ranging_Groupc19c7012_3(fd stmvl53l1_ranging_fd, cmd const[3248254994], arg ptr[inout, stmvl53l1_ranging_Groupc19c7012_3_struct_1]) 
+stmvl53l1_ranging_Groupc19c7012_4_flag_6 = 3970629906, 3970629890
+stmvl53l1_ranging_Groupc19c7012_4_struct_1 {
+    stmvl53l1_ranging_Groupc19c7012_4_const_2  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_4_const_3  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_4_const_4  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_4_const_5  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_4_flag_6  flags[stmvl53l1_ranging_Groupc19c7012_4_flag_6, int32]
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_7  int8
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_8  int32
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_9  int32
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_10  array[int8, 3]
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_11  int32
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_12  int16
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_13  int16
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_14  int64
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_15  int64
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_16  int16
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_17  int64
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_18  int16
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_19  int64
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_20  array[int8, 248]
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_21  int32
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_22  int64
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_23  int64
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_24  int64
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_25  int64
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_26  int64
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_27  int64
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_28  int64
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_29  int32
+    stmvl53l1_ranging_Groupc19c7012_4_buffer_30  array[int8, 36]
+} [packed]
+ioctl$stmvl53l1_ranging_Groupc19c7012_4(fd stmvl53l1_ranging_fd, cmd const[3248254994], arg ptr[inout, stmvl53l1_ranging_Groupc19c7012_4_struct_1]) 
+stmvl53l1_ranging_Groupc19c7012_5_struct_1 {
+    stmvl53l1_ranging_Groupc19c7012_5_const_2  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_5_const_3  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_5_const_4  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_5_const_5  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_5_const_6  const[34, int8]
+    stmvl53l1_ranging_Groupc19c7012_5_const_7  const[1, int8]
+    stmvl53l1_ranging_Groupc19c7012_5_const_8  const[171, int8]
+    stmvl53l1_ranging_Groupc19c7012_5_const_9  const[236, int8]
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_10  int8
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_11  int32
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_12  int32
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_13  array[int8, 3]
+    stmvl53l1_ranging_Groupc19c7012_5_range_14  int16[32768:65535]
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_15  int16
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_16  int16
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_17  int16
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_18  int64
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_19  int64
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_20  int16
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_21  int64
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_22  int16
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_23  int64
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_24  array[int8, 248]
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_25  int32
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_26  int64
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_27  int64
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_28  int64
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_29  int64
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_30  int64
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_31  int64
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_32  int64
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_33  int32
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_34  int64
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_35  int32
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_36  int32
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_37  int32
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_38  int32
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_39  int32
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_40  int32
+    stmvl53l1_ranging_Groupc19c7012_5_buffer_41  int32
+} [packed]
+ioctl$stmvl53l1_ranging_Groupc19c7012_5(fd stmvl53l1_ranging_fd, cmd const[3248254994], arg ptr[inout, stmvl53l1_ranging_Groupc19c7012_5_struct_1]) 
+stmvl53l1_ranging_Groupc19c7012_6_flag_6 = 3970629890, 3970629906
+stmvl53l1_ranging_Groupc19c7012_6_struct_1 {
+    stmvl53l1_ranging_Groupc19c7012_6_const_2  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_6_const_3  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_6_const_4  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_6_const_5  const[0, int8]
+    stmvl53l1_ranging_Groupc19c7012_6_flag_6  flags[stmvl53l1_ranging_Groupc19c7012_6_flag_6, int32]
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_7  int8
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_8  int32
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_9  int32
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_10  array[int8, 3]
+    stmvl53l1_ranging_Groupc19c7012_6_range_11  int16[32768:65535]
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_12  int16
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_13  int16
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_14  int16
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_15  int64
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_16  int64
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_17  int16
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_18  int64
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_19  int16
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_20  int64
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_21  array[int8, 248]
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_22  int32
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_23  int64
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_24  int64
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_25  int64
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_26  int64
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_27  int64
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_28  int64
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_29  int64
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_30  int32
+    stmvl53l1_ranging_Groupc19c7012_6_buffer_31  array[int8, 36]
+} [packed]
+ioctl$stmvl53l1_ranging_Groupc19c7012_6(fd stmvl53l1_ranging_fd, cmd const[3248254994], arg ptr[inout, stmvl53l1_ranging_Groupc19c7012_6_struct_1]) 
+ioctl$stmvl53l1_ranging_Group40107013_0(fd stmvl53l1_ranging_fd, cmd const[1074819091], arg ptr[in, array[int8, 16]]) 
+ioctl$stmvl53l1_ranging_Group7007_0(fd stmvl53l1_ranging_fd, cmd const[28679], arg intptr) 
+ioctl$stmvl53l1_ranging_Group7001_0(fd stmvl53l1_ranging_fd, cmd const[28673], arg intptr) 
+ioctl$stmvl53l1_ranging_Group7005_0(fd stmvl53l1_ranging_fd, cmd const[28677], arg intptr) 
+ioctl$stmvl53l1_ranging_Group7006_0(fd stmvl53l1_ranging_fd, cmd const[28678], arg intptr) 
+ioctl$stmvl53l1_ranging_Group814c7015_0(fd stmvl53l1_ranging_fd, cmd const[2169270293], arg ptr[out, array[int8, 332]]) 
+ioctl$stmvl53l1_ranging_Group8084700f_0(fd stmvl53l1_ranging_fd, cmd const[2156163087], arg ptr[out, array[int8, 132]]) 
+stmvl53l1_ranging_Groupc00c700e_0_struct_1 {
+    stmvl53l1_ranging_Groupc00c700e_0_buffer_2  int8
+    stmvl53l1_ranging_Groupc00c700e_0_buffer_3  int8
+    stmvl53l1_ranging_Groupc00c700e_0_buffer_4  int8
+    stmvl53l1_ranging_Groupc00c700e_0_buffer_5  int8
+    stmvl53l1_ranging_Groupc00c700e_0_range_6  int8[0:169]
+    stmvl53l1_ranging_Groupc00c700e_0_buffer_7  array[int8, 676]
+} [packed]
+ioctl$stmvl53l1_ranging_Groupc00c700e_0(fd stmvl53l1_ranging_fd, cmd const[3222040590], arg ptr[inout, stmvl53l1_ranging_Groupc00c700e_0_struct_1]) 
+ioctl$stmvl53l1_ranging_Groupc01c700b_0(fd stmvl53l1_ranging_fd, cmd const[3223089163], arg ptr[out, array[int8, 28]]) 
+stmvl53l1_ranging_Groupd2987012_0_struct_1 {
+    stmvl53l1_ranging_Groupd2987012_0_buffer_2  int8
+    stmvl53l1_ranging_Groupd2987012_0_buffer_3  int8
+    stmvl53l1_ranging_Groupd2987012_0_buffer_4  int8
+    stmvl53l1_ranging_Groupd2987012_0_buffer_5  int8
+    stmvl53l1_ranging_Groupd2987012_0_buffer_6  int32
+    stmvl53l1_ranging_Groupd2987012_0_buffer_7  int8
+    stmvl53l1_ranging_Groupd2987012_0_buffer_8  int8
+    stmvl53l1_ranging_Groupd2987012_0_buffer_9  int8
+    stmvl53l1_ranging_Groupd2987012_0_buffer_10  int8
+    stmvl53l1_ranging_Groupd2987012_0_buffer_11  array[int8]
+} [packed]
+ioctl$stmvl53l1_ranging_Groupd2987012_0(fd stmvl53l1_ranging_fd, cmd const[3533205522], arg ptr[inout, stmvl53l1_ranging_Groupd2987012_0_struct_1]) 
+stmvl53l1_ranging_Groupd2987012_1_struct_1 {
+    stmvl53l1_ranging_Groupd2987012_1_const_2  const[0, int8]
+    stmvl53l1_ranging_Groupd2987012_1_const_3  const[0, int8]
+    stmvl53l1_ranging_Groupd2987012_1_const_4  const[0, int8]
+    stmvl53l1_ranging_Groupd2987012_1_const_5  const[0, int8]
+    stmvl53l1_ranging_Groupd2987012_1_buffer_6  int32
+    stmvl53l1_ranging_Groupd2987012_1_const_7  const[1, int8]
+    stmvl53l1_ranging_Groupd2987012_1_const_8  const[1, int8]
+    stmvl53l1_ranging_Groupd2987012_1_const_9  const[174, int8]
+    stmvl53l1_ranging_Groupd2987012_1_const_10  const[236, int8]
+    stmvl53l1_ranging_Groupd2987012_1_buffer_11  array[int8]
+} [packed]
+ioctl$stmvl53l1_ranging_Groupd2987012_1(fd stmvl53l1_ranging_fd, cmd const[3533205522], arg ptr[inout, stmvl53l1_ranging_Groupd2987012_1_struct_1]) 
+ioctl$stmvl53l1_ranging_Group814c7016_0(fd stmvl53l1_ranging_fd, cmd const[2169270294], arg ptr[out, array[int8, 332]]) 
+ioctl$stmvl53l1_ranging_Group80847011_0(fd stmvl53l1_ranging_fd, cmd const[2156163089], arg ptr[out, array[int8, 132]]) 
+stmvl53l1_ranging_Groupc014700d_0_struct_1 {
+    stmvl53l1_ranging_Groupc014700d_0_const_2  const[0, int8]
+    stmvl53l1_ranging_Groupc014700d_0_const_3  const[0, int8]
+    stmvl53l1_ranging_Groupc014700d_0_const_4  const[0, int8]
+    stmvl53l1_ranging_Groupc014700d_0_const_5  const[0, int8]
+    stmvl53l1_ranging_Groupc014700d_0_range_6  int32[2:22]
+    stmvl53l1_ranging_Groupc014700d_0_range_7  int8[0:1]
+    stmvl53l1_ranging_Groupc014700d_0_const_8  const[0, int8]
+    stmvl53l1_ranging_Groupc014700d_0_const_9  const[0, int8]
+    stmvl53l1_ranging_Groupc014700d_0_const_10  const[0, int8]
+    stmvl53l1_ranging_Groupc014700d_0_buffer_11  int32
+    stmvl53l1_ranging_Groupc014700d_0_buffer_12  int32
+} [packed]
+ioctl$stmvl53l1_ranging_Groupc014700d_0(fd stmvl53l1_ranging_fd, cmd const[3222564877], arg ptr[inout, stmvl53l1_ranging_Groupc014700d_0_struct_1]) 
+ioctl$stmvl53l1_ranging_Groupc01c7010_0(fd stmvl53l1_ranging_fd, cmd const[3223089168], arg ptr[out, array[int8, 28]]) 
+stmvl53l1_ranging_Groupc01c7014_0_struct_1 {
+    stmvl53l1_ranging_Groupc01c7014_0_buffer_2  int8
+    stmvl53l1_ranging_Groupc01c7014_0_buffer_3  int8
+    stmvl53l1_ranging_Groupc01c7014_0_buffer_4  int8
+    stmvl53l1_ranging_Groupc01c7014_0_buffer_5  int8
+    stmvl53l1_ranging_Groupc01c7014_0_buffer_6  int32
+    stmvl53l1_ranging_Groupc01c7014_0_buffer_7  int64
+    stmvl53l1_ranging_Groupc01c7014_0_buffer_8  int64
+    stmvl53l1_ranging_Groupc01c7014_0_buffer_9  int32
+} [packed]
+ioctl$stmvl53l1_ranging_Groupc01c7014_0(fd stmvl53l1_ranging_fd, cmd const[3223089172], arg ptr[inout, stmvl53l1_ranging_Groupc01c7014_0_struct_1]) 

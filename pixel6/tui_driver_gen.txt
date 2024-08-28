@@ -1,0 +1,5 @@
+resource tui_driver_fd[fd]
+
+openat$tui_driver_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/tui-driver"]], flags flags[open_flags], mode const[0]) tui_driver_fd
+ioctl$tui_driver_Group11_0(fd tui_driver_fd, cmd const[17], arg intptr) 
+ioctl$tui_driver_Group10_0(fd tui_driver_fd, cmd const[16], arg intptr) 

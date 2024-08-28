@@ -1,0 +1,623 @@
+resource adsprpc_smd_fd[fd]
+
+openat$adsprpc_smd_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/adsprpc-smd"]], flags flags[open_flags], mode const[0]) adsprpc_smd_fd
+ioctl$adsprpc_smd_Groupc00c520c_0(fd adsprpc_smd_fd, cmd const[3222032908], arg ptr[in, array[int8, 12]]) 
+ioctl$adsprpc_smd_Groupc0045205_0(fd adsprpc_smd_fd, cmd const[3221508613], adsprpc_smd_Groupc0045205_0_buffer_87 intptr) 
+adsprpc_smd_Groupc0105201_0_struct_1 {
+    adsprpc_smd_Groupc0105201_0_range_2  int32[1:2]
+    adsprpc_smd_Groupc0105201_0_buffer_3  array[int8, 12]
+} [packed]
+ioctl$adsprpc_smd_Groupc0105201_0(fd adsprpc_smd_fd, cmd const[3222295041], arg ptr[in, adsprpc_smd_Groupc0105201_0_struct_1]) 
+adsprpc_smd_Groupc0105201_1_struct_1 {
+    adsprpc_smd_Groupc0105201_1_buffer_2  int32
+    adsprpc_smd_Groupc0105201_1_range_3  int32[2048:4278714623]
+    adsprpc_smd_Groupc0105201_1_buffer_4  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc0105201_1(fd adsprpc_smd_fd, cmd const[3222295041], arg ptr[in, adsprpc_smd_Groupc0105201_1_struct_1]) 
+adsprpc_smd_Groupc0105201_2_struct_1 {
+    adsprpc_smd_Groupc0105201_2_buffer_2  int32
+    adsprpc_smd_Groupc0105201_2_buffer_3  int8
+    adsprpc_smd_Groupc0105201_2_buffer_4  int8
+    adsprpc_smd_Groupc0105201_2_buffer_5  int8
+    adsprpc_smd_Groupc0105201_2_buffer_6  int8
+    adsprpc_smd_Groupc0105201_2_ptr_8  ptr[in, array[int8]]
+} [packed]
+ioctl$adsprpc_smd_Groupc0105201_2(fd adsprpc_smd_fd, cmd const[3222295041], arg ptr[in, adsprpc_smd_Groupc0105201_2_struct_1]) 
+adsprpc_smd_Groupc010520f_0_struct_1 {
+    adsprpc_smd_Groupc010520f_0_buffer_2  int64
+    adsprpc_smd_Groupc010520f_0_buffer_3  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc010520f_0(fd adsprpc_smd_fd, cmd const[3222295055], arg ptr[in, adsprpc_smd_Groupc010520f_0_struct_1]) 
+adsprpc_smd_Groupc010520f_1_struct_1 {
+    adsprpc_smd_Groupc010520f_1_range_2  int64[1:18446744069414584321]
+    adsprpc_smd_Groupc010520f_1_buffer_3  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc010520f_1(fd adsprpc_smd_fd, cmd const[3222295055], arg ptr[in, adsprpc_smd_Groupc010520f_1_struct_1]) 
+adsprpc_smd_Groupc028520b_0_struct_1 {
+    adsprpc_smd_Groupc028520b_0_range_2  int32[1:2]
+    adsprpc_smd_Groupc028520b_0_buffer_3  array[int8, 36]
+} [packed]
+ioctl$adsprpc_smd_Groupc028520b_0(fd adsprpc_smd_fd, cmd const[3223867915], arg ptr[in, adsprpc_smd_Groupc028520b_0_struct_1]) 
+adsprpc_smd_Groupc028520b_1_struct_1 {
+    adsprpc_smd_Groupc028520b_1_buffer_2  int32
+    adsprpc_smd_Groupc028520b_1_buffer_3  int32
+    adsprpc_smd_Groupc028520b_1_ptr_5  ptr[in, array[int8]]
+    adsprpc_smd_Groupc028520b_1_buffer_6  int8
+    adsprpc_smd_Groupc028520b_1_buffer_7  int8
+    adsprpc_smd_Groupc028520b_1_buffer_8  int8
+    adsprpc_smd_Groupc028520b_1_buffer_9  int8
+    adsprpc_smd_Groupc028520b_1_buffer_10  int8
+    adsprpc_smd_Groupc028520b_1_buffer_11  int8
+    adsprpc_smd_Groupc028520b_1_buffer_12  int8
+    adsprpc_smd_Groupc028520b_1_buffer_13  int8
+    adsprpc_smd_Groupc028520b_1_buffer_14  int8
+    adsprpc_smd_Groupc028520b_1_buffer_15  int8
+    adsprpc_smd_Groupc028520b_1_buffer_16  int8
+    adsprpc_smd_Groupc028520b_1_buffer_17  int8
+    adsprpc_smd_Groupc028520b_1_buffer_18  int8
+    adsprpc_smd_Groupc028520b_1_buffer_19  int8
+    adsprpc_smd_Groupc028520b_1_buffer_20  int8
+    adsprpc_smd_Groupc028520b_1_buffer_21  int8
+    adsprpc_smd_Groupc028520b_1_buffer_22  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc028520b_1(fd adsprpc_smd_fd, cmd const[3223867915], arg ptr[in, adsprpc_smd_Groupc028520b_1_struct_1]) 
+adsprpc_smd_Groupc0305214_0_struct_1 {
+    adsprpc_smd_Groupc0305214_0_buffer_2  int64
+    adsprpc_smd_Groupc0305214_0_buffer_3  int32
+    adsprpc_smd_Groupc0305214_0_buffer_4  int32
+    adsprpc_smd_Groupc0305214_0_buffer_5  int64
+    adsprpc_smd_Groupc0305214_0_buffer_6  int64
+    adsprpc_smd_Groupc0305214_0_buffer_7  array[int8, 16]
+} [packed]
+ioctl$adsprpc_smd_Groupc0305214_0(fd adsprpc_smd_fd, cmd const[3224392212], arg ptr[in, adsprpc_smd_Groupc0305214_0_struct_1]) 
+adsprpc_smd_Groupc0185212_0_struct_7 {
+    adsprpc_smd_Groupc0185212_0_buffer_8  int32
+    adsprpc_smd_Groupc0185212_0_buffer_9  array[int8, 60]
+} [packed]
+adsprpc_smd_Groupc0185212_0_struct_1 {
+    adsprpc_smd_Groupc0185212_0_const_2  const[3, int8]
+    adsprpc_smd_Groupc0185212_0_const_3  const[0, int8]
+    adsprpc_smd_Groupc0185212_0_const_4  const[0, int8]
+    adsprpc_smd_Groupc0185212_0_const_5  const[0, int8]
+    adsprpc_smd_Groupc0185212_0_buffer_6  int32
+    adsprpc_smd_Groupc0185212_0_ptr_10  ptr[in, adsprpc_smd_Groupc0185212_0_struct_7]
+    adsprpc_smd_Groupc0185212_0_const_11  const[4, int8]
+    adsprpc_smd_Groupc0185212_0_const_12  const[0, int8]
+    adsprpc_smd_Groupc0185212_0_const_13  const[0, int8]
+    adsprpc_smd_Groupc0185212_0_const_14  const[0, int8]
+    adsprpc_smd_Groupc0185212_0_buffer_15  int32
+} [packed]
+ioctl$adsprpc_smd_Groupc0185212_0(fd adsprpc_smd_fd, cmd const[3222819346], arg ptr[in, adsprpc_smd_Groupc0185212_0_struct_1]) 
+adsprpc_smd_Groupc0185212_1_struct_1 {
+    adsprpc_smd_Groupc0185212_1_const_2  const[2, int8]
+    adsprpc_smd_Groupc0185212_1_const_3  const[0, int8]
+    adsprpc_smd_Groupc0185212_1_const_4  const[0, int8]
+    adsprpc_smd_Groupc0185212_1_const_5  const[0, int8]
+    adsprpc_smd_Groupc0185212_1_buffer_6  int32
+    adsprpc_smd_Groupc0185212_1_buffer_7  int64
+    adsprpc_smd_Groupc0185212_1_range_8  int8[0:40]
+    adsprpc_smd_Groupc0185212_1_const_9  const[0, int8]
+    adsprpc_smd_Groupc0185212_1_const_10  const[0, int8]
+    adsprpc_smd_Groupc0185212_1_const_11  const[0, int8]
+    adsprpc_smd_Groupc0185212_1_buffer_12  int32
+} [packed]
+ioctl$adsprpc_smd_Groupc0185212_1(fd adsprpc_smd_fd, cmd const[3222819346], arg ptr[in, adsprpc_smd_Groupc0185212_1_struct_1]) 
+adsprpc_smd_Groupc0185212_2_struct_7 {
+    adsprpc_smd_Groupc0185212_2_buffer_8  int32
+    adsprpc_smd_Groupc0185212_2_buffer_9  int16
+    adsprpc_smd_Groupc0185212_2_buffer_10  int8
+    adsprpc_smd_Groupc0185212_2_buffer_11  int8
+    adsprpc_smd_Groupc0185212_2_ptr_13  ptr[in, array[int8]]
+    adsprpc_smd_Groupc0185212_2_buffer_14  int64
+    adsprpc_smd_Groupc0185212_2_buffer_15  int64
+    adsprpc_smd_Groupc0185212_2_buffer_16  int64
+    adsprpc_smd_Groupc0185212_2_buffer_17  int64
+    adsprpc_smd_Groupc0185212_2_buffer_18  array[int8, 16]
+} [packed]
+adsprpc_smd_Groupc0185212_2_struct_1 {
+    adsprpc_smd_Groupc0185212_2_const_2  const[1, int8]
+    adsprpc_smd_Groupc0185212_2_const_3  const[0, int8]
+    adsprpc_smd_Groupc0185212_2_const_4  const[0, int8]
+    adsprpc_smd_Groupc0185212_2_const_5  const[0, int8]
+    adsprpc_smd_Groupc0185212_2_buffer_6  int32
+    adsprpc_smd_Groupc0185212_2_ptr_19  ptr[in, adsprpc_smd_Groupc0185212_2_struct_7]
+    adsprpc_smd_Groupc0185212_2_range_20  int8[0:63]
+    adsprpc_smd_Groupc0185212_2_const_21  const[0, int8]
+    adsprpc_smd_Groupc0185212_2_const_22  const[0, int8]
+    adsprpc_smd_Groupc0185212_2_const_23  const[0, int8]
+    adsprpc_smd_Groupc0185212_2_buffer_24  int32
+} [packed]
+ioctl$adsprpc_smd_Groupc0185212_2(fd adsprpc_smd_fd, cmd const[3222819346], arg ptr[in, adsprpc_smd_Groupc0185212_2_struct_1]) 
+adsprpc_smd_Groupc0185212_3_struct_1 {
+    adsprpc_smd_Groupc0185212_3_range_2  int32[1:3]
+    adsprpc_smd_Groupc0185212_3_buffer_3  int32
+    adsprpc_smd_Groupc0185212_3_ptr_5  ptr[in, int32[1:4294967295]]
+    adsprpc_smd_Groupc0185212_3_buffer_6  int8
+    adsprpc_smd_Groupc0185212_3_buffer_7  int8
+    adsprpc_smd_Groupc0185212_3_buffer_8  int8
+    adsprpc_smd_Groupc0185212_3_buffer_9  int8
+    adsprpc_smd_Groupc0185212_3_buffer_10  int32
+} [packed]
+ioctl$adsprpc_smd_Groupc0185212_3(fd adsprpc_smd_fd, cmd const[3222819346], arg ptr[in, adsprpc_smd_Groupc0185212_3_struct_1]) 
+adsprpc_smd_Groupc0185212_4_struct_1 {
+    adsprpc_smd_Groupc0185212_4_const_2  const[3, int32]
+    adsprpc_smd_Groupc0185212_4_buffer_3  int32
+    adsprpc_smd_Groupc0185212_4_ptr_5  ptr[in, int32[1:4294967295]]
+    adsprpc_smd_Groupc0185212_4_const_6  const[4, int32]
+    adsprpc_smd_Groupc0185212_4_buffer_7  int32
+} [packed]
+ioctl$adsprpc_smd_Groupc0185212_4(fd adsprpc_smd_fd, cmd const[3222819346], arg ptr[in, adsprpc_smd_Groupc0185212_4_struct_1]) 
+adsprpc_smd_Groupc0185212_5_struct_1 {
+    adsprpc_smd_Groupc0185212_5_buffer_2  int8
+    adsprpc_smd_Groupc0185212_5_buffer_3  int8
+    adsprpc_smd_Groupc0185212_5_buffer_4  int8
+    adsprpc_smd_Groupc0185212_5_buffer_5  int8
+    adsprpc_smd_Groupc0185212_5_buffer_6  int32
+    adsprpc_smd_Groupc0185212_5_ptr_8  ptr[in, int32[1:4294967295]]
+    adsprpc_smd_Groupc0185212_5_buffer_9  int8
+    adsprpc_smd_Groupc0185212_5_buffer_10  int8
+    adsprpc_smd_Groupc0185212_5_buffer_11  int8
+    adsprpc_smd_Groupc0185212_5_buffer_12  int8
+    adsprpc_smd_Groupc0185212_5_buffer_13  int32
+} [packed]
+ioctl$adsprpc_smd_Groupc0185212_5(fd adsprpc_smd_fd, cmd const[3222819346], arg ptr[in, adsprpc_smd_Groupc0185212_5_struct_1]) 
+adsprpc_smd_Groupc0185212_6_struct_7 {
+    adsprpc_smd_Groupc0185212_6_range_8  int32[1:4294967295]
+    adsprpc_smd_Groupc0185212_6_buffer_9  array[int8, 60]
+} [packed]
+adsprpc_smd_Groupc0185212_6_struct_1 {
+    adsprpc_smd_Groupc0185212_6_const_2  const[3, int8]
+    adsprpc_smd_Groupc0185212_6_const_3  const[0, int8]
+    adsprpc_smd_Groupc0185212_6_const_4  const[0, int8]
+    adsprpc_smd_Groupc0185212_6_const_5  const[0, int8]
+    adsprpc_smd_Groupc0185212_6_buffer_6  int32
+    adsprpc_smd_Groupc0185212_6_ptr_10  ptr[in, adsprpc_smd_Groupc0185212_6_struct_7]
+    adsprpc_smd_Groupc0185212_6_const_11  const[4, int8]
+    adsprpc_smd_Groupc0185212_6_const_12  const[0, int8]
+    adsprpc_smd_Groupc0185212_6_const_13  const[0, int8]
+    adsprpc_smd_Groupc0185212_6_const_14  const[0, int8]
+    adsprpc_smd_Groupc0185212_6_buffer_15  int32
+} [packed]
+ioctl$adsprpc_smd_Groupc0185212_6(fd adsprpc_smd_fd, cmd const[3222819346], arg ptr[in, adsprpc_smd_Groupc0185212_6_struct_1]) 
+adsprpc_smd_Groupc0205207_0_struct_1 {
+    adsprpc_smd_Groupc0205207_0_range_2  int32[1:2]
+    adsprpc_smd_Groupc0205207_0_buffer_3  array[int8, 28]
+} [packed]
+ioctl$adsprpc_smd_Groupc0205207_0(fd adsprpc_smd_fd, cmd const[3223343623], arg ptr[in, adsprpc_smd_Groupc0205207_0_struct_1]) 
+adsprpc_smd_Groupc0205207_1_struct_1 {
+    adsprpc_smd_Groupc0205207_1_buffer_2  int32
+    adsprpc_smd_Groupc0205207_1_buffer_3  int32
+    adsprpc_smd_Groupc0205207_1_ptr_5  ptr[in, array[int8]]
+    adsprpc_smd_Groupc0205207_1_buffer_6  int8
+    adsprpc_smd_Groupc0205207_1_buffer_7  int8
+    adsprpc_smd_Groupc0205207_1_buffer_8  int8
+    adsprpc_smd_Groupc0205207_1_buffer_9  int8
+    adsprpc_smd_Groupc0205207_1_buffer_10  int8
+    adsprpc_smd_Groupc0205207_1_buffer_11  int8
+    adsprpc_smd_Groupc0205207_1_buffer_12  int8
+    adsprpc_smd_Groupc0205207_1_buffer_13  int8
+    adsprpc_smd_Groupc0205207_1_buffer_14  int8
+    adsprpc_smd_Groupc0205207_1_buffer_15  int8
+    adsprpc_smd_Groupc0205207_1_buffer_16  int8
+    adsprpc_smd_Groupc0205207_1_buffer_17  int8
+    adsprpc_smd_Groupc0205207_1_buffer_18  int8
+    adsprpc_smd_Groupc0205207_1_buffer_19  int8
+    adsprpc_smd_Groupc0205207_1_buffer_20  int8
+    adsprpc_smd_Groupc0205207_1_buffer_21  int8
+} [packed]
+ioctl$adsprpc_smd_Groupc0205207_1(fd adsprpc_smd_fd, cmd const[3223343623], arg ptr[in, adsprpc_smd_Groupc0205207_1_struct_1]) 
+adsprpc_smd_Groupc00c5211_0_flag_2 = 0, 2, 3
+adsprpc_smd_Groupc00c5211_0_struct_1 {
+    adsprpc_smd_Groupc00c5211_0_flag_2  flags[adsprpc_smd_Groupc00c5211_0_flag_2, int8]
+    adsprpc_smd_Groupc00c5211_0_const_3  const[0, int8]
+    adsprpc_smd_Groupc00c5211_0_const_4  const[0, int8]
+    adsprpc_smd_Groupc00c5211_0_const_5  const[0, int8]
+    adsprpc_smd_Groupc00c5211_0_range_6  int16[0:255]
+    adsprpc_smd_Groupc00c5211_0_const_7  const[0, int8]
+    adsprpc_smd_Groupc00c5211_0_const_8  const[0, int8]
+    adsprpc_smd_Groupc00c5211_0_buffer_9  int32
+} [packed]
+ioctl$adsprpc_smd_Groupc00c5211_0(fd adsprpc_smd_fd, cmd const[3222032913], arg ptr[inout, adsprpc_smd_Groupc00c5211_0_struct_1]) 
+adsprpc_smd_Groupc00c5211_1_struct_1 {
+    adsprpc_smd_Groupc00c5211_1_buffer_2  int32
+    adsprpc_smd_Groupc00c5211_1_buffer_3  int32
+    adsprpc_smd_Groupc00c5211_1_buffer_4  int32
+} [packed]
+ioctl$adsprpc_smd_Groupc00c5211_1(fd adsprpc_smd_fd, cmd const[3222032913], arg ptr[inout, adsprpc_smd_Groupc00c5211_1_struct_1]) 
+adsprpc_smd_Groupc00c5211_2_struct_1 {
+    adsprpc_smd_Groupc00c5211_2_range_2  int32[0:3]
+    adsprpc_smd_Groupc00c5211_2_buffer_3  int32
+    adsprpc_smd_Groupc00c5211_2_buffer_4  int32
+} [packed]
+ioctl$adsprpc_smd_Groupc00c5211_2(fd adsprpc_smd_fd, cmd const[3222032913], arg ptr[inout, adsprpc_smd_Groupc00c5211_2_struct_1]) 
+ioctl$adsprpc_smd_Groupc0045208_0(fd adsprpc_smd_fd, cmd const[3221508616], arg ptr[in, int32]) 
+adsprpc_smd_Groupc0105203_0_struct_1 {
+    adsprpc_smd_Groupc0105203_0_buffer_2  int64
+    adsprpc_smd_Groupc0105203_0_buffer_3  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc0105203_0(fd adsprpc_smd_fd, cmd const[3222295043], arg ptr[in, adsprpc_smd_Groupc0105203_0_struct_1]) 
+adsprpc_smd_Groupc0105203_1_struct_1 {
+    adsprpc_smd_Groupc0105203_1_range_2  int64[1:18446744069414584321]
+    adsprpc_smd_Groupc0105203_1_buffer_3  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc0105203_1(fd adsprpc_smd_fd, cmd const[3222295043], arg ptr[in, adsprpc_smd_Groupc0105203_1_struct_1]) 
+adsprpc_smd_Groupc0185204_0_struct_1 {
+    adsprpc_smd_Groupc0185204_0_range_2  int32[1:2]
+    adsprpc_smd_Groupc0185204_0_buffer_3  array[int8, 20]
+} [packed]
+ioctl$adsprpc_smd_Groupc0185204_0(fd adsprpc_smd_fd, cmd const[3222819332], arg ptr[in, adsprpc_smd_Groupc0185204_0_struct_1]) 
+adsprpc_smd_Groupc0185204_1_struct_1 {
+    adsprpc_smd_Groupc0185204_1_buffer_2  int32
+    adsprpc_smd_Groupc0185204_1_buffer_3  int16
+    adsprpc_smd_Groupc0185204_1_buffer_4  int8
+    adsprpc_smd_Groupc0185204_1_buffer_5  int8
+    adsprpc_smd_Groupc0185204_1_ptr_7  ptr[in, array[int8]]
+    adsprpc_smd_Groupc0185204_1_buffer_8  int8
+    adsprpc_smd_Groupc0185204_1_buffer_9  int8
+    adsprpc_smd_Groupc0185204_1_buffer_10  int8
+    adsprpc_smd_Groupc0185204_1_buffer_11  int8
+    adsprpc_smd_Groupc0185204_1_buffer_12  int8
+    adsprpc_smd_Groupc0185204_1_buffer_13  int8
+    adsprpc_smd_Groupc0185204_1_buffer_14  int8
+    adsprpc_smd_Groupc0185204_1_buffer_15  int8
+} [packed]
+ioctl$adsprpc_smd_Groupc0185204_1(fd adsprpc_smd_fd, cmd const[3222819332], arg ptr[in, adsprpc_smd_Groupc0185204_1_struct_1]) 
+adsprpc_smd_Groupc030520a_0_struct_1 {
+    adsprpc_smd_Groupc030520a_0_buffer_2  int8
+    adsprpc_smd_Groupc030520a_0_buffer_3  int8
+    adsprpc_smd_Groupc030520a_0_buffer_4  int8
+    adsprpc_smd_Groupc030520a_0_buffer_5  int8
+    adsprpc_smd_Groupc030520a_0_buffer_6  int32
+    adsprpc_smd_Groupc030520a_0_ptr_8  ptr[in, array[int8]]
+    adsprpc_smd_Groupc030520a_0_buffer_9  int16
+    adsprpc_smd_Groupc030520a_0_range_10  int8[0:31]
+    adsprpc_smd_Groupc030520a_0_const_11  const[0, int8]
+    adsprpc_smd_Groupc030520a_0_buffer_12  int32
+    adsprpc_smd_Groupc030520a_0_buffer_13  int64
+    adsprpc_smd_Groupc030520a_0_buffer_14  int16
+    adsprpc_smd_Groupc030520a_0_range_15  int8[0:127]
+    adsprpc_smd_Groupc030520a_0_const_16  const[0, int8]
+    adsprpc_smd_Groupc030520a_0_buffer_17  int32
+    adsprpc_smd_Groupc030520a_0_buffer_18  int8
+    adsprpc_smd_Groupc030520a_0_buffer_19  int8
+    adsprpc_smd_Groupc030520a_0_buffer_20  int16
+    adsprpc_smd_Groupc030520a_0_buffer_21  int32
+} [packed]
+ioctl$adsprpc_smd_Groupc030520a_0(fd adsprpc_smd_fd, cmd const[3224392202], arg ptr[in, adsprpc_smd_Groupc030520a_0_struct_1]) 
+adsprpc_smd_Groupc030520a_1_struct_1 {
+    adsprpc_smd_Groupc030520a_1_buffer_2  int8
+    adsprpc_smd_Groupc030520a_1_buffer_3  int8
+    adsprpc_smd_Groupc030520a_1_buffer_4  int8
+    adsprpc_smd_Groupc030520a_1_buffer_5  int8
+    adsprpc_smd_Groupc030520a_1_buffer_6  int32
+    adsprpc_smd_Groupc030520a_1_buffer_7  int64
+    adsprpc_smd_Groupc030520a_1_buffer_8  int16
+    adsprpc_smd_Groupc030520a_1_buffer_9  int8
+    adsprpc_smd_Groupc030520a_1_buffer_10  int8
+    adsprpc_smd_Groupc030520a_1_buffer_11  int32
+    adsprpc_smd_Groupc030520a_1_buffer_12  int8
+    adsprpc_smd_Groupc030520a_1_buffer_13  int8
+    adsprpc_smd_Groupc030520a_1_buffer_14  int8
+    adsprpc_smd_Groupc030520a_1_buffer_15  int8
+    adsprpc_smd_Groupc030520a_1_buffer_16  int8
+    adsprpc_smd_Groupc030520a_1_buffer_17  int8
+    adsprpc_smd_Groupc030520a_1_buffer_18  int8
+    adsprpc_smd_Groupc030520a_1_buffer_19  int8
+    adsprpc_smd_Groupc030520a_1_buffer_20  int16
+    adsprpc_smd_Groupc030520a_1_range_21  int8[0:127]
+    adsprpc_smd_Groupc030520a_1_const_22  const[0, int8]
+    adsprpc_smd_Groupc030520a_1_buffer_23  int32
+    adsprpc_smd_Groupc030520a_1_buffer_24  int8
+    adsprpc_smd_Groupc030520a_1_buffer_25  array[int8, 3]
+    adsprpc_smd_Groupc030520a_1_buffer_26  int32
+} [packed]
+ioctl$adsprpc_smd_Groupc030520a_1(fd adsprpc_smd_fd, cmd const[3224392202], arg ptr[in, adsprpc_smd_Groupc030520a_1_struct_1]) 
+adsprpc_smd_Groupc030520a_2_struct_1 {
+    adsprpc_smd_Groupc030520a_2_buffer_2  int8
+    adsprpc_smd_Groupc030520a_2_buffer_3  int8
+    adsprpc_smd_Groupc030520a_2_buffer_4  int8
+    adsprpc_smd_Groupc030520a_2_buffer_5  int8
+    adsprpc_smd_Groupc030520a_2_buffer_6  int32
+    adsprpc_smd_Groupc030520a_2_ptr_8  ptr[in, array[int8]]
+    adsprpc_smd_Groupc030520a_2_buffer_9  int32
+    adsprpc_smd_Groupc030520a_2_buffer_10  int32
+    adsprpc_smd_Groupc030520a_2_buffer_11  int8
+    adsprpc_smd_Groupc030520a_2_buffer_12  int8
+    adsprpc_smd_Groupc030520a_2_buffer_13  int8
+    adsprpc_smd_Groupc030520a_2_buffer_14  int8
+    adsprpc_smd_Groupc030520a_2_buffer_15  int8
+    adsprpc_smd_Groupc030520a_2_buffer_16  int8
+    adsprpc_smd_Groupc030520a_2_buffer_17  int8
+    adsprpc_smd_Groupc030520a_2_buffer_18  int8
+    adsprpc_smd_Groupc030520a_2_buffer_19  int16
+    adsprpc_smd_Groupc030520a_2_buffer_20  int8
+    adsprpc_smd_Groupc030520a_2_buffer_21  int8
+    adsprpc_smd_Groupc030520a_2_buffer_22  int32
+    adsprpc_smd_Groupc030520a_2_buffer_23  int8
+    adsprpc_smd_Groupc030520a_2_buffer_24  int8
+    adsprpc_smd_Groupc030520a_2_buffer_25  int16
+    adsprpc_smd_Groupc030520a_2_buffer_26  int32
+} [packed]
+ioctl$adsprpc_smd_Groupc030520a_2(fd adsprpc_smd_fd, cmd const[3224392202], arg ptr[in, adsprpc_smd_Groupc030520a_2_struct_1]) 
+adsprpc_smd_Groupc030520a_3_struct_1 {
+    adsprpc_smd_Groupc030520a_3_buffer_2  array[int8, 16]
+    adsprpc_smd_Groupc030520a_3_range_3  int32[0:2097151]
+    adsprpc_smd_Groupc030520a_3_buffer_4  array[int8, 12]
+    adsprpc_smd_Groupc030520a_3_range_5  int32[8388608:4294967295]
+    adsprpc_smd_Groupc030520a_3_buffer_6  array[int8, 12]
+} [packed]
+ioctl$adsprpc_smd_Groupc030520a_3(fd adsprpc_smd_fd, cmd const[3224392202], arg ptr[in, adsprpc_smd_Groupc030520a_3_struct_1]) 
+adsprpc_smd_Groupc0385215_0_struct_1 {
+    adsprpc_smd_Groupc0385215_0_range_2  int32[1:2]
+    adsprpc_smd_Groupc0385215_0_buffer_3  array[int8, 52]
+} [packed]
+ioctl$adsprpc_smd_Groupc0385215_0(fd adsprpc_smd_fd, cmd const[3224916501], arg ptr[in, adsprpc_smd_Groupc0385215_0_struct_1]) 
+adsprpc_smd_Groupc0385215_1_struct_1 {
+    adsprpc_smd_Groupc0385215_1_buffer_2  int32
+    adsprpc_smd_Groupc0385215_1_buffer_3  int16
+    adsprpc_smd_Groupc0385215_1_buffer_4  int8
+    adsprpc_smd_Groupc0385215_1_buffer_5  int8
+    adsprpc_smd_Groupc0385215_1_ptr_7  ptr[in, array[int8]]
+    adsprpc_smd_Groupc0385215_1_buffer_8  int8
+    adsprpc_smd_Groupc0385215_1_buffer_9  int8
+    adsprpc_smd_Groupc0385215_1_buffer_10  int8
+    adsprpc_smd_Groupc0385215_1_buffer_11  int8
+    adsprpc_smd_Groupc0385215_1_buffer_12  int8
+    adsprpc_smd_Groupc0385215_1_buffer_13  int8
+    adsprpc_smd_Groupc0385215_1_buffer_14  int8
+    adsprpc_smd_Groupc0385215_1_buffer_15  int8
+    adsprpc_smd_Groupc0385215_1_buffer_16  int8
+    adsprpc_smd_Groupc0385215_1_buffer_17  int8
+    adsprpc_smd_Groupc0385215_1_buffer_18  int8
+    adsprpc_smd_Groupc0385215_1_buffer_19  int8
+    adsprpc_smd_Groupc0385215_1_buffer_20  int8
+    adsprpc_smd_Groupc0385215_1_buffer_21  int8
+    adsprpc_smd_Groupc0385215_1_buffer_22  int8
+    adsprpc_smd_Groupc0385215_1_buffer_23  int8
+    adsprpc_smd_Groupc0385215_1_buffer_24  int64
+    adsprpc_smd_Groupc0385215_1_buffer_25  int64
+    adsprpc_smd_Groupc0385215_1_buffer_26  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc0385215_1(fd adsprpc_smd_fd, cmd const[3224916501], arg ptr[in, adsprpc_smd_Groupc0385215_1_struct_1]) 
+adsprpc_smd_Groupc020520e_0_struct_1 {
+    adsprpc_smd_Groupc020520e_0_buffer_2  int32
+    adsprpc_smd_Groupc020520e_0_buffer_3  int8
+    adsprpc_smd_Groupc020520e_0_buffer_4  int8
+    adsprpc_smd_Groupc020520e_0_buffer_5  int8
+    adsprpc_smd_Groupc020520e_0_buffer_6  int8
+    adsprpc_smd_Groupc020520e_0_range_7  int64[1:18446744069414584321]
+    adsprpc_smd_Groupc020520e_0_range_8  int64[1:18446744069414584321]
+    adsprpc_smd_Groupc020520e_0_buffer_9  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc020520e_0(fd adsprpc_smd_fd, cmd const[3223343630], arg ptr[in, adsprpc_smd_Groupc020520e_0_struct_1]) 
+adsprpc_smd_Groupc020520e_1_flag_3 = 4096, 12288, 4, 8
+adsprpc_smd_Groupc020520e_1_struct_1 {
+    adsprpc_smd_Groupc020520e_1_buffer_2  int32
+    adsprpc_smd_Groupc020520e_1_flag_3  flags[adsprpc_smd_Groupc020520e_1_flag_3, int32]
+    adsprpc_smd_Groupc020520e_1_buffer_4  int64
+    adsprpc_smd_Groupc020520e_1_buffer_5  int64
+    adsprpc_smd_Groupc020520e_1_buffer_6  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc020520e_1(fd adsprpc_smd_fd, cmd const[3223343630], arg ptr[in, adsprpc_smd_Groupc020520e_1_struct_1]) 
+adsprpc_smd_Groupc020520e_2_struct_1 {
+    adsprpc_smd_Groupc020520e_2_buffer_2  int32
+    adsprpc_smd_Groupc020520e_2_buffer_3  int32
+    adsprpc_smd_Groupc020520e_2_buffer_4  int64
+    adsprpc_smd_Groupc020520e_2_buffer_5  int64
+    adsprpc_smd_Groupc020520e_2_buffer_6  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc020520e_2(fd adsprpc_smd_fd, cmd const[3223343630], arg ptr[in, adsprpc_smd_Groupc020520e_2_struct_1]) 
+adsprpc_smd_Groupc0205202_0_struct_1 {
+    adsprpc_smd_Groupc0205202_0_buffer_2  int32
+    adsprpc_smd_Groupc0205202_0_buffer_3  int8
+    adsprpc_smd_Groupc0205202_0_buffer_4  int8
+    adsprpc_smd_Groupc0205202_0_buffer_5  int8
+    adsprpc_smd_Groupc0205202_0_buffer_6  int8
+    adsprpc_smd_Groupc0205202_0_range_7  int64[1:18446744069414584321]
+    adsprpc_smd_Groupc0205202_0_range_8  int64[1:18446744069414584321]
+    adsprpc_smd_Groupc0205202_0_buffer_9  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc0205202_0(fd adsprpc_smd_fd, cmd const[3223343618], arg ptr[in, adsprpc_smd_Groupc0205202_0_struct_1]) 
+adsprpc_smd_Groupc0205202_1_flag_3 = 8, 4
+adsprpc_smd_Groupc0205202_1_struct_1 {
+    adsprpc_smd_Groupc0205202_1_buffer_2  int32
+    adsprpc_smd_Groupc0205202_1_flag_3  flags[adsprpc_smd_Groupc0205202_1_flag_3, int32]
+    adsprpc_smd_Groupc0205202_1_buffer_4  int64
+    adsprpc_smd_Groupc0205202_1_buffer_5  int64
+    adsprpc_smd_Groupc0205202_1_buffer_6  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc0205202_1(fd adsprpc_smd_fd, cmd const[3223343618], arg ptr[in, adsprpc_smd_Groupc0205202_1_struct_1]) 
+adsprpc_smd_Groupc0205202_2_flag_4 = 16, 48
+adsprpc_smd_Groupc0205202_2_struct_1 {
+    adsprpc_smd_Groupc0205202_2_buffer_2  int32
+    adsprpc_smd_Groupc0205202_2_const_3  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_flag_4  flags[adsprpc_smd_Groupc0205202_2_flag_4, int8]
+    adsprpc_smd_Groupc0205202_2_const_5  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_6  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_7  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_8  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_9  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_10  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_11  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_12  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_13  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_14  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_15  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_16  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_17  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_18  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_19  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_20  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_21  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_const_22  const[0, int8]
+    adsprpc_smd_Groupc0205202_2_buffer_23  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc0205202_2(fd adsprpc_smd_fd, cmd const[3223343618], arg ptr[in, adsprpc_smd_Groupc0205202_2_struct_1]) 
+adsprpc_smd_Groupc0205202_3_struct_1 {
+    adsprpc_smd_Groupc0205202_3_buffer_2  int32
+    adsprpc_smd_Groupc0205202_3_buffer_3  int8
+    adsprpc_smd_Groupc0205202_3_buffer_4  int8
+    adsprpc_smd_Groupc0205202_3_buffer_5  int8
+    adsprpc_smd_Groupc0205202_3_buffer_6  int8
+    adsprpc_smd_Groupc0205202_3_const_7  const[0, int8]
+    adsprpc_smd_Groupc0205202_3_const_8  const[0, int8]
+    adsprpc_smd_Groupc0205202_3_const_9  const[0, int8]
+    adsprpc_smd_Groupc0205202_3_const_10  const[0, int8]
+    adsprpc_smd_Groupc0205202_3_const_11  const[0, int8]
+    adsprpc_smd_Groupc0205202_3_const_12  const[0, int8]
+    adsprpc_smd_Groupc0205202_3_const_13  const[0, int8]
+    adsprpc_smd_Groupc0205202_3_const_14  const[0, int8]
+    adsprpc_smd_Groupc0205202_3_range_15  int64[1:4294967294]
+    adsprpc_smd_Groupc0205202_3_buffer_16  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc0205202_3(fd adsprpc_smd_fd, cmd const[3223343618], arg ptr[in, adsprpc_smd_Groupc0205202_3_struct_1]) 
+adsprpc_smd_Groupc0205202_4_struct_1 {
+    adsprpc_smd_Groupc0205202_4_buffer_2  int32
+    adsprpc_smd_Groupc0205202_4_buffer_3  int32
+    adsprpc_smd_Groupc0205202_4_buffer_4  int64
+    adsprpc_smd_Groupc0205202_4_buffer_5  int64
+    adsprpc_smd_Groupc0205202_4_buffer_6  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc0205202_4(fd adsprpc_smd_fd, cmd const[3223343618], arg ptr[in, adsprpc_smd_Groupc0205202_4_struct_1]) 
+adsprpc_smd_Groupc0205202_5_flag_3 = 12288, 4096
+adsprpc_smd_Groupc0205202_5_struct_1 {
+    adsprpc_smd_Groupc0205202_5_buffer_2  int32
+    adsprpc_smd_Groupc0205202_5_flag_3  flags[adsprpc_smd_Groupc0205202_5_flag_3, int32]
+    adsprpc_smd_Groupc0205202_5_range_4  int64[1:18446744069414584321]
+    adsprpc_smd_Groupc0205202_5_buffer_5  array[int8, 16]
+} [packed]
+ioctl$adsprpc_smd_Groupc0205202_5(fd adsprpc_smd_fd, cmd const[3223343618], arg ptr[in, adsprpc_smd_Groupc0205202_5_struct_1]) 
+adsprpc_smd_Groupc0205202_6_flag_3 = 12288, 4096
+adsprpc_smd_Groupc0205202_6_struct_1 {
+    adsprpc_smd_Groupc0205202_6_buffer_2  int32
+    adsprpc_smd_Groupc0205202_6_flag_3  flags[adsprpc_smd_Groupc0205202_6_flag_3, int32]
+    adsprpc_smd_Groupc0205202_6_const_4  const[0, int64]
+    adsprpc_smd_Groupc0205202_6_range_5  int64[1:18446744069414584321]
+    adsprpc_smd_Groupc0205202_6_buffer_6  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc0205202_6(fd adsprpc_smd_fd, cmd const[3223343618], arg ptr[in, adsprpc_smd_Groupc0205202_6_struct_1]) 
+adsprpc_smd_Groupc0285206_0_struct_1 {
+    adsprpc_smd_Groupc0285206_0_buffer_2  int8
+    adsprpc_smd_Groupc0285206_0_buffer_3  int8
+    adsprpc_smd_Groupc0285206_0_buffer_4  int8
+    adsprpc_smd_Groupc0285206_0_buffer_5  int8
+    adsprpc_smd_Groupc0285206_0_buffer_6  int32
+    adsprpc_smd_Groupc0285206_0_buffer_7  int64
+    adsprpc_smd_Groupc0285206_0_buffer_8  int16
+    adsprpc_smd_Groupc0285206_0_range_9  int8[0:31]
+    adsprpc_smd_Groupc0285206_0_const_10  const[0, int8]
+    adsprpc_smd_Groupc0285206_0_buffer_11  int32
+    adsprpc_smd_Groupc0285206_0_buffer_12  int8
+    adsprpc_smd_Groupc0285206_0_buffer_13  int8
+    adsprpc_smd_Groupc0285206_0_buffer_14  int8
+    adsprpc_smd_Groupc0285206_0_buffer_15  int8
+    adsprpc_smd_Groupc0285206_0_buffer_16  int8
+    adsprpc_smd_Groupc0285206_0_buffer_17  int8
+    adsprpc_smd_Groupc0285206_0_buffer_18  int8
+    adsprpc_smd_Groupc0285206_0_buffer_19  int8
+    adsprpc_smd_Groupc0285206_0_buffer_20  int16
+    adsprpc_smd_Groupc0285206_0_range_21  int8[0:127]
+    adsprpc_smd_Groupc0285206_0_const_22  const[0, int8]
+    adsprpc_smd_Groupc0285206_0_buffer_23  int32
+} [packed]
+ioctl$adsprpc_smd_Groupc0285206_0(fd adsprpc_smd_fd, cmd const[3223867910], arg ptr[in, adsprpc_smd_Groupc0285206_0_struct_1]) 
+adsprpc_smd_Groupc0285206_1_struct_1 {
+    adsprpc_smd_Groupc0285206_1_buffer_2  int8
+    adsprpc_smd_Groupc0285206_1_buffer_3  int8
+    adsprpc_smd_Groupc0285206_1_buffer_4  int8
+    adsprpc_smd_Groupc0285206_1_buffer_5  int8
+    adsprpc_smd_Groupc0285206_1_buffer_6  int32
+    adsprpc_smd_Groupc0285206_1_ptr_8  ptr[in, array[int8]]
+    adsprpc_smd_Groupc0285206_1_buffer_9  int16
+    adsprpc_smd_Groupc0285206_1_buffer_10  int8
+    adsprpc_smd_Groupc0285206_1_buffer_11  int8
+    adsprpc_smd_Groupc0285206_1_buffer_12  array[int8, 12]
+    adsprpc_smd_Groupc0285206_1_buffer_13  int16
+    adsprpc_smd_Groupc0285206_1_range_14  int8[0:127]
+    adsprpc_smd_Groupc0285206_1_const_15  const[0, int8]
+    adsprpc_smd_Groupc0285206_1_buffer_16  int32
+} [packed]
+ioctl$adsprpc_smd_Groupc0285206_1(fd adsprpc_smd_fd, cmd const[3223867910], arg ptr[in, adsprpc_smd_Groupc0285206_1_struct_1]) 
+adsprpc_smd_Groupc018520d_0_struct_1 {
+    adsprpc_smd_Groupc018520d_0_buffer_2  int32
+    adsprpc_smd_Groupc018520d_0_buffer_3  int32
+    adsprpc_smd_Groupc018520d_0_range_4  int64[1:18446744069414584321]
+    adsprpc_smd_Groupc018520d_0_range_5  int64[1:18446744069414584321]
+} [packed]
+ioctl$adsprpc_smd_Groupc018520d_0(fd adsprpc_smd_fd, cmd const[3222819341], arg ptr[in, adsprpc_smd_Groupc018520d_0_struct_1]) 
+adsprpc_smd_Groupc018520d_1_struct_1 {
+    adsprpc_smd_Groupc018520d_1_buffer_2  int32
+    adsprpc_smd_Groupc018520d_1_buffer_3  int32
+    adsprpc_smd_Groupc018520d_1_range_4  int64[0:18446744069414584320]
+    adsprpc_smd_Groupc018520d_1_buffer_5  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc018520d_1(fd adsprpc_smd_fd, cmd const[3222819341], arg ptr[in, adsprpc_smd_Groupc018520d_1_struct_1]) 
+adsprpc_smd_Groupc018520d_2_struct_1 {
+    adsprpc_smd_Groupc018520d_2_buffer_2  int32
+    adsprpc_smd_Groupc018520d_2_buffer_3  int32
+    adsprpc_smd_Groupc018520d_2_buffer_4  int64
+    adsprpc_smd_Groupc018520d_2_buffer_5  int64
+} [packed]
+ioctl$adsprpc_smd_Groupc018520d_2(fd adsprpc_smd_fd, cmd const[3222819341], arg ptr[in, adsprpc_smd_Groupc018520d_2_struct_1]) 
+adsprpc_smd_Groupc0405213_0_struct_1 {
+    adsprpc_smd_Groupc0405213_0_buffer_2  int64
+    adsprpc_smd_Groupc0405213_0_buffer_3  int32
+    adsprpc_smd_Groupc0405213_0_buffer_4  int32
+    adsprpc_smd_Groupc0405213_0_buffer_5  int32
+    adsprpc_smd_Groupc0405213_0_buffer_6  int32
+    adsprpc_smd_Groupc0405213_0_range_7  int64[1:18446744069414584321]
+    adsprpc_smd_Groupc0405213_0_range_8  int64[1:18446744069414584321]
+    adsprpc_smd_Groupc0405213_0_buffer_9  array[int8, 24]
+} [packed]
+ioctl$adsprpc_smd_Groupc0405213_0(fd adsprpc_smd_fd, cmd const[3225440787], arg ptr[in, adsprpc_smd_Groupc0405213_0_struct_1]) 
+adsprpc_smd_Groupc0405213_1_struct_1 {
+    adsprpc_smd_Groupc0405213_1_buffer_2  int64
+    adsprpc_smd_Groupc0405213_1_buffer_3  int32
+    adsprpc_smd_Groupc0405213_1_buffer_4  int32
+    adsprpc_smd_Groupc0405213_1_const_5  const[8, int8]
+    adsprpc_smd_Groupc0405213_1_const_6  const[0, int8]
+    adsprpc_smd_Groupc0405213_1_const_7  const[0, int8]
+    adsprpc_smd_Groupc0405213_1_const_8  const[0, int8]
+    adsprpc_smd_Groupc0405213_1_buffer_9  int32
+    adsprpc_smd_Groupc0405213_1_range_10  int64[0:18446744069414584320]
+    adsprpc_smd_Groupc0405213_1_buffer_11  int64
+    adsprpc_smd_Groupc0405213_1_buffer_12  array[int8, 24]
+} [packed]
+ioctl$adsprpc_smd_Groupc0405213_1(fd adsprpc_smd_fd, cmd const[3225440787], arg ptr[in, adsprpc_smd_Groupc0405213_1_struct_1]) 
+adsprpc_smd_Groupc0405213_2_flag_5 = 8, 4
+adsprpc_smd_Groupc0405213_2_struct_1 {
+    adsprpc_smd_Groupc0405213_2_buffer_2  int64
+    adsprpc_smd_Groupc0405213_2_buffer_3  int32
+    adsprpc_smd_Groupc0405213_2_buffer_4  int32
+    adsprpc_smd_Groupc0405213_2_flag_5  flags[adsprpc_smd_Groupc0405213_2_flag_5, int8]
+    adsprpc_smd_Groupc0405213_2_const_6  const[0, int8]
+    adsprpc_smd_Groupc0405213_2_const_7  const[0, int8]
+    adsprpc_smd_Groupc0405213_2_const_8  const[0, int8]
+    adsprpc_smd_Groupc0405213_2_buffer_9  int32
+    adsprpc_smd_Groupc0405213_2_buffer_10  int64
+    adsprpc_smd_Groupc0405213_2_buffer_11  int64
+    adsprpc_smd_Groupc0405213_2_buffer_12  array[int8, 24]
+} [packed]
+ioctl$adsprpc_smd_Groupc0405213_2(fd adsprpc_smd_fd, cmd const[3225440787], arg ptr[in, adsprpc_smd_Groupc0405213_2_struct_1]) 
+adsprpc_smd_Groupc0405213_3_struct_1 {
+    adsprpc_smd_Groupc0405213_3_buffer_2  int64
+    adsprpc_smd_Groupc0405213_3_buffer_3  int32
+    adsprpc_smd_Groupc0405213_3_buffer_4  int32
+    adsprpc_smd_Groupc0405213_3_buffer_5  int32
+    adsprpc_smd_Groupc0405213_3_buffer_6  int32
+    adsprpc_smd_Groupc0405213_3_range_7  int64[0:18446744069414584320]
+    adsprpc_smd_Groupc0405213_3_buffer_8  int64
+    adsprpc_smd_Groupc0405213_3_buffer_9  array[int8, 24]
+} [packed]
+ioctl$adsprpc_smd_Groupc0405213_3(fd adsprpc_smd_fd, cmd const[3225440787], arg ptr[in, adsprpc_smd_Groupc0405213_3_struct_1]) 
+adsprpc_smd_Groupc0405213_4_struct_1 {
+    adsprpc_smd_Groupc0405213_4_buffer_2  int64
+    adsprpc_smd_Groupc0405213_4_buffer_3  int32
+    adsprpc_smd_Groupc0405213_4_buffer_4  int32
+    adsprpc_smd_Groupc0405213_4_buffer_5  int32
+    adsprpc_smd_Groupc0405213_4_buffer_6  int32
+    adsprpc_smd_Groupc0405213_4_buffer_7  int64
+    adsprpc_smd_Groupc0405213_4_buffer_8  int64
+    adsprpc_smd_Groupc0405213_4_buffer_9  array[int8, 24]
+} [packed]
+ioctl$adsprpc_smd_Groupc0405213_4(fd adsprpc_smd_fd, cmd const[3225440787], arg ptr[in, adsprpc_smd_Groupc0405213_4_struct_1]) 

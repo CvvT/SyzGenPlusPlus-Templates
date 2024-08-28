@@ -1,0 +1,691 @@
+resource card0_fd[fd]
+# resource card0_connection_0[int32]
+type card0_connection_0 int32
+
+syz_open_dev$card0_syzgen(dev ptr[in, string["/dev/dri/card#"]], id intptr, flags flags[open_flags]) card0_fd
+syz_open_dev$dricontrol_syzgen(dev ptr[in, string["/dev/dri/controlD#"]], id intptr, flags flags[open_flags]) card0_fd
+syz_open_dev$drirender_syzgen(dev ptr[in, string["/dev/dri/renderD#"]], id intptr, flags flags[open_flags]) card0_fd
+
+read$card0_syzgen(fd card0_fd, data ptr[out, array[int8]], size len[data]) 
+resource card0_Group0_0_1_ret[int32]
+card0_Group0_0_1_struct_1 {
+    card0_Group0_0_1_const_2  const[0, int8]
+    card0_Group0_0_1_const_3  const[100, int8]
+    card0_Group0_0_1_range_4  int16[16513:65535]
+} [packed]
+syz_convert_to_int$card0_Group0_0_1(arg ptr[in, card0_Group0_0_1_struct_1], size const[4]) card0_Group0_0_1_ret
+card0_Group0_0_struct_1 {
+    card0_Group0_0_buffer_2  array[int8, 16]
+    card0_Group0_0_buffer_3  len[card0_Group0_0_ptr_6, int32]
+    card0_Group0_0_buffer_4  int32
+    card0_Group0_0_ptr_6  ptr[out, int32]
+    card0_Group0_0_buffer_7  len[card0_Group0_0_ptr_10, int32]
+    card0_Group0_0_buffer_8  int32
+    card0_Group0_0_ptr_10  ptr[out, int64]
+    card0_Group0_0_buffer_11  len[card0_Group0_0_ptr_14, int64]
+    card0_Group0_0_ptr_14  ptr[out, array[int8, 20]]
+    card0_Group0_0_buffer_15  array[int8]
+} [packed]
+ioctl$card0_Group0_0(fd card0_fd, cmd card0_Group0_0_1_ret, arg ptr[inout, card0_Group0_0_struct_1]) 
+resource card0_Group1_0_1_ret[int32]
+card0_Group1_0_1_struct_1 {
+    card0_Group1_0_1_const_2  const[1, int8]
+    card0_Group1_0_1_const_3  const[100, int8]
+    card0_Group1_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$card0_Group1_0_1(arg ptr[in, card0_Group1_0_1_struct_1], size const[4]) card0_Group1_0_1_ret
+card0_Group1_0_struct_1 {
+    card0_Group1_0_buffer_2  int64
+    card0_Group1_0_ptr_4  ptr[out, array[int8, 4096]]
+    card0_Group1_0_buffer_5  array[int8]
+} [packed]
+ioctl$card0_Group1_0(fd card0_fd, cmd card0_Group1_0_1_ret, arg ptr[inout, card0_Group1_0_struct_1]) 
+resource card0_Group1_1_1_ret[int32]
+card0_Group1_1_1_struct_1 {
+    card0_Group1_1_1_const_2  const[1, int8]
+    card0_Group1_1_1_const_3  const[100, int8]
+    card0_Group1_1_1_range_4  int16[0:49280]
+} [packed]
+syz_convert_to_int$card0_Group1_1_1(arg ptr[in, card0_Group1_1_1_struct_1], size const[4]) card0_Group1_1_1_ret
+card0_Group1_1_struct_1 {
+    card0_Group1_1_buffer_2  int64
+    card0_Group1_1_ptr_4  ptr[out, array[int8, 4096]]
+    card0_Group1_1_buffer_5  array[int8]
+} [packed]
+ioctl$card0_Group1_1(fd card0_fd, cmd card0_Group1_1_1_ret, arg ptr[inout, card0_Group1_1_struct_1]) 
+resource card0_Group1_2_1_ret[int32]
+card0_Group1_2_1_struct_1 {
+    card0_Group1_2_1_const_2  const[1, int8]
+    card0_Group1_2_1_const_3  const[100, int8]
+    card0_Group1_2_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$card0_Group1_2_1(arg ptr[in, card0_Group1_2_1_struct_1], size const[4]) card0_Group1_2_1_ret
+card0_Group1_2_struct_1 {
+    card0_Group1_2_range_2  int64[0:18446744069414584320]
+    card0_Group1_2_ptr_4  ptr[out, array[int8, 4096]]
+    card0_Group1_2_buffer_5  array[int8]
+} [packed]
+ioctl$card0_Group1_2(fd card0_fd, cmd card0_Group1_2_1_ret, arg ptr[inout, card0_Group1_2_struct_1]) 
+resource card0_Group2_0_1_ret[int32]
+card0_Group2_0_1_struct_1 {
+    card0_Group2_0_1_const_2  const[2, int8]
+    card0_Group2_0_1_const_3  const[100, int8]
+    card0_Group2_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$card0_Group2_0_1(arg ptr[in, card0_Group2_0_1_struct_1], size const[4]) card0_Group2_0_1_ret
+card0_Group2_0_struct_1 {
+    card0_Group2_0_resource_2  card0_connection_0
+    card0_Group2_0_buffer_3  array[int8]
+} [packed]
+ioctl$card0_Group2_0(fd card0_fd, cmd card0_Group2_0_1_ret, arg ptr[out, card0_Group2_0_struct_1]) 
+resource card0_Group5_0_1_ret[int32]
+card0_Group5_0_1_struct_1 {
+    card0_Group5_0_1_const_2  const[5, int8]
+    card0_Group5_0_1_const_3  const[100, int8]
+    card0_Group5_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$card0_Group5_0_1(arg ptr[in, card0_Group5_0_1_struct_1], size const[4]) card0_Group5_0_1_ret
+card0_Group5_0_struct_1 {
+    card0_Group5_0_const_2  const[0, int32]
+    card0_Group5_0_buffer_3  array[int8]
+} [packed]
+ioctl$card0_Group5_0(fd card0_fd, cmd card0_Group5_0_1_ret, arg ptr[inout, card0_Group5_0_struct_1]) 
+resource card0_Group6_0_1_ret[int32]
+card0_Group6_0_1_struct_1 {
+    card0_Group6_0_1_const_2  const[6, int8]
+    card0_Group6_0_1_const_3  const[100, int8]
+    card0_Group6_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$card0_Group6_0_1(arg ptr[in, card0_Group6_0_1_struct_1], size const[4]) card0_Group6_0_1_ret
+ioctl$card0_Group6_0(fd card0_fd, cmd card0_Group6_0_1_ret, arg ptr[out, array[int8, 4096]]) 
+resource card0_Group7_0_1_ret[int32]
+card0_Group7_0_1_struct_1 {
+    card0_Group7_0_1_const_2  const[7, int8]
+    card0_Group7_0_1_const_3  const[100, int8]
+    card0_Group7_0_1_range_4  int16[16384:65535]
+} [packed]
+syz_convert_to_int$card0_Group7_0_1(arg ptr[in, card0_Group7_0_1_struct_1], size const[4]) card0_Group7_0_1_ret
+card0_Group7_0_struct_1 {
+    card0_Group7_0_const_2  const[1, int8]
+    card0_Group7_0_const_3  const[0, int8]
+    card0_Group7_0_const_4  const[0, int8]
+    card0_Group7_0_const_5  const[0, int8]
+    card0_Group7_0_range_6  int32[0:4]
+    card0_Group7_0_const_7  const[1, int8]
+    card0_Group7_0_const_8  const[0, int8]
+    card0_Group7_0_const_9  const[0, int8]
+    card0_Group7_0_const_10  const[0, int8]
+    card0_Group7_0_const_11  const[0, int16]
+    card0_Group7_0_const_12  const[0, int8]
+    card0_Group7_0_buffer_13  int8
+    card0_Group7_0_buffer_14  array[int8]
+} [packed]
+ioctl$card0_Group7_0(fd card0_fd, cmd card0_Group7_0_1_ret, arg ptr[inout, card0_Group7_0_struct_1]) 
+resource card0_Group7_1_1_ret[int32]
+card0_Group7_1_1_struct_1 {
+    card0_Group7_1_1_const_2  const[7, int8]
+    card0_Group7_1_1_const_3  const[100, int8]
+    card0_Group7_1_1_range_4  int16[16400:65535]
+} [packed]
+syz_convert_to_int$card0_Group7_1_1(arg ptr[in, card0_Group7_1_1_struct_1], size const[4]) card0_Group7_1_1_ret
+card0_Group7_1_struct_1 {
+    card0_Group7_1_const_2  const[1, int8]
+    card0_Group7_1_const_3  const[0, int8]
+    card0_Group7_1_const_4  const[0, int8]
+    card0_Group7_1_const_5  const[0, int8]
+    card0_Group7_1_range_6  int32[0:4]
+    card0_Group7_1_const_7  const[255, int8]
+    card0_Group7_1_const_8  const[255, int8]
+    card0_Group7_1_const_9  const[255, int8]
+    card0_Group7_1_const_10  const[255, int8]
+    card0_Group7_1_buffer_11  array[int8]
+} [packed]
+ioctl$card0_Group7_1(fd card0_fd, cmd card0_Group7_1_1_ret, arg ptr[inout, card0_Group7_1_struct_1]) 
+resource card0_Group7_2_1_ret[int32]
+card0_Group7_2_1_struct_1 {
+    card0_Group7_2_1_const_2  const[7, int8]
+    card0_Group7_2_1_const_3  const[100, int8]
+    card0_Group7_2_1_range_4  int16[16384:65535]
+} [packed]
+syz_convert_to_int$card0_Group7_2_1(arg ptr[in, card0_Group7_2_1_struct_1], size const[4]) card0_Group7_2_1_ret
+card0_Group7_2_struct_1 {
+    card0_Group7_2_const_2  const[255, int8]
+    card0_Group7_2_const_3  const[255, int8]
+    card0_Group7_2_const_4  const[255, int8]
+    card0_Group7_2_const_5  const[255, int8]
+    card0_Group7_2_buffer_6  int32
+    card0_Group7_2_const_7  const[1, int8]
+    card0_Group7_2_const_8  const[0, int8]
+    card0_Group7_2_const_9  const[0, int8]
+    card0_Group7_2_const_10  const[0, int8]
+    card0_Group7_2_const_11  const[0, int16]
+    card0_Group7_2_const_12  const[0, int8]
+    card0_Group7_2_buffer_13  int8
+    card0_Group7_2_buffer_14  array[int8]
+} [packed]
+ioctl$card0_Group7_2(fd card0_fd, cmd card0_Group7_2_1_ret, arg ptr[inout, card0_Group7_2_struct_1]) 
+resource card0_Group7_3_1_ret[int32]
+card0_Group7_3_1_struct_1 {
+    card0_Group7_3_1_const_2  const[7, int8]
+    card0_Group7_3_1_const_3  const[100, int8]
+    card0_Group7_3_1_range_4  int16[16400:65535]
+} [packed]
+syz_convert_to_int$card0_Group7_3_1(arg ptr[in, card0_Group7_3_1_struct_1], size const[4]) card0_Group7_3_1_ret
+card0_Group7_3_struct_1 {
+    card0_Group7_3_const_2  const[255, int8]
+    card0_Group7_3_const_3  const[255, int8]
+    card0_Group7_3_const_4  const[255, int8]
+    card0_Group7_3_const_5  const[255, int8]
+    card0_Group7_3_buffer_6  int32
+    card0_Group7_3_const_7  const[255, int8]
+    card0_Group7_3_const_8  const[255, int8]
+    card0_Group7_3_const_9  const[255, int8]
+    card0_Group7_3_const_10  const[255, int8]
+    card0_Group7_3_buffer_11  array[int8]
+} [packed]
+ioctl$card0_Group7_3(fd card0_fd, cmd card0_Group7_3_1_ret, arg ptr[inout, card0_Group7_3_struct_1]) 
+resource card0_Group8_0_1_ret[int32]
+card0_Group8_0_1_struct_1 {
+    card0_Group8_0_1_const_2  const[8, int8]
+    card0_Group8_0_1_const_3  const[100, int8]
+    card0_Group8_0_1_range_4  int16[16384:65535]
+} [packed]
+syz_convert_to_int$card0_Group8_0_1(arg ptr[in, card0_Group8_0_1_struct_1], size const[4]) card0_Group8_0_1_ret
+ioctl$card0_Group8_0(fd card0_fd, cmd card0_Group8_0_1_ret, arg ptr[in, array[int8, 4096]]) 
+resource card0_Group8_1_1_ret[int32]
+card0_Group8_1_1_struct_1 {
+    card0_Group8_1_1_const_2  const[8, int8]
+    card0_Group8_1_1_const_3  const[100, int8]
+    card0_Group8_1_1_buffer_4  int8
+    card0_Group8_1_1_range_5  int8[0:191]
+} [packed]
+syz_convert_to_int$card0_Group8_1_1(arg ptr[in, card0_Group8_1_1_struct_1], size const[4]) card0_Group8_1_1_ret
+ioctl$card0_Group8_1(fd card0_fd, cmd card0_Group8_1_1_ret, arg ptr[in, array[int8, 4096]]) 
+resource card0_Groupa_0_1_ret[int32]
+card0_Groupa_0_1_struct_1 {
+    card0_Groupa_0_1_const_2  const[10, int8]
+    card0_Groupa_0_1_const_3  const[100, int8]
+    card0_Groupa_0_1_buffer_4  int8
+    card0_Groupa_0_1_range_5  int8[128:191]
+} [packed]
+syz_convert_to_int$card0_Groupa_0_1(arg ptr[in, card0_Groupa_0_1_struct_1], size const[4]) card0_Groupa_0_1_ret
+ioctl$card0_Groupa_0(fd card0_fd, cmd card0_Groupa_0_1_ret, arg ptr[in, array[int8, 4096]]) 
+resource card0_Groupa_1_1_ret[int32]
+card0_Groupa_1_1_struct_1 {
+    card0_Groupa_1_1_const_2  const[10, int8]
+    card0_Groupa_1_1_const_3  const[100, int8]
+    card0_Groupa_1_1_range_4  int16[16384:65535]
+} [packed]
+syz_convert_to_int$card0_Groupa_1_1(arg ptr[in, card0_Groupa_1_1_struct_1], size const[4]) card0_Groupa_1_1_ret
+card0_Groupa_1_struct_1 {
+    card0_Groupa_1_buffer_2  int32
+    card0_Groupa_1_buffer_3  array[int8]
+} [packed]
+ioctl$card0_Groupa_1(fd card0_fd, cmd card0_Groupa_1_1_ret, arg ptr[in, card0_Groupa_1_struct_1]) 
+resource card0_Groupa_2_1_ret[int32]
+card0_Groupa_2_1_flag_5 = 0, 1, 2, 3, 128, 5, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 6, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63
+card0_Groupa_2_1_struct_1 {
+    card0_Groupa_2_1_const_2  const[10, int8]
+    card0_Groupa_2_1_const_3  const[100, int8]
+    card0_Groupa_2_1_buffer_4  int8
+    card0_Groupa_2_1_flag_5  flags[card0_Groupa_2_1_flag_5, int8]
+} [packed]
+syz_convert_to_int$card0_Groupa_2_1(arg ptr[in, card0_Groupa_2_1_struct_1], size const[4]) card0_Groupa_2_1_ret
+ioctl$card0_Groupa_2(fd card0_fd, cmd card0_Groupa_2_1_ret, arg ptr[in, array[int8, 4096]]) 
+resource card0_Groupc_0_1_ret[int32]
+card0_Groupc_0_1_struct_1 {
+    card0_Groupc_0_1_const_2  const[12, int8]
+    card0_Groupc_0_1_const_3  const[100, int8]
+    card0_Groupc_0_1_range_4  int16[16513:65535]
+} [packed]
+syz_convert_to_int$card0_Groupc_0_1(arg ptr[in, card0_Groupc_0_1_struct_1], size const[4]) card0_Groupc_0_1_ret
+card0_Groupc_0_flag_2 = 19, 20, 5, 6
+card0_Groupc_0_struct_1 {
+    card0_Groupc_0_flag_2  flags[card0_Groupc_0_flag_2, int8]
+    card0_Groupc_0_const_3  const[0, int8]
+    card0_Groupc_0_const_4  const[0, int8]
+    card0_Groupc_0_const_5  const[0, int8]
+    card0_Groupc_0_const_6  const[0, int8]
+    card0_Groupc_0_const_7  const[0, int8]
+    card0_Groupc_0_const_8  const[0, int8]
+    card0_Groupc_0_const_9  const[0, int8]
+    card0_Groupc_0_buffer_10  array[int8]
+} [packed]
+ioctl$card0_Groupc_0(fd card0_fd, cmd card0_Groupc_0_1_ret, arg ptr[inout, card0_Groupc_0_struct_1]) 
+resource card0_Groupc_1_1_ret[int32]
+card0_Groupc_1_1_struct_1 {
+    card0_Groupc_1_1_const_2  const[12, int8]
+    card0_Groupc_1_1_const_3  const[100, int8]
+    card0_Groupc_1_1_range_4  int16[16384:65535]
+} [packed]
+syz_convert_to_int$card0_Groupc_1_1(arg ptr[in, card0_Groupc_1_1_struct_1], size const[4]) card0_Groupc_1_1_ret
+card0_Groupc_1_struct_1 {
+    card0_Groupc_1_const_2  const[19, int8]
+    card0_Groupc_1_const_3  const[0, int8]
+    card0_Groupc_1_const_4  const[0, int8]
+    card0_Groupc_1_const_5  const[0, int8]
+    card0_Groupc_1_const_6  const[0, int8]
+    card0_Groupc_1_const_7  const[0, int8]
+    card0_Groupc_1_const_8  const[0, int8]
+    card0_Groupc_1_const_9  const[0, int8]
+    card0_Groupc_1_buffer_10  array[int8]
+} [packed]
+ioctl$card0_Groupc_1(fd card0_fd, cmd card0_Groupc_1_1_ret, arg ptr[inout, card0_Groupc_1_struct_1]) 
+resource card0_Groupc_2_1_ret[int32]
+card0_Groupc_2_1_struct_1 {
+    card0_Groupc_2_1_const_2  const[12, int8]
+    card0_Groupc_2_1_const_3  const[100, int8]
+    card0_Groupc_2_1_range_4  int16[16384:49280]
+} [packed]
+syz_convert_to_int$card0_Groupc_2_1(arg ptr[in, card0_Groupc_2_1_struct_1], size const[4]) card0_Groupc_2_1_ret
+card0_Groupc_2_struct_1 {
+    card0_Groupc_2_const_2  const[6, int8]
+    card0_Groupc_2_const_3  const[0, int8]
+    card0_Groupc_2_const_4  const[0, int8]
+    card0_Groupc_2_const_5  const[0, int8]
+    card0_Groupc_2_const_6  const[0, int8]
+    card0_Groupc_2_const_7  const[0, int8]
+    card0_Groupc_2_const_8  const[0, int8]
+    card0_Groupc_2_const_9  const[0, int8]
+    card0_Groupc_2_buffer_10  array[int8]
+} [packed]
+ioctl$card0_Groupc_2(fd card0_fd, cmd card0_Groupc_2_1_ret, arg ptr[inout, card0_Groupc_2_struct_1]) 
+resource card0_Groupc_3_1_ret[int32]
+card0_Groupc_3_1_struct_1 {
+    card0_Groupc_3_1_const_2  const[12, int8]
+    card0_Groupc_3_1_const_3  const[100, int8]
+    card0_Groupc_3_1_range_4  int16[16400:49280]
+} [packed]
+syz_convert_to_int$card0_Groupc_3_1(arg ptr[in, card0_Groupc_3_1_struct_1], size const[4]) card0_Groupc_3_1_ret
+card0_Groupc_3_flag_2 = 20, 5, 6
+card0_Groupc_3_struct_1 {
+    card0_Groupc_3_flag_2  flags[card0_Groupc_3_flag_2, int8]
+    card0_Groupc_3_const_3  const[0, int8]
+    card0_Groupc_3_const_4  const[0, int8]
+    card0_Groupc_3_const_5  const[0, int8]
+    card0_Groupc_3_const_6  const[0, int8]
+    card0_Groupc_3_const_7  const[0, int8]
+    card0_Groupc_3_const_8  const[0, int8]
+    card0_Groupc_3_const_9  const[0, int8]
+    card0_Groupc_3_buffer_10  array[int8]
+} [packed]
+ioctl$card0_Groupc_3(fd card0_fd, cmd card0_Groupc_3_1_ret, arg ptr[inout, card0_Groupc_3_struct_1]) 
+resource card0_Groupc_4_1_ret[int32]
+card0_Groupc_4_1_struct_1 {
+    card0_Groupc_4_1_const_2  const[12, int8]
+    card0_Groupc_4_1_const_3  const[100, int8]
+    card0_Groupc_4_1_range_4  int16[16400:32767]
+} [packed]
+syz_convert_to_int$card0_Groupc_4_1(arg ptr[in, card0_Groupc_4_1_struct_1], size const[4]) card0_Groupc_4_1_ret
+card0_Groupc_4_flag_2 = 20, 5
+card0_Groupc_4_struct_1 {
+    card0_Groupc_4_flag_2  flags[card0_Groupc_4_flag_2, int8]
+    card0_Groupc_4_const_3  const[0, int8]
+    card0_Groupc_4_const_4  const[0, int8]
+    card0_Groupc_4_const_5  const[0, int8]
+    card0_Groupc_4_const_6  const[0, int8]
+    card0_Groupc_4_const_7  const[0, int8]
+    card0_Groupc_4_const_8  const[0, int8]
+    card0_Groupc_4_const_9  const[0, int8]
+    card0_Groupc_4_buffer_10  array[int8]
+} [packed]
+ioctl$card0_Groupc_4(fd card0_fd, cmd card0_Groupc_4_1_ret, arg ptr[inout, card0_Groupc_4_struct_1]) 
+resource card0_Group11_0_1_ret[int32]
+card0_Group11_0_1_struct_1 {
+    card0_Group11_0_1_const_2  const[17, int8]
+    card0_Group11_0_1_const_3  const[100, int8]
+    card0_Group11_0_1_range_4  int16[16384:65535]
+} [packed]
+syz_convert_to_int$card0_Group11_0_1(arg ptr[in, card0_Group11_0_1_struct_1], size const[4]) card0_Group11_0_1_ret
+card0_Group11_0_struct_1 {
+    card0_Group11_0_resource_2  card0_connection_0
+    card0_Group11_0_buffer_3  array[int8]
+} [packed]
+ioctl$card0_Group11_0(fd card0_fd, cmd card0_Group11_0_1_ret, arg ptr[in, card0_Group11_0_struct_1]) 
+resource card0_Group12_0_1_ret[int32]
+card0_Group12_0_1_struct_1 {
+    card0_Group12_0_1_const_2  const[18, int8]
+    card0_Group12_0_1_const_3  const[100, int8]
+    card0_Group12_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$card0_Group12_0_1(arg ptr[in, card0_Group12_0_1_struct_1], size const[4]) card0_Group12_0_1_ret
+ioctl$card0_Group12_0(fd card0_fd, cmd card0_Group12_0_1_ret, arg ptr[inout, array[int8, 4096]]) 
+resource card0_Group13_0_1_ret[int32]
+card0_Group13_0_1_struct_1 {
+    card0_Group13_0_1_const_2  const[19, int8]
+    card0_Group13_0_1_const_3  const[100, int8]
+    card0_Group13_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$card0_Group13_0_1(arg ptr[in, card0_Group13_0_1_struct_1], size const[4]) card0_Group13_0_1_ret
+ioctl$card0_Group13_0(fd card0_fd, cmd card0_Group13_0_1_ret, arg ptr[inout, array[int8, 4096]]) 
+resource card0_Group1e_0_1_ret[int32]
+card0_Group1e_0_1_struct_1 {
+    card0_Group1e_0_1_const_2  const[30, int8]
+    card0_Group1e_0_1_const_3  const[100, int8]
+    card0_Group1e_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$card0_Group1e_0_1(arg ptr[in, card0_Group1e_0_1_struct_1], size const[4]) card0_Group1e_0_1_ret
+ioctl$card0_Group1e_0(fd card0_fd, cmd card0_Group1e_0_1_ret, arg ptr[in, const[0, int32]]) 
+resource card0_Group1f_0_1_ret[int32]
+card0_Group1f_0_1_struct_1 {
+    card0_Group1f_0_1_const_2  const[31, int8]
+    card0_Group1f_0_1_const_3  const[100, int8]
+    card0_Group1f_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$card0_Group1f_0_1(arg ptr[in, card0_Group1f_0_1_struct_1], size const[4]) card0_Group1f_0_1_ret
+ioctl$card0_Group1f_0(fd card0_fd, cmd card0_Group1f_0_1_ret, arg ptr[in, const[0, int32]]) 
+resource card0_Group27_0_1_ret[int32]
+card0_Group27_0_1_struct_1 {
+    card0_Group27_0_1_const_2  const[39, int8]
+    card0_Group27_0_1_const_3  const[100, int8]
+    card0_Group27_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$card0_Group27_0_1(arg ptr[in, card0_Group27_0_1_struct_1], size const[4]) card0_Group27_0_1_ret
+ioctl$card0_Group27_0(fd card0_fd, cmd card0_Group27_0_1_ret, arg ptr[inout, array[int8, 4096]]) 
+resource card0_Group28_0_1_ret[int32]
+card0_Group28_0_1_struct_1 {
+    card0_Group28_0_1_const_2  const[40, int8]
+    card0_Group28_0_1_const_3  const[100, int8]
+    card0_Group28_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$card0_Group28_0_1(arg ptr[in, card0_Group28_0_1_struct_1], size const[4]) card0_Group28_0_1_ret
+ioctl$card0_Group28_0(fd card0_fd, cmd card0_Group28_0_1_ret, arg ptr[inout, array[int8, 4096]]) 
+resource card0_Group2c_0_1_ret[int32]
+card0_Group2c_0_1_struct_1 {
+    card0_Group2c_0_1_const_2  const[44, int8]
+    card0_Group2c_0_1_const_3  const[100, int8]
+    card0_Group2c_0_1_range_4  int16[16384:65535]
+} [packed]
+syz_convert_to_int$card0_Group2c_0_1(arg ptr[in, card0_Group2c_0_1_struct_1], size const[4]) card0_Group2c_0_1_ret
+ioctl$card0_Group2c_0(fd card0_fd, cmd card0_Group2c_0_1_ret, arg ptr[in, array[int8, 4096]]) 
+resource card0_Group2c_1_1_ret[int32]
+card0_Group2c_1_1_struct_1 {
+    card0_Group2c_1_1_const_2  const[44, int8]
+    card0_Group2c_1_1_const_3  const[100, int8]
+    card0_Group2c_1_1_buffer_4  int8
+    card0_Group2c_1_1_range_5  int8[0:191]
+} [packed]
+syz_convert_to_int$card0_Group2c_1_1(arg ptr[in, card0_Group2c_1_1_struct_1], size const[4]) card0_Group2c_1_1_ret
+ioctl$card0_Group2c_1(fd card0_fd, cmd card0_Group2c_1_1_ret, arg ptr[in, array[int8, 4096]]) 
+resource card0_Group2d_0_1_ret[int32]
+card0_Group2d_0_1_struct_1 {
+    card0_Group2d_0_1_const_2  const[45, int8]
+    card0_Group2d_0_1_const_3  const[100, int8]
+    card0_Group2d_0_1_range_4  int16[16384:65535]
+} [packed]
+syz_convert_to_int$card0_Group2d_0_1(arg ptr[in, card0_Group2d_0_1_struct_1], size const[4]) card0_Group2d_0_1_ret
+card0_Group2d_0_flag_3 = 0, 2
+card0_Group2d_0_flag_5 = 8, 0
+card0_Group2d_0_struct_1 {
+    card0_Group2d_0_buffer_2  int32
+    card0_Group2d_0_flag_3  flags[card0_Group2d_0_flag_3, int8]
+    card0_Group2d_0_const_4  const[0, int8]
+    card0_Group2d_0_flag_5  flags[card0_Group2d_0_flag_5, int8]
+    card0_Group2d_0_const_6  const[0, int8]
+    card0_Group2d_0_buffer_7  array[int8]
+} [packed]
+ioctl$card0_Group2d_0(fd card0_fd, cmd card0_Group2d_0_1_ret, arg ptr[in, card0_Group2d_0_struct_1]) 
+resource card0_Group2d_1_1_ret[int32]
+card0_Group2d_1_1_struct_1 {
+    card0_Group2d_1_1_const_2  const[45, int8]
+    card0_Group2d_1_1_const_3  const[100, int8]
+    card0_Group2d_1_1_buffer_4  int8
+    card0_Group2d_1_1_range_5  int8[128:191]
+} [packed]
+syz_convert_to_int$card0_Group2d_1_1(arg ptr[in, card0_Group2d_1_1_struct_1], size const[4]) card0_Group2d_1_1_ret
+ioctl$card0_Group2d_1(fd card0_fd, cmd card0_Group2d_1_1_ret, arg ptr[in, array[int8, 4096]]) 
+resource card0_Group2d_2_1_ret[int32]
+card0_Group2d_2_1_struct_1 {
+    card0_Group2d_2_1_const_2  const[45, int8]
+    card0_Group2d_2_1_const_3  const[100, int8]
+    card0_Group2d_2_1_range_4  int16[16384:49163]
+} [packed]
+syz_convert_to_int$card0_Group2d_2_1(arg ptr[in, card0_Group2d_2_1_struct_1], size const[4]) card0_Group2d_2_1_ret
+card0_Group2d_2_struct_1 {
+    card0_Group2d_2_buffer_2  int32
+    card0_Group2d_2_buffer_3  int8
+    card0_Group2d_2_buffer_4  int8
+    card0_Group2d_2_buffer_5  int8
+    card0_Group2d_2_buffer_6  int8
+    card0_Group2d_2_buffer_7  array[int8]
+} [packed]
+ioctl$card0_Group2d_2(fd card0_fd, cmd card0_Group2d_2_1_ret, arg ptr[in, card0_Group2d_2_struct_1]) 
+resource card0_Group2d_3_1_ret[int32]
+card0_Group2d_3_1_flag_5 = 0, 1, 2, 3, 128, 5, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 6, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63
+card0_Group2d_3_1_struct_1 {
+    card0_Group2d_3_1_const_2  const[45, int8]
+    card0_Group2d_3_1_const_3  const[100, int8]
+    card0_Group2d_3_1_buffer_4  int8
+    card0_Group2d_3_1_flag_5  flags[card0_Group2d_3_1_flag_5, int8]
+} [packed]
+syz_convert_to_int$card0_Group2d_3_1(arg ptr[in, card0_Group2d_3_1_struct_1], size const[4]) card0_Group2d_3_1_ret
+ioctl$card0_Group2d_3(fd card0_fd, cmd card0_Group2d_3_1_ret, arg ptr[in, array[int8, 4096]]) 
+resource card0_Group2e_0_1_ret[int32]
+card0_Group2e_0_1_struct_1 {
+    card0_Group2e_0_1_const_2  const[46, int8]
+    card0_Group2e_0_1_const_3  const[100, int8]
+    card0_Group2e_0_1_buffer_4  int8
+    card0_Group2e_0_1_range_5  int8[128:191]
+} [packed]
+syz_convert_to_int$card0_Group2e_0_1(arg ptr[in, card0_Group2e_0_1_struct_1], size const[4]) card0_Group2e_0_1_ret
+ioctl$card0_Group2e_0(fd card0_fd, cmd card0_Group2e_0_1_ret, arg ptr[inout, array[int8, 4096]]) 
+resource card0_Group2e_1_1_ret[int32]
+card0_Group2e_1_1_flag_5 = 128, 1, 2, 3, 0, 5, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 6, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63
+card0_Group2e_1_1_struct_1 {
+    card0_Group2e_1_1_const_2  const[46, int8]
+    card0_Group2e_1_1_const_3  const[100, int8]
+    card0_Group2e_1_1_buffer_4  int8
+    card0_Group2e_1_1_flag_5  flags[card0_Group2e_1_1_flag_5, int8]
+} [packed]
+syz_convert_to_int$card0_Group2e_1_1(arg ptr[in, card0_Group2e_1_1_struct_1], size const[4]) card0_Group2e_1_1_ret
+ioctl$card0_Group2e_1(fd card0_fd, cmd card0_Group2e_1_1_ret, arg ptr[inout, array[int8, 4096]]) 
+resource card0_Group2e_2_1_ret[int32]
+card0_Group2e_2_1_struct_1 {
+    card0_Group2e_2_1_const_2  const[46, int8]
+    card0_Group2e_2_1_const_3  const[100, int8]
+    card0_Group2e_2_1_range_4  int16[16384:65535]
+} [packed]
+syz_convert_to_int$card0_Group2e_2_1(arg ptr[in, card0_Group2e_2_1_struct_1], size const[4]) card0_Group2e_2_1_ret
+card0_Group2e_2_struct_1 {
+    card0_Group2e_2_buffer_2  int64
+    card0_Group2e_2_known_3  fd
+    card0_Group2e_2_buffer_4  array[int8]
+} [packed]
+ioctl$card0_Group2e_2(fd card0_fd, cmd card0_Group2e_2_1_ret, arg ptr[inout, card0_Group2e_2_struct_1]) 
+resource card0_Group3a_0_1_ret[int32]
+card0_Group3a_0_1_struct_1 {
+    card0_Group3a_0_1_const_2  const[58, int8]
+    card0_Group3a_0_1_const_3  const[100, int8]
+    card0_Group3a_0_1_buffer_4  int8
+    card0_Group3a_0_1_range_5  int8[128:191]
+} [packed]
+syz_convert_to_int$card0_Group3a_0_1(arg ptr[in, card0_Group3a_0_1_struct_1], size const[4]) card0_Group3a_0_1_ret
+ioctl$card0_Group3a_0(fd card0_fd, cmd card0_Group3a_0_1_ret, arg ptr[inout, array[int8, 4096]]) 
+resource card0_Group3a_1_1_ret[int32]
+card0_Group3a_1_1_struct_1 {
+    card0_Group3a_1_1_const_2  const[58, int8]
+    card0_Group3a_1_1_const_3  const[100, int8]
+    card0_Group3a_1_1_range_4  int16[16384:65535]
+} [packed]
+syz_convert_to_int$card0_Group3a_1_1(arg ptr[in, card0_Group3a_1_1_struct_1], size const[4]) card0_Group3a_1_1_ret
+card0_Group3a_1_struct_1 {
+    card0_Group3a_1_range_2  int32[0:872415295]
+    card0_Group3a_1_buffer_3  int8
+    card0_Group3a_1_buffer_4  int8
+    card0_Group3a_1_buffer_5  int8
+    card0_Group3a_1_buffer_6  int8
+    card0_Group3a_1_buffer_7  array[int8, 4080]
+} [packed]
+ioctl$card0_Group3a_1(fd card0_fd, cmd card0_Group3a_1_1_ret, arg ptr[inout, card0_Group3a_1_struct_1]) 
+resource card0_Group3a_2_1_ret[int32]
+card0_Group3a_2_1_flag_5 = 128, 1, 2, 3, 0, 5, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 6, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63
+card0_Group3a_2_1_struct_1 {
+    card0_Group3a_2_1_const_2  const[58, int8]
+    card0_Group3a_2_1_const_3  const[100, int8]
+    card0_Group3a_2_1_buffer_4  int8
+    card0_Group3a_2_1_flag_5  flags[card0_Group3a_2_1_flag_5, int8]
+} [packed]
+syz_convert_to_int$card0_Group3a_2_1(arg ptr[in, card0_Group3a_2_1_struct_1], size const[4]) card0_Group3a_2_1_ret
+ioctl$card0_Group3a_2(fd card0_fd, cmd card0_Group3a_2_1_ret, arg ptr[inout, array[int8, 4096]]) 
+resource card0_Group3f_0_1_ret[int32]
+card0_Group3f_0_1_struct_1 {
+    card0_Group3f_0_1_const_2  const[63, int8]
+    card0_Group3f_0_1_const_3  const[100, int8]
+    card0_Group3f_0_1_range_4  int16[16384:65535]
+} [packed]
+syz_convert_to_int$card0_Group3f_0_1(arg ptr[in, card0_Group3f_0_1_struct_1], size const[4]) card0_Group3f_0_1_ret
+ioctl$card0_Group3f_0(fd card0_fd, cmd card0_Group3f_0_1_ret, arg ptr[in, array[int8, 4096]]) 
+resource card0_Group3f_1_1_ret[int32]
+card0_Group3f_1_1_struct_1 {
+    card0_Group3f_1_1_const_2  const[63, int8]
+    card0_Group3f_1_1_const_3  const[100, int8]
+    card0_Group3f_1_1_buffer_4  int8
+    card0_Group3f_1_1_range_5  int8[0:191]
+} [packed]
+syz_convert_to_int$card0_Group3f_1_1(arg ptr[in, card0_Group3f_1_1_struct_1], size const[4]) card0_Group3f_1_1_ret
+ioctl$card0_Group3f_1(fd card0_fd, cmd card0_Group3f_1_1_ret, arg ptr[in, array[int8, 4096]]) 
+resource card0_Groupa8_0_1_ret[int32]
+card0_Groupa8_0_1_struct_1 {
+    card0_Groupa8_0_1_const_2  const[168, int8]
+    card0_Groupa8_0_1_const_3  const[100, int8]
+    card0_Groupa8_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$card0_Groupa8_0_1(arg ptr[in, card0_Groupa8_0_1_struct_1], size const[4]) card0_Groupa8_0_1_ret
+ioctl$card0_Groupa8_0(fd card0_fd, cmd card0_Groupa8_0_1_ret, arg ptr[inout, array[int8, 4096]]) 
+resource card0_Groupa9_0_1_ret[int32]
+card0_Groupa9_0_1_struct_1 {
+    card0_Groupa9_0_1_const_2  const[169, int8]
+    card0_Groupa9_0_1_const_3  const[100, int8]
+    card0_Groupa9_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$card0_Groupa9_0_1(arg ptr[in, card0_Groupa9_0_1_struct_1], size const[4]) card0_Groupa9_0_1_ret
+ioctl$card0_Groupa9_0(fd card0_fd, cmd card0_Groupa9_0_1_ret, arg ptr[inout, array[int8, 4096]]) 
+resource card0_Groupb2_0_1_ret[int32]
+card0_Groupb2_0_1_struct_1 {
+    card0_Groupb2_0_1_const_2  const[178, int8]
+    card0_Groupb2_0_1_const_3  const[100, int8]
+    card0_Groupb2_0_1_range_4  int16[16416:65535]
+} [packed]
+syz_convert_to_int$card0_Groupb2_0_1(arg ptr[in, card0_Groupb2_0_1_struct_1], size const[4]) card0_Groupb2_0_1_ret
+card0_Groupb2_0_struct_1 {
+    card0_Groupb2_0_range_2  int32[1:4294967294]
+    card0_Groupb2_0_range_3  int32[1:4294967291]
+    card0_Groupb2_0_range_4  int32[1:4294967287]
+    card0_Groupb2_0_buffer_5  array[int8]
+} [packed]
+ioctl$card0_Groupb2_0(fd card0_fd, cmd card0_Groupb2_0_1_ret, arg ptr[inout, card0_Groupb2_0_struct_1]) 
+resource card0_Groupb3_0_1_ret[int32]
+card0_Groupb3_0_1_struct_1 {
+    card0_Groupb3_0_1_const_2  const[179, int8]
+    card0_Groupb3_0_1_const_3  const[100, int8]
+    card0_Groupb3_0_1_range_4  int16[16384:65535]
+} [packed]
+syz_convert_to_int$card0_Groupb3_0_1(arg ptr[in, card0_Groupb3_0_1_struct_1], size const[4]) card0_Groupb3_0_1_ret
+card0_Groupb3_0_struct_1 {
+    card0_Groupb3_0_buffer_2  int32
+    card0_Groupb3_0_buffer_3  array[int8]
+} [packed]
+ioctl$card0_Groupb3_0(fd card0_fd, cmd card0_Groupb3_0_1_ret, arg ptr[in, card0_Groupb3_0_struct_1]) 
+resource card0_Groupb3_1_1_ret[int32]
+card0_Groupb3_1_1_struct_1 {
+    card0_Groupb3_1_1_const_2  const[179, int8]
+    card0_Groupb3_1_1_const_3  const[100, int8]
+    card0_Groupb3_1_1_buffer_4  int8
+    card0_Groupb3_1_1_range_5  int8[128:191]
+} [packed]
+syz_convert_to_int$card0_Groupb3_1_1(arg ptr[in, card0_Groupb3_1_1_struct_1], size const[4]) card0_Groupb3_1_1_ret
+ioctl$card0_Groupb3_1(fd card0_fd, cmd card0_Groupb3_1_1_ret, arg ptr[in, array[int8, 4096]]) 
+resource card0_Groupb3_2_1_ret[int32]
+card0_Groupb3_2_1_flag_5 = 128, 1, 2, 3, 0, 5, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 6, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63
+card0_Groupb3_2_1_struct_1 {
+    card0_Groupb3_2_1_const_2  const[179, int8]
+    card0_Groupb3_2_1_const_3  const[100, int8]
+    card0_Groupb3_2_1_buffer_4  int8
+    card0_Groupb3_2_1_flag_5  flags[card0_Groupb3_2_1_flag_5, int8]
+} [packed]
+syz_convert_to_int$card0_Groupb3_2_1(arg ptr[in, card0_Groupb3_2_1_struct_1], size const[4]) card0_Groupb3_2_1_ret
+ioctl$card0_Groupb3_2(fd card0_fd, cmd card0_Groupb3_2_1_ret, arg ptr[in, array[int8, 4096]]) 
+resource card0_Group41_0_1_ret[int32]
+card0_Group41_0_1_struct_1 {
+    card0_Group41_0_1_const_2  const[65, int8]
+    card0_Group41_0_1_const_3  const[100, int8]
+    card0_Group41_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$card0_Group41_0_1(arg ptr[in, card0_Group41_0_1_struct_1], size const[4]) card0_Group41_0_1_ret
+card0_Group41_0_struct_1 {
+    card0_Group41_0_buffer_2  int32
+    card0_Group41_0_range_3  int8[0:1]
+    card0_Group41_0_const_4  const[0, int8]
+    card0_Group41_0_const_5  const[0, int8]
+    card0_Group41_0_const_6  const[0, int8]
+    card0_Group41_0_buffer_7  int32
+    card0_Group41_0_const_8  const[0, int8]
+    card0_Group41_0_const_9  const[0, int8]
+    card0_Group41_0_const_10  const[0, int8]
+    card0_Group41_0_const_11  const[0, int8]
+    card0_Group41_0_buffer_12  array[int8]
+} [packed]
+ioctl$card0_Group41_0(fd card0_fd, cmd card0_Group41_0_1_ret, arg ptr[inout, card0_Group41_0_struct_1]) 
+resource card0_Group41_1_1_ret[int32]
+card0_Group41_1_1_struct_1 {
+    card0_Group41_1_1_const_2  const[65, int8]
+    card0_Group41_1_1_const_3  const[100, int8]
+    card0_Group41_1_1_range_4  int16[16384:65535]
+} [packed]
+syz_convert_to_int$card0_Group41_1_1(arg ptr[in, card0_Group41_1_1_struct_1], size const[4]) card0_Group41_1_1_ret
+card0_Group41_1_struct_1 {
+    card0_Group41_1_buffer_2  int32
+    card0_Group41_1_range_3  int8[0:1]
+    card0_Group41_1_const_4  const[0, int8]
+    card0_Group41_1_const_5  const[0, int8]
+    card0_Group41_1_const_6  const[0, int8]
+    card0_Group41_1_buffer_7  int32
+    card0_Group41_1_buffer_8  int8
+    card0_Group41_1_buffer_9  int8
+    card0_Group41_1_buffer_10  int8
+    card0_Group41_1_buffer_11  int8
+    card0_Group41_1_buffer_12  array[int8]
+} [packed]
+ioctl$card0_Group41_1(fd card0_fd, cmd card0_Group41_1_1_ret, arg ptr[inout, card0_Group41_1_struct_1]) 
+resource card0_Group41_2_1_ret[int32]
+card0_Group41_2_1_struct_1 {
+    card0_Group41_2_1_const_2  const[65, int8]
+    card0_Group41_2_1_const_3  const[100, int8]
+    card0_Group41_2_1_range_4  int16[16384:65535]
+} [packed]
+syz_convert_to_int$card0_Group41_2_1(arg ptr[in, card0_Group41_2_1_struct_1], size const[4]) card0_Group41_2_1_ret
+card0_Group41_2_struct_1 {
+    card0_Group41_2_buffer_2  int32
+    card0_Group41_2_range_3  int32[0:1]
+    card0_Group41_2_buffer_4  int32
+    card0_Group41_2_buffer_5  int8
+    card0_Group41_2_buffer_6  int8
+    card0_Group41_2_buffer_7  int8
+    card0_Group41_2_buffer_8  int8
+    card0_Group41_2_buffer_9  array[int8]
+} [packed]
+ioctl$card0_Group41_2(fd card0_fd, cmd card0_Group41_2_1_ret, arg ptr[inout, card0_Group41_2_struct_1]) 
+resource card0_Group42_0_1_ret[int32]
+card0_Group42_0_1_struct_1 {
+    card0_Group42_0_1_const_2  const[66, int8]
+    card0_Group42_0_1_const_3  const[100, int8]
+    card0_Group42_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$card0_Group42_0_1(arg ptr[in, card0_Group42_0_1_struct_1], size const[4]) card0_Group42_0_1_ret
+ioctl$card0_Group42_0(fd card0_fd, cmd card0_Group42_0_1_ret, arg ptr[inout, array[int8, 4096]]) 
+resource card0_Group42_1_1_ret[int32]
+card0_Group42_1_1_struct_1 {
+    card0_Group42_1_1_const_2  const[66, int8]
+    card0_Group42_1_1_const_3  const[100, int8]
+    card0_Group42_1_1_range_4  int16[16384:65535]
+} [packed]
+syz_convert_to_int$card0_Group42_1_1(arg ptr[in, card0_Group42_1_1_struct_1], size const[4]) card0_Group42_1_1_ret
+card0_Group42_1_struct_1 {
+    card0_Group42_1_buffer_2  int32
+    card0_Group42_1_const_3  const[0, int8]
+    card0_Group42_1_const_4  const[0, int8]
+    card0_Group42_1_const_5  const[0, int8]
+    card0_Group42_1_const_6  const[0, int8]
+    card0_Group42_1_buffer_7  array[int8]
+} [packed]
+ioctl$card0_Group42_1(fd card0_fd, cmd card0_Group42_1_1_ret, arg ptr[inout, card0_Group42_1_struct_1]) 

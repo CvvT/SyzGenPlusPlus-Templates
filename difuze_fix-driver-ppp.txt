@@ -1,0 +1,47 @@
+
+resource _ppp_device_fops_fd[fd]
+
+openat$_ppp_device_fops_syzgen_1(fd const[AT_FDCWD], file ptr[in, string["/dev/ppp"]], flags flags[open_flags], mode const[0]) _ppp_device_fops_fd
+ioctl$_ppp_device_fops_40047435_0_2(fd _ppp_device_fops_fd, cmd const[1074033717], arg intptr) 
+ioctl$_ppp_device_fops_40047438_0_3(fd _ppp_device_fops_fd, cmd const[1074033720], arg intptr) 
+ioctl$_ppp_device_fops_4004743a_0_4(fd _ppp_device_fops_fd, cmd const[1074033722], arg intptr) 
+ioctl$_ppp_device_fops_4004743b_0_5(fd _ppp_device_fops_fd, cmd const[1074033723], arg intptr) 
+ioctl$_ppp_device_fops_4004743c_0_6(fd _ppp_device_fops_fd, cmd const[1074033724], arg intptr) 
+ioctl$_ppp_device_fops_4004743d_0_7(fd _ppp_device_fops_fd, cmd const[1074033725], arg intptr) 
+ioctl$_ppp_device_fops_40047440_0_8(fd _ppp_device_fops_fd, cmd const[1074033728], arg intptr) 
+ioctl$_ppp_device_fops_40047451_0_9(fd _ppp_device_fops_fd, cmd const[1074033745], arg intptr) 
+ioctl$_ppp_device_fops_40047452_0_10(fd _ppp_device_fops_fd, cmd const[1074033746], arg intptr) 
+ioctl$_ppp_device_fops_40047459_0_11(fd _ppp_device_fops_fd, cmd const[1074033753], arg intptr) 
+ioctl$_ppp_device_fops_4008744b_0_12(fd _ppp_device_fops_fd, cmd const[1074295883], arg ptr[in, util_est_ppp_device_fops]) 
+ioctl$_ppp_device_fops_40107446_0_13(fd _ppp_device_fops_fd, cmd const[1074820166], arg ptr[in, sock_fprog_kern_ppp_device_fops]) 
+ioctl$_ppp_device_fops_40107447_0_14(fd _ppp_device_fops_fd, cmd const[1074820167], arg ptr[in, sock_fprog_kern_ppp_device_fops]) 
+ioctl$_ppp_device_fops_4010744d_0_15(fd _ppp_device_fops_fd, cmd const[1074820173], arg ptr[in, ppp_option_data_ppp_device_fops]) 
+ioctl$_ppp_device_fops_80047441_0_16(fd _ppp_device_fops_fd, cmd const[2147775553], arg intptr) 
+ioctl$_ppp_device_fops_80047456_0_17(fd _ppp_device_fops_fd, cmd const[2147775574], arg intptr) 
+ioctl$_ppp_device_fops_8004745a_0_18(fd _ppp_device_fops_fd, cmd const[2147775578], arg intptr) 
+ioctl$_ppp_device_fops_8008743f_0_19(fd _ppp_device_fops_fd, cmd const[2148037695], arg intptr) 
+ioctl$_ppp_device_fops_8010743f_0_20(fd _ppp_device_fops_fd, cmd const[2148561983], arg intptr) 
+ioctl$_ppp_device_fops_7434_0_21(fd _ppp_device_fops_fd, cmd const[29748], arg intptr) 
+ioctl$_ppp_device_fops_7439_0_22(fd _ppp_device_fops_fd, cmd const[29753], arg intptr) 
+ioctl$_ppp_device_fops_c004743e_0_23(fd _ppp_device_fops_fd, cmd const[3221517374], arg intptr) 
+ioctl$_ppp_device_fops_c008744c_0_24(fd _ppp_device_fops_fd, cmd const[3221779532], arg ptr[in, util_est_ppp_device_fops]) 
+
+ppp_option_data_ppp_device_fops {
+    _ppp_device_fops_ptr_20  ptr[in, int8]
+    _ppp_device_fops_buffer_31  int32
+    _ppp_device_fops_buffer_42  int32
+}
+sock_filter_ppp_device_fops {
+    _ppp_device_fops_buffer_50  int16
+    _ppp_device_fops_buffer_61  int8
+    _ppp_device_fops_buffer_72  int8
+    _ppp_device_fops_buffer_83  int32
+}
+sock_fprog_kern_ppp_device_fops {
+    _ppp_device_fops_buffer_90  int16
+    _ppp_device_fops_ptr_101  ptr[in, sock_filter_ppp_device_fops]
+}
+util_est_ppp_device_fops {
+    _ppp_device_fops_buffer_110  int32
+    _ppp_device_fops_buffer_121  int32
+}

@@ -1,0 +1,331 @@
+resource fimg2d_fd[fd]
+
+openat$fimg2d_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/fimg2d"]], flags flags[open_flags], mode const[0]) fimg2d_fd
+openat$g2d_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/g2d"]], flags flags[open_flags], mode const[0]) fimg2d_fd
+
+fimg2d_Group83684d06_0_struct_1 {
+    fimg2d_Group83684d06_0_buffer_2  int64
+    fimg2d_Group83684d06_0_buffer_3  int8
+    fimg2d_Group83684d06_0_buffer_4  array[int8, 183]
+    fimg2d_Group83684d06_0_buffer_5  int32
+    fimg2d_Group83684d06_0_buffer_6  int32
+    fimg2d_Group83684d06_0_buffer_7  int32
+    fimg2d_Group83684d06_0_buffer_8  int32
+    fimg2d_Group83684d06_0_buffer_9  int32
+    fimg2d_Group83684d06_0_buffer_10  int32
+    fimg2d_Group83684d06_0_buffer_11  int64
+    fimg2d_Group83684d06_0_buffer_12  int8
+    fimg2d_Group83684d06_0_buffer_13  array[int8, 183]
+    fimg2d_Group83684d06_0_buffer_14  int32
+    fimg2d_Group83684d06_0_buffer_15  int32
+    fimg2d_Group83684d06_0_buffer_16  int32
+    fimg2d_Group83684d06_0_buffer_17  int32
+    fimg2d_Group83684d06_0_buffer_18  int32
+    fimg2d_Group83684d06_0_buffer_19  int32
+    fimg2d_Group83684d06_0_buffer_20  array[int8, 192]
+    fimg2d_Group83684d06_0_buffer_21  int32
+    fimg2d_Group83684d06_0_buffer_22  int32
+    fimg2d_Group83684d06_0_buffer_23  array[int8, 12]
+    fimg2d_Group83684d06_0_buffer_24  int32
+    fimg2d_Group83684d06_0_buffer_25  array[int8, 192]
+    fimg2d_Group83684d06_0_buffer_26  int32
+    fimg2d_Group83684d06_0_buffer_27  int32
+    fimg2d_Group83684d06_0_buffer_28  array[int8, 12]
+    fimg2d_Group83684d06_0_buffer_29  int32
+    fimg2d_Group83684d06_0_range_30  int32[0:4]
+    fimg2d_Group83684d06_0_buffer_31  int32
+} [packed]
+ioctl$fimg2d_Group83684d06_0(fd fimg2d_fd, cmd const[2204650758], arg ptr[in, fimg2d_Group83684d06_0_struct_1]) 
+fimg2d_Group83684d06_1_struct_1 {
+    fimg2d_Group83684d06_1_range_2  int16[1:65535]
+    fimg2d_Group83684d06_1_range_3  int16[1:65535]
+    fimg2d_Group83684d06_1_buffer_4  int16
+    fimg2d_Group83684d06_1_buffer_5  int16
+    fimg2d_Group83684d06_1_buffer_6  int8
+    fimg2d_Group83684d06_1_buffer_7  int8
+    fimg2d_Group83684d06_1_buffer_8  int16
+    fimg2d_Group83684d06_1_buffer_9  array[int8, 180]
+    fimg2d_Group83684d06_1_buffer_10  int32
+    fimg2d_Group83684d06_1_buffer_11  int32
+    fimg2d_Group83684d06_1_buffer_12  int32
+    fimg2d_Group83684d06_1_buffer_13  int32
+    fimg2d_Group83684d06_1_buffer_14  int32
+    fimg2d_Group83684d06_1_range_15  int32[1:4294967295]
+    fimg2d_Group83684d06_1_buffer_16  array[int8, 192]
+    fimg2d_Group83684d06_1_buffer_17  int32
+    fimg2d_Group83684d06_1_buffer_18  int32
+    fimg2d_Group83684d06_1_buffer_19  array[int8, 12]
+    fimg2d_Group83684d06_1_buffer_20  int32
+    fimg2d_Group83684d06_1_buffer_21  array[int8, 192]
+    fimg2d_Group83684d06_1_buffer_22  int32
+    fimg2d_Group83684d06_1_buffer_23  int32
+    fimg2d_Group83684d06_1_buffer_24  array[int8, 12]
+    fimg2d_Group83684d06_1_buffer_25  int32
+    fimg2d_Group83684d06_1_buffer_26  array[int8, 216]
+    fimg2d_Group83684d06_1_range_27  int32[1:4]
+    fimg2d_Group83684d06_1_buffer_28  int32
+} [packed]
+ioctl$fimg2d_Group83684d06_1(fd fimg2d_fd, cmd const[2204650758], arg ptr[in, fimg2d_Group83684d06_1_struct_1]) 
+fimg2d_Group83684d06_2_struct_1 {
+    fimg2d_Group83684d06_2_range_2  int16[1:65535]
+    fimg2d_Group83684d06_2_range_3  int16[1:65535]
+    fimg2d_Group83684d06_2_range_4  int16[1:65535]
+    fimg2d_Group83684d06_2_range_5  int16[1:65535]
+    fimg2d_Group83684d06_2_buffer_6  int8
+    fimg2d_Group83684d06_2_buffer_7  int8
+    fimg2d_Group83684d06_2_buffer_8  int16
+    fimg2d_Group83684d06_2_buffer_9  array[int8, 180]
+    fimg2d_Group83684d06_2_buffer_10  int32
+    fimg2d_Group83684d06_2_buffer_11  int32
+    fimg2d_Group83684d06_2_buffer_12  int32
+    fimg2d_Group83684d06_2_buffer_13  int32
+    fimg2d_Group83684d06_2_buffer_14  int32
+    fimg2d_Group83684d06_2_range_15  int32[1:4294967295]
+    fimg2d_Group83684d06_2_buffer_16  array[int8, 192]
+    fimg2d_Group83684d06_2_buffer_17  int32
+    fimg2d_Group83684d06_2_buffer_18  int32
+    fimg2d_Group83684d06_2_buffer_19  array[int8, 12]
+    fimg2d_Group83684d06_2_buffer_20  int32
+    fimg2d_Group83684d06_2_buffer_21  array[int8, 192]
+    fimg2d_Group83684d06_2_buffer_22  int32
+    fimg2d_Group83684d06_2_buffer_23  int32
+    fimg2d_Group83684d06_2_buffer_24  array[int8, 12]
+    fimg2d_Group83684d06_2_buffer_25  int32
+    fimg2d_Group83684d06_2_buffer_26  array[int8, 216]
+    fimg2d_Group83684d06_2_range_27  int32[1:4]
+    fimg2d_Group83684d06_2_buffer_28  int32
+} [packed]
+ioctl$fimg2d_Group83684d06_2(fd fimg2d_fd, cmd const[2204650758], arg ptr[in, fimg2d_Group83684d06_2_struct_1]) 
+fimg2d_Group83684d06_3_struct_1 {
+    fimg2d_Group83684d06_3_buffer_2  array[int8, 192]
+    fimg2d_Group83684d06_3_buffer_3  int32
+    fimg2d_Group83684d06_3_buffer_4  int32
+    fimg2d_Group83684d06_3_buffer_5  int32
+    fimg2d_Group83684d06_3_buffer_6  int32
+    fimg2d_Group83684d06_3_buffer_7  int32
+    fimg2d_Group83684d06_3_const_8  const[0, int32]
+    fimg2d_Group83684d06_3_range_9  int16[1:65535]
+    fimg2d_Group83684d06_3_range_10  int16[1:65535]
+    fimg2d_Group83684d06_3_buffer_11  int16
+    fimg2d_Group83684d06_3_buffer_12  int16
+    fimg2d_Group83684d06_3_buffer_13  int8
+    fimg2d_Group83684d06_3_buffer_14  int8
+    fimg2d_Group83684d06_3_buffer_15  int16
+    fimg2d_Group83684d06_3_buffer_16  array[int8, 180]
+    fimg2d_Group83684d06_3_buffer_17  int32
+    fimg2d_Group83684d06_3_buffer_18  int32
+    fimg2d_Group83684d06_3_buffer_19  int32
+    fimg2d_Group83684d06_3_buffer_20  int32
+    fimg2d_Group83684d06_3_buffer_21  int32
+    fimg2d_Group83684d06_3_range_22  int32[1:4294967295]
+    fimg2d_Group83684d06_3_buffer_23  array[int8, 432]
+    fimg2d_Group83684d06_3_range_24  int32[1:4]
+    fimg2d_Group83684d06_3_buffer_25  int32
+} [packed]
+ioctl$fimg2d_Group83684d06_3(fd fimg2d_fd, cmd const[2204650758], arg ptr[in, fimg2d_Group83684d06_3_struct_1]) 
+fimg2d_Group83684d06_4_struct_1 {
+    fimg2d_Group83684d06_4_buffer_2  array[int8, 192]
+    fimg2d_Group83684d06_4_buffer_3  int32
+    fimg2d_Group83684d06_4_buffer_4  int32
+    fimg2d_Group83684d06_4_buffer_5  int32
+    fimg2d_Group83684d06_4_buffer_6  int32
+    fimg2d_Group83684d06_4_buffer_7  int32
+    fimg2d_Group83684d06_4_const_8  const[0, int32]
+    fimg2d_Group83684d06_4_range_9  int16[1:65535]
+    fimg2d_Group83684d06_4_range_10  int16[1:65535]
+    fimg2d_Group83684d06_4_range_11  int16[1:65535]
+    fimg2d_Group83684d06_4_range_12  int16[1:65535]
+    fimg2d_Group83684d06_4_buffer_13  int8
+    fimg2d_Group83684d06_4_buffer_14  int8
+    fimg2d_Group83684d06_4_buffer_15  int16
+    fimg2d_Group83684d06_4_buffer_16  array[int8, 180]
+    fimg2d_Group83684d06_4_buffer_17  int32
+    fimg2d_Group83684d06_4_buffer_18  int32
+    fimg2d_Group83684d06_4_buffer_19  int32
+    fimg2d_Group83684d06_4_buffer_20  int32
+    fimg2d_Group83684d06_4_buffer_21  int32
+    fimg2d_Group83684d06_4_range_22  int32[1:4294967295]
+    fimg2d_Group83684d06_4_buffer_23  array[int8, 432]
+    fimg2d_Group83684d06_4_range_24  int32[1:4]
+    fimg2d_Group83684d06_4_buffer_25  int32
+} [packed]
+ioctl$fimg2d_Group83684d06_4(fd fimg2d_fd, cmd const[2204650758], arg ptr[in, fimg2d_Group83684d06_4_struct_1]) 
+fimg2d_Group83684d06_5_struct_1 {
+    fimg2d_Group83684d06_5_range_2  int16[1:65535]
+    fimg2d_Group83684d06_5_range_3  int16[1:65535]
+    fimg2d_Group83684d06_5_range_4  int16[1:65535]
+    fimg2d_Group83684d06_5_range_5  int16[1:65535]
+    fimg2d_Group83684d06_5_buffer_6  int32
+    fimg2d_Group83684d06_5_buffer_7  array[int8, 180]
+    fimg2d_Group83684d06_5_buffer_8  int32
+    fimg2d_Group83684d06_5_buffer_9  int32
+    fimg2d_Group83684d06_5_buffer_10  int32
+    fimg2d_Group83684d06_5_buffer_11  int32
+    fimg2d_Group83684d06_5_range_12  int8[0:254, 2]
+    fimg2d_Group83684d06_5_buffer_13  array[int8, 3]
+    fimg2d_Group83684d06_5_range_14  int32[1:4294967295]
+    fimg2d_Group83684d06_5_buffer_15  array[int8, 192]
+    fimg2d_Group83684d06_5_buffer_16  int32
+    fimg2d_Group83684d06_5_buffer_17  int32
+    fimg2d_Group83684d06_5_buffer_18  array[int8, 12]
+    fimg2d_Group83684d06_5_buffer_19  int32
+    fimg2d_Group83684d06_5_buffer_20  array[int8, 432]
+    fimg2d_Group83684d06_5_range_21  int32[1:4]
+    fimg2d_Group83684d06_5_buffer_22  int32
+} [packed]
+ioctl$fimg2d_Group83684d06_5(fd fimg2d_fd, cmd const[2204650758], arg ptr[in, fimg2d_Group83684d06_5_struct_1]) 
+fimg2d_Group83684d06_6_struct_1 {
+    fimg2d_Group83684d06_6_range_2  int16[1:65535]
+    fimg2d_Group83684d06_6_range_3  int16[1:65535]
+    fimg2d_Group83684d06_6_range_4  int16[1:65535]
+    fimg2d_Group83684d06_6_range_5  int16[1:65535]
+    fimg2d_Group83684d06_6_buffer_6  int32
+    fimg2d_Group83684d06_6_buffer_7  array[int8, 180]
+    fimg2d_Group83684d06_6_buffer_8  int32
+    fimg2d_Group83684d06_6_buffer_9  int32
+    fimg2d_Group83684d06_6_range_10  int32[1:4294836225]
+    fimg2d_Group83684d06_6_buffer_11  int32
+    fimg2d_Group83684d06_6_range_12  int8[1:255]
+    fimg2d_Group83684d06_6_buffer_13  array[int8, 3]
+    fimg2d_Group83684d06_6_range_14  int32[1:4294967295]
+    fimg2d_Group83684d06_6_buffer_15  array[int8, 192]
+    fimg2d_Group83684d06_6_buffer_16  int32
+    fimg2d_Group83684d06_6_buffer_17  int32
+    fimg2d_Group83684d06_6_buffer_18  array[int8, 12]
+    fimg2d_Group83684d06_6_buffer_19  int32
+    fimg2d_Group83684d06_6_buffer_20  array[int8, 432]
+    fimg2d_Group83684d06_6_range_21  int32[1:4]
+    fimg2d_Group83684d06_6_buffer_22  int32
+} [packed]
+ioctl$fimg2d_Group83684d06_6(fd fimg2d_fd, cmd const[2204650758], arg ptr[in, fimg2d_Group83684d06_6_struct_1]) 
+fimg2d_Group83684d06_7_struct_1 {
+    fimg2d_Group83684d06_7_range_2  int16[1:65535]
+    fimg2d_Group83684d06_7_range_3  int16[1:65535]
+    fimg2d_Group83684d06_7_range_4  int16[1:65535]
+    fimg2d_Group83684d06_7_range_5  int16[1:65535]
+    fimg2d_Group83684d06_7_buffer_6  int32
+    fimg2d_Group83684d06_7_buffer_7  array[int8, 180]
+    fimg2d_Group83684d06_7_buffer_8  int32
+    fimg2d_Group83684d06_7_buffer_9  int32
+    fimg2d_Group83684d06_7_buffer_10  int32
+    fimg2d_Group83684d06_7_buffer_11  int32
+    fimg2d_Group83684d06_7_range_12  int8[1:255]
+    fimg2d_Group83684d06_7_buffer_13  array[int8, 3]
+    fimg2d_Group83684d06_7_range_14  int32[1:4294967295]
+    fimg2d_Group83684d06_7_buffer_15  array[int8, 192]
+    fimg2d_Group83684d06_7_buffer_16  int32
+    fimg2d_Group83684d06_7_buffer_17  int32
+    fimg2d_Group83684d06_7_buffer_18  array[int8, 12]
+    fimg2d_Group83684d06_7_buffer_19  int32
+    fimg2d_Group83684d06_7_buffer_20  array[int8, 432]
+    fimg2d_Group83684d06_7_range_21  int32[1:4]
+    fimg2d_Group83684d06_7_buffer_22  int32
+} [packed]
+ioctl$fimg2d_Group83684d06_7(fd fimg2d_fd, cmd const[2204650758], arg ptr[in, fimg2d_Group83684d06_7_struct_1]) 
+fimg2d_Group83684d06_8_struct_1 {
+    fimg2d_Group83684d06_8_range_2  int16[1:65535]
+    fimg2d_Group83684d06_8_range_3  int16[1:65535]
+    fimg2d_Group83684d06_8_buffer_4  int16
+    fimg2d_Group83684d06_8_buffer_5  int16
+    fimg2d_Group83684d06_8_buffer_6  int32
+    fimg2d_Group83684d06_8_buffer_7  array[int8, 180]
+    fimg2d_Group83684d06_8_buffer_8  int32
+    fimg2d_Group83684d06_8_buffer_9  int32
+    fimg2d_Group83684d06_8_buffer_10  int32
+    fimg2d_Group83684d06_8_buffer_11  int32
+    fimg2d_Group83684d06_8_range_12  int8[0:254, 2]
+    fimg2d_Group83684d06_8_buffer_13  array[int8, 3]
+    fimg2d_Group83684d06_8_range_14  int32[1:4294967295]
+    fimg2d_Group83684d06_8_buffer_15  array[int8, 648]
+    fimg2d_Group83684d06_8_range_16  int32[1:4]
+    fimg2d_Group83684d06_8_buffer_17  int32
+} [packed]
+ioctl$fimg2d_Group83684d06_8(fd fimg2d_fd, cmd const[2204650758], arg ptr[in, fimg2d_Group83684d06_8_struct_1]) 
+fimg2d_Group83684d06_9_struct_1 {
+    fimg2d_Group83684d06_9_range_2  int16[1:65535]
+    fimg2d_Group83684d06_9_range_3  int16[1:65535]
+    fimg2d_Group83684d06_9_buffer_4  int16
+    fimg2d_Group83684d06_9_buffer_5  int16
+    fimg2d_Group83684d06_9_buffer_6  int32
+    fimg2d_Group83684d06_9_buffer_7  array[int8, 180]
+    fimg2d_Group83684d06_9_buffer_8  int32
+    fimg2d_Group83684d06_9_buffer_9  int32
+    fimg2d_Group83684d06_9_range_10  int32[0:4290773055]
+    fimg2d_Group83684d06_9_buffer_11  int32
+    fimg2d_Group83684d06_9_range_12  int8[1:255]
+    fimg2d_Group83684d06_9_buffer_13  array[int8, 3]
+    fimg2d_Group83684d06_9_range_14  int32[1:4294967295]
+    fimg2d_Group83684d06_9_buffer_15  array[int8, 648]
+    fimg2d_Group83684d06_9_range_16  int32[1:4]
+    fimg2d_Group83684d06_9_buffer_17  int32
+} [packed]
+ioctl$fimg2d_Group83684d06_9(fd fimg2d_fd, cmd const[2204650758], arg ptr[in, fimg2d_Group83684d06_9_struct_1]) 
+fimg2d_Group83684d06_10_struct_1 {
+    fimg2d_Group83684d06_10_range_2  int16[1:65535]
+    fimg2d_Group83684d06_10_range_3  int16[1:65535]
+    fimg2d_Group83684d06_10_buffer_4  int16
+    fimg2d_Group83684d06_10_buffer_5  int16
+    fimg2d_Group83684d06_10_buffer_6  int32
+    fimg2d_Group83684d06_10_buffer_7  array[int8, 180]
+    fimg2d_Group83684d06_10_buffer_8  int32
+    fimg2d_Group83684d06_10_buffer_9  int32
+    fimg2d_Group83684d06_10_buffer_10  int32
+    fimg2d_Group83684d06_10_buffer_11  int32
+    fimg2d_Group83684d06_10_range_12  int8[1:255]
+    fimg2d_Group83684d06_10_buffer_13  array[int8, 3]
+    fimg2d_Group83684d06_10_range_14  int32[1:4294967295]
+    fimg2d_Group83684d06_10_buffer_15  array[int8, 648]
+    fimg2d_Group83684d06_10_range_16  int32[1:4]
+    fimg2d_Group83684d06_10_buffer_17  int32
+} [packed]
+ioctl$fimg2d_Group83684d06_10(fd fimg2d_fd, cmd const[2204650758], arg ptr[in, fimg2d_Group83684d06_10_struct_1]) 
+fimg2d_Group83684d06_11_struct_1 {
+    fimg2d_Group83684d06_11_range_2  int16[1:65535]
+    fimg2d_Group83684d06_11_range_3  int16[1:65535]
+    fimg2d_Group83684d06_11_range_4  int16[1:65535]
+    fimg2d_Group83684d06_11_range_5  int16[1:65535]
+    fimg2d_Group83684d06_11_buffer_6  int32
+    fimg2d_Group83684d06_11_buffer_7  array[int8, 180]
+    fimg2d_Group83684d06_11_buffer_8  int32
+    fimg2d_Group83684d06_11_buffer_9  int32
+    fimg2d_Group83684d06_11_buffer_10  int32
+    fimg2d_Group83684d06_11_buffer_11  int32
+    fimg2d_Group83684d06_11_range_12  int32[0:4294967294, 2]
+    fimg2d_Group83684d06_11_range_13  int32[1:4294967295]
+    fimg2d_Group83684d06_11_buffer_14  array[int8, 648]
+    fimg2d_Group83684d06_11_range_15  int32[1:4]
+    fimg2d_Group83684d06_11_buffer_16  int32
+} [packed]
+ioctl$fimg2d_Group83684d06_11(fd fimg2d_fd, cmd const[2204650758], arg ptr[in, fimg2d_Group83684d06_11_struct_1]) 
+fimg2d_Group83684d06_12_struct_1 {
+    fimg2d_Group83684d06_12_range_2  int16[1:65535]
+    fimg2d_Group83684d06_12_range_3  int16[1:65535]
+    fimg2d_Group83684d06_12_range_4  int16[1:65535]
+    fimg2d_Group83684d06_12_range_5  int16[1:65535]
+    fimg2d_Group83684d06_12_buffer_6  int32
+    fimg2d_Group83684d06_12_range_7  int16[1:65535]
+    fimg2d_Group83684d06_12_range_8  int16[1:65535]
+    fimg2d_Group83684d06_12_buffer_9  int16
+    fimg2d_Group83684d06_12_buffer_10  int16
+    fimg2d_Group83684d06_12_buffer_11  int32
+    fimg2d_Group83684d06_12_buffer_12  array[int8, 168]
+    fimg2d_Group83684d06_12_buffer_13  int32
+    fimg2d_Group83684d06_12_buffer_14  int32
+    fimg2d_Group83684d06_12_buffer_15  int32
+    fimg2d_Group83684d06_12_buffer_16  int32
+    fimg2d_Group83684d06_12_range_17  int8[0:254, 2]
+    fimg2d_Group83684d06_12_buffer_18  array[int8, 3]
+    fimg2d_Group83684d06_12_range_19  int32[1:4294967295]
+    fimg2d_Group83684d06_12_buffer_20  array[int8, 648]
+    fimg2d_Group83684d06_12_range_21  int32[1:4]
+    fimg2d_Group83684d06_12_buffer_22  int32
+} [packed]
+ioctl$fimg2d_Group83684d06_12(fd fimg2d_fd, cmd const[2204650758], arg ptr[in, fimg2d_Group83684d06_12_struct_1]) 
+ioctl$fimg2d_Group80044d05_0(fd fimg2d_fd, cmd const[2147765509], arg ptr[in, int32]) 
+fimg2d_Groupc1104d03_0_struct_1 {
+    fimg2d_Groupc1104d03_0_buffer_2  int32
+    fimg2d_Groupc1104d03_0_buffer_3  int8
+    fimg2d_Groupc1104d03_0_buffer_4  array[int8, 267]
+} [packed]
+ioctl$fimg2d_Groupc1104d03_0(fd fimg2d_fd, cmd const[3239070979], arg ptr[in, fimg2d_Groupc1104d03_0_struct_1]) 
+ioctl$fimg2d_Group80044d07_0(fd fimg2d_fd, cmd const[2147765511], arg ptr[out, array[int8]]) 

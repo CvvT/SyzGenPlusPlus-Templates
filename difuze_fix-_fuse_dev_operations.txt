@@ -1,0 +1,5 @@
+resource _fuse_dev_operations_fd[fd]
+
+openat$_fuse_dev_operations_syzgen_1(fd const[AT_FDCWD], file ptr[in, string["/dev/fuse"]], flags flags[open_flags], mode const[0]) _fuse_dev_operations_fd
+ioctl$_fuse_dev_operations_8004e500_0_2(fd _fuse_dev_operations_fd, cmd const[2147804416], arg intptr) 
+

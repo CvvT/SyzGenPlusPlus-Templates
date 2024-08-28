@@ -1,0 +1,22 @@
+resource ubi_ctrl_fd[fd]
+
+openat$ubi_ctrl_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/ubi_ctrl"]], flags flags[open_flags], mode const[0]) ubi_ctrl_fd
+ioctl$ubi_ctrl_Group40046f41_0(fd ubi_ctrl_fd, cmd const[1074032449], arg ptr[in, int32]) 
+ioctl$ubi_ctrl_Group40046f41_1(fd ubi_ctrl_fd, cmd const[1074032449], arg intptr) 
+ubi_ctrl_Group40186f40_0_struct_1 {
+    ubi_ctrl_Group40186f40_0_buffer_2  int32
+    ubi_ctrl_Group40186f40_0_range_3  int32[0:2147483647]
+    ubi_ctrl_Group40186f40_0_buffer_4  int32
+    ubi_ctrl_Group40186f40_0_buffer_5  int16
+    ubi_ctrl_Group40186f40_0_buffer_6  array[int8, 10]
+} [packed]
+ioctl$ubi_ctrl_Group40186f40_0(fd ubi_ctrl_fd, cmd const[1075343168], arg ptr[inout, ubi_ctrl_Group40186f40_0_struct_1]) 
+ubi_ctrl_Group40186f40_1_struct_1 {
+    ubi_ctrl_Group40186f40_1_buffer_2  int32
+    ubi_ctrl_Group40186f40_1_buffer_3  int32
+    ubi_ctrl_Group40186f40_1_buffer_4  int32
+    ubi_ctrl_Group40186f40_1_buffer_5  int8
+    ubi_ctrl_Group40186f40_1_buffer_6  int8
+    ubi_ctrl_Group40186f40_1_buffer_7  array[int8, 10]
+} [packed]
+ioctl$ubi_ctrl_Group40186f40_1(fd ubi_ctrl_fd, cmd const[1075343168], arg ptr[in, ubi_ctrl_Group40186f40_1_struct_1]) 

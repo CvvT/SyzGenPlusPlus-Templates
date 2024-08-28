@@ -1,0 +1,33 @@
+resource aac_fd[fd]
+
+openat$aac_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/aac"]], flags flags[open_flags], mode const[0]) aac_fd
+ioctl$aac_Group8010616f_0(fd aac_fd, cmd const[2148557167], arg ptr[out, array[int8, 16]]) 
+ioctl$aac_Group8016616c_0(fd aac_fd, cmd const[2148950380], arg ptr[out, array[int8, 22]]) 
+ioctl$aac_Group40046100_0(fd aac_fd, cmd const[1074028800], arg intptr) 
+ioctl$aac_Group40046101_0(fd aac_fd, cmd const[1074028801], arg intptr) 
+aac_Group4016616b_0_struct_1 {
+    aac_Group4016616b_0_buffer_2  array[int8, 12]
+    aac_Group4016616b_0_buffer_3  int8
+    aac_Group4016616b_0_buffer_4  int8
+    aac_Group4016616b_0_const_5  const[1, int8]
+    aac_Group4016616b_0_const_6  const[0, int8]
+    aac_Group4016616b_0_buffer_7  array[int8, 6]
+} [packed]
+ioctl$aac_Group4016616b_0(fd aac_fd, cmd const[1075208555], arg ptr[in, aac_Group4016616b_0_struct_1]) 
+aac_Group4016616b_1_struct_1 {
+    aac_Group4016616b_1_buffer_2  array[int8, 12]
+    aac_Group4016616b_1_const_3  const[1, int8]
+    aac_Group4016616b_1_const_4  const[0, int8]
+    aac_Group4016616b_1_buffer_5  int16
+    aac_Group4016616b_1_buffer_6  array[int8, 6]
+} [packed]
+ioctl$aac_Group4016616b_1(fd aac_fd, cmd const[1075208555], arg ptr[in, aac_Group4016616b_1_struct_1]) 
+aac_Group4016616b_2_struct_1 {
+    aac_Group4016616b_2_buffer_2  array[int8, 12]
+    aac_Group4016616b_2_buffer_3  int8
+    aac_Group4016616b_2_buffer_4  int8
+    aac_Group4016616b_2_buffer_5  int8
+    aac_Group4016616b_2_buffer_6  int8
+    aac_Group4016616b_2_buffer_7  array[int8, 6]
+} [packed]
+ioctl$aac_Group4016616b_2(fd aac_fd, cmd const[1075208555], arg ptr[in, aac_Group4016616b_2_struct_1]) 

@@ -1,0 +1,4 @@
+resource rpmsg0_fd[fd]
+
+syz_open_dev$rpmsg_syzgen(dev ptr[in, string["/dev/rpmsg#"]], id intptr, flags flags[open_flags]) rpmsg0_fd
+ioctl$rpmsg0_Groupb502_0(fd rpmsg0_fd, cmd const[46338], arg intptr) 

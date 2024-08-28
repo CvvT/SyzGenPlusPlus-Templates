@@ -1,0 +1,4 @@
+resource msm_rng_fd[fd]
+
+openat$msm_rng_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm-rng"]], flags flags[open_flags], mode const[0]) msm_rng_fd
+ioctl$msm_rng_Group10001_0(fd msm_rng_fd, cmd const[65537], arg intptr) 

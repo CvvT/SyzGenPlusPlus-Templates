@@ -1,0 +1,18 @@
+resource st33spi_fd[fd]
+
+openat$st33spi_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/st33spi"]], flags flags[open_flags], mode const[0]) st33spi_fd
+read$st33spi_syzgen(fd st33spi_fd, data ptr[out, array[int8]], size len[data]) 
+ioctl$st33spi_Group40046b04_0(fd st33spi_fd, cmd const[1074031364], arg intptr) 
+ioctl$st33spi_Group40016b01_0(fd st33spi_fd, cmd const[1073834753], st33spi_Group40016b01_0_buffer_31 intptr) 
+ioctl$st33spi_Group80046b04_0(fd st33spi_fd, cmd const[2147773188], arg intptr) 
+ioctl$st33spi_Group80016b01_0(fd st33spi_fd, cmd const[2147576577], st33spi_Group80016b01_0_buffer_15 intptr) 
+ioctl$st33spi_Group40046b05_0(fd st33spi_fd, cmd const[1074031365], arg intptr) 
+ioctl$st33spi_Group40016b02_0(fd st33spi_fd, cmd const[1073834754], st33spi_Group40016b02_0_buffer_29 intptr) 
+ioctl$st33spi_Group80046b05_0(fd st33spi_fd, cmd const[2147773189], arg intptr) 
+ioctl$st33spi_Group80016b02_0(fd st33spi_fd, cmd const[2147576578], st33spi_Group80016b02_0_buffer_13 intptr) 
+ioctl$st33spi_Group40046b63_0(fd st33spi_fd, cmd const[1074031459], arg intptr) 
+ioctl$st33spi_Group40016b03_0(fd st33spi_fd, cmd const[1073834755], st33spi_Group40016b03_0_buffer_27 intptr) 
+ioctl$st33spi_Group80046b63_0(fd st33spi_fd, cmd const[2147773283], arg intptr) 
+ioctl$st33spi_Group80016b03_0(fd st33spi_fd, cmd const[2147576579], st33spi_Group80016b03_0_buffer_11 intptr) 
+ioctl$st33spi_Group40006b00_0(fd st33spi_fd, cmd const[1073769216], arg intptr) 
+write$st33spi_Group0_0(fd st33spi_fd, data ptr[in, array[int8]], size len[data]) 

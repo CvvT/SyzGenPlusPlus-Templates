@@ -1,0 +1,743 @@
+resource control_fd[fd]
+
+openat$control_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/mapper/control"]], flags flags[open_flags], mode const[0]) control_fd
+control_Group1_0_struct_1 {
+    control_Group1_0_const_2  const[4, int8]
+    control_Group1_0_const_3  const[0, int8]
+    control_Group1_0_const_4  const[0, int8]
+    control_Group1_0_const_5  const[0, int8]
+    control_Group1_0_range_6  int8[0:45]
+    control_Group1_0_const_7  const[0, int8]
+    control_Group1_0_const_8  const[0, int8]
+    control_Group1_0_const_9  const[0, int8]
+    control_Group1_0_buffer_10  int32
+    control_Group1_0_range_11  int32[305:4294967295]
+    control_Group1_0_buffer_12  array[int8, 12]
+    control_Group1_0_buffer_13  int32
+    control_Group1_0_buffer_14  array[int8, 273]
+} [packed]
+ioctl$control_Group1_0(fd control_fd, cmd const[0xfffffd01], arg ptr[inout, control_Group1_0_struct_1]) 
+control_Group1_1_struct_1 {
+    control_Group1_1_const_2  const[4, int8]
+    control_Group1_1_const_3  const[0, int8]
+    control_Group1_1_const_4  const[0, int8]
+    control_Group1_1_const_5  const[0, int8]
+    control_Group1_1_range_6  int8[0:45]
+    control_Group1_1_const_7  const[0, int8]
+    control_Group1_1_const_8  const[0, int8]
+    control_Group1_1_const_9  const[0, int8]
+    control_Group1_1_buffer_10  int32
+    control_Group1_1_buffer_11  int8
+    control_Group1_1_buffer_12  int8
+    control_Group1_1_buffer_13  int8
+    control_Group1_1_buffer_14  int8
+    control_Group1_1_buffer_15  array[int8, 12]
+    control_Group1_1_range_16  int32[0:4294934527]
+    control_Group1_1_buffer_17  array[int8, 273]
+} [packed]
+ioctl$control_Group1_1(fd control_fd, cmd const[0xffffff01], arg ptr[inout, control_Group1_1_struct_1]) 
+control_Group2_0_struct_1 {
+    control_Group2_0_const_2  const[4, int8]
+    control_Group2_0_const_3  const[0, int8]
+    control_Group2_0_const_4  const[0, int8]
+    control_Group2_0_const_5  const[0, int8]
+    control_Group2_0_range_6  int8[0:45]
+    control_Group2_0_const_7  const[0, int8]
+    control_Group2_0_const_8  const[0, int8]
+    control_Group2_0_const_9  const[0, int8]
+    control_Group2_0_buffer_10  int32
+    control_Group2_0_range_11  int32[305:4294967295]
+    control_Group2_0_buffer_12  array[int8, 12]
+    control_Group2_0_buffer_13  int32
+    control_Group2_0_buffer_14  array[int8, 16]
+    control_Group2_0_buffer_15  int8
+    control_Group2_0_buffer_16  int8
+    control_Group2_0_buffer_17  array[int8, 255]
+} [packed]
+ioctl$control_Group2_0(fd control_fd, cmd const[0xfffffd02], arg ptr[inout, control_Group2_0_struct_1]) 
+control_Group2_1_struct_1 {
+    control_Group2_1_buffer_2  int8
+    control_Group2_1_buffer_3  int8
+    control_Group2_1_buffer_4  int8
+    control_Group2_1_buffer_5  int8
+    control_Group2_1_buffer_6  int32
+    control_Group2_1_buffer_7  int32
+    control_Group2_1_buffer_8  int32
+    control_Group2_1_buffer_9  array[int8, 12]
+    control_Group2_1_buffer_10  int32
+    control_Group2_1_buffer_11  array[int8, 16]
+    control_Group2_1_buffer_12  int8
+    control_Group2_1_buffer_13  array[int8, 127]
+    control_Group2_1_buffer_14  int8
+    control_Group2_1_buffer_15  int8
+    control_Group2_1_buffer_16  int8
+    control_Group2_1_buffer_17  array[int8]
+} [packed]
+ioctl$control_Group2_1(fd control_fd, cmd const[0xffffff02], arg ptr[inout, control_Group2_1_struct_1]) 
+control_Group3_0_struct_1 {
+    control_Group3_0_const_2  const[4, int8]
+    control_Group3_0_const_3  const[0, int8]
+    control_Group3_0_const_4  const[0, int8]
+    control_Group3_0_const_5  const[0, int8]
+    control_Group3_0_range_6  int8[0:45]
+    control_Group3_0_const_7  const[0, int8]
+    control_Group3_0_const_8  const[0, int8]
+    control_Group3_0_const_9  const[0, int8]
+    control_Group3_0_buffer_10  int32
+    control_Group3_0_range_11  int32[305:4294967295]
+    control_Group3_0_buffer_12  array[int8, 12]
+    control_Group3_0_buffer_13  int32
+    control_Group3_0_buffer_14  array[int8, 16]
+    control_Group3_0_buffer_15  int8
+    control_Group3_0_buffer_16  array[int8, 256]
+} [packed]
+ioctl$control_Group3_0(fd control_fd, cmd const[0xfffffd03], arg ptr[inout, control_Group3_0_struct_1]) 
+control_Group3_1_struct_1 {
+    control_Group3_1_const_2  const[4, int8]
+    control_Group3_1_const_3  const[0, int8]
+    control_Group3_1_const_4  const[0, int8]
+    control_Group3_1_const_5  const[0, int8]
+    control_Group3_1_range_6  int8[0:45]
+    control_Group3_1_const_7  const[0, int8]
+    control_Group3_1_const_8  const[0, int8]
+    control_Group3_1_const_9  const[0, int8]
+    control_Group3_1_buffer_10  int32
+    control_Group3_1_range_11  int32[305:4294967295]
+    control_Group3_1_buffer_12  array[int8, 12]
+    control_Group3_1_range_13  int32[0:4294934527]
+    control_Group3_1_buffer_14  array[int8, 16]
+    control_Group3_1_range_15  int8[1:255]
+    control_Group3_1_buffer_16  int8
+    control_Group3_1_buffer_17  array[int8, 255]
+} [packed]
+ioctl$control_Group3_1(fd control_fd, cmd const[0xffffff03], arg ptr[inout, control_Group3_1_struct_1]) 
+control_Group4_0_struct_1 {
+    control_Group4_0_const_2  const[4, int8]
+    control_Group4_0_const_3  const[0, int8]
+    control_Group4_0_const_4  const[0, int8]
+    control_Group4_0_const_5  const[0, int8]
+    control_Group4_0_range_6  int8[0:45]
+    control_Group4_0_const_7  const[0, int8]
+    control_Group4_0_const_8  const[0, int8]
+    control_Group4_0_const_9  const[0, int8]
+    control_Group4_0_buffer_10  int32
+    control_Group4_0_range_11  int32[305:4294967295]
+    control_Group4_0_buffer_12  array[int8, 12]
+    control_Group4_0_buffer_13  int32
+    control_Group4_0_buffer_14  int64
+    control_Group4_0_buffer_15  int8
+    control_Group4_0_buffer_16  int8
+    control_Group4_0_buffer_17  int8
+    control_Group4_0_buffer_18  int8
+    control_Group4_0_buffer_19  int32
+    control_Group4_0_buffer_20  int8
+    control_Group4_0_buffer_21  array[int8, 127]
+    control_Group4_0_buffer_22  int8
+    control_Group4_0_buffer_23  array[int8, 128]
+} [packed]
+ioctl$control_Group4_0(fd control_fd, cmd const[0xfffffd04], arg ptr[inout, control_Group4_0_struct_1]) 
+control_Group4_1_struct_1 {
+    control_Group4_1_buffer_2  int8
+    control_Group4_1_buffer_3  int8
+    control_Group4_1_buffer_4  int8
+    control_Group4_1_buffer_5  int8
+    control_Group4_1_buffer_6  int32
+    control_Group4_1_buffer_7  int32
+    control_Group4_1_buffer_8  int32
+    control_Group4_1_buffer_9  array[int8, 12]
+    control_Group4_1_buffer_10  int32
+    control_Group4_1_buffer_11  int64
+    control_Group4_1_buffer_12  int64
+    control_Group4_1_buffer_13  int8
+    control_Group4_1_buffer_14  array[int8, 127]
+    control_Group4_1_buffer_15  int8
+    control_Group4_1_buffer_16  array[int8, 128]
+} [packed]
+ioctl$control_Group4_1(fd control_fd, cmd const[0xffffff04], arg ptr[inout, control_Group4_1_struct_1]) 
+control_Group5_0_struct_1 {
+    control_Group5_0_const_2  const[4, int8]
+    control_Group5_0_const_3  const[0, int8]
+    control_Group5_0_const_4  const[0, int8]
+    control_Group5_0_const_5  const[0, int8]
+    control_Group5_0_range_6  int8[0:45]
+    control_Group5_0_const_7  const[0, int8]
+    control_Group5_0_const_8  const[0, int8]
+    control_Group5_0_const_9  const[0, int8]
+    control_Group5_0_buffer_10  int32
+    control_Group5_0_range_11  int32[305:4294967295]
+    control_Group5_0_buffer_12  int32
+    control_Group5_0_buffer_13  int64
+    control_Group5_0_buffer_14  int32
+    control_Group5_0_buffer_15  array[int8, 16]
+    control_Group5_0_buffer_16  int8
+    control_Group5_0_buffer_17  array[int8, 127]
+    control_Group5_0_buffer_18  int8
+    control_Group5_0_buffer_19  array[int8, 128]
+} [packed]
+ioctl$control_Group5_0(fd control_fd, cmd const[0xfffffd05], arg ptr[inout, control_Group5_0_struct_1]) 
+control_Group5_1_struct_1 {
+    control_Group5_1_buffer_2  int8
+    control_Group5_1_buffer_3  int8
+    control_Group5_1_buffer_4  int8
+    control_Group5_1_buffer_5  int8
+    control_Group5_1_buffer_6  int32
+    control_Group5_1_buffer_7  int32
+    control_Group5_1_buffer_8  int32
+    control_Group5_1_buffer_9  int32
+    control_Group5_1_buffer_10  int64
+    control_Group5_1_buffer_11  int32
+    control_Group5_1_buffer_12  array[int8, 16]
+    control_Group5_1_buffer_13  int8
+    control_Group5_1_buffer_14  int8
+    control_Group5_1_buffer_15  int8
+    control_Group5_1_buffer_16  array[int8, 125]
+    control_Group5_1_buffer_17  int8
+    control_Group5_1_buffer_18  array[int8]
+} [packed]
+ioctl$control_Group5_1(fd control_fd, cmd const[0xffffff05], arg ptr[inout, control_Group5_1_struct_1]) 
+control_Group6_0_struct_1 {
+    control_Group6_0_const_2  const[4, int8]
+    control_Group6_0_const_3  const[0, int8]
+    control_Group6_0_const_4  const[0, int8]
+    control_Group6_0_const_5  const[0, int8]
+    control_Group6_0_range_6  int8[0:45]
+    control_Group6_0_const_7  const[0, int8]
+    control_Group6_0_const_8  const[0, int8]
+    control_Group6_0_const_9  const[0, int8]
+    control_Group6_0_buffer_10  int32
+    control_Group6_0_range_11  int32[305:4294967295]
+    control_Group6_0_buffer_12  array[int8, 12]
+    control_Group6_0_buffer_13  int32
+    control_Group6_0_buffer_14  int64
+    control_Group6_0_buffer_15  int64
+    control_Group6_0_buffer_16  int8
+    control_Group6_0_buffer_17  array[int8, 127]
+    control_Group6_0_buffer_18  int8
+    control_Group6_0_buffer_19  array[int8, 128]
+} [packed]
+ioctl$control_Group6_0(fd control_fd, cmd const[0xfffffd06], arg ptr[inout, control_Group6_0_struct_1]) 
+control_Group6_1_struct_1 {
+    control_Group6_1_buffer_2  int8
+    control_Group6_1_buffer_3  int8
+    control_Group6_1_buffer_4  int8
+    control_Group6_1_buffer_5  int8
+    control_Group6_1_buffer_6  int32
+    control_Group6_1_buffer_7  int32
+    control_Group6_1_buffer_8  int32
+    control_Group6_1_buffer_9  array[int8, 12]
+    control_Group6_1_buffer_10  int32
+    control_Group6_1_buffer_11  int64
+    control_Group6_1_buffer_12  int64
+    control_Group6_1_buffer_13  int8
+    control_Group6_1_buffer_14  array[int8, 127]
+    control_Group6_1_buffer_15  int8
+    control_Group6_1_buffer_16  array[int8, 128]
+} [packed]
+ioctl$control_Group6_1(fd control_fd, cmd const[0xffffff06], arg ptr[inout, control_Group6_1_struct_1]) 
+control_Group7_0_struct_1 {
+    control_Group7_0_const_2  const[4, int8]
+    control_Group7_0_const_3  const[0, int8]
+    control_Group7_0_const_4  const[0, int8]
+    control_Group7_0_const_5  const[0, int8]
+    control_Group7_0_range_6  int8[0:45]
+    control_Group7_0_const_7  const[0, int8]
+    control_Group7_0_const_8  const[0, int8]
+    control_Group7_0_const_9  const[0, int8]
+    control_Group7_0_buffer_10  int32
+    control_Group7_0_range_11  int32[305:4294967295]
+    control_Group7_0_buffer_12  array[int8, 12]
+    control_Group7_0_buffer_13  int32
+    control_Group7_0_buffer_14  int64
+    control_Group7_0_buffer_15  int8
+    control_Group7_0_buffer_16  int8
+    control_Group7_0_buffer_17  int8
+    control_Group7_0_buffer_18  int8
+    control_Group7_0_buffer_19  int32
+    control_Group7_0_buffer_20  int8
+    control_Group7_0_buffer_21  array[int8, 127]
+    control_Group7_0_buffer_22  int8
+    control_Group7_0_buffer_23  array[int8, 128]
+} [packed]
+ioctl$control_Group7_0(fd control_fd, cmd const[0xfffffd07], arg ptr[inout, control_Group7_0_struct_1]) 
+control_Group7_1_struct_1 {
+    control_Group7_1_buffer_2  int8
+    control_Group7_1_buffer_3  int8
+    control_Group7_1_buffer_4  int8
+    control_Group7_1_buffer_5  int8
+    control_Group7_1_buffer_6  int32
+    control_Group7_1_buffer_7  int32
+    control_Group7_1_buffer_8  int32
+    control_Group7_1_buffer_9  array[int8, 12]
+    control_Group7_1_buffer_10  int32
+    control_Group7_1_buffer_11  int64
+    control_Group7_1_buffer_12  int64
+    control_Group7_1_buffer_13  int8
+    control_Group7_1_buffer_14  array[int8, 127]
+    control_Group7_1_buffer_15  int8
+    control_Group7_1_buffer_16  array[int8, 128]
+} [packed]
+ioctl$control_Group7_1(fd control_fd, cmd const[0xffffff07], arg ptr[inout, control_Group7_1_struct_1]) 
+control_Group8_0_struct_1 {
+    control_Group8_0_const_2  const[4, int8]
+    control_Group8_0_const_3  const[0, int8]
+    control_Group8_0_const_4  const[0, int8]
+    control_Group8_0_const_5  const[0, int8]
+    control_Group8_0_range_6  int8[0:45]
+    control_Group8_0_const_7  const[0, int8]
+    control_Group8_0_const_8  const[0, int8]
+    control_Group8_0_const_9  const[0, int8]
+    control_Group8_0_buffer_10  int32
+    control_Group8_0_range_11  int32[305:4294967295]
+    control_Group8_0_buffer_12  array[int8, 12]
+    control_Group8_0_buffer_13  int32
+    control_Group8_0_buffer_14  int64
+    control_Group8_0_buffer_15  int8
+    control_Group8_0_buffer_16  int8
+    control_Group8_0_buffer_17  int8
+    control_Group8_0_buffer_18  int8
+    control_Group8_0_buffer_19  int32
+    control_Group8_0_buffer_20  int8
+    control_Group8_0_buffer_21  array[int8, 127]
+    control_Group8_0_buffer_22  int8
+    control_Group8_0_buffer_23  array[int8, 128]
+} [packed]
+ioctl$control_Group8_0(fd control_fd, cmd const[0xfffffd08], arg ptr[inout, control_Group8_0_struct_1]) 
+control_Group8_1_struct_1 {
+    control_Group8_1_buffer_2  int8
+    control_Group8_1_buffer_3  int8
+    control_Group8_1_buffer_4  int8
+    control_Group8_1_buffer_5  int8
+    control_Group8_1_buffer_6  int32
+    control_Group8_1_buffer_7  int32
+    control_Group8_1_buffer_8  int32
+    control_Group8_1_buffer_9  array[int8, 12]
+    control_Group8_1_buffer_10  int32
+    control_Group8_1_buffer_11  int64
+    control_Group8_1_buffer_12  int64
+    control_Group8_1_buffer_13  int8
+    control_Group8_1_buffer_14  array[int8, 127]
+    control_Group8_1_buffer_15  int8
+    control_Group8_1_buffer_16  array[int8]
+} [packed]
+ioctl$control_Group8_1(fd control_fd, cmd const[0xffffff08], arg ptr[inout, control_Group8_1_struct_1]) 
+control_Group9_0_struct_1 {
+    control_Group9_0_const_2  const[4, int8]
+    control_Group9_0_const_3  const[0, int8]
+    control_Group9_0_const_4  const[0, int8]
+    control_Group9_0_const_5  const[0, int8]
+    control_Group9_0_range_6  int8[0:45]
+    control_Group9_0_const_7  const[0, int8]
+    control_Group9_0_const_8  const[0, int8]
+    control_Group9_0_const_9  const[0, int8]
+    control_Group9_0_buffer_10  int32
+    control_Group9_0_range_11  int32[305:4294967295]
+    control_Group9_0_buffer_12  array[int8, 12]
+    control_Group9_0_buffer_13  int32
+    control_Group9_0_buffer_14  int64
+    control_Group9_0_buffer_15  int64
+    control_Group9_0_buffer_16  int8
+    control_Group9_0_buffer_17  array[int8, 127]
+    control_Group9_0_buffer_18  int8
+    control_Group9_0_buffer_19  array[int8, 128]
+} [packed]
+ioctl$control_Group9_0(fd control_fd, cmd const[0xfffffd09], arg ptr[inout, control_Group9_0_struct_1]) 
+control_Group9_1_struct_1 {
+    control_Group9_1_buffer_2  int8
+    control_Group9_1_buffer_3  int8
+    control_Group9_1_buffer_4  int8
+    control_Group9_1_buffer_5  int8
+    control_Group9_1_buffer_6  int32
+    control_Group9_1_buffer_7  int32
+    control_Group9_1_buffer_8  int32
+    control_Group9_1_buffer_9  array[int8, 12]
+    control_Group9_1_buffer_10  int32
+    control_Group9_1_buffer_11  int64
+    control_Group9_1_buffer_12  int64
+    control_Group9_1_buffer_13  int8
+    control_Group9_1_buffer_14  array[int8, 127]
+    control_Group9_1_buffer_15  int8
+    control_Group9_1_buffer_16  array[int8]
+} [packed]
+ioctl$control_Group9_1(fd control_fd, cmd const[0xffffff09], arg ptr[inout, control_Group9_1_struct_1]) 
+control_Groupa_0_struct_1 {
+    control_Groupa_0_const_2  const[4, int8]
+    control_Groupa_0_const_3  const[0, int8]
+    control_Groupa_0_const_4  const[0, int8]
+    control_Groupa_0_const_5  const[0, int8]
+    control_Groupa_0_range_6  int8[0:45]
+    control_Groupa_0_const_7  const[0, int8]
+    control_Groupa_0_const_8  const[0, int8]
+    control_Groupa_0_const_9  const[0, int8]
+    control_Groupa_0_buffer_10  int32
+    control_Groupa_0_range_11  int32[305:4294967295]
+    control_Groupa_0_buffer_12  array[int8, 12]
+    control_Groupa_0_buffer_13  int32
+    control_Groupa_0_buffer_14  int64
+    control_Groupa_0_buffer_15  int8
+    control_Groupa_0_buffer_16  int8
+    control_Groupa_0_buffer_17  int8
+    control_Groupa_0_buffer_18  int8
+    control_Groupa_0_buffer_19  int32
+    control_Groupa_0_buffer_20  int8
+    control_Groupa_0_buffer_21  array[int8, 127]
+    control_Groupa_0_buffer_22  int8
+    control_Groupa_0_buffer_23  array[int8, 128]
+} [packed]
+ioctl$control_Groupa_0(fd control_fd, cmd const[0xfffffd0a], arg ptr[inout, control_Groupa_0_struct_1]) 
+control_Groupa_1_struct_1 {
+    control_Groupa_1_const_2  const[4, int8]
+    control_Groupa_1_const_3  const[0, int8]
+    control_Groupa_1_const_4  const[0, int8]
+    control_Groupa_1_const_5  const[0, int8]
+    control_Groupa_1_range_6  int8[0:45]
+    control_Groupa_1_const_7  const[0, int8]
+    control_Groupa_1_const_8  const[0, int8]
+    control_Groupa_1_const_9  const[0, int8]
+    control_Groupa_1_buffer_10  int32
+    control_Groupa_1_buffer_11  int32
+    control_Groupa_1_buffer_12  array[int8, 12]
+    control_Groupa_1_range_13  int32[0:4294934527]
+    control_Groupa_1_buffer_14  int64
+    control_Groupa_1_buffer_15  int64
+    control_Groupa_1_const_16  const[0, int8]
+    control_Groupa_1_buffer_17  array[int8, 127]
+    control_Groupa_1_buffer_18  int8
+    control_Groupa_1_buffer_19  array[int8, 128]
+} [packed]
+ioctl$control_Groupa_1(fd control_fd, cmd const[0xffffff0a], arg ptr[inout, control_Groupa_1_struct_1]) 
+control_Groupb_0_struct_1 {
+    control_Groupb_0_const_2  const[4, int8]
+    control_Groupb_0_const_3  const[0, int8]
+    control_Groupb_0_const_4  const[0, int8]
+    control_Groupb_0_const_5  const[0, int8]
+    control_Groupb_0_range_6  int8[0:45]
+    control_Groupb_0_const_7  const[0, int8]
+    control_Groupb_0_const_8  const[0, int8]
+    control_Groupb_0_const_9  const[0, int8]
+    control_Groupb_0_buffer_10  int32
+    control_Groupb_0_range_11  int32[305:4294967295]
+    control_Groupb_0_buffer_12  array[int8, 12]
+    control_Groupb_0_buffer_13  int32
+    control_Groupb_0_buffer_14  int64
+    control_Groupb_0_buffer_15  int8
+    control_Groupb_0_buffer_16  int8
+    control_Groupb_0_buffer_17  int8
+    control_Groupb_0_buffer_18  int8
+    control_Groupb_0_buffer_19  int32
+    control_Groupb_0_buffer_20  int8
+    control_Groupb_0_buffer_21  array[int8, 127]
+    control_Groupb_0_buffer_22  int8
+    control_Groupb_0_buffer_23  array[int8, 128]
+} [packed]
+ioctl$control_Groupb_0(fd control_fd, cmd const[0xfffffd0b], arg ptr[inout, control_Groupb_0_struct_1]) 
+control_Groupb_1_struct_1 {
+    control_Groupb_1_buffer_2  int8
+    control_Groupb_1_buffer_3  int8
+    control_Groupb_1_buffer_4  int8
+    control_Groupb_1_buffer_5  int8
+    control_Groupb_1_buffer_6  int32
+    control_Groupb_1_buffer_7  int32
+    control_Groupb_1_buffer_8  int32
+    control_Groupb_1_buffer_9  array[int8, 12]
+    control_Groupb_1_buffer_10  int32
+    control_Groupb_1_buffer_11  int64
+    control_Groupb_1_buffer_12  int64
+    control_Groupb_1_buffer_13  int8
+    control_Groupb_1_buffer_14  array[int8, 127]
+    control_Groupb_1_buffer_15  int8
+    control_Groupb_1_buffer_16  array[int8]
+} [packed]
+ioctl$control_Groupb_1(fd control_fd, cmd const[0xffffff0b], arg ptr[inout, control_Groupb_1_struct_1]) 
+control_Groupc_0_struct_1 {
+    control_Groupc_0_const_2  const[4, int8]
+    control_Groupc_0_const_3  const[0, int8]
+    control_Groupc_0_const_4  const[0, int8]
+    control_Groupc_0_const_5  const[0, int8]
+    control_Groupc_0_range_6  int8[0:45]
+    control_Groupc_0_const_7  const[0, int8]
+    control_Groupc_0_const_8  const[0, int8]
+    control_Groupc_0_const_9  const[0, int8]
+    control_Groupc_0_buffer_10  int32
+    control_Groupc_0_range_11  int32[305:4294967295]
+    control_Groupc_0_buffer_12  array[int8, 12]
+    control_Groupc_0_buffer_13  int32
+    control_Groupc_0_buffer_14  int64
+    control_Groupc_0_buffer_15  int8
+    control_Groupc_0_buffer_16  int8
+    control_Groupc_0_buffer_17  int8
+    control_Groupc_0_buffer_18  int8
+    control_Groupc_0_buffer_19  int32
+    control_Groupc_0_buffer_20  int8
+    control_Groupc_0_buffer_21  array[int8, 127]
+    control_Groupc_0_buffer_22  int8
+    control_Groupc_0_buffer_23  array[int8, 128]
+} [packed]
+ioctl$control_Groupc_0(fd control_fd, cmd const[0xfffffd0c], arg ptr[inout, control_Groupc_0_struct_1]) 
+control_Groupc_1_struct_1 {
+    control_Groupc_1_buffer_2  int8
+    control_Groupc_1_buffer_3  int8
+    control_Groupc_1_buffer_4  int8
+    control_Groupc_1_buffer_5  int8
+    control_Groupc_1_buffer_6  int32
+    control_Groupc_1_buffer_7  int32
+    control_Groupc_1_buffer_8  int32
+    control_Groupc_1_buffer_9  array[int8, 12]
+    control_Groupc_1_buffer_10  int32
+    control_Groupc_1_buffer_11  int64
+    control_Groupc_1_buffer_12  int64
+    control_Groupc_1_buffer_13  int8
+    control_Groupc_1_buffer_14  array[int8, 127]
+    control_Groupc_1_buffer_15  int8
+    control_Groupc_1_buffer_16  array[int8]
+} [packed]
+ioctl$control_Groupc_1(fd control_fd, cmd const[0xffffff0c], arg ptr[inout, control_Groupc_1_struct_1]) 
+control_Groupd_0_struct_1 {
+    control_Groupd_0_const_2  const[4, int8]
+    control_Groupd_0_const_3  const[0, int8]
+    control_Groupd_0_const_4  const[0, int8]
+    control_Groupd_0_const_5  const[0, int8]
+    control_Groupd_0_range_6  int8[0:45]
+    control_Groupd_0_const_7  const[0, int8]
+    control_Groupd_0_const_8  const[0, int8]
+    control_Groupd_0_const_9  const[0, int8]
+    control_Groupd_0_buffer_10  int32
+    control_Groupd_0_range_11  int32[305:4294967295]
+    control_Groupd_0_buffer_12  array[int8, 12]
+    control_Groupd_0_buffer_13  int32
+    control_Groupd_0_buffer_14  array[int8, 273]
+} [packed]
+ioctl$control_Groupd_0(fd control_fd, cmd const[0xfffffd0d], arg ptr[inout, control_Groupd_0_struct_1]) 
+control_Groupd_1_struct_1 {
+    control_Groupd_1_const_2  const[4, int8]
+    control_Groupd_1_const_3  const[0, int8]
+    control_Groupd_1_const_4  const[0, int8]
+    control_Groupd_1_const_5  const[0, int8]
+    control_Groupd_1_range_6  int8[0:45]
+    control_Groupd_1_const_7  const[0, int8]
+    control_Groupd_1_const_8  const[0, int8]
+    control_Groupd_1_const_9  const[0, int8]
+    control_Groupd_1_buffer_10  int32
+    control_Groupd_1_range_11  int32[305:2147483952]
+    control_Groupd_1_buffer_12  array[int8, 12]
+    control_Groupd_1_range_13  int32[0:4294934527]
+    control_Groupd_1_buffer_14  array[int8]
+} [packed]
+ioctl$control_Groupd_1(fd control_fd, cmd const[0xffffff0d], arg ptr[inout, control_Groupd_1_struct_1]) 
+control_Groupe_0_struct_1 {
+    control_Groupe_0_const_2  const[4, int8]
+    control_Groupe_0_const_3  const[0, int8]
+    control_Groupe_0_const_4  const[0, int8]
+    control_Groupe_0_const_5  const[0, int8]
+    control_Groupe_0_range_6  int8[0:45]
+    control_Groupe_0_const_7  const[0, int8]
+    control_Groupe_0_const_8  const[0, int8]
+    control_Groupe_0_const_9  const[0, int8]
+    control_Groupe_0_buffer_10  int32
+    control_Groupe_0_range_11  int32[305:4294967295]
+    control_Groupe_0_buffer_12  int32
+    control_Groupe_0_buffer_13  int64
+    control_Groupe_0_buffer_14  int32
+    control_Groupe_0_buffer_15  int64
+    control_Groupe_0_buffer_16  int8
+    control_Groupe_0_buffer_17  int8
+    control_Groupe_0_buffer_18  int8
+    control_Groupe_0_buffer_19  int8
+    control_Groupe_0_buffer_20  int32
+    control_Groupe_0_buffer_21  int8
+    control_Groupe_0_buffer_22  array[int8, 127]
+    control_Groupe_0_buffer_23  int8
+    control_Groupe_0_buffer_24  array[int8, 128]
+} [packed]
+ioctl$control_Groupe_0(fd control_fd, cmd const[0xfffffd0e], arg ptr[inout, control_Groupe_0_struct_1]) 
+control_Groupe_1_struct_1 {
+    control_Groupe_1_buffer_2  int8
+    control_Groupe_1_buffer_3  int8
+    control_Groupe_1_buffer_4  int8
+    control_Groupe_1_buffer_5  int8
+    control_Groupe_1_buffer_6  int32
+    control_Groupe_1_buffer_7  int32
+    control_Groupe_1_buffer_8  int32
+    control_Groupe_1_buffer_9  int32
+    control_Groupe_1_buffer_10  int64
+    control_Groupe_1_buffer_11  int32
+    control_Groupe_1_buffer_12  int64
+    control_Groupe_1_buffer_13  int64
+    control_Groupe_1_buffer_14  int8
+    control_Groupe_1_buffer_15  array[int8, 127]
+    control_Groupe_1_buffer_16  int8
+    control_Groupe_1_buffer_17  array[int8]
+} [packed]
+ioctl$control_Groupe_1(fd control_fd, cmd const[0xffffff0e], arg ptr[inout, control_Groupe_1_struct_1]) 
+control_Groupf_0_struct_1 {
+    control_Groupf_0_const_2  const[4, int8]
+    control_Groupf_0_const_3  const[0, int8]
+    control_Groupf_0_const_4  const[0, int8]
+    control_Groupf_0_const_5  const[0, int8]
+    control_Groupf_0_range_6  int8[0:45]
+    control_Groupf_0_const_7  const[0, int8]
+    control_Groupf_0_const_8  const[0, int8]
+    control_Groupf_0_const_9  const[0, int8]
+    control_Groupf_0_buffer_10  int32
+    control_Groupf_0_range_11  int32[305:4294967295]
+    control_Groupf_0_buffer_12  int32
+    control_Groupf_0_buffer_13  int64
+    control_Groupf_0_buffer_14  int32
+    control_Groupf_0_buffer_15  int64
+    control_Groupf_0_buffer_16  int8
+    control_Groupf_0_buffer_17  int8
+    control_Groupf_0_buffer_18  int8
+    control_Groupf_0_buffer_19  int8
+    control_Groupf_0_buffer_20  int32
+    control_Groupf_0_buffer_21  int8
+    control_Groupf_0_buffer_22  array[int8, 127]
+    control_Groupf_0_buffer_23  int8
+    control_Groupf_0_buffer_24  array[int8, 128]
+} [packed]
+ioctl$control_Groupf_0(fd control_fd, cmd const[0xfffffd0f], arg ptr[inout, control_Groupf_0_struct_1]) 
+control_Groupf_1_struct_1 {
+    control_Groupf_1_buffer_2  int8
+    control_Groupf_1_buffer_3  int8
+    control_Groupf_1_buffer_4  int8
+    control_Groupf_1_buffer_5  int8
+    control_Groupf_1_buffer_6  int32
+    control_Groupf_1_buffer_7  int32
+    control_Groupf_1_buffer_8  int32
+    control_Groupf_1_buffer_9  int32
+    control_Groupf_1_buffer_10  int64
+    control_Groupf_1_buffer_11  int32
+    control_Groupf_1_buffer_12  int64
+    control_Groupf_1_buffer_13  int64
+    control_Groupf_1_buffer_14  int8
+    control_Groupf_1_buffer_15  array[int8, 127]
+    control_Groupf_1_buffer_16  int8
+    control_Groupf_1_buffer_17  array[int8]
+} [packed]
+ioctl$control_Groupf_1(fd control_fd, cmd const[0xffffff0f], arg ptr[inout, control_Groupf_1_struct_1]) 
+control_Group10_0_struct_1 {
+    control_Group10_0_const_2  const[4, int8]
+    control_Group10_0_const_3  const[0, int8]
+    control_Group10_0_const_4  const[0, int8]
+    control_Group10_0_const_5  const[0, int8]
+    control_Group10_0_range_6  int8[0:45]
+    control_Group10_0_const_7  const[0, int8]
+    control_Group10_0_const_8  const[0, int8]
+    control_Group10_0_const_9  const[0, int8]
+    control_Group10_0_buffer_10  int32
+    control_Group10_0_range_11  int32[305:4294967295]
+    control_Group10_0_buffer_12  array[int8, 12]
+    control_Group10_0_buffer_13  int32
+    control_Group10_0_buffer_14  array[int8, 16]
+    control_Group10_0_buffer_15  int8
+    control_Group10_0_buffer_16  array[int8, 127]
+    control_Group10_0_buffer_17  int8
+    control_Group10_0_buffer_18  array[int8, 128]
+} [packed]
+ioctl$control_Group10_0(fd control_fd, cmd const[0xfffffd10], arg ptr[inout, control_Group10_0_struct_1]) 
+control_Group10_1_struct_1 {
+    control_Group10_1_buffer_2  int8
+    control_Group10_1_buffer_3  int8
+    control_Group10_1_buffer_4  int8
+    control_Group10_1_buffer_5  int8
+    control_Group10_1_buffer_6  int8
+    control_Group10_1_buffer_7  int8
+    control_Group10_1_buffer_8  int8
+    control_Group10_1_buffer_9  int8
+    control_Group10_1_buffer_10  int32
+    control_Group10_1_buffer_11  int32
+    control_Group10_1_buffer_12  array[int8, 12]
+    control_Group10_1_buffer_13  int32
+    control_Group10_1_buffer_14  array[int8, 16]
+    control_Group10_1_buffer_15  int8
+    control_Group10_1_buffer_16  array[int8, 127]
+    control_Group10_1_buffer_17  int8
+    control_Group10_1_buffer_18  array[int8, 128]
+} [packed]
+ioctl$control_Group10_1(fd control_fd, cmd const[0xffffff10], arg ptr[inout, control_Group10_1_struct_1]) 
+control_Group11_0_struct_1 {
+    control_Group11_0_const_2  const[4, int8]
+    control_Group11_0_const_3  const[0, int8]
+    control_Group11_0_const_4  const[0, int8]
+    control_Group11_0_const_5  const[0, int8]
+    control_Group11_0_range_6  int8[0:45]
+    control_Group11_0_const_7  const[0, int8]
+    control_Group11_0_const_8  const[0, int8]
+    control_Group11_0_const_9  const[0, int8]
+    control_Group11_0_buffer_10  int32
+    control_Group11_0_range_11  int32[305:4294967295]
+    control_Group11_0_buffer_12  array[int8, 12]
+    control_Group11_0_buffer_13  int32
+    control_Group11_0_buffer_14  array[int8, 16]
+    control_Group11_0_buffer_15  int8
+    control_Group11_0_buffer_16  int8
+    control_Group11_0_buffer_17  int8
+    control_Group11_0_buffer_18  array[int8, 125]
+    control_Group11_0_buffer_19  int8
+    control_Group11_0_buffer_20  array[int8, 128]
+} [packed]
+ioctl$control_Group11_0(fd control_fd, cmd const[0xfffffd11], arg ptr[inout, control_Group11_0_struct_1]) 
+control_Group11_1_struct_1 {
+    control_Group11_1_const_2  const[4, int8]
+    control_Group11_1_const_3  const[0, int8]
+    control_Group11_1_const_4  const[0, int8]
+    control_Group11_1_const_5  const[0, int8]
+    control_Group11_1_range_6  int8[0:45]
+    control_Group11_1_const_7  const[0, int8]
+    control_Group11_1_const_8  const[0, int8]
+    control_Group11_1_const_9  const[0, int8]
+    control_Group11_1_buffer_10  int32
+    control_Group11_1_range_11  int32[305:2147483952]
+    control_Group11_1_buffer_12  array[int8, 12]
+    control_Group11_1_range_13  int32[0:4294934527]
+    control_Group11_1_buffer_14  array[int8, 16]
+    control_Group11_1_buffer_15  int8
+    control_Group11_1_buffer_16  int8
+    control_Group11_1_buffer_17  int8
+    control_Group11_1_buffer_18  array[int8, 125]
+    control_Group11_1_buffer_19  int8
+    control_Group11_1_buffer_20  array[int8]
+} [packed]
+ioctl$control_Group11_1(fd control_fd, cmd const[0xffffff11], arg ptr[inout, control_Group11_1_struct_1]) 
+control_Group11_2_struct_1 {
+    control_Group11_2_const_2  const[4, int8]
+    control_Group11_2_const_3  const[0, int8]
+    control_Group11_2_const_4  const[0, int8]
+    control_Group11_2_const_5  const[0, int8]
+    control_Group11_2_range_6  int8[0:45]
+    control_Group11_2_const_7  const[0, int8]
+    control_Group11_2_const_8  const[0, int8]
+    control_Group11_2_const_9  const[0, int8]
+    control_Group11_2_buffer_10  int32
+    control_Group11_2_buffer_11  int32
+    control_Group11_2_buffer_12  array[int8, 12]
+    control_Group11_2_buffer_13  int32
+    control_Group11_2_buffer_14  array[int8, 16]
+    control_Group11_2_buffer_15  int8
+    control_Group11_2_buffer_16  int8
+    control_Group11_2_buffer_17  int8
+    control_Group11_2_buffer_18  array[int8, 125]
+    control_Group11_2_buffer_19  int8
+    control_Group11_2_buffer_20  array[int8, 128]
+} [packed]
+ioctl$control_Group11_2(fd control_fd, cmd const[0xfffffd11], arg ptr[inout, control_Group11_2_struct_1]) 
+control_Group11_3_struct_1 {
+    control_Group11_3_const_2  const[4, int8]
+    control_Group11_3_const_3  const[0, int8]
+    control_Group11_3_const_4  const[0, int8]
+    control_Group11_3_const_5  const[0, int8]
+    control_Group11_3_range_6  int8[0:45]
+    control_Group11_3_const_7  const[0, int8]
+    control_Group11_3_const_8  const[0, int8]
+    control_Group11_3_const_9  const[0, int8]
+    control_Group11_3_buffer_10  int32
+    control_Group11_3_range_11  int32[305:2147483952]
+    control_Group11_3_buffer_12  array[int8, 12]
+    control_Group11_3_range_13  int32[0:4294934527]
+    control_Group11_3_buffer_14  array[int8, 16]
+    control_Group11_3_buffer_15  int8
+    control_Group11_3_buffer_16  int8
+    control_Group11_3_buffer_17  int8
+    control_Group11_3_buffer_18  array[int8, 125]
+    control_Group11_3_buffer_19  int8
+    control_Group11_3_buffer_20  array[int8]
+} [packed]
+ioctl$control_Group11_3(fd control_fd, cmd const[0xfffffd11], arg ptr[inout, control_Group11_3_struct_1]) 

@@ -1,0 +1,883 @@
+resource usb_fd[fd]
+
+openat$usb_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/bus/usb/001/001"]], flags flags[open_flags], mode const[0]) usb_fd
+read$usb_syzgen(fd usb_fd, data ptr[out, array[int8]], size len[data]) 
+ioctl$usb_Group4008550c_0(fd usb_fd, cmd const[1074287884], arg intptr) 
+ioctl$usb_Group4004550c_0(fd usb_fd, cmd const[1074025740], arg intptr) 
+usb_Group8108551b_0_struct_1 {
+    usb_Group8108551b_0_buffer_2  int32
+    usb_Group8108551b_0_range_3  int32[0:4294967292, 4]
+    usb_Group8108551b_0_buffer_4  array[int8, 256]
+} [packed]
+ioctl$usb_Group8108551b_0(fd usb_fd, cmd const[2164806939], arg ptr[in, usb_Group8108551b_0_struct_1]) 
+usb_Group8108551b_1_struct_1 {
+    usb_Group8108551b_1_buffer_2  int8
+    usb_Group8108551b_1_buffer_3  int8
+    usb_Group8108551b_1_buffer_4  int8
+    usb_Group8108551b_1_buffer_5  int8
+    usb_Group8108551b_1_range_6  int32[2:4294967294, 2]
+    usb_Group8108551b_1_buffer_7  int8
+    usb_Group8108551b_1_buffer_8  array[int8, 255]
+} [packed]
+ioctl$usb_Group8108551b_1(fd usb_fd, cmd const[2164806939], arg ptr[in, usb_Group8108551b_1_struct_1]) 
+usb_Group8108551b_2_struct_1 {
+    usb_Group8108551b_2_buffer_2  int8
+    usb_Group8108551b_2_buffer_3  int8
+    usb_Group8108551b_2_buffer_4  int8
+    usb_Group8108551b_2_buffer_5  int8
+    usb_Group8108551b_2_range_6  int32[1:4294967293]
+    usb_Group8108551b_2_buffer_7  int8
+    usb_Group8108551b_2_buffer_8  int8
+    usb_Group8108551b_2_buffer_9  int8
+    usb_Group8108551b_2_buffer_10  array[int8, 253]
+} [packed]
+ioctl$usb_Group8108551b_2(fd usb_fd, cmd const[2164806939], arg ptr[in, usb_Group8108551b_2_struct_1]) 
+usb_Group8108551b_3_struct_1 {
+    usb_Group8108551b_3_buffer_2  int8
+    usb_Group8108551b_3_buffer_3  int8
+    usb_Group8108551b_3_buffer_4  int8
+    usb_Group8108551b_3_buffer_5  int8
+    usb_Group8108551b_3_buffer_6  int8
+    usb_Group8108551b_3_buffer_7  int8
+    usb_Group8108551b_3_buffer_8  int16
+    usb_Group8108551b_3_buffer_9  int8
+    usb_Group8108551b_3_buffer_10  int8
+    usb_Group8108551b_3_buffer_11  int8
+    usb_Group8108551b_3_buffer_12  array[int8, 253]
+} [packed]
+ioctl$usb_Group8108551b_3(fd usb_fd, cmd const[2164806939], arg ptr[in, usb_Group8108551b_3_struct_1]) 
+ioctl$usb_Group40085511_0(fd usb_fd, cmd const[1074287889], arg ptr[out, int64]) 
+ioctl$usb_Group80045510_0(fd usb_fd, cmd const[2147767568], arg ptr[in, int32[0:63]]) 
+ioctl$usb_Group80045515_0(fd usb_fd, cmd const[2147767573], arg ptr[in, int32[0:143]]) 
+ioctl$usb_Group80045518_0(fd usb_fd, cmd const[2147767576], arg ptr[in, int32[1:4294967295]]) 
+ioctl$usb_Group80045505_0(fd usb_fd, cmd const[2147767557], arg ptr[in, int32[0:4294967294]]) 
+ioctl$usb_Group8004551a_0(fd usb_fd, cmd const[2147767578], arg ptr[out, int32]) 
+ioctl$usb_Group80045503_0(fd usb_fd, cmd const[2147767555], arg ptr[in, int32[0:143]]) 
+usb_Group8008551d_0_struct_1 {
+    usb_Group8008551d_0_buffer_2  int32
+    usb_Group8008551d_0_range_3  int8[1:30]
+    usb_Group8008551d_0_const_4  const[0, int8]
+    usb_Group8008551d_0_const_5  const[0, int8]
+    usb_Group8008551d_0_const_6  const[0, int8]
+    usb_Group8008551d_0_range_7  int8[128:143]
+} [packed]
+ioctl$usb_Group8008551d_0(fd usb_fd, cmd const[2148029725], arg ptr[in, usb_Group8008551d_0_struct_1]) 
+usb_Group8008551d_1_struct_1 {
+    usb_Group8008551d_1_buffer_2  int32
+    usb_Group8008551d_1_range_3  int8[1:30]
+    usb_Group8008551d_1_const_4  const[0, int8]
+    usb_Group8008551d_1_const_5  const[0, int8]
+    usb_Group8008551d_1_const_6  const[0, int8]
+    usb_Group8008551d_1_range_7  int8[0:15]
+} [packed]
+ioctl$usb_Group8008551d_1(fd usb_fd, cmd const[2148029725], arg ptr[in, usb_Group8008551d_1_struct_1]) 
+usb_Groupc0105512_0_struct_1 {
+    usb_Groupc0105512_0_buffer_2  int8
+    usb_Groupc0105512_0_buffer_3  int8
+    usb_Groupc0105512_0_buffer_4  int8
+    usb_Groupc0105512_0_buffer_5  int8
+    usb_Groupc0105512_0_const_6  const[19, int8]
+    usb_Groupc0105512_0_const_7  const[85, int8]
+    usb_Groupc0105512_0_const_8  const[128, int8]
+    usb_Groupc0105512_0_const_9  const[128, int8]
+    usb_Groupc0105512_0_ptr_11  ptr[inout, array[int8]]
+} [packed]
+ioctl$usb_Groupc0105512_0(fd usb_fd, cmd const[3222295826], arg ptr[inout, usb_Groupc0105512_0_struct_1]) 
+usb_Groupc0105512_1_struct_1 {
+    usb_Groupc0105512_1_buffer_2  int8
+    usb_Groupc0105512_1_buffer_3  int8
+    usb_Groupc0105512_1_buffer_4  int8
+    usb_Groupc0105512_1_buffer_5  int8
+    usb_Groupc0105512_1_const_6  const[22, int8]
+    usb_Groupc0105512_1_const_7  const[85, int8]
+    usb_Groupc0105512_1_const_8  const[0, int8]
+    usb_Groupc0105512_1_const_9  const[0, int8]
+    usb_Groupc0105512_1_buffer_10  int64
+} [packed]
+ioctl$usb_Groupc0105512_1(fd usb_fd, cmd const[3222295826], arg ptr[in, usb_Groupc0105512_1_struct_1]) 
+usb_Groupc0105512_2_flag_8 = 0, 32768, 16384, 49152
+usb_Groupc0105512_2_struct_1 {
+    usb_Groupc0105512_2_buffer_2  int8
+    usb_Groupc0105512_2_buffer_3  int8
+    usb_Groupc0105512_2_buffer_4  int8
+    usb_Groupc0105512_2_buffer_5  int8
+    usb_Groupc0105512_2_buffer_6  int8
+    usb_Groupc0105512_2_buffer_7  int8
+    usb_Groupc0105512_2_flag_8  flags[usb_Groupc0105512_2_flag_8, int16]
+    usb_Groupc0105512_2_buffer_9  int64
+} [packed]
+ioctl$usb_Groupc0105512_2(fd usb_fd, cmd const[3222295826], arg ptr[in, usb_Groupc0105512_2_struct_1]) 
+usb_Groupc0105512_3_struct_1 {
+    usb_Groupc0105512_3_buffer_2  int8
+    usb_Groupc0105512_3_buffer_3  int8
+    usb_Groupc0105512_3_buffer_4  int8
+    usb_Groupc0105512_3_buffer_5  int8
+    usb_Groupc0105512_3_buffer_6  int16
+    usb_Groupc0105512_3_buffer_7  int8
+    usb_Groupc0105512_3_buffer_8  int8
+    usb_Groupc0105512_3_ptr_10  ptr[inout, array[int8]]
+} [packed]
+ioctl$usb_Groupc0105512_3(fd usb_fd, cmd const[3222295826], arg ptr[inout, usb_Groupc0105512_3_struct_1]) 
+usb_Group41045508_0_struct_1 {
+    usb_Group41045508_0_buffer_2  int8
+    usb_Group41045508_0_buffer_3  int8
+    usb_Group41045508_0_buffer_4  int8
+    usb_Group41045508_0_buffer_5  int8
+    usb_Group41045508_0_buffer_6  array[int8, 256]
+} [packed]
+ioctl$usb_Group41045508_0(fd usb_fd, cmd const[1090802952], arg ptr[inout, usb_Group41045508_0_struct_1]) 
+usb_Group8008550e_0_struct_1 {
+    usb_Group8008550e_0_buffer_2  int32
+    usb_Group8008550e_0_buffer_3  int32
+} [packed]
+ioctl$usb_Group8008550e_0(fd usb_fd, cmd const[2148029710], arg ptr[in, usb_Group8008550e_0_struct_1]) 
+usb_Group802c550a_0_struct_1 {
+    usb_Group802c550a_0_const_2  const[2, int8]
+    usb_Group802c550a_0_range_3  int8[1:143]
+    usb_Group802c550a_0_buffer_4  int16
+    usb_Group802c550a_0_buffer_5  int32
+    usb_Group802c550a_0_range_6  int8[0:229]
+    usb_Group802c550a_0_const_7  const[0, int8]
+    usb_Group802c550a_0_const_8  const[0, int8]
+    usb_Group802c550a_0_const_9  const[0, int8]
+    usb_Group802c550a_0_buffer_10  int32
+    usb_Group802c550a_0_const_11  const[0, int8]
+    usb_Group802c550a_0_const_12  const[0, int8]
+    usb_Group802c550a_0_const_13  const[0, int8]
+    usb_Group802c550a_0_const_14  const[0, int8]
+    usb_Group802c550a_0_buffer_15  int32
+    usb_Group802c550a_0_buffer_16  int64
+    usb_Group802c550a_0_buffer_17  int64
+    usb_Group802c550a_0_buffer_18  int32
+} [packed]
+ioctl$usb_Group802c550a_0(fd usb_fd, cmd const[2150389002], arg ptr[in, usb_Group802c550a_0_struct_1]) 
+usb_Group802c550a_1_struct_1 {
+    usb_Group802c550a_1_buffer_2  int8
+    usb_Group802c550a_1_range_3  int8[0:143]
+    usb_Group802c550a_1_buffer_4  int16
+    usb_Group802c550a_1_buffer_5  int32
+    usb_Group802c550a_1_range_6  int8[0:231]
+    usb_Group802c550a_1_const_7  const[0, int8]
+    usb_Group802c550a_1_const_8  const[0, int8]
+    usb_Group802c550a_1_const_9  const[0, int8]
+    usb_Group802c550a_1_buffer_10  int32
+    usb_Group802c550a_1_const_11  const[0, int8]
+    usb_Group802c550a_1_const_12  const[0, int8]
+    usb_Group802c550a_1_const_13  const[0, int8]
+    usb_Group802c550a_1_const_14  const[0, int8]
+    usb_Group802c550a_1_buffer_15  int32
+    usb_Group802c550a_1_buffer_16  int64
+    usb_Group802c550a_1_buffer_17  int64
+    usb_Group802c550a_1_buffer_18  int32
+} [packed]
+ioctl$usb_Group802c550a_1(fd usb_fd, cmd const[2150389002], arg ptr[in, usb_Group802c550a_1_struct_1]) 
+usb_Group802c550a_2_flag_3 = 128, 0
+usb_Group802c550a_2_struct_10 {
+    usb_Group802c550a_2_range_11  int8[64:223]
+    usb_Group802c550a_2_buffer_12  int8
+    usb_Group802c550a_2_buffer_13  int16
+    usb_Group802c550a_2_buffer_14  int16
+    usb_Group802c550a_2_buffer_15  int16
+} [packed]
+usb_Group802c550a_2_struct_1 {
+    usb_Group802c550a_2_const_2  const[2, int8]
+    usb_Group802c550a_2_flag_3  flags[usb_Group802c550a_2_flag_3, int8]
+    usb_Group802c550a_2_buffer_4  int16
+    usb_Group802c550a_2_buffer_5  int32
+    usb_Group802c550a_2_range_6  int8[0:229]
+    usb_Group802c550a_2_const_7  const[0, int8]
+    usb_Group802c550a_2_const_8  const[0, int8]
+    usb_Group802c550a_2_const_9  const[0, int8]
+    usb_Group802c550a_2_ptr_16  ptr[in, usb_Group802c550a_2_struct_10]
+    usb_Group802c550a_2_range_17  int32[8:2146483646]
+    usb_Group802c550a_2_buffer_18  int32
+    usb_Group802c550a_2_buffer_19  int64
+    usb_Group802c550a_2_buffer_20  int64
+    usb_Group802c550a_2_buffer_21  int32
+} [packed]
+ioctl$usb_Group802c550a_2(fd usb_fd, cmd const[2150389002], arg ptr[in, usb_Group802c550a_2_struct_1]) 
+usb_Group802c550a_3_flag_3 = 128, 0
+usb_Group802c550a_3_struct_10 {
+    usb_Group802c550a_3_const_11  const[161, int8]
+    usb_Group802c550a_3_range_12  int8[1:255]
+    usb_Group802c550a_3_buffer_13  int16
+    usb_Group802c550a_3_buffer_14  int16
+    usb_Group802c550a_3_buffer_15  int16
+} [packed]
+usb_Group802c550a_3_struct_1 {
+    usb_Group802c550a_3_const_2  const[2, int8]
+    usb_Group802c550a_3_flag_3  flags[usb_Group802c550a_3_flag_3, int8]
+    usb_Group802c550a_3_buffer_4  int16
+    usb_Group802c550a_3_buffer_5  int32
+    usb_Group802c550a_3_range_6  int8[0:229]
+    usb_Group802c550a_3_const_7  const[0, int8]
+    usb_Group802c550a_3_const_8  const[0, int8]
+    usb_Group802c550a_3_const_9  const[0, int8]
+    usb_Group802c550a_3_ptr_16  ptr[in, usb_Group802c550a_3_struct_10]
+    usb_Group802c550a_3_range_17  int32[8:2146483646]
+    usb_Group802c550a_3_buffer_18  int32
+    usb_Group802c550a_3_buffer_19  int64
+    usb_Group802c550a_3_buffer_20  int64
+    usb_Group802c550a_3_buffer_21  int32
+} [packed]
+ioctl$usb_Group802c550a_3(fd usb_fd, cmd const[2150389002], arg ptr[in, usb_Group802c550a_3_struct_1]) 
+usb_Group802c550a_4_flag_11 = 33, 129, 225, 1, 97, 162, 2, 34, 98, 130, 226
+usb_Group802c550a_4_struct_10 {
+    usb_Group802c550a_4_flag_11  flags[usb_Group802c550a_4_flag_11, int8]
+    usb_Group802c550a_4_buffer_12  int8
+    usb_Group802c550a_4_buffer_13  int16
+    usb_Group802c550a_4_buffer_14  int16
+    usb_Group802c550a_4_buffer_15  int16
+} [packed]
+usb_Group802c550a_4_struct_1 {
+    usb_Group802c550a_4_const_2  const[2, int8]
+    usb_Group802c550a_4_const_3  const[128, int8]
+    usb_Group802c550a_4_buffer_4  int16
+    usb_Group802c550a_4_buffer_5  int32
+    usb_Group802c550a_4_range_6  int8[0:229]
+    usb_Group802c550a_4_const_7  const[0, int8]
+    usb_Group802c550a_4_const_8  const[0, int8]
+    usb_Group802c550a_4_const_9  const[0, int8]
+    usb_Group802c550a_4_ptr_16  ptr[in, usb_Group802c550a_4_struct_10]
+    usb_Group802c550a_4_range_17  int32[8:2146483646]
+    usb_Group802c550a_4_buffer_18  int32
+    usb_Group802c550a_4_buffer_19  int64
+    usb_Group802c550a_4_buffer_20  int64
+    usb_Group802c550a_4_buffer_21  int32
+} [packed]
+ioctl$usb_Group802c550a_4(fd usb_fd, cmd const[2150389002], arg ptr[in, usb_Group802c550a_4_struct_1]) 
+usb_Group802c550a_5_flag_3 = 128, 0
+usb_Group802c550a_5_flag_11 = 162, 2, 34, 98, 130, 226
+usb_Group802c550a_5_struct_10 {
+    usb_Group802c550a_5_flag_11  flags[usb_Group802c550a_5_flag_11, int8]
+    usb_Group802c550a_5_buffer_12  int8
+    usb_Group802c550a_5_buffer_13  int16
+    usb_Group802c550a_5_range_14  int16[0:65408, 128]
+    usb_Group802c550a_5_buffer_15  int16
+} [packed]
+usb_Group802c550a_5_struct_1 {
+    usb_Group802c550a_5_const_2  const[2, int8]
+    usb_Group802c550a_5_flag_3  flags[usb_Group802c550a_5_flag_3, int8]
+    usb_Group802c550a_5_buffer_4  int16
+    usb_Group802c550a_5_buffer_5  int32
+    usb_Group802c550a_5_range_6  int8[0:229]
+    usb_Group802c550a_5_const_7  const[0, int8]
+    usb_Group802c550a_5_const_8  const[0, int8]
+    usb_Group802c550a_5_const_9  const[0, int8]
+    usb_Group802c550a_5_ptr_16  ptr[in, usb_Group802c550a_5_struct_10]
+    usb_Group802c550a_5_range_17  int32[8:2146483646]
+    usb_Group802c550a_5_buffer_18  int32
+    usb_Group802c550a_5_buffer_19  int64
+    usb_Group802c550a_5_buffer_20  int64
+    usb_Group802c550a_5_buffer_21  int32
+} [packed]
+ioctl$usb_Group802c550a_5(fd usb_fd, cmd const[2150389002], arg ptr[in, usb_Group802c550a_5_struct_1]) 
+usb_Group802c550a_6_flag_3 = 128, 0
+usb_Group802c550a_6_flag_11 = 162, 2, 34, 98, 130, 226
+usb_Group802c550a_6_struct_10 {
+    usb_Group802c550a_6_flag_11  flags[usb_Group802c550a_6_flag_11, int8]
+    usb_Group802c550a_6_buffer_12  int8
+    usb_Group802c550a_6_buffer_13  int16
+    usb_Group802c550a_6_range_14  int16[1:65535]
+    usb_Group802c550a_6_buffer_15  int16
+} [packed]
+usb_Group802c550a_6_struct_1 {
+    usb_Group802c550a_6_const_2  const[2, int8]
+    usb_Group802c550a_6_flag_3  flags[usb_Group802c550a_6_flag_3, int8]
+    usb_Group802c550a_6_buffer_4  int16
+    usb_Group802c550a_6_buffer_5  int32
+    usb_Group802c550a_6_range_6  int8[0:229]
+    usb_Group802c550a_6_const_7  const[0, int8]
+    usb_Group802c550a_6_const_8  const[0, int8]
+    usb_Group802c550a_6_const_9  const[0, int8]
+    usb_Group802c550a_6_ptr_16  ptr[in, usb_Group802c550a_6_struct_10]
+    usb_Group802c550a_6_range_17  int32[8:2146483646]
+    usb_Group802c550a_6_buffer_18  int32
+    usb_Group802c550a_6_buffer_19  int64
+    usb_Group802c550a_6_buffer_20  int64
+    usb_Group802c550a_6_buffer_21  int32
+} [packed]
+ioctl$usb_Group802c550a_6(fd usb_fd, cmd const[2150389002], arg ptr[in, usb_Group802c550a_6_struct_1]) 
+usb_Group802c550a_7_struct_10 {
+    usb_Group802c550a_7_range_11  int8[64:223]
+    usb_Group802c550a_7_buffer_12  int8
+    usb_Group802c550a_7_buffer_13  int16
+    usb_Group802c550a_7_buffer_14  int16
+    usb_Group802c550a_7_range_15  int16[1:65535]
+} [packed]
+usb_Group802c550a_7_struct_1 {
+    usb_Group802c550a_7_const_2  const[2, int8]
+    usb_Group802c550a_7_const_3  const[0, int8]
+    usb_Group802c550a_7_buffer_4  int16
+    usb_Group802c550a_7_buffer_5  int32
+    usb_Group802c550a_7_range_6  int8[0:229]
+    usb_Group802c550a_7_const_7  const[0, int8]
+    usb_Group802c550a_7_const_8  const[0, int8]
+    usb_Group802c550a_7_const_9  const[0, int8]
+    usb_Group802c550a_7_ptr_16  ptr[in, usb_Group802c550a_7_struct_10]
+    usb_Group802c550a_7_range_17  int32[9:2146483646]
+    usb_Group802c550a_7_buffer_18  int32
+    usb_Group802c550a_7_buffer_19  int64
+    usb_Group802c550a_7_buffer_20  int64
+    usb_Group802c550a_7_buffer_21  int32
+} [packed]
+ioctl$usb_Group802c550a_7(fd usb_fd, cmd const[2150389002], arg ptr[in, usb_Group802c550a_7_struct_1]) 
+usb_Group802c550a_8_flag_11 = 33, 129, 225, 1, 97
+usb_Group802c550a_8_struct_10 {
+    usb_Group802c550a_8_flag_11  flags[usb_Group802c550a_8_flag_11, int8]
+    usb_Group802c550a_8_buffer_12  int8
+    usb_Group802c550a_8_buffer_13  int16
+    usb_Group802c550a_8_range_14  int16[0:65343]
+    usb_Group802c550a_8_buffer_15  int16
+} [packed]
+usb_Group802c550a_8_struct_1 {
+    usb_Group802c550a_8_const_2  const[2, int8]
+    usb_Group802c550a_8_const_3  const[0, int8]
+    usb_Group802c550a_8_buffer_4  int16
+    usb_Group802c550a_8_buffer_5  int32
+    usb_Group802c550a_8_range_6  int8[0:229]
+    usb_Group802c550a_8_const_7  const[0, int8]
+    usb_Group802c550a_8_const_8  const[0, int8]
+    usb_Group802c550a_8_const_9  const[0, int8]
+    usb_Group802c550a_8_ptr_16  ptr[in, usb_Group802c550a_8_struct_10]
+    usb_Group802c550a_8_range_17  int32[8:2146483646]
+    usb_Group802c550a_8_buffer_18  int32
+    usb_Group802c550a_8_buffer_19  int64
+    usb_Group802c550a_8_buffer_20  int64
+    usb_Group802c550a_8_buffer_21  int32
+} [packed]
+ioctl$usb_Group802c550a_8(fd usb_fd, cmd const[2150389002], arg ptr[in, usb_Group802c550a_8_struct_1]) 
+usb_Group802c550a_9_struct_10 {
+    usb_Group802c550a_9_buffer_11  int8
+    usb_Group802c550a_9_buffer_12  int8
+    usb_Group802c550a_9_buffer_13  int8
+    usb_Group802c550a_9_buffer_14  int8
+    usb_Group802c550a_9_buffer_15  int16
+    usb_Group802c550a_9_buffer_16  int16
+    usb_Group802c550a_9_buffer_17  array[int8]
+} [packed]
+usb_Group802c550a_9_struct_1 {
+    usb_Group802c550a_9_const_2  const[2, int8]
+    usb_Group802c550a_9_range_3  int8[1:143]
+    usb_Group802c550a_9_buffer_4  int16
+    usb_Group802c550a_9_buffer_5  int32
+    usb_Group802c550a_9_range_6  int8[0:229]
+    usb_Group802c550a_9_const_7  const[0, int8]
+    usb_Group802c550a_9_const_8  const[0, int8]
+    usb_Group802c550a_9_const_9  const[0, int8]
+    usb_Group802c550a_9_ptr_18  ptr[in, usb_Group802c550a_9_struct_10]
+    usb_Group802c550a_9_buffer_19  int16
+    usb_Group802c550a_9_buffer_20  int8
+    usb_Group802c550a_9_buffer_21  int8
+    usb_Group802c550a_9_buffer_22  int32
+    usb_Group802c550a_9_buffer_23  int32
+    usb_Group802c550a_9_buffer_24  int32
+    usb_Group802c550a_9_buffer_25  int32
+    usb_Group802c550a_9_buffer_26  int32
+    usb_Group802c550a_9_buffer_27  int32
+} [packed]
+ioctl$usb_Group802c550a_9(fd usb_fd, cmd const[2150389002], arg ptr[in, usb_Group802c550a_9_struct_1]) 
+usb_Group802c550a_10_struct_10 {
+    usb_Group802c550a_10_buffer_11  int8
+    usb_Group802c550a_10_buffer_12  int8
+    usb_Group802c550a_10_buffer_13  int16
+    usb_Group802c550a_10_buffer_14  int16
+    usb_Group802c550a_10_buffer_15  int16
+} [packed]
+usb_Group802c550a_10_struct_1 {
+    usb_Group802c550a_10_buffer_2  int8
+    usb_Group802c550a_10_range_3  int8[0:143]
+    usb_Group802c550a_10_buffer_4  int16
+    usb_Group802c550a_10_buffer_5  int32
+    usb_Group802c550a_10_range_6  int8[0:231]
+    usb_Group802c550a_10_const_7  const[0, int8]
+    usb_Group802c550a_10_const_8  const[0, int8]
+    usb_Group802c550a_10_const_9  const[0, int8]
+    usb_Group802c550a_10_ptr_16  ptr[in, usb_Group802c550a_10_struct_10]
+    usb_Group802c550a_10_buffer_17  int16
+    usb_Group802c550a_10_buffer_18  int8
+    usb_Group802c550a_10_buffer_19  int8
+    usb_Group802c550a_10_buffer_20  int32
+    usb_Group802c550a_10_buffer_21  int32
+    usb_Group802c550a_10_buffer_22  int32
+    usb_Group802c550a_10_buffer_23  int32
+    usb_Group802c550a_10_buffer_24  int32
+    usb_Group802c550a_10_buffer_25  int32
+} [packed]
+ioctl$usb_Group802c550a_10(fd usb_fd, cmd const[2150389002], arg ptr[in, usb_Group802c550a_10_struct_1]) 
+usb_Group802c550a_11_flag_3 = 128, 0
+usb_Group802c550a_11_struct_10 {
+    usb_Group802c550a_11_buffer_11  int8
+    usb_Group802c550a_11_buffer_12  int8
+    usb_Group802c550a_11_buffer_13  int16
+    usb_Group802c550a_11_buffer_14  int16
+    usb_Group802c550a_11_buffer_15  int16
+} [packed]
+usb_Group802c550a_11_struct_1 {
+    usb_Group802c550a_11_const_2  const[2, int8]
+    usb_Group802c550a_11_flag_3  flags[usb_Group802c550a_11_flag_3, int8]
+    usb_Group802c550a_11_buffer_4  int16
+    usb_Group802c550a_11_buffer_5  int32
+    usb_Group802c550a_11_range_6  int8[0:229]
+    usb_Group802c550a_11_const_7  const[0, int8]
+    usb_Group802c550a_11_const_8  const[0, int8]
+    usb_Group802c550a_11_const_9  const[0, int8]
+    usb_Group802c550a_11_ptr_16  ptr[in, usb_Group802c550a_11_struct_10]
+    usb_Group802c550a_11_range_17  int32[8:2146483646]
+    usb_Group802c550a_11_buffer_18  int32
+    usb_Group802c550a_11_buffer_19  int64
+    usb_Group802c550a_11_buffer_20  int64
+    usb_Group802c550a_11_buffer_21  int32
+} [packed]
+ioctl$usb_Group802c550a_11(fd usb_fd, cmd const[2150389002], arg ptr[in, usb_Group802c550a_11_struct_1]) 
+usb_Groupc0105500_0_struct_1 {
+    usb_Groupc0105500_0_range_2  int8[64:223]
+    usb_Groupc0105500_0_buffer_3  int8
+    usb_Groupc0105500_0_buffer_4  int16
+    usb_Groupc0105500_0_buffer_5  int16
+    usb_Groupc0105500_0_buffer_6  int8
+    usb_Groupc0105500_0_range_7  int8[0:16]
+    usb_Groupc0105500_0_buffer_8  int32
+    usb_Groupc0105500_0_buffer_9  int32
+} [packed]
+ioctl$usb_Groupc0105500_0(fd usb_fd, cmd const[3222295808], arg ptr[inout, usb_Groupc0105500_0_struct_1]) 
+usb_Groupc0105500_1_flag_2 = 33, 129, 225, 1, 97, 161
+usb_Groupc0105500_1_struct_1 {
+    usb_Groupc0105500_1_flag_2  flags[usb_Groupc0105500_1_flag_2, int8]
+    usb_Groupc0105500_1_buffer_3  int8
+    usb_Groupc0105500_1_buffer_4  int16
+    usb_Groupc0105500_1_range_5  int16[0:65343]
+    usb_Groupc0105500_1_buffer_6  int16
+    usb_Groupc0105500_1_buffer_7  int32
+    usb_Groupc0105500_1_buffer_8  int32
+} [packed]
+ioctl$usb_Groupc0105500_1(fd usb_fd, cmd const[3222295808], arg ptr[inout, usb_Groupc0105500_1_struct_1]) 
+usb_Groupc0105500_2_struct_1 {
+    usb_Groupc0105500_2_const_2  const[161, int8]
+    usb_Groupc0105500_2_const_3  const[0, int8]
+    usb_Groupc0105500_2_buffer_4  int16
+    usb_Groupc0105500_2_buffer_5  int16
+    usb_Groupc0105500_2_range_6  int16[0:4096]
+    usb_Groupc0105500_2_buffer_7  int32
+    usb_Groupc0105500_2_buffer_8  int32
+} [packed]
+ioctl$usb_Groupc0105500_2(fd usb_fd, cmd const[3222295808], arg ptr[inout, usb_Groupc0105500_2_struct_1]) 
+usb_Groupc0105500_3_struct_1 {
+    usb_Groupc0105500_3_const_2  const[161, int8]
+    usb_Groupc0105500_3_const_3  const[0, int8]
+    usb_Groupc0105500_3_buffer_4  int16
+    usb_Groupc0105500_3_buffer_5  int16
+    usb_Groupc0105500_3_buffer_6  int16
+    usb_Groupc0105500_3_buffer_7  int32
+    usb_Groupc0105500_3_buffer_8  int32
+} [packed]
+ioctl$usb_Groupc0105500_3(fd usb_fd, cmd const[3222295808], arg ptr[inout, usb_Groupc0105500_3_struct_1]) 
+usb_Groupc0105500_4_flag_2 = 33, 129, 161, 1, 97, 225
+usb_Groupc0105500_4_struct_1 {
+    usb_Groupc0105500_4_flag_2  flags[usb_Groupc0105500_4_flag_2, int8]
+    usb_Groupc0105500_4_buffer_3  int8
+    usb_Groupc0105500_4_buffer_4  int16
+    usb_Groupc0105500_4_range_5  int8[0:63]
+    usb_Groupc0105500_4_buffer_6  int8
+    usb_Groupc0105500_4_buffer_7  int16
+    usb_Groupc0105500_4_buffer_8  int32
+    usb_Groupc0105500_4_buffer_9  int32
+} [packed]
+ioctl$usb_Groupc0105500_4(fd usb_fd, cmd const[3222295808], arg ptr[inout, usb_Groupc0105500_4_struct_1]) 
+usb_Groupc0105500_5_flag_2 = 162, 2, 226, 34, 130, 98
+usb_Groupc0105500_5_flag_5 = 0, 128
+usb_Groupc0105500_5_struct_1 {
+    usb_Groupc0105500_5_flag_2  flags[usb_Groupc0105500_5_flag_2, int8]
+    usb_Groupc0105500_5_buffer_3  int8
+    usb_Groupc0105500_5_buffer_4  int16
+    usb_Groupc0105500_5_flag_5  flags[usb_Groupc0105500_5_flag_5, int8]
+    usb_Groupc0105500_5_buffer_6  int8
+    usb_Groupc0105500_5_buffer_7  int8
+    usb_Groupc0105500_5_range_8  int8[0:16]
+    usb_Groupc0105500_5_buffer_9  int32
+    usb_Groupc0105500_5_buffer_10  int32
+} [packed]
+ioctl$usb_Groupc0105500_5(fd usb_fd, cmd const[3222295808], arg ptr[inout, usb_Groupc0105500_5_struct_1]) 
+usb_Groupc0105500_6_flag_2 = 162, 226, 2, 34, 130, 98
+usb_Groupc0105500_6_struct_1 {
+    usb_Groupc0105500_6_flag_2  flags[usb_Groupc0105500_6_flag_2, int8]
+    usb_Groupc0105500_6_buffer_3  int8
+    usb_Groupc0105500_6_buffer_4  int16
+    usb_Groupc0105500_6_range_5  int16[1:65423, 128]
+    usb_Groupc0105500_6_buffer_6  int16
+    usb_Groupc0105500_6_buffer_7  int32
+    usb_Groupc0105500_6_buffer_8  int32
+} [packed]
+ioctl$usb_Groupc0105500_6(fd usb_fd, cmd const[3222295808], arg ptr[inout, usb_Groupc0105500_6_struct_1]) 
+usb_Groupc0105500_7_struct_1 {
+    usb_Groupc0105500_7_buffer_2  int8
+    usb_Groupc0105500_7_buffer_3  int8
+    usb_Groupc0105500_7_buffer_4  int16
+    usb_Groupc0105500_7_buffer_5  int16
+    usb_Groupc0105500_7_buffer_6  int8
+    usb_Groupc0105500_7_range_7  int8[0:16]
+    usb_Groupc0105500_7_buffer_8  int32
+    usb_Groupc0105500_7_buffer_9  int32
+} [packed]
+ioctl$usb_Groupc0105500_7(fd usb_fd, cmd const[3222295808], arg ptr[inout, usb_Groupc0105500_7_struct_1]) 
+usb_Groupc0185500_0_struct_1 {
+    usb_Groupc0185500_0_range_2  int8[64:223]
+    usb_Groupc0185500_0_buffer_3  int8
+    usb_Groupc0185500_0_buffer_4  int16
+    usb_Groupc0185500_0_buffer_5  int16
+    usb_Groupc0185500_0_range_6  int16[0:4096]
+    usb_Groupc0185500_0_buffer_7  int32
+    usb_Groupc0185500_0_buffer_8  array[int8, 12]
+} [packed]
+ioctl$usb_Groupc0185500_0(fd usb_fd, cmd const[3222820096], arg ptr[inout, usb_Groupc0185500_0_struct_1]) 
+usb_Groupc0185500_1_struct_1 {
+    usb_Groupc0185500_1_range_2  int8[64:95]
+    usb_Groupc0185500_1_buffer_3  int8
+    usb_Groupc0185500_1_buffer_4  int16
+    usb_Groupc0185500_1_buffer_5  int16
+    usb_Groupc0185500_1_const_6  const[0, int16]
+    usb_Groupc0185500_1_buffer_7  int32
+    usb_Groupc0185500_1_buffer_8  array[int8, 12]
+} [packed]
+ioctl$usb_Groupc0185500_1(fd usb_fd, cmd const[3222820096], arg ptr[in, usb_Groupc0185500_1_struct_1]) 
+usb_Groupc0185500_2_struct_1 {
+    usb_Groupc0185500_2_range_2  int8[64:95]
+    usb_Groupc0185500_2_buffer_3  int8
+    usb_Groupc0185500_2_buffer_4  int16
+    usb_Groupc0185500_2_buffer_5  int16
+    usb_Groupc0185500_2_range_6  len[usb_Groupc0185500_2_ptr_10, int16]
+    usb_Groupc0185500_2_buffer_7  int32
+    usb_Groupc0185500_2_buffer_8  int32
+    usb_Groupc0185500_2_ptr_10  ptr[in, array[int8]]
+} [packed]
+ioctl$usb_Groupc0185500_2(fd usb_fd, cmd const[3222820096], arg ptr[in, usb_Groupc0185500_2_struct_1]) 
+usb_Groupc0185500_3_flag_2 = 33, 129, 225, 1, 97, 161
+usb_Groupc0185500_3_struct_1 {
+    usb_Groupc0185500_3_flag_2  flags[usb_Groupc0185500_3_flag_2, int8]
+    usb_Groupc0185500_3_buffer_3  int8
+    usb_Groupc0185500_3_buffer_4  int16
+    usb_Groupc0185500_3_range_5  int16[0:65343]
+    usb_Groupc0185500_3_buffer_6  int16
+    usb_Groupc0185500_3_buffer_7  int32
+    usb_Groupc0185500_3_buffer_8  array[int8, 12]
+} [packed]
+ioctl$usb_Groupc0185500_3(fd usb_fd, cmd const[3222820096], arg ptr[inout, usb_Groupc0185500_3_struct_1]) 
+usb_Groupc0185500_4_struct_1 {
+    usb_Groupc0185500_4_buffer_2  int8
+    usb_Groupc0185500_4_buffer_3  int8
+    usb_Groupc0185500_4_buffer_4  int16
+    usb_Groupc0185500_4_buffer_5  int16
+    usb_Groupc0185500_4_buffer_6  int16
+    usb_Groupc0185500_4_buffer_7  int32
+    usb_Groupc0185500_4_buffer_8  array[int8, 12]
+} [packed]
+ioctl$usb_Groupc0185500_4(fd usb_fd, cmd const[3222820096], arg ptr[inout, usb_Groupc0185500_4_struct_1]) 
+usb_Groupc0185500_5_flag_2 = 33, 129, 161, 1, 97, 225
+usb_Groupc0185500_5_struct_1 {
+    usb_Groupc0185500_5_flag_2  flags[usb_Groupc0185500_5_flag_2, int8]
+    usb_Groupc0185500_5_buffer_3  int8
+    usb_Groupc0185500_5_buffer_4  int16
+    usb_Groupc0185500_5_range_5  int8[0:63]
+    usb_Groupc0185500_5_buffer_6  int8
+    usb_Groupc0185500_5_buffer_7  int16
+    usb_Groupc0185500_5_buffer_8  int32
+    usb_Groupc0185500_5_buffer_9  array[int8, 12]
+} [packed]
+ioctl$usb_Groupc0185500_5(fd usb_fd, cmd const[3222820096], arg ptr[inout, usb_Groupc0185500_5_struct_1]) 
+usb_Groupc0185500_6_flag_2 = 162, 226, 130
+usb_Groupc0185500_6_flag_5 = 0, 128
+usb_Groupc0185500_6_struct_1 {
+    usb_Groupc0185500_6_flag_2  flags[usb_Groupc0185500_6_flag_2, int8]
+    usb_Groupc0185500_6_buffer_3  int8
+    usb_Groupc0185500_6_buffer_4  int16
+    usb_Groupc0185500_6_flag_5  flags[usb_Groupc0185500_6_flag_5, int8]
+    usb_Groupc0185500_6_buffer_6  int8
+    usb_Groupc0185500_6_range_7  int16[0:4096]
+    usb_Groupc0185500_6_buffer_8  int32
+    usb_Groupc0185500_6_buffer_9  array[int8, 12]
+} [packed]
+ioctl$usb_Groupc0185500_6(fd usb_fd, cmd const[3222820096], arg ptr[inout, usb_Groupc0185500_6_struct_1]) 
+usb_Groupc0185500_7_flag_2 = 2, 162, 226, 34, 130, 98
+usb_Groupc0185500_7_flag_5 = 0, 128
+usb_Groupc0185500_7_struct_1 {
+    usb_Groupc0185500_7_flag_2  flags[usb_Groupc0185500_7_flag_2, int8]
+    usb_Groupc0185500_7_buffer_3  int8
+    usb_Groupc0185500_7_buffer_4  int16
+    usb_Groupc0185500_7_flag_5  flags[usb_Groupc0185500_7_flag_5, int8]
+    usb_Groupc0185500_7_buffer_6  int8
+    usb_Groupc0185500_7_const_7  const[0, int16]
+    usb_Groupc0185500_7_buffer_8  int32
+    usb_Groupc0185500_7_buffer_9  array[int8, 12]
+} [packed]
+ioctl$usb_Groupc0185500_7(fd usb_fd, cmd const[3222820096], arg ptr[in, usb_Groupc0185500_7_struct_1]) 
+usb_Groupc0185500_8_flag_2 = 34, 2, 98
+usb_Groupc0185500_8_struct_1 {
+    usb_Groupc0185500_8_flag_2  flags[usb_Groupc0185500_8_flag_2, int8]
+    usb_Groupc0185500_8_buffer_3  int8
+    usb_Groupc0185500_8_buffer_4  int16
+    usb_Groupc0185500_8_range_5  int16[0:65408, 128]
+    usb_Groupc0185500_8_range_6  len[usb_Groupc0185500_8_ptr_10, int16]
+    usb_Groupc0185500_8_buffer_7  int32
+    usb_Groupc0185500_8_buffer_8  int32
+    usb_Groupc0185500_8_ptr_10  ptr[in, array[int8]]
+} [packed]
+ioctl$usb_Groupc0185500_8(fd usb_fd, cmd const[3222820096], arg ptr[in, usb_Groupc0185500_8_struct_1]) 
+usb_Groupc0185500_9_flag_2 = 162, 2, 226, 34, 130, 98
+usb_Groupc0185500_9_struct_1 {
+    usb_Groupc0185500_9_flag_2  flags[usb_Groupc0185500_9_flag_2, int8]
+    usb_Groupc0185500_9_buffer_3  int8
+    usb_Groupc0185500_9_buffer_4  int16
+    usb_Groupc0185500_9_range_5  int16[1:65423, 128]
+    usb_Groupc0185500_9_buffer_6  int16
+    usb_Groupc0185500_9_buffer_7  int32
+    usb_Groupc0185500_9_buffer_8  array[int8, 12]
+} [packed]
+ioctl$usb_Groupc0185500_9(fd usb_fd, cmd const[3222820096], arg ptr[inout, usb_Groupc0185500_9_struct_1]) 
+usb_Groupc0185500_10_struct_1 {
+    usb_Groupc0185500_10_buffer_2  int8
+    usb_Groupc0185500_10_buffer_3  int8
+    usb_Groupc0185500_10_buffer_4  int16
+    usb_Groupc0185500_10_buffer_5  int16
+    usb_Groupc0185500_10_range_6  int16[0:4096]
+    usb_Groupc0185500_10_buffer_7  int32
+    usb_Groupc0185500_10_buffer_8  int32
+    usb_Groupc0185500_10_ptr_10  ptr[inout, array[int8]]
+} [packed]
+ioctl$usb_Groupc0185500_10(fd usb_fd, cmd const[3222820096], arg ptr[inout, usb_Groupc0185500_10_struct_1]) 
+usb_Groupc0185500_11_flag_2 = 0, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 96, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127
+usb_Groupc0185500_11_struct_1 {
+    usb_Groupc0185500_11_flag_2  flags[usb_Groupc0185500_11_flag_2, int8]
+    usb_Groupc0185500_11_buffer_3  int8
+    usb_Groupc0185500_11_buffer_4  int16
+    usb_Groupc0185500_11_buffer_5  int16
+    usb_Groupc0185500_11_range_6  len[usb_Groupc0185500_11_ptr_10, int16]
+    usb_Groupc0185500_11_buffer_7  int32
+    usb_Groupc0185500_11_buffer_8  int32
+    usb_Groupc0185500_11_ptr_10  ptr[in, array[int8]]
+} [packed]
+ioctl$usb_Groupc0185500_11(fd usb_fd, cmd const[3222820096], arg ptr[in, usb_Groupc0185500_11_struct_1]) 
+usb_Groupc0185500_12_flag_2 = 162, 226, 2, 34, 130, 98
+usb_Groupc0185500_12_struct_1 {
+    usb_Groupc0185500_12_flag_2  flags[usb_Groupc0185500_12_flag_2, int8]
+    usb_Groupc0185500_12_buffer_3  int8
+    usb_Groupc0185500_12_buffer_4  int16
+    usb_Groupc0185500_12_range_5  int16[0:65408, 128]
+    usb_Groupc0185500_12_range_6  int16[0:4096]
+    usb_Groupc0185500_12_buffer_7  int32
+    usb_Groupc0185500_12_buffer_8  array[int8, 12]
+} [packed]
+ioctl$usb_Groupc0185500_12(fd usb_fd, cmd const[3222820096], arg ptr[inout, usb_Groupc0185500_12_struct_1]) 
+ioctl$usb_Group551f_0(fd usb_fd, cmd const[21791], arg intptr) 
+ioctl$usb_Group5521_0(fd usb_fd, cmd const[21793], arg intptr) 
+ioctl$usb_Group5522_0(fd usb_fd, cmd const[21794], arg intptr) 
+ioctl$usb_Group5523_0(fd usb_fd, cmd const[21795], arg intptr) 
+ioctl$usb_Group4004551e_0(fd usb_fd, cmd const[1074025758], arg ptr[in, int32]) 
+usb_Group8008551c_0_struct_1 {
+    usb_Group8008551c_0_range_2  int32[2:65536]
+    usb_Group8008551c_0_range_3  int8[1:30]
+    usb_Group8008551c_0_const_4  const[0, int8]
+    usb_Group8008551c_0_const_5  const[0, int8]
+    usb_Group8008551c_0_const_6  const[0, int8]
+    usb_Group8008551c_0_range_7  int8[128:143]
+} [packed]
+ioctl$usb_Group8008551c_0(fd usb_fd, cmd const[2148029724], arg ptr[in, usb_Group8008551c_0_struct_1]) 
+usb_Group8008551c_1_struct_1 {
+    usb_Group8008551c_1_range_2  int32[2:65536]
+    usb_Group8008551c_1_range_3  int8[1:30]
+    usb_Group8008551c_1_const_4  const[0, int8]
+    usb_Group8008551c_1_const_5  const[0, int8]
+    usb_Group8008551c_1_const_6  const[0, int8]
+    usb_Group8008551c_1_range_7  int8[0:15]
+} [packed]
+ioctl$usb_Group8008551c_1(fd usb_fd, cmd const[2148029724], arg ptr[in, usb_Group8008551c_1_struct_1]) 
+usb_Group8038550a_0_flag_3 = 0, 128
+usb_Group8038550a_0_struct_10 {
+    usb_Group8038550a_0_range_11  int8[1:226]
+    usb_Group8038550a_0_buffer_12  int8
+    usb_Group8038550a_0_buffer_13  int16
+    usb_Group8038550a_0_buffer_14  int8
+    usb_Group8038550a_0_buffer_15  int8
+    usb_Group8038550a_0_buffer_16  int16
+} [packed]
+usb_Group8038550a_0_struct_1 {
+    usb_Group8038550a_0_const_2  const[2, int8]
+    usb_Group8038550a_0_flag_3  flags[usb_Group8038550a_0_flag_3, int8]
+    usb_Group8038550a_0_buffer_4  array[int8, 6]
+    usb_Group8038550a_0_range_5  int8[0:229]
+    usb_Group8038550a_0_const_6  const[0, int8]
+    usb_Group8038550a_0_const_7  const[0, int8]
+    usb_Group8038550a_0_const_8  const[0, int8]
+    usb_Group8038550a_0_buffer_9  int32
+    usb_Group8038550a_0_ptr_17  ptr[in, usb_Group8038550a_0_struct_10]
+    usb_Group8038550a_0_range_18  int32[8:2146483646]
+    usb_Group8038550a_0_buffer_19  int32
+    usb_Group8038550a_0_buffer_20  int32
+    usb_Group8038550a_0_buffer_21  int64
+    usb_Group8038550a_0_buffer_22  int32
+    usb_Group8038550a_0_buffer_23  int64
+} [packed]
+ioctl$usb_Group8038550a_0(fd usb_fd, cmd const[2151175434], arg ptr[in, usb_Group8038550a_0_struct_1]) 
+usb_Group8038550a_1_flag_3 = 128, 0
+usb_Group8038550a_1_struct_10 {
+    usb_Group8038550a_1_const_11  const[161, int8]
+    usb_Group8038550a_1_range_12  int8[1:255]
+    usb_Group8038550a_1_buffer_13  int16
+    usb_Group8038550a_1_buffer_14  int16
+    usb_Group8038550a_1_buffer_15  int16
+} [packed]
+usb_Group8038550a_1_struct_1 {
+    usb_Group8038550a_1_const_2  const[2, int8]
+    usb_Group8038550a_1_flag_3  flags[usb_Group8038550a_1_flag_3, int8]
+    usb_Group8038550a_1_buffer_4  array[int8, 6]
+    usb_Group8038550a_1_range_5  int8[0:229]
+    usb_Group8038550a_1_const_6  const[0, int8]
+    usb_Group8038550a_1_const_7  const[0, int8]
+    usb_Group8038550a_1_const_8  const[0, int8]
+    usb_Group8038550a_1_buffer_9  int32
+    usb_Group8038550a_1_ptr_16  ptr[in, usb_Group8038550a_1_struct_10]
+    usb_Group8038550a_1_range_17  int32[8:2146483646]
+    usb_Group8038550a_1_buffer_18  array[int8, 28]
+} [packed]
+ioctl$usb_Group8038550a_1(fd usb_fd, cmd const[2151175434], arg ptr[in, usb_Group8038550a_1_struct_1]) 
+usb_Group8038550a_2_flag_3 = 0, 128
+usb_Group8038550a_2_struct_10 {
+    usb_Group8038550a_2_buffer_11  int8
+    usb_Group8038550a_2_buffer_12  int8
+    usb_Group8038550a_2_buffer_13  int16
+    usb_Group8038550a_2_buffer_14  int8
+    usb_Group8038550a_2_buffer_15  int8
+    usb_Group8038550a_2_buffer_16  int16
+} [packed]
+usb_Group8038550a_2_struct_1 {
+    usb_Group8038550a_2_const_2  const[2, int8]
+    usb_Group8038550a_2_flag_3  flags[usb_Group8038550a_2_flag_3, int8]
+    usb_Group8038550a_2_buffer_4  array[int8, 6]
+    usb_Group8038550a_2_range_5  int8[0:229]
+    usb_Group8038550a_2_const_6  const[0, int8]
+    usb_Group8038550a_2_const_7  const[0, int8]
+    usb_Group8038550a_2_const_8  const[0, int8]
+    usb_Group8038550a_2_buffer_9  int32
+    usb_Group8038550a_2_ptr_17  ptr[in, usb_Group8038550a_2_struct_10]
+    usb_Group8038550a_2_range_18  int32[8:2146483646]
+    usb_Group8038550a_2_buffer_19  int32
+    usb_Group8038550a_2_buffer_20  int32
+    usb_Group8038550a_2_buffer_21  int64
+    usb_Group8038550a_2_buffer_22  int32
+    usb_Group8038550a_2_buffer_23  int64
+} [packed]
+ioctl$usb_Group8038550a_2(fd usb_fd, cmd const[2151175434], arg ptr[in, usb_Group8038550a_2_struct_1]) 
+usb_Group8038550a_3_flag_11 = 162, 2, 34, 98, 130, 226
+usb_Group8038550a_3_struct_10 {
+    usb_Group8038550a_3_flag_11  flags[usb_Group8038550a_3_flag_11, int8]
+    usb_Group8038550a_3_buffer_12  int8
+    usb_Group8038550a_3_buffer_13  int16
+    usb_Group8038550a_3_range_14  int16
+    usb_Group8038550a_3_buffer_15  int16
+} [packed]
+usb_Group8038550a_3_struct_1 {
+    usb_Group8038550a_3_const_2  const[2, int8]
+    usb_Group8038550a_3_const_3  const[0, int8]
+    usb_Group8038550a_3_buffer_4  array[int8, 6]
+    usb_Group8038550a_3_range_5  int8[0:229]
+    usb_Group8038550a_3_const_6  const[0, int8]
+    usb_Group8038550a_3_const_7  const[0, int8]
+    usb_Group8038550a_3_const_8  const[0, int8]
+    usb_Group8038550a_3_buffer_9  int32
+    usb_Group8038550a_3_ptr_16  ptr[in, usb_Group8038550a_3_struct_10]
+    usb_Group8038550a_3_range_17  int32[8:2146483646]
+    usb_Group8038550a_3_buffer_18  int32
+    usb_Group8038550a_3_buffer_19  int32
+    usb_Group8038550a_3_buffer_20  int64
+    usb_Group8038550a_3_buffer_21  int32
+    usb_Group8038550a_3_buffer_22  int64
+} [packed]
+ioctl$usb_Group8038550a_3(fd usb_fd, cmd const[2151175434], arg ptr[in, usb_Group8038550a_3_struct_1]) 
+usb_Group8038550a_4_struct_10 {
+    usb_Group8038550a_4_buffer_11  int8
+    usb_Group8038550a_4_buffer_12  int8
+    usb_Group8038550a_4_buffer_13  int8
+    usb_Group8038550a_4_buffer_14  int8
+    usb_Group8038550a_4_buffer_15  int16
+    usb_Group8038550a_4_buffer_16  int16
+    usb_Group8038550a_4_buffer_17  array[int8]
+} [packed]
+usb_Group8038550a_4_struct_1 {
+    usb_Group8038550a_4_const_2  const[2, int8]
+    usb_Group8038550a_4_range_3  int8[1:143]
+    usb_Group8038550a_4_buffer_4  array[int8, 6]
+    usb_Group8038550a_4_range_5  int8[0:229]
+    usb_Group8038550a_4_const_6  const[0, int8]
+    usb_Group8038550a_4_const_7  const[0, int8]
+    usb_Group8038550a_4_const_8  const[0, int8]
+    usb_Group8038550a_4_buffer_9  int32
+    usb_Group8038550a_4_ptr_18  ptr[in, usb_Group8038550a_4_struct_10]
+    usb_Group8038550a_4_buffer_19  int8
+    usb_Group8038550a_4_buffer_20  int8
+    usb_Group8038550a_4_buffer_21  int8
+    usb_Group8038550a_4_range_22  int8[0:127]
+    usb_Group8038550a_4_buffer_23  int32
+    usb_Group8038550a_4_buffer_24  int32
+    usb_Group8038550a_4_buffer_25  int64
+    usb_Group8038550a_4_buffer_26  int32
+    usb_Group8038550a_4_buffer_27  int64
+} [packed]
+ioctl$usb_Group8038550a_4(fd usb_fd, cmd const[2151175434], arg ptr[in, usb_Group8038550a_4_struct_1]) 
+usb_Group8038550a_5_struct_10 {
+    usb_Group8038550a_5_buffer_11  int8
+    usb_Group8038550a_5_buffer_12  int8
+    usb_Group8038550a_5_buffer_13  int16
+    usb_Group8038550a_5_buffer_14  int16
+    usb_Group8038550a_5_buffer_15  int16
+} [packed]
+usb_Group8038550a_5_struct_1 {
+    usb_Group8038550a_5_buffer_2  int8
+    usb_Group8038550a_5_range_3  int8[0:143]
+    usb_Group8038550a_5_buffer_4  array[int8, 6]
+    usb_Group8038550a_5_range_5  int8[0:231]
+    usb_Group8038550a_5_const_6  const[0, int8]
+    usb_Group8038550a_5_const_7  const[0, int8]
+    usb_Group8038550a_5_const_8  const[0, int8]
+    usb_Group8038550a_5_buffer_9  int32
+    usb_Group8038550a_5_ptr_16  ptr[in, usb_Group8038550a_5_struct_10]
+    usb_Group8038550a_5_buffer_17  int8
+    usb_Group8038550a_5_buffer_18  int8
+    usb_Group8038550a_5_buffer_19  int8
+    usb_Group8038550a_5_range_20  int8[0:127]
+    usb_Group8038550a_5_buffer_21  int32
+    usb_Group8038550a_5_buffer_22  int32
+    usb_Group8038550a_5_buffer_23  int64
+    usb_Group8038550a_5_buffer_24  int32
+    usb_Group8038550a_5_buffer_25  int64
+} [packed]
+ioctl$usb_Group8038550a_5(fd usb_fd, cmd const[2151175434], arg ptr[in, usb_Group8038550a_5_struct_1]) 
+usb_Groupc0105502_0_struct_1 {
+    usb_Groupc0105502_0_range_2  int8[0:143]
+    usb_Groupc0105502_0_const_3  const[0, int8]
+    usb_Groupc0105502_0_const_4  const[0, int8]
+    usb_Groupc0105502_0_const_5  const[0, int8]
+    usb_Groupc0105502_0_buffer_6  array[int8, 12]
+} [packed]
+ioctl$usb_Groupc0105502_0(fd usb_fd, cmd const[3222295810], arg ptr[in, usb_Groupc0105502_0_struct_1]) 
+usb_Groupc0185502_0_struct_1 {
+    usb_Groupc0185502_0_range_2  int8[0:143]
+    usb_Groupc0185502_0_const_3  const[0, int8]
+    usb_Groupc0185502_0_const_4  const[0, int8]
+    usb_Groupc0185502_0_const_5  const[0, int8]
+    usb_Groupc0185502_0_buffer_6  array[int8, 20]
+} [packed]
+ioctl$usb_Groupc0185502_0(fd usb_fd, cmd const[3222820098], arg ptr[in, usb_Groupc0185502_0_struct_1]) 
+usb_Group8010550e_0_struct_1 {
+    usb_Group8010550e_0_buffer_2  int32
+    usb_Group8010550e_0_buffer_3  int32
+    usb_Group8010550e_0_buffer_4  int64
+} [packed]
+ioctl$usb_Group8010550e_0(fd usb_fd, cmd const[2148553998], arg ptr[in, usb_Group8010550e_0_struct_1]) 
+usb_Groupc00c5512_0_struct_1 {
+    usb_Groupc00c5512_0_buffer_2  int8
+    usb_Groupc00c5512_0_buffer_3  int8
+    usb_Groupc00c5512_0_buffer_4  int8
+    usb_Groupc00c5512_0_buffer_5  int8
+    usb_Groupc00c5512_0_buffer_6  int32
+    usb_Groupc00c5512_0_ptr_8  ptr[inout, array[int8]]
+} [packed]
+ioctl$usb_Groupc00c5512_0(fd usb_fd, cmd const[3222033682], usb_Groupc00c5512_0_ptr_9 ptr[inout, usb_Groupc00c5512_0_struct_1]) 

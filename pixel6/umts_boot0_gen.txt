@@ -1,0 +1,115 @@
+resource umts_boot0_fd[fd]
+
+openat$umts_boot0_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/umts_boot0"]], flags flags[open_flags], mode const[0]) umts_boot0_fd
+read$umts_boot0_syzgen(fd umts_boot0_fd, data ptr[out, array[int8]], size len[data]) 
+umts_boot0_Group40046f21_0_struct_1 {
+    umts_boot0_Group40046f21_0_buffer_2  int8
+    umts_boot0_Group40046f21_0_buffer_3  int8
+    umts_boot0_Group40046f21_0_buffer_4  int8
+    umts_boot0_Group40046f21_0_buffer_5  int8
+} [packed]
+ioctl$umts_boot0_Group40046f21_0(fd umts_boot0_fd, cmd const[1074032417], arg ptr[in, umts_boot0_Group40046f21_0_struct_1]) 
+umts_boot0_Group40046f21_1_struct_1 {
+    umts_boot0_Group40046f21_1_const_2  const[1, int8]
+    umts_boot0_Group40046f21_1_const_3  const[0, int8]
+    umts_boot0_Group40046f21_1_const_4  const[0, int8]
+    umts_boot0_Group40046f21_1_const_5  const[0, int8]
+} [packed]
+ioctl$umts_boot0_Group40046f21_1(fd umts_boot0_fd, cmd const[1074032417], arg ptr[in, umts_boot0_Group40046f21_1_struct_1]) 
+ioctl$umts_boot0_Group401c6f40_0(fd umts_boot0_fd, cmd const[1075605312], arg intptr) 
+umts_boot0_Group401c6f40_1_flag_2 = 3758153704, 3758129128
+ioctl$umts_boot0_Group401c6f40_1(fd umts_boot0_fd, cmd const[1075605312], arg flags[umts_boot0_Group401c6f40_1_flag_2]) 
+ioctl$umts_boot0_Group80146f56_0(fd umts_boot0_fd, cmd const[2148822870], arg ptr[out, array[int8, 20]]) 
+umts_boot0_Group40046f22_0_flag_2 = 0, 1
+umts_boot0_Group40046f22_0_struct_1 {
+    umts_boot0_Group40046f22_0_flag_2  flags[umts_boot0_Group40046f22_0_flag_2, int8]
+    umts_boot0_Group40046f22_0_const_3  const[0, int8]
+    umts_boot0_Group40046f22_0_const_4  const[0, int8]
+    umts_boot0_Group40046f22_0_const_5  const[0, int8]
+} [packed]
+ioctl$umts_boot0_Group40046f22_0(fd umts_boot0_fd, cmd const[1074032418], arg ptr[in, umts_boot0_Group40046f22_0_struct_1]) 
+ioctl$umts_boot0_Group82046f55_0(fd umts_boot0_fd, cmd const[2181328725], arg intptr) 
+umts_boot0_Group82046f55_1_flag_2 = 3758129128, 3758153704
+ioctl$umts_boot0_Group82046f55_1(fd umts_boot0_fd, cmd const[2181328725], arg flags[umts_boot0_Group82046f55_1_flag_2]) 
+umts_boot0_Group6f34_0_struct_1 {
+    umts_boot0_Group6f34_0_buffer_2  int64
+    umts_boot0_Group6f34_0_buffer_3  array[int8, 16]
+    umts_boot0_Group6f34_0_buffer_4  int32
+    umts_boot0_Group6f34_0_buffer_5  int8
+    umts_boot0_Group6f34_0_buffer_6  int8
+    umts_boot0_Group6f34_0_buffer_7  int8
+    umts_boot0_Group6f34_0_buffer_8  int8
+    umts_boot0_Group6f34_0_buffer_9  array[int8, 480]
+} [packed]
+ioctl$umts_boot0_Group6f34_0(fd umts_boot0_fd, cmd const[28468], arg ptr[in, umts_boot0_Group6f34_0_struct_1]) 
+umts_boot0_Group6f34_1_flag_2 = 3758309352, 3758227432, 3758202856, 3758276584
+ioctl$umts_boot0_Group6f34_1(fd umts_boot0_fd, cmd const[28468], arg flags[umts_boot0_Group6f34_1_flag_2]) 
+umts_boot0_Group6f34_2_struct_1 {
+    umts_boot0_Group6f34_2_range_2  int64[0:18446744069414584320]
+    umts_boot0_Group6f34_2_buffer_3  array[int8, 16]
+    umts_boot0_Group6f34_2_const_4  const[0, int32]
+    umts_boot0_Group6f34_2_const_5  const[0, int32]
+    umts_boot0_Group6f34_2_buffer_6  array[int8, 480]
+} [packed]
+ioctl$umts_boot0_Group6f34_2(fd umts_boot0_fd, cmd const[28468], arg ptr[in, umts_boot0_Group6f34_2_struct_1]) 
+ioctl$umts_boot0_Group6f19_0(fd umts_boot0_fd, cmd const[28441], arg intptr) 
+umts_boot0_Group6f19_1_flag_2 = 3758153704, 3758129128
+ioctl$umts_boot0_Group6f19_1(fd umts_boot0_fd, cmd const[28441], arg flags[umts_boot0_Group6f19_1_flag_2]) 
+ioctl$umts_boot0_Group6f20_0(fd umts_boot0_fd, cmd const[28448], arg intptr) 
+umts_boot0_Group6f20_1_flag_2 = 3758153704, 3758129128
+ioctl$umts_boot0_Group6f20_1(fd umts_boot0_fd, cmd const[28448], arg flags[umts_boot0_Group6f20_1_flag_2]) 
+ioctl$umts_boot0_Group6f27_0(fd umts_boot0_fd, cmd const[28455], arg intptr) 
+ioctl$umts_boot0_Group6f57_0(fd umts_boot0_fd, cmd const[28503], arg intptr) 
+ioctl$umts_boot0_Group6f57_1(fd umts_boot0_fd, cmd const[28503], arg const[3758120936]) 
+ioctl$umts_boot0_Group6f35_0(fd umts_boot0_fd, cmd const[28469], arg ptr[in, array[int8, 503]]) 
+ioctl$umts_boot0_Group6f23_0(fd umts_boot0_fd, cmd const[28451], arg intptr) 
+umts_boot0_Group6f23_1_flag_2 = 3758153704, 3758129128
+ioctl$umts_boot0_Group6f23_1(fd umts_boot0_fd, cmd const[28451], arg flags[umts_boot0_Group6f23_1_flag_2]) 
+ioctl$umts_boot0_Group40106f53_0(fd umts_boot0_fd, cmd const[1074818899], arg intptr) 
+umts_boot0_Group40106f53_1_flag_2 = 3758153704, 3758129128
+ioctl$umts_boot0_Group40106f53_1(fd umts_boot0_fd, cmd const[1074818899], arg flags[umts_boot0_Group40106f53_1_flag_2]) 
+umts_boot0_Groupc0286f52_0_struct_1 {
+    umts_boot0_Groupc0286f52_0_buffer_2  array[int8, 32]
+    umts_boot0_Groupc0286f52_0_buffer_3  int32
+    umts_boot0_Groupc0286f52_0_buffer_4  int32
+    umts_boot0_Groupc0286f52_0_buffer_5  int64
+    umts_boot0_Groupc0286f52_0_buffer_6  int64
+    umts_boot0_Groupc0286f52_0_buffer_7  int64
+    umts_boot0_Groupc0286f52_0_buffer_8  int64
+    umts_boot0_Groupc0286f52_0_buffer_9  int64
+    umts_boot0_Groupc0286f52_0_buffer_10  int64
+    umts_boot0_Groupc0286f52_0_buffer_11  int64
+    umts_boot0_Groupc0286f52_0_buffer_12  int64
+    umts_boot0_Groupc0286f52_0_buffer_13  int64
+    umts_boot0_Groupc0286f52_0_buffer_14  int64
+    umts_boot0_Groupc0286f52_0_buffer_15  int64
+    umts_boot0_Groupc0286f52_0_buffer_16  int64
+    umts_boot0_Groupc0286f52_0_buffer_17  int64
+    umts_boot0_Groupc0286f52_0_buffer_18  array[int8, 120]
+    umts_boot0_Groupc0286f52_0_buffer_19  int64
+    umts_boot0_Groupc0286f52_0_buffer_20  array[int8]
+} [packed]
+ioctl$umts_boot0_Groupc0286f52_0(fd umts_boot0_fd, cmd const[3223875410], arg ptr[inout, umts_boot0_Groupc0286f52_0_struct_1]) 
+umts_boot0_Groupc0286f52_1_struct_1 {
+    umts_boot0_Groupc0286f52_1_buffer_2  array[int8, 32]
+    umts_boot0_Groupc0286f52_1_range_3  int32[0:6]
+    umts_boot0_Groupc0286f52_1_buffer_4  int32
+    umts_boot0_Groupc0286f52_1_buffer_5  int64
+    umts_boot0_Groupc0286f52_1_buffer_6  int64
+    umts_boot0_Groupc0286f52_1_buffer_7  int64
+    umts_boot0_Groupc0286f52_1_buffer_8  int64
+    umts_boot0_Groupc0286f52_1_buffer_9  int64
+    umts_boot0_Groupc0286f52_1_buffer_10  int64
+    umts_boot0_Groupc0286f52_1_buffer_11  int64
+    umts_boot0_Groupc0286f52_1_buffer_12  int64
+    umts_boot0_Groupc0286f52_1_buffer_13  int64
+    umts_boot0_Groupc0286f52_1_buffer_14  int64
+    umts_boot0_Groupc0286f52_1_buffer_15  int64
+    umts_boot0_Groupc0286f52_1_buffer_16  int64
+    umts_boot0_Groupc0286f52_1_buffer_17  int64
+    umts_boot0_Groupc0286f52_1_buffer_18  array[int8, 120]
+    umts_boot0_Groupc0286f52_1_buffer_19  int64
+    umts_boot0_Groupc0286f52_1_buffer_20  array[int8]
+} [packed]
+ioctl$umts_boot0_Groupc0286f52_1(fd umts_boot0_fd, cmd const[3223875410], arg ptr[inout, umts_boot0_Groupc0286f52_1_struct_1]) 
+write$umts_boot0_Group0_0_syzgen(fd umts_boot0_fd, data ptr[in, array[int8]], size len[data]) 

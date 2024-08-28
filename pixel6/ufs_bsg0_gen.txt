@@ -1,0 +1,52 @@
+resource ufs_bsg0_fd[fd]
+
+openat$ufs_bsg0_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/ufs-bsg0"]], flags flags[open_flags], mode const[0]) ufs_bsg0_fd
+syz_open_dev$bsg_syzgen(dev ptr[in, string["0:0:0:#"]], id intptr, flags flags[open_flags]) ufs_bsg0_fd
+openat$bsg_49456_syzgen(fd const[AT_FDCWD], file ptr[in, string["0:0:0:49456"]], flags flags[open_flags], mode const[0]) ufs_bsg0_fd
+openat$bsg_49476_syzgen(fd const[AT_FDCWD], file ptr[in, string["0:0:0:49476"]], flags flags[open_flags], mode const[0]) ufs_bsg0_fd
+openat$bsg_49488_syzgen(fd const[AT_FDCWD], file ptr[in, string["0:0:0:49488"]], flags flags[open_flags], mode const[0]) ufs_bsg0_fd
+
+ioctl$ufs_bsg0_Group5382_0(fd ufs_bsg0_fd, cmd const[21378], arg intptr) 
+ioctl$ufs_bsg0_Group2271_0(fd ufs_bsg0_fd, cmd const[8817], arg intptr) 
+ufs_bsg0_Group2285_0_struct_1 {
+    ufs_bsg0_Group2285_0_const_2  const[81, int8]
+    ufs_bsg0_Group2285_0_const_3  const[0, int8]
+    ufs_bsg0_Group2285_0_const_4  const[0, int8]
+    ufs_bsg0_Group2285_0_const_5  const[0, int8]
+    ufs_bsg0_Group2285_0_buffer_6  int32
+    ufs_bsg0_Group2285_0_buffer_7  int8
+    ufs_bsg0_Group2285_0_buffer_8  int8
+    ufs_bsg0_Group2285_0_buffer_9  int8
+    ufs_bsg0_Group2285_0_buffer_10  int8
+    ufs_bsg0_Group2285_0_buffer_11  array[int8, 48]
+    ufs_bsg0_Group2285_0_buffer_12  int32
+    ufs_bsg0_Group2285_0_buffer_13  array[int8, 96]
+} [packed]
+ioctl$ufs_bsg0_Group2285_0(fd ufs_bsg0_fd, cmd const[8837], arg ptr[in, ufs_bsg0_Group2285_0_struct_1]) 
+ufs_bsg0_Group2285_1_flag_10 = 0, 2
+ufs_bsg0_Group2285_1_struct_1 {
+    ufs_bsg0_Group2285_1_const_2  const[81, int8]
+    ufs_bsg0_Group2285_1_const_3  const[0, int8]
+    ufs_bsg0_Group2285_1_const_4  const[0, int8]
+    ufs_bsg0_Group2285_1_const_5  const[0, int8]
+    ufs_bsg0_Group2285_1_const_6  const[0, int8]
+    ufs_bsg0_Group2285_1_const_7  const[0, int8]
+    ufs_bsg0_Group2285_1_const_8  const[0, int8]
+    ufs_bsg0_Group2285_1_const_9  const[0, int8]
+    ufs_bsg0_Group2285_1_flag_10  flags[ufs_bsg0_Group2285_1_flag_10, int8]
+    ufs_bsg0_Group2285_1_const_11  const[0, int8]
+    ufs_bsg0_Group2285_1_const_12  const[0, int8]
+    ufs_bsg0_Group2285_1_const_13  const[0, int8]
+    ufs_bsg0_Group2285_1_buffer_14  array[int8, 48]
+    ufs_bsg0_Group2285_1_buffer_15  int32
+    ufs_bsg0_Group2285_1_buffer_16  array[int8, 96]
+} [packed]
+ioctl$ufs_bsg0_Group2285_1(fd ufs_bsg0_fd, cmd const[8837], arg ptr[in, ufs_bsg0_Group2285_1_struct_1]) 
+ioctl$ufs_bsg0_Group2270_0(fd ufs_bsg0_fd, cmd const[8816], arg intptr) 
+ioctl$ufs_bsg0_Group5386_0(fd ufs_bsg0_fd, cmd const[21382], arg intptr) 
+ioctl$ufs_bsg0_Group2203_0(fd ufs_bsg0_fd, cmd const[8707], arg intptr) 
+ioctl$ufs_bsg0_Group2201_0(fd ufs_bsg0_fd, cmd const[8705], arg intptr) 
+ioctl$ufs_bsg0_Group2202_0(fd ufs_bsg0_fd, cmd const[8706], arg intptr) 
+ioctl$ufs_bsg0_Group2272_0(fd ufs_bsg0_fd, cmd const[8818], arg intptr) 
+ioctl$ufs_bsg0_Group2282_0(fd ufs_bsg0_fd, cmd const[8834], arg intptr) 
+ioctl$ufs_bsg0_Group2275_0(fd ufs_bsg0_fd, cmd const[8821], arg intptr) 

@@ -1,0 +1,631 @@
+resource dit2_fd[fd]
+
+openat$dit2_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dit2"]], flags flags[open_flags], mode const[0]) dit2_fd
+read$dit2_syzgen(fd dit2_fd, data ptr[out, array[int8]], size len[data]) 
+ioctl$dit2_Group800844e0_0(fd dit2_fd, cmd const[2148025568], arg ptr[out, int64]) 
+ioctl$dit2_Group40204408_0(fd dit2_fd, cmd const[1075856392], arg intptr) 
+dit2_Group400f4420_0_struct_1 {
+    dit2_Group400f4420_0_buffer_2  int16
+    dit2_Group400f4420_0_buffer_3  int8
+    dit2_Group400f4420_0_buffer_4  int32
+    dit2_Group400f4420_0_buffer_5  int32
+    dit2_Group400f4420_0_buffer_6  int16
+    dit2_Group400f4420_0_buffer_7  int16
+} [packed]
+ioctl$dit2_Group400f4420_0(fd dit2_fd, cmd const[1074742304], arg ptr[in, dit2_Group400f4420_0_struct_1]) 
+dit2_Group400f4420_1_struct_1 {
+    dit2_Group400f4420_1_buffer_2  int16
+    dit2_Group400f4420_1_buffer_3  int8
+    dit2_Group400f4420_1_range_4  int32[1:4294967295]
+    dit2_Group400f4420_1_buffer_5  int32
+    dit2_Group400f4420_1_buffer_6  int16
+    dit2_Group400f4420_1_buffer_7  int16
+} [packed]
+ioctl$dit2_Group400f4420_1(fd dit2_fd, cmd const[1074742304], arg ptr[in, dit2_Group400f4420_1_struct_1]) 
+dit2_Group40064421_0_struct_1 {
+    dit2_Group40064421_0_buffer_2  int16
+    dit2_Group40064421_0_buffer_3  int32
+} [packed]
+ioctl$dit2_Group40064421_0(fd dit2_fd, cmd const[1074152481], arg ptr[in, dit2_Group40064421_0_struct_1]) 
+ioctl$dit2_Group4402_0(fd dit2_fd, cmd const[17410], arg intptr) 
+dit2_Groupc0124406_0_struct_1 {
+    dit2_Groupc0124406_0_buffer_2  int8
+    dit2_Groupc0124406_0_buffer_3  int8
+    dit2_Groupc0124406_0_buffer_4  int8
+    dit2_Groupc0124406_0_buffer_5  int8
+    dit2_Groupc0124406_0_buffer_6  int16
+    dit2_Groupc0124406_0_buffer_7  int8
+    dit2_Groupc0124406_0_range_8  int64[1:18446744069414584321]
+    dit2_Groupc0124406_0_buffer_9  int8
+    dit2_Groupc0124406_0_buffer_10  int16
+} [packed]
+ioctl$dit2_Groupc0124406_0(fd dit2_fd, cmd const[3222422534], arg ptr[inout, dit2_Groupc0124406_0_struct_1]) 
+dit2_Groupc0124406_1_struct_1 {
+    dit2_Groupc0124406_1_buffer_2  int8
+    dit2_Groupc0124406_1_buffer_3  int8
+    dit2_Groupc0124406_1_buffer_4  int8
+    dit2_Groupc0124406_1_buffer_5  int8
+    dit2_Groupc0124406_1_buffer_6  int16
+    dit2_Groupc0124406_1_buffer_7  int8
+    dit2_Groupc0124406_1_range_8  int64[72340172838076673:18446744073709551615]
+    dit2_Groupc0124406_1_range_9  int8[1:255]
+    dit2_Groupc0124406_1_buffer_10  int16
+} [packed]
+ioctl$dit2_Groupc0124406_1(fd dit2_fd, cmd const[3222422534], arg ptr[inout, dit2_Groupc0124406_1_struct_1]) 
+dit2_Groupc0124406_2_struct_1 {
+    dit2_Groupc0124406_2_buffer_2  int64
+    dit2_Groupc0124406_2_buffer_3  int64
+    dit2_Groupc0124406_2_buffer_4  int16
+} [packed]
+ioctl$dit2_Groupc0124406_2(fd dit2_fd, cmd const[3222422534], arg ptr[inout, dit2_Groupc0124406_2_struct_1]) 
+dit2_Groupc0124406_3_struct_1 {
+    dit2_Groupc0124406_3_buffer_2  int8
+    dit2_Groupc0124406_3_buffer_3  int8
+    dit2_Groupc0124406_3_buffer_4  int8
+    dit2_Groupc0124406_3_buffer_5  int8
+    dit2_Groupc0124406_3_buffer_6  int16
+    dit2_Groupc0124406_3_buffer_7  int8
+    dit2_Groupc0124406_3_range_8  int8[1:255]
+    dit2_Groupc0124406_3_buffer_9  int64
+    dit2_Groupc0124406_3_buffer_10  int16
+} [packed]
+ioctl$dit2_Groupc0124406_3(fd dit2_fd, cmd const[3222422534], arg ptr[inout, dit2_Groupc0124406_3_struct_1]) 
+dit2_Groupc0124406_4_struct_1 {
+    dit2_Groupc0124406_4_range_2  int64[0:18446744069414584320, 256]
+    dit2_Groupc0124406_4_buffer_3  int64
+    dit2_Groupc0124406_4_buffer_4  int16
+} [packed]
+ioctl$dit2_Groupc0124406_4(fd dit2_fd, cmd const[3222422534], arg ptr[inout, dit2_Groupc0124406_4_struct_1]) 
+ioctl$dit2_Group40384404_0(fd dit2_fd, cmd const[1077429252], arg intptr) 
+ioctl$dit2_Group40124405_0(fd dit2_fd, cmd const[1074938885], arg ptr[in, array[int8, 18]]) 
+ioctl$dit2_Group4400_0(fd dit2_fd, cmd const[17408], arg intptr) 
+dit2_Groupc0384403_0_struct_1 {
+    dit2_Groupc0384403_0_buffer_2  int64
+    dit2_Groupc0384403_0_buffer_3  int64
+    dit2_Groupc0384403_0_buffer_4  array[int8, 40]
+} [packed]
+ioctl$dit2_Groupc0384403_0(fd dit2_fd, cmd const[3224912899], arg ptr[inout, dit2_Groupc0384403_0_struct_1]) 
+dit2_Group40484440_0_struct_1 {
+    dit2_Group40484440_0_buffer_2  int16
+    dit2_Group40484440_0_buffer_3  int8
+    dit2_Group40484440_0_buffer_4  int8
+    dit2_Group40484440_0_buffer_5  array[int8, 32]
+    dit2_Group40484440_0_buffer_6  int32
+    dit2_Group40484440_0_buffer_7  int32
+    dit2_Group40484440_0_buffer_8  int32
+    dit2_Group40484440_0_buffer_9  int32
+    dit2_Group40484440_0_buffer_10  int32
+    dit2_Group40484440_0_buffer_11  int32
+    dit2_Group40484440_0_buffer_12  int32
+    dit2_Group40484440_0_buffer_13  int64
+} [packed]
+ioctl$dit2_Group40484440_0(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_0_struct_1]) 
+dit2_Group40484440_1_struct_1 {
+    dit2_Group40484440_1_range_2  int16[2552:65015]
+    dit2_Group40484440_1_buffer_3  int8
+    dit2_Group40484440_1_buffer_4  int8
+    dit2_Group40484440_1_buffer_5  array[int8, 32]
+    dit2_Group40484440_1_range_6  int32[0:2684354559]
+    dit2_Group40484440_1_range_7  int32[0:2684354559]
+    dit2_Group40484440_1_range_8  int32[0:2684354559]
+    dit2_Group40484440_1_buffer_9  int32
+    dit2_Group40484440_1_buffer_10  int32
+    dit2_Group40484440_1_buffer_11  int32
+    dit2_Group40484440_1_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_1(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_1_struct_1]) 
+dit2_Group40484440_2_struct_1 {
+    dit2_Group40484440_2_range_2  int16[2552:65015]
+    dit2_Group40484440_2_buffer_3  int8
+    dit2_Group40484440_2_buffer_4  int8
+    dit2_Group40484440_2_buffer_5  array[int8, 32]
+    dit2_Group40484440_2_range_6  int32[0:2684354559]
+    dit2_Group40484440_2_range_7  int32[0:2684354559]
+    dit2_Group40484440_2_buffer_8  int32
+    dit2_Group40484440_2_range_9  int32[0:2684354559]
+    dit2_Group40484440_2_buffer_10  int32
+    dit2_Group40484440_2_buffer_11  int32
+    dit2_Group40484440_2_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_2(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_2_struct_1]) 
+dit2_Group40484440_3_struct_1 {
+    dit2_Group40484440_3_range_2  int16[2552:65015]
+    dit2_Group40484440_3_buffer_3  int8
+    dit2_Group40484440_3_buffer_4  int8
+    dit2_Group40484440_3_buffer_5  array[int8, 32]
+    dit2_Group40484440_3_range_6  int32[0:2684354559]
+    dit2_Group40484440_3_buffer_7  int32
+    dit2_Group40484440_3_range_8  int32[0:2684354559]
+    dit2_Group40484440_3_range_9  int32[0:2684354559]
+    dit2_Group40484440_3_buffer_10  int32
+    dit2_Group40484440_3_buffer_11  int32
+    dit2_Group40484440_3_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_3(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_3_struct_1]) 
+dit2_Group40484440_4_struct_1 {
+    dit2_Group40484440_4_range_2  int16[2552:65015]
+    dit2_Group40484440_4_buffer_3  int8
+    dit2_Group40484440_4_buffer_4  int8
+    dit2_Group40484440_4_buffer_5  array[int8, 32]
+    dit2_Group40484440_4_range_6  int32[0:2684354559]
+    dit2_Group40484440_4_buffer_7  int32
+    dit2_Group40484440_4_range_8  int32[1610612736:4294967295]
+    dit2_Group40484440_4_range_9  int32[1610612736:4294967295]
+    dit2_Group40484440_4_buffer_10  int32
+    dit2_Group40484440_4_buffer_11  int32
+    dit2_Group40484440_4_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_4(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_4_struct_1]) 
+dit2_Group40484440_5_struct_1 {
+    dit2_Group40484440_5_range_2  int16[2552:65015]
+    dit2_Group40484440_5_buffer_3  int8
+    dit2_Group40484440_5_buffer_4  int8
+    dit2_Group40484440_5_buffer_5  array[int8, 32]
+    dit2_Group40484440_5_range_6  int32[0:2684354559]
+    dit2_Group40484440_5_range_7  int32[1610612736:4294967295]
+    dit2_Group40484440_5_range_8  int32[0:2684354559]
+    dit2_Group40484440_5_range_9  int32[1610612736:4294967295]
+    dit2_Group40484440_5_buffer_10  int32
+    dit2_Group40484440_5_buffer_11  int32
+    dit2_Group40484440_5_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_5(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_5_struct_1]) 
+dit2_Group40484440_6_struct_1 {
+    dit2_Group40484440_6_range_2  int16[2552:65015]
+    dit2_Group40484440_6_buffer_3  int8
+    dit2_Group40484440_6_buffer_4  int8
+    dit2_Group40484440_6_buffer_5  array[int8, 32]
+    dit2_Group40484440_6_range_6  int32[0:2684354559]
+    dit2_Group40484440_6_range_7  int32[1610612736:4294967295]
+    dit2_Group40484440_6_range_8  int32[1610612736:4294967295]
+    dit2_Group40484440_6_range_9  int32[0:2684354559]
+    dit2_Group40484440_6_buffer_10  int32
+    dit2_Group40484440_6_buffer_11  int32
+    dit2_Group40484440_6_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_6(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_6_struct_1]) 
+dit2_Group40484440_7_struct_1 {
+    dit2_Group40484440_7_range_2  int16[2552:65015]
+    dit2_Group40484440_7_buffer_3  int8
+    dit2_Group40484440_7_buffer_4  int8
+    dit2_Group40484440_7_buffer_5  array[int8, 32]
+    dit2_Group40484440_7_range_6  int32[1610612736:4294967295]
+    dit2_Group40484440_7_range_7  int32[1610612736:4294967295]
+    dit2_Group40484440_7_range_8  int32[1610612736:4294967295]
+    dit2_Group40484440_7_range_9  int32[1610612736:4294967295]
+    dit2_Group40484440_7_buffer_10  int32
+    dit2_Group40484440_7_buffer_11  array[int8, 16]
+} [packed]
+ioctl$dit2_Group40484440_7(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_7_struct_1]) 
+dit2_Group40484440_8_struct_1 {
+    dit2_Group40484440_8_buffer_2  int16
+    dit2_Group40484440_8_buffer_3  int8
+    dit2_Group40484440_8_buffer_4  int8
+    dit2_Group40484440_8_buffer_5  array[int8, 32]
+    dit2_Group40484440_8_range_6  int32[0:2684354559]
+    dit2_Group40484440_8_range_7  int32[0:2684354559]
+    dit2_Group40484440_8_range_8  int32[0:2684354559]
+    dit2_Group40484440_8_buffer_9  int32
+    dit2_Group40484440_8_range_10  int32[0:2684354559]
+    dit2_Group40484440_8_buffer_11  int32
+    dit2_Group40484440_8_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_8(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_8_struct_1]) 
+dit2_Group40484440_9_struct_1 {
+    dit2_Group40484440_9_buffer_2  int16
+    dit2_Group40484440_9_buffer_3  int8
+    dit2_Group40484440_9_buffer_4  int8
+    dit2_Group40484440_9_buffer_5  array[int8, 32]
+    dit2_Group40484440_9_range_6  int32[0:2684354559]
+    dit2_Group40484440_9_range_7  int32[0:2684354559]
+    dit2_Group40484440_9_buffer_8  int32
+    dit2_Group40484440_9_range_9  int32[0:2684354559]
+    dit2_Group40484440_9_range_10  int32[0:2684354559]
+    dit2_Group40484440_9_buffer_11  int32
+    dit2_Group40484440_9_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_9(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_9_struct_1]) 
+dit2_Group40484440_10_struct_1 {
+    dit2_Group40484440_10_buffer_2  int16
+    dit2_Group40484440_10_buffer_3  int8
+    dit2_Group40484440_10_buffer_4  int8
+    dit2_Group40484440_10_buffer_5  array[int8, 32]
+    dit2_Group40484440_10_range_6  int32[0:2684354559]
+    dit2_Group40484440_10_buffer_7  int32
+    dit2_Group40484440_10_range_8  int32[0:2684354559]
+    dit2_Group40484440_10_range_9  int32[0:2684354559]
+    dit2_Group40484440_10_range_10  int32[0:2684354559]
+    dit2_Group40484440_10_buffer_11  int32
+    dit2_Group40484440_10_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_10(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_10_struct_1]) 
+dit2_Group40484440_11_struct_1 {
+    dit2_Group40484440_11_buffer_2  int16
+    dit2_Group40484440_11_buffer_3  int8
+    dit2_Group40484440_11_buffer_4  int8
+    dit2_Group40484440_11_buffer_5  array[int8, 32]
+    dit2_Group40484440_11_buffer_6  int32
+    dit2_Group40484440_11_range_7  int32[0:2684354559]
+    dit2_Group40484440_11_range_8  int32[0:2684354559]
+    dit2_Group40484440_11_range_9  int32[0:2684354559]
+    dit2_Group40484440_11_range_10  int32[0:2684354559]
+    dit2_Group40484440_11_buffer_11  int32
+    dit2_Group40484440_11_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_11(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_11_struct_1]) 
+dit2_Group40484440_12_struct_1 {
+    dit2_Group40484440_12_buffer_2  int16
+    dit2_Group40484440_12_buffer_3  int8
+    dit2_Group40484440_12_buffer_4  int8
+    dit2_Group40484440_12_buffer_5  array[int8, 32]
+    dit2_Group40484440_12_range_6  int32[0:2684354559]
+    dit2_Group40484440_12_range_7  int32[0:2684354559]
+    dit2_Group40484440_12_range_8  int32[0:2684354559]
+    dit2_Group40484440_12_range_9  int32[0:2684354559]
+    dit2_Group40484440_12_buffer_10  int32
+    dit2_Group40484440_12_buffer_11  int32
+    dit2_Group40484440_12_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_12(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_12_struct_1]) 
+dit2_Group40484440_13_struct_1 {
+    dit2_Group40484440_13_buffer_2  int16
+    dit2_Group40484440_13_buffer_3  int8
+    dit2_Group40484440_13_buffer_4  int8
+    dit2_Group40484440_13_buffer_5  array[int8, 32]
+    dit2_Group40484440_13_range_6  int32[0:2684354559]
+    dit2_Group40484440_13_buffer_7  int32
+    dit2_Group40484440_13_range_8  int32[1610612736:4294967295]
+    dit2_Group40484440_13_range_9  int32[1610612736:4294967295]
+    dit2_Group40484440_13_range_10  int32[0:2684354559]
+    dit2_Group40484440_13_buffer_11  int32
+    dit2_Group40484440_13_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_13(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_13_struct_1]) 
+dit2_Group40484440_14_struct_1 {
+    dit2_Group40484440_14_buffer_2  int16
+    dit2_Group40484440_14_buffer_3  int8
+    dit2_Group40484440_14_buffer_4  int8
+    dit2_Group40484440_14_buffer_5  array[int8, 32]
+    dit2_Group40484440_14_buffer_6  int32
+    dit2_Group40484440_14_range_7  int32[0:2684354559]
+    dit2_Group40484440_14_range_8  int32[1610612736:4294967295]
+    dit2_Group40484440_14_range_9  int32[1610612736:4294967295]
+    dit2_Group40484440_14_range_10  int32[0:2684354559]
+    dit2_Group40484440_14_buffer_11  int32
+    dit2_Group40484440_14_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_14(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_14_struct_1]) 
+dit2_Group40484440_15_struct_1 {
+    dit2_Group40484440_15_buffer_2  int16
+    dit2_Group40484440_15_buffer_3  int8
+    dit2_Group40484440_15_buffer_4  int8
+    dit2_Group40484440_15_buffer_5  array[int8, 32]
+    dit2_Group40484440_15_range_6  int32[0:2684354559]
+    dit2_Group40484440_15_range_7  int32[0:2684354559]
+    dit2_Group40484440_15_range_8  int32[1610612736:4294967295]
+    dit2_Group40484440_15_range_9  int32[1610612736:4294967295]
+    dit2_Group40484440_15_buffer_10  int32
+    dit2_Group40484440_15_buffer_11  int32
+    dit2_Group40484440_15_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_15(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_15_struct_1]) 
+dit2_Group40484440_16_struct_1 {
+    dit2_Group40484440_16_buffer_2  int16
+    dit2_Group40484440_16_buffer_3  int8
+    dit2_Group40484440_16_buffer_4  int8
+    dit2_Group40484440_16_buffer_5  array[int8, 32]
+    dit2_Group40484440_16_buffer_6  int32
+    dit2_Group40484440_16_range_7  int32[1610612736:4294967295]
+    dit2_Group40484440_16_range_8  int32[0:2684354559]
+    dit2_Group40484440_16_range_9  int32[1610612736:4294967295]
+    dit2_Group40484440_16_range_10  int32[0:2684354559]
+    dit2_Group40484440_16_buffer_11  int32
+    dit2_Group40484440_16_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_16(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_16_struct_1]) 
+dit2_Group40484440_17_struct_1 {
+    dit2_Group40484440_17_buffer_2  int16
+    dit2_Group40484440_17_buffer_3  int8
+    dit2_Group40484440_17_buffer_4  int8
+    dit2_Group40484440_17_buffer_5  array[int8, 32]
+    dit2_Group40484440_17_range_6  int32[0:2684354559]
+    dit2_Group40484440_17_range_7  int32[1610612736:4294967295]
+    dit2_Group40484440_17_range_8  int32[0:2684354559]
+    dit2_Group40484440_17_range_9  int32[1610612736:4294967295]
+    dit2_Group40484440_17_buffer_10  int32
+    dit2_Group40484440_17_buffer_11  int32
+    dit2_Group40484440_17_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_17(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_17_struct_1]) 
+dit2_Group40484440_18_struct_1 {
+    dit2_Group40484440_18_buffer_2  int16
+    dit2_Group40484440_18_buffer_3  int8
+    dit2_Group40484440_18_buffer_4  int8
+    dit2_Group40484440_18_buffer_5  array[int8, 32]
+    dit2_Group40484440_18_buffer_6  int32
+    dit2_Group40484440_18_range_7  int32[1610612736:4294967295]
+    dit2_Group40484440_18_range_8  int32[1610612736:4294967295]
+    dit2_Group40484440_18_range_9  int32[0:2684354559]
+    dit2_Group40484440_18_range_10  int32[0:2684354559]
+    dit2_Group40484440_18_buffer_11  int32
+    dit2_Group40484440_18_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_18(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_18_struct_1]) 
+dit2_Group40484440_19_struct_1 {
+    dit2_Group40484440_19_buffer_2  int16
+    dit2_Group40484440_19_buffer_3  int8
+    dit2_Group40484440_19_buffer_4  int8
+    dit2_Group40484440_19_buffer_5  array[int8, 32]
+    dit2_Group40484440_19_range_6  int32[0:2684354559]
+    dit2_Group40484440_19_range_7  int32[1610612736:4294967295]
+    dit2_Group40484440_19_range_8  int32[1610612736:4294967295]
+    dit2_Group40484440_19_range_9  int32[0:2684354559]
+    dit2_Group40484440_19_buffer_10  int32
+    dit2_Group40484440_19_buffer_11  int32
+    dit2_Group40484440_19_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_19(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_19_struct_1]) 
+dit2_Group40484440_20_struct_1 {
+    dit2_Group40484440_20_buffer_2  int16
+    dit2_Group40484440_20_buffer_3  int8
+    dit2_Group40484440_20_buffer_4  int8
+    dit2_Group40484440_20_buffer_5  array[int8, 32]
+    dit2_Group40484440_20_range_6  int32[1610612736:4294967295]
+    dit2_Group40484440_20_range_7  int32[0:2684354559]
+    dit2_Group40484440_20_range_8  int32[0:2684354559]
+    dit2_Group40484440_20_range_9  int32[1610612736:4294967295]
+    dit2_Group40484440_20_buffer_10  int32
+    dit2_Group40484440_20_buffer_11  int32
+    dit2_Group40484440_20_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_20(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_20_struct_1]) 
+dit2_Group40484440_21_struct_1 {
+    dit2_Group40484440_21_buffer_2  int16
+    dit2_Group40484440_21_buffer_3  int8
+    dit2_Group40484440_21_buffer_4  int8
+    dit2_Group40484440_21_buffer_5  array[int8, 32]
+    dit2_Group40484440_21_range_6  int32[1610612736:4294967295]
+    dit2_Group40484440_21_range_7  int32[0:2684354559]
+    dit2_Group40484440_21_range_8  int32[1610612736:4294967295]
+    dit2_Group40484440_21_range_9  int32[0:2684354559]
+    dit2_Group40484440_21_buffer_10  int32
+    dit2_Group40484440_21_buffer_11  int32
+    dit2_Group40484440_21_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_21(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_21_struct_1]) 
+dit2_Group40484440_22_struct_1 {
+    dit2_Group40484440_22_buffer_2  int16
+    dit2_Group40484440_22_buffer_3  int8
+    dit2_Group40484440_22_buffer_4  int8
+    dit2_Group40484440_22_buffer_5  array[int8, 32]
+    dit2_Group40484440_22_range_6  int32[1610612736:4294967295]
+    dit2_Group40484440_22_range_7  int32[1610612736:4294967295]
+    dit2_Group40484440_22_range_8  int32[0:2684354559]
+    dit2_Group40484440_22_range_9  int32[0:2684354559]
+    dit2_Group40484440_22_buffer_10  int32
+    dit2_Group40484440_22_buffer_11  int32
+    dit2_Group40484440_22_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_22(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_22_struct_1]) 
+dit2_Group40484440_23_struct_1 {
+    dit2_Group40484440_23_buffer_2  int16
+    dit2_Group40484440_23_buffer_3  int8
+    dit2_Group40484440_23_buffer_4  int8
+    dit2_Group40484440_23_buffer_5  array[int8, 32]
+    dit2_Group40484440_23_range_6  int32[1610612736:4294967295]
+    dit2_Group40484440_23_range_7  int32[1610612736:4294967295]
+    dit2_Group40484440_23_range_8  int32[1610612736:4294967295]
+    dit2_Group40484440_23_range_9  int32[1610612736:4294967295]
+    dit2_Group40484440_23_range_10  int32[0:2684354559]
+    dit2_Group40484440_23_buffer_11  array[int8, 16]
+} [packed]
+ioctl$dit2_Group40484440_23(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_23_struct_1]) 
+dit2_Group40484440_24_struct_1 {
+    dit2_Group40484440_24_buffer_2  int16
+    dit2_Group40484440_24_buffer_3  int8
+    dit2_Group40484440_24_range_4  int8[15:240]
+    dit2_Group40484440_24_buffer_5  array[int8, 32]
+    dit2_Group40484440_24_buffer_6  int32
+    dit2_Group40484440_24_buffer_7  int32
+    dit2_Group40484440_24_buffer_8  int32
+    dit2_Group40484440_24_buffer_9  int32
+    dit2_Group40484440_24_range_10  int32[1610612736:4294967295]
+    dit2_Group40484440_24_range_11  int32[1610612736:4294967295]
+    dit2_Group40484440_24_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_24(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_24_struct_1]) 
+dit2_Group40484440_25_struct_1 {
+    dit2_Group40484440_25_buffer_2  int16
+    dit2_Group40484440_25_buffer_3  int8
+    dit2_Group40484440_25_buffer_4  int8
+    dit2_Group40484440_25_buffer_5  array[int8, 32]
+    dit2_Group40484440_25_range_6  int32[0:2684354559]
+    dit2_Group40484440_25_range_7  int32[0:2684354559]
+    dit2_Group40484440_25_range_8  int32[0:2684354559]
+    dit2_Group40484440_25_range_9  int32[1610612736:4294967295]
+    dit2_Group40484440_25_range_10  int32[1610612736:4294967295]
+    dit2_Group40484440_25_buffer_11  int32
+    dit2_Group40484440_25_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_25(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_25_struct_1]) 
+dit2_Group40484440_26_struct_1 {
+    dit2_Group40484440_26_buffer_2  int16
+    dit2_Group40484440_26_buffer_3  int8
+    dit2_Group40484440_26_buffer_4  int8
+    dit2_Group40484440_26_buffer_5  array[int8, 32]
+    dit2_Group40484440_26_range_6  int32[0:2684354559]
+    dit2_Group40484440_26_range_7  int32[0:2684354559]
+    dit2_Group40484440_26_range_8  int32[1610612736:4294967295]
+    dit2_Group40484440_26_range_9  int32[0:2684354559]
+    dit2_Group40484440_26_range_10  int32[1610612736:4294967295]
+    dit2_Group40484440_26_buffer_11  int32
+    dit2_Group40484440_26_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_26(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_26_struct_1]) 
+dit2_Group40484440_27_struct_1 {
+    dit2_Group40484440_27_buffer_2  int16
+    dit2_Group40484440_27_buffer_3  int8
+    dit2_Group40484440_27_buffer_4  int8
+    dit2_Group40484440_27_buffer_5  array[int8, 32]
+    dit2_Group40484440_27_range_6  int32[0:2684354559]
+    dit2_Group40484440_27_range_7  int32[1610612736:4294967295]
+    dit2_Group40484440_27_range_8  int32[0:2684354559]
+    dit2_Group40484440_27_range_9  int32[0:2684354559]
+    dit2_Group40484440_27_range_10  int32[1610612736:4294967295]
+    dit2_Group40484440_27_buffer_11  int32
+    dit2_Group40484440_27_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_27(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_27_struct_1]) 
+dit2_Group40484440_28_struct_1 {
+    dit2_Group40484440_28_buffer_2  int16
+    dit2_Group40484440_28_buffer_3  int8
+    dit2_Group40484440_28_buffer_4  int8
+    dit2_Group40484440_28_buffer_5  array[int8, 32]
+    dit2_Group40484440_28_range_6  int32[0:2684354559]
+    dit2_Group40484440_28_range_7  int32[1610612736:4294967295]
+    dit2_Group40484440_28_range_8  int32[1610612736:4294967295]
+    dit2_Group40484440_28_range_9  int32[1610612736:4294967295]
+    dit2_Group40484440_28_range_10  int32[1610612736:4294967295]
+    dit2_Group40484440_28_buffer_11  array[int8, 16]
+} [packed]
+ioctl$dit2_Group40484440_28(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_28_struct_1]) 
+dit2_Group40484440_29_struct_1 {
+    dit2_Group40484440_29_buffer_2  int16
+    dit2_Group40484440_29_buffer_3  int8
+    dit2_Group40484440_29_buffer_4  int8
+    dit2_Group40484440_29_buffer_5  array[int8, 32]
+    dit2_Group40484440_29_range_6  int32[1610612736:4294967295]
+    dit2_Group40484440_29_range_7  int32[0:2684354559]
+    dit2_Group40484440_29_range_8  int32[0:2684354559]
+    dit2_Group40484440_29_range_9  int32[0:2684354559]
+    dit2_Group40484440_29_range_10  int32[1610612736:4294967295]
+    dit2_Group40484440_29_buffer_11  int32
+    dit2_Group40484440_29_buffer_12  array[int8, 12]
+} [packed]
+ioctl$dit2_Group40484440_29(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_29_struct_1]) 
+dit2_Group40484440_30_struct_1 {
+    dit2_Group40484440_30_buffer_2  int16
+    dit2_Group40484440_30_buffer_3  int8
+    dit2_Group40484440_30_buffer_4  int8
+    dit2_Group40484440_30_buffer_5  array[int8, 32]
+    dit2_Group40484440_30_range_6  int32[1610612736:4294967295]
+    dit2_Group40484440_30_range_7  int32[0:2684354559]
+    dit2_Group40484440_30_range_8  int32[1610612736:4294967295]
+    dit2_Group40484440_30_range_9  int32[1610612736:4294967295]
+    dit2_Group40484440_30_range_10  int32[1610612736:4294967295]
+    dit2_Group40484440_30_buffer_11  array[int8, 16]
+} [packed]
+ioctl$dit2_Group40484440_30(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_30_struct_1]) 
+dit2_Group40484440_31_struct_1 {
+    dit2_Group40484440_31_buffer_2  int16
+    dit2_Group40484440_31_buffer_3  int8
+    dit2_Group40484440_31_buffer_4  int8
+    dit2_Group40484440_31_buffer_5  array[int8, 32]
+    dit2_Group40484440_31_range_6  int32[1610612736:4294967295]
+    dit2_Group40484440_31_range_7  int32[1610612736:4294967295]
+    dit2_Group40484440_31_range_8  int32[0:2684354559]
+    dit2_Group40484440_31_range_9  int32[1610612736:4294967295]
+    dit2_Group40484440_31_range_10  int32[1610612736:4294967295]
+    dit2_Group40484440_31_buffer_11  array[int8, 16]
+} [packed]
+ioctl$dit2_Group40484440_31(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_31_struct_1]) 
+dit2_Group40484440_32_struct_1 {
+    dit2_Group40484440_32_buffer_2  int16
+    dit2_Group40484440_32_buffer_3  int8
+    dit2_Group40484440_32_buffer_4  int8
+    dit2_Group40484440_32_buffer_5  array[int8, 32]
+    dit2_Group40484440_32_range_6  int32[1610612736:4294967295]
+    dit2_Group40484440_32_range_7  int32[1610612736:4294967295]
+    dit2_Group40484440_32_range_8  int32[1610612736:4294967295]
+    dit2_Group40484440_32_buffer_9  int32
+    dit2_Group40484440_32_range_10  int32[1610612736:4294967295]
+    dit2_Group40484440_32_buffer_11  array[int8, 16]
+} [packed]
+ioctl$dit2_Group40484440_32(fd dit2_fd, cmd const[1078477888], arg ptr[in, dit2_Group40484440_32_struct_1]) 
+dit2_Group40124407_0_struct_1 {
+    dit2_Group40124407_0_buffer_2  int8
+    dit2_Group40124407_0_buffer_3  int8
+    dit2_Group40124407_0_buffer_4  int8
+    dit2_Group40124407_0_buffer_5  int8
+    dit2_Group40124407_0_buffer_6  int8
+    dit2_Group40124407_0_buffer_7  int8
+    dit2_Group40124407_0_buffer_8  int8
+    dit2_Group40124407_0_buffer_9  int8
+    dit2_Group40124407_0_buffer_10  int8
+    dit2_Group40124407_0_buffer_11  int8
+    dit2_Group40124407_0_buffer_12  int8
+    dit2_Group40124407_0_buffer_13  int8
+    dit2_Group40124407_0_buffer_14  int8
+    dit2_Group40124407_0_buffer_15  int8
+    dit2_Group40124407_0_buffer_16  int8
+    dit2_Group40124407_0_buffer_17  int8
+    dit2_Group40124407_0_buffer_18  int16
+} [packed]
+ioctl$dit2_Group40124407_0(fd dit2_fd, cmd const[1074938887], arg ptr[in, dit2_Group40124407_0_struct_1]) 
+dit2_Group40124407_1_struct_1 {
+    dit2_Group40124407_1_buffer_2  int8
+    dit2_Group40124407_1_buffer_3  int8
+    dit2_Group40124407_1_buffer_4  int8
+    dit2_Group40124407_1_buffer_5  int8
+    dit2_Group40124407_1_buffer_6  int8
+    dit2_Group40124407_1_buffer_7  int8
+    dit2_Group40124407_1_buffer_8  int8
+    dit2_Group40124407_1_range_9  int64[1:18446744069414584321]
+    dit2_Group40124407_1_buffer_10  int8
+    dit2_Group40124407_1_buffer_11  int16
+} [packed]
+ioctl$dit2_Group40124407_1(fd dit2_fd, cmd const[1074938887], arg ptr[in, dit2_Group40124407_1_struct_1]) 
+dit2_Group40124407_2_struct_1 {
+    dit2_Group40124407_2_buffer_2  int8
+    dit2_Group40124407_2_buffer_3  int8
+    dit2_Group40124407_2_buffer_4  int8
+    dit2_Group40124407_2_buffer_5  int8
+    dit2_Group40124407_2_buffer_6  int8
+    dit2_Group40124407_2_buffer_7  int8
+    dit2_Group40124407_2_buffer_8  int8
+    dit2_Group40124407_2_range_9  int64[72340172838076673:18446744073709551615]
+    dit2_Group40124407_2_range_10  int8[1:255]
+    dit2_Group40124407_2_buffer_11  int16
+} [packed]
+ioctl$dit2_Group40124407_2(fd dit2_fd, cmd const[1074938887], arg ptr[in, dit2_Group40124407_2_struct_1]) 
+dit2_Group40124407_3_struct_1 {
+    dit2_Group40124407_3_buffer_2  int8
+    dit2_Group40124407_3_buffer_3  int8
+    dit2_Group40124407_3_buffer_4  int8
+    dit2_Group40124407_3_buffer_5  int8
+    dit2_Group40124407_3_buffer_6  int8
+    dit2_Group40124407_3_buffer_7  int8
+    dit2_Group40124407_3_buffer_8  int8
+    dit2_Group40124407_3_range_9  int8[1:255]
+    dit2_Group40124407_3_buffer_10  int8
+    dit2_Group40124407_3_buffer_11  int8
+    dit2_Group40124407_3_buffer_12  int8
+    dit2_Group40124407_3_buffer_13  int8
+    dit2_Group40124407_3_buffer_14  int8
+    dit2_Group40124407_3_buffer_15  int8
+    dit2_Group40124407_3_buffer_16  int8
+    dit2_Group40124407_3_buffer_17  int8
+    dit2_Group40124407_3_buffer_18  int16
+} [packed]
+ioctl$dit2_Group40124407_3(fd dit2_fd, cmd const[1074938887], arg ptr[in, dit2_Group40124407_3_struct_1]) 
+dit2_Group40124407_4_struct_1 {
+    dit2_Group40124407_4_buffer_2  int8
+    dit2_Group40124407_4_buffer_3  int8
+    dit2_Group40124407_4_buffer_4  int8
+    dit2_Group40124407_4_buffer_5  int8
+    dit2_Group40124407_4_buffer_6  int8
+    dit2_Group40124407_4_buffer_7  int8
+    dit2_Group40124407_4_buffer_8  int8
+    dit2_Group40124407_4_range_9  int8[1:255]
+    dit2_Group40124407_4_range_10  int8[1:255]
+    dit2_Group40124407_4_range_11  int8[1:255]
+    dit2_Group40124407_4_range_12  int8[1:255]
+    dit2_Group40124407_4_range_13  int8[1:255]
+    dit2_Group40124407_4_range_14  int8[1:255]
+    dit2_Group40124407_4_range_15  int8[1:255]
+    dit2_Group40124407_4_range_16  int8[1:255]
+    dit2_Group40124407_4_range_17  int8[1:255]
+    dit2_Group40124407_4_buffer_18  int16
+} [packed]
+ioctl$dit2_Group40124407_4(fd dit2_fd, cmd const[1074938887], arg ptr[in, dit2_Group40124407_4_struct_1]) 
+ioctl$dit2_Group4401_0(fd dit2_fd, cmd const[17409], arg intptr) 

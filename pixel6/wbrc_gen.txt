@@ -1,0 +1,48 @@
+resource wbrc_fd[fd]
+
+openat$wbrc_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/wbrc"]], flags flags[open_flags], mode const[0]) wbrc_fd
+read$wbrc_syzgen(fd wbrc_fd, data ptr[out, array[int8]], size len[data]) 
+wbrc_Group0_0_struct_1 {
+    wbrc_Group0_0_buffer_2  int8
+    wbrc_Group0_0_buffer_3  int8
+    wbrc_Group0_0_buffer_4  int8
+    wbrc_Group0_0_buffer_5  int8
+} [packed]
+write$wbrc_Group0_0(fd wbrc_fd, data ptr[in, wbrc_Group0_0_struct_1], size len[data]) 
+wbrc_Group0_1_struct_1 {
+    wbrc_Group0_1_const_2  const[2, int8]
+    wbrc_Group0_1_buffer_3  int8
+    wbrc_Group0_1_buffer_4  int8
+    wbrc_Group0_1_buffer_5  int8
+} [packed]
+write$wbrc_Group0_1(fd wbrc_fd, data ptr[in, wbrc_Group0_1_struct_1], size const[4]) 
+wbrc_Group0_2_struct_1 {
+    wbrc_Group0_2_buffer_2  int8
+    wbrc_Group0_2_buffer_3  int8
+    wbrc_Group0_2_buffer_4  int8
+    wbrc_Group0_2_buffer_5  int8
+} [packed]
+write$wbrc_Group0_2(fd wbrc_fd, data ptr[in, wbrc_Group0_2_struct_1], size const[4]) 
+wbrc_Group0_3_flag_4 = 3, 4
+wbrc_Group0_3_struct_1 {
+    wbrc_Group0_3_const_2  const[2, int8]
+    wbrc_Group0_3_buffer_3  int8
+    wbrc_Group0_3_flag_4  flags[wbrc_Group0_3_flag_4, int8]
+    wbrc_Group0_3_buffer_5  int8
+} [packed]
+write$wbrc_Group0_3(fd wbrc_fd, data ptr[in, wbrc_Group0_3_struct_1], size const[4]) 
+wbrc_Group0_4_struct_1 {
+    wbrc_Group0_4_const_2  const[2, int8]
+    wbrc_Group0_4_buffer_3  int8
+    wbrc_Group0_4_const_4  const[4, int8]
+    wbrc_Group0_4_const_5  const[129, int8]
+} [packed]
+write$wbrc_Group0_4(fd wbrc_fd, data ptr[in, wbrc_Group0_4_struct_1], size const[4]) 
+wbrc_Group0_5_flag_5 = 64, 65
+wbrc_Group0_5_struct_1 {
+    wbrc_Group0_5_const_2  const[2, int8]
+    wbrc_Group0_5_buffer_3  int8
+    wbrc_Group0_5_const_4  const[3, int8]
+    wbrc_Group0_5_flag_5  flags[wbrc_Group0_5_flag_5, int8]
+} [packed]
+write$wbrc_Group0_5(fd wbrc_fd, data ptr[in, wbrc_Group0_5_struct_1], size const[4]) 

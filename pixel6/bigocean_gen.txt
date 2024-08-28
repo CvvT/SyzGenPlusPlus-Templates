@@ -1,0 +1,38 @@
+resource bigocean_fd[fd]
+
+openat$bigocean_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/bigocean"]], flags flags[open_flags], mode const[0]) bigocean_fd
+bigocean_Group40084205_0_struct_1 {
+    bigocean_Group40084205_0_buffer_2  int32
+    bigocean_Group40084205_0_buffer_3  int32
+} [packed]
+ioctl$bigocean_Group40084205_0(fd bigocean_fd, cmd const[1074283013], arg ptr[in, bigocean_Group40084205_0_struct_1]) 
+ioctl$bigocean_Group40044204_0(fd bigocean_fd, cmd const[1074020868], arg intptr) 
+bigocean_Groupc0104202_0_struct_1 {
+    bigocean_Groupc0104202_0_range_2  int32[0:4294967294]
+    bigocean_Groupc0104202_0_buffer_3  array[int8, 12]
+} [packed]
+ioctl$bigocean_Groupc0104202_0(fd bigocean_fd, cmd const[3222290946], arg ptr[inout, bigocean_Groupc0104202_0_struct_1]) 
+ioctl$bigocean_Group80084206_0(fd bigocean_fd, cmd const[2148024838], arg ptr[out, int64]) 
+bigocean_Group40104203_0_struct_1 {
+    bigocean_Group40104203_0_buffer_2  int32
+    bigocean_Group40104203_0_buffer_3  array[int8, 12]
+} [packed]
+ioctl$bigocean_Group40104203_0(fd bigocean_fd, cmd const[1074807299], arg ptr[in, bigocean_Group40104203_0_struct_1]) 
+ioctl$bigocean_Group40044207_0(fd bigocean_fd, cmd const[1074020871], arg intptr) 
+ioctl$bigocean_Group4201_0(fd bigocean_fd, cmd const[16897], arg intptr) 
+bigocean_Groupc0104200_0_struct_2 {
+    bigocean_Groupc0104200_0_buffer_3  int64
+    bigocean_Groupc0104200_0_buffer_4  array[int8, 16]
+    bigocean_Groupc0104200_0_buffer_5  int32
+    bigocean_Groupc0104200_0_buffer_6  int32
+    bigocean_Groupc0104200_0_buffer_7  array[int8]
+} [packed]
+bigocean_Groupc0104200_0_struct_1 {
+    bigocean_Groupc0104200_0_ptr_8  ptr[in, bigocean_Groupc0104200_0_struct_2]
+    bigocean_Groupc0104200_0_range_9  int8[0:7]
+    bigocean_Groupc0104200_0_const_10  const[0, int8]
+    bigocean_Groupc0104200_0_const_11  const[0, int8]
+    bigocean_Groupc0104200_0_const_12  const[0, int8]
+    bigocean_Groupc0104200_0_buffer_13  int32
+} [packed]
+ioctl$bigocean_Groupc0104200_0(fd bigocean_fd, cmd const[3222290944], arg ptr[in, bigocean_Groupc0104200_0_struct_1]) 

@@ -1,0 +1,16 @@
+
+ioctl$audio10_Group8016616c_0(fd audio_fd, cmd const[2148950380], arg ptr[out, array[int8]]) 
+audio10_Group4016616b_0_struct_1 {
+    audio10_Group4016616b_0_buffer_2  array[int8, 16]
+    audio10_Group4016616b_0_buffer_3  int16
+    audio10_Group4016616b_0_buffer_4  array[int8, 6]
+    audio10_Group4016616b_0_buffer_5  int64
+    audio10_Group4016616b_0_buffer_6  int64
+    audio10_Group4016616b_0_buffer_7  int64
+    audio10_Group4016616b_0_buffer_8  int64
+    audio10_Group4016616b_0_buffer_9  int64
+    audio10_Group4016616b_0_buffer_10  int64
+    audio10_Group4016616b_0_buffer_11  array[int8]
+} [packed]
+ioctl$audio10_Group4016616b_0(fd audio_fd, cmd const[1075208555], arg ptr[in, audio10_Group4016616b_0_struct_1]) 
+ioctl$audio10_Group40046100_0(fd audio_fd, cmd const[1074028800], arg intptr) 

@@ -1,0 +1,79 @@
+resource msm_evrc_in_fd[fd]
+
+openat$msm_evrc_in_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_evrc_in"]], flags flags[open_flags], mode const[0]) msm_evrc_in_fd
+ioctl$msm_evrc_in_Group800c6103_0(fd msm_evrc_in_fd, cmd const[2148294915], arg ptr[out, array[int8]]) 
+msm_evrc_in_Group400c6102_0_flag_3 = 1, 3, 4
+msm_evrc_in_Group400c6102_0_flag_7 = 1, 3, 4
+msm_evrc_in_Group400c6102_0_struct_1 {
+    msm_evrc_in_Group400c6102_0_buffer_2  int32
+    msm_evrc_in_Group400c6102_0_flag_3  flags[msm_evrc_in_Group400c6102_0_flag_3, int8]
+    msm_evrc_in_Group400c6102_0_const_4  const[0, int8]
+    msm_evrc_in_Group400c6102_0_const_5  const[0, int8]
+    msm_evrc_in_Group400c6102_0_const_6  const[0, int8]
+    msm_evrc_in_Group400c6102_0_flag_7  flags[msm_evrc_in_Group400c6102_0_flag_7, int32]
+    msm_evrc_in_Group400c6102_0_buffer_8  int32
+    msm_evrc_in_Group400c6102_0_buffer_9  int64
+    msm_evrc_in_Group400c6102_0_buffer_10  int64
+    msm_evrc_in_Group400c6102_0_buffer_11  int64
+    msm_evrc_in_Group400c6102_0_buffer_12  int64
+    msm_evrc_in_Group400c6102_0_buffer_13  int64
+    msm_evrc_in_Group400c6102_0_buffer_14  int64
+    msm_evrc_in_Group400c6102_0_buffer_15  array[int8]
+} [packed]
+ioctl$msm_evrc_in_Group400c6102_0(fd msm_evrc_in_fd, cmd const[1074553090], arg ptr[in, msm_evrc_in_Group400c6102_0_struct_1]) 
+msm_evrc_in_Group400c6102_1_flag_3 = 1, 3, 4
+msm_evrc_in_Group400c6102_1_flag_7 = 0, 2
+msm_evrc_in_Group400c6102_1_struct_1 {
+    msm_evrc_in_Group400c6102_1_buffer_2  int32
+    msm_evrc_in_Group400c6102_1_flag_3  flags[msm_evrc_in_Group400c6102_1_flag_3, int8]
+    msm_evrc_in_Group400c6102_1_const_4  const[0, int8]
+    msm_evrc_in_Group400c6102_1_const_5  const[0, int8]
+    msm_evrc_in_Group400c6102_1_const_6  const[0, int8]
+    msm_evrc_in_Group400c6102_1_flag_7  flags[msm_evrc_in_Group400c6102_1_flag_7, int8]
+    msm_evrc_in_Group400c6102_1_const_8  const[0, int8]
+    msm_evrc_in_Group400c6102_1_const_9  const[0, int8]
+    msm_evrc_in_Group400c6102_1_const_10  const[0, int8]
+    msm_evrc_in_Group400c6102_1_buffer_11  int32
+    msm_evrc_in_Group400c6102_1_buffer_12  int64
+    msm_evrc_in_Group400c6102_1_buffer_13  int64
+    msm_evrc_in_Group400c6102_1_buffer_14  int64
+    msm_evrc_in_Group400c6102_1_buffer_15  int64
+    msm_evrc_in_Group400c6102_1_buffer_16  int64
+    msm_evrc_in_Group400c6102_1_buffer_17  int64
+    msm_evrc_in_Group400c6102_1_buffer_18  array[int8]
+} [packed]
+ioctl$msm_evrc_in_Group400c6102_1(fd msm_evrc_in_fd, cmd const[1074553090], arg ptr[in, msm_evrc_in_Group400c6102_1_struct_1]) 
+msm_evrc_in_Group400c6102_2_struct_1 {
+    msm_evrc_in_Group400c6102_2_buffer_2  int32
+    msm_evrc_in_Group400c6102_2_buffer_3  int32
+    msm_evrc_in_Group400c6102_2_buffer_4  int32
+    msm_evrc_in_Group400c6102_2_buffer_5  int32
+    msm_evrc_in_Group400c6102_2_buffer_6  int64
+    msm_evrc_in_Group400c6102_2_buffer_7  int64
+    msm_evrc_in_Group400c6102_2_buffer_8  int64
+    msm_evrc_in_Group400c6102_2_buffer_9  int64
+    msm_evrc_in_Group400c6102_2_buffer_10  int64
+    msm_evrc_in_Group400c6102_2_buffer_11  int64
+    msm_evrc_in_Group400c6102_2_buffer_12  array[int8]
+} [packed]
+ioctl$msm_evrc_in_Group400c6102_2(fd msm_evrc_in_fd, cmd const[1074553090], arg ptr[in, msm_evrc_in_Group400c6102_2_struct_1]) 
+msm_evrc_in_Group400c6102_3_flag_3 = 0, 1, 2, 3, 4
+msm_evrc_in_Group400c6102_3_struct_1 {
+    msm_evrc_in_Group400c6102_3_buffer_2  int32
+    msm_evrc_in_Group400c6102_3_flag_3  flags[msm_evrc_in_Group400c6102_3_flag_3, int8]
+    msm_evrc_in_Group400c6102_3_const_4  const[0, int8]
+    msm_evrc_in_Group400c6102_3_const_5  const[0, int8]
+    msm_evrc_in_Group400c6102_3_const_6  const[0, int8]
+    msm_evrc_in_Group400c6102_3_buffer_7  int32
+    msm_evrc_in_Group400c6102_3_buffer_8  int32
+    msm_evrc_in_Group400c6102_3_buffer_9  int64
+    msm_evrc_in_Group400c6102_3_buffer_10  int64
+    msm_evrc_in_Group400c6102_3_buffer_11  int64
+    msm_evrc_in_Group400c6102_3_buffer_12  int64
+    msm_evrc_in_Group400c6102_3_buffer_13  int64
+    msm_evrc_in_Group400c6102_3_buffer_14  int64
+    msm_evrc_in_Group400c6102_3_buffer_15  array[int8]
+} [packed]
+ioctl$msm_evrc_in_Group400c6102_3(fd msm_evrc_in_fd, cmd const[1074553090], arg ptr[in, msm_evrc_in_Group400c6102_3_struct_1]) 
+ioctl$msm_evrc_in_Group40046101_0(fd msm_evrc_in_fd, cmd const[1074028801], arg intptr) 
+ioctl$msm_evrc_in_Group40046100_0(fd msm_evrc_in_fd, cmd const[1074028800], arg intptr) 

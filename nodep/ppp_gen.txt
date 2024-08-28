@@ -1,0 +1,51 @@
+resource ppp_fd[fd]
+# resource ppp_connection_0[int32]
+type ppp_connection_0 int32
+
+openat$ppp_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/ppp"]], flags flags[open_flags], mode const[0]) ppp_fd
+read$ppp_syzgen(fd ppp_fd, data ptr[out, array[int8]], size len[data])
+ioctl$ppp_Group4004743d_0(fd ppp_fd, cmd const[1074033725], arg ptr[in, ppp_connection_0])
+ioctl$ppp_Groupc004743e_0(fd ppp_fd, cmd const[3221517374], arg ptr[inout, ppp_connection_0])
+ioctl$ppp_Group40047438_0(fd ppp_fd, cmd const[1074033720], arg ptr[in, int32])
+ioctl$ppp_Group7439_0(fd ppp_fd, cmd const[29753], arg intptr)
+ioctl$ppp_Group7434_0(fd ppp_fd, cmd const[29748], arg intptr)
+ioctl$ppp_Group40047435_0(fd ppp_fd, cmd const[1074033717], arg ptr[in, int32])
+ioctl$ppp_Group4004743a_0(fd ppp_fd, cmd const[1074033722], arg ptr[in, int32])
+ioctl$ppp_Group4004743a_1(fd ppp_fd, cmd const[1074033722], arg ptr[in, int32])
+ioctl$ppp_Group40047451_0(fd ppp_fd, cmd const[1074033745], arg ptr[in, int32])
+ioctl$ppp_Group40047451_1(fd ppp_fd, cmd const[1074033745], arg ptr[in, int32])
+ioctl$ppp_Group40047451_2(fd ppp_fd, cmd const[1074033745], arg ptr[in, int32])
+ioctl$ppp_Group40047451_3(fd ppp_fd, cmd const[1074033745], arg ptr[in, int32])
+ioctl$ppp_Group40047451_4(fd ppp_fd, cmd const[1074033745], arg ptr[in, int32])
+ioctl$ppp_Group8010743f_0(fd ppp_fd, cmd const[2148561983], arg ptr[out, array[int8, 16]])
+ioctl$ppp_Group4004743b_0(fd ppp_fd, cmd const[1074033723], arg ptr[in, int32])
+ioctl$ppp_Group40047459_0(fd ppp_fd, cmd const[1074033753], arg ptr[in, int32])
+ioctl$ppp_Groupc008744c_0(fd ppp_fd, cmd const[3221779532], arg ptr[inout, int64])
+ioctl$ppp_Group40047440_0(fd ppp_fd, cmd const[1074033728], arg ptr[in, int32])
+ppp_Group4008744b_0_flag_2 = 33, 641, 643, 41, 43, 87
+
+ppp_Group4008744b_0_struct_1 {
+	ppp_Group4008744b_0_flag_2	flags[ppp_Group4008744b_0_flag_2, int32]
+	ppp_Group4008744b_0_buffer_3	int32
+} [packed]
+
+ioctl$ppp_Group4008744b_0(fd ppp_fd, cmd const[1074295883], arg ptr[in, ppp_Group4008744b_0_struct_1])
+ioctl$ppp_Group8008743f_0(fd ppp_fd, cmd const[2148037695], arg ptr[out, int64])
+ioctl$ppp_Group40047452_0(fd ppp_fd, cmd const[1074033746], arg ptr[in, int32])
+
+ppp_Group40107447_0_struct_1 {
+	ppp_Group40107447_0_range_2	bytesize8[ppp_Group40107447_0_ptr_5, int16]
+	ppp_Group40107447_0_buffer_3	array[int8, 6]
+	ppp_Group40107447_0_ptr_5	ptr[in, array[int8]]
+} [packed]
+
+ioctl$ppp_Group40107447_0(fd ppp_fd, cmd const[1074820167], arg ptr[in, ppp_Group40107447_0_struct_1])
+
+ppp_Group40107446_0_struct_1 {
+	ppp_Group40107446_0_range_2	bytesize8[ppp_Group40107446_0_ptr_5, int16]
+	ppp_Group40107446_0_buffer_3	array[int8, 6]
+	ppp_Group40107446_0_ptr_5	ptr[in, array[int8]]
+} [packed]
+
+ioctl$ppp_Group40107446_0(fd ppp_fd, cmd const[1074820166], arg ptr[in, ppp_Group40107446_0_struct_1])
+write$ppp_Group0_0(fd ppp_fd, data ptr[in, array[int8]], size len[data])

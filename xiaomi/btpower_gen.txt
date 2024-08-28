@@ -1,0 +1,10 @@
+resource btpower_fd[fd]
+
+openat$btpower_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/btpower"]], flags flags[open_flags], mode const[0]) btpower_fd
+ioctl$btpower_Groupbfad_0(fd btpower_fd, cmd const[49069], arg intptr[1:4294967295]) 
+ioctl$btpower_Groupbfae_0(fd btpower_fd, cmd const[49070], btpower_Groupbfae_0_buffer_12 intptr) 
+ioctl$btpower_Groupbfaf_0(fd btpower_fd, cmd const[49071], arg ptr[out, array[int8, 32]]) 
+ioctl$btpower_Groupbfac_0(fd btpower_fd, cmd const[49068], arg intptr) 
+ioctl$btpower_Groupbfb1_0(fd btpower_fd, cmd const[49073], arg ptr[out, array[int8, 128]]) 
+ioctl$btpower_Groupbfb0_0(fd btpower_fd, cmd const[49072], arg intptr) 
+ioctl$btpower_Groupbfc0_0(fd btpower_fd, cmd const[49088], arg intptr) 

@@ -1,0 +1,5 @@
+resource demux0_fd[fd]
+
+openat$demux0_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dvb/adapter0/demux0"]], flags flags[open_flags], mode const[0]) demux0_fd
+read$demux0_syzgen(fd demux0_fd, data ptr[out, array[int8]], size len[data]) 
+ioctl$demux0_Group6f2a_0(fd demux0_fd, cmd const[28458], arg intptr) 

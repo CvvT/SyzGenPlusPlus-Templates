@@ -1,0 +1,6 @@
+resource pcm_fd[fd]
+
+openat$pcmC0D0c_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/snd/pcmC0D0c"]], flags flags[open_flags], mode const[0]) pcm_fd
+openat$pcmC0D0p_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/snd/pcmC0D0p"]], flags flags[open_flags], mode const[0]) pcm_fd
+openat$pcmC0D1c_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/snd/pcmC0D1#c"]], flags flags[open_flags], mode const[0]) pcm_fd
+openat$pcmC0D1p_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/snd/pcmC0D1#p"]], flags flags[open_flags], mode const[0]) pcm_fd

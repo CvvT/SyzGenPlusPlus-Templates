@@ -1,0 +1,1592 @@
+resource cec0_fd[fd]
+
+syz_open_dev$cec0_syzgen(dev ptr[in, string["/dev/cec#"]], id proc[0, 4], flags const[O_RDWR]) cec0_fd
+read$cec0_syzgen(fd cec0_fd, data ptr[out, array[int8]], size len[data]) 
+ioctl$cec0_Group805c6103_0(fd cec0_fd, cmd const[2153537795], arg ptr[out, array[int8, 92]]) 
+ioctl$cec0_Group80026101_0(fd cec0_fd, cmd const[2147639553], arg ptr[out, int16]) 
+ioctl$cec0_Groupc04c6100_0(fd cec0_fd, cmd const[3226231040], arg ptr[out, array[int8, 76]]) 
+cec0_Group40026102_0_flag_1 = 24576, 53248, 36864, 20480, 8192, 49152, 32768, 61440, 45056, 4096, 57344, 0, 28672, 40960, 12288, 16384, 65535
+ioctl$cec0_Group40026102_0(fd cec0_fd, cmd const[1073897730], arg ptr[in, flags[cec0_Group40026102_0_flag_1, int16]]) 
+ioctl$cec0_Group40026102_1(fd cec0_fd, cmd const[1073897730], arg ptr[in, int16[272:65520, 256]]) 
+ioctl$cec0_Group40026102_2(fd cec0_fd, cmd const[1073897730], arg ptr[in, int16[17:65535]]) 
+ioctl$cec0_Group80046108_0(fd cec0_fd, cmd const[2147770632], arg ptr[out, int32]) 
+cec0_Groupc0386105_0_struct_1 {
+    cec0_Groupc0386105_0_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_0_range_3  int8[15:16]
+    cec0_Groupc0386105_0_const_4  const[0, int8]
+    cec0_Groupc0386105_0_const_5  const[0, int8]
+    cec0_Groupc0386105_0_const_6  const[0, int8]
+    cec0_Groupc0386105_0_buffer_7  int32
+    cec0_Groupc0386105_0_buffer_8  int32
+    cec0_Groupc0386105_0_buffer_9  int32
+    cec0_Groupc0386105_0_buffer_10  array[int8, 16]
+    cec0_Groupc0386105_0_buffer_11  int8
+    cec0_Groupc0386105_0_buffer_12  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_0(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_0_struct_1]) 
+cec0_Groupc0386105_1_struct_1 {
+    cec0_Groupc0386105_1_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_1_range_3  int32[2:16]
+    cec0_Groupc0386105_1_buffer_4  int32
+    cec0_Groupc0386105_1_buffer_5  int32
+    cec0_Groupc0386105_1_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_1_buffer_7  array[int8, 16]
+    cec0_Groupc0386105_1_buffer_8  int8
+    cec0_Groupc0386105_1_buffer_9  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_1(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_1_struct_1]) 
+cec0_Groupc0386105_2_flag_3 = 8, 16
+cec0_Groupc0386105_2_flag_7 = 159, 223, 255, 31, 15, 111, 47, 175, 143, 79, 207, 239, 127, 63, 95, 191
+cec0_Groupc0386105_2_struct_1 {
+    cec0_Groupc0386105_2_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_2_flag_3  flags[cec0_Groupc0386105_2_flag_3, int32]
+    cec0_Groupc0386105_2_buffer_4  int32
+    cec0_Groupc0386105_2_buffer_5  int32
+    cec0_Groupc0386105_2_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_2_flag_7  flags[cec0_Groupc0386105_2_flag_7, int8]
+    cec0_Groupc0386105_2_buffer_8  array[int8, 15]
+    cec0_Groupc0386105_2_buffer_9  int8
+    cec0_Groupc0386105_2_buffer_10  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_2(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_2_struct_1]) 
+cec0_Groupc0386105_3_struct_1 {
+    cec0_Groupc0386105_3_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_3_range_3  int8[8:16]
+    cec0_Groupc0386105_3_const_4  const[0, int8]
+    cec0_Groupc0386105_3_const_5  const[0, int8]
+    cec0_Groupc0386105_3_const_6  const[0, int8]
+    cec0_Groupc0386105_3_const_7  const[0, int32]
+    cec0_Groupc0386105_3_buffer_8  int32
+    cec0_Groupc0386105_3_range_9  int32[2:4294967295]
+    cec0_Groupc0386105_3_buffer_10  int8
+    cec0_Groupc0386105_3_buffer_11  int8
+    cec0_Groupc0386105_3_buffer_12  int16
+    cec0_Groupc0386105_3_buffer_13  int32
+    cec0_Groupc0386105_3_buffer_14  int64
+    cec0_Groupc0386105_3_const_15  const[0, int8]
+    cec0_Groupc0386105_3_buffer_16  array[int8, 6]
+    cec0_Groupc0386105_3_buffer_17  int8
+} [packed]
+ioctl$cec0_Groupc0386105_3(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_3_struct_1]) 
+cec0_Groupc0386105_4_flag_3 = 8, 16, 15
+cec0_Groupc0386105_4_struct_1 {
+    cec0_Groupc0386105_4_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_4_flag_3  flags[cec0_Groupc0386105_4_flag_3, int32]
+    cec0_Groupc0386105_4_buffer_4  int32
+    cec0_Groupc0386105_4_buffer_5  int32
+    cec0_Groupc0386105_4_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_4_buffer_7  int8
+    cec0_Groupc0386105_4_const_8  const[248, int8]
+    cec0_Groupc0386105_4_buffer_9  array[int8, 14]
+    cec0_Groupc0386105_4_buffer_10  int8
+    cec0_Groupc0386105_4_buffer_11  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_4(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_4_struct_1]) 
+cec0_Groupc0386105_5_struct_1 {
+    cec0_Groupc0386105_5_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_5_range_3  int32[1:16]
+    cec0_Groupc0386105_5_buffer_4  int32
+    cec0_Groupc0386105_5_buffer_5  int32
+    cec0_Groupc0386105_5_buffer_6  int32
+    cec0_Groupc0386105_5_buffer_7  array[int8, 16]
+    cec0_Groupc0386105_5_buffer_8  int8
+    cec0_Groupc0386105_5_buffer_9  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_5(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_5_struct_1]) 
+cec0_Groupc0386105_6_struct_1 {
+    cec0_Groupc0386105_6_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_6_range_3  int32[9:14]
+    cec0_Groupc0386105_6_buffer_4  int32
+    cec0_Groupc0386105_6_buffer_5  int32
+    cec0_Groupc0386105_6_range_6  int32[2:4294967295]
+    cec0_Groupc0386105_6_buffer_7  array[int8, 16]
+    cec0_Groupc0386105_6_buffer_8  int8
+    cec0_Groupc0386105_6_buffer_9  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_6(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_6_struct_1]) 
+cec0_Groupc0386105_7_flag_7 = 159, 191, 255, 31, 111, 47, 79, 175, 143, 239, 207, 15, 127, 63, 95, 223
+cec0_Groupc0386105_7_struct_1 {
+    cec0_Groupc0386105_7_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_7_range_3  int32[9:12]
+    cec0_Groupc0386105_7_buffer_4  int32
+    cec0_Groupc0386105_7_buffer_5  int32
+    cec0_Groupc0386105_7_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_7_flag_7  flags[cec0_Groupc0386105_7_flag_7, int8]
+    cec0_Groupc0386105_7_buffer_8  int8
+    cec0_Groupc0386105_7_buffer_9  int16
+    cec0_Groupc0386105_7_buffer_10  int32
+    cec0_Groupc0386105_7_buffer_11  int8
+    cec0_Groupc0386105_7_buffer_12  int8
+    cec0_Groupc0386105_7_buffer_13  int8
+    cec0_Groupc0386105_7_buffer_14  int8
+    cec0_Groupc0386105_7_buffer_15  int8
+    cec0_Groupc0386105_7_buffer_16  int8
+    cec0_Groupc0386105_7_buffer_17  int16
+    cec0_Groupc0386105_7_buffer_18  int8
+    cec0_Groupc0386105_7_buffer_19  array[int8, 6]
+    cec0_Groupc0386105_7_buffer_20  int8
+} [packed]
+ioctl$cec0_Groupc0386105_7(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_7_struct_1]) 
+cec0_Groupc0386105_8_struct_1 {
+    cec0_Groupc0386105_8_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_8_range_3  int32[8:12]
+    cec0_Groupc0386105_8_buffer_4  int32
+    cec0_Groupc0386105_8_buffer_5  int32
+    cec0_Groupc0386105_8_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_8_buffer_7  int8
+    cec0_Groupc0386105_8_const_8  const[248, int8]
+    cec0_Groupc0386105_8_buffer_9  array[int8, 14]
+    cec0_Groupc0386105_8_buffer_10  int8
+    cec0_Groupc0386105_8_buffer_11  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_8(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_8_struct_1]) 
+cec0_Groupc0386105_9_flag_7 = 159, 223, 255, 127, 15, 47, 79, 175, 143, 239, 207, 111, 31, 63, 95, 191
+cec0_Groupc0386105_9_struct_1 {
+    cec0_Groupc0386105_9_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_9_const_3  const[8, int32]
+    cec0_Groupc0386105_9_buffer_4  int32
+    cec0_Groupc0386105_9_buffer_5  int32
+    cec0_Groupc0386105_9_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_9_flag_7  flags[cec0_Groupc0386105_9_flag_7, int8]
+    cec0_Groupc0386105_9_const_8  const[248, int8]
+    cec0_Groupc0386105_9_buffer_9  int16
+    cec0_Groupc0386105_9_buffer_10  int32
+    cec0_Groupc0386105_9_buffer_11  int64
+    cec0_Groupc0386105_9_buffer_12  int8
+    cec0_Groupc0386105_9_buffer_13  array[int8, 6]
+    cec0_Groupc0386105_9_buffer_14  int8
+} [packed]
+ioctl$cec0_Groupc0386105_9(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_9_struct_1]) 
+cec0_Groupc0386105_10_flag_3 = 8, 1
+cec0_Groupc0386105_10_struct_1 {
+    cec0_Groupc0386105_10_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_10_flag_3  flags[cec0_Groupc0386105_10_flag_3, int32]
+    cec0_Groupc0386105_10_const_4  const[0, int32]
+    cec0_Groupc0386105_10_buffer_5  int32
+    cec0_Groupc0386105_10_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_10_range_7  int8[0:254]
+    cec0_Groupc0386105_10_buffer_8  array[int8, 15]
+    cec0_Groupc0386105_10_const_9  const[0, int8]
+    cec0_Groupc0386105_10_buffer_10  array[int8, 6]
+    cec0_Groupc0386105_10_buffer_11  int8
+} [packed]
+ioctl$cec0_Groupc0386105_10(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_10_struct_1]) 
+cec0_Groupc0386105_11_flag_7 = 159, 191, 255, 31, 111, 47, 15, 79, 175, 239, 143, 207, 127, 63, 95, 223
+cec0_Groupc0386105_11_struct_1 {
+    cec0_Groupc0386105_11_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_11_range_3  int32[4:7]
+    cec0_Groupc0386105_11_buffer_4  int32
+    cec0_Groupc0386105_11_buffer_5  int32
+    cec0_Groupc0386105_11_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_11_flag_7  flags[cec0_Groupc0386105_11_flag_7, int8]
+    cec0_Groupc0386105_11_buffer_8  int8
+    cec0_Groupc0386105_11_buffer_9  int16
+    cec0_Groupc0386105_11_buffer_10  int8
+    cec0_Groupc0386105_11_buffer_11  int8
+    cec0_Groupc0386105_11_buffer_12  int8
+    cec0_Groupc0386105_11_buffer_13  int8
+    cec0_Groupc0386105_11_buffer_14  int64
+    cec0_Groupc0386105_11_buffer_15  int8
+    cec0_Groupc0386105_11_buffer_16  array[int8, 6]
+    cec0_Groupc0386105_11_buffer_17  int8
+} [packed]
+ioctl$cec0_Groupc0386105_11(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_11_struct_1]) 
+cec0_Groupc0386105_12_flag_3 = 8, 16
+cec0_Groupc0386105_12_struct_1 {
+    cec0_Groupc0386105_12_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_12_flag_3  flags[cec0_Groupc0386105_12_flag_3, int32]
+    cec0_Groupc0386105_12_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_12_buffer_5  int32
+    cec0_Groupc0386105_12_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_12_range_7  int8[0:254]
+    cec0_Groupc0386105_12_buffer_8  int8
+    cec0_Groupc0386105_12_buffer_9  int16
+    cec0_Groupc0386105_12_buffer_10  int32
+    cec0_Groupc0386105_12_buffer_11  int64
+    cec0_Groupc0386105_12_buffer_12  int8
+    cec0_Groupc0386105_12_buffer_13  array[int8, 6]
+    cec0_Groupc0386105_12_buffer_14  int8
+} [packed]
+ioctl$cec0_Groupc0386105_12(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_12_struct_1]) 
+cec0_Groupc0386105_13_flag_3 = 8, 15
+cec0_Groupc0386105_13_struct_1 {
+    cec0_Groupc0386105_13_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_13_flag_3  flags[cec0_Groupc0386105_13_flag_3, int32]
+    cec0_Groupc0386105_13_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_13_buffer_5  int32
+    cec0_Groupc0386105_13_range_6  int32[2:4294967295]
+    cec0_Groupc0386105_13_buffer_7  int8
+    cec0_Groupc0386105_13_buffer_8  int8
+    cec0_Groupc0386105_13_buffer_9  int16
+    cec0_Groupc0386105_13_buffer_10  int32
+    cec0_Groupc0386105_13_buffer_11  int64
+    cec0_Groupc0386105_13_buffer_12  int8
+    cec0_Groupc0386105_13_buffer_13  array[int8, 6]
+    cec0_Groupc0386105_13_buffer_14  int8
+} [packed]
+ioctl$cec0_Groupc0386105_13(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_13_struct_1]) 
+cec0_Groupc0386105_14_struct_1 {
+    cec0_Groupc0386105_14_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_14_range_3  int32[9:12]
+    cec0_Groupc0386105_14_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_14_buffer_5  int32
+    cec0_Groupc0386105_14_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_14_range_7  int8[0:254]
+    cec0_Groupc0386105_14_buffer_8  int8
+    cec0_Groupc0386105_14_buffer_9  int16
+    cec0_Groupc0386105_14_buffer_10  int32
+    cec0_Groupc0386105_14_buffer_11  int8
+    cec0_Groupc0386105_14_buffer_12  int8
+    cec0_Groupc0386105_14_buffer_13  int8
+    cec0_Groupc0386105_14_buffer_14  int8
+    cec0_Groupc0386105_14_buffer_15  int8
+    cec0_Groupc0386105_14_buffer_16  int8
+    cec0_Groupc0386105_14_buffer_17  int16
+    cec0_Groupc0386105_14_buffer_18  int8
+    cec0_Groupc0386105_14_buffer_19  array[int8, 6]
+    cec0_Groupc0386105_14_buffer_20  int8
+} [packed]
+ioctl$cec0_Groupc0386105_14(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_14_struct_1]) 
+cec0_Groupc0386105_15_struct_1 {
+    cec0_Groupc0386105_15_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_15_range_3  int32[9:12]
+    cec0_Groupc0386105_15_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_15_buffer_5  int32
+    cec0_Groupc0386105_15_range_6  int32[2:4294967295]
+    cec0_Groupc0386105_15_buffer_7  int8
+    cec0_Groupc0386105_15_buffer_8  int8
+    cec0_Groupc0386105_15_buffer_9  int16
+    cec0_Groupc0386105_15_buffer_10  int32
+    cec0_Groupc0386105_15_buffer_11  int8
+    cec0_Groupc0386105_15_buffer_12  int8
+    cec0_Groupc0386105_15_buffer_13  int8
+    cec0_Groupc0386105_15_buffer_14  int8
+    cec0_Groupc0386105_15_buffer_15  int8
+    cec0_Groupc0386105_15_buffer_16  int8
+    cec0_Groupc0386105_15_buffer_17  int16
+    cec0_Groupc0386105_15_buffer_18  int8
+    cec0_Groupc0386105_15_buffer_19  array[int8, 6]
+    cec0_Groupc0386105_15_buffer_20  int8
+} [packed]
+ioctl$cec0_Groupc0386105_15(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_15_struct_1]) 
+cec0_Groupc0386105_16_struct_1 {
+    cec0_Groupc0386105_16_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_16_range_3  int32[9:14]
+    cec0_Groupc0386105_16_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_16_buffer_5  int32
+    cec0_Groupc0386105_16_buffer_6  int32
+    cec0_Groupc0386105_16_buffer_7  int8
+    cec0_Groupc0386105_16_buffer_8  int8
+    cec0_Groupc0386105_16_buffer_9  int16
+    cec0_Groupc0386105_16_buffer_10  int32
+    cec0_Groupc0386105_16_buffer_11  int8
+    cec0_Groupc0386105_16_buffer_12  int8
+    cec0_Groupc0386105_16_buffer_13  int8
+    cec0_Groupc0386105_16_buffer_14  int8
+    cec0_Groupc0386105_16_buffer_15  int8
+    cec0_Groupc0386105_16_buffer_16  int8
+    cec0_Groupc0386105_16_buffer_17  int16
+    cec0_Groupc0386105_16_buffer_18  int8
+    cec0_Groupc0386105_16_buffer_19  array[int8, 6]
+    cec0_Groupc0386105_16_buffer_20  int8
+} [packed]
+ioctl$cec0_Groupc0386105_16(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_16_struct_1]) 
+cec0_Groupc0386105_17_struct_1 {
+    cec0_Groupc0386105_17_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_17_const_3  const[8, int32]
+    cec0_Groupc0386105_17_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_17_buffer_5  int32
+    cec0_Groupc0386105_17_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_17_range_7  int8[0:254]
+    cec0_Groupc0386105_17_const_8  const[248, int8]
+    cec0_Groupc0386105_17_buffer_9  int16
+    cec0_Groupc0386105_17_buffer_10  int32
+    cec0_Groupc0386105_17_buffer_11  int64
+    cec0_Groupc0386105_17_buffer_12  int8
+    cec0_Groupc0386105_17_buffer_13  array[int8, 6]
+    cec0_Groupc0386105_17_buffer_14  int8
+} [packed]
+ioctl$cec0_Groupc0386105_17(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_17_struct_1]) 
+cec0_Groupc0386105_18_flag_7 = 159, 223, 255, 127, 111, 47, 79, 175, 15, 239, 207, 143, 31, 63, 95, 191
+cec0_Groupc0386105_18_struct_1 {
+    cec0_Groupc0386105_18_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_18_const_3  const[8, int32]
+    cec0_Groupc0386105_18_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_18_buffer_5  int32
+    cec0_Groupc0386105_18_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_18_flag_7  flags[cec0_Groupc0386105_18_flag_7, int8]
+    cec0_Groupc0386105_18_buffer_8  int8
+    cec0_Groupc0386105_18_buffer_9  array[int8, 6]
+    cec0_Groupc0386105_18_buffer_10  int64
+    cec0_Groupc0386105_18_buffer_11  int8
+    cec0_Groupc0386105_18_buffer_12  array[int8, 6]
+    cec0_Groupc0386105_18_buffer_13  int8
+} [packed]
+ioctl$cec0_Groupc0386105_18(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_18_struct_1]) 
+cec0_Groupc0386105_19_struct_1 {
+    cec0_Groupc0386105_19_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_19_range_3  int32[4:7]
+    cec0_Groupc0386105_19_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_19_buffer_5  int32
+    cec0_Groupc0386105_19_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_19_range_7  int8[0:254]
+    cec0_Groupc0386105_19_buffer_8  int8
+    cec0_Groupc0386105_19_buffer_9  int16
+    cec0_Groupc0386105_19_buffer_10  int8
+    cec0_Groupc0386105_19_buffer_11  int8
+    cec0_Groupc0386105_19_buffer_12  int8
+    cec0_Groupc0386105_19_buffer_13  int8
+    cec0_Groupc0386105_19_buffer_14  int64
+    cec0_Groupc0386105_19_buffer_15  int8
+    cec0_Groupc0386105_19_buffer_16  array[int8, 6]
+    cec0_Groupc0386105_19_buffer_17  int8
+} [packed]
+ioctl$cec0_Groupc0386105_19(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_19_struct_1]) 
+cec0_Groupc0386105_20_struct_1 {
+    cec0_Groupc0386105_20_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_20_range_3  int32[2:7]
+    cec0_Groupc0386105_20_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_20_buffer_5  int32
+    cec0_Groupc0386105_20_range_6  int32[2:4294967295]
+    cec0_Groupc0386105_20_buffer_7  int8
+    cec0_Groupc0386105_20_buffer_8  int8
+    cec0_Groupc0386105_20_buffer_9  int8
+    cec0_Groupc0386105_20_buffer_10  int8
+    cec0_Groupc0386105_20_buffer_11  int8
+    cec0_Groupc0386105_20_buffer_12  int8
+    cec0_Groupc0386105_20_buffer_13  int8
+    cec0_Groupc0386105_20_buffer_14  int8
+    cec0_Groupc0386105_20_buffer_15  int64
+    cec0_Groupc0386105_20_buffer_16  int8
+    cec0_Groupc0386105_20_buffer_17  array[int8, 6]
+    cec0_Groupc0386105_20_buffer_18  int8
+} [packed]
+ioctl$cec0_Groupc0386105_20(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_20_struct_1]) 
+cec0_Groupc0386105_21_struct_1 {
+    cec0_Groupc0386105_21_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_21_range_3  int32[2:7]
+    cec0_Groupc0386105_21_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_21_buffer_5  int32
+    cec0_Groupc0386105_21_buffer_6  int32
+    cec0_Groupc0386105_21_buffer_7  array[int8, 16]
+    cec0_Groupc0386105_21_const_8  const[0, int8]
+    cec0_Groupc0386105_21_buffer_9  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_21(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_21_struct_1]) 
+cec0_Groupc0386105_22_flag_3 = 8, 16
+cec0_Groupc0386105_22_struct_1 {
+    cec0_Groupc0386105_22_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_22_flag_3  flags[cec0_Groupc0386105_22_flag_3, int32]
+    cec0_Groupc0386105_22_const_4  const[0, int8]
+    cec0_Groupc0386105_22_const_5  const[0, int8]
+    cec0_Groupc0386105_22_const_6  const[0, int8]
+    cec0_Groupc0386105_22_const_7  const[0, int8]
+    cec0_Groupc0386105_22_buffer_8  int32
+    cec0_Groupc0386105_22_range_9  int32[0:4294967293]
+    cec0_Groupc0386105_22_range_10  int8[0:254]
+    cec0_Groupc0386105_22_buffer_11  int8
+    cec0_Groupc0386105_22_buffer_12  int16
+    cec0_Groupc0386105_22_buffer_13  int32
+    cec0_Groupc0386105_22_buffer_14  int64
+    cec0_Groupc0386105_22_range_15  int8[1:255]
+    cec0_Groupc0386105_22_buffer_16  array[int8, 6]
+    cec0_Groupc0386105_22_buffer_17  int8
+} [packed]
+ioctl$cec0_Groupc0386105_22(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_22_struct_1]) 
+cec0_Groupc0386105_23_flag_3 = 8, 15
+cec0_Groupc0386105_23_struct_1 {
+    cec0_Groupc0386105_23_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_23_flag_3  flags[cec0_Groupc0386105_23_flag_3, int32]
+    cec0_Groupc0386105_23_const_4  const[0, int8]
+    cec0_Groupc0386105_23_const_5  const[0, int8]
+    cec0_Groupc0386105_23_const_6  const[0, int8]
+    cec0_Groupc0386105_23_const_7  const[0, int8]
+    cec0_Groupc0386105_23_buffer_8  int32
+    cec0_Groupc0386105_23_range_9  int32[2:4294967295]
+    cec0_Groupc0386105_23_buffer_10  int8
+    cec0_Groupc0386105_23_buffer_11  int8
+    cec0_Groupc0386105_23_buffer_12  int16
+    cec0_Groupc0386105_23_buffer_13  int32
+    cec0_Groupc0386105_23_buffer_14  int64
+    cec0_Groupc0386105_23_range_15  int8[1:255]
+    cec0_Groupc0386105_23_buffer_16  array[int8, 6]
+    cec0_Groupc0386105_23_buffer_17  int8
+} [packed]
+ioctl$cec0_Groupc0386105_23(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_23_struct_1]) 
+cec0_Groupc0386105_24_struct_1 {
+    cec0_Groupc0386105_24_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_24_range_3  int32[9:12]
+    cec0_Groupc0386105_24_const_4  const[0, int8]
+    cec0_Groupc0386105_24_const_5  const[0, int8]
+    cec0_Groupc0386105_24_const_6  const[0, int8]
+    cec0_Groupc0386105_24_const_7  const[0, int8]
+    cec0_Groupc0386105_24_buffer_8  int32
+    cec0_Groupc0386105_24_range_9  int32[0:4294967293]
+    cec0_Groupc0386105_24_range_10  int8[0:254]
+    cec0_Groupc0386105_24_buffer_11  array[int8, 15]
+    cec0_Groupc0386105_24_range_12  int8[1:255]
+    cec0_Groupc0386105_24_buffer_13  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_24(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_24_struct_1]) 
+cec0_Groupc0386105_25_struct_1 {
+    cec0_Groupc0386105_25_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_25_range_3  int32[9:14]
+    cec0_Groupc0386105_25_const_4  const[0, int8]
+    cec0_Groupc0386105_25_const_5  const[0, int8]
+    cec0_Groupc0386105_25_const_6  const[0, int8]
+    cec0_Groupc0386105_25_const_7  const[0, int8]
+    cec0_Groupc0386105_25_buffer_8  int32
+    cec0_Groupc0386105_25_buffer_9  int32
+    cec0_Groupc0386105_25_buffer_10  int8
+    cec0_Groupc0386105_25_buffer_11  int8
+    cec0_Groupc0386105_25_buffer_12  int16
+    cec0_Groupc0386105_25_buffer_13  int32
+    cec0_Groupc0386105_25_buffer_14  int8
+    cec0_Groupc0386105_25_buffer_15  int8
+    cec0_Groupc0386105_25_buffer_16  int8
+    cec0_Groupc0386105_25_buffer_17  int8
+    cec0_Groupc0386105_25_buffer_18  int8
+    cec0_Groupc0386105_25_buffer_19  int8
+    cec0_Groupc0386105_25_buffer_20  int16
+    cec0_Groupc0386105_25_range_21  int8[1:255]
+    cec0_Groupc0386105_25_buffer_22  array[int8, 6]
+    cec0_Groupc0386105_25_buffer_23  int8
+} [packed]
+ioctl$cec0_Groupc0386105_25(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_25_struct_1]) 
+cec0_Groupc0386105_26_struct_1 {
+    cec0_Groupc0386105_26_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_26_const_3  const[8, int32]
+    cec0_Groupc0386105_26_const_4  const[0, int8]
+    cec0_Groupc0386105_26_const_5  const[0, int8]
+    cec0_Groupc0386105_26_const_6  const[0, int8]
+    cec0_Groupc0386105_26_const_7  const[0, int8]
+    cec0_Groupc0386105_26_buffer_8  int32
+    cec0_Groupc0386105_26_range_9  int32[0:4294967293]
+    cec0_Groupc0386105_26_range_10  int8[0:254]
+    cec0_Groupc0386105_26_const_11  const[248, int8]
+    cec0_Groupc0386105_26_buffer_12  array[int8, 14]
+    cec0_Groupc0386105_26_range_13  int8[1:255]
+    cec0_Groupc0386105_26_buffer_14  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_26(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_26_struct_1]) 
+cec0_Groupc0386105_27_flag_10 = 159, 191, 255, 31, 15, 47, 175, 143, 239, 207, 111, 79, 127, 63, 95, 223
+cec0_Groupc0386105_27_struct_1 {
+    cec0_Groupc0386105_27_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_27_const_3  const[8, int32]
+    cec0_Groupc0386105_27_const_4  const[0, int8]
+    cec0_Groupc0386105_27_const_5  const[0, int8]
+    cec0_Groupc0386105_27_const_6  const[0, int8]
+    cec0_Groupc0386105_27_const_7  const[0, int8]
+    cec0_Groupc0386105_27_buffer_8  int32
+    cec0_Groupc0386105_27_range_9  int32[0:4294967293]
+    cec0_Groupc0386105_27_flag_10  flags[cec0_Groupc0386105_27_flag_10, int8]
+    cec0_Groupc0386105_27_buffer_11  array[int8, 15]
+    cec0_Groupc0386105_27_range_12  int8[1:255]
+    cec0_Groupc0386105_27_buffer_13  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_27(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_27_struct_1]) 
+cec0_Groupc0386105_28_struct_1 {
+    cec0_Groupc0386105_28_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_28_range_3  int32[4:7]
+    cec0_Groupc0386105_28_const_4  const[0, int8]
+    cec0_Groupc0386105_28_const_5  const[0, int8]
+    cec0_Groupc0386105_28_const_6  const[0, int8]
+    cec0_Groupc0386105_28_const_7  const[0, int8]
+    cec0_Groupc0386105_28_buffer_8  int32
+    cec0_Groupc0386105_28_range_9  int32[0:4294967293]
+    cec0_Groupc0386105_28_range_10  int8[0:254]
+    cec0_Groupc0386105_28_buffer_11  array[int8, 15]
+    cec0_Groupc0386105_28_range_12  int8[1:255]
+    cec0_Groupc0386105_28_buffer_13  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_28(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_28_struct_1]) 
+cec0_Groupc0386105_29_struct_1 {
+    cec0_Groupc0386105_29_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_29_range_3  int32[2:7]
+    cec0_Groupc0386105_29_const_4  const[0, int8]
+    cec0_Groupc0386105_29_const_5  const[0, int8]
+    cec0_Groupc0386105_29_const_6  const[0, int8]
+    cec0_Groupc0386105_29_const_7  const[0, int8]
+    cec0_Groupc0386105_29_buffer_8  int32
+    cec0_Groupc0386105_29_buffer_9  int32
+    cec0_Groupc0386105_29_buffer_10  array[int8, 16]
+    cec0_Groupc0386105_29_range_11  int8[1:255]
+    cec0_Groupc0386105_29_buffer_12  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_29(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_29_struct_1]) 
+cec0_Groupc0386105_30_flag_7 = 159, 191, 255, 31, 111, 47, 175, 79, 143, 239, 207, 15, 127, 63, 95, 223
+cec0_Groupc0386105_30_struct_1 {
+    cec0_Groupc0386105_30_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_30_const_3  const[16, int32]
+    cec0_Groupc0386105_30_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_30_buffer_5  int32
+    cec0_Groupc0386105_30_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_30_flag_7  flags[cec0_Groupc0386105_30_flag_7, int8]
+    cec0_Groupc0386105_30_buffer_8  array[int8, 15]
+    cec0_Groupc0386105_30_range_9  int8[1:255]
+    cec0_Groupc0386105_30_buffer_10  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_30(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_30_struct_1]) 
+cec0_Groupc0386105_31_flag_3 = 8, 16
+cec0_Groupc0386105_31_struct_1 {
+    cec0_Groupc0386105_31_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_31_flag_3  flags[cec0_Groupc0386105_31_flag_3, int32]
+    cec0_Groupc0386105_31_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_31_buffer_5  int32
+    cec0_Groupc0386105_31_range_6  int32[2:4294967295]
+    cec0_Groupc0386105_31_buffer_7  int8
+    cec0_Groupc0386105_31_buffer_8  int8
+    cec0_Groupc0386105_31_buffer_9  int16
+    cec0_Groupc0386105_31_buffer_10  int32
+    cec0_Groupc0386105_31_buffer_11  int64
+    cec0_Groupc0386105_31_range_12  int8[1:255]
+    cec0_Groupc0386105_31_buffer_13  array[int8, 6]
+    cec0_Groupc0386105_31_buffer_14  int8
+} [packed]
+ioctl$cec0_Groupc0386105_31(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_31_struct_1]) 
+cec0_Groupc0386105_32_struct_1 {
+    cec0_Groupc0386105_32_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_32_range_3  int32[1:16]
+    cec0_Groupc0386105_32_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_32_buffer_5  int32
+    cec0_Groupc0386105_32_buffer_6  int32
+    cec0_Groupc0386105_32_buffer_7  int8
+    cec0_Groupc0386105_32_buffer_8  int8
+    cec0_Groupc0386105_32_buffer_9  int16
+    cec0_Groupc0386105_32_buffer_10  int32
+    cec0_Groupc0386105_32_buffer_11  int32
+    cec0_Groupc0386105_32_buffer_12  int8
+    cec0_Groupc0386105_32_buffer_13  int8
+    cec0_Groupc0386105_32_buffer_14  int16
+    cec0_Groupc0386105_32_range_15  int8[1:255]
+    cec0_Groupc0386105_32_buffer_16  array[int8, 6]
+    cec0_Groupc0386105_32_buffer_17  int8
+} [packed]
+ioctl$cec0_Groupc0386105_32(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_32_struct_1]) 
+cec0_Groupc0386105_33_struct_1 {
+    cec0_Groupc0386105_33_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_33_range_3  int32[2:15]
+    cec0_Groupc0386105_33_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_33_buffer_5  int32
+    cec0_Groupc0386105_33_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_33_buffer_7  int8
+    cec0_Groupc0386105_33_buffer_8  int8
+    cec0_Groupc0386105_33_buffer_9  int16
+    cec0_Groupc0386105_33_buffer_10  int8
+    cec0_Groupc0386105_33_buffer_11  int8
+    cec0_Groupc0386105_33_buffer_12  int8
+    cec0_Groupc0386105_33_buffer_13  int8
+    cec0_Groupc0386105_33_buffer_14  int64
+    cec0_Groupc0386105_33_range_15  int8[1:255]
+    cec0_Groupc0386105_33_buffer_16  array[int8, 6]
+    cec0_Groupc0386105_33_buffer_17  int8
+} [packed]
+ioctl$cec0_Groupc0386105_33(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_33_struct_1]) 
+cec0_Groupc0386105_34_struct_1 {
+    cec0_Groupc0386105_34_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_34_range_3  int32[8:16]
+    cec0_Groupc0386105_34_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_34_buffer_5  int32
+    cec0_Groupc0386105_34_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_34_buffer_7  int8
+    cec0_Groupc0386105_34_const_8  const[248, int8]
+    cec0_Groupc0386105_34_buffer_9  int16
+    cec0_Groupc0386105_34_buffer_10  int32
+    cec0_Groupc0386105_34_buffer_11  int64
+    cec0_Groupc0386105_34_range_12  int8[1:255]
+    cec0_Groupc0386105_34_buffer_13  array[int8, 6]
+    cec0_Groupc0386105_34_buffer_14  int8
+} [packed]
+ioctl$cec0_Groupc0386105_34(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_34_struct_1]) 
+cec0_Groupc0386105_35_struct_1 {
+    cec0_Groupc0386105_35_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_35_range_3  int32[13:14]
+    cec0_Groupc0386105_35_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_35_buffer_5  int32
+    cec0_Groupc0386105_35_range_6  int32[2:4294967295]
+    cec0_Groupc0386105_35_buffer_7  array[int8, 16]
+    cec0_Groupc0386105_35_range_8  int8[1:255]
+    cec0_Groupc0386105_35_buffer_9  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_35(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_35_struct_1]) 
+cec0_Groupc0386105_36_flag_7 = 159, 191, 255, 127, 15, 111, 47, 175, 239, 207, 143, 79, 31, 63, 95, 223
+cec0_Groupc0386105_36_struct_1 {
+    cec0_Groupc0386105_36_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_36_range_3  int32[9:12]
+    cec0_Groupc0386105_36_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_36_buffer_5  int32
+    cec0_Groupc0386105_36_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_36_flag_7  flags[cec0_Groupc0386105_36_flag_7, int8]
+    cec0_Groupc0386105_36_buffer_8  array[int8, 15]
+    cec0_Groupc0386105_36_range_9  int8[1:255]
+    cec0_Groupc0386105_36_buffer_10  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_36(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_36_struct_1]) 
+cec0_Groupc0386105_37_flag_7 = 159, 191, 255, 31, 111, 47, 79, 143, 239, 175, 207, 15, 127, 63, 95, 223
+cec0_Groupc0386105_37_struct_1 {
+    cec0_Groupc0386105_37_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_37_const_3  const[8, int32]
+    cec0_Groupc0386105_37_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_37_buffer_5  int32
+    cec0_Groupc0386105_37_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_37_flag_7  flags[cec0_Groupc0386105_37_flag_7, int8]
+    cec0_Groupc0386105_37_const_8  const[248, int8]
+    cec0_Groupc0386105_37_buffer_9  array[int8, 14]
+    cec0_Groupc0386105_37_range_10  int8[1:255]
+    cec0_Groupc0386105_37_buffer_11  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_37(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_37_struct_1]) 
+cec0_Groupc0386105_38_flag_7 = 159, 191, 255, 31, 111, 47, 79, 175, 239, 143, 207, 15, 127, 63, 95, 223
+cec0_Groupc0386105_38_struct_1 {
+    cec0_Groupc0386105_38_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_38_range_3  int32[4:7]
+    cec0_Groupc0386105_38_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_38_buffer_5  int32
+    cec0_Groupc0386105_38_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_38_flag_7  flags[cec0_Groupc0386105_38_flag_7, int8]
+    cec0_Groupc0386105_38_buffer_8  array[int8, 15]
+    cec0_Groupc0386105_38_range_9  int8[1:255]
+    cec0_Groupc0386105_38_buffer_10  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_38(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_38_struct_1]) 
+cec0_Groupc0386105_39_struct_1 {
+    cec0_Groupc0386105_39_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_39_range_3  int32[13:14]
+    cec0_Groupc0386105_39_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_39_buffer_5  int32
+    cec0_Groupc0386105_39_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_39_buffer_7  array[int8, 16]
+    cec0_Groupc0386105_39_const_8  const[0, int8]
+    cec0_Groupc0386105_39_buffer_9  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_39(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_39_struct_1]) 
+cec0_Groupc0386105_40_flag_3 = 8, 16
+cec0_Groupc0386105_40_struct_1 {
+    cec0_Groupc0386105_40_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_40_flag_3  flags[cec0_Groupc0386105_40_flag_3, int32]
+    cec0_Groupc0386105_40_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_40_buffer_5  int32
+    cec0_Groupc0386105_40_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_40_buffer_7  int8
+    cec0_Groupc0386105_40_buffer_8  int8
+    cec0_Groupc0386105_40_buffer_9  int16
+    cec0_Groupc0386105_40_buffer_10  int32
+    cec0_Groupc0386105_40_buffer_11  int64
+    cec0_Groupc0386105_40_const_12  const[0, int8]
+    cec0_Groupc0386105_40_buffer_13  array[int8, 6]
+    cec0_Groupc0386105_40_buffer_14  int8
+} [packed]
+ioctl$cec0_Groupc0386105_40(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_40_struct_1]) 
+cec0_Groupc0386105_41_flag_3 = 8, 16
+cec0_Groupc0386105_41_struct_1 {
+    cec0_Groupc0386105_41_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_41_flag_3  flags[cec0_Groupc0386105_41_flag_3, int32]
+    cec0_Groupc0386105_41_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_41_buffer_5  int32
+    cec0_Groupc0386105_41_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_41_buffer_7  int8
+    cec0_Groupc0386105_41_const_8  const[248, int8]
+    cec0_Groupc0386105_41_buffer_9  int16
+    cec0_Groupc0386105_41_buffer_10  int32
+    cec0_Groupc0386105_41_buffer_11  int64
+    cec0_Groupc0386105_41_const_12  const[0, int8]
+    cec0_Groupc0386105_41_buffer_13  array[int8, 6]
+    cec0_Groupc0386105_41_buffer_14  int8
+} [packed]
+ioctl$cec0_Groupc0386105_41(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_41_struct_1]) 
+cec0_Groupc0386105_42_struct_1 {
+    cec0_Groupc0386105_42_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_42_range_3  int32[13:14]
+    cec0_Groupc0386105_42_const_4  const[0, int8]
+    cec0_Groupc0386105_42_const_5  const[0, int8]
+    cec0_Groupc0386105_42_const_6  const[0, int8]
+    cec0_Groupc0386105_42_const_7  const[0, int8]
+    cec0_Groupc0386105_42_buffer_8  int32
+    cec0_Groupc0386105_42_range_9  int32[0:4294967293]
+    cec0_Groupc0386105_42_buffer_10  array[int8, 16]
+    cec0_Groupc0386105_42_range_11  int8[1:255]
+    cec0_Groupc0386105_42_buffer_12  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_42(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_42_struct_1]) 
+cec0_Groupc0386105_43_flag_3 = 8, 16
+cec0_Groupc0386105_43_struct_1 {
+    cec0_Groupc0386105_43_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_43_flag_3  flags[cec0_Groupc0386105_43_flag_3, int32]
+    cec0_Groupc0386105_43_const_4  const[0, int8]
+    cec0_Groupc0386105_43_const_5  const[0, int8]
+    cec0_Groupc0386105_43_const_6  const[0, int8]
+    cec0_Groupc0386105_43_const_7  const[0, int8]
+    cec0_Groupc0386105_43_buffer_8  int32
+    cec0_Groupc0386105_43_range_9  int32[0:4294967293]
+    cec0_Groupc0386105_43_buffer_10  int8
+    cec0_Groupc0386105_43_buffer_11  int8
+    cec0_Groupc0386105_43_buffer_12  int16
+    cec0_Groupc0386105_43_buffer_13  int32
+    cec0_Groupc0386105_43_buffer_14  int64
+    cec0_Groupc0386105_43_range_15  int8[1:255]
+    cec0_Groupc0386105_43_buffer_16  array[int8, 6]
+    cec0_Groupc0386105_43_buffer_17  int8
+} [packed]
+ioctl$cec0_Groupc0386105_43(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_43_struct_1]) 
+cec0_Groupc0386105_44_flag_3 = 8, 16
+cec0_Groupc0386105_44_struct_1 {
+    cec0_Groupc0386105_44_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_44_flag_3  flags[cec0_Groupc0386105_44_flag_3, int32]
+    cec0_Groupc0386105_44_const_4  const[0, int8]
+    cec0_Groupc0386105_44_const_5  const[0, int8]
+    cec0_Groupc0386105_44_const_6  const[0, int8]
+    cec0_Groupc0386105_44_const_7  const[0, int8]
+    cec0_Groupc0386105_44_buffer_8  int32
+    cec0_Groupc0386105_44_range_9  int32[0:4294967293]
+    cec0_Groupc0386105_44_buffer_10  int8
+    cec0_Groupc0386105_44_const_11  const[248, int8]
+    cec0_Groupc0386105_44_buffer_12  int16
+    cec0_Groupc0386105_44_buffer_13  int32
+    cec0_Groupc0386105_44_buffer_14  int64
+    cec0_Groupc0386105_44_range_15  int8[1:255]
+    cec0_Groupc0386105_44_buffer_16  array[int8, 6]
+    cec0_Groupc0386105_44_buffer_17  int8
+} [packed]
+ioctl$cec0_Groupc0386105_44(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_44_struct_1]) 
+cec0_Groupc0386105_45_flag_3 = 8, 16
+cec0_Groupc0386105_45_struct_1 {
+    cec0_Groupc0386105_45_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_45_flag_3  flags[cec0_Groupc0386105_45_flag_3, int32]
+    cec0_Groupc0386105_45_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_45_buffer_5  int32
+    cec0_Groupc0386105_45_buffer_6  int32
+    cec0_Groupc0386105_45_buffer_7  int8
+    cec0_Groupc0386105_45_buffer_8  int8
+    cec0_Groupc0386105_45_buffer_9  int16
+    cec0_Groupc0386105_45_buffer_10  int32
+    cec0_Groupc0386105_45_buffer_11  int64
+    cec0_Groupc0386105_45_const_12  const[0, int8]
+    cec0_Groupc0386105_45_buffer_13  array[int8, 6]
+    cec0_Groupc0386105_45_buffer_14  int8
+} [packed]
+ioctl$cec0_Groupc0386105_45(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_45_struct_1]) 
+cec0_Groupc0386105_46_flag_3 = 8, 16
+cec0_Groupc0386105_46_struct_1 {
+    cec0_Groupc0386105_46_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_46_flag_3  flags[cec0_Groupc0386105_46_flag_3, int32]
+    cec0_Groupc0386105_46_const_4  const[0, int8]
+    cec0_Groupc0386105_46_const_5  const[0, int8]
+    cec0_Groupc0386105_46_const_6  const[0, int8]
+    cec0_Groupc0386105_46_const_7  const[0, int8]
+    cec0_Groupc0386105_46_buffer_8  int32
+    cec0_Groupc0386105_46_buffer_9  int32
+    cec0_Groupc0386105_46_buffer_10  int8
+    cec0_Groupc0386105_46_buffer_11  int8
+    cec0_Groupc0386105_46_buffer_12  int16
+    cec0_Groupc0386105_46_buffer_13  int32
+    cec0_Groupc0386105_46_buffer_14  int64
+    cec0_Groupc0386105_46_range_15  int8[1:255]
+    cec0_Groupc0386105_46_buffer_16  array[int8, 6]
+    cec0_Groupc0386105_46_buffer_17  int8
+} [packed]
+ioctl$cec0_Groupc0386105_46(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_46_struct_1]) 
+cec0_Groupc0386105_47_struct_1 {
+    cec0_Groupc0386105_47_buffer_2  array[int8, 16]
+    cec0_Groupc0386105_47_const_3  const[8, int32]
+    cec0_Groupc0386105_47_range_4  int32[1:4294967295]
+    cec0_Groupc0386105_47_buffer_5  int32
+    cec0_Groupc0386105_47_range_6  int32[0:4294967293]
+    cec0_Groupc0386105_47_range_7  int8[0:254]
+    cec0_Groupc0386105_47_buffer_8  array[int8, 15]
+    cec0_Groupc0386105_47_range_9  int8[1:255]
+    cec0_Groupc0386105_47_buffer_10  array[int8, 7]
+} [packed]
+ioctl$cec0_Groupc0386105_47(fd cec0_fd, cmd const[3224920325], arg ptr[inout, cec0_Groupc0386105_47_struct_1]) 
+ioctl$cec0_Groupc0506107_0(fd cec0_fd, cmd const[3226493191], arg intptr) 
+cec0_Group40046109_0_flag_2 = 208, 240, 224
+cec0_Group40046109_0_struct_1 {
+    cec0_Group40046109_0_flag_2  flags[cec0_Group40046109_0_flag_2, int8]
+    cec0_Group40046109_0_const_3  const[0, int8]
+    cec0_Group40046109_0_const_4  const[0, int16]
+} [packed]
+ioctl$cec0_Group40046109_0(fd cec0_fd, cmd const[1074028809], arg ptr[in, cec0_Group40046109_0_struct_1]) 
+ioctl$cec0_Group8044610a_0(fd cec0_fd, cmd const[2151964938], arg ptr[out, array[int8, 68]]) 
+cec0_Groupc0386106_0_struct_1 {
+    cec0_Groupc0386106_0_buffer_2  array[int8, 20]
+    cec0_Groupc0386106_0_const_3  const[0, int32]
+    cec0_Groupc0386106_0_buffer_4  array[int8, 32]
+} [packed]
+ioctl$cec0_Groupc0386106_0(fd cec0_fd, cmd const[3224920326], arg ptr[inout, cec0_Groupc0386106_0_struct_1]) 
+cec0_Groupc05c6104_0_struct_1 {
+    cec0_Groupc05c6104_0_buffer_2  int8
+    cec0_Groupc05c6104_0_buffer_3  int8
+    cec0_Groupc05c6104_0_buffer_4  int16
+    cec0_Groupc05c6104_0_buffer_5  int16
+    cec0_Groupc05c6104_0_range_6  int8[5:6]
+    cec0_Groupc05c6104_0_const_7  const[1, int8]
+    cec0_Groupc05c6104_0_const_8  const[4294967295, int32]
+    cec0_Groupc05c6104_0_range_9  int8[0:251]
+    cec0_Groupc05c6104_0_buffer_10  int8
+    cec0_Groupc05c6104_0_buffer_11  int16
+    cec0_Groupc05c6104_0_buffer_12  int8
+    cec0_Groupc05c6104_0_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_0_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_0_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_0_range_16  int8[128:255]
+    cec0_Groupc05c6104_0_range_17  int8[128:255]
+    cec0_Groupc05c6104_0_range_18  int8[128:255]
+    cec0_Groupc05c6104_0_range_19  int8[128:255]
+    cec0_Groupc05c6104_0_range_20  int8[128:255]
+    cec0_Groupc05c6104_0_range_21  int8[128:255]
+    cec0_Groupc05c6104_0_range_22  int8[0:127]
+    cec0_Groupc05c6104_0_buffer_23  int8
+    cec0_Groupc05c6104_0_range_24  int8[128:255]
+    cec0_Groupc05c6104_0_buffer_25  array[int8, 39]
+    cec0_Groupc05c6104_0_buffer_26  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_0(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_0_struct_1]) 
+cec0_Groupc05c6104_1_struct_1 {
+    cec0_Groupc05c6104_1_buffer_2  int8
+    cec0_Groupc05c6104_1_buffer_3  int8
+    cec0_Groupc05c6104_1_buffer_4  int16
+    cec0_Groupc05c6104_1_buffer_5  int16
+    cec0_Groupc05c6104_1_range_6  int8[5:6]
+    cec0_Groupc05c6104_1_const_7  const[1, int8]
+    cec0_Groupc05c6104_1_const_8  const[4294967295, int32]
+    cec0_Groupc05c6104_1_range_9  int8[0:251]
+    cec0_Groupc05c6104_1_buffer_10  int8
+    cec0_Groupc05c6104_1_buffer_11  int16
+    cec0_Groupc05c6104_1_buffer_12  int8
+    cec0_Groupc05c6104_1_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_1_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_1_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_1_range_16  int8[128:255]
+    cec0_Groupc05c6104_1_range_17  int8[128:255]
+    cec0_Groupc05c6104_1_range_18  int8[128:255]
+    cec0_Groupc05c6104_1_range_19  int8[0:127]
+    cec0_Groupc05c6104_1_buffer_20  int8
+    cec0_Groupc05c6104_1_range_21  int8[0:127]
+    cec0_Groupc05c6104_1_buffer_22  array[int8, 42]
+    cec0_Groupc05c6104_1_buffer_23  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_1(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_1_struct_1]) 
+cec0_Groupc05c6104_2_struct_1 {
+    cec0_Groupc05c6104_2_buffer_2  int8
+    cec0_Groupc05c6104_2_buffer_3  int8
+    cec0_Groupc05c6104_2_buffer_4  int16
+    cec0_Groupc05c6104_2_buffer_5  int16
+    cec0_Groupc05c6104_2_range_6  int8[5:6]
+    cec0_Groupc05c6104_2_range_7  int8[1:255]
+    cec0_Groupc05c6104_2_const_8  const[255, int8]
+    cec0_Groupc05c6104_2_const_9  const[255, int8]
+    cec0_Groupc05c6104_2_const_10  const[255, int8]
+    cec0_Groupc05c6104_2_const_11  const[255, int8]
+    cec0_Groupc05c6104_2_range_12  int8[0:251]
+    cec0_Groupc05c6104_2_buffer_13  int8
+    cec0_Groupc05c6104_2_buffer_14  int16
+    cec0_Groupc05c6104_2_buffer_15  int8
+    cec0_Groupc05c6104_2_buffer_16  array[int8, 7]
+    cec0_Groupc05c6104_2_buffer_17  array[int8, 6]
+    cec0_Groupc05c6104_2_buffer_18  array[int8, 13]
+    cec0_Groupc05c6104_2_range_19  int8[0:127]
+    cec0_Groupc05c6104_2_buffer_20  int8
+    cec0_Groupc05c6104_2_range_21  int8[0:127]
+    cec0_Groupc05c6104_2_buffer_22  array[int8, 45]
+    cec0_Groupc05c6104_2_buffer_23  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_2(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_2_struct_1]) 
+cec0_Groupc05c6104_3_struct_1 {
+    cec0_Groupc05c6104_3_buffer_2  int8
+    cec0_Groupc05c6104_3_buffer_3  int8
+    cec0_Groupc05c6104_3_buffer_4  int16
+    cec0_Groupc05c6104_3_buffer_5  int16
+    cec0_Groupc05c6104_3_const_6  const[5, int8]
+    cec0_Groupc05c6104_3_const_7  const[1, int8]
+    cec0_Groupc05c6104_3_const_8  const[4294967295, int32]
+    cec0_Groupc05c6104_3_range_9  int8[0:251]
+    cec0_Groupc05c6104_3_buffer_10  int8
+    cec0_Groupc05c6104_3_buffer_11  int16
+    cec0_Groupc05c6104_3_buffer_12  int8
+    cec0_Groupc05c6104_3_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_3_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_3_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_3_range_16  int16[0:65407]
+    cec0_Groupc05c6104_3_buffer_17  array[int8, 46]
+    cec0_Groupc05c6104_3_buffer_18  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_3(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_3_struct_1]) 
+cec0_Groupc05c6104_4_struct_1 {
+    cec0_Groupc05c6104_4_buffer_2  int8
+    cec0_Groupc05c6104_4_buffer_3  int8
+    cec0_Groupc05c6104_4_buffer_4  int16
+    cec0_Groupc05c6104_4_buffer_5  int16
+    cec0_Groupc05c6104_4_range_6  int8[5:6]
+    cec0_Groupc05c6104_4_range_7  int8[2:255]
+    cec0_Groupc05c6104_4_const_8  const[4294967295, int32]
+    cec0_Groupc05c6104_4_range_9  int8[0:251]
+    cec0_Groupc05c6104_4_buffer_10  int8
+    cec0_Groupc05c6104_4_buffer_11  int16
+    cec0_Groupc05c6104_4_buffer_12  int8
+    cec0_Groupc05c6104_4_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_4_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_4_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_4_range_16  int8[128:255]
+    cec0_Groupc05c6104_4_range_17  int8[128:255]
+    cec0_Groupc05c6104_4_range_18  int8[128:255]
+    cec0_Groupc05c6104_4_range_19  int8[128:255]
+    cec0_Groupc05c6104_4_range_20  int8[128:255]
+    cec0_Groupc05c6104_4_range_21  int8[128:255]
+    cec0_Groupc05c6104_4_buffer_22  array[int8, 42]
+    cec0_Groupc05c6104_4_buffer_23  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_4(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_4_struct_1]) 
+cec0_Groupc05c6104_5_struct_1 {
+    cec0_Groupc05c6104_5_buffer_2  int8
+    cec0_Groupc05c6104_5_buffer_3  int8
+    cec0_Groupc05c6104_5_buffer_4  int16
+    cec0_Groupc05c6104_5_buffer_5  int16
+    cec0_Groupc05c6104_5_range_6  int8[5:6]
+    cec0_Groupc05c6104_5_range_7  int8[1:255]
+    cec0_Groupc05c6104_5_const_8  const[4294967295, int32]
+    cec0_Groupc05c6104_5_range_9  int8[0:251]
+    cec0_Groupc05c6104_5_buffer_10  int8
+    cec0_Groupc05c6104_5_buffer_11  int16
+    cec0_Groupc05c6104_5_buffer_12  int8
+    cec0_Groupc05c6104_5_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_5_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_5_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_5_range_16  int8[128:255]
+    cec0_Groupc05c6104_5_range_17  int8[128:255]
+    cec0_Groupc05c6104_5_range_18  int8[128:255]
+    cec0_Groupc05c6104_5_range_19  int8[128:255]
+    cec0_Groupc05c6104_5_range_20  int8[128:255]
+    cec0_Groupc05c6104_5_range_21  int8[128:255]
+    cec0_Groupc05c6104_5_range_22  int8[0:127]
+    cec0_Groupc05c6104_5_buffer_23  array[int8, 41]
+    cec0_Groupc05c6104_5_buffer_24  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_5(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_5_struct_1]) 
+cec0_Groupc05c6104_6_struct_1 {
+    cec0_Groupc05c6104_6_buffer_2  int8
+    cec0_Groupc05c6104_6_buffer_3  int8
+    cec0_Groupc05c6104_6_buffer_4  int16
+    cec0_Groupc05c6104_6_buffer_5  int16
+    cec0_Groupc05c6104_6_range_6  int8[5:6]
+    cec0_Groupc05c6104_6_const_7  const[1, int8]
+    cec0_Groupc05c6104_6_range_8  int32[0:16777215]
+    cec0_Groupc05c6104_6_range_9  int8[0:251]
+    cec0_Groupc05c6104_6_buffer_10  int8
+    cec0_Groupc05c6104_6_buffer_11  int16
+    cec0_Groupc05c6104_6_buffer_12  int8
+    cec0_Groupc05c6104_6_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_6_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_6_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_6_range_16  int8[128:255]
+    cec0_Groupc05c6104_6_range_17  int8[128:255]
+    cec0_Groupc05c6104_6_range_18  int8[128:255]
+    cec0_Groupc05c6104_6_range_19  int8[128:255]
+    cec0_Groupc05c6104_6_range_20  int8[0:127]
+    cec0_Groupc05c6104_6_buffer_21  array[int8, 43]
+    cec0_Groupc05c6104_6_buffer_22  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_6(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_6_struct_1]) 
+cec0_Groupc05c6104_7_struct_1 {
+    cec0_Groupc05c6104_7_buffer_2  int8
+    cec0_Groupc05c6104_7_buffer_3  int8
+    cec0_Groupc05c6104_7_buffer_4  int16
+    cec0_Groupc05c6104_7_buffer_5  int16
+    cec0_Groupc05c6104_7_const_6  const[5, int8]
+    cec0_Groupc05c6104_7_const_7  const[1, int8]
+    cec0_Groupc05c6104_7_buffer_8  array[int8, 3]
+    cec0_Groupc05c6104_7_const_9  const[0, int8]
+    cec0_Groupc05c6104_7_range_10  int8[0:251]
+    cec0_Groupc05c6104_7_buffer_11  int8
+    cec0_Groupc05c6104_7_buffer_12  int16
+    cec0_Groupc05c6104_7_buffer_13  int8
+    cec0_Groupc05c6104_7_buffer_14  array[int8, 7]
+    cec0_Groupc05c6104_7_buffer_15  array[int8, 6]
+    cec0_Groupc05c6104_7_buffer_16  array[int8, 13]
+    cec0_Groupc05c6104_7_range_17  int8[128:255]
+    cec0_Groupc05c6104_7_range_18  int8[128:255]
+    cec0_Groupc05c6104_7_range_19  int8[128:255]
+    cec0_Groupc05c6104_7_range_20  int8[0:127]
+    cec0_Groupc05c6104_7_buffer_21  array[int8, 44]
+    cec0_Groupc05c6104_7_buffer_22  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_7(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_7_struct_1]) 
+cec0_Groupc05c6104_8_struct_1 {
+    cec0_Groupc05c6104_8_buffer_2  int8
+    cec0_Groupc05c6104_8_buffer_3  int8
+    cec0_Groupc05c6104_8_buffer_4  int16
+    cec0_Groupc05c6104_8_buffer_5  int16
+    cec0_Groupc05c6104_8_range_6  int8[5:6]
+    cec0_Groupc05c6104_8_const_7  const[1, int8]
+    cec0_Groupc05c6104_8_buffer_8  array[int8, 3]
+    cec0_Groupc05c6104_8_const_9  const[0, int8]
+    cec0_Groupc05c6104_8_range_10  int8[0:251]
+    cec0_Groupc05c6104_8_buffer_11  int8
+    cec0_Groupc05c6104_8_buffer_12  int16
+    cec0_Groupc05c6104_8_buffer_13  int8
+    cec0_Groupc05c6104_8_buffer_14  array[int8, 7]
+    cec0_Groupc05c6104_8_buffer_15  array[int8, 6]
+    cec0_Groupc05c6104_8_buffer_16  array[int8, 13]
+    cec0_Groupc05c6104_8_range_17  int8[0:127]
+    cec0_Groupc05c6104_8_buffer_18  int8
+    cec0_Groupc05c6104_8_range_19  int8[0:127]
+    cec0_Groupc05c6104_8_buffer_20  array[int8, 45]
+    cec0_Groupc05c6104_8_buffer_21  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_8(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_8_struct_1]) 
+cec0_Groupc05c6104_9_struct_1 {
+    cec0_Groupc05c6104_9_buffer_2  int8
+    cec0_Groupc05c6104_9_buffer_3  int8
+    cec0_Groupc05c6104_9_buffer_4  int16
+    cec0_Groupc05c6104_9_buffer_5  int16
+    cec0_Groupc05c6104_9_const_6  const[5, int8]
+    cec0_Groupc05c6104_9_const_7  const[1, int8]
+    cec0_Groupc05c6104_9_range_8  int32[0:16777215]
+    cec0_Groupc05c6104_9_range_9  int8[0:251]
+    cec0_Groupc05c6104_9_buffer_10  int8
+    cec0_Groupc05c6104_9_buffer_11  int16
+    cec0_Groupc05c6104_9_buffer_12  int8
+    cec0_Groupc05c6104_9_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_9_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_9_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_9_range_16  int8[0:127]
+    cec0_Groupc05c6104_9_buffer_17  array[int8, 47]
+    cec0_Groupc05c6104_9_buffer_18  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_9(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_9_struct_1]) 
+cec0_Groupc05c6104_10_struct_1 {
+    cec0_Groupc05c6104_10_buffer_2  int8
+    cec0_Groupc05c6104_10_buffer_3  int8
+    cec0_Groupc05c6104_10_buffer_4  int16
+    cec0_Groupc05c6104_10_buffer_5  int16
+    cec0_Groupc05c6104_10_range_6  int8[5:6]
+    cec0_Groupc05c6104_10_range_7  int8[1:255]
+    cec0_Groupc05c6104_10_buffer_8  int32
+    cec0_Groupc05c6104_10_range_9  int8[4:255]
+    cec0_Groupc05c6104_10_buffer_10  int8
+    cec0_Groupc05c6104_10_buffer_11  int16
+    cec0_Groupc05c6104_10_buffer_12  int8
+    cec0_Groupc05c6104_10_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_10_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_10_buffer_15  array[int8, 61]
+    cec0_Groupc05c6104_10_buffer_16  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_10(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_10_struct_1]) 
+cec0_Groupc05c6104_11_struct_1 {
+    cec0_Groupc05c6104_11_buffer_2  int8
+    cec0_Groupc05c6104_11_buffer_3  int8
+    cec0_Groupc05c6104_11_buffer_4  int16
+    cec0_Groupc05c6104_11_buffer_5  int16
+    cec0_Groupc05c6104_11_range_6  int8[5:6]
+    cec0_Groupc05c6104_11_const_7  const[1, int8]
+    cec0_Groupc05c6104_11_const_8  const[4294967295, int32]
+    cec0_Groupc05c6104_11_range_9  int8[0:251]
+    cec0_Groupc05c6104_11_buffer_10  int8
+    cec0_Groupc05c6104_11_buffer_11  int16
+    cec0_Groupc05c6104_11_buffer_12  int8
+    cec0_Groupc05c6104_11_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_11_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_11_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_11_range_16  int8[128:255]
+    cec0_Groupc05c6104_11_range_17  int8[128:255]
+    cec0_Groupc05c6104_11_range_18  int8[0:127]
+    cec0_Groupc05c6104_11_buffer_19  int8
+    cec0_Groupc05c6104_11_range_20  int8[0:127]
+    cec0_Groupc05c6104_11_buffer_21  array[int8, 43]
+    cec0_Groupc05c6104_11_buffer_22  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_11(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_11_struct_1]) 
+cec0_Groupc05c6104_12_struct_1 {
+    cec0_Groupc05c6104_12_buffer_2  int8
+    cec0_Groupc05c6104_12_buffer_3  int8
+    cec0_Groupc05c6104_12_buffer_4  int16
+    cec0_Groupc05c6104_12_buffer_5  int16
+    cec0_Groupc05c6104_12_range_6  int8[5:6]
+    cec0_Groupc05c6104_12_const_7  const[1, int8]
+    cec0_Groupc05c6104_12_const_8  const[4294967295, int32]
+    cec0_Groupc05c6104_12_range_9  int8[0:251]
+    cec0_Groupc05c6104_12_buffer_10  int8
+    cec0_Groupc05c6104_12_buffer_11  int16
+    cec0_Groupc05c6104_12_buffer_12  int8
+    cec0_Groupc05c6104_12_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_12_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_12_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_12_range_16  int8[128:255]
+    cec0_Groupc05c6104_12_range_17  int8[128:255]
+    cec0_Groupc05c6104_12_range_18  int8[128:255]
+    cec0_Groupc05c6104_12_range_19  int8[128:255]
+    cec0_Groupc05c6104_12_range_20  int8[0:127]
+    cec0_Groupc05c6104_12_buffer_21  array[int8, 43]
+    cec0_Groupc05c6104_12_buffer_22  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_12(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_12_struct_1]) 
+cec0_Groupc05c6104_13_struct_1 {
+    cec0_Groupc05c6104_13_buffer_2  int8
+    cec0_Groupc05c6104_13_buffer_3  int8
+    cec0_Groupc05c6104_13_buffer_4  int16
+    cec0_Groupc05c6104_13_buffer_5  int16
+    cec0_Groupc05c6104_13_range_6  int8[5:6]
+    cec0_Groupc05c6104_13_const_7  const[1, int8]
+    cec0_Groupc05c6104_13_const_8  const[255, int8]
+    cec0_Groupc05c6104_13_const_9  const[255, int8]
+    cec0_Groupc05c6104_13_const_10  const[255, int8]
+    cec0_Groupc05c6104_13_const_11  const[255, int8]
+    cec0_Groupc05c6104_13_range_12  int8[0:251]
+    cec0_Groupc05c6104_13_buffer_13  int8
+    cec0_Groupc05c6104_13_buffer_14  int16
+    cec0_Groupc05c6104_13_buffer_15  int8
+    cec0_Groupc05c6104_13_buffer_16  array[int8, 7]
+    cec0_Groupc05c6104_13_buffer_17  array[int8, 6]
+    cec0_Groupc05c6104_13_buffer_18  array[int8, 13]
+    cec0_Groupc05c6104_13_range_19  int8[128:255]
+    cec0_Groupc05c6104_13_range_20  int8[128:255]
+    cec0_Groupc05c6104_13_range_21  int8[128:255]
+    cec0_Groupc05c6104_13_range_22  int8[0:127]
+    cec0_Groupc05c6104_13_buffer_23  array[int8, 44]
+    cec0_Groupc05c6104_13_buffer_24  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_13(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_13_struct_1]) 
+cec0_Groupc05c6104_14_struct_1 {
+    cec0_Groupc05c6104_14_buffer_2  int8
+    cec0_Groupc05c6104_14_buffer_3  int8
+    cec0_Groupc05c6104_14_buffer_4  int16
+    cec0_Groupc05c6104_14_buffer_5  int16
+    cec0_Groupc05c6104_14_range_6  int8[5:6]
+    cec0_Groupc05c6104_14_const_7  const[1, int8]
+    cec0_Groupc05c6104_14_const_8  const[255, int8]
+    cec0_Groupc05c6104_14_const_9  const[255, int8]
+    cec0_Groupc05c6104_14_const_10  const[255, int8]
+    cec0_Groupc05c6104_14_const_11  const[255, int8]
+    cec0_Groupc05c6104_14_range_12  int8[0:251]
+    cec0_Groupc05c6104_14_buffer_13  int8
+    cec0_Groupc05c6104_14_buffer_14  int16
+    cec0_Groupc05c6104_14_buffer_15  int8
+    cec0_Groupc05c6104_14_buffer_16  array[int8, 7]
+    cec0_Groupc05c6104_14_buffer_17  array[int8, 6]
+    cec0_Groupc05c6104_14_buffer_18  array[int8, 13]
+    cec0_Groupc05c6104_14_range_19  int8[128:255]
+    cec0_Groupc05c6104_14_range_20  int8[128:255]
+    cec0_Groupc05c6104_14_range_21  int8[0:127]
+    cec0_Groupc05c6104_14_buffer_22  array[int8, 45]
+    cec0_Groupc05c6104_14_buffer_23  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_14(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_14_struct_1]) 
+cec0_Groupc05c6104_15_struct_1 {
+    cec0_Groupc05c6104_15_buffer_2  int8
+    cec0_Groupc05c6104_15_buffer_3  int8
+    cec0_Groupc05c6104_15_buffer_4  int16
+    cec0_Groupc05c6104_15_buffer_5  int16
+    cec0_Groupc05c6104_15_range_6  int8[5:6]
+    cec0_Groupc05c6104_15_const_7  const[1, int8]
+    cec0_Groupc05c6104_15_const_8  const[255, int8]
+    cec0_Groupc05c6104_15_const_9  const[255, int8]
+    cec0_Groupc05c6104_15_const_10  const[255, int8]
+    cec0_Groupc05c6104_15_const_11  const[255, int8]
+    cec0_Groupc05c6104_15_range_12  int8[0:251]
+    cec0_Groupc05c6104_15_buffer_13  int8
+    cec0_Groupc05c6104_15_buffer_14  int16
+    cec0_Groupc05c6104_15_buffer_15  int8
+    cec0_Groupc05c6104_15_buffer_16  array[int8, 7]
+    cec0_Groupc05c6104_15_buffer_17  array[int8, 6]
+    cec0_Groupc05c6104_15_buffer_18  array[int8, 13]
+    cec0_Groupc05c6104_15_range_19  int8[0:127]
+    cec0_Groupc05c6104_15_buffer_20  array[int8, 47]
+    cec0_Groupc05c6104_15_buffer_21  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_15(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_15_struct_1]) 
+cec0_Groupc05c6104_16_struct_1 {
+    cec0_Groupc05c6104_16_buffer_2  int8
+    cec0_Groupc05c6104_16_buffer_3  int8
+    cec0_Groupc05c6104_16_buffer_4  int16
+    cec0_Groupc05c6104_16_buffer_5  int16
+    cec0_Groupc05c6104_16_range_6  int8[5:6]
+    cec0_Groupc05c6104_16_range_7  int8[2:255]
+    cec0_Groupc05c6104_16_const_8  const[4294967295, int32]
+    cec0_Groupc05c6104_16_range_9  int8[0:251]
+    cec0_Groupc05c6104_16_buffer_10  int8
+    cec0_Groupc05c6104_16_buffer_11  int16
+    cec0_Groupc05c6104_16_buffer_12  int8
+    cec0_Groupc05c6104_16_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_16_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_16_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_16_range_16  int8[128:255]
+    cec0_Groupc05c6104_16_range_17  int8[128:255]
+    cec0_Groupc05c6104_16_range_18  int8[128:255]
+    cec0_Groupc05c6104_16_range_19  int8[128:255]
+    cec0_Groupc05c6104_16_range_20  int8[128:255]
+    cec0_Groupc05c6104_16_buffer_21  array[int8, 43]
+    cec0_Groupc05c6104_16_buffer_22  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_16(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_16_struct_1]) 
+cec0_Groupc05c6104_17_struct_1 {
+    cec0_Groupc05c6104_17_buffer_2  int8
+    cec0_Groupc05c6104_17_buffer_3  int8
+    cec0_Groupc05c6104_17_buffer_4  int16
+    cec0_Groupc05c6104_17_buffer_5  int16
+    cec0_Groupc05c6104_17_range_6  int8[5:6]
+    cec0_Groupc05c6104_17_const_7  const[1, int8]
+    cec0_Groupc05c6104_17_range_8  int32[0:16777215]
+    cec0_Groupc05c6104_17_range_9  int8[0:251]
+    cec0_Groupc05c6104_17_buffer_10  int8
+    cec0_Groupc05c6104_17_buffer_11  int16
+    cec0_Groupc05c6104_17_buffer_12  int8
+    cec0_Groupc05c6104_17_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_17_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_17_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_17_range_16  int8[128:255]
+    cec0_Groupc05c6104_17_range_17  int8[128:255]
+    cec0_Groupc05c6104_17_range_18  int8[128:255]
+    cec0_Groupc05c6104_17_range_19  int8[128:255]
+    cec0_Groupc05c6104_17_range_20  int8[128:255]
+    cec0_Groupc05c6104_17_range_21  int8[128:255]
+    cec0_Groupc05c6104_17_buffer_22  array[int8, 42]
+    cec0_Groupc05c6104_17_buffer_23  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_17(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_17_struct_1]) 
+cec0_Groupc05c6104_18_struct_1 {
+    cec0_Groupc05c6104_18_buffer_2  int8
+    cec0_Groupc05c6104_18_buffer_3  int8
+    cec0_Groupc05c6104_18_buffer_4  int16
+    cec0_Groupc05c6104_18_buffer_5  int16
+    cec0_Groupc05c6104_18_range_6  int8[5:6]
+    cec0_Groupc05c6104_18_const_7  const[1, int8]
+    cec0_Groupc05c6104_18_range_8  int32[0:16777215]
+    cec0_Groupc05c6104_18_range_9  int8[0:251]
+    cec0_Groupc05c6104_18_buffer_10  int8
+    cec0_Groupc05c6104_18_buffer_11  int16
+    cec0_Groupc05c6104_18_buffer_12  int8
+    cec0_Groupc05c6104_18_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_18_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_18_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_18_range_16  int8[128:255]
+    cec0_Groupc05c6104_18_range_17  int8[128:255]
+    cec0_Groupc05c6104_18_range_18  int8[128:255]
+    cec0_Groupc05c6104_18_range_19  int8[0:127]
+    cec0_Groupc05c6104_18_buffer_20  array[int8, 44]
+    cec0_Groupc05c6104_18_buffer_21  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_18(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_18_struct_1]) 
+cec0_Groupc05c6104_19_struct_1 {
+    cec0_Groupc05c6104_19_buffer_2  int8
+    cec0_Groupc05c6104_19_buffer_3  int8
+    cec0_Groupc05c6104_19_buffer_4  int16
+    cec0_Groupc05c6104_19_buffer_5  int16
+    cec0_Groupc05c6104_19_range_6  int8[5:6]
+    cec0_Groupc05c6104_19_const_7  const[1, int8]
+    cec0_Groupc05c6104_19_range_8  int32[0:16777215]
+    cec0_Groupc05c6104_19_range_9  int8[0:251]
+    cec0_Groupc05c6104_19_buffer_10  int8
+    cec0_Groupc05c6104_19_buffer_11  int16
+    cec0_Groupc05c6104_19_buffer_12  int8
+    cec0_Groupc05c6104_19_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_19_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_19_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_19_range_16  int8[128:255]
+    cec0_Groupc05c6104_19_range_17  int8[128:255]
+    cec0_Groupc05c6104_19_range_18  int8[0:127]
+    cec0_Groupc05c6104_19_buffer_19  int8
+    cec0_Groupc05c6104_19_range_20  int8[0:127]
+    cec0_Groupc05c6104_19_buffer_21  array[int8, 43]
+    cec0_Groupc05c6104_19_buffer_22  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_19(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_19_struct_1]) 
+cec0_Groupc05c6104_20_struct_1 {
+    cec0_Groupc05c6104_20_buffer_2  int8
+    cec0_Groupc05c6104_20_buffer_3  int8
+    cec0_Groupc05c6104_20_buffer_4  int16
+    cec0_Groupc05c6104_20_buffer_5  int16
+    cec0_Groupc05c6104_20_range_6  int8[5:6]
+    cec0_Groupc05c6104_20_const_7  const[1, int8]
+    cec0_Groupc05c6104_20_buffer_8  array[int8, 3]
+    cec0_Groupc05c6104_20_const_9  const[0, int8]
+    cec0_Groupc05c6104_20_range_10  int8[0:251]
+    cec0_Groupc05c6104_20_buffer_11  int8
+    cec0_Groupc05c6104_20_buffer_12  int16
+    cec0_Groupc05c6104_20_buffer_13  int8
+    cec0_Groupc05c6104_20_buffer_14  array[int8, 7]
+    cec0_Groupc05c6104_20_buffer_15  array[int8, 6]
+    cec0_Groupc05c6104_20_buffer_16  array[int8, 13]
+    cec0_Groupc05c6104_20_range_17  int8[128:255]
+    cec0_Groupc05c6104_20_range_18  int8[128:255]
+    cec0_Groupc05c6104_20_range_19  int8[0:127]
+    cec0_Groupc05c6104_20_buffer_20  array[int8, 45]
+    cec0_Groupc05c6104_20_buffer_21  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_20(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_20_struct_1]) 
+cec0_Groupc05c6104_21_struct_1 {
+    cec0_Groupc05c6104_21_buffer_2  int8
+    cec0_Groupc05c6104_21_buffer_3  int8
+    cec0_Groupc05c6104_21_buffer_4  int16
+    cec0_Groupc05c6104_21_buffer_5  int16
+    cec0_Groupc05c6104_21_range_6  int8[5:6]
+    cec0_Groupc05c6104_21_range_7  int8[2:255]
+    cec0_Groupc05c6104_21_range_8  int32[0:16777215]
+    cec0_Groupc05c6104_21_range_9  int8[0:251]
+    cec0_Groupc05c6104_21_buffer_10  int8
+    cec0_Groupc05c6104_21_buffer_11  int16
+    cec0_Groupc05c6104_21_buffer_12  int8
+    cec0_Groupc05c6104_21_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_21_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_21_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_21_range_16  int8[128:255]
+    cec0_Groupc05c6104_21_range_17  int8[128:255]
+    cec0_Groupc05c6104_21_range_18  int8[128:255]
+    cec0_Groupc05c6104_21_range_19  int8[128:255]
+    cec0_Groupc05c6104_21_range_20  int8[128:255]
+    cec0_Groupc05c6104_21_buffer_21  array[int8, 43]
+    cec0_Groupc05c6104_21_buffer_22  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_21(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_21_struct_1]) 
+cec0_Groupc05c6104_22_struct_1 {
+    cec0_Groupc05c6104_22_buffer_2  int8
+    cec0_Groupc05c6104_22_buffer_3  int8
+    cec0_Groupc05c6104_22_buffer_4  int16
+    cec0_Groupc05c6104_22_buffer_5  int16
+    cec0_Groupc05c6104_22_const_6  const[6, int8]
+    cec0_Groupc05c6104_22_const_7  const[1, int8]
+    cec0_Groupc05c6104_22_const_8  const[4294967295, int32]
+    cec0_Groupc05c6104_22_range_9  int8[0:251]
+    cec0_Groupc05c6104_22_buffer_10  int8
+    cec0_Groupc05c6104_22_buffer_11  int16
+    cec0_Groupc05c6104_22_buffer_12  int8
+    cec0_Groupc05c6104_22_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_22_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_22_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_22_range_16  int8[128:255]
+    cec0_Groupc05c6104_22_range_17  int8[0:127]
+    cec0_Groupc05c6104_22_buffer_18  int8
+    cec0_Groupc05c6104_22_range_19  int8[0:127]
+    cec0_Groupc05c6104_22_buffer_20  array[int8, 44]
+    cec0_Groupc05c6104_22_buffer_21  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_22(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_22_struct_1]) 
+cec0_Groupc05c6104_23_struct_1 {
+    cec0_Groupc05c6104_23_buffer_2  int8
+    cec0_Groupc05c6104_23_buffer_3  int8
+    cec0_Groupc05c6104_23_buffer_4  int16
+    cec0_Groupc05c6104_23_buffer_5  int16
+    cec0_Groupc05c6104_23_range_6  int8[5:6]
+    cec0_Groupc05c6104_23_range_7  int8[2:255]
+    cec0_Groupc05c6104_23_const_8  const[4294967295, int32]
+    cec0_Groupc05c6104_23_range_9  int8[0:251]
+    cec0_Groupc05c6104_23_buffer_10  int8
+    cec0_Groupc05c6104_23_buffer_11  int16
+    cec0_Groupc05c6104_23_buffer_12  int8
+    cec0_Groupc05c6104_23_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_23_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_23_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_23_range_16  int8[128:255]
+    cec0_Groupc05c6104_23_range_17  int8[128:255]
+    cec0_Groupc05c6104_23_range_18  int8[128:255]
+    cec0_Groupc05c6104_23_range_19  int8[128:255]
+    cec0_Groupc05c6104_23_buffer_20  array[int8, 44]
+    cec0_Groupc05c6104_23_buffer_21  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_23(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_23_struct_1]) 
+cec0_Groupc05c6104_24_struct_1 {
+    cec0_Groupc05c6104_24_buffer_2  int8
+    cec0_Groupc05c6104_24_buffer_3  int8
+    cec0_Groupc05c6104_24_buffer_4  int16
+    cec0_Groupc05c6104_24_buffer_5  int16
+    cec0_Groupc05c6104_24_range_6  int8[5:6]
+    cec0_Groupc05c6104_24_range_7  int8[2:255]
+    cec0_Groupc05c6104_24_const_8  const[4294967295, int32]
+    cec0_Groupc05c6104_24_range_9  int8[0:251]
+    cec0_Groupc05c6104_24_buffer_10  int8
+    cec0_Groupc05c6104_24_buffer_11  int16
+    cec0_Groupc05c6104_24_buffer_12  int8
+    cec0_Groupc05c6104_24_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_24_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_24_buffer_15  array[int8, 61]
+    cec0_Groupc05c6104_24_buffer_16  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_24(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_24_struct_1]) 
+cec0_Groupc05c6104_25_struct_1 {
+    cec0_Groupc05c6104_25_buffer_2  int8
+    cec0_Groupc05c6104_25_buffer_3  int8
+    cec0_Groupc05c6104_25_buffer_4  int16
+    cec0_Groupc05c6104_25_buffer_5  int16
+    cec0_Groupc05c6104_25_const_6  const[6, int8]
+    cec0_Groupc05c6104_25_const_7  const[1, int8]
+    cec0_Groupc05c6104_25_range_8  int32[0:16777215]
+    cec0_Groupc05c6104_25_range_9  int8[0:251]
+    cec0_Groupc05c6104_25_buffer_10  int8
+    cec0_Groupc05c6104_25_buffer_11  int16
+    cec0_Groupc05c6104_25_buffer_12  int8
+    cec0_Groupc05c6104_25_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_25_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_25_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_25_range_16  int8[128:255]
+    cec0_Groupc05c6104_25_range_17  int8[128:255]
+    cec0_Groupc05c6104_25_range_18  int8[0:127]
+    cec0_Groupc05c6104_25_buffer_19  array[int8, 45]
+    cec0_Groupc05c6104_25_buffer_20  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_25(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_25_struct_1]) 
+cec0_Groupc05c6104_26_struct_1 {
+    cec0_Groupc05c6104_26_buffer_2  int8
+    cec0_Groupc05c6104_26_buffer_3  int8
+    cec0_Groupc05c6104_26_buffer_4  int16
+    cec0_Groupc05c6104_26_buffer_5  int16
+    cec0_Groupc05c6104_26_const_6  const[6, int8]
+    cec0_Groupc05c6104_26_const_7  const[1, int8]
+    cec0_Groupc05c6104_26_range_8  int32[0:16777215]
+    cec0_Groupc05c6104_26_range_9  int8[0:251]
+    cec0_Groupc05c6104_26_buffer_10  int8
+    cec0_Groupc05c6104_26_buffer_11  int16
+    cec0_Groupc05c6104_26_buffer_12  int8
+    cec0_Groupc05c6104_26_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_26_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_26_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_26_range_16  int8[128:255]
+    cec0_Groupc05c6104_26_range_17  int8[0:127]
+    cec0_Groupc05c6104_26_buffer_18  int8
+    cec0_Groupc05c6104_26_range_19  int8[0:127]
+    cec0_Groupc05c6104_26_buffer_20  array[int8, 44]
+    cec0_Groupc05c6104_26_buffer_21  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_26(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_26_struct_1]) 
+cec0_Groupc05c6104_27_struct_1 {
+    cec0_Groupc05c6104_27_buffer_2  int8
+    cec0_Groupc05c6104_27_buffer_3  int8
+    cec0_Groupc05c6104_27_buffer_4  int16
+    cec0_Groupc05c6104_27_buffer_5  int16
+    cec0_Groupc05c6104_27_range_6  int8[5:6]
+    cec0_Groupc05c6104_27_range_7  int8[1:255]
+    cec0_Groupc05c6104_27_range_8  int32[0:16777215]
+    cec0_Groupc05c6104_27_range_9  int8[0:251]
+    cec0_Groupc05c6104_27_buffer_10  int8
+    cec0_Groupc05c6104_27_buffer_11  int16
+    cec0_Groupc05c6104_27_buffer_12  int8
+    cec0_Groupc05c6104_27_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_27_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_27_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_27_range_16  int8[0:127]
+    cec0_Groupc05c6104_27_buffer_17  int8
+    cec0_Groupc05c6104_27_range_18  int8[0:127]
+    cec0_Groupc05c6104_27_buffer_19  array[int8, 45]
+    cec0_Groupc05c6104_27_buffer_20  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_27(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_27_struct_1]) 
+cec0_Groupc05c6104_28_struct_1 {
+    cec0_Groupc05c6104_28_buffer_2  int8
+    cec0_Groupc05c6104_28_buffer_3  int8
+    cec0_Groupc05c6104_28_buffer_4  int16
+    cec0_Groupc05c6104_28_buffer_5  int16
+    cec0_Groupc05c6104_28_const_6  const[6, int8]
+    cec0_Groupc05c6104_28_const_7  const[1, int8]
+    cec0_Groupc05c6104_28_buffer_8  array[int8, 3]
+    cec0_Groupc05c6104_28_const_9  const[0, int8]
+    cec0_Groupc05c6104_28_range_10  int8[0:251]
+    cec0_Groupc05c6104_28_buffer_11  int8
+    cec0_Groupc05c6104_28_buffer_12  int16
+    cec0_Groupc05c6104_28_buffer_13  int8
+    cec0_Groupc05c6104_28_buffer_14  array[int8, 7]
+    cec0_Groupc05c6104_28_buffer_15  array[int8, 6]
+    cec0_Groupc05c6104_28_buffer_16  array[int8, 13]
+    cec0_Groupc05c6104_28_range_17  int8[0:127]
+    cec0_Groupc05c6104_28_buffer_18  array[int8, 47]
+    cec0_Groupc05c6104_28_buffer_19  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_28(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_28_struct_1]) 
+cec0_Groupc05c6104_29_struct_1 {
+    cec0_Groupc05c6104_29_buffer_2  int8
+    cec0_Groupc05c6104_29_buffer_3  int8
+    cec0_Groupc05c6104_29_buffer_4  int16
+    cec0_Groupc05c6104_29_buffer_5  int16
+    cec0_Groupc05c6104_29_range_6  int8[5:6]
+    cec0_Groupc05c6104_29_range_7  int8[2:255]
+    cec0_Groupc05c6104_29_range_8  int32[0:16777215]
+    cec0_Groupc05c6104_29_range_9  int8[0:251]
+    cec0_Groupc05c6104_29_buffer_10  int8
+    cec0_Groupc05c6104_29_buffer_11  int16
+    cec0_Groupc05c6104_29_buffer_12  int8
+    cec0_Groupc05c6104_29_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_29_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_29_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_29_range_16  int8[128:255]
+    cec0_Groupc05c6104_29_range_17  int8[128:255]
+    cec0_Groupc05c6104_29_range_18  int8[128:255]
+    cec0_Groupc05c6104_29_range_19  int8[128:255]
+    cec0_Groupc05c6104_29_buffer_20  array[int8, 44]
+    cec0_Groupc05c6104_29_buffer_21  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_29(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_29_struct_1]) 
+cec0_Groupc05c6104_30_struct_1 {
+    cec0_Groupc05c6104_30_buffer_2  int8
+    cec0_Groupc05c6104_30_buffer_3  int8
+    cec0_Groupc05c6104_30_buffer_4  int16
+    cec0_Groupc05c6104_30_buffer_5  int16
+    cec0_Groupc05c6104_30_range_6  int8[5:6]
+    cec0_Groupc05c6104_30_range_7  int8[2:255]
+    cec0_Groupc05c6104_30_range_8  int32[0:16777215]
+    cec0_Groupc05c6104_30_range_9  int8[0:251]
+    cec0_Groupc05c6104_30_buffer_10  int8
+    cec0_Groupc05c6104_30_buffer_11  int16
+    cec0_Groupc05c6104_30_buffer_12  int8
+    cec0_Groupc05c6104_30_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_30_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_30_buffer_15  array[int8, 61]
+    cec0_Groupc05c6104_30_buffer_16  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_30(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_30_struct_1]) 
+cec0_Groupc05c6104_31_struct_1 {
+    cec0_Groupc05c6104_31_buffer_2  array[int8, 7]
+    cec0_Groupc05c6104_31_const_3  const[0, int8]
+    cec0_Groupc05c6104_31_buffer_4  int32
+    cec0_Groupc05c6104_31_buffer_5  int32
+    cec0_Groupc05c6104_31_buffer_6  array[int8, 76]
+} [packed]
+ioctl$cec0_Groupc05c6104_31(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_31_struct_1]) 
+cec0_Groupc05c6104_32_struct_1 {
+    cec0_Groupc05c6104_32_buffer_2  int8
+    cec0_Groupc05c6104_32_buffer_3  int8
+    cec0_Groupc05c6104_32_buffer_4  int16
+    cec0_Groupc05c6104_32_buffer_5  int16
+    cec0_Groupc05c6104_32_range_6  int8[5:6]
+    cec0_Groupc05c6104_32_const_7  const[1, int8]
+    cec0_Groupc05c6104_32_range_8  int32[0:16777215]
+    cec0_Groupc05c6104_32_range_9  int8[0:251]
+    cec0_Groupc05c6104_32_buffer_10  int8
+    cec0_Groupc05c6104_32_buffer_11  int16
+    cec0_Groupc05c6104_32_buffer_12  int8
+    cec0_Groupc05c6104_32_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_32_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_32_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_32_range_16  int8[128:255]
+    cec0_Groupc05c6104_32_range_17  int8[128:255]
+    cec0_Groupc05c6104_32_range_18  int8[128:255]
+    cec0_Groupc05c6104_32_range_19  int8[128:255]
+    cec0_Groupc05c6104_32_range_20  int8[128:255]
+    cec0_Groupc05c6104_32_range_21  int8[128:255]
+    cec0_Groupc05c6104_32_range_22  int8[128:255]
+    cec0_Groupc05c6104_32_range_23  int8[128:255]
+    cec0_Groupc05c6104_32_buffer_24  array[int8, 40]
+    cec0_Groupc05c6104_32_buffer_25  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_32(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_32_struct_1]) 
+cec0_Groupc05c6104_33_struct_1 {
+    cec0_Groupc05c6104_33_buffer_2  int8
+    cec0_Groupc05c6104_33_buffer_3  int8
+    cec0_Groupc05c6104_33_buffer_4  int16
+    cec0_Groupc05c6104_33_buffer_5  int16
+    cec0_Groupc05c6104_33_range_6  int8[5:6]
+    cec0_Groupc05c6104_33_const_7  const[1, int8]
+    cec0_Groupc05c6104_33_const_8  const[4294967295, int32]
+    cec0_Groupc05c6104_33_range_9  int8[0:251]
+    cec0_Groupc05c6104_33_buffer_10  int8
+    cec0_Groupc05c6104_33_buffer_11  int16
+    cec0_Groupc05c6104_33_buffer_12  int8
+    cec0_Groupc05c6104_33_buffer_13  array[int8, 7]
+    cec0_Groupc05c6104_33_buffer_14  array[int8, 6]
+    cec0_Groupc05c6104_33_buffer_15  array[int8, 13]
+    cec0_Groupc05c6104_33_range_16  int8[128:255]
+    cec0_Groupc05c6104_33_range_17  int8[128:255]
+    cec0_Groupc05c6104_33_range_18  int8[128:255]
+    cec0_Groupc05c6104_33_range_19  int8[128:255]
+    cec0_Groupc05c6104_33_range_20  int8[128:255]
+    cec0_Groupc05c6104_33_range_21  int8[128:255]
+    cec0_Groupc05c6104_33_range_22  int8[128:255]
+    cec0_Groupc05c6104_33_range_23  int8[128:255]
+    cec0_Groupc05c6104_33_buffer_24  array[int8, 40]
+    cec0_Groupc05c6104_33_buffer_25  int8
+} [packed]
+ioctl$cec0_Groupc05c6104_33(fd cec0_fd, cmd const[3227279620], arg ptr[inout, cec0_Groupc05c6104_33_struct_1]) 

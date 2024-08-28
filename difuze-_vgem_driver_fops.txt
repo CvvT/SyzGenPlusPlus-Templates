@@ -1,0 +1,6 @@
+resource _vgem_driver_fops_fd[fd]
+
+openat$_vgem_driver_fops_syzgen_1(fd const[AT_FDCWD], file ptr[in, string["/dev/dri/card0"]], flags flags[open_flags], mode const[0]) _vgem_driver_fops_fd
+ioctl$_vgem_driver_fops_0_0_2(fd _vgem_driver_fops_fd, cmd const[0], arg intptr) 
+ioctl$_vgem_driver_fops_64_0_3(fd _vgem_driver_fops_fd, cmd const[100], arg intptr) 
+

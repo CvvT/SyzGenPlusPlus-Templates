@@ -1,0 +1,45 @@
+resource system_fd[fd]
+
+openat$system_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dma_heap/system"]], flags flags[open_flags], mode const[0]) system_fd
+read$system_syzgen(fd system_fd, data ptr[out, array[int8]], size len[data]) 
+system_Group0_0_flag_9 = 8, 0
+system_Group0_0_struct_1 {
+    system_Group0_0_range_2  int64[1:18446744069414584321]
+    system_Group0_0_const_3  const[0, int8]
+    system_Group0_0_const_4  const[0, int8]
+    system_Group0_0_const_5  const[0, int8]
+    system_Group0_0_const_6  const[0, int8]
+    system_Group0_0_range_7  int8[0:3]
+    system_Group0_0_const_8  const[0, int8]
+    system_Group0_0_flag_9  flags[system_Group0_0_flag_9, int8]
+    system_Group0_0_const_10  const[0, int8]
+    system_Group0_0_const_11  const[0, int8]
+    system_Group0_0_const_12  const[0, int8]
+    system_Group0_0_const_13  const[0, int8]
+    system_Group0_0_const_14  const[0, int8]
+    system_Group0_0_const_15  const[0, int8]
+    system_Group0_0_const_16  const[0, int8]
+    system_Group0_0_const_17  const[0, int8]
+    system_Group0_0_const_18  const[0, int8]
+    system_Group0_0_buffer_19  array[int8]
+} [packed]
+ioctl$system_Group0_0(fd system_fd, cmd const[0xffffff00], arg ptr[inout, system_Group0_0_struct_1]) 
+system_Group0_1_struct_1 {
+    system_Group0_1_range_2  int8[1:255]
+    system_Group0_1_buffer_3  array[int8, 7]
+    system_Group0_1_buffer_4  int8
+    system_Group0_1_buffer_5  int8
+    system_Group0_1_buffer_6  int8
+    system_Group0_1_buffer_7  int8
+    system_Group0_1_buffer_8  int32
+    system_Group0_1_buffer_9  int8
+    system_Group0_1_buffer_10  int8
+    system_Group0_1_buffer_11  int8
+    system_Group0_1_buffer_12  int8
+    system_Group0_1_buffer_13  int8
+    system_Group0_1_buffer_14  int8
+    system_Group0_1_buffer_15  int8
+    system_Group0_1_buffer_16  int8
+    system_Group0_1_buffer_17  array[int8]
+} [packed]
+ioctl$system_Group0_1(fd system_fd, cmd const[0xc017ff00], arg ptr[inout, system_Group0_1_struct_1]) 

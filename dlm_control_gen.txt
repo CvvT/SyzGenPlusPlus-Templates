@@ -1,0 +1,86 @@
+resource dlm_control_fd[fd]
+
+openat$dlm_control_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dlm-control"]], flags flags[open_flags], mode const[0]) dlm_control_fd
+read$dlm_control_syzgen(fd dlm_control_fd, data ptr[out, array[int8]], size len[data]) 
+dlm_control_Group4_0_struct_1 {
+    dlm_control_Group4_0_const_2  const[6, int8]
+    dlm_control_Group4_0_const_3  const[0, int8]
+    dlm_control_Group4_0_const_4  const[0, int8]
+    dlm_control_Group4_0_const_5  const[0, int8]
+    dlm_control_Group4_0_const_6  const[0, int8]
+    dlm_control_Group4_0_const_7  const[0, int8]
+    dlm_control_Group4_0_const_8  const[0, int8]
+    dlm_control_Group4_0_const_9  const[0, int8]
+    dlm_control_Group4_0_buffer_10  int32
+    dlm_control_Group4_0_const_11  const[4, int8]
+    dlm_control_Group4_0_buffer_12  int8
+    dlm_control_Group4_0_buffer_13  array[int8, 170]
+} [packed]
+write$dlm_control_Group4_0(fd dlm_control_fd, data ptr[in, dlm_control_Group4_0_struct_1], size len[data]) 
+dlm_control_Group4_1_struct_1 {
+    dlm_control_Group4_1_const_2  const[6, int8]
+    dlm_control_Group4_1_const_3  const[0, int8]
+    dlm_control_Group4_1_const_4  const[0, int8]
+    dlm_control_Group4_1_const_5  const[0, int8]
+    dlm_control_Group4_1_const_6  const[0, int8]
+    dlm_control_Group4_1_const_7  const[0, int8]
+    dlm_control_Group4_1_const_8  const[0, int8]
+    dlm_control_Group4_1_const_9  const[0, int8]
+    dlm_control_Group4_1_buffer_10  int32
+    dlm_control_Group4_1_const_11  const[4, int8]
+    dlm_control_Group4_1_const_12  const[0, int8]
+    dlm_control_Group4_1_buffer_13  int16
+    dlm_control_Group4_1_buffer_14  int32
+    dlm_control_Group4_1_buffer_15  int32
+    dlm_control_Group4_1_buffer_16  int8
+    dlm_control_Group4_1_buffer_17  int8
+    dlm_control_Group4_1_buffer_18  int8
+    dlm_control_Group4_1_buffer_19  array[int8, 5]
+    dlm_control_Group4_1_buffer_20  array[int8, 21]
+    dlm_control_Group4_1_buffer_21  int64
+    dlm_control_Group4_1_buffer_22  int64
+    dlm_control_Group4_1_buffer_23  array[int8, 6]
+    dlm_control_Group4_1_buffer_24  array[int8, 109]
+} [packed]
+write$dlm_control_Group4_1(fd dlm_control_fd, data ptr[in, dlm_control_Group4_1_struct_1], size int32[105:184]) 
+dlm_control_Group5_0_struct_1 {
+    dlm_control_Group5_0_const_2  const[6, int8]
+    dlm_control_Group5_0_const_3  const[0, int8]
+    dlm_control_Group5_0_const_4  const[0, int8]
+    dlm_control_Group5_0_const_5  const[0, int8]
+    dlm_control_Group5_0_const_6  const[0, int8]
+    dlm_control_Group5_0_const_7  const[0, int8]
+    dlm_control_Group5_0_const_8  const[0, int8]
+    dlm_control_Group5_0_const_9  const[0, int8]
+    dlm_control_Group5_0_buffer_10  int32
+    dlm_control_Group5_0_const_11  const[5, int8]
+    dlm_control_Group5_0_buffer_12  int8
+    dlm_control_Group5_0_buffer_13  array[int8, 170]
+} [packed]
+write$dlm_control_Group5_0(fd dlm_control_fd, data ptr[in, dlm_control_Group5_0_struct_1], size len[data]) 
+dlm_control_Group5_1_struct_1 {
+    dlm_control_Group5_1_const_2  const[6, int8]
+    dlm_control_Group5_1_const_3  const[0, int8]
+    dlm_control_Group5_1_const_4  const[0, int8]
+    dlm_control_Group5_1_const_5  const[0, int8]
+    dlm_control_Group5_1_const_6  const[0, int8]
+    dlm_control_Group5_1_const_7  const[0, int8]
+    dlm_control_Group5_1_const_8  const[0, int8]
+    dlm_control_Group5_1_const_9  const[0, int8]
+    dlm_control_Group5_1_buffer_10  int32
+    dlm_control_Group5_1_const_11  const[5, int8]
+    dlm_control_Group5_1_const_12  const[0, int8]
+    dlm_control_Group5_1_buffer_13  int16
+    dlm_control_Group5_1_buffer_14  int32
+    dlm_control_Group5_1_buffer_15  int32
+    dlm_control_Group5_1_buffer_16  int8
+    dlm_control_Group5_1_buffer_17  int8
+    dlm_control_Group5_1_buffer_18  int8
+    dlm_control_Group5_1_buffer_19  array[int8, 5]
+    dlm_control_Group5_1_buffer_20  array[int8, 21]
+    dlm_control_Group5_1_buffer_21  int64
+    dlm_control_Group5_1_buffer_22  int64
+    dlm_control_Group5_1_buffer_23  array[int8, 6]
+    dlm_control_Group5_1_buffer_24  array[int8, 109]
+} [packed]
+write$dlm_control_Group5_1(fd dlm_control_fd, data ptr[in, dlm_control_Group5_1_struct_1], size int32[105:184]) 

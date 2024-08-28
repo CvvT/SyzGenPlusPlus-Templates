@@ -1,0 +1,5 @@
+resource bbd_control_fd[fd]
+
+openat$bbd_control_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/bbd_control"]], flags flags[open_flags], mode const[0]) bbd_control_fd
+read$bbd_control_syzgen(fd bbd_control_fd, data ptr[out, array[int8]], size len[data]) 
+write$bbd_control_Group0_0_syzgen(fd bbd_control_fd, data ptr[in, array[int8]], size len[data]) 

@@ -1,0 +1,2 @@
+
+ioctl$msm_pcm0_Group0_0(fd pcm_fd, cmd const[0], arg intptr) 

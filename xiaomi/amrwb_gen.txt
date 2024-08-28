@@ -1,0 +1,38 @@
+resource amrwb_fd[fd]
+resource base_amrwb_fd[fd]
+
+openat$base_amrwb_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_amrwb"]], flags flags[open_flags], mode const[0]) base_amrwb_fd
+ioctl$base_amrwb_syzgen(fd base_amrwb_fd, cmd int32, arg intptr)
+
+openat$amrwb_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_amrwb_in"]], flags flags[open_flags], mode const[0]) amrwb_fd
+amrwb_Group800c616c_0_struct_1 {
+    amrwb_Group800c616c_0_range_2  int8[0:8]
+    amrwb_Group800c616c_0_const_3  const[0, int8]
+    amrwb_Group800c616c_0_const_4  const[0, int8]
+    amrwb_Group800c616c_0_const_5  const[0, int8]
+    amrwb_Group800c616c_0_buffer_6  int32
+    amrwb_Group800c616c_0_buffer_7  int64
+    amrwb_Group800c616c_0_buffer_8  int64
+    amrwb_Group800c616c_0_buffer_9  int64
+    amrwb_Group800c616c_0_buffer_10  int64
+    amrwb_Group800c616c_0_buffer_11  int64
+    amrwb_Group800c616c_0_buffer_12  int64
+    amrwb_Group800c616c_0_buffer_13  int64
+    amrwb_Group800c616c_0_buffer_14  array[int8]
+} [packed]
+ioctl$amrwb_Group800c616c_0(fd amrwb_fd, cmd const[2148295020], arg ptr[in, amrwb_Group800c616c_0_struct_1]) 
+amrwb_Group800c616c_1_struct_1 {
+    amrwb_Group800c616c_1_buffer_2  int32
+    amrwb_Group800c616c_1_buffer_3  int32
+    amrwb_Group800c616c_1_buffer_4  int64
+    amrwb_Group800c616c_1_buffer_5  int64
+    amrwb_Group800c616c_1_buffer_6  int64
+    amrwb_Group800c616c_1_buffer_7  int64
+    amrwb_Group800c616c_1_buffer_8  int64
+    amrwb_Group800c616c_1_buffer_9  int64
+    amrwb_Group800c616c_1_buffer_10  int64
+    amrwb_Group800c616c_1_buffer_11  array[int8]
+} [packed]
+ioctl$amrwb_Group800c616c_1(fd amrwb_fd, cmd const[2148295020], arg ptr[in, amrwb_Group800c616c_1_struct_1]) 
+ioctl$amrwb_Group40046101_0(fd amrwb_fd, cmd const[1074028801], arg intptr) 
+ioctl$amrwb_Group40046100_0(fd amrwb_fd, cmd const[1074028800], arg intptr) 

@@ -1,0 +1,29 @@
+resource amcs_fd[fd]
+
+openat$amcs_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/amcs"]], flags flags[open_flags], mode const[0]) amcs_fd
+amcs_Groupc028add0_0_struct_1 {
+    amcs_Groupc028add0_0_range_2  int8[0:9]
+    amcs_Groupc028add0_0_const_3  const[0, int8]
+    amcs_Groupc028add0_0_const_4  const[0, int8]
+    amcs_Groupc028add0_0_const_5  const[0, int8]
+    amcs_Groupc028add0_0_buffer_6  int32
+    amcs_Groupc028add0_0_range_7  int8[1:255]
+    amcs_Groupc028add0_0_buffer_8  int8
+    amcs_Groupc028add0_0_buffer_9  int16
+    amcs_Groupc028add0_0_buffer_10  array[int8, 76]
+    amcs_Groupc028add0_0_range_11  int64[1:18446744069414584321]
+    amcs_Groupc028add0_0_buffer_12  array[int8]
+} [packed]
+ioctl$amcs_Groupc028add0_0(fd amcs_fd, cmd const[3223891408], arg ptr[inout, amcs_Groupc028add0_0_struct_1]) 
+amcs_Groupc028add0_1_struct_1 {
+    amcs_Groupc028add0_1_range_2  int8[0:9]
+    amcs_Groupc028add0_1_const_3  const[0, int8]
+    amcs_Groupc028add0_1_const_4  const[0, int8]
+    amcs_Groupc028add0_1_const_5  const[0, int8]
+    amcs_Groupc028add0_1_buffer_6  int32
+    amcs_Groupc028add0_1_range_7  int8[1:255]
+    amcs_Groupc028add0_1_buffer_8  int8
+    amcs_Groupc028add0_1_buffer_9  int16
+    amcs_Groupc028add0_1_buffer_10  array[int8]
+} [packed]
+ioctl$amcs_Groupc028add0_1(fd amcs_fd, cmd const[3223891408], arg ptr[inout, amcs_Groupc028add0_1_struct_1]) 

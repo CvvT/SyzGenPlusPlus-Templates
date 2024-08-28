@@ -1,0 +1,4 @@
+
+ioctl$audio8_Group8018616d_0(fd audio_fd, cmd const[2149081453], arg ptr[out, array[int8]]) 
+ioctl$audio8_Group4018616e_0(fd audio_fd, cmd const[1075339630], arg ptr[in, array[int8]]) 
+ioctl$audio8_Group40046100_0(fd audio_fd, cmd const[1074028800], arg intptr) 

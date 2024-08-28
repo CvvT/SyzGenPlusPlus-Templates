@@ -1,0 +1,1298 @@
+resource mali0_fd[fd]
+resource mali0_connection_0[int64]
+
+openat$mali0_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/mali0"]], flags flags[open_flags], mode const[0]) mali0_fd
+mali0_Group40048001_0_flag_2 = 0, 2, 8, 10, 16, 18, 24, 26, 32, 34, 40, 42, 48, 50, 56, 58, 64, 66, 72, 74, 80, 82, 88, 90, 96, 98, 104, 106, 112, 114, 120, 122
+mali0_Group40048001_0_struct_1 {
+    mali0_Group40048001_0_flag_2  flags[mali0_Group40048001_0_flag_2, int8]
+    mali0_Group40048001_0_const_3  const[0, int8]
+    mali0_Group40048001_0_const_4  const[0, int8]
+    mali0_Group40048001_0_const_5  const[0, int8]
+} [packed]
+ioctl$mali0_Group40048001_0(fd mali0_fd, cmd const[1074036737], arg ptr[in, mali0_Group40048001_0_struct_1]) 
+mali0_Groupc0048000_0_struct_1 {
+    mali0_Groupc0048000_0_buffer_2  int8
+    mali0_Groupc0048000_0_buffer_3  int8
+    mali0_Groupc0048000_0_buffer_4  int8
+    mali0_Groupc0048000_0_buffer_5  int8
+} [packed]
+ioctl$mali0_Groupc0048000_0(fd mali0_fd, cmd const[3221520384], arg ptr[inout, mali0_Groupc0048000_0_struct_1]) 
+mali0_Groupc0048000_1_struct_1 {
+    mali0_Groupc0048000_1_const_2  const[11, int8]
+    mali0_Groupc0048000_1_const_3  const[0, int8]
+    mali0_Groupc0048000_1_buffer_4  int8
+    mali0_Groupc0048000_1_buffer_5  int8
+} [packed]
+ioctl$mali0_Groupc0048000_1(fd mali0_fd, cmd const[3221520384], arg ptr[inout, mali0_Groupc0048000_1_struct_1]) 
+ioctl$mali0_Group40048042_0(fd mali0_fd, cmd const[1074036802], arg ptr[in, int32[100:4294967295]]) 
+ioctl$mali0_Groupc0048034_0(fd mali0_fd, cmd const[3221520436], arg ptr[inout, int32]) 
+mali0_Group40188017_0_flag_5 = 8, 0, 4, 12
+mali0_Group40188017_0_flag_6 = 0, 2
+mali0_Group40188017_0_struct_1 {
+    mali0_Group40188017_0_range_2  int64[1:4095]
+    mali0_Group40188017_0_range_3  int64[0:18446744069414584320]
+    mali0_Group40188017_0_const_4  const[0, int8]
+    mali0_Group40188017_0_flag_5  flags[mali0_Group40188017_0_flag_5, int8]
+    mali0_Group40188017_0_flag_6  flags[mali0_Group40188017_0_flag_6, int8]
+    mali0_Group40188017_0_const_7  const[0, int8]
+    mali0_Group40188017_0_buffer_8  int32
+} [packed]
+ioctl$mali0_Group40188017_0(fd mali0_fd, cmd const[1075347479], arg ptr[in, mali0_Group40188017_0_struct_1]) 
+mali0_Group40188017_1_flag_11 = 8, 0, 12, 4
+mali0_Group40188017_1_flag_12 = 0, 2
+mali0_Group40188017_1_struct_1 {
+    mali0_Group40188017_1_buffer_2  int8
+    mali0_Group40188017_1_range_3  int8[0:15]
+    mali0_Group40188017_1_buffer_4  array[int8, 6]
+    mali0_Group40188017_1_range_5  int8[0:95]
+    mali0_Group40188017_1_buffer_6  int8
+    mali0_Group40188017_1_buffer_7  int8
+    mali0_Group40188017_1_range_8  int8[0:215]
+    mali0_Group40188017_1_buffer_9  int32
+    mali0_Group40188017_1_const_10  const[0, int8]
+    mali0_Group40188017_1_flag_11  flags[mali0_Group40188017_1_flag_11, int8]
+    mali0_Group40188017_1_flag_12  flags[mali0_Group40188017_1_flag_12, int8]
+    mali0_Group40188017_1_const_13  const[0, int8]
+    mali0_Group40188017_1_buffer_14  int32
+} [packed]
+ioctl$mali0_Group40188017_1(fd mali0_fd, cmd const[1075347479], arg ptr[in, mali0_Group40188017_1_struct_1]) 
+mali0_Group40188017_2_flag_7 = 8, 0, 4, 12
+mali0_Group40188017_2_flag_8 = 0, 2
+mali0_Group40188017_2_struct_1 {
+    mali0_Group40188017_2_buffer_2  int8
+    mali0_Group40188017_2_range_3  int8[0:15]
+    mali0_Group40188017_2_buffer_4  array[int8, 6]
+    mali0_Group40188017_2_range_5  int64[0:18446744069414584320]
+    mali0_Group40188017_2_const_6  const[0, int8]
+    mali0_Group40188017_2_flag_7  flags[mali0_Group40188017_2_flag_7, int8]
+    mali0_Group40188017_2_flag_8  flags[mali0_Group40188017_2_flag_8, int8]
+    mali0_Group40188017_2_const_9  const[0, int8]
+    mali0_Group40188017_2_buffer_10  int32
+} [packed]
+ioctl$mali0_Group40188017_2(fd mali0_fd, cmd const[1075347479], arg ptr[in, mali0_Group40188017_2_struct_1]) 
+mali0_Group40188017_3_flag_3 = 32, 0, 64, 96, 224, 160, 128, 192, 144, 176, 208, 240, 16, 48, 112, 80
+mali0_Group40188017_3_flag_10 = 8, 0, 12, 4
+mali0_Group40188017_3_struct_1 {
+    mali0_Group40188017_3_const_2  const[0, int8]
+    mali0_Group40188017_3_flag_3  flags[mali0_Group40188017_3_flag_3, int8]
+    mali0_Group40188017_3_buffer_4  array[int8, 6]
+    mali0_Group40188017_3_range_5  int16[0:65375]
+    mali0_Group40188017_3_range_6  int8[2:255]
+    mali0_Group40188017_3_range_7  int8[0:215]
+    mali0_Group40188017_3_buffer_8  int32
+    mali0_Group40188017_3_const_9  const[0, int8]
+    mali0_Group40188017_3_flag_10  flags[mali0_Group40188017_3_flag_10, int8]
+    mali0_Group40188017_3_const_11  const[2, int8]
+    mali0_Group40188017_3_const_12  const[0, int8]
+    mali0_Group40188017_3_buffer_13  int32
+} [packed]
+ioctl$mali0_Group40188017_3(fd mali0_fd, cmd const[1075347479], arg ptr[in, mali0_Group40188017_3_struct_1]) 
+mali0_Group40188017_4_flag_3 = 32, 224, 64, 96, 0, 160, 128, 192, 80, 16, 48, 112, 144, 176, 208, 240
+mali0_Group40188017_4_flag_10 = 8, 0, 4, 12
+mali0_Group40188017_4_flag_11 = 0, 2
+mali0_Group40188017_4_struct_1 {
+    mali0_Group40188017_4_const_2  const[0, int8]
+    mali0_Group40188017_4_flag_3  flags[mali0_Group40188017_4_flag_3, int8]
+    mali0_Group40188017_4_buffer_4  array[int8, 6]
+    mali0_Group40188017_4_range_5  int16[0:65375]
+    mali0_Group40188017_4_buffer_6  int8
+    mali0_Group40188017_4_range_7  int8[0:215]
+    mali0_Group40188017_4_buffer_8  int32
+    mali0_Group40188017_4_const_9  const[0, int8]
+    mali0_Group40188017_4_flag_10  flags[mali0_Group40188017_4_flag_10, int8]
+    mali0_Group40188017_4_flag_11  flags[mali0_Group40188017_4_flag_11, int8]
+    mali0_Group40188017_4_const_12  const[0, int8]
+    mali0_Group40188017_4_buffer_13  int32
+} [packed]
+ioctl$mali0_Group40188017_4(fd mali0_fd, cmd const[1075347479], arg ptr[in, mali0_Group40188017_4_struct_1]) 
+mali0_Group40188017_5_flag_3 = 32, 224, 64, 96, 0, 160, 128, 192, 16, 240, 112, 48, 144, 176, 208, 80
+mali0_Group40188017_5_flag_11 = 8, 0, 4, 12
+mali0_Group40188017_5_struct_1 {
+    mali0_Group40188017_5_const_2  const[0, int8]
+    mali0_Group40188017_5_flag_3  flags[mali0_Group40188017_5_flag_3, int8]
+    mali0_Group40188017_5_buffer_4  array[int8, 6]
+    mali0_Group40188017_5_range_5  int8[0:95]
+    mali0_Group40188017_5_buffer_6  int8
+    mali0_Group40188017_5_range_7  int8[2:255]
+    mali0_Group40188017_5_range_8  int8[0:215]
+    mali0_Group40188017_5_buffer_9  int32
+    mali0_Group40188017_5_const_10  const[0, int8]
+    mali0_Group40188017_5_flag_11  flags[mali0_Group40188017_5_flag_11, int8]
+    mali0_Group40188017_5_const_12  const[2, int8]
+    mali0_Group40188017_5_const_13  const[0, int8]
+    mali0_Group40188017_5_buffer_14  int32
+} [packed]
+ioctl$mali0_Group40188017_5(fd mali0_fd, cmd const[1075347479], arg ptr[in, mali0_Group40188017_5_struct_1]) 
+mali0_Group40188017_6_flag_3 = 192, 224, 32, 96, 0, 160, 64, 128, 240, 144, 176, 208, 16, 48, 112, 80
+mali0_Group40188017_6_flag_11 = 8, 0, 12, 4
+mali0_Group40188017_6_flag_12 = 0, 2
+mali0_Group40188017_6_struct_1 {
+    mali0_Group40188017_6_const_2  const[0, int8]
+    mali0_Group40188017_6_flag_3  flags[mali0_Group40188017_6_flag_3, int8]
+    mali0_Group40188017_6_buffer_4  array[int8, 6]
+    mali0_Group40188017_6_range_5  int8[0:95]
+    mali0_Group40188017_6_buffer_6  int8
+    mali0_Group40188017_6_buffer_7  int8
+    mali0_Group40188017_6_range_8  int8[0:215]
+    mali0_Group40188017_6_buffer_9  int32
+    mali0_Group40188017_6_const_10  const[0, int8]
+    mali0_Group40188017_6_flag_11  flags[mali0_Group40188017_6_flag_11, int8]
+    mali0_Group40188017_6_flag_12  flags[mali0_Group40188017_6_flag_12, int8]
+    mali0_Group40188017_6_const_13  const[0, int8]
+    mali0_Group40188017_6_buffer_14  int32
+} [packed]
+ioctl$mali0_Group40188017_6(fd mali0_fd, cmd const[1075347479], arg ptr[in, mali0_Group40188017_6_struct_1]) 
+mali0_Group40188017_7_flag_3 = 32, 0, 64, 96, 224, 160, 128, 192, 16, 240, 80, 112, 208, 144, 176, 48
+mali0_Group40188017_7_flag_7 = 8, 0, 12, 4
+mali0_Group40188017_7_flag_8 = 0, 2
+mali0_Group40188017_7_struct_1 {
+    mali0_Group40188017_7_const_2  const[0, int8]
+    mali0_Group40188017_7_flag_3  flags[mali0_Group40188017_7_flag_3, int8]
+    mali0_Group40188017_7_buffer_4  array[int8, 6]
+    mali0_Group40188017_7_range_5  int64[0:18446744069414584320]
+    mali0_Group40188017_7_const_6  const[0, int8]
+    mali0_Group40188017_7_flag_7  flags[mali0_Group40188017_7_flag_7, int8]
+    mali0_Group40188017_7_flag_8  flags[mali0_Group40188017_7_flag_8, int8]
+    mali0_Group40188017_7_const_9  const[0, int8]
+    mali0_Group40188017_7_buffer_10  int32
+} [packed]
+ioctl$mali0_Group40188017_7(fd mali0_fd, cmd const[1075347479], arg ptr[in, mali0_Group40188017_7_struct_1]) 
+mali0_Group40148008_0_flag_2 = 32, 1, 2, 4, 8, 16
+mali0_Group40148008_0_struct_1 {
+    mali0_Group40148008_0_flag_2  flags[mali0_Group40148008_0_flag_2, int32]
+    mali0_Group40148008_0_buffer_3  int32
+    mali0_Group40148008_0_buffer_4  int32
+    mali0_Group40148008_0_buffer_5  int32
+    mali0_Group40148008_0_buffer_6  int32
+} [packed]
+ioctl$mali0_Group40148008_0(fd mali0_fd, cmd const[1075085320], arg ptr[in, mali0_Group40148008_0_struct_1]) 
+ioctl$mali0_Group40088007_0(fd mali0_fd, cmd const[1074298887], arg ptr[in, mali0_connection_0]) 
+ioctl$mali0_Group40018037_0(fd mali0_fd, cmd const[1073840183], arg ptr[in, int8]) 
+ioctl$mali0_Group40018037_1(fd mali0_fd, cmd const[1073840183], arg ptr[in, int8[1:255]]) 
+mali0_Group4020800f_0_struct_1 {
+    mali0_Group4020800f_0_range_2  int64[0:18446744069414584320, 4096]
+    mali0_Group4020800f_0_buffer_3  int64
+    mali0_Group4020800f_0_buffer_4  int64
+    mali0_Group4020800f_0_range_5  int8[1:2]
+    mali0_Group4020800f_0_buffer_6  array[int8, 7]
+} [packed]
+ioctl$mali0_Group4020800f_0(fd mali0_fd, cmd const[1075871759], arg ptr[in, mali0_Group4020800f_0_struct_1]) 
+mali0_Group4020800f_1_flag_3 = 192, 224, 64, 128, 0, 96, 32, 160, 144, 208, 48, 240, 176, 80, 16, 112
+mali0_Group4020800f_1_struct_1 {
+    mali0_Group4020800f_1_const_2  const[0, int8]
+    mali0_Group4020800f_1_flag_3  flags[mali0_Group4020800f_1_flag_3, int8]
+    mali0_Group4020800f_1_buffer_4  array[int8, 6]
+    mali0_Group4020800f_1_buffer_5  int64
+    mali0_Group4020800f_1_buffer_6  int64
+    mali0_Group4020800f_1_range_7  int8[1:2]
+    mali0_Group4020800f_1_buffer_8  array[int8, 7]
+} [packed]
+ioctl$mali0_Group4020800f_1(fd mali0_fd, cmd const[1075871759], arg ptr[in, mali0_Group4020800f_1_struct_1]) 
+mali0_Group40188009_0_struct_1 {
+    mali0_Group40188009_0_range_2  int64[1:18446744069414584321]
+    mali0_Group40188009_0_buffer_3  int32
+    mali0_Group40188009_0_buffer_4  int32
+    mali0_Group40188009_0_buffer_5  int32
+    mali0_Group40188009_0_buffer_6  int32
+} [packed]
+ioctl$mali0_Group40188009_0(fd mali0_fd, cmd const[1075347465], arg ptr[in, mali0_Group40188009_0_struct_1]) 
+mali0_Group40188009_1_struct_1 {
+    mali0_Group40188009_1_const_2  const[0, int8]
+    mali0_Group40188009_1_const_3  const[0, int8]
+    mali0_Group40188009_1_const_4  const[0, int8]
+    mali0_Group40188009_1_const_5  const[0, int8]
+    mali0_Group40188009_1_const_6  const[0, int8]
+    mali0_Group40188009_1_const_7  const[0, int8]
+    mali0_Group40188009_1_const_8  const[0, int8]
+    mali0_Group40188009_1_const_9  const[0, int8]
+    mali0_Group40188009_1_buffer_10  array[int8, 16]
+} [packed]
+ioctl$mali0_Group40188009_1(fd mali0_fd, cmd const[1075347465], arg ptr[in, mali0_Group40188009_1_struct_1]) 
+ioctl$mali0_Group4008800e_0(fd mali0_fd, cmd const[1074298894], arg ptr[in, int64]) 
+mali0_Group4010800e_0_struct_1 {
+    mali0_Group4010800e_0_buffer_2  int64
+    mali0_Group4010800e_0_buffer_3  int8
+    mali0_Group4010800e_0_range_4  int8[0:100]
+    mali0_Group4010800e_0_range_5  int8[0:15]
+    mali0_Group4010800e_0_const_6  const[0, int8]
+    mali0_Group4010800e_0_const_7  const[0, int8]
+    mali0_Group4010800e_0_const_8  const[0, int8]
+    mali0_Group4010800e_0_const_9  const[0, int8]
+    mali0_Group4010800e_0_const_10  const[0, int8]
+} [packed]
+ioctl$mali0_Group4010800e_0(fd mali0_fd, cmd const[1074823182], arg ptr[in, mali0_Group4010800e_0_struct_1]) 
+mali0_Group40108014_0_flag_3 = 32, 224, 128, 0, 160, 96, 64, 192, 144, 80, 208, 112, 176, 16, 48, 240
+mali0_Group40108014_0_struct_1 {
+    mali0_Group40108014_0_const_2  const[0, int8]
+    mali0_Group40108014_0_flag_3  flags[mali0_Group40108014_0_flag_3, int8]
+    mali0_Group40108014_0_buffer_4  array[int8, 6]
+    mali0_Group40108014_0_range_5  int64[1:18446744069414584321]
+} [packed]
+ioctl$mali0_Group40108014_0(fd mali0_fd, cmd const[1074823188], arg ptr[in, mali0_Group40108014_0_struct_1]) 
+mali0_Group40108014_1_flag_3 = 160, 224, 64, 96, 128, 0, 32, 192, 240, 48, 80, 208, 176, 112, 144, 16
+mali0_Group40108014_1_struct_1 {
+    mali0_Group40108014_1_const_2  const[0, int8]
+    mali0_Group40108014_1_flag_3  flags[mali0_Group40108014_1_flag_3, int8]
+    mali0_Group40108014_1_buffer_4  array[int8, 6]
+    mali0_Group40108014_1_buffer_5  int64
+} [packed]
+ioctl$mali0_Group40108014_1(fd mali0_fd, cmd const[1074823188], arg ptr[in, mali0_Group40108014_1_struct_1]) 
+mali0_Group4010801d_0_struct_3 {
+    mali0_Group4010801d_0_buffer_4  int8
+    mali0_Group4010801d_0_buffer_5  int8
+    mali0_Group4010801d_0_buffer_6  array[int8, 6]
+    mali0_Group40088007_0_resource_1  mali0_connection_0
+    mali0_Group4010801d_0_buffer_7  array[int8, 64]
+} [packed]
+mali0_Group4010801d_0_struct_1 {
+    mali0_Group4010801d_0_range_2  int64[1:10]
+    mali0_Group4010801d_0_ptr_8  ptr[out, mali0_Group4010801d_0_struct_3]
+} [packed]
+ioctl$mali0_Group4010801d_0(fd mali0_fd, cmd const[1074823197], arg ptr[in, mali0_Group4010801d_0_struct_1]) 
+mali0_Group4010801d_1_struct_4 {
+    mali0_Group40088007_0_resource_1  mali0_connection_0
+    mali0_Group4010801d_1_buffer_5  int64
+    mali0_Group4010801d_1_buffer_6  array[int8, 64]
+} [packed]
+mali0_Group4010801d_1_struct_1 {
+    mali0_Group4010801d_1_range_2  int8[1:10]
+    mali0_Group4010801d_1_buffer_3  array[int8, 7]
+    mali0_Group4010801d_1_ptr_7  ptr[out, mali0_Group4010801d_1_struct_4]
+} [packed]
+ioctl$mali0_Group4010801d_1(fd mali0_fd, cmd const[1074823197], arg ptr[in, mali0_Group4010801d_1_struct_1]) 
+mali0_Group4010801c_0_struct_1 {
+    mali0_Group4010801c_0_buffer_2  int8
+    mali0_Group4010801c_0_buffer_3  int8
+    mali0_Group4010801c_0_buffer_4  array[int8, 6]
+    mali0_Group4010801c_0_range_5  int32[0:4294967041]
+    mali0_Group4010801c_0_const_6  const[0, int8]
+    mali0_Group4010801c_0_const_7  const[0, int8]
+    mali0_Group4010801c_0_const_8  const[0, int8]
+    mali0_Group4010801c_0_const_9  const[0, int8]
+} [packed]
+ioctl$mali0_Group4010801c_0(fd mali0_fd, cmd const[1074823196], arg ptr[in, mali0_Group4010801c_0_struct_1]) 
+mali0_Group4010801e_0_struct_3 {
+    mali0_Group4010801e_0_buffer_4  int64
+    mali0_Group4010801e_0_buffer_5  int64
+    mali0_Group4010801e_0_buffer_6  int64
+    mali0_Group4010801e_0_buffer_7  int8
+    mali0_Group4010801e_0_buffer_8  int8
+    mali0_Group4010801e_0_buffer_9  array[int8, 6]
+    mali0_Group4010801e_0_buffer_10  int64
+    mali0_Group4010801e_0_buffer_11  array[int8, 40]
+} [packed]
+mali0_Group4010801e_0_struct_1 {
+    mali0_Group4010801e_0_range_2  int64[1:10]
+    mali0_Group4010801e_0_ptr_12  ptr[in, mali0_Group4010801e_0_struct_3]
+} [packed]
+ioctl$mali0_Group4010801e_0(fd mali0_fd, cmd const[1074823198], arg ptr[in, mali0_Group4010801e_0_struct_1]) 
+mali0_Group4010801e_1_struct_4 {
+    mali0_Group4010801e_1_buffer_5  int64
+    mali0_Group4010801e_1_buffer_6  int64
+    mali0_Group4010801e_1_buffer_7  array[int8, 64]
+} [packed]
+mali0_Group4010801e_1_struct_1 {
+    mali0_Group4010801e_1_range_2  int8[1:10]
+    mali0_Group4010801e_1_buffer_3  array[int8, 7]
+    mali0_Group4010801e_1_ptr_8  ptr[in, mali0_Group4010801e_1_struct_4]
+} [packed]
+ioctl$mali0_Group4010801e_1(fd mali0_fd, cmd const[1074823198], arg ptr[in, mali0_Group4010801e_1_struct_1]) 
+mali0_Group4010800d_0_struct_1 {
+    mali0_Group4010800d_0_ptr_3  ptr[out, array[int8, 20]]
+    mali0_Group4010800d_0_buffer_4  int32
+    mali0_Group4010800d_0_buffer_5  int32
+} [packed]
+ioctl$mali0_Group4010800d_0(fd mali0_fd, cmd const[1074823181], arg ptr[in, mali0_Group4010800d_0_struct_1]) 
+mali0_Group40108002_0_flag_4 = 56, 48, 64
+mali0_Group40108002_0_struct_1 {
+    mali0_Group40108002_0_buffer_2  int64
+    mali0_Group40108002_0_const_3  const[0, int32]
+    mali0_Group40108002_0_flag_4  flags[mali0_Group40108002_0_flag_4, int8]
+    mali0_Group40108002_0_const_5  const[0, int8]
+    mali0_Group40108002_0_const_6  const[0, int16]
+} [packed]
+ioctl$mali0_Group40108002_0(fd mali0_fd, cmd const[1074823170], arg ptr[in, mali0_Group40108002_0_struct_1]) 
+mali0_Group40108002_1_struct_2 {
+    mali0_Group40108002_1_buffer_3  array[int8, 49]
+    mali0_Group40108002_1_buffer_4  int8
+    mali0_Group40108002_1_buffer_5  array[int8, 7]
+    mali0_Group40108002_1_buffer_6  int8
+    mali0_Group40108002_1_buffer_7  array[int8, 6]
+} [packed]
+mali0_Group40108002_1_flag_10 = 56, 64
+mali0_Group40108002_1_struct_1 {
+    mali0_Group40108002_1_ptr_8  ptr[in, mali0_Group40108002_1_struct_2]
+    mali0_Group40108002_1_range_9  int32[1:4294967295]
+    mali0_Group40108002_1_flag_10  flags[mali0_Group40108002_1_flag_10, int8]
+    mali0_Group40108002_1_const_11  const[0, int8]
+    mali0_Group40108002_1_const_12  const[0, int8]
+    mali0_Group40108002_1_const_13  const[0, int8]
+} [packed]
+ioctl$mali0_Group40108002_1(fd mali0_fd, cmd const[1074823170], arg ptr[in, mali0_Group40108002_1_struct_1]) 
+mali0_Group40108002_2_struct_2 {
+    mali0_Group40108002_2_buffer_3  int64
+    mali0_Group40108002_2_buffer_4  int64
+    mali0_Group40108002_2_buffer_5  int64
+    mali0_Group40108002_2_buffer_6  int64
+    mali0_Group40108002_2_buffer_7  int16
+    mali0_Group40108002_2_buffer_8  int16
+    mali0_Group40108002_2_buffer_9  int8
+    mali0_Group40108002_2_buffer_10  int8
+    mali0_Group40108002_2_buffer_11  int8
+    mali0_Group40108002_2_buffer_12  int8
+    mali0_Group40108002_2_buffer_13  int8
+    mali0_Group40108002_2_buffer_14  int8
+    mali0_Group40108002_2_buffer_15  int8
+    mali0_Group40108002_2_buffer_16  int8
+    mali0_Group40108002_2_buffer_17  int16
+    mali0_Group40108002_2_range_18  int8[0:247]
+    mali0_Group40108002_2_buffer_19  int8
+    mali0_Group40108002_2_buffer_20  int8
+    mali0_Group40108002_2_buffer_21  int8
+    mali0_Group40108002_2_buffer_22  int8
+    mali0_Group40108002_2_buffer_23  int8
+    mali0_Group40108002_2_buffer_24  int8
+    mali0_Group40108002_2_buffer_25  int8
+    mali0_Group40108002_2_buffer_26  int8
+    mali0_Group40108002_2_buffer_27  int8
+    mali0_Group40108002_2_buffer_28  int64
+} [packed]
+mali0_Group40108002_2_flag_31 = 48, 56
+mali0_Group40108002_2_struct_1 {
+    mali0_Group40108002_2_ptr_29  ptr[in, mali0_Group40108002_2_struct_2]
+    mali0_Group40108002_2_range_30  int32[1:4294967295]
+    mali0_Group40108002_2_flag_31  flags[mali0_Group40108002_2_flag_31, int8]
+    mali0_Group40108002_2_const_32  const[0, int8]
+    mali0_Group40108002_2_const_33  const[0, int8]
+    mali0_Group40108002_2_const_34  const[0, int8]
+} [packed]
+ioctl$mali0_Group40108002_2(fd mali0_fd, cmd const[1074823170], arg ptr[in, mali0_Group40108002_2_struct_1]) 
+mali0_Group40108002_3_struct_2 {
+    mali0_Group40108002_3_buffer_3  int64
+    mali0_Group40108002_3_buffer_4  int64
+    mali0_Group40108002_3_buffer_5  int64
+    mali0_Group40108002_3_buffer_6  int64
+    mali0_Group40108002_3_buffer_7  int16
+    mali0_Group40108002_3_buffer_8  int16
+    mali0_Group40108002_3_const_9  const[0, int8]
+    mali0_Group40108002_3_buffer_10  int8
+    mali0_Group40108002_3_range_11  int8[1:255]
+    mali0_Group40108002_3_range_12  int8[1:2]
+    mali0_Group40108002_3_buffer_13  int8
+    mali0_Group40108002_3_buffer_14  int8
+    mali0_Group40108002_3_buffer_15  int8
+    mali0_Group40108002_3_buffer_16  int8
+    mali0_Group40108002_3_buffer_17  int16
+    mali0_Group40108002_3_range_18  int8[0:247]
+    mali0_Group40108002_3_buffer_19  int8
+    mali0_Group40108002_3_buffer_20  int8
+    mali0_Group40108002_3_buffer_21  int8
+    mali0_Group40108002_3_buffer_22  int8
+    mali0_Group40108002_3_buffer_23  int8
+    mali0_Group40108002_3_buffer_24  int8
+    mali0_Group40108002_3_buffer_25  int8
+    mali0_Group40108002_3_buffer_26  int8
+    mali0_Group40108002_3_buffer_27  int8
+    mali0_Group40108002_3_buffer_28  int64
+} [packed]
+mali0_Group40108002_3_flag_31 = 48, 56
+mali0_Group40108002_3_struct_1 {
+    mali0_Group40108002_3_ptr_29  ptr[in, mali0_Group40108002_3_struct_2]
+    mali0_Group40108002_3_range_30  int32[1:4294967295]
+    mali0_Group40108002_3_flag_31  flags[mali0_Group40108002_3_flag_31, int8]
+    mali0_Group40108002_3_const_32  const[0, int8]
+    mali0_Group40108002_3_const_33  const[0, int8]
+    mali0_Group40108002_3_const_34  const[0, int8]
+} [packed]
+ioctl$mali0_Group40108002_3(fd mali0_fd, cmd const[1074823170], arg ptr[in, mali0_Group40108002_3_struct_1]) 
+mali0_Group40108002_4_struct_2 {
+    mali0_Group40108002_4_buffer_3  int64
+    mali0_Group40108002_4_buffer_4  int64
+    mali0_Group40108002_4_buffer_5  int64
+    mali0_Group40108002_4_buffer_6  int64
+    mali0_Group40108002_4_buffer_7  int16
+    mali0_Group40108002_4_buffer_8  int16
+    mali0_Group40108002_4_range_9  int8[1:255]
+    mali0_Group40108002_4_range_10  int8[1:2]
+    mali0_Group40108002_4_buffer_11  int8
+    mali0_Group40108002_4_buffer_12  int8
+    mali0_Group40108002_4_buffer_13  int8
+    mali0_Group40108002_4_buffer_14  int8
+    mali0_Group40108002_4_buffer_15  int8
+    mali0_Group40108002_4_buffer_16  int8
+    mali0_Group40108002_4_buffer_17  int16
+    mali0_Group40108002_4_range_18  int8[0:247]
+    mali0_Group40108002_4_buffer_19  int8
+    mali0_Group40108002_4_buffer_20  int8
+    mali0_Group40108002_4_buffer_21  int8
+    mali0_Group40108002_4_buffer_22  int8
+    mali0_Group40108002_4_buffer_23  int8
+    mali0_Group40108002_4_buffer_24  int8
+    mali0_Group40108002_4_buffer_25  int8
+    mali0_Group40108002_4_buffer_26  int8
+    mali0_Group40108002_4_buffer_27  int8
+    mali0_Group40108002_4_buffer_28  int64
+} [packed]
+mali0_Group40108002_4_flag_31 = 48, 56
+mali0_Group40108002_4_struct_1 {
+    mali0_Group40108002_4_ptr_29  ptr[in, mali0_Group40108002_4_struct_2]
+    mali0_Group40108002_4_range_30  int32[1:4294967295]
+    mali0_Group40108002_4_flag_31  flags[mali0_Group40108002_4_flag_31, int8]
+    mali0_Group40108002_4_const_32  const[0, int8]
+    mali0_Group40108002_4_const_33  const[0, int8]
+    mali0_Group40108002_4_const_34  const[0, int8]
+} [packed]
+ioctl$mali0_Group40108002_4(fd mali0_fd, cmd const[1074823170], arg ptr[in, mali0_Group40108002_4_struct_1]) 
+mali0_Group40108002_5_struct_2 {
+    mali0_Group40108002_5_buffer_3  int64
+    mali0_Group40108002_5_buffer_4  int64
+    mali0_Group40108002_5_buffer_5  int64
+    mali0_Group40108002_5_buffer_6  int64
+    mali0_Group40108002_5_buffer_7  int16
+    mali0_Group40108002_5_buffer_8  int16
+    mali0_Group40108002_5_range_9  int8[1:255]
+    mali0_Group40108002_5_range_10  int8[1:2]
+    mali0_Group40108002_5_range_11  int8[1:255]
+    mali0_Group40108002_5_range_12  int8[1:2]
+    mali0_Group40108002_5_buffer_13  int8
+    mali0_Group40108002_5_buffer_14  int8
+    mali0_Group40108002_5_buffer_15  int8
+    mali0_Group40108002_5_buffer_16  int8
+    mali0_Group40108002_5_buffer_17  int16
+    mali0_Group40108002_5_range_18  int8[0:247]
+    mali0_Group40108002_5_buffer_19  int8
+    mali0_Group40108002_5_buffer_20  int8
+    mali0_Group40108002_5_buffer_21  int8
+    mali0_Group40108002_5_buffer_22  int8
+    mali0_Group40108002_5_buffer_23  int8
+    mali0_Group40108002_5_buffer_24  int8
+    mali0_Group40108002_5_buffer_25  int8
+    mali0_Group40108002_5_buffer_26  int8
+    mali0_Group40108002_5_buffer_27  int8
+    mali0_Group40108002_5_buffer_28  int64
+} [packed]
+mali0_Group40108002_5_flag_31 = 48, 56
+mali0_Group40108002_5_struct_1 {
+    mali0_Group40108002_5_ptr_29  ptr[in, mali0_Group40108002_5_struct_2]
+    mali0_Group40108002_5_range_30  int32[1:4294967295]
+    mali0_Group40108002_5_flag_31  flags[mali0_Group40108002_5_flag_31, int8]
+    mali0_Group40108002_5_const_32  const[0, int8]
+    mali0_Group40108002_5_const_33  const[0, int8]
+    mali0_Group40108002_5_const_34  const[0, int8]
+} [packed]
+ioctl$mali0_Group40108002_5(fd mali0_fd, cmd const[1074823170], arg ptr[in, mali0_Group40108002_5_struct_1]) 
+mali0_Group40108002_6_struct_2 {
+    mali0_Group40108002_6_ptr_4  ptr[in, array[int8, 32]]
+    mali0_Group40108002_6_buffer_5  int64
+    mali0_Group40108002_6_buffer_6  int64
+    mali0_Group40108002_6_buffer_7  int64
+    mali0_Group40108002_6_buffer_8  int16
+    mali0_Group40108002_6_buffer_9  int8
+    mali0_Group40108002_6_buffer_10  int8
+    mali0_Group40108002_6_buffer_11  int8
+    mali0_Group40108002_6_buffer_12  int8
+    mali0_Group40108002_6_buffer_13  int8
+    mali0_Group40108002_6_buffer_14  int8
+    mali0_Group40108002_6_buffer_15  int8
+    mali0_Group40108002_6_buffer_16  int8
+    mali0_Group40108002_6_buffer_17  int8
+    mali0_Group40108002_6_buffer_18  int8
+    mali0_Group40108002_6_buffer_19  int16
+    mali0_Group40108002_6_range_20  int8[8:255]
+    mali0_Group40108002_6_buffer_21  int8
+    mali0_Group40108002_6_buffer_22  int8
+    mali0_Group40108002_6_buffer_23  int8
+    mali0_Group40108002_6_buffer_24  int8
+    mali0_Group40108002_6_buffer_25  int8
+    mali0_Group40108002_6_buffer_26  int8
+    mali0_Group40108002_6_buffer_27  int8
+    mali0_Group40108002_6_buffer_28  int8
+    mali0_Group40108002_6_buffer_29  int8
+    mali0_Group40108002_6_buffer_30  int64
+} [packed]
+mali0_Group40108002_6_flag_33 = 48, 56
+mali0_Group40108002_6_struct_1 {
+    mali0_Group40108002_6_ptr_31  ptr[in, mali0_Group40108002_6_struct_2]
+    mali0_Group40108002_6_range_32  int32[1:4294967295]
+    mali0_Group40108002_6_flag_33  flags[mali0_Group40108002_6_flag_33, int8]
+    mali0_Group40108002_6_const_34  const[0, int8]
+    mali0_Group40108002_6_const_35  const[0, int8]
+    mali0_Group40108002_6_const_36  const[0, int8]
+} [packed]
+ioctl$mali0_Group40108002_6(fd mali0_fd, cmd const[1074823170], arg ptr[in, mali0_Group40108002_6_struct_1]) 
+mali0_Group40108002_7_struct_2 {
+    mali0_Group40108002_7_ptr_4  ptr[in, array[int8, 32]]
+    mali0_Group40108002_7_buffer_5  int64
+    mali0_Group40108002_7_buffer_6  int64
+    mali0_Group40108002_7_buffer_7  int64
+    mali0_Group40108002_7_buffer_8  int16
+    mali0_Group40108002_7_buffer_9  int16
+    mali0_Group40108002_7_const_10  const[0, int8]
+    mali0_Group40108002_7_buffer_11  int8
+    mali0_Group40108002_7_range_12  int8[1:255]
+    mali0_Group40108002_7_range_13  int8[1:2]
+    mali0_Group40108002_7_buffer_14  int8
+    mali0_Group40108002_7_buffer_15  int8
+    mali0_Group40108002_7_buffer_16  int8
+    mali0_Group40108002_7_buffer_17  int8
+    mali0_Group40108002_7_buffer_18  int16
+    mali0_Group40108002_7_range_19  int8[8:255]
+    mali0_Group40108002_7_buffer_20  int8
+    mali0_Group40108002_7_buffer_21  array[int8, 16]
+} [packed]
+mali0_Group40108002_7_struct_1 {
+    mali0_Group40108002_7_ptr_22  ptr[in, mali0_Group40108002_7_struct_2]
+    mali0_Group40108002_7_range_23  int32[1:4294967295]
+    mali0_Group40108002_7_const_24  const[48, int8]
+    mali0_Group40108002_7_const_25  const[0, int8]
+    mali0_Group40108002_7_const_26  const[0, int8]
+    mali0_Group40108002_7_const_27  const[0, int8]
+} [packed]
+ioctl$mali0_Group40108002_7(fd mali0_fd, cmd const[1074823170], arg ptr[in, mali0_Group40108002_7_struct_1]) 
+mali0_Group40108002_8_struct_2 {
+    mali0_Group40108002_8_ptr_4  ptr[in, array[int8, 32]]
+    mali0_Group40108002_8_buffer_5  int64
+    mali0_Group40108002_8_buffer_6  int64
+    mali0_Group40108002_8_buffer_7  int64
+    mali0_Group40108002_8_buffer_8  int16
+    mali0_Group40108002_8_buffer_9  int8
+    mali0_Group40108002_8_buffer_10  int8
+    mali0_Group40108002_8_range_11  int8[1:255]
+    mali0_Group40108002_8_range_12  int8[1:2]
+    mali0_Group40108002_8_buffer_13  int8
+    mali0_Group40108002_8_buffer_14  int8
+    mali0_Group40108002_8_buffer_15  int8
+    mali0_Group40108002_8_buffer_16  int8
+    mali0_Group40108002_8_buffer_17  int8
+    mali0_Group40108002_8_buffer_18  int8
+    mali0_Group40108002_8_buffer_19  int16
+    mali0_Group40108002_8_range_20  int8[8:255]
+    mali0_Group40108002_8_buffer_21  int8
+    mali0_Group40108002_8_buffer_22  int8
+    mali0_Group40108002_8_buffer_23  int8
+    mali0_Group40108002_8_buffer_24  int8
+    mali0_Group40108002_8_buffer_25  int8
+    mali0_Group40108002_8_buffer_26  int8
+    mali0_Group40108002_8_buffer_27  int8
+    mali0_Group40108002_8_buffer_28  int8
+    mali0_Group40108002_8_buffer_29  int8
+    mali0_Group40108002_8_buffer_30  int64
+} [packed]
+mali0_Group40108002_8_flag_33 = 48, 56
+mali0_Group40108002_8_struct_1 {
+    mali0_Group40108002_8_ptr_31  ptr[in, mali0_Group40108002_8_struct_2]
+    mali0_Group40108002_8_range_32  int32[1:4294967295]
+    mali0_Group40108002_8_flag_33  flags[mali0_Group40108002_8_flag_33, int8]
+    mali0_Group40108002_8_const_34  const[0, int8]
+    mali0_Group40108002_8_const_35  const[0, int8]
+    mali0_Group40108002_8_const_36  const[0, int8]
+} [packed]
+ioctl$mali0_Group40108002_8(fd mali0_fd, cmd const[1074823170], arg ptr[in, mali0_Group40108002_8_struct_1]) 
+mali0_Group40108002_9_struct_2 {
+    mali0_Group40108002_9_buffer_3  int64
+    mali0_Group40108002_9_buffer_4  int64
+    mali0_Group40108002_9_buffer_5  int64
+    mali0_Group40108002_9_buffer_6  int64
+    mali0_Group40108002_9_buffer_7  int64
+    mali0_Group40108002_9_buffer_8  int16
+    mali0_Group40108002_9_buffer_9  int8
+    mali0_Group40108002_9_buffer_10  int8
+    mali0_Group40108002_9_buffer_11  int8
+    mali0_Group40108002_9_buffer_12  int8
+    mali0_Group40108002_9_buffer_13  int8
+    mali0_Group40108002_9_buffer_14  int8
+    mali0_Group40108002_9_buffer_15  int8
+    mali0_Group40108002_9_buffer_16  int8
+    mali0_Group40108002_9_buffer_17  int8
+    mali0_Group40108002_9_buffer_18  int8
+    mali0_Group40108002_9_buffer_19  int16
+    mali0_Group40108002_9_range_20  int8[0:247]
+    mali0_Group40108002_9_buffer_21  int8
+    mali0_Group40108002_9_buffer_22  int8
+    mali0_Group40108002_9_buffer_23  int8
+    mali0_Group40108002_9_buffer_24  int8
+    mali0_Group40108002_9_buffer_25  int8
+    mali0_Group40108002_9_buffer_26  int8
+    mali0_Group40108002_9_buffer_27  int8
+    mali0_Group40108002_9_buffer_28  int8
+    mali0_Group40108002_9_buffer_29  int8
+} [packed]
+mali0_Group40108002_9_struct_1 {
+    mali0_Group40108002_9_ptr_30  ptr[in, mali0_Group40108002_9_struct_2]
+    mali0_Group40108002_9_range_31  int32[1:4294967295]
+    mali0_Group40108002_9_const_32  const[64, int32]
+} [packed]
+ioctl$mali0_Group40108002_9(fd mali0_fd, cmd const[1074823170], arg ptr[in, mali0_Group40108002_9_struct_1]) 
+mali0_Group40108002_10_struct_2 {
+    mali0_Group40108002_10_buffer_3  int64
+    mali0_Group40108002_10_ptr_5  ptr[in, array[int8, 32]]
+    mali0_Group40108002_10_buffer_6  array[int8, 38]
+    mali0_Group40108002_10_range_7  int8[8:255]
+    mali0_Group40108002_10_buffer_8  int16
+    mali0_Group40108002_10_buffer_9  int8
+    mali0_Group40108002_10_buffer_10  int8
+    mali0_Group40108002_10_buffer_11  int8
+    mali0_Group40108002_10_buffer_12  int8
+    mali0_Group40108002_10_buffer_13  int8
+    mali0_Group40108002_10_buffer_14  int8
+    mali0_Group40108002_10_buffer_15  int8
+} [packed]
+mali0_Group40108002_10_struct_1 {
+    mali0_Group40108002_10_ptr_16  ptr[in, mali0_Group40108002_10_struct_2]
+    mali0_Group40108002_10_range_17  int32[1:4294967295]
+    mali0_Group40108002_10_const_18  const[64, int32]
+} [packed]
+ioctl$mali0_Group40108002_10(fd mali0_fd, cmd const[1074823170], arg ptr[in, mali0_Group40108002_10_struct_1]) 
+mali0_Group40108002_11_struct_2 {
+    mali0_Group40108002_11_ptr_4  ptr[in, array[int8, 32]]
+    mali0_Group40108002_11_buffer_5  int64
+    mali0_Group40108002_11_buffer_6  int64
+    mali0_Group40108002_11_buffer_7  int64
+    mali0_Group40108002_11_buffer_8  int16
+    mali0_Group40108002_11_buffer_9  int16
+    mali0_Group40108002_11_range_10  int8[1:255]
+    mali0_Group40108002_11_range_11  int8[1:2]
+    mali0_Group40108002_11_range_12  int8[1:255]
+    mali0_Group40108002_11_range_13  int8[1:2]
+    mali0_Group40108002_11_buffer_14  int8
+    mali0_Group40108002_11_buffer_15  int8
+    mali0_Group40108002_11_buffer_16  int8
+    mali0_Group40108002_11_buffer_17  int8
+    mali0_Group40108002_11_buffer_18  int16
+    mali0_Group40108002_11_range_19  int8[8:255]
+    mali0_Group40108002_11_buffer_20  int8
+    mali0_Group40108002_11_buffer_21  array[int8, 16]
+} [packed]
+mali0_Group40108002_11_struct_1 {
+    mali0_Group40108002_11_ptr_22  ptr[in, mali0_Group40108002_11_struct_2]
+    mali0_Group40108002_11_range_23  int32[1:4294967295]
+    mali0_Group40108002_11_const_24  const[48, int8]
+    mali0_Group40108002_11_const_25  const[0, int8]
+    mali0_Group40108002_11_const_26  const[0, int8]
+    mali0_Group40108002_11_const_27  const[0, int8]
+} [packed]
+ioctl$mali0_Group40108002_11(fd mali0_fd, cmd const[1074823170], arg ptr[in, mali0_Group40108002_11_struct_1]) 
+mali0_Group40108002_12_struct_2 {
+    mali0_Group40108002_12_buffer_3  int64
+    mali0_Group40108002_12_buffer_4  int64
+    mali0_Group40108002_12_buffer_5  int64
+    mali0_Group40108002_12_buffer_6  int64
+    mali0_Group40108002_12_buffer_7  int64
+    mali0_Group40108002_12_buffer_8  int16
+    mali0_Group40108002_12_buffer_9  int16
+    mali0_Group40108002_12_const_10  const[0, int8]
+    mali0_Group40108002_12_buffer_11  int8
+    mali0_Group40108002_12_range_12  int8[1:255]
+    mali0_Group40108002_12_range_13  int8[1:2]
+    mali0_Group40108002_12_buffer_14  int8
+    mali0_Group40108002_12_buffer_15  int8
+    mali0_Group40108002_12_buffer_16  int8
+    mali0_Group40108002_12_buffer_17  int8
+    mali0_Group40108002_12_buffer_18  int16
+    mali0_Group40108002_12_range_19  int8[0:247]
+    mali0_Group40108002_12_buffer_20  int8
+    mali0_Group40108002_12_buffer_21  int8
+    mali0_Group40108002_12_buffer_22  int8
+    mali0_Group40108002_12_buffer_23  int8
+    mali0_Group40108002_12_buffer_24  int8
+    mali0_Group40108002_12_buffer_25  int8
+    mali0_Group40108002_12_buffer_26  int8
+    mali0_Group40108002_12_buffer_27  int8
+    mali0_Group40108002_12_buffer_28  int8
+} [packed]
+mali0_Group40108002_12_struct_1 {
+    mali0_Group40108002_12_ptr_29  ptr[in, mali0_Group40108002_12_struct_2]
+    mali0_Group40108002_12_range_30  int32[1:4294967295]
+    mali0_Group40108002_12_const_31  const[64, int32]
+} [packed]
+ioctl$mali0_Group40108002_12(fd mali0_fd, cmd const[1074823170], arg ptr[in, mali0_Group40108002_12_struct_1]) 
+mali0_Group40108002_13_struct_2 {
+    mali0_Group40108002_13_buffer_3  int64
+    mali0_Group40108002_13_buffer_4  int64
+    mali0_Group40108002_13_buffer_5  int64
+    mali0_Group40108002_13_buffer_6  int64
+    mali0_Group40108002_13_buffer_7  int64
+    mali0_Group40108002_13_buffer_8  int16
+    mali0_Group40108002_13_buffer_9  int8
+    mali0_Group40108002_13_buffer_10  int8
+    mali0_Group40108002_13_range_11  int8[1:255]
+    mali0_Group40108002_13_range_12  int8[1:2]
+    mali0_Group40108002_13_buffer_13  int8
+    mali0_Group40108002_13_buffer_14  int8
+    mali0_Group40108002_13_buffer_15  int8
+    mali0_Group40108002_13_buffer_16  int8
+    mali0_Group40108002_13_buffer_17  int8
+    mali0_Group40108002_13_buffer_18  int8
+    mali0_Group40108002_13_buffer_19  int16
+    mali0_Group40108002_13_range_20  int8[0:247]
+    mali0_Group40108002_13_buffer_21  int8
+    mali0_Group40108002_13_buffer_22  int8
+    mali0_Group40108002_13_buffer_23  int8
+    mali0_Group40108002_13_buffer_24  int8
+    mali0_Group40108002_13_buffer_25  int8
+    mali0_Group40108002_13_buffer_26  int8
+    mali0_Group40108002_13_buffer_27  int8
+    mali0_Group40108002_13_buffer_28  int8
+    mali0_Group40108002_13_buffer_29  int8
+} [packed]
+mali0_Group40108002_13_struct_1 {
+    mali0_Group40108002_13_ptr_30  ptr[in, mali0_Group40108002_13_struct_2]
+    mali0_Group40108002_13_range_31  int32[1:4294967295]
+    mali0_Group40108002_13_const_32  const[64, int32]
+} [packed]
+ioctl$mali0_Group40108002_13(fd mali0_fd, cmd const[1074823170], arg ptr[in, mali0_Group40108002_13_struct_1]) 
+mali0_Group40108003_0_struct_1 {
+    mali0_Group40108003_0_ptr_3  ptr[out, array[int8]]
+    mali0_Group40108003_0_buffer_4  int32
+    mali0_Group40108003_0_buffer_5  int8
+    mali0_Group40108003_0_buffer_6  int8
+    mali0_Group40108003_0_buffer_7  int8
+    mali0_Group40108003_0_buffer_8  int8
+} [packed]
+ioctl$mali0_Group40108003_0(fd mali0_fd, cmd const[1074823171], arg ptr[in, mali0_Group40108003_0_struct_1]) 
+mali0_Group4010801b_0_struct_1 {
+    mali0_Group4010801b_0_ptr_3  ptr[in, array[int8]]
+    mali0_Group4010801b_0_range_4  len[mali0_Group4010801b_0_ptr_3, int32]
+    mali0_Group4010801b_0_buffer_5  int32
+} [packed]
+ioctl$mali0_Group4010801b_0(fd mali0_fd, cmd const[1074823195], arg ptr[in, mali0_Group4010801b_0_struct_1]) 
+ioctl$mali0_Group40048012_0(fd mali0_fd, cmd const[1074036754], arg ptr[in, int32]) 
+mali0_Groupc0208015_0_struct_1 {
+    mali0_Groupc0208015_0_buffer_2  array[int8, 16]
+    mali0_Groupc0208015_0_buffer_3  int64
+    mali0_Groupc0208015_0_buffer_4  int64
+} [packed]
+ioctl$mali0_Groupc0208015_0(fd mali0_fd, cmd const[3223355413], arg ptr[inout, mali0_Groupc0208015_0_struct_1]) 
+mali0_Groupc0208015_1_struct_1 {
+    mali0_Groupc0208015_1_buffer_2  array[int8, 16]
+    mali0_Groupc0208015_1_range_3  int64[1:24576]
+    mali0_Groupc0208015_1_buffer_4  int64
+} [packed]
+ioctl$mali0_Groupc0208015_1(fd mali0_fd, cmd const[3223355413], arg ptr[inout, mali0_Groupc0208015_1_struct_1]) 
+ioctl$mali0_Group8004_0(fd mali0_fd, cmd const[32772], arg intptr) 
+ioctl$mali0_Group8013_0(fd mali0_fd, cmd const[32787], arg intptr) 
+ioctl$mali0_Group800b_0(fd mali0_fd, cmd const[32779], arg intptr) 
+ioctl$mali0_Group800a_0(fd mali0_fd, cmd const[32778], arg intptr) 
+ioctl$mali0_Groupc0018036_0(fd mali0_fd, cmd const[3221323830], arg ptr[inout, int8]) 
+ioctl$mali0_Group8004800c_0(fd mali0_fd, cmd const[2147778572], arg ptr[out, int32]) 
+mali0_Groupc0108006_0_flag_2 = 53248, 16384, 28672, 49152, 8192, 0, 20480, 24576, 32768, 40960, 36864, 4096, 61440, 12288, 45056, 57344
+mali0_Groupc0108006_0_struct_1 {
+    mali0_Groupc0108006_0_flag_2  flags[mali0_Groupc0108006_0_flag_2, int16]
+    mali0_Groupc0108006_0_buffer_3  array[int8, 6]
+    mali0_Groupc0108006_0_range_4  int64[1:18446744069414584321]
+} [packed]
+ioctl$mali0_Groupc0108006_0(fd mali0_fd, cmd const[3222306822], arg ptr[inout, mali0_Groupc0108006_0_struct_1]) 
+mali0_Groupc0108006_1_flag_3 = 64, 0, 96, 128, 224, 160, 32, 192, 112, 144, 80, 208, 16, 176, 240, 48
+mali0_Groupc0108006_1_struct_1 {
+    mali0_Groupc0108006_1_const_2  const[0, int8]
+    mali0_Groupc0108006_1_flag_3  flags[mali0_Groupc0108006_1_flag_3, int8]
+    mali0_Groupc0108006_1_buffer_4  array[int8, 6]
+    mali0_Groupc0108006_1_range_5  int8[1:255]
+    mali0_Groupc0108006_1_buffer_6  int8
+    mali0_Groupc0108006_1_buffer_7  int8
+    mali0_Groupc0108006_1_buffer_8  int8
+    mali0_Groupc0108006_1_buffer_9  int8
+    mali0_Groupc0108006_1_buffer_10  int8
+    mali0_Groupc0108006_1_buffer_11  int8
+    mali0_Groupc0108006_1_buffer_12  int8
+} [packed]
+ioctl$mali0_Groupc0108006_1(fd mali0_fd, cmd const[3222306822], arg ptr[inout, mali0_Groupc0108006_1_struct_1]) 
+mali0_Groupc0108006_2_flag_3 = 192, 224, 32, 96, 128, 0, 64, 160, 144, 80, 240, 16, 176, 48, 112, 208
+mali0_Groupc0108006_2_struct_1 {
+    mali0_Groupc0108006_2_const_2  const[0, int8]
+    mali0_Groupc0108006_2_flag_3  flags[mali0_Groupc0108006_2_flag_3, int8]
+    mali0_Groupc0108006_2_buffer_4  array[int8, 6]
+    mali0_Groupc0108006_2_range_5  int64[1:18446744069414584321]
+} [packed]
+ioctl$mali0_Groupc0108006_2(fd mali0_fd, cmd const[3222306822], arg ptr[inout, mali0_Groupc0108006_2_struct_1]) 
+mali0_Groupc0188010_0_struct_1 {
+    mali0_Groupc0188010_0_buffer_2  int64
+    mali0_Groupc0188010_0_range_3  int64[0:18446744069414584320]
+    mali0_Groupc0188010_0_buffer_4  int64
+} [packed]
+ioctl$mali0_Groupc0188010_0(fd mali0_fd, cmd const[3222831120], arg ptr[inout, mali0_Groupc0188010_0_struct_1]) 
+mali0_Groupc0188010_1_struct_1 {
+    mali0_Groupc0188010_1_buffer_2  int64
+    mali0_Groupc0188010_1_buffer_3  int32
+    mali0_Groupc0188010_1_buffer_4  int32
+    mali0_Groupc0188010_1_buffer_5  int64
+} [packed]
+ioctl$mali0_Groupc0188010_1(fd mali0_fd, cmd const[3222831120], arg ptr[inout, mali0_Groupc0188010_1_struct_1]) 
+mali0_Group40208018_0_struct_1 {
+    mali0_Group40208018_0_buffer_2  array[int8, 31]
+    mali0_Group40208018_0_const_3  const[0, int8]
+} [packed]
+ioctl$mali0_Group40208018_0(fd mali0_fd, cmd const[1075871768], arg ptr[in, mali0_Group40208018_0_struct_1]) 
+mali0_Group4018800e_0_struct_1 {
+    mali0_Group4018800e_0_buffer_2  int64
+    mali0_Group4018800e_0_buffer_3  int8
+    mali0_Group4018800e_0_range_4  int8[0:100]
+    mali0_Group4018800e_0_range_5  int8[0:15]
+    mali0_Group4018800e_0_const_6  const[0, int8]
+    mali0_Group4018800e_0_const_7  const[0, int8]
+    mali0_Group4018800e_0_const_8  const[0, int8]
+    mali0_Group4018800e_0_const_9  const[0, int8]
+    mali0_Group4018800e_0_const_10  const[0, int8]
+    mali0_Group4018800e_0_buffer_11  int64
+} [packed]
+ioctl$mali0_Group4018800e_0(fd mali0_fd, cmd const[1075347470], arg ptr[in, mali0_Group4018800e_0_struct_1]) 
+mali0_Group4018800e_1_struct_1 {
+    mali0_Group4018800e_1_range_2  int64[1:18446744069414584321]
+    mali0_Group4018800e_1_buffer_3  int8
+    mali0_Group4018800e_1_range_4  int8[0:100]
+    mali0_Group4018800e_1_range_5  int8[0:15]
+    mali0_Group4018800e_1_const_6  const[0, int8]
+    mali0_Group4018800e_1_const_7  const[0, int8]
+    mali0_Group4018800e_1_const_8  const[0, int8]
+    mali0_Group4018800e_1_const_9  const[0, int8]
+    mali0_Group4018800e_1_const_10  const[0, int8]
+    mali0_Group4018800e_1_range_11  int64[0:18446744069414584320]
+} [packed]
+ioctl$mali0_Group4018800e_1(fd mali0_fd, cmd const[1075347470], arg ptr[in, mali0_Group4018800e_1_struct_1]) 
+ioctl$mali0_Group40088026_0(fd mali0_fd, cmd const[1074298918], arg ptr[in, int64[1:1048576]]) 
+ioctl$mali0_Group40048019_0(fd mali0_fd, cmd const[1074036761], arg ptr[in, int32[0:4294967294]]) 
+ioctl$mali0_Group40048019_1(fd mali0_fd, cmd const[1074036761], arg ptr[in, int32]) 
+mali0_Groupc0208032_0_struct_1 {
+    mali0_Groupc0208032_0_buffer_2  int8
+    mali0_Groupc0208032_0_buffer_3  int8
+    mali0_Groupc0208032_0_buffer_4  int16
+    mali0_Groupc0208032_0_buffer_5  array[int8, 28]
+} [packed]
+ioctl$mali0_Groupc0208032_0(fd mali0_fd, cmd const[3223355442], arg ptr[in, mali0_Groupc0208032_0_struct_1]) 
+mali0_Groupc0088033_0_flag_2 = 16384, 2048, 4096, 64, 128, 256, 1024, 32, 8, 1, 8192, 2, 4, 32768, 16, 512
+mali0_Groupc0088033_0_struct_1 {
+    mali0_Groupc0088033_0_flag_2  flags[mali0_Groupc0088033_0_flag_2, int16]
+    mali0_Groupc0088033_0_const_3  const[0, int8]
+    mali0_Groupc0088033_0_const_4  const[0, int8]
+    mali0_Groupc0088033_0_const_5  const[0, int8]
+    mali0_Groupc0088033_0_const_6  const[0, int8]
+    mali0_Groupc0088033_0_const_7  const[0, int8]
+    mali0_Groupc0088033_0_range_8  int8[1:255]
+} [packed]
+ioctl$mali0_Groupc0088033_0(fd mali0_fd, cmd const[3221782579], arg ptr[inout, mali0_Groupc0088033_0_struct_1]) 
+mali0_Groupc0088033_1_flag_2 = 32, 32768, 1024, 2048, 1, 8192, 512, 4096, 2, 8, 16384, 4, 128, 256, 16, 64
+mali0_Groupc0088033_1_struct_1 {
+    mali0_Groupc0088033_1_flag_2  flags[mali0_Groupc0088033_1_flag_2, int16]
+    mali0_Groupc0088033_1_const_3  const[0, int8]
+    mali0_Groupc0088033_1_const_4  const[0, int8]
+    mali0_Groupc0088033_1_const_5  const[0, int8]
+    mali0_Groupc0088033_1_range_6  int8[1:255]
+    mali0_Groupc0088033_1_buffer_7  int16
+} [packed]
+ioctl$mali0_Groupc0088033_1(fd mali0_fd, cmd const[3221782579], arg ptr[inout, mali0_Groupc0088033_1_struct_1]) 
+mali0_Groupc0088033_2_flag_2 = 32768, 1, 32, 4096, 128, 16384, 2, 256, 8, 64, 8192, 4, 1024, 2048, 16, 512
+mali0_Groupc0088033_2_struct_1 {
+    mali0_Groupc0088033_2_flag_2  flags[mali0_Groupc0088033_2_flag_2, int16]
+    mali0_Groupc0088033_2_const_3  const[0, int8]
+    mali0_Groupc0088033_2_const_4  const[0, int8]
+    mali0_Groupc0088033_2_const_5  const[0, int8]
+    mali0_Groupc0088033_2_const_6  const[0, int8]
+    mali0_Groupc0088033_2_range_7  int8[1:255]
+    mali0_Groupc0088033_2_buffer_8  int8
+} [packed]
+ioctl$mali0_Groupc0088033_2(fd mali0_fd, cmd const[3221782579], arg ptr[inout, mali0_Groupc0088033_2_struct_1]) 
+mali0_Groupc0088033_3_struct_1 {
+    mali0_Groupc0088033_3_buffer_2  int16
+    mali0_Groupc0088033_3_buffer_3  int8
+    mali0_Groupc0088033_3_buffer_4  int8
+    mali0_Groupc0088033_3_buffer_5  int8
+    mali0_Groupc0088033_3_buffer_6  int8
+    mali0_Groupc0088033_3_buffer_7  int8
+    mali0_Groupc0088033_3_buffer_8  int8
+} [packed]
+ioctl$mali0_Groupc0088033_3(fd mali0_fd, cmd const[3221782579], arg ptr[inout, mali0_Groupc0088033_3_struct_1]) 
+mali0_Groupc0088033_4_flag_2 = 2048, 512, 4096, 64, 1, 32768, 8192, 2, 8, 32, 4, 1024, 128, 256, 16, 16384
+mali0_Groupc0088033_4_struct_1 {
+    mali0_Groupc0088033_4_flag_2  flags[mali0_Groupc0088033_4_flag_2, int16]
+    mali0_Groupc0088033_4_range_3  int8[1:255]
+    mali0_Groupc0088033_4_buffer_4  array[int8, 5]
+} [packed]
+ioctl$mali0_Groupc0088033_4(fd mali0_fd, cmd const[3221782579], arg ptr[inout, mali0_Groupc0088033_4_struct_1]) 
+mali0_Groupc0088033_5_flag_2 = 1024, 512, 64, 16384, 8192, 1, 2, 32768, 8, 32, 4096, 4, 128, 2048, 256, 16
+mali0_Groupc0088033_5_struct_1 {
+    mali0_Groupc0088033_5_flag_2  flags[mali0_Groupc0088033_5_flag_2, int16]
+    mali0_Groupc0088033_5_const_3  const[0, int8]
+    mali0_Groupc0088033_5_range_4  int8[1:255]
+    mali0_Groupc0088033_5_buffer_5  int32
+} [packed]
+ioctl$mali0_Groupc0088033_5(fd mali0_fd, cmd const[3221782579], arg ptr[inout, mali0_Groupc0088033_5_struct_1]) 
+mali0_Groupc0088033_6_flag_2 = 32, 32768, 64, 1, 256, 512, 2, 8192, 8, 2048, 4096, 128, 1024, 4, 16, 16384
+mali0_Groupc0088033_6_struct_1 {
+    mali0_Groupc0088033_6_flag_2  flags[mali0_Groupc0088033_6_flag_2, int16]
+    mali0_Groupc0088033_6_const_3  const[0, int8]
+    mali0_Groupc0088033_6_const_4  const[0, int8]
+    mali0_Groupc0088033_6_range_5  int8[1:255]
+    mali0_Groupc0088033_6_buffer_6  array[int8, 3]
+} [packed]
+ioctl$mali0_Groupc0088033_6(fd mali0_fd, cmd const[3221782579], arg ptr[inout, mali0_Groupc0088033_6_struct_1]) 
+ioctl$mali0_Group80048011_0(fd mali0_fd, cmd const[2147778577], arg ptr[out, int32]) 
+mali0_Groupc010801f_0_struct_1 {
+    mali0_Groupc010801f_0_buffer_2  int8
+    mali0_Groupc010801f_0_buffer_3  int8
+    mali0_Groupc010801f_0_buffer_4  array[int8, 6]
+    mali0_Groupc010801f_0_buffer_5  int64
+} [packed]
+ioctl$mali0_Groupc010801f_0(fd mali0_fd, cmd const[3222306847], arg ptr[inout, mali0_Groupc010801f_0_struct_1]) 
+mali0_Groupc0188016_0_struct_3 {
+    mali0_Groupc0188016_0_range_4  int32[0:4294967232, 64]
+    mali0_Groupc0188016_0_buffer_5  int32
+    mali0_Groupc0188016_0_range_6  int64[0:18446744069414584320, 64]
+    mali0_Groupc0188016_0_buffer_7  array[int8, 128]
+    mali0_Groupc0188016_0_range_8  int64[0:18446744069414584320]
+    mali0_Groupc0188016_0_buffer_9  array[int8, 247]
+    mali0_Groupc0188016_0_buffer_10  int8
+    mali0_Groupc0188016_0_buffer_11  array[int8, 1232]
+    mali0_Groupc0188016_0_buffer_12  int64
+    mali0_Groupc0188016_0_buffer_13  int8
+    mali0_Groupc0188016_0_buffer_14  array[int8, 56]
+    mali0_Groupc0188016_0_buffer_15  int64
+    mali0_Groupc0188016_0_buffer_16  array[int8]
+} [packed]
+mali0_Groupc0188016_0_struct_1 {
+    mali0_Groupc0188016_0_range_2  int64[4:18446744069414584324]
+    mali0_Groupc0188016_0_ptr_17  ptr[in, mali0_Groupc0188016_0_struct_3]
+    mali0_Groupc0188016_0_const_18  const[3, int8]
+    mali0_Groupc0188016_0_const_19  const[0, int8]
+    mali0_Groupc0188016_0_const_20  const[0, int8]
+    mali0_Groupc0188016_0_const_21  const[0, int8]
+    mali0_Groupc0188016_0_const_22  const[0, int8]
+    mali0_Groupc0188016_0_const_23  const[0, int8]
+    mali0_Groupc0188016_0_const_24  const[0, int8]
+    mali0_Groupc0188016_0_const_25  const[0, int8]
+} [packed]
+ioctl$mali0_Groupc0188016_0(fd mali0_fd, cmd const[3222831126], arg ptr[inout, mali0_Groupc0188016_0_struct_1]) 
+mali0_Groupc0188016_1_struct_3 {
+    mali0_Groupc0188016_1_buffer_4  int64
+    mali0_Groupc0188016_1_buffer_5  int64
+    mali0_Groupc0188016_1_buffer_6  array[int8, 128]
+    mali0_Groupc0188016_1_buffer_7  int8
+    mali0_Groupc0188016_1_range_8  int8[4:255]
+    mali0_Groupc0188016_1_buffer_9  int16
+    mali0_Groupc0188016_1_buffer_10  int32
+    mali0_Groupc0188016_1_buffer_11  array[int8, 247]
+    mali0_Groupc0188016_1_buffer_12  int8
+    mali0_Groupc0188016_1_buffer_13  array[int8, 1232]
+    mali0_Groupc0188016_1_buffer_14  int64
+    mali0_Groupc0188016_1_buffer_15  int8
+    mali0_Groupc0188016_1_buffer_16  array[int8, 56]
+    mali0_Groupc0188016_1_buffer_17  int64
+    mali0_Groupc0188016_1_buffer_18  array[int8]
+} [packed]
+mali0_Groupc0188016_1_struct_1 {
+    mali0_Groupc0188016_1_range_2  int64[4:18446744069414584324]
+    mali0_Groupc0188016_1_ptr_19  ptr[in, mali0_Groupc0188016_1_struct_3]
+    mali0_Groupc0188016_1_const_20  const[3, int8]
+    mali0_Groupc0188016_1_const_21  const[0, int8]
+    mali0_Groupc0188016_1_const_22  const[0, int8]
+    mali0_Groupc0188016_1_const_23  const[0, int8]
+    mali0_Groupc0188016_1_const_24  const[0, int8]
+    mali0_Groupc0188016_1_const_25  const[0, int8]
+    mali0_Groupc0188016_1_const_26  const[0, int8]
+    mali0_Groupc0188016_1_const_27  const[0, int8]
+} [packed]
+ioctl$mali0_Groupc0188016_1(fd mali0_fd, cmd const[3222831126], arg ptr[inout, mali0_Groupc0188016_1_struct_1]) 
+mali0_Groupc0188016_2_struct_3 {
+    mali0_Groupc0188016_2_buffer_4  int64
+    mali0_Groupc0188016_2_buffer_5  int64
+    mali0_Groupc0188016_2_buffer_6  array[int8, 128]
+    mali0_Groupc0188016_2_range_7  int64[0:18446744069414584320]
+    mali0_Groupc0188016_2_buffer_8  array[int8, 247]
+    mali0_Groupc0188016_2_buffer_9  int8
+    mali0_Groupc0188016_2_buffer_10  array[int8, 1232]
+    mali0_Groupc0188016_2_buffer_11  int64
+    mali0_Groupc0188016_2_buffer_12  int8
+    mali0_Groupc0188016_2_buffer_13  array[int8, 56]
+    mali0_Groupc0188016_2_buffer_14  int64
+    mali0_Groupc0188016_2_buffer_15  array[int8]
+} [packed]
+mali0_Groupc0188016_2_struct_1 {
+    mali0_Groupc0188016_2_range_2  int64[4:18446744069414584324]
+    mali0_Groupc0188016_2_ptr_16  ptr[in, mali0_Groupc0188016_2_struct_3]
+    mali0_Groupc0188016_2_const_17  const[3, int8]
+    mali0_Groupc0188016_2_const_18  const[0, int8]
+    mali0_Groupc0188016_2_const_19  const[0, int8]
+    mali0_Groupc0188016_2_const_20  const[0, int8]
+    mali0_Groupc0188016_2_const_21  const[0, int8]
+    mali0_Groupc0188016_2_const_22  const[0, int8]
+    mali0_Groupc0188016_2_const_23  const[0, int8]
+    mali0_Groupc0188016_2_const_24  const[0, int8]
+} [packed]
+ioctl$mali0_Groupc0188016_2(fd mali0_fd, cmd const[3222831126], arg ptr[inout, mali0_Groupc0188016_2_struct_1]) 
+mali0_Groupc0188016_3_struct_3 {
+    mali0_Groupc0188016_3_range_4  int64[0:18446744069414584320, 64]
+    mali0_Groupc0188016_3_range_5  int64[0:18446744069414584320, 64]
+    mali0_Groupc0188016_3_buffer_6  array[int8, 128]
+    mali0_Groupc0188016_3_range_7  int64[0:18446744069414584320]
+    mali0_Groupc0188016_3_buffer_8  array[int8, 247]
+    mali0_Groupc0188016_3_buffer_9  int8
+    mali0_Groupc0188016_3_buffer_10  array[int8, 1232]
+    mali0_Groupc0188016_3_buffer_11  int64
+    mali0_Groupc0188016_3_buffer_12  int8
+    mali0_Groupc0188016_3_buffer_13  array[int8, 56]
+    mali0_Groupc0188016_3_buffer_14  int64
+    mali0_Groupc0188016_3_buffer_15  array[int8]
+} [packed]
+mali0_Groupc0188016_3_struct_1 {
+    mali0_Groupc0188016_3_range_2  int64[4:18446744069414584324]
+    mali0_Groupc0188016_3_ptr_16  ptr[in, mali0_Groupc0188016_3_struct_3]
+    mali0_Groupc0188016_3_const_17  const[3, int8]
+    mali0_Groupc0188016_3_const_18  const[0, int8]
+    mali0_Groupc0188016_3_const_19  const[0, int8]
+    mali0_Groupc0188016_3_const_20  const[0, int8]
+    mali0_Groupc0188016_3_const_21  const[0, int8]
+    mali0_Groupc0188016_3_const_22  const[0, int8]
+    mali0_Groupc0188016_3_const_23  const[0, int8]
+    mali0_Groupc0188016_3_const_24  const[0, int8]
+} [packed]
+ioctl$mali0_Groupc0188016_3(fd mali0_fd, cmd const[3222831126], arg ptr[inout, mali0_Groupc0188016_3_struct_1]) 
+mali0_Groupc0188016_4_struct_3 {
+    mali0_Groupc0188016_4_buffer_4  int64
+    mali0_Groupc0188016_4_buffer_5  int64
+    mali0_Groupc0188016_4_buffer_6  array[int8, 128]
+    mali0_Groupc0188016_4_range_7  int64[0:18446744069414584320]
+    mali0_Groupc0188016_4_buffer_8  array[int8, 247]
+    mali0_Groupc0188016_4_buffer_9  int8
+    mali0_Groupc0188016_4_buffer_10  array[int8, 1232]
+    mali0_Groupc0188016_4_buffer_11  int64
+    mali0_Groupc0188016_4_buffer_12  int8
+    mali0_Groupc0188016_4_buffer_13  array[int8, 56]
+    mali0_Groupc0188016_4_buffer_14  int64
+    mali0_Groupc0188016_4_buffer_15  array[int8]
+} [packed]
+mali0_Groupc0188016_4_struct_1 {
+    mali0_Groupc0188016_4_range_2  int64[4:18446744069414584324]
+    mali0_Groupc0188016_4_ptr_16  ptr[in, mali0_Groupc0188016_4_struct_3]
+    mali0_Groupc0188016_4_const_17  const[3, int8]
+    mali0_Groupc0188016_4_const_18  const[0, int8]
+    mali0_Groupc0188016_4_const_19  const[0, int8]
+    mali0_Groupc0188016_4_const_20  const[0, int8]
+    mali0_Groupc0188016_4_const_21  const[0, int8]
+    mali0_Groupc0188016_4_const_22  const[0, int8]
+    mali0_Groupc0188016_4_const_23  const[0, int8]
+    mali0_Groupc0188016_4_const_24  const[0, int8]
+} [packed]
+ioctl$mali0_Groupc0188016_4(fd mali0_fd, cmd const[3222831126], arg ptr[inout, mali0_Groupc0188016_4_struct_1]) 
+mali0_Groupc0188016_5_struct_3 {
+    mali0_Groupc0188016_5_range_4  int64[0:18446744069414584320]
+    mali0_Groupc0188016_5_buffer_5  int64
+    mali0_Groupc0188016_5_buffer_6  array[int8, 128]
+    mali0_Groupc0188016_5_buffer_7  int8
+    mali0_Groupc0188016_5_range_8  int8[4:255]
+    mali0_Groupc0188016_5_buffer_9  int16
+    mali0_Groupc0188016_5_buffer_10  int32
+    mali0_Groupc0188016_5_buffer_11  array[int8, 247]
+    mali0_Groupc0188016_5_buffer_12  int8
+    mali0_Groupc0188016_5_buffer_13  array[int8, 1232]
+    mali0_Groupc0188016_5_buffer_14  int64
+    mali0_Groupc0188016_5_buffer_15  int8
+    mali0_Groupc0188016_5_buffer_16  array[int8, 56]
+    mali0_Groupc0188016_5_buffer_17  int64
+    mali0_Groupc0188016_5_buffer_18  array[int8]
+} [packed]
+mali0_Groupc0188016_5_struct_1 {
+    mali0_Groupc0188016_5_range_2  int64[4:18446744069414584324]
+    mali0_Groupc0188016_5_ptr_19  ptr[in, mali0_Groupc0188016_5_struct_3]
+    mali0_Groupc0188016_5_const_20  const[3, int8]
+    mali0_Groupc0188016_5_const_21  const[0, int8]
+    mali0_Groupc0188016_5_const_22  const[0, int8]
+    mali0_Groupc0188016_5_const_23  const[0, int8]
+    mali0_Groupc0188016_5_const_24  const[0, int8]
+    mali0_Groupc0188016_5_const_25  const[0, int8]
+    mali0_Groupc0188016_5_const_26  const[0, int8]
+    mali0_Groupc0188016_5_const_27  const[0, int8]
+} [packed]
+ioctl$mali0_Groupc0188016_5(fd mali0_fd, cmd const[3222831126], arg ptr[inout, mali0_Groupc0188016_5_struct_1]) 
+mali0_Groupc0188016_6_struct_3 {
+    mali0_Groupc0188016_6_range_4  int64[0:18446744069414584320, 64]
+    mali0_Groupc0188016_6_range_5  int64[0:18446744069414584320, 64]
+    mali0_Groupc0188016_6_buffer_6  array[int8, 128]
+    mali0_Groupc0188016_6_range_7  int64[0:18446744069414584320]
+    mali0_Groupc0188016_6_buffer_8  array[int8, 247]
+    mali0_Groupc0188016_6_buffer_9  int8
+    mali0_Groupc0188016_6_buffer_10  array[int8, 1232]
+    mali0_Groupc0188016_6_buffer_11  int64
+    mali0_Groupc0188016_6_buffer_12  int8
+    mali0_Groupc0188016_6_buffer_13  array[int8, 56]
+    mali0_Groupc0188016_6_buffer_14  int64
+    mali0_Groupc0188016_6_buffer_15  array[int8]
+} [packed]
+mali0_Groupc0188016_6_struct_1 {
+    mali0_Groupc0188016_6_range_2  int64[33796:18446744069414618116]
+    mali0_Groupc0188016_6_ptr_16  ptr[in, mali0_Groupc0188016_6_struct_3]
+    mali0_Groupc0188016_6_const_17  const[3, int8]
+    mali0_Groupc0188016_6_const_18  const[0, int8]
+    mali0_Groupc0188016_6_const_19  const[0, int8]
+    mali0_Groupc0188016_6_const_20  const[0, int8]
+    mali0_Groupc0188016_6_const_21  const[0, int8]
+    mali0_Groupc0188016_6_const_22  const[0, int8]
+    mali0_Groupc0188016_6_const_23  const[0, int8]
+    mali0_Groupc0188016_6_const_24  const[0, int8]
+} [packed]
+ioctl$mali0_Groupc0188016_6(fd mali0_fd, cmd const[3222831126], arg ptr[inout, mali0_Groupc0188016_6_struct_1]) 
+mali0_Groupc0208005_0_struct_1 {
+    mali0_Groupc0208005_0_buffer_2  int64
+    mali0_Groupc0208005_0_buffer_3  int64
+    mali0_Groupc0208005_0_buffer_4  int64
+    mali0_Groupc0208005_0_range_5  int64[0:18446744069414584320]
+} [packed]
+ioctl$mali0_Groupc0208005_0(fd mali0_fd, cmd const[3223355397], arg ptr[inout, mali0_Groupc0208005_0_struct_1]) 
+mali0_Groupc0208005_1_struct_1 {
+    mali0_Groupc0208005_1_buffer_2  int64
+    mali0_Groupc0208005_1_buffer_3  int64
+    mali0_Groupc0208005_1_buffer_4  int64
+    mali0_Groupc0208005_1_range_5  int64[2:18446744069414584322, 2]
+} [packed]
+ioctl$mali0_Groupc0208005_1(fd mali0_fd, cmd const[3223355397], arg ptr[inout, mali0_Groupc0208005_1_struct_1]) 
+mali0_Groupc0208005_2_flag_11 = 512, 1, 64, 128, 256, 32, 2, 4, 8, 16
+mali0_Groupc0208005_2_struct_1 {
+    mali0_Groupc0208005_2_buffer_2  int8
+    mali0_Groupc0208005_2_buffer_3  int8
+    mali0_Groupc0208005_2_range_4  int8[0:32]
+    mali0_Groupc0208005_2_const_5  const[0, int8]
+    mali0_Groupc0208005_2_const_6  const[0, int8]
+    mali0_Groupc0208005_2_const_7  const[0, int8]
+    mali0_Groupc0208005_2_const_8  const[0, int8]
+    mali0_Groupc0208005_2_const_9  const[0, int8]
+    mali0_Groupc0208005_2_range_10  int64[0:512]
+    mali0_Groupc0208005_2_flag_11  flags[mali0_Groupc0208005_2_flag_11, int64]
+    mali0_Groupc0208005_2_range_12  int64[3178502:18446744069417762822]
+} [packed]
+ioctl$mali0_Groupc0208005_2(fd mali0_fd, cmd const[3223355397], arg ptr[inout, mali0_Groupc0208005_2_struct_1]) 
+mali0_Groupc0208005_3_struct_1 {
+    mali0_Groupc0208005_3_range_2  int64[1:2097152]
+    mali0_Groupc0208005_3_buffer_3  int64
+    mali0_Groupc0208005_3_range_4  int64[1:18446744069414584321]
+    mali0_Groupc0208005_3_range_5  int64[6:18446744069414584326]
+} [packed]
+ioctl$mali0_Groupc0208005_3(fd mali0_fd, cmd const[3223355397], arg ptr[inout, mali0_Groupc0208005_3_struct_1]) 
+mali0_Groupc0208005_4_struct_1 {
+    mali0_Groupc0208005_4_buffer_2  int8
+    mali0_Groupc0208005_4_buffer_3  int8
+    mali0_Groupc0208005_4_range_4  int8[0:32]
+    mali0_Groupc0208005_4_const_5  const[0, int8]
+    mali0_Groupc0208005_4_const_6  const[0, int8]
+    mali0_Groupc0208005_4_const_7  const[0, int8]
+    mali0_Groupc0208005_4_const_8  const[0, int8]
+    mali0_Groupc0208005_4_const_9  const[0, int8]
+    mali0_Groupc0208005_4_buffer_10  int64
+    mali0_Groupc0208005_4_buffer_11  int8
+    mali0_Groupc0208005_4_buffer_12  int8
+    mali0_Groupc0208005_4_buffer_13  int8
+    mali0_Groupc0208005_4_buffer_14  int8
+    mali0_Groupc0208005_4_buffer_15  int8
+    mali0_Groupc0208005_4_buffer_16  int8
+    mali0_Groupc0208005_4_buffer_17  int8
+    mali0_Groupc0208005_4_buffer_18  int8
+    mali0_Groupc0208005_4_range_19  int64[6:18446744069414584326]
+} [packed]
+ioctl$mali0_Groupc0208005_4(fd mali0_fd, cmd const[3223355397], arg ptr[inout, mali0_Groupc0208005_4_struct_1]) 
+mali0_Groupc0208005_5_struct_1 {
+    mali0_Groupc0208005_5_range_2  int64[1:2097152]
+    mali0_Groupc0208005_5_buffer_3  int64
+    mali0_Groupc0208005_5_buffer_4  int64
+    mali0_Groupc0208005_5_range_5  int64[22:18446744069414584342]
+} [packed]
+ioctl$mali0_Groupc0208005_5(fd mali0_fd, cmd const[3223355397], arg ptr[inout, mali0_Groupc0208005_5_struct_1]) 
+mali0_Groupc0208005_6_struct_1 {
+    mali0_Groupc0208005_6_buffer_2  int8
+    mali0_Groupc0208005_6_buffer_3  int8
+    mali0_Groupc0208005_6_range_4  int8[0:16]
+    mali0_Groupc0208005_6_const_5  const[0, int8]
+    mali0_Groupc0208005_6_const_6  const[0, int8]
+    mali0_Groupc0208005_6_const_7  const[0, int8]
+    mali0_Groupc0208005_6_const_8  const[0, int8]
+    mali0_Groupc0208005_6_const_9  const[0, int8]
+    mali0_Groupc0208005_6_buffer_10  int64
+    mali0_Groupc0208005_6_buffer_11  int8
+    mali0_Groupc0208005_6_buffer_12  int8
+    mali0_Groupc0208005_6_buffer_13  int8
+    mali0_Groupc0208005_6_buffer_14  int8
+    mali0_Groupc0208005_6_buffer_15  int8
+    mali0_Groupc0208005_6_buffer_16  int8
+    mali0_Groupc0208005_6_buffer_17  int8
+    mali0_Groupc0208005_6_buffer_18  int8
+    mali0_Groupc0208005_6_range_19  int64[582:18446744069414584902]
+} [packed]
+ioctl$mali0_Groupc0208005_6(fd mali0_fd, cmd const[3223355397], arg ptr[inout, mali0_Groupc0208005_6_struct_1]) 
+mali0_Groupc0208005_7_struct_1 {
+    mali0_Groupc0208005_7_range_2  int64[1048577:2097152]
+    mali0_Groupc0208005_7_buffer_3  int64
+    mali0_Groupc0208005_7_range_4  int64[1:18446744069414584321]
+    mali0_Groupc0208005_7_range_5  int64[582:18446744069414584902]
+} [packed]
+ioctl$mali0_Groupc0208005_7(fd mali0_fd, cmd const[3223355397], arg ptr[inout, mali0_Groupc0208005_7_struct_1]) 
+mali0_Groupc0208005_8_struct_1 {
+    mali0_Groupc0208005_8_range_2  int64[1:2097152]
+    mali0_Groupc0208005_8_buffer_3  int64
+    mali0_Groupc0208005_8_range_4  int64[1:18446744069414584321]
+    mali0_Groupc0208005_8_range_5  int8[6:15]
+    mali0_Groupc0208005_8_range_6  int8[0:187]
+    mali0_Groupc0208005_8_buffer_7  array[int8, 6]
+} [packed]
+ioctl$mali0_Groupc0208005_8(fd mali0_fd, cmd const[3223355397], arg ptr[inout, mali0_Groupc0208005_8_struct_1]) 
+mali0_Groupc0208005_9_struct_1 {
+    mali0_Groupc0208005_9_buffer_2  int8
+    mali0_Groupc0208005_9_buffer_3  int8
+    mali0_Groupc0208005_9_range_4  int8[0:32]
+    mali0_Groupc0208005_9_const_5  const[0, int8]
+    mali0_Groupc0208005_9_const_6  const[0, int8]
+    mali0_Groupc0208005_9_const_7  const[0, int8]
+    mali0_Groupc0208005_9_const_8  const[0, int8]
+    mali0_Groupc0208005_9_const_9  const[0, int8]
+    mali0_Groupc0208005_9_buffer_10  int64
+    mali0_Groupc0208005_9_buffer_11  int8
+    mali0_Groupc0208005_9_buffer_12  int8
+    mali0_Groupc0208005_9_buffer_13  int8
+    mali0_Groupc0208005_9_buffer_14  int8
+    mali0_Groupc0208005_9_buffer_15  int8
+    mali0_Groupc0208005_9_buffer_16  int8
+    mali0_Groupc0208005_9_buffer_17  int8
+    mali0_Groupc0208005_9_buffer_18  int8
+    mali0_Groupc0208005_9_range_19  int8[6:15]
+    mali0_Groupc0208005_9_range_20  int8[130:187]
+    mali0_Groupc0208005_9_buffer_21  array[int8, 6]
+} [packed]
+ioctl$mali0_Groupc0208005_9(fd mali0_fd, cmd const[3223355397], arg ptr[inout, mali0_Groupc0208005_9_struct_1]) 
+mali0_Groupc0208005_10_struct_1 {
+    mali0_Groupc0208005_10_range_2  int64[1:2097152]
+    mali0_Groupc0208005_10_buffer_3  int64
+    mali0_Groupc0208005_10_range_4  int64[1:18446744069414584321]
+    mali0_Groupc0208005_10_range_5  int8[70:79]
+    mali0_Groupc0208005_10_range_6  int8[130:187]
+    mali0_Groupc0208005_10_buffer_7  array[int8, 6]
+} [packed]
+ioctl$mali0_Groupc0208005_10(fd mali0_fd, cmd const[3223355397], arg ptr[inout, mali0_Groupc0208005_10_struct_1]) 
+mali0_Groupc0208005_11_struct_1 {
+    mali0_Groupc0208005_11_range_2  int64[1:2097152]
+    mali0_Groupc0208005_11_buffer_3  int64
+    mali0_Groupc0208005_11_buffer_4  int64
+    mali0_Groupc0208005_11_range_5  int8[6:79]
+    mali0_Groupc0208005_11_range_6  int8[0:185]
+    mali0_Groupc0208005_11_buffer_7  array[int8, 6]
+} [packed]
+ioctl$mali0_Groupc0208005_11(fd mali0_fd, cmd const[3223355397], arg ptr[inout, mali0_Groupc0208005_11_struct_1]) 
+mali0_Groupc0208005_12_struct_1 {
+    mali0_Groupc0208005_12_buffer_2  int8
+    mali0_Groupc0208005_12_buffer_3  int8
+    mali0_Groupc0208005_12_buffer_4  int8
+    mali0_Groupc0208005_12_buffer_5  int8
+    mali0_Groupc0208005_12_buffer_6  int8
+    mali0_Groupc0208005_12_buffer_7  int8
+    mali0_Groupc0208005_12_buffer_8  int8
+    mali0_Groupc0208005_12_buffer_9  int8
+    mali0_Groupc0208005_12_buffer_10  int64
+    mali0_Groupc0208005_12_buffer_11  int64
+    mali0_Groupc0208005_12_range_12  int8[6:79]
+    mali0_Groupc0208005_12_range_13  int8[128:187]
+    mali0_Groupc0208005_12_buffer_14  array[int8, 6]
+} [packed]
+ioctl$mali0_Groupc0208005_12(fd mali0_fd, cmd const[3223355397], arg ptr[inout, mali0_Groupc0208005_12_struct_1]) 
+mali0_Groupc0208005_13_struct_1 {
+    mali0_Groupc0208005_13_const_2  const[0, int64]
+    mali0_Groupc0208005_13_buffer_3  int64
+    mali0_Groupc0208005_13_buffer_4  int64
+    mali0_Groupc0208005_13_range_5  int8[22:23]
+    mali0_Groupc0208005_13_range_6  int8[128:185]
+    mali0_Groupc0208005_13_buffer_7  array[int8, 6]
+} [packed]
+ioctl$mali0_Groupc0208005_13(fd mali0_fd, cmd const[3223355397], arg ptr[inout, mali0_Groupc0208005_13_struct_1]) 

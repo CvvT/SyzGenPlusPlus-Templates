@@ -1,0 +1,6 @@
+resource ccid_ctrl_fd[fd]
+
+openat$ccid_ctrl_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/ccid_ctrl"]], flags flags[open_flags], mode const[0]) ccid_ctrl_fd
+ioctl$ccid_ctrl_Group80044303_0(fd ccid_ctrl_fd, cmd const[2147762947], arg ptr[out, int32]) 
+ioctl$ccid_ctrl_Group40044302_0(fd ccid_ctrl_fd, cmd const[1074021122], arg ptr[in, int32]) 
+ioctl$ccid_ctrl_Group40044301_0(fd ccid_ctrl_fd, cmd const[1074021121], arg ptr[in, int32]) 

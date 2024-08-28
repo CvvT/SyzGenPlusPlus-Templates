@@ -1,0 +1,3 @@
+resource ipa_tethering_bridge_fd[fd]
+
+openat$ipa_tethering_bridge_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/ipa_tethering_bridge"]], flags flags[open_flags], mode const[0]) ipa_tethering_bridge_fd

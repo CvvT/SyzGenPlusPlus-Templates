@@ -1,0 +1,4 @@
+resource ipa_adpl_fd[fd]
+
+openat$ipa_adpl_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/ipa_adpl"]], flags flags[open_flags], mode const[0]) ipa_adpl_fd
+ioctl$ipa_adpl_Groupc002cf3e_0(fd ipa_adpl_fd, cmd const[3221409598], arg ptr[out, int16]) 

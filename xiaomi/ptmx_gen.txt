@@ -1,0 +1,644 @@
+resource ptmx_fd[fd]
+
+openat$ptmx_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/pts/ptmx"]], flags flags[open_flags], mode const[0]) ptmx_fd
+
+openat$tty_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/tty"]], flags flags[open_flags], mode const[0]) ptmx_fd
+openat$ttyEUD0_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/ttyEUD0"]], flags flags[open_flags], mode const[0]) ptmx_fd
+openat$ttyHS0_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/ttyHS0"]], flags flags[open_flags], mode const[0]) ptmx_fd
+syz_open_dev$ttyS_syzgen(dev ptr[in, string["/dev/ttyS#"]], id intptr, flags flags[open_flags]) ptmx_fd
+
+
+read$ptmx_syzgen(fd ptmx_fd, data ptr[out, array[int8]], size len[data]) 
+ioctl$ptmx_Group80045432_0(fd ptmx_fd, cmd const[2147767346], arg ptr[out, int32]) 
+ioctl$ptmx_Group80045440_0(fd ptmx_fd, cmd const[2147767360], arg ptr[out, int32]) 
+ioctl$ptmx_Group5441_0(fd ptmx_fd, cmd const[21569], ptmx_Group5441_0_known_1 flags[open_flags]) ptmx_fd
+ioctl$ptmx_Group5437_0(fd ptmx_fd, cmd const[21559], arg intptr) 
+ioctl$ptmx_Group5429_0(fd ptmx_fd, cmd const[21545], arg ptr[out, int32]) 
+ioctl$ptmx_Group5414_0(fd ptmx_fd, cmd const[21524], arg ptr[in, int64]) 
+ioctl$ptmx_Group5413_0(fd ptmx_fd, cmd const[21523], arg ptr[out, int64]) 
+ioctl$ptmx_Group5412_0(fd ptmx_fd, cmd const[21522], arg ptr[in, int8]) 
+ioctl$ptmx_Group541d_0(fd ptmx_fd, cmd const[21533], arg intptr) 
+ioctl$ptmx_Group5410_0(fd ptmx_fd, cmd const[21520], arg ptr[in, int32[0:2147483647]]) 
+ioctl$ptmx_Group5410_1(fd ptmx_fd, cmd const[21520], arg ptr[in, int32]) 
+ioctl$ptmx_Group540f_0(fd ptmx_fd, cmd const[21519], arg ptr[out, int32]) 
+ioctl$ptmx_Group540e_0(fd ptmx_fd, cmd const[21518], arg intptr) 
+ioctl$ptmx_Group540e_1(fd ptmx_fd, cmd const[21518], arg intptr[1:4294967295]) 
+ioctl$ptmx_Group540d_0(fd ptmx_fd, cmd const[21517], arg intptr) 
+ioctl$ptmx_Group5422_0(fd ptmx_fd, cmd const[21538], arg intptr) 
+ioctl$ptmx_Group540c_0(fd ptmx_fd, cmd const[21516], arg intptr) 
+ioctl$ptmx_Group5424_0(fd ptmx_fd, cmd const[21540], arg ptr[out, int32]) 
+ioctl$ptmx_Group5428_0(fd ptmx_fd, cmd const[21544], arg intptr) 
+ioctl$ptmx_Group5425_0(fd ptmx_fd, cmd const[21541], arg intptr) 
+ptmx_Group5423_0_flag_2 = 0, 1, 2, 3, 5, 7, 13, 14, 15, 17, 20, 21, 25, 27
+ptmx_Group5423_0_struct_1 {
+    ptmx_Group5423_0_flag_2  flags[ptmx_Group5423_0_flag_2, int8]
+    ptmx_Group5423_0_const_3  const[0, int8]
+    ptmx_Group5423_0_const_4  const[0, int8]
+    ptmx_Group5423_0_const_5  const[0, int8]
+} [packed]
+ioctl$ptmx_Group5423_0(fd ptmx_fd, cmd const[21539], arg ptr[in, ptmx_Group5423_0_struct_1]) 
+ptmx_Group5423_1_flag_1 = 0, 1, 2, 3, 5, 7, 13, 14, 15, 17, 20, 21, 25, 27
+ioctl$ptmx_Group5423_1(fd ptmx_fd, cmd const[21539], arg ptr[in, flags[ptmx_Group5423_1_flag_1, int32]]) 
+ioctl$ptmx_Group5427_0(fd ptmx_fd, cmd const[21543], arg intptr) 
+ioctl$ptmx_Group5409_0(fd ptmx_fd, cmd const[21513], arg intptr) 
+ioctl$ptmx_Group5405_0(fd ptmx_fd, cmd const[21509], arg ptr[out, array[int8, 17]]) 
+ptmx_Group5404_0_struct_1 {
+    ptmx_Group5404_0_buffer_2  int64
+    ptmx_Group5404_0_range_3  int32
+    ptmx_Group5404_0_buffer_4  array[int8, 24]
+} [packed]
+ioctl$ptmx_Group5404_0(fd ptmx_fd, cmd const[21508], arg ptr[in, ptmx_Group5404_0_struct_1]) 
+ptmx_Group5404_1_struct_1 {
+    ptmx_Group5404_1_buffer_2  int32
+    ptmx_Group5404_1_buffer_3  int32
+    ptmx_Group5404_1_range_4  int8[1:255]
+    ptmx_Group5404_1_range_5  int8[16:255]
+    ptmx_Group5404_1_range_6  int16[4096:65520, 16]
+    ptmx_Group5404_1_buffer_7  int32
+    ptmx_Group5404_1_buffer_8  int16
+    ptmx_Group5404_1_buffer_9  int8
+    ptmx_Group5404_1_buffer_10  int8
+    ptmx_Group5404_1_buffer_11  int8
+    ptmx_Group5404_1_buffer_12  int8
+    ptmx_Group5404_1_buffer_13  int8
+    ptmx_Group5404_1_buffer_14  int8
+    ptmx_Group5404_1_buffer_15  int8
+    ptmx_Group5404_1_buffer_16  int8
+    ptmx_Group5404_1_buffer_17  int8
+    ptmx_Group5404_1_buffer_18  int8
+    ptmx_Group5404_1_buffer_19  int8
+    ptmx_Group5404_1_buffer_20  int8
+    ptmx_Group5404_1_buffer_21  int8
+    ptmx_Group5404_1_buffer_22  int8
+    ptmx_Group5404_1_buffer_23  int8
+    ptmx_Group5404_1_buffer_24  int8
+    ptmx_Group5404_1_buffer_25  int8
+    ptmx_Group5404_1_buffer_26  int8
+} [packed]
+ioctl$ptmx_Group5404_1(fd ptmx_fd, cmd const[21508], arg ptr[in, ptmx_Group5404_1_struct_1]) 
+ptmx_Group5404_2_struct_1 {
+    ptmx_Group5404_2_buffer_2  int64
+    ptmx_Group5404_2_range_3  int16[0:61439]
+    ptmx_Group5404_2_range_4  int8[1:255]
+    ptmx_Group5404_2_buffer_5  int8
+    ptmx_Group5404_2_buffer_6  array[int8, 24]
+} [packed]
+ioctl$ptmx_Group5404_2(fd ptmx_fd, cmd const[21508], arg ptr[in, ptmx_Group5404_2_struct_1]) 
+ptmx_Group5404_3_struct_1 {
+    ptmx_Group5404_3_buffer_2  int64
+    ptmx_Group5404_3_range_3  int8[1:255]
+    ptmx_Group5404_3_range_4  int16[272:65535]
+    ptmx_Group5404_3_buffer_5  int8
+    ptmx_Group5404_3_buffer_6  array[int8, 24]
+} [packed]
+ioctl$ptmx_Group5404_3(fd ptmx_fd, cmd const[21508], arg ptr[in, ptmx_Group5404_3_struct_1]) 
+ptmx_Group5404_4_struct_1 {
+    ptmx_Group5404_4_buffer_2  int64
+    ptmx_Group5404_4_range_3  int16[4096:65520, 16]
+    ptmx_Group5404_4_range_4  int8[1:255]
+    ptmx_Group5404_4_range_5  int8[16:255]
+    ptmx_Group5404_4_buffer_6  array[int8, 24]
+} [packed]
+ioctl$ptmx_Group5404_4(fd ptmx_fd, cmd const[21508], arg ptr[in, ptmx_Group5404_4_struct_1]) 
+ptmx_Group5406_0_struct_1 {
+    ptmx_Group5406_0_buffer_2  int8
+    ptmx_Group5406_0_buffer_3  int8
+    ptmx_Group5406_0_buffer_4  int16
+    ptmx_Group5406_0_buffer_5  int16
+    ptmx_Group5406_0_buffer_6  int8
+    ptmx_Group5406_0_buffer_7  int8
+    ptmx_Group5406_0_buffer_8  int8
+    ptmx_Group5406_0_buffer_9  int8
+    ptmx_Group5406_0_buffer_10  int8
+    ptmx_Group5406_0_buffer_11  int8
+    ptmx_Group5406_0_buffer_12  int8
+    ptmx_Group5406_0_buffer_13  int8
+    ptmx_Group5406_0_buffer_14  int8
+    ptmx_Group5406_0_buffer_15  int8
+    ptmx_Group5406_0_buffer_16  int8
+} [packed]
+ioctl$ptmx_Group5406_0(fd ptmx_fd, cmd const[21510], arg ptr[in, ptmx_Group5406_0_struct_1]) 
+ptmx_Group5406_1_struct_1 {
+    ptmx_Group5406_1_buffer_2  int8
+    ptmx_Group5406_1_buffer_3  int8
+    ptmx_Group5406_1_buffer_4  int16
+    ptmx_Group5406_1_range_5  int16[4096:65520, 16]
+    ptmx_Group5406_1_buffer_6  int8
+    ptmx_Group5406_1_buffer_7  int8
+    ptmx_Group5406_1_buffer_8  int8
+    ptmx_Group5406_1_buffer_9  int8
+    ptmx_Group5406_1_buffer_10  int8
+    ptmx_Group5406_1_buffer_11  int8
+    ptmx_Group5406_1_buffer_12  int8
+    ptmx_Group5406_1_buffer_13  int8
+    ptmx_Group5406_1_buffer_14  int8
+    ptmx_Group5406_1_buffer_15  int8
+    ptmx_Group5406_1_buffer_16  int8
+} [packed]
+ioctl$ptmx_Group5406_1(fd ptmx_fd, cmd const[21510], arg ptr[in, ptmx_Group5406_1_struct_1]) 
+ptmx_Group5406_2_struct_1 {
+    ptmx_Group5406_2_buffer_2  int8
+    ptmx_Group5406_2_buffer_3  int8
+    ptmx_Group5406_2_buffer_4  int16
+    ptmx_Group5406_2_range_5  int8[1:255]
+    ptmx_Group5406_2_range_6  int8[16:255]
+    ptmx_Group5406_2_buffer_7  int8
+    ptmx_Group5406_2_buffer_8  int8
+    ptmx_Group5406_2_buffer_9  int8
+    ptmx_Group5406_2_buffer_10  int8
+    ptmx_Group5406_2_buffer_11  int8
+    ptmx_Group5406_2_buffer_12  int8
+    ptmx_Group5406_2_buffer_13  int8
+    ptmx_Group5406_2_buffer_14  int8
+    ptmx_Group5406_2_buffer_15  int8
+    ptmx_Group5406_2_buffer_16  int8
+    ptmx_Group5406_2_buffer_17  int8
+} [packed]
+ioctl$ptmx_Group5406_2(fd ptmx_fd, cmd const[21510], arg ptr[in, ptmx_Group5406_2_struct_1]) 
+ptmx_Group5403_0_struct_1 {
+    ptmx_Group5403_0_buffer_2  int8
+    ptmx_Group5403_0_buffer_3  int8
+    ptmx_Group5403_0_buffer_4  int8
+    ptmx_Group5403_0_buffer_5  int8
+    ptmx_Group5403_0_buffer_6  int32
+    ptmx_Group5403_0_range_7  int32
+    ptmx_Group5403_0_buffer_8  int8
+    ptmx_Group5403_0_buffer_9  int8
+    ptmx_Group5403_0_buffer_10  int8
+    ptmx_Group5403_0_buffer_11  int8
+    ptmx_Group5403_0_buffer_12  int8
+    ptmx_Group5403_0_buffer_13  int8
+    ptmx_Group5403_0_buffer_14  int8
+    ptmx_Group5403_0_buffer_15  int8
+    ptmx_Group5403_0_buffer_16  int8
+    ptmx_Group5403_0_buffer_17  int8
+    ptmx_Group5403_0_buffer_18  int8
+    ptmx_Group5403_0_buffer_19  int8
+    ptmx_Group5403_0_buffer_20  int8
+    ptmx_Group5403_0_buffer_21  int8
+    ptmx_Group5403_0_buffer_22  int8
+    ptmx_Group5403_0_buffer_23  int8
+    ptmx_Group5403_0_buffer_24  int8
+    ptmx_Group5403_0_buffer_25  int8
+    ptmx_Group5403_0_buffer_26  int8
+    ptmx_Group5403_0_buffer_27  int8
+    ptmx_Group5403_0_buffer_28  int8
+    ptmx_Group5403_0_buffer_29  int8
+    ptmx_Group5403_0_buffer_30  int8
+    ptmx_Group5403_0_buffer_31  int8
+} [packed]
+ioctl$ptmx_Group5403_0(fd ptmx_fd, cmd const[21507], arg ptr[in, ptmx_Group5403_0_struct_1]) 
+ptmx_Group5403_1_struct_1 {
+    ptmx_Group5403_1_buffer_2  int8
+    ptmx_Group5403_1_buffer_3  int8
+    ptmx_Group5403_1_buffer_4  int8
+    ptmx_Group5403_1_buffer_5  int8
+    ptmx_Group5403_1_buffer_6  int32
+    ptmx_Group5403_1_buffer_7  int32
+    ptmx_Group5403_1_buffer_8  int8
+    ptmx_Group5403_1_buffer_9  int8
+    ptmx_Group5403_1_buffer_10  int8
+    ptmx_Group5403_1_buffer_11  int8
+    ptmx_Group5403_1_buffer_12  int8
+    ptmx_Group5403_1_buffer_13  int8
+    ptmx_Group5403_1_buffer_14  int8
+    ptmx_Group5403_1_buffer_15  int8
+    ptmx_Group5403_1_buffer_16  int8
+    ptmx_Group5403_1_buffer_17  int8
+    ptmx_Group5403_1_buffer_18  int8
+    ptmx_Group5403_1_buffer_19  int8
+    ptmx_Group5403_1_buffer_20  int8
+    ptmx_Group5403_1_buffer_21  int8
+    ptmx_Group5403_1_buffer_22  int8
+    ptmx_Group5403_1_buffer_23  int8
+    ptmx_Group5403_1_buffer_24  int8
+    ptmx_Group5403_1_buffer_25  int8
+    ptmx_Group5403_1_buffer_26  int8
+    ptmx_Group5403_1_buffer_27  int8
+    ptmx_Group5403_1_buffer_28  int8
+    ptmx_Group5403_1_buffer_29  int8
+    ptmx_Group5403_1_buffer_30  int8
+    ptmx_Group5403_1_buffer_31  int8
+} [packed]
+ioctl$ptmx_Group5403_1(fd ptmx_fd, cmd const[21507], arg ptr[in, ptmx_Group5403_1_struct_1]) 
+ptmx_Group5403_2_struct_1 {
+    ptmx_Group5403_2_buffer_2  int8
+    ptmx_Group5403_2_buffer_3  int8
+    ptmx_Group5403_2_buffer_4  int8
+    ptmx_Group5403_2_buffer_5  int8
+    ptmx_Group5403_2_buffer_6  int32
+    ptmx_Group5403_2_range_7  int8[1:255]
+    ptmx_Group5403_2_range_8  int8[16:255]
+    ptmx_Group5403_2_range_9  int16[4096:65520, 16]
+    ptmx_Group5403_2_buffer_10  int8
+    ptmx_Group5403_2_buffer_11  int8
+    ptmx_Group5403_2_buffer_12  int8
+    ptmx_Group5403_2_buffer_13  int8
+    ptmx_Group5403_2_buffer_14  int8
+    ptmx_Group5403_2_buffer_15  int8
+    ptmx_Group5403_2_buffer_16  int8
+    ptmx_Group5403_2_buffer_17  int8
+    ptmx_Group5403_2_buffer_18  int8
+    ptmx_Group5403_2_buffer_19  int8
+    ptmx_Group5403_2_buffer_20  int8
+    ptmx_Group5403_2_buffer_21  int8
+    ptmx_Group5403_2_buffer_22  int8
+    ptmx_Group5403_2_buffer_23  int8
+    ptmx_Group5403_2_buffer_24  int8
+    ptmx_Group5403_2_buffer_25  int8
+    ptmx_Group5403_2_buffer_26  int8
+    ptmx_Group5403_2_buffer_27  int8
+    ptmx_Group5403_2_buffer_28  int8
+    ptmx_Group5403_2_buffer_29  int8
+    ptmx_Group5403_2_buffer_30  int8
+    ptmx_Group5403_2_buffer_31  int8
+    ptmx_Group5403_2_buffer_32  int8
+    ptmx_Group5403_2_buffer_33  int8
+} [packed]
+ioctl$ptmx_Group5403_2(fd ptmx_fd, cmd const[21507], arg ptr[in, ptmx_Group5403_2_struct_1]) 
+ptmx_Group5403_3_struct_1 {
+    ptmx_Group5403_3_buffer_2  int8
+    ptmx_Group5403_3_buffer_3  int8
+    ptmx_Group5403_3_buffer_4  int8
+    ptmx_Group5403_3_buffer_5  int8
+    ptmx_Group5403_3_buffer_6  int32
+    ptmx_Group5403_3_range_7  int16[0:61439]
+    ptmx_Group5403_3_range_8  int8[1:255]
+    ptmx_Group5403_3_buffer_9  int8
+    ptmx_Group5403_3_buffer_10  int8
+    ptmx_Group5403_3_buffer_11  int8
+    ptmx_Group5403_3_buffer_12  int8
+    ptmx_Group5403_3_buffer_13  int8
+    ptmx_Group5403_3_buffer_14  int8
+    ptmx_Group5403_3_buffer_15  int8
+    ptmx_Group5403_3_buffer_16  int8
+    ptmx_Group5403_3_buffer_17  int8
+    ptmx_Group5403_3_buffer_18  int8
+    ptmx_Group5403_3_buffer_19  int8
+    ptmx_Group5403_3_buffer_20  int8
+    ptmx_Group5403_3_buffer_21  int8
+    ptmx_Group5403_3_buffer_22  int8
+    ptmx_Group5403_3_buffer_23  int8
+    ptmx_Group5403_3_buffer_24  int8
+    ptmx_Group5403_3_buffer_25  int8
+    ptmx_Group5403_3_buffer_26  int8
+    ptmx_Group5403_3_buffer_27  int8
+    ptmx_Group5403_3_buffer_28  int8
+    ptmx_Group5403_3_buffer_29  int8
+    ptmx_Group5403_3_buffer_30  int8
+    ptmx_Group5403_3_buffer_31  int8
+    ptmx_Group5403_3_buffer_32  int8
+    ptmx_Group5403_3_buffer_33  int8
+} [packed]
+ioctl$ptmx_Group5403_3(fd ptmx_fd, cmd const[21507], arg ptr[in, ptmx_Group5403_3_struct_1]) 
+ptmx_Group5403_4_struct_1 {
+    ptmx_Group5403_4_buffer_2  int8
+    ptmx_Group5403_4_buffer_3  int8
+    ptmx_Group5403_4_buffer_4  int8
+    ptmx_Group5403_4_buffer_5  int8
+    ptmx_Group5403_4_buffer_6  int32
+    ptmx_Group5403_4_range_7  int8[1:255]
+    ptmx_Group5403_4_range_8  int16[272:65535]
+    ptmx_Group5403_4_buffer_9  int8
+    ptmx_Group5403_4_buffer_10  int8
+    ptmx_Group5403_4_buffer_11  int8
+    ptmx_Group5403_4_buffer_12  int8
+    ptmx_Group5403_4_buffer_13  int8
+    ptmx_Group5403_4_buffer_14  int8
+    ptmx_Group5403_4_buffer_15  int8
+    ptmx_Group5403_4_buffer_16  int8
+    ptmx_Group5403_4_buffer_17  int8
+    ptmx_Group5403_4_buffer_18  int8
+    ptmx_Group5403_4_buffer_19  int8
+    ptmx_Group5403_4_buffer_20  int8
+    ptmx_Group5403_4_buffer_21  int8
+    ptmx_Group5403_4_buffer_22  int8
+    ptmx_Group5403_4_buffer_23  int8
+    ptmx_Group5403_4_buffer_24  int8
+    ptmx_Group5403_4_buffer_25  int8
+    ptmx_Group5403_4_buffer_26  int8
+    ptmx_Group5403_4_buffer_27  int8
+    ptmx_Group5403_4_buffer_28  int8
+    ptmx_Group5403_4_buffer_29  int8
+    ptmx_Group5403_4_buffer_30  int8
+    ptmx_Group5403_4_buffer_31  int8
+    ptmx_Group5403_4_buffer_32  int8
+    ptmx_Group5403_4_buffer_33  int8
+} [packed]
+ioctl$ptmx_Group5403_4(fd ptmx_fd, cmd const[21507], arg ptr[in, ptmx_Group5403_4_struct_1]) 
+ptmx_Group5403_5_struct_1 {
+    ptmx_Group5403_5_buffer_2  int8
+    ptmx_Group5403_5_buffer_3  int8
+    ptmx_Group5403_5_buffer_4  int8
+    ptmx_Group5403_5_buffer_5  int8
+    ptmx_Group5403_5_buffer_6  int32
+    ptmx_Group5403_5_range_7  int16[4096:65520, 16]
+    ptmx_Group5403_5_range_8  int8[1:255]
+    ptmx_Group5403_5_range_9  int8[16:255]
+    ptmx_Group5403_5_buffer_10  int8
+    ptmx_Group5403_5_buffer_11  int8
+    ptmx_Group5403_5_buffer_12  int8
+    ptmx_Group5403_5_buffer_13  int8
+    ptmx_Group5403_5_buffer_14  int8
+    ptmx_Group5403_5_buffer_15  int8
+    ptmx_Group5403_5_buffer_16  int8
+    ptmx_Group5403_5_buffer_17  int8
+    ptmx_Group5403_5_buffer_18  int8
+    ptmx_Group5403_5_buffer_19  int8
+    ptmx_Group5403_5_buffer_20  int8
+    ptmx_Group5403_5_buffer_21  int8
+    ptmx_Group5403_5_buffer_22  int8
+    ptmx_Group5403_5_buffer_23  int8
+    ptmx_Group5403_5_buffer_24  int8
+    ptmx_Group5403_5_buffer_25  int8
+    ptmx_Group5403_5_buffer_26  int8
+    ptmx_Group5403_5_buffer_27  int8
+    ptmx_Group5403_5_buffer_28  int8
+    ptmx_Group5403_5_buffer_29  int8
+    ptmx_Group5403_5_buffer_30  int8
+    ptmx_Group5403_5_buffer_31  int8
+    ptmx_Group5403_5_buffer_32  int8
+    ptmx_Group5403_5_buffer_33  int8
+} [packed]
+ioctl$ptmx_Group5403_5(fd ptmx_fd, cmd const[21507], arg ptr[in, ptmx_Group5403_5_struct_1]) 
+ptmx_Group5407_0_struct_1 {
+    ptmx_Group5407_0_buffer_2  int8
+    ptmx_Group5407_0_buffer_3  int8
+    ptmx_Group5407_0_buffer_4  int16
+    ptmx_Group5407_0_buffer_5  int16
+    ptmx_Group5407_0_buffer_6  int8
+    ptmx_Group5407_0_buffer_7  int8
+    ptmx_Group5407_0_buffer_8  int8
+    ptmx_Group5407_0_buffer_9  int8
+    ptmx_Group5407_0_buffer_10  int8
+    ptmx_Group5407_0_buffer_11  int8
+    ptmx_Group5407_0_buffer_12  int8
+    ptmx_Group5407_0_buffer_13  int8
+    ptmx_Group5407_0_buffer_14  int8
+    ptmx_Group5407_0_buffer_15  int8
+    ptmx_Group5407_0_buffer_16  int8
+} [packed]
+ioctl$ptmx_Group5407_0(fd ptmx_fd, cmd const[21511], arg ptr[in, ptmx_Group5407_0_struct_1]) 
+ptmx_Group5407_1_struct_1 {
+    ptmx_Group5407_1_buffer_2  int8
+    ptmx_Group5407_1_buffer_3  int8
+    ptmx_Group5407_1_buffer_4  int16
+    ptmx_Group5407_1_range_5  int16[4096:65520, 16]
+    ptmx_Group5407_1_buffer_6  int8
+    ptmx_Group5407_1_buffer_7  int8
+    ptmx_Group5407_1_buffer_8  int8
+    ptmx_Group5407_1_buffer_9  int8
+    ptmx_Group5407_1_buffer_10  int8
+    ptmx_Group5407_1_buffer_11  int8
+    ptmx_Group5407_1_buffer_12  int8
+    ptmx_Group5407_1_buffer_13  int8
+    ptmx_Group5407_1_buffer_14  int8
+    ptmx_Group5407_1_buffer_15  int8
+    ptmx_Group5407_1_buffer_16  int8
+} [packed]
+ioctl$ptmx_Group5407_1(fd ptmx_fd, cmd const[21511], arg ptr[in, ptmx_Group5407_1_struct_1]) 
+ptmx_Group5407_2_struct_1 {
+    ptmx_Group5407_2_buffer_2  int8
+    ptmx_Group5407_2_buffer_3  int8
+    ptmx_Group5407_2_buffer_4  int16
+    ptmx_Group5407_2_range_5  int8[1:255]
+    ptmx_Group5407_2_range_6  int8[16:255]
+    ptmx_Group5407_2_buffer_7  int8
+    ptmx_Group5407_2_buffer_8  int8
+    ptmx_Group5407_2_buffer_9  int8
+    ptmx_Group5407_2_buffer_10  int8
+    ptmx_Group5407_2_buffer_11  int8
+    ptmx_Group5407_2_buffer_12  int8
+    ptmx_Group5407_2_buffer_13  int8
+    ptmx_Group5407_2_buffer_14  int8
+    ptmx_Group5407_2_buffer_15  int8
+    ptmx_Group5407_2_buffer_16  int8
+    ptmx_Group5407_2_buffer_17  int8
+} [packed]
+ioctl$ptmx_Group5407_2(fd ptmx_fd, cmd const[21511], arg ptr[in, ptmx_Group5407_2_struct_1]) 
+ptmx_Group5402_0_struct_1 {
+    ptmx_Group5402_0_buffer_2  int8
+    ptmx_Group5402_0_buffer_3  int8
+    ptmx_Group5402_0_buffer_4  int8
+    ptmx_Group5402_0_buffer_5  int8
+    ptmx_Group5402_0_buffer_6  int32
+    ptmx_Group5402_0_range_7  int32[4096:4293984240, 16]
+    ptmx_Group5402_0_buffer_8  int8
+    ptmx_Group5402_0_buffer_9  int8
+    ptmx_Group5402_0_buffer_10  int8
+    ptmx_Group5402_0_buffer_11  int8
+    ptmx_Group5402_0_buffer_12  int8
+    ptmx_Group5402_0_buffer_13  int8
+    ptmx_Group5402_0_buffer_14  int8
+    ptmx_Group5402_0_buffer_15  int8
+    ptmx_Group5402_0_buffer_16  int8
+    ptmx_Group5402_0_buffer_17  int8
+    ptmx_Group5402_0_buffer_18  int8
+    ptmx_Group5402_0_buffer_19  int8
+    ptmx_Group5402_0_buffer_20  int8
+    ptmx_Group5402_0_buffer_21  int8
+    ptmx_Group5402_0_buffer_22  int8
+    ptmx_Group5402_0_buffer_23  int8
+    ptmx_Group5402_0_buffer_24  int8
+    ptmx_Group5402_0_buffer_25  int8
+    ptmx_Group5402_0_buffer_26  int8
+    ptmx_Group5402_0_buffer_27  int8
+    ptmx_Group5402_0_buffer_28  int8
+    ptmx_Group5402_0_buffer_29  int8
+    ptmx_Group5402_0_buffer_30  int8
+    ptmx_Group5402_0_buffer_31  int8
+} [packed]
+ioctl$ptmx_Group5402_0(fd ptmx_fd, cmd const[21506], arg ptr[in, ptmx_Group5402_0_struct_1]) 
+ptmx_Group5402_1_struct_1 {
+    ptmx_Group5402_1_buffer_2  int8
+    ptmx_Group5402_1_buffer_3  int8
+    ptmx_Group5402_1_buffer_4  int8
+    ptmx_Group5402_1_buffer_5  int8
+    ptmx_Group5402_1_buffer_6  int32
+    ptmx_Group5402_1_buffer_7  int32
+    ptmx_Group5402_1_buffer_8  int8
+    ptmx_Group5402_1_buffer_9  int8
+    ptmx_Group5402_1_buffer_10  int8
+    ptmx_Group5402_1_buffer_11  int8
+    ptmx_Group5402_1_buffer_12  int8
+    ptmx_Group5402_1_buffer_13  int8
+    ptmx_Group5402_1_buffer_14  int8
+    ptmx_Group5402_1_buffer_15  int8
+    ptmx_Group5402_1_buffer_16  int8
+    ptmx_Group5402_1_buffer_17  int8
+    ptmx_Group5402_1_buffer_18  int8
+    ptmx_Group5402_1_buffer_19  int8
+    ptmx_Group5402_1_buffer_20  int8
+    ptmx_Group5402_1_buffer_21  int8
+    ptmx_Group5402_1_buffer_22  int8
+    ptmx_Group5402_1_buffer_23  int8
+    ptmx_Group5402_1_buffer_24  int8
+    ptmx_Group5402_1_buffer_25  int8
+    ptmx_Group5402_1_buffer_26  int8
+    ptmx_Group5402_1_buffer_27  int8
+    ptmx_Group5402_1_buffer_28  int8
+    ptmx_Group5402_1_buffer_29  int8
+    ptmx_Group5402_1_buffer_30  int8
+    ptmx_Group5402_1_buffer_31  int8
+} [packed]
+ioctl$ptmx_Group5402_1(fd ptmx_fd, cmd const[21506], arg ptr[in, ptmx_Group5402_1_struct_1]) 
+ptmx_Group5402_2_struct_1 {
+    ptmx_Group5402_2_buffer_2  int8
+    ptmx_Group5402_2_buffer_3  int8
+    ptmx_Group5402_2_buffer_4  int8
+    ptmx_Group5402_2_buffer_5  int8
+    ptmx_Group5402_2_buffer_6  int32
+    ptmx_Group5402_2_range_7  int8[1:255]
+    ptmx_Group5402_2_range_8  int8[16:255]
+    ptmx_Group5402_2_range_9  int16[4096:65520, 16]
+    ptmx_Group5402_2_buffer_10  int8
+    ptmx_Group5402_2_buffer_11  int8
+    ptmx_Group5402_2_buffer_12  int8
+    ptmx_Group5402_2_buffer_13  int8
+    ptmx_Group5402_2_buffer_14  int8
+    ptmx_Group5402_2_buffer_15  int8
+    ptmx_Group5402_2_buffer_16  int8
+    ptmx_Group5402_2_buffer_17  int8
+    ptmx_Group5402_2_buffer_18  int8
+    ptmx_Group5402_2_buffer_19  int8
+    ptmx_Group5402_2_buffer_20  int8
+    ptmx_Group5402_2_buffer_21  int8
+    ptmx_Group5402_2_buffer_22  int8
+    ptmx_Group5402_2_buffer_23  int8
+    ptmx_Group5402_2_buffer_24  int8
+    ptmx_Group5402_2_buffer_25  int8
+    ptmx_Group5402_2_buffer_26  int8
+    ptmx_Group5402_2_buffer_27  int8
+    ptmx_Group5402_2_buffer_28  int8
+    ptmx_Group5402_2_buffer_29  int8
+    ptmx_Group5402_2_buffer_30  int8
+    ptmx_Group5402_2_buffer_31  int8
+    ptmx_Group5402_2_buffer_32  int8
+    ptmx_Group5402_2_buffer_33  int8
+} [packed]
+ioctl$ptmx_Group5402_2(fd ptmx_fd, cmd const[21506], arg ptr[in, ptmx_Group5402_2_struct_1]) 
+ptmx_Group5402_3_struct_1 {
+    ptmx_Group5402_3_buffer_2  int8
+    ptmx_Group5402_3_buffer_3  int8
+    ptmx_Group5402_3_buffer_4  int8
+    ptmx_Group5402_3_buffer_5  int8
+    ptmx_Group5402_3_buffer_6  int32
+    ptmx_Group5402_3_range_7  int16[0:61439]
+    ptmx_Group5402_3_range_8  int8[1:255]
+    ptmx_Group5402_3_buffer_9  int8
+    ptmx_Group5402_3_buffer_10  int8
+    ptmx_Group5402_3_buffer_11  int8
+    ptmx_Group5402_3_buffer_12  int8
+    ptmx_Group5402_3_buffer_13  int8
+    ptmx_Group5402_3_buffer_14  int8
+    ptmx_Group5402_3_buffer_15  int8
+    ptmx_Group5402_3_buffer_16  int8
+    ptmx_Group5402_3_buffer_17  int8
+    ptmx_Group5402_3_buffer_18  int8
+    ptmx_Group5402_3_buffer_19  int8
+    ptmx_Group5402_3_buffer_20  int8
+    ptmx_Group5402_3_buffer_21  int8
+    ptmx_Group5402_3_buffer_22  int8
+    ptmx_Group5402_3_buffer_23  int8
+    ptmx_Group5402_3_buffer_24  int8
+    ptmx_Group5402_3_buffer_25  int8
+    ptmx_Group5402_3_buffer_26  int8
+    ptmx_Group5402_3_buffer_27  int8
+    ptmx_Group5402_3_buffer_28  int8
+    ptmx_Group5402_3_buffer_29  int8
+    ptmx_Group5402_3_buffer_30  int8
+    ptmx_Group5402_3_buffer_31  int8
+    ptmx_Group5402_3_buffer_32  int8
+    ptmx_Group5402_3_buffer_33  int8
+} [packed]
+ioctl$ptmx_Group5402_3(fd ptmx_fd, cmd const[21506], arg ptr[in, ptmx_Group5402_3_struct_1]) 
+ptmx_Group5402_4_struct_1 {
+    ptmx_Group5402_4_buffer_2  int8
+    ptmx_Group5402_4_buffer_3  int8
+    ptmx_Group5402_4_buffer_4  int8
+    ptmx_Group5402_4_buffer_5  int8
+    ptmx_Group5402_4_buffer_6  int32
+    ptmx_Group5402_4_range_7  int8[1:255]
+    ptmx_Group5402_4_range_8  int16[272:65535]
+    ptmx_Group5402_4_buffer_9  int8
+    ptmx_Group5402_4_buffer_10  int8
+    ptmx_Group5402_4_buffer_11  int8
+    ptmx_Group5402_4_buffer_12  int8
+    ptmx_Group5402_4_buffer_13  int8
+    ptmx_Group5402_4_buffer_14  int8
+    ptmx_Group5402_4_buffer_15  int8
+    ptmx_Group5402_4_buffer_16  int8
+    ptmx_Group5402_4_buffer_17  int8
+    ptmx_Group5402_4_buffer_18  int8
+    ptmx_Group5402_4_buffer_19  int8
+    ptmx_Group5402_4_buffer_20  int8
+    ptmx_Group5402_4_buffer_21  int8
+    ptmx_Group5402_4_buffer_22  int8
+    ptmx_Group5402_4_buffer_23  int8
+    ptmx_Group5402_4_buffer_24  int8
+    ptmx_Group5402_4_buffer_25  int8
+    ptmx_Group5402_4_buffer_26  int8
+    ptmx_Group5402_4_buffer_27  int8
+    ptmx_Group5402_4_buffer_28  int8
+    ptmx_Group5402_4_buffer_29  int8
+    ptmx_Group5402_4_buffer_30  int8
+    ptmx_Group5402_4_buffer_31  int8
+    ptmx_Group5402_4_buffer_32  int8
+    ptmx_Group5402_4_buffer_33  int8
+} [packed]
+ioctl$ptmx_Group5402_4(fd ptmx_fd, cmd const[21506], arg ptr[in, ptmx_Group5402_4_struct_1]) 
+ptmx_Group5402_5_struct_1 {
+    ptmx_Group5402_5_buffer_2  int8
+    ptmx_Group5402_5_buffer_3  int8
+    ptmx_Group5402_5_buffer_4  int8
+    ptmx_Group5402_5_buffer_5  int8
+    ptmx_Group5402_5_buffer_6  int32
+    ptmx_Group5402_5_range_7  int16[4096:65520, 16]
+    ptmx_Group5402_5_range_8  int8[1:255]
+    ptmx_Group5402_5_range_9  int8[16:255]
+    ptmx_Group5402_5_buffer_10  int8
+    ptmx_Group5402_5_buffer_11  int8
+    ptmx_Group5402_5_buffer_12  int8
+    ptmx_Group5402_5_buffer_13  int8
+    ptmx_Group5402_5_buffer_14  int8
+    ptmx_Group5402_5_buffer_15  int8
+    ptmx_Group5402_5_buffer_16  int8
+    ptmx_Group5402_5_buffer_17  int8
+    ptmx_Group5402_5_buffer_18  int8
+    ptmx_Group5402_5_buffer_19  int8
+    ptmx_Group5402_5_buffer_20  int8
+    ptmx_Group5402_5_buffer_21  int8
+    ptmx_Group5402_5_buffer_22  int8
+    ptmx_Group5402_5_buffer_23  int8
+    ptmx_Group5402_5_buffer_24  int8
+    ptmx_Group5402_5_buffer_25  int8
+    ptmx_Group5402_5_buffer_26  int8
+    ptmx_Group5402_5_buffer_27  int8
+    ptmx_Group5402_5_buffer_28  int8
+    ptmx_Group5402_5_buffer_29  int8
+    ptmx_Group5402_5_buffer_30  int8
+    ptmx_Group5402_5_buffer_31  int8
+    ptmx_Group5402_5_buffer_32  int8
+    ptmx_Group5402_5_buffer_33  int8
+} [packed]
+ioctl$ptmx_Group5402_5(fd ptmx_fd, cmd const[21506], arg ptr[in, ptmx_Group5402_5_struct_1]) 
+ptmx_Group5408_0_struct_1 {
+    ptmx_Group5408_0_buffer_2  int32
+    ptmx_Group5408_0_buffer_3  int16
+    ptmx_Group5408_0_buffer_4  array[int8, 11]
+} [packed]
+ioctl$ptmx_Group5408_0(fd ptmx_fd, cmd const[21512], arg ptr[in, ptmx_Group5408_0_struct_1]) 
+ptmx_Group5408_1_struct_1 {
+    ptmx_Group5408_1_buffer_2  int32
+    ptmx_Group5408_1_range_3  int16[4096:65520, 16]
+    ptmx_Group5408_1_buffer_4  array[int8, 11]
+} [packed]
+ioctl$ptmx_Group5408_1(fd ptmx_fd, cmd const[21512], arg ptr[in, ptmx_Group5408_1_struct_1]) 
+ptmx_Group5408_2_struct_1 {
+    ptmx_Group5408_2_buffer_2  int32
+    ptmx_Group5408_2_range_3  int8[1:255]
+    ptmx_Group5408_2_range_4  int8[16:255]
+    ptmx_Group5408_2_buffer_5  array[int8, 11]
+} [packed]
+ioctl$ptmx_Group5408_2(fd ptmx_fd, cmd const[21512], arg ptr[in, ptmx_Group5408_2_struct_1]) 
+ioctl$ptmx_Group5401_0(fd ptmx_fd, cmd const[21505], arg ptr[out, array[int8, 36]]) 

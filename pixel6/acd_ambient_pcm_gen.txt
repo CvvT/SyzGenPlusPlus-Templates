@@ -1,0 +1,25 @@
+resource acd_ambient_pcm_fd[fd]
+
+openat$acd_ambient_pcm_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-ambient_pcm"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+openat$acd_audio_bulk_rx_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-audio_bulk_rx"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+openat$acd_audio_bulk_tx_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-audio_bulk_tx"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+openat$acd_audio_capture_inject_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-audio_capture_inject"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+openat$acd_audio_dcdoff_ref_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-audio_dcdoff_ref"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+openat$acd_audio_haptaudio_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-audio_haptaudio"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+openat$acd_audio_input_bulk_rx_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-audio_input_bulk_rx"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+openat$acd_audio_input_bulk_tx_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-audio_input_bulk_tx"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+openat$acd_audio_input_tuning_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-audio_input_tuning"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+openat$acd_audio_output_tuning_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-audio_output_tuning"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+openat$acd_audio_output_tuning_ext_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-audio_output_tuning_ext"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+openat$acd_audio_spatial_f1_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-audio_spatial_f1"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+syz_open_dev$acd_audio_tap_syzgen(dev ptr[in, string["/dev/acd-audio_tap#"]], id intptr, flags flags[open_flags]) acd_ambient_pcm_fd
+openat$acd_com_google_usf_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-com.google.usf"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+openat$acd_debug_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-debug"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+openat$acd_factory_diag_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-factory_diag"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+openat$acd_hotword_pcm_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-hotword_pcm"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+openat$acd_model_data_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/acd-model_data"]], flags flags[open_flags], mode const[0]) acd_ambient_pcm_fd
+
+
+ioctl$acd_ambient_pcm_Group0_0(fd acd_ambient_pcm_fd, cmd int32, arg intptr) 
+read$acd_ambient_pcm_syzgen(fd acd_ambient_pcm_fd, data ptr[out, array[int8]], size len[data]) 
+write$acd_ambient_pcm_Group0_0_syzgen(fd acd_ambient_pcm_fd, data ptr[in, array[int8]], size len[data]) 

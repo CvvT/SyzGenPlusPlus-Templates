@@ -1,0 +1,10 @@
+resource gsa_gsc_fd[fd]
+
+openat$gsa_gsc_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/gsc0"]], flags flags[open_flags], mode const[0]) gsa_gsc_fd
+gsa_gsc_Group40106301_0_struct_1 {
+    gsa_gsc_Group40106301_0_ptr_3  ptr[inout, array[int8, 2048]]
+    gsa_gsc_Group40106301_0_range_4  len[gsa_gsc_Group40106301_0_ptr_3, int32]
+    gsa_gsc_Group40106301_0_buffer_5  int32
+} [packed]
+ioctl$gsa_gsc_Group40106301_0(fd gsa_gsc_fd, cmd const[1074815745], arg ptr[in, gsa_gsc_Group40106301_0_struct_1]) 
+ioctl$gsa_gsc_Group6302_0(fd gsa_gsc_fd, cmd const[25346], arg intptr) 

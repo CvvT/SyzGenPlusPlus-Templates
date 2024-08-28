@@ -1,0 +1,4 @@
+resource ir_spi_fd[fd]
+
+openat$ir_spi_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/ir_spi"]], flags flags[open_flags], mode const[0]) ir_spi_fd
+ioctl$ir_spi_Group40046911_0(fd ir_spi_fd, cmd const[1074030865], arg intptr) 

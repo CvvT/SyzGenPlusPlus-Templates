@@ -1,0 +1,926 @@
+resource autofs_fd[fd]
+resource autofs_Group74_fd[fd]
+
+openat$autofs_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/autofs"]], flags flags[open_flags], mode const[0]) autofs_fd
+resource autofs_Group71_0_1_ret[int32]
+autofs_Group71_0_1_struct_1 {
+    autofs_Group71_0_1_const_2  const[113, int8]
+    autofs_Group71_0_1_const_3  const[147, int8]
+    autofs_Group71_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group71_0_1(arg ptr[in, autofs_Group71_0_1_struct_1], size const[4]) autofs_Group71_0_1_ret
+autofs_Group71_0_struct_1 {
+    autofs_Group71_0_const_2  const[1, int8]
+    autofs_Group71_0_const_3  const[0, int8]
+    autofs_Group71_0_const_4  const[0, int8]
+    autofs_Group71_0_const_5  const[0, int8]
+    autofs_Group71_0_range_6  int8[0:1]
+    autofs_Group71_0_const_7  const[0, int8]
+    autofs_Group71_0_const_8  const[0, int8]
+    autofs_Group71_0_const_9  const[0, int8]
+    autofs_Group71_0_range_10  int32[25:4120]
+    autofs_Group71_0_buffer_11  array[int8, 12]
+    autofs_Group71_0_const_12  const[47, int8]
+    autofs_Group71_0_buffer_13  int8
+    autofs_Group71_0_buffer_14  int8
+    autofs_Group71_0_buffer_15  int8
+    autofs_Group71_0_buffer_16  int8
+    autofs_Group71_0_buffer_17  int8
+    autofs_Group71_0_buffer_18  int8
+    autofs_Group71_0_buffer_19  int8
+    autofs_Group71_0_buffer_20  array[int8]
+} [packed]
+ioctl$autofs_Group71_0(fd autofs_fd, cmd autofs_Group71_0_1_ret, arg ptr[inout, autofs_Group71_0_struct_1]) 
+resource autofs_Group71_1_1_ret[int32]
+autofs_Group71_1_1_struct_1 {
+    autofs_Group71_1_1_const_2  const[113, int8]
+    autofs_Group71_1_1_const_3  const[147, int8]
+    autofs_Group71_1_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group71_1_1(arg ptr[in, autofs_Group71_1_1_struct_1], size const[4]) autofs_Group71_1_1_ret
+autofs_Group71_1_struct_1 {
+    autofs_Group71_1_const_2  const[1, int8]
+    autofs_Group71_1_const_3  const[0, int8]
+    autofs_Group71_1_const_4  const[0, int8]
+    autofs_Group71_1_const_5  const[0, int8]
+    autofs_Group71_1_range_6  int8[0:1]
+    autofs_Group71_1_const_7  const[0, int8]
+    autofs_Group71_1_const_8  const[0, int8]
+    autofs_Group71_1_const_9  const[0, int8]
+    autofs_Group71_1_range_10  int32[25:4120]
+    autofs_Group71_1_buffer_11  array[int8, 12]
+    autofs_Group71_1_buffer_12  int8
+    autofs_Group71_1_buffer_13  int8
+    autofs_Group71_1_buffer_14  int8
+    autofs_Group71_1_buffer_15  int8
+    autofs_Group71_1_buffer_16  int8
+    autofs_Group71_1_buffer_17  int8
+    autofs_Group71_1_buffer_18  int8
+    autofs_Group71_1_buffer_19  int8
+    autofs_Group71_1_buffer_20  array[int8]
+} [packed]
+ioctl$autofs_Group71_1(fd autofs_fd, cmd autofs_Group71_1_1_ret, arg ptr[inout, autofs_Group71_1_struct_1]) 
+resource autofs_Group7e_0_1_ret[int32]
+autofs_Group7e_0_1_struct_1 {
+    autofs_Group7e_0_1_const_2  const[126, int8]
+    autofs_Group7e_0_1_const_3  const[147, int8]
+    autofs_Group7e_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group7e_0_1(arg ptr[in, autofs_Group7e_0_1_struct_1], size const[4]) autofs_Group7e_0_1_ret
+autofs_Group7e_0_struct_1 {
+    autofs_Group7e_0_const_2  const[1, int32]
+    autofs_Group7e_0_range_3  int32[0:1]
+    autofs_Group7e_0_range_4  int32[25:4120]
+    autofs_Group7e_0_known_5  fd
+    autofs_Group7e_0_buffer_6  int8
+    autofs_Group7e_0_buffer_7  int8
+    autofs_Group7e_0_buffer_8  int8
+    autofs_Group7e_0_buffer_9  int8
+    autofs_Group7e_0_buffer_10  int32
+    autofs_Group7e_0_known_11  filename
+} [packed]
+ioctl$autofs_Group7e_0(fd autofs_fd, cmd autofs_Group7e_0_1_ret, arg ptr[in, autofs_Group7e_0_struct_1]) 
+resource autofs_Group7e_1_1_ret[int32]
+autofs_Group7e_1_1_struct_1 {
+    autofs_Group7e_1_1_const_2  const[126, int8]
+    autofs_Group7e_1_1_const_3  const[147, int8]
+    autofs_Group7e_1_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group7e_1_1(arg ptr[in, autofs_Group7e_1_1_struct_1], size const[4]) autofs_Group7e_1_1_ret
+autofs_Group7e_1_struct_1 {
+    autofs_Group7e_1_const_2  const[1, int8]
+    autofs_Group7e_1_const_3  const[0, int8]
+    autofs_Group7e_1_const_4  const[0, int8]
+    autofs_Group7e_1_const_5  const[0, int8]
+    autofs_Group7e_1_range_6  int8[0:1]
+    autofs_Group7e_1_const_7  const[0, int8]
+    autofs_Group7e_1_const_8  const[0, int8]
+    autofs_Group7e_1_const_9  const[0, int8]
+    autofs_Group7e_1_range_10  int32[25:4120]
+    autofs_Group7e_1_known_11  fd
+    autofs_Group7e_1_buffer_12  int8
+    autofs_Group7e_1_buffer_13  int8
+    autofs_Group7e_1_buffer_14  int8
+    autofs_Group7e_1_buffer_15  int8
+    autofs_Group7e_1_buffer_16  int32
+    autofs_Group7e_1_known_17  filename
+} [packed]
+ioctl$autofs_Group7e_1(fd autofs_fd, cmd autofs_Group7e_1_1_ret, arg ptr[in, autofs_Group7e_1_struct_1]) 
+resource autofs_Group72_0_1_ret[int32]
+autofs_Group72_0_1_struct_1 {
+    autofs_Group72_0_1_const_2  const[114, int8]
+    autofs_Group72_0_1_const_3  const[147, int8]
+    autofs_Group72_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group72_0_1(arg ptr[in, autofs_Group72_0_1_struct_1], size const[4]) autofs_Group72_0_1_ret
+autofs_Group72_0_struct_1 {
+    autofs_Group72_0_const_2  const[1, int32]
+    autofs_Group72_0_range_3  int32[0:1]
+    autofs_Group72_0_range_4  int32[25:4120]
+    autofs_Group72_0_known_5  fd
+    autofs_Group72_0_buffer_6  int64
+    autofs_Group72_0_buffer_7  int8
+    autofs_Group72_0_buffer_8  int8
+    autofs_Group72_0_buffer_9  array[int8]
+} [packed]
+ioctl$autofs_Group72_0(fd autofs_fd, cmd autofs_Group72_0_1_ret, arg ptr[in, autofs_Group72_0_struct_1]) 
+resource autofs_Group72_1_1_ret[int32]
+autofs_Group72_1_1_struct_1 {
+    autofs_Group72_1_1_const_2  const[114, int8]
+    autofs_Group72_1_1_const_3  const[147, int8]
+    autofs_Group72_1_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group72_1_1(arg ptr[in, autofs_Group72_1_1_struct_1], size const[4]) autofs_Group72_1_1_ret
+autofs_Group72_1_struct_1 {
+    autofs_Group72_1_const_2  const[1, int8]
+    autofs_Group72_1_const_3  const[0, int8]
+    autofs_Group72_1_const_4  const[0, int8]
+    autofs_Group72_1_const_5  const[0, int8]
+    autofs_Group72_1_range_6  int8[0:1]
+    autofs_Group72_1_const_7  const[0, int8]
+    autofs_Group72_1_const_8  const[0, int8]
+    autofs_Group72_1_const_9  const[0, int8]
+    autofs_Group72_1_range_10  int32[24:4120]
+    autofs_Group72_1_known_11  fd
+    autofs_Group72_1_buffer_12  int64
+    autofs_Group72_1_buffer_13  int8
+    autofs_Group72_1_buffer_14  array[int8]
+} [packed]
+ioctl$autofs_Group72_1(fd autofs_fd, cmd autofs_Group72_1_1_ret, arg ptr[in, autofs_Group72_1_struct_1]) 
+resource autofs_Group72_2_1_ret[int32]
+autofs_Group72_2_1_struct_1 {
+    autofs_Group72_2_1_const_2  const[114, int8]
+    autofs_Group72_2_1_const_3  const[147, int8]
+    autofs_Group72_2_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group72_2_1(arg ptr[in, autofs_Group72_2_1_struct_1], size const[4]) autofs_Group72_2_1_ret
+autofs_Group72_2_struct_1 {
+    autofs_Group72_2_const_2  const[1, int8]
+    autofs_Group72_2_const_3  const[0, int8]
+    autofs_Group72_2_const_4  const[0, int8]
+    autofs_Group72_2_const_5  const[0, int8]
+    autofs_Group72_2_range_6  int8[0:1]
+    autofs_Group72_2_const_7  const[0, int8]
+    autofs_Group72_2_const_8  const[0, int8]
+    autofs_Group72_2_const_9  const[0, int8]
+    autofs_Group72_2_range_10  int32[25:4120]
+    autofs_Group72_2_known_11  fd
+    autofs_Group72_2_buffer_12  int64
+    autofs_Group72_2_const_13  const[47, int8]
+    autofs_Group72_2_buffer_14  int8
+    autofs_Group72_2_buffer_15  array[int8]
+} [packed]
+ioctl$autofs_Group72_2(fd autofs_fd, cmd autofs_Group72_2_1_ret, arg ptr[in, autofs_Group72_2_struct_1]) 
+resource autofs_Group73_0_1_ret[int32]
+autofs_Group73_0_1_struct_1 {
+    autofs_Group73_0_1_const_2  const[115, int8]
+    autofs_Group73_0_1_const_3  const[147, int8]
+    autofs_Group73_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group73_0_1(arg ptr[in, autofs_Group73_0_1_struct_1], size const[4]) autofs_Group73_0_1_ret
+autofs_Group73_0_struct_1 {
+    autofs_Group73_0_const_2  const[1, int32]
+    autofs_Group73_0_range_3  int32[0:1]
+    autofs_Group73_0_range_4  int32[25:4120]
+    autofs_Group73_0_known_5  fd
+    autofs_Group73_0_buffer_6  int64
+    autofs_Group73_0_buffer_7  int8
+    autofs_Group73_0_buffer_8  int8
+    autofs_Group73_0_buffer_9  array[int8]
+} [packed]
+ioctl$autofs_Group73_0(fd autofs_fd, cmd autofs_Group73_0_1_ret, arg ptr[in, autofs_Group73_0_struct_1]) 
+resource autofs_Group73_1_1_ret[int32]
+autofs_Group73_1_1_struct_1 {
+    autofs_Group73_1_1_const_2  const[115, int8]
+    autofs_Group73_1_1_const_3  const[147, int8]
+    autofs_Group73_1_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group73_1_1(arg ptr[in, autofs_Group73_1_1_struct_1], size const[4]) autofs_Group73_1_1_ret
+autofs_Group73_1_struct_1 {
+    autofs_Group73_1_const_2  const[1, int8]
+    autofs_Group73_1_const_3  const[0, int8]
+    autofs_Group73_1_const_4  const[0, int8]
+    autofs_Group73_1_const_5  const[0, int8]
+    autofs_Group73_1_range_6  int8[0:1]
+    autofs_Group73_1_const_7  const[0, int8]
+    autofs_Group73_1_const_8  const[0, int8]
+    autofs_Group73_1_const_9  const[0, int8]
+    autofs_Group73_1_range_10  int32[24:4120]
+    autofs_Group73_1_known_11  fd
+    autofs_Group73_1_buffer_12  int64
+    autofs_Group73_1_buffer_13  int8
+    autofs_Group73_1_buffer_14  array[int8]
+} [packed]
+ioctl$autofs_Group73_1(fd autofs_fd, cmd autofs_Group73_1_1_ret, arg ptr[in, autofs_Group73_1_struct_1]) 
+resource autofs_Group73_2_1_ret[int32]
+autofs_Group73_2_1_struct_1 {
+    autofs_Group73_2_1_const_2  const[115, int8]
+    autofs_Group73_2_1_const_3  const[147, int8]
+    autofs_Group73_2_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group73_2_1(arg ptr[in, autofs_Group73_2_1_struct_1], size const[4]) autofs_Group73_2_1_ret
+autofs_Group73_2_struct_1 {
+    autofs_Group73_2_const_2  const[1, int8]
+    autofs_Group73_2_const_3  const[0, int8]
+    autofs_Group73_2_const_4  const[0, int8]
+    autofs_Group73_2_const_5  const[0, int8]
+    autofs_Group73_2_range_6  int8[0:1]
+    autofs_Group73_2_const_7  const[0, int8]
+    autofs_Group73_2_const_8  const[0, int8]
+    autofs_Group73_2_const_9  const[0, int8]
+    autofs_Group73_2_range_10  int32[25:4120]
+    autofs_Group73_2_known_11  fd
+    autofs_Group73_2_buffer_12  int64
+    autofs_Group73_2_const_13  const[47, int8]
+    autofs_Group73_2_buffer_14  int8
+    autofs_Group73_2_buffer_15  array[int8]
+} [packed]
+ioctl$autofs_Group73_2(fd autofs_fd, cmd autofs_Group73_2_1_ret, arg ptr[in, autofs_Group73_2_struct_1]) 
+resource autofs_Group75_0_1_ret[int32]
+autofs_Group75_0_1_struct_1 {
+    autofs_Group75_0_1_const_2  const[117, int8]
+    autofs_Group75_0_1_const_3  const[147, int8]
+    autofs_Group75_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group75_0_1(arg ptr[in, autofs_Group75_0_1_struct_1], size const[4]) autofs_Group75_0_1_ret
+autofs_Group75_0_struct_1 {
+    autofs_Group75_0_const_2  const[1, int8]
+    autofs_Group75_0_const_3  const[0, int8]
+    autofs_Group75_0_const_4  const[0, int8]
+    autofs_Group75_0_const_5  const[0, int8]
+    autofs_Group75_0_range_6  int8[0:1]
+    autofs_Group75_0_const_7  const[0, int8]
+    autofs_Group75_0_const_8  const[0, int8]
+    autofs_Group75_0_const_9  const[0, int8]
+    autofs_Group75_0_range_10  int32[25:4120]
+    autofs_Group75_0_buffer_11  int32
+    autofs_Group75_0_buffer_12  int64
+    autofs_Group75_0_const_13  const[47, int8]
+    autofs_Group75_0_buffer_14  int8
+    autofs_Group75_0_buffer_15  array[int8]
+} [packed]
+ioctl$autofs_Group75_0(fd autofs_fd, cmd autofs_Group75_0_1_ret, arg ptr[inout, autofs_Group75_0_struct_1]) 
+resource autofs_Group75_1_1_ret[int32]
+autofs_Group75_1_1_struct_1 {
+    autofs_Group75_1_1_const_2  const[117, int8]
+    autofs_Group75_1_1_const_3  const[147, int8]
+    autofs_Group75_1_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group75_1_1(arg ptr[in, autofs_Group75_1_1_struct_1], size const[4]) autofs_Group75_1_1_ret
+autofs_Group75_1_struct_1 {
+    autofs_Group75_1_const_2  const[1, int8]
+    autofs_Group75_1_const_3  const[0, int8]
+    autofs_Group75_1_const_4  const[0, int8]
+    autofs_Group75_1_const_5  const[0, int8]
+    autofs_Group75_1_range_6  int8[0:1]
+    autofs_Group75_1_const_7  const[0, int8]
+    autofs_Group75_1_const_8  const[0, int8]
+    autofs_Group75_1_const_9  const[0, int8]
+    autofs_Group75_1_range_10  int32[25:4120]
+    autofs_Group75_1_buffer_11  int32
+    autofs_Group75_1_buffer_12  int64
+    autofs_Group75_1_buffer_13  int8
+    autofs_Group75_1_buffer_14  int8
+    autofs_Group75_1_buffer_15  array[int8]
+} [packed]
+ioctl$autofs_Group75_1(fd autofs_fd, cmd autofs_Group75_1_1_ret, arg ptr[inout, autofs_Group75_1_struct_1]) 
+resource autofs_Group75_2_1_ret[int32]
+autofs_Group75_2_1_struct_1 {
+    autofs_Group75_2_1_const_2  const[117, int8]
+    autofs_Group75_2_1_const_3  const[147, int8]
+    autofs_Group75_2_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group75_2_1(arg ptr[in, autofs_Group75_2_1_struct_1], size const[4]) autofs_Group75_2_1_ret
+autofs_Group75_2_struct_1 {
+    autofs_Group75_2_const_2  const[1, int8]
+    autofs_Group75_2_const_3  const[0, int8]
+    autofs_Group75_2_const_4  const[0, int8]
+    autofs_Group75_2_const_5  const[0, int8]
+    autofs_Group75_2_range_6  int8[0:1]
+    autofs_Group75_2_const_7  const[0, int8]
+    autofs_Group75_2_const_8  const[0, int8]
+    autofs_Group75_2_const_9  const[0, int8]
+    autofs_Group75_2_range_10  int32[25:4120]
+    autofs_Group75_2_range_11  int32[64:4294967295]
+    autofs_Group75_2_buffer_12  int64
+    autofs_Group75_2_buffer_13  int8
+    autofs_Group75_2_buffer_14  int8
+    autofs_Group75_2_buffer_15  int8
+    autofs_Group75_2_buffer_16  int8
+    autofs_Group75_2_buffer_17  int8
+    autofs_Group75_2_buffer_18  int8
+    autofs_Group75_2_buffer_19  int8
+    autofs_Group75_2_buffer_20  int8
+    autofs_Group75_2_buffer_21  array[int8]
+} [packed]
+ioctl$autofs_Group75_2(fd autofs_fd, cmd autofs_Group75_2_1_ret, arg ptr[inout, autofs_Group75_2_struct_1]) 
+resource autofs_Group75_3_1_ret[int32]
+autofs_Group75_3_1_struct_1 {
+    autofs_Group75_3_1_const_2  const[117, int8]
+    autofs_Group75_3_1_const_3  const[147, int8]
+    autofs_Group75_3_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group75_3_1(arg ptr[in, autofs_Group75_3_1_struct_1], size const[4]) autofs_Group75_3_1_ret
+autofs_Group75_3_struct_1 {
+    autofs_Group75_3_const_2  const[1, int8]
+    autofs_Group75_3_const_3  const[0, int8]
+    autofs_Group75_3_const_4  const[0, int8]
+    autofs_Group75_3_const_5  const[0, int8]
+    autofs_Group75_3_range_6  int8[0:1]
+    autofs_Group75_3_const_7  const[0, int8]
+    autofs_Group75_3_const_8  const[0, int8]
+    autofs_Group75_3_const_9  const[0, int8]
+    autofs_Group75_3_range_10  int32[25:4120]
+    autofs_Group75_3_range_11  int32[0:3]
+    autofs_Group75_3_buffer_12  int64
+    autofs_Group75_3_buffer_13  int8
+    autofs_Group75_3_buffer_14  int8
+    autofs_Group75_3_buffer_15  array[int8]
+} [packed]
+ioctl$autofs_Group75_3(fd autofs_fd, cmd autofs_Group75_3_1_ret, arg ptr[inout, autofs_Group75_3_struct_1]) 
+resource autofs_Group75_4_1_ret[int32]
+autofs_Group75_4_1_struct_1 {
+    autofs_Group75_4_1_const_2  const[117, int8]
+    autofs_Group75_4_1_const_3  const[147, int8]
+    autofs_Group75_4_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group75_4_1(arg ptr[in, autofs_Group75_4_1_struct_1], size const[4]) autofs_Group75_4_1_ret
+autofs_Group75_4_struct_1 {
+    autofs_Group75_4_const_2  const[1, int32]
+    autofs_Group75_4_range_3  int32[0:1]
+    autofs_Group75_4_range_4  int32[25:4120]
+    autofs_Group75_4_buffer_5  int32
+    autofs_Group75_4_buffer_6  int64
+    autofs_Group75_4_buffer_7  int8
+    autofs_Group75_4_buffer_8  int8
+    autofs_Group75_4_buffer_9  array[int8]
+} [packed]
+ioctl$autofs_Group75_4(fd autofs_fd, cmd autofs_Group75_4_1_ret, arg ptr[inout, autofs_Group75_4_struct_1]) 
+resource autofs_Group76_0_1_ret[int32]
+autofs_Group76_0_1_struct_1 {
+    autofs_Group76_0_1_const_2  const[118, int8]
+    autofs_Group76_0_1_const_3  const[147, int8]
+    autofs_Group76_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group76_0_1(arg ptr[in, autofs_Group76_0_1_struct_1], size const[4]) autofs_Group76_0_1_ret
+autofs_Group76_0_struct_1 {
+    autofs_Group76_0_const_2  const[1, int32]
+    autofs_Group76_0_range_3  int32[0:1]
+    autofs_Group76_0_range_4  int32[25:4120]
+    autofs_Group76_0_known_5  fd
+    autofs_Group76_0_buffer_6  int64
+    autofs_Group76_0_buffer_7  int8
+    autofs_Group76_0_buffer_8  int8
+    autofs_Group76_0_buffer_9  array[int8]
+} [packed]
+ioctl$autofs_Group76_0(fd autofs_fd, cmd autofs_Group76_0_1_ret, arg ptr[in, autofs_Group76_0_struct_1]) 
+resource autofs_Group76_1_1_ret[int32]
+autofs_Group76_1_1_struct_1 {
+    autofs_Group76_1_1_const_2  const[118, int8]
+    autofs_Group76_1_1_const_3  const[147, int8]
+    autofs_Group76_1_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group76_1_1(arg ptr[in, autofs_Group76_1_1_struct_1], size const[4]) autofs_Group76_1_1_ret
+autofs_Group76_1_struct_1 {
+    autofs_Group76_1_const_2  const[1, int8]
+    autofs_Group76_1_const_3  const[0, int8]
+    autofs_Group76_1_const_4  const[0, int8]
+    autofs_Group76_1_const_5  const[0, int8]
+    autofs_Group76_1_range_6  int8[0:1]
+    autofs_Group76_1_const_7  const[0, int8]
+    autofs_Group76_1_const_8  const[0, int8]
+    autofs_Group76_1_const_9  const[0, int8]
+    autofs_Group76_1_range_10  int32[24:4120]
+    autofs_Group76_1_known_11  fd
+    autofs_Group76_1_buffer_12  int64
+    autofs_Group76_1_buffer_13  int8
+    autofs_Group76_1_buffer_14  array[int8]
+} [packed]
+ioctl$autofs_Group76_1(fd autofs_fd, cmd autofs_Group76_1_1_ret, arg ptr[in, autofs_Group76_1_struct_1]) 
+resource autofs_Group76_2_1_ret[int32]
+autofs_Group76_2_1_struct_1 {
+    autofs_Group76_2_1_const_2  const[118, int8]
+    autofs_Group76_2_1_const_3  const[147, int8]
+    autofs_Group76_2_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group76_2_1(arg ptr[in, autofs_Group76_2_1_struct_1], size const[4]) autofs_Group76_2_1_ret
+autofs_Group76_2_struct_1 {
+    autofs_Group76_2_const_2  const[1, int8]
+    autofs_Group76_2_const_3  const[0, int8]
+    autofs_Group76_2_const_4  const[0, int8]
+    autofs_Group76_2_const_5  const[0, int8]
+    autofs_Group76_2_range_6  int8[0:1]
+    autofs_Group76_2_const_7  const[0, int8]
+    autofs_Group76_2_const_8  const[0, int8]
+    autofs_Group76_2_const_9  const[0, int8]
+    autofs_Group76_2_range_10  int32[25:4120]
+    autofs_Group76_2_known_11  fd
+    autofs_Group76_2_buffer_12  int64
+    autofs_Group76_2_const_13  const[47, int8]
+    autofs_Group76_2_buffer_14  int8
+    autofs_Group76_2_buffer_15  array[int8]
+} [packed]
+ioctl$autofs_Group76_2(fd autofs_fd, cmd autofs_Group76_2_1_ret, arg ptr[in, autofs_Group76_2_struct_1]) 
+resource autofs_Group77_0_1_ret[int32]
+autofs_Group77_0_1_struct_1 {
+    autofs_Group77_0_1_const_2  const[119, int8]
+    autofs_Group77_0_1_const_3  const[147, int8]
+    autofs_Group77_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group77_0_1(arg ptr[in, autofs_Group77_0_1_struct_1], size const[4]) autofs_Group77_0_1_ret
+autofs_Group77_0_struct_1 {
+    autofs_Group77_0_const_2  const[1, int32]
+    autofs_Group77_0_range_3  int32[0:1]
+    autofs_Group77_0_range_4  int32[25:4120]
+    autofs_Group77_0_known_5  fd
+    autofs_Group77_0_buffer_6  int64
+    autofs_Group77_0_buffer_7  int8
+    autofs_Group77_0_buffer_8  int8
+    autofs_Group77_0_buffer_9  array[int8]
+} [packed]
+ioctl$autofs_Group77_0(fd autofs_fd, cmd autofs_Group77_0_1_ret, arg ptr[in, autofs_Group77_0_struct_1]) 
+resource autofs_Group77_1_1_ret[int32]
+autofs_Group77_1_1_struct_1 {
+    autofs_Group77_1_1_const_2  const[119, int8]
+    autofs_Group77_1_1_const_3  const[147, int8]
+    autofs_Group77_1_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group77_1_1(arg ptr[in, autofs_Group77_1_1_struct_1], size const[4]) autofs_Group77_1_1_ret
+autofs_Group77_1_struct_1 {
+    autofs_Group77_1_const_2  const[1, int8]
+    autofs_Group77_1_const_3  const[0, int8]
+    autofs_Group77_1_const_4  const[0, int8]
+    autofs_Group77_1_const_5  const[0, int8]
+    autofs_Group77_1_range_6  int8[0:1]
+    autofs_Group77_1_const_7  const[0, int8]
+    autofs_Group77_1_const_8  const[0, int8]
+    autofs_Group77_1_const_9  const[0, int8]
+    autofs_Group77_1_range_10  int32[24:4120]
+    autofs_Group77_1_known_11  fd
+    autofs_Group77_1_buffer_12  int64
+    autofs_Group77_1_buffer_13  int8
+    autofs_Group77_1_buffer_14  array[int8]
+} [packed]
+ioctl$autofs_Group77_1(fd autofs_fd, cmd autofs_Group77_1_1_ret, arg ptr[in, autofs_Group77_1_struct_1]) 
+resource autofs_Group77_2_1_ret[int32]
+autofs_Group77_2_1_struct_1 {
+    autofs_Group77_2_1_const_2  const[119, int8]
+    autofs_Group77_2_1_const_3  const[147, int8]
+    autofs_Group77_2_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group77_2_1(arg ptr[in, autofs_Group77_2_1_struct_1], size const[4]) autofs_Group77_2_1_ret
+autofs_Group77_2_struct_1 {
+    autofs_Group77_2_const_2  const[1, int8]
+    autofs_Group77_2_const_3  const[0, int8]
+    autofs_Group77_2_const_4  const[0, int8]
+    autofs_Group77_2_const_5  const[0, int8]
+    autofs_Group77_2_range_6  int8[0:1]
+    autofs_Group77_2_const_7  const[0, int8]
+    autofs_Group77_2_const_8  const[0, int8]
+    autofs_Group77_2_const_9  const[0, int8]
+    autofs_Group77_2_range_10  int32[25:4120]
+    autofs_Group77_2_known_11  fd
+    autofs_Group77_2_buffer_12  int64
+    autofs_Group77_2_const_13  const[47, int8]
+    autofs_Group77_2_buffer_14  int8
+    autofs_Group77_2_buffer_15  array[int8]
+} [packed]
+ioctl$autofs_Group77_2(fd autofs_fd, cmd autofs_Group77_2_1_ret, arg ptr[in, autofs_Group77_2_struct_1]) 
+resource autofs_Group78_0_1_ret[int32]
+autofs_Group78_0_1_struct_1 {
+    autofs_Group78_0_1_const_2  const[120, int8]
+    autofs_Group78_0_1_const_3  const[147, int8]
+    autofs_Group78_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group78_0_1(arg ptr[in, autofs_Group78_0_1_struct_1], size const[4]) autofs_Group78_0_1_ret
+autofs_Group78_0_struct_1 {
+    autofs_Group78_0_const_2  const[1, int32]
+    autofs_Group78_0_range_3  int32[0:1]
+    autofs_Group78_0_range_4  int32[25:4120]
+    autofs_Group78_0_known_5  fd
+    autofs_Group78_0_buffer_6  int64
+    autofs_Group78_0_buffer_7  int8
+    autofs_Group78_0_buffer_8  int8
+    autofs_Group78_0_buffer_9  array[int8]
+} [packed]
+ioctl$autofs_Group78_0(fd autofs_fd, cmd autofs_Group78_0_1_ret, arg ptr[in, autofs_Group78_0_struct_1]) 
+resource autofs_Group78_1_1_ret[int32]
+autofs_Group78_1_1_struct_1 {
+    autofs_Group78_1_1_const_2  const[120, int8]
+    autofs_Group78_1_1_const_3  const[147, int8]
+    autofs_Group78_1_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group78_1_1(arg ptr[in, autofs_Group78_1_1_struct_1], size const[4]) autofs_Group78_1_1_ret
+autofs_Group78_1_struct_1 {
+    autofs_Group78_1_const_2  const[1, int8]
+    autofs_Group78_1_const_3  const[0, int8]
+    autofs_Group78_1_const_4  const[0, int8]
+    autofs_Group78_1_const_5  const[0, int8]
+    autofs_Group78_1_range_6  int8[0:1]
+    autofs_Group78_1_const_7  const[0, int8]
+    autofs_Group78_1_const_8  const[0, int8]
+    autofs_Group78_1_const_9  const[0, int8]
+    autofs_Group78_1_range_10  int32[24:4120]
+    autofs_Group78_1_known_11  fd
+    autofs_Group78_1_buffer_12  int64
+    autofs_Group78_1_buffer_13  int8
+    autofs_Group78_1_buffer_14  array[int8]
+} [packed]
+ioctl$autofs_Group78_1(fd autofs_fd, cmd autofs_Group78_1_1_ret, arg ptr[in, autofs_Group78_1_struct_1]) 
+resource autofs_Group78_2_1_ret[int32]
+autofs_Group78_2_1_struct_1 {
+    autofs_Group78_2_1_const_2  const[120, int8]
+    autofs_Group78_2_1_const_3  const[147, int8]
+    autofs_Group78_2_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group78_2_1(arg ptr[in, autofs_Group78_2_1_struct_1], size const[4]) autofs_Group78_2_1_ret
+autofs_Group78_2_struct_1 {
+    autofs_Group78_2_const_2  const[1, int8]
+    autofs_Group78_2_const_3  const[0, int8]
+    autofs_Group78_2_const_4  const[0, int8]
+    autofs_Group78_2_const_5  const[0, int8]
+    autofs_Group78_2_range_6  int8[0:1]
+    autofs_Group78_2_const_7  const[0, int8]
+    autofs_Group78_2_const_8  const[0, int8]
+    autofs_Group78_2_const_9  const[0, int8]
+    autofs_Group78_2_range_10  int32[25:4120]
+    autofs_Group78_2_known_11  fd
+    autofs_Group78_2_buffer_12  int64
+    autofs_Group78_2_const_13  const[47, int8]
+    autofs_Group78_2_buffer_14  int8
+    autofs_Group78_2_buffer_15  array[int8]
+} [packed]
+ioctl$autofs_Group78_2(fd autofs_fd, cmd autofs_Group78_2_1_ret, arg ptr[in, autofs_Group78_2_struct_1]) 
+resource autofs_Group79_0_1_ret[int32]
+autofs_Group79_0_1_struct_1 {
+    autofs_Group79_0_1_const_2  const[121, int8]
+    autofs_Group79_0_1_const_3  const[147, int8]
+    autofs_Group79_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group79_0_1(arg ptr[in, autofs_Group79_0_1_struct_1], size const[4]) autofs_Group79_0_1_ret
+autofs_Group79_0_struct_1 {
+    autofs_Group79_0_const_2  const[1, int32]
+    autofs_Group79_0_range_3  int32[0:1]
+    autofs_Group79_0_range_4  int32[25:4120]
+    autofs_Group79_0_known_5  fd
+    autofs_Group79_0_buffer_6  int64
+    autofs_Group79_0_buffer_7  int8
+    autofs_Group79_0_buffer_8  int8
+    autofs_Group79_0_buffer_9  array[int8]
+} [packed]
+ioctl$autofs_Group79_0(fd autofs_fd, cmd autofs_Group79_0_1_ret, arg ptr[in, autofs_Group79_0_struct_1]) 
+resource autofs_Group79_1_1_ret[int32]
+autofs_Group79_1_1_struct_1 {
+    autofs_Group79_1_1_const_2  const[121, int8]
+    autofs_Group79_1_1_const_3  const[147, int8]
+    autofs_Group79_1_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group79_1_1(arg ptr[in, autofs_Group79_1_1_struct_1], size const[4]) autofs_Group79_1_1_ret
+autofs_Group79_1_struct_1 {
+    autofs_Group79_1_const_2  const[1, int8]
+    autofs_Group79_1_const_3  const[0, int8]
+    autofs_Group79_1_const_4  const[0, int8]
+    autofs_Group79_1_const_5  const[0, int8]
+    autofs_Group79_1_range_6  int8[0:1]
+    autofs_Group79_1_const_7  const[0, int8]
+    autofs_Group79_1_const_8  const[0, int8]
+    autofs_Group79_1_const_9  const[0, int8]
+    autofs_Group79_1_range_10  int32[24:4120]
+    autofs_Group79_1_known_11  fd
+    autofs_Group79_1_buffer_12  int64
+    autofs_Group79_1_buffer_13  int8
+    autofs_Group79_1_buffer_14  array[int8]
+} [packed]
+ioctl$autofs_Group79_1(fd autofs_fd, cmd autofs_Group79_1_1_ret, arg ptr[in, autofs_Group79_1_struct_1]) 
+resource autofs_Group79_2_1_ret[int32]
+autofs_Group79_2_1_struct_1 {
+    autofs_Group79_2_1_const_2  const[121, int8]
+    autofs_Group79_2_1_const_3  const[147, int8]
+    autofs_Group79_2_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group79_2_1(arg ptr[in, autofs_Group79_2_1_struct_1], size const[4]) autofs_Group79_2_1_ret
+autofs_Group79_2_struct_1 {
+    autofs_Group79_2_const_2  const[1, int8]
+    autofs_Group79_2_const_3  const[0, int8]
+    autofs_Group79_2_const_4  const[0, int8]
+    autofs_Group79_2_const_5  const[0, int8]
+    autofs_Group79_2_range_6  int8[0:1]
+    autofs_Group79_2_const_7  const[0, int8]
+    autofs_Group79_2_const_8  const[0, int8]
+    autofs_Group79_2_const_9  const[0, int8]
+    autofs_Group79_2_range_10  int32[25:4120]
+    autofs_Group79_2_known_11  fd
+    autofs_Group79_2_buffer_12  int64
+    autofs_Group79_2_const_13  const[47, int8]
+    autofs_Group79_2_buffer_14  int8
+    autofs_Group79_2_buffer_15  array[int8]
+} [packed]
+ioctl$autofs_Group79_2(fd autofs_fd, cmd autofs_Group79_2_1_ret, arg ptr[in, autofs_Group79_2_struct_1]) 
+resource autofs_Group7a_0_1_ret[int32]
+autofs_Group7a_0_1_struct_1 {
+    autofs_Group7a_0_1_const_2  const[122, int8]
+    autofs_Group7a_0_1_const_3  const[147, int8]
+    autofs_Group7a_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group7a_0_1(arg ptr[in, autofs_Group7a_0_1_struct_1], size const[4]) autofs_Group7a_0_1_ret
+autofs_Group7a_0_struct_1 {
+    autofs_Group7a_0_const_2  const[1, int32]
+    autofs_Group7a_0_range_3  int32[0:1]
+    autofs_Group7a_0_range_4  int32[25:4120]
+    autofs_Group7a_0_known_5  fd
+    autofs_Group7a_0_buffer_6  int64
+    autofs_Group7a_0_buffer_7  int8
+    autofs_Group7a_0_buffer_8  int8
+    autofs_Group7a_0_buffer_9  array[int8]
+} [packed]
+ioctl$autofs_Group7a_0(fd autofs_fd, cmd autofs_Group7a_0_1_ret, arg ptr[in, autofs_Group7a_0_struct_1]) 
+resource autofs_Group7a_1_1_ret[int32]
+autofs_Group7a_1_1_struct_1 {
+    autofs_Group7a_1_1_const_2  const[122, int8]
+    autofs_Group7a_1_1_const_3  const[147, int8]
+    autofs_Group7a_1_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group7a_1_1(arg ptr[in, autofs_Group7a_1_1_struct_1], size const[4]) autofs_Group7a_1_1_ret
+autofs_Group7a_1_struct_1 {
+    autofs_Group7a_1_const_2  const[1, int8]
+    autofs_Group7a_1_const_3  const[0, int8]
+    autofs_Group7a_1_const_4  const[0, int8]
+    autofs_Group7a_1_const_5  const[0, int8]
+    autofs_Group7a_1_range_6  int8[0:1]
+    autofs_Group7a_1_const_7  const[0, int8]
+    autofs_Group7a_1_const_8  const[0, int8]
+    autofs_Group7a_1_const_9  const[0, int8]
+    autofs_Group7a_1_range_10  int32[24:4120]
+    autofs_Group7a_1_known_11  fd
+    autofs_Group7a_1_buffer_12  int64
+    autofs_Group7a_1_buffer_13  int8
+    autofs_Group7a_1_buffer_14  array[int8]
+} [packed]
+ioctl$autofs_Group7a_1(fd autofs_fd, cmd autofs_Group7a_1_1_ret, arg ptr[in, autofs_Group7a_1_struct_1]) 
+resource autofs_Group7a_2_1_ret[int32]
+autofs_Group7a_2_1_struct_1 {
+    autofs_Group7a_2_1_const_2  const[122, int8]
+    autofs_Group7a_2_1_const_3  const[147, int8]
+    autofs_Group7a_2_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group7a_2_1(arg ptr[in, autofs_Group7a_2_1_struct_1], size const[4]) autofs_Group7a_2_1_ret
+autofs_Group7a_2_struct_1 {
+    autofs_Group7a_2_const_2  const[1, int8]
+    autofs_Group7a_2_const_3  const[0, int8]
+    autofs_Group7a_2_const_4  const[0, int8]
+    autofs_Group7a_2_const_5  const[0, int8]
+    autofs_Group7a_2_range_6  int8[0:1]
+    autofs_Group7a_2_const_7  const[0, int8]
+    autofs_Group7a_2_const_8  const[0, int8]
+    autofs_Group7a_2_const_9  const[0, int8]
+    autofs_Group7a_2_range_10  int32[25:4120]
+    autofs_Group7a_2_known_11  fd
+    autofs_Group7a_2_buffer_12  int64
+    autofs_Group7a_2_const_13  const[47, int8]
+    autofs_Group7a_2_buffer_14  int8
+    autofs_Group7a_2_buffer_15  array[int8]
+} [packed]
+ioctl$autofs_Group7a_2(fd autofs_fd, cmd autofs_Group7a_2_1_ret, arg ptr[in, autofs_Group7a_2_struct_1]) 
+resource autofs_Group7c_0_1_ret[int32]
+autofs_Group7c_0_1_struct_1 {
+    autofs_Group7c_0_1_const_2  const[124, int8]
+    autofs_Group7c_0_1_const_3  const[147, int8]
+    autofs_Group7c_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group7c_0_1(arg ptr[in, autofs_Group7c_0_1_struct_1], size const[4]) autofs_Group7c_0_1_ret
+autofs_Group7c_0_struct_1 {
+    autofs_Group7c_0_const_2  const[1, int32]
+    autofs_Group7c_0_range_3  int32[0:1]
+    autofs_Group7c_0_range_4  int32[25:4120]
+    autofs_Group7c_0_known_5  fd
+    autofs_Group7c_0_buffer_6  int64
+    autofs_Group7c_0_buffer_7  int8
+    autofs_Group7c_0_buffer_8  int8
+    autofs_Group7c_0_buffer_9  array[int8]
+} [packed]
+ioctl$autofs_Group7c_0(fd autofs_fd, cmd autofs_Group7c_0_1_ret, arg ptr[in, autofs_Group7c_0_struct_1]) 
+resource autofs_Group7c_1_1_ret[int32]
+autofs_Group7c_1_1_struct_1 {
+    autofs_Group7c_1_1_const_2  const[124, int8]
+    autofs_Group7c_1_1_const_3  const[147, int8]
+    autofs_Group7c_1_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group7c_1_1(arg ptr[in, autofs_Group7c_1_1_struct_1], size const[4]) autofs_Group7c_1_1_ret
+autofs_Group7c_1_struct_1 {
+    autofs_Group7c_1_const_2  const[1, int8]
+    autofs_Group7c_1_const_3  const[0, int8]
+    autofs_Group7c_1_const_4  const[0, int8]
+    autofs_Group7c_1_const_5  const[0, int8]
+    autofs_Group7c_1_range_6  int8[0:1]
+    autofs_Group7c_1_const_7  const[0, int8]
+    autofs_Group7c_1_const_8  const[0, int8]
+    autofs_Group7c_1_const_9  const[0, int8]
+    autofs_Group7c_1_range_10  int32[24:4120]
+    autofs_Group7c_1_known_11  fd
+    autofs_Group7c_1_buffer_12  int64
+    autofs_Group7c_1_buffer_13  int8
+    autofs_Group7c_1_buffer_14  array[int8]
+} [packed]
+ioctl$autofs_Group7c_1(fd autofs_fd, cmd autofs_Group7c_1_1_ret, arg ptr[in, autofs_Group7c_1_struct_1]) 
+resource autofs_Group7c_2_1_ret[int32]
+autofs_Group7c_2_1_struct_1 {
+    autofs_Group7c_2_1_const_2  const[124, int8]
+    autofs_Group7c_2_1_const_3  const[147, int8]
+    autofs_Group7c_2_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group7c_2_1(arg ptr[in, autofs_Group7c_2_1_struct_1], size const[4]) autofs_Group7c_2_1_ret
+autofs_Group7c_2_struct_1 {
+    autofs_Group7c_2_const_2  const[1, int8]
+    autofs_Group7c_2_const_3  const[0, int8]
+    autofs_Group7c_2_const_4  const[0, int8]
+    autofs_Group7c_2_const_5  const[0, int8]
+    autofs_Group7c_2_range_6  int8[0:1]
+    autofs_Group7c_2_const_7  const[0, int8]
+    autofs_Group7c_2_const_8  const[0, int8]
+    autofs_Group7c_2_const_9  const[0, int8]
+    autofs_Group7c_2_range_10  int32[25:4120]
+    autofs_Group7c_2_known_11  fd
+    autofs_Group7c_2_buffer_12  int64
+    autofs_Group7c_2_const_13  const[47, int8]
+    autofs_Group7c_2_buffer_14  int8
+    autofs_Group7c_2_buffer_15  array[int8]
+} [packed]
+ioctl$autofs_Group7c_2(fd autofs_fd, cmd autofs_Group7c_2_1_ret, arg ptr[in, autofs_Group7c_2_struct_1]) 
+resource autofs_Group7d_0_1_ret[int32]
+autofs_Group7d_0_1_struct_1 {
+    autofs_Group7d_0_1_const_2  const[125, int8]
+    autofs_Group7d_0_1_const_3  const[147, int8]
+    autofs_Group7d_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group7d_0_1(arg ptr[in, autofs_Group7d_0_1_struct_1], size const[4]) autofs_Group7d_0_1_ret
+autofs_Group7d_0_struct_1 {
+    autofs_Group7d_0_const_2  const[1, int32]
+    autofs_Group7d_0_range_3  int32[0:1]
+    autofs_Group7d_0_range_4  int32[25:4120]
+    autofs_Group7d_0_known_5  fd
+    autofs_Group7d_0_buffer_6  int64
+    autofs_Group7d_0_buffer_7  int8
+    autofs_Group7d_0_buffer_8  int8
+    autofs_Group7d_0_buffer_9  array[int8]
+} [packed]
+ioctl$autofs_Group7d_0(fd autofs_fd, cmd autofs_Group7d_0_1_ret, arg ptr[in, autofs_Group7d_0_struct_1]) 
+resource autofs_Group7d_1_1_ret[int32]
+autofs_Group7d_1_1_struct_1 {
+    autofs_Group7d_1_1_const_2  const[125, int8]
+    autofs_Group7d_1_1_const_3  const[147, int8]
+    autofs_Group7d_1_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group7d_1_1(arg ptr[in, autofs_Group7d_1_1_struct_1], size const[4]) autofs_Group7d_1_1_ret
+autofs_Group7d_1_struct_1 {
+    autofs_Group7d_1_const_2  const[1, int8]
+    autofs_Group7d_1_const_3  const[0, int8]
+    autofs_Group7d_1_const_4  const[0, int8]
+    autofs_Group7d_1_const_5  const[0, int8]
+    autofs_Group7d_1_range_6  int8[0:1]
+    autofs_Group7d_1_const_7  const[0, int8]
+    autofs_Group7d_1_const_8  const[0, int8]
+    autofs_Group7d_1_const_9  const[0, int8]
+    autofs_Group7d_1_range_10  int32[24:4120]
+    autofs_Group7d_1_known_11  fd
+    autofs_Group7d_1_buffer_12  int64
+    autofs_Group7d_1_buffer_13  int8
+    autofs_Group7d_1_buffer_14  array[int8]
+} [packed]
+ioctl$autofs_Group7d_1(fd autofs_fd, cmd autofs_Group7d_1_1_ret, arg ptr[in, autofs_Group7d_1_struct_1]) 
+resource autofs_Group7d_2_1_ret[int32]
+autofs_Group7d_2_1_struct_1 {
+    autofs_Group7d_2_1_const_2  const[125, int8]
+    autofs_Group7d_2_1_const_3  const[147, int8]
+    autofs_Group7d_2_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group7d_2_1(arg ptr[in, autofs_Group7d_2_1_struct_1], size const[4]) autofs_Group7d_2_1_ret
+autofs_Group7d_2_struct_1 {
+    autofs_Group7d_2_const_2  const[1, int8]
+    autofs_Group7d_2_const_3  const[0, int8]
+    autofs_Group7d_2_const_4  const[0, int8]
+    autofs_Group7d_2_const_5  const[0, int8]
+    autofs_Group7d_2_range_6  int8[0:1]
+    autofs_Group7d_2_const_7  const[0, int8]
+    autofs_Group7d_2_const_8  const[0, int8]
+    autofs_Group7d_2_const_9  const[0, int8]
+    autofs_Group7d_2_range_10  int32[25:4120]
+    autofs_Group7d_2_known_11  fd
+    autofs_Group7d_2_buffer_12  int64
+    autofs_Group7d_2_const_13  const[47, int8]
+    autofs_Group7d_2_buffer_14  int8
+    autofs_Group7d_2_buffer_15  array[int8]
+} [packed]
+ioctl$autofs_Group7d_2(fd autofs_fd, cmd autofs_Group7d_2_1_ret, arg ptr[in, autofs_Group7d_2_struct_1]) 
+resource autofs_Group74_0_1_ret[int32]
+autofs_Group74_0_1_struct_1 {
+    autofs_Group74_0_1_const_2  const[116, int8]
+    autofs_Group74_0_1_const_3  const[147, int8]
+    autofs_Group74_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group74_0_1(arg ptr[in, autofs_Group74_0_1_struct_1], size const[4]) autofs_Group74_0_1_ret
+autofs_Group74_0_struct_1 {
+    autofs_Group74_0_const_2  const[1, int8]
+    autofs_Group74_0_const_3  const[0, int8]
+    autofs_Group74_0_const_4  const[0, int8]
+    autofs_Group74_0_const_5  const[0, int8]
+    autofs_Group74_0_range_6  int8[0:1]
+    autofs_Group74_0_const_7  const[0, int8]
+    autofs_Group74_0_const_8  const[0, int8]
+    autofs_Group74_0_const_9  const[0, int8]
+    autofs_Group74_0_range_10  int32[25:4120]
+    autofs_Group74_0_buffer_11  int32
+    autofs_Group74_0_buffer_12  int8
+    autofs_Group74_0_buffer_13  int8
+    autofs_Group74_0_buffer_14  int8
+    autofs_Group74_0_buffer_15  int8
+    autofs_Group74_0_buffer_16  int32
+    autofs_Group74_0_known_17  filename
+} [packed]
+ioctl$autofs_Group74_0(fd autofs_fd, cmd autofs_Group74_0_1_ret, arg ptr[in, autofs_Group74_0_struct_1]) autofs_Group74_fd
+resource autofs_Group74_1_1_ret[int32]
+autofs_Group74_1_1_struct_1 {
+    autofs_Group74_1_1_const_2  const[116, int8]
+    autofs_Group74_1_1_const_3  const[147, int8]
+    autofs_Group74_1_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group74_1_1(arg ptr[in, autofs_Group74_1_1_struct_1], size const[4]) autofs_Group74_1_1_ret
+autofs_Group74_1_struct_1 {
+    autofs_Group74_1_const_2  const[1, int32]
+    autofs_Group74_1_range_3  int32[0:1]
+    autofs_Group74_1_range_4  int32[25:4120]
+    autofs_Group74_1_buffer_5  int32
+    autofs_Group74_1_buffer_6  int8
+    autofs_Group74_1_buffer_7  int8
+    autofs_Group74_1_buffer_8  int8
+    autofs_Group74_1_buffer_9  int8
+    autofs_Group74_1_buffer_10  int32
+    autofs_Group74_1_known_11  filename
+} [packed]
+ioctl$autofs_Group74_1(fd autofs_fd, cmd autofs_Group74_1_1_ret, arg ptr[in, autofs_Group74_1_struct_1]) autofs_Group74_fd
+resource autofs_Group7b_0_1_ret[int32]
+autofs_Group7b_0_1_struct_1 {
+    autofs_Group7b_0_1_const_2  const[123, int8]
+    autofs_Group7b_0_1_const_3  const[147, int8]
+    autofs_Group7b_0_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group7b_0_1(arg ptr[in, autofs_Group7b_0_1_struct_1], size const[4]) autofs_Group7b_0_1_ret
+autofs_Group7b_0_struct_1 {
+    autofs_Group7b_0_const_2  const[1, int32]
+    autofs_Group7b_0_range_3  int32[0:1]
+    autofs_Group7b_0_range_4  int32[25:4120]
+    autofs_Group7b_0_known_5  fd
+    autofs_Group7b_0_buffer_6  int64
+    autofs_Group7b_0_buffer_7  int8
+    autofs_Group7b_0_buffer_8  int8
+    autofs_Group7b_0_buffer_9  array[int8]
+} [packed]
+ioctl$autofs_Group7b_0(fd autofs_fd, cmd autofs_Group7b_0_1_ret, arg ptr[in, autofs_Group7b_0_struct_1]) 
+resource autofs_Group7b_1_1_ret[int32]
+autofs_Group7b_1_1_struct_1 {
+    autofs_Group7b_1_1_const_2  const[123, int8]
+    autofs_Group7b_1_1_const_3  const[147, int8]
+    autofs_Group7b_1_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group7b_1_1(arg ptr[in, autofs_Group7b_1_1_struct_1], size const[4]) autofs_Group7b_1_1_ret
+autofs_Group7b_1_struct_1 {
+    autofs_Group7b_1_const_2  const[1, int8]
+    autofs_Group7b_1_const_3  const[0, int8]
+    autofs_Group7b_1_const_4  const[0, int8]
+    autofs_Group7b_1_const_5  const[0, int8]
+    autofs_Group7b_1_range_6  int8[0:1]
+    autofs_Group7b_1_const_7  const[0, int8]
+    autofs_Group7b_1_const_8  const[0, int8]
+    autofs_Group7b_1_const_9  const[0, int8]
+    autofs_Group7b_1_range_10  int32[25:4120]
+    autofs_Group7b_1_known_11  fd
+    autofs_Group7b_1_buffer_12  int64
+    autofs_Group7b_1_const_13  const[47, int8]
+    autofs_Group7b_1_buffer_14  int8
+    autofs_Group7b_1_buffer_15  array[int8]
+} [packed]
+ioctl$autofs_Group7b_1(fd autofs_fd, cmd autofs_Group7b_1_1_ret, arg ptr[in, autofs_Group7b_1_struct_1]) 
+resource autofs_Group7b_2_1_ret[int32]
+autofs_Group7b_2_1_struct_1 {
+    autofs_Group7b_2_1_const_2  const[123, int8]
+    autofs_Group7b_2_1_const_3  const[147, int8]
+    autofs_Group7b_2_1_buffer_4  int16
+} [packed]
+syz_convert_to_int$autofs_Group7b_2_1(arg ptr[in, autofs_Group7b_2_1_struct_1], size const[4]) autofs_Group7b_2_1_ret
+autofs_Group7b_2_struct_1 {
+    autofs_Group7b_2_const_2  const[1, int8]
+    autofs_Group7b_2_const_3  const[0, int8]
+    autofs_Group7b_2_const_4  const[0, int8]
+    autofs_Group7b_2_const_5  const[0, int8]
+    autofs_Group7b_2_range_6  int8[0:1]
+    autofs_Group7b_2_const_7  const[0, int8]
+    autofs_Group7b_2_const_8  const[0, int8]
+    autofs_Group7b_2_const_9  const[0, int8]
+    autofs_Group7b_2_range_10  int32[25:4120]
+    autofs_Group7b_2_known_11  fd
+    autofs_Group7b_2_buffer_12  int64
+    autofs_Group7b_2_buffer_13  int8
+    autofs_Group7b_2_buffer_14  int8
+    autofs_Group7b_2_buffer_15  array[int8]
+} [packed]
+ioctl$autofs_Group7b_2(fd autofs_fd, cmd autofs_Group7b_2_1_ret, arg ptr[in, autofs_Group7b_2_struct_1]) 
+ioctl$autofs_Group74_Group0_0(fd autofs_Group74_fd, cmd int32, arg intptr) 

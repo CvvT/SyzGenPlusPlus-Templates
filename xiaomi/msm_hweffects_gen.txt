@@ -1,0 +1,17 @@
+resource msm_hweffects_fd[fd]
+
+openat$msm_hweffects_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_hweffects"]], flags flags[open_flags], mode const[0]) msm_hweffects_fd
+msm_hweffects_Group40086168_0_flag_3 = 32, 64, 96, 128, 112, 80, 16, 48
+msm_hweffects_Group40086168_0_struct_1 {
+    msm_hweffects_Group40086168_0_const_2  const[0, int8]
+    msm_hweffects_Group40086168_0_flag_3  flags[msm_hweffects_Group40086168_0_flag_3, int8]
+    msm_hweffects_Group40086168_0_const_4  const[0, int16]
+    msm_hweffects_Group40086168_0_buffer_5  array[int8, 1020]
+} [packed]
+ioctl$msm_hweffects_Group40086168_0(fd msm_hweffects_fd, cmd const[1074291048], arg ptr[in, msm_hweffects_Group40086168_0_struct_1]) 
+ioctl$msm_hweffects_Group40086164_0(fd msm_hweffects_fd, cmd const[1074291044], arg ptr[in, int64]) 
+ioctl$msm_hweffects_Group404c6163_0(fd msm_hweffects_fd, cmd const[1078747491], arg ptr[in, array[int8, 76]]) 
+ioctl$msm_hweffects_Group40086165_0(fd msm_hweffects_fd, cmd const[1074291045], arg ptr[out, int64]) 
+ioctl$msm_hweffects_Groupc0086167_0(fd msm_hweffects_fd, cmd const[3221774695], arg intptr) 
+ioctl$msm_hweffects_Group40086166_0(fd msm_hweffects_fd, cmd const[1074291046], arg intptr) 
+ioctl$msm_hweffects_Group40046100_0(fd msm_hweffects_fd, cmd const[1074028800], arg intptr) 

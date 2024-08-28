@@ -1,0 +1,55 @@
+resource audio_in_fd[fd]
+
+openat$audio_in_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_g711alaw_in"]], flags flags[open_flags], mode const[0]) audio_in_fd
+ioctl$audio_in_Group80106105_0(fd audio_in_fd, cmd const[2148557061], arg ptr[out, array[int8, 16]]) 
+ioctl$audio_in_Group80286103_0(fd audio_in_fd, cmd const[2150129923], arg ptr[out, array[int8, 40]]) 
+ioctl$audio_in_Group80026152_0(fd audio_in_fd, cmd const[2147639634], arg ptr[out, int16]) 
+ioctl$audio_in_Group4004610b_0(fd audio_in_fd, cmd const[1074028811], arg intptr) 
+ioctl$audio_in_Group4008615d_0(fd audio_in_fd, cmd const[1074291037], arg ptr[out, int64]) 
+ioctl$audio_in_Group40046102_0(fd audio_in_fd, cmd const[1074028802], arg intptr) 
+ioctl$audio_in_Group80086151_0(fd audio_in_fd, cmd const[2148032849], arg ptr[out, int64]) 
+audio_in_Group40086150_0_struct_1 {
+    audio_in_Group40086150_0_buffer_2  int8
+    audio_in_Group40086150_0_range_3  int8[0:30]
+    audio_in_Group40086150_0_const_4  const[0, int8]
+    audio_in_Group40086150_0_const_5  const[0, int8]
+    audio_in_Group40086150_0_range_6  int32[8:4294967295]
+} [packed]
+ioctl$audio_in_Group40086150_0(fd audio_in_fd, cmd const[1074291024], arg ptr[in, audio_in_Group40086150_0_struct_1]) 
+audio_in_Group4008615e_0_struct_1 {
+    audio_in_Group4008615e_0_buffer_2  int32
+    audio_in_Group4008615e_0_buffer_3  int16
+    audio_in_Group4008615e_0_const_4  const[0, int8]
+    audio_in_Group4008615e_0_const_5  const[0, int8]
+} [packed]
+ioctl$audio_in_Group4008615e_0(fd audio_in_fd, cmd const[1074291038], arg ptr[in, audio_in_Group4008615e_0_struct_1]) 
+audio_in_Group4008615e_1_struct_1 {
+    audio_in_Group4008615e_1_range_2  int32[1:4294967295]
+    audio_in_Group4008615e_1_buffer_3  int16
+    audio_in_Group4008615e_1_const_4  const[0, int8]
+    audio_in_Group4008615e_1_const_5  const[0, int8]
+} [packed]
+ioctl$audio_in_Group4008615e_1(fd audio_in_fd, cmd const[1074291038], arg ptr[in, audio_in_Group4008615e_1_struct_1]) 
+audio_in_Group40286104_0_struct_1 {
+    audio_in_Group40286104_0_buffer_2  int32
+    audio_in_Group40286104_0_buffer_3  int8
+    audio_in_Group40286104_0_buffer_4  int8
+    audio_in_Group40286104_0_buffer_5  int8
+    audio_in_Group40286104_0_buffer_6  int8
+    audio_in_Group40286104_0_buffer_7  int32
+    audio_in_Group40286104_0_buffer_8  int32
+    audio_in_Group40286104_0_buffer_9  array[int8, 24]
+} [packed]
+ioctl$audio_in_Group40286104_0(fd audio_in_fd, cmd const[1076388100], arg ptr[in, audio_in_Group40286104_0_struct_1]) 
+audio_in_Group40286104_1_flag_3 = 0, 1, 2
+audio_in_Group40286104_1_struct_1 {
+    audio_in_Group40286104_1_buffer_2  int32
+    audio_in_Group40286104_1_flag_3  flags[audio_in_Group40286104_1_flag_3, int8]
+    audio_in_Group40286104_1_const_4  const[0, int8]
+    audio_in_Group40286104_1_const_5  const[0, int8]
+    audio_in_Group40286104_1_const_6  const[0, int8]
+    audio_in_Group40286104_1_buffer_7  int32
+    audio_in_Group40286104_1_buffer_8  int32
+    audio_in_Group40286104_1_buffer_9  array[int8, 24]
+} [packed]
+ioctl$audio_in_Group40286104_1(fd audio_in_fd, cmd const[1076388100], arg ptr[in, audio_in_Group40286104_1_struct_1]) 

@@ -1,0 +1,109 @@
+
+resource _tty_fops_fd[fd]
+
+openat$_tty_fops_syzgen_1(fd const[AT_FDCWD], file ptr[in, string["/dev/tty"]], flags flags[open_flags], mode const[0]) _tty_fops_fd
+ioctl$_tty_fops_80045432_0_2(fd _tty_fops_fd, cmd const[2147767346], arg intptr) 
+ioctl$_tty_fops_80045440_0_3(fd _tty_fops_fd, cmd const[2147767360], arg intptr) 
+ioctl$_tty_fops_5409_0_4(fd _tty_fops_fd, cmd const[21513], arg intptr) 
+ioctl$_tty_fops_540b_0_5(fd _tty_fops_fd, cmd const[21515], arg intptr) 
+ioctl$_tty_fops_540c_0_6(fd _tty_fops_fd, cmd const[21516], arg intptr) 
+ioctl$_tty_fops_540d_0_7(fd _tty_fops_fd, cmd const[21517], arg intptr) 
+ioctl$_tty_fops_5412_0_8(fd _tty_fops_fd, cmd const[21522], arg intptr) 
+ioctl$_tty_fops_5413_0_9(fd _tty_fops_fd, cmd const[21523], arg intptr) 
+ioctl$_tty_fops_5414_0_10(fd _tty_fops_fd, cmd const[21524], arg ptr[in, winsize_tty_fops]) 
+ioctl$_tty_fops_5415_0_11(fd _tty_fops_fd, cmd const[21525], arg intptr) 
+ioctl$_tty_fops_5416_0_12(fd _tty_fops_fd, cmd const[21526], arg intptr) 
+ioctl$_tty_fops_5417_0_13(fd _tty_fops_fd, cmd const[21527], arg intptr) 
+ioctl$_tty_fops_5418_0_14(fd _tty_fops_fd, cmd const[21528], arg intptr) 
+ioctl$_tty_fops_541d_0_15(fd _tty_fops_fd, cmd const[21533], arg intptr) 
+ioctl$_tty_fops_541e_0_16(fd _tty_fops_fd, cmd const[21534], arg intptr) 
+ioctl$_tty_fops_541f_0_17(fd _tty_fops_fd, cmd const[21535], arg ptr[in, serial_struct_tty_fops]) 
+ioctl$_tty_fops_5423_0_18(fd _tty_fops_fd, cmd const[21539], arg intptr) 
+ioctl$_tty_fops_5424_0_19(fd _tty_fops_fd, cmd const[21540], arg intptr) 
+ioctl$_tty_fops_5425_0_20(fd _tty_fops_fd, cmd const[21541], arg intptr) 
+ioctl$_tty_fops_5427_0_21(fd _tty_fops_fd, cmd const[21543], arg intptr) 
+ioctl$_tty_fops_5428_0_22(fd _tty_fops_fd, cmd const[21544], arg intptr) 
+ioctl$_tty_fops_5437_0_23(fd _tty_fops_fd, cmd const[21559], arg intptr) 
+ioctl$_tty_fops_5441_0_24(fd _tty_fops_fd, cmd const[21569], arg intptr) 
+ioctl$_tty_fops_545d_0_25(fd _tty_fops_fd, cmd const[21597], arg intptr) 
+
+resource _console_fops_fd[fd]
+
+openat$_console_fops_syzgen_1(fd const[AT_FDCWD], file ptr[in, string["/dev/tty"]], flags flags[open_flags], mode const[0]) _console_fops_fd
+ioctl$_console_fops_80045432_0_2(fd _console_fops_fd, cmd const[2147767346], arg intptr) 
+ioctl$_console_fops_80045440_0_3(fd _console_fops_fd, cmd const[2147767360], arg intptr) 
+ioctl$_console_fops_5409_0_4(fd _console_fops_fd, cmd const[21513], arg intptr) 
+ioctl$_console_fops_540b_0_5(fd _console_fops_fd, cmd const[21515], arg intptr) 
+ioctl$_console_fops_540c_0_6(fd _console_fops_fd, cmd const[21516], arg intptr) 
+ioctl$_console_fops_540d_0_7(fd _console_fops_fd, cmd const[21517], arg intptr) 
+ioctl$_console_fops_5412_0_8(fd _console_fops_fd, cmd const[21522], arg intptr) 
+ioctl$_console_fops_5413_0_9(fd _console_fops_fd, cmd const[21523], arg intptr) 
+ioctl$_console_fops_5414_0_10(fd _console_fops_fd, cmd const[21524], arg ptr[in, winsize_console_fops]) 
+ioctl$_console_fops_5415_0_11(fd _console_fops_fd, cmd const[21525], arg intptr) 
+ioctl$_console_fops_5416_0_12(fd _console_fops_fd, cmd const[21526], arg intptr) 
+ioctl$_console_fops_5417_0_13(fd _console_fops_fd, cmd const[21527], arg intptr) 
+ioctl$_console_fops_5418_0_14(fd _console_fops_fd, cmd const[21528], arg intptr) 
+ioctl$_console_fops_541d_0_15(fd _console_fops_fd, cmd const[21533], arg intptr) 
+ioctl$_console_fops_541e_0_16(fd _console_fops_fd, cmd const[21534], arg intptr) 
+ioctl$_console_fops_541f_0_17(fd _console_fops_fd, cmd const[21535], arg ptr[in, serial_struct_console_fops]) 
+ioctl$_console_fops_5423_0_18(fd _console_fops_fd, cmd const[21539], arg intptr) 
+ioctl$_console_fops_5424_0_19(fd _console_fops_fd, cmd const[21540], arg intptr) 
+ioctl$_console_fops_5425_0_20(fd _console_fops_fd, cmd const[21541], arg intptr) 
+ioctl$_console_fops_5427_0_21(fd _console_fops_fd, cmd const[21543], arg intptr) 
+ioctl$_console_fops_5428_0_22(fd _console_fops_fd, cmd const[21544], arg intptr) 
+ioctl$_console_fops_5437_0_23(fd _console_fops_fd, cmd const[21559], arg intptr) 
+ioctl$_console_fops_5441_0_24(fd _console_fops_fd, cmd const[21569], arg intptr) 
+ioctl$_console_fops_545d_0_25(fd _console_fops_fd, cmd const[21597], arg intptr) 
+
+serial_struct_tty_fops {
+    _tty_fops_buffer_10  int32
+    _tty_fops_buffer_21  int32
+    _tty_fops_buffer_32  int32
+    _tty_fops_buffer_43  int32
+    _tty_fops_buffer_54  int32
+    _tty_fops_buffer_65  int32
+    _tty_fops_buffer_76  int32
+    _tty_fops_buffer_87  int32
+    _tty_fops_buffer_98  int16
+    _tty_fops_buffer_109  int8
+    _tty_fops_array_1210  array[int8, 1]
+    _tty_fops_buffer_1311  int32
+    _tty_fops_buffer_1412  int16
+    _tty_fops_buffer_1513  int16
+    _tty_fops_ptr_1714  ptr[in, int8]
+    _tty_fops_buffer_1815  int16
+    _tty_fops_buffer_1916  int32
+    _tty_fops_buffer_2017  int64
+}
+winsize_tty_fops {
+    _tty_fops_buffer_210  int16
+    _tty_fops_buffer_221  int16
+    _tty_fops_buffer_232  int16
+    _tty_fops_buffer_243  int16
+}
+serial_struct_console_fops {
+    _console_fops_buffer_10  int32
+    _console_fops_buffer_21  int32
+    _console_fops_buffer_32  int32
+    _console_fops_buffer_43  int32
+    _console_fops_buffer_54  int32
+    _console_fops_buffer_65  int32
+    _console_fops_buffer_76  int32
+    _console_fops_buffer_87  int32
+    _console_fops_buffer_98  int16
+    _console_fops_buffer_109  int8
+    _console_fops_array_1210  array[int8, 1]
+    _console_fops_buffer_1311  int32
+    _console_fops_buffer_1412  int16
+    _console_fops_buffer_1513  int16
+    _console_fops_ptr_1714  ptr[in, int8]
+    _console_fops_buffer_1815  int16
+    _console_fops_buffer_1916  int32
+    _console_fops_buffer_2017  int64
+}
+winsize_console_fops {
+    _console_fops_buffer_210  int16
+    _console_fops_buffer_221  int16
+    _console_fops_buffer_232  int16
+    _console_fops_buffer_243  int16
+}

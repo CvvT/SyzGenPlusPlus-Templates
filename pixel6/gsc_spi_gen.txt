@@ -1,0 +1,40 @@
+resource gsc_spi_fd[fd]
+
+openat$gsc_spi_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/gsc0"]], flags flags[open_flags], mode const[0]) gsc_spi_fd
+read$gsc_spi_syzgen(fd gsc_spi_fd, data ptr[out, array[int8]], size len[data]) 
+ioctl$gsc_spi_Group6302_0(fd gsc_spi_fd, cmd const[25346], arg intptr) 
+gsc_spi_Group40106301_0_struct_1 {
+    gsc_spi_Group40106301_0_buffer_2  int64
+    gsc_spi_Group40106301_0_buffer_3  int8
+    gsc_spi_Group40106301_0_range_4  int8[0:8]
+    gsc_spi_Group40106301_0_const_5  const[0, int8]
+    gsc_spi_Group40106301_0_const_6  const[0, int8]
+    gsc_spi_Group40106301_0_buffer_7  int32
+} [packed]
+ioctl$gsc_spi_Group40106301_0(fd gsc_spi_fd, cmd const[1074815745], arg ptr[in, gsc_spi_Group40106301_0_struct_1]) 
+gsc_spi_Group0_0_struct_1 {
+    gsc_spi_Group0_0_buffer_2  array[int8, 24]
+    gsc_spi_Group0_0_buffer_3  int32
+    gsc_spi_Group0_0_buffer_4  int32
+    gsc_spi_Group0_0_buffer_5  array[int8, 32]
+} [packed]
+write$gsc_spi_Group0_0(fd gsc_spi_fd, data ptr[in, gsc_spi_Group0_0_struct_1], size int32[1:64]) 
+gsc_spi_Group0_1_struct_1 {
+    gsc_spi_Group0_1_buffer_2  int64
+    gsc_spi_Group0_1_buffer_3  array[int8, 16]
+    gsc_spi_Group0_1_buffer_4  int32
+    gsc_spi_Group0_1_buffer_5  int32
+    gsc_spi_Group0_1_buffer_6  array[int8, 2015]
+} [packed]
+write$gsc_spi_Group0_1(fd gsc_spi_fd, data ptr[in, gsc_spi_Group0_1_struct_1], size int32[128:2047]) 
+gsc_spi_Group0_2_struct_1 {
+    gsc_spi_Group0_2_buffer_2  int64
+    gsc_spi_Group0_2_buffer_3  array[int8, 16]
+    gsc_spi_Group0_2_buffer_4  int32
+    gsc_spi_Group0_2_buffer_5  int32
+    gsc_spi_Group0_2_buffer_6  array[int8, 16]
+    gsc_spi_Group0_2_buffer_7  int32
+    gsc_spi_Group0_2_buffer_8  int32
+    gsc_spi_Group0_2_buffer_9  array[int8, 1992]
+} [packed]
+write$gsc_spi_Group0_2(fd gsc_spi_fd, data ptr[in, gsc_spi_Group0_2_struct_1], size len[data]) 

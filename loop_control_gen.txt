@@ -1,0 +1,8 @@
+resource loop_control_fd[fd]
+resource loop_control_connection_0[int32]
+
+openat$loop_control_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/loop-control"]], flags flags[open_flags], mode const[0]) loop_control_fd
+read$loop_control_syzgen(fd loop_control_fd, data ptr[out, array[int8]], size len[data]) 
+ioctl$loop_control_Group4c81_0(fd loop_control_fd, cmd const[19585], loop_control_Group4c81_0_resource_1 loop_control_connection_0) 
+ioctl$loop_control_Group4c82_0(fd loop_control_fd, cmd const[19586], arg intptr) loop_control_connection_0
+ioctl$loop_control_Group4c80_0(fd loop_control_fd, cmd const[19584], loop_control_Group4c80_0_resource_2 intptr) loop_control_connection_0

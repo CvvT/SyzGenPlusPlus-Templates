@@ -1,0 +1,14 @@
+resource st21nfc_fd[fd]
+
+openat$st21nfc_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/st21nfc"]], flags flags[open_flags], mode const[0]) st21nfc_fd
+read$st21nfc_syzgen(fd st21nfc_fd, data ptr[out, array[int8]], size len[data]) 
+ioctl$st21nfc_Group8004ea01_0(fd st21nfc_fd, cmd const[2147805697], arg intptr) 
+ioctl$st21nfc_Group8004ea02_0(fd st21nfc_fd, cmd const[2147805698], arg intptr) 
+ioctl$st21nfc_Group8004ea03_0(fd st21nfc_fd, cmd const[2147805699], arg intptr) 
+ioctl$st21nfc_Group8004ea12_0(fd st21nfc_fd, cmd const[2147805714], arg intptr) 
+ioctl$st21nfc_Group8004ea13_0(fd st21nfc_fd, cmd const[2147805715], arg intptr) 
+ioctl$st21nfc_Group8004ea05_0(fd st21nfc_fd, cmd const[2147805701], arg intptr) 
+ioctl$st21nfc_Group8004ea11_0(fd st21nfc_fd, cmd const[2147805713], arg intptr) 
+ioctl$st21nfc_Group8004ea08_0(fd st21nfc_fd, cmd const[2147805704], arg intptr) 
+ioctl$st21nfc_Group8004ea07_0(fd st21nfc_fd, cmd const[2147805703], arg intptr) 
+write$st21nfc_Group0_0(fd st21nfc_fd, data ptr[in, array[int8, 260]], size len[data]) 

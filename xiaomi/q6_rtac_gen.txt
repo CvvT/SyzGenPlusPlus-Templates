@@ -1,0 +1,5 @@
+resource q6_rtac_fd[fd]
+
+openat$q6_rtac_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_rtac"]], flags flags[open_flags], mode const[0]) q6_rtac_fd
+ioctl$q6_rtac_Group800861d0_0(fd q6_rtac_fd, cmd const[2148032976], arg ptr[out, array[int8, 76]]) 
+ioctl$q6_rtac_Group800861cf_0(fd q6_rtac_fd, cmd const[2148032975], arg ptr[out, array[int8, 748]]) 

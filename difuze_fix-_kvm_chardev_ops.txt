@@ -1,0 +1,11 @@
+resource _kvm_chardev_ops_fd[fd]
+
+openat$_kvm_chardev_ops_syzgen_1(fd const[AT_FDCWD], file ptr[in, string["/dev/kvm"]], flags flags[open_flags], mode const[0]) _kvm_chardev_ops_fd
+ioctl$_kvm_chardev_ops_4008ae06_0_2(fd _kvm_chardev_ops_fd, cmd const[1074310662], arg intptr) 
+ioctl$_kvm_chardev_ops_ae00_0_3(fd _kvm_chardev_ops_fd, cmd const[44544], arg intptr) 
+ioctl$_kvm_chardev_ops_ae01_0_4(fd _kvm_chardev_ops_fd, cmd const[44545], arg intptr) 
+ioctl$_kvm_chardev_ops_ae03_0_5(fd _kvm_chardev_ops_fd, cmd const[44547], arg intptr) 
+ioctl$_kvm_chardev_ops_ae04_0_6(fd _kvm_chardev_ops_fd, cmd const[44548], arg intptr) 
+ioctl$_kvm_chardev_ops_ae07_0_7(fd _kvm_chardev_ops_fd, cmd const[44551], arg intptr) 
+ioctl$_kvm_chardev_ops_ae08_0_8(fd _kvm_chardev_ops_fd, cmd const[44552], arg intptr) 
+

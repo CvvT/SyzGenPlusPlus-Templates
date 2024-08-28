@@ -1,0 +1,15 @@
+resource audio_fd[fd]
+
+openat$msm_aac_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_aac"]], flags flags[open_flags], mode const[0]) audio_fd
+syz_open_dev$msm_aac__syzgen(dev ptr[in, string["/dev/msm_aac_#"]], id intptr, flags flags[open_flags]) audio_fd
+openat$msm_multi_aac_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_multi_aac"]], flags flags[open_flags], mode const[0]) audio_fd
+openat$msm_mp3_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_mp3"]], flags flags[open_flags], mode const[0]) audio_fd
+openat$msm_qcelp_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_qcelp"]], flags flags[open_flags], mode const[0]) audio_fd
+openat$msm_amrwbplus_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_amrwbplus"]], flags flags[open_flags], mode const[0]) audio_fd
+openat$msm_ape_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_ape"]], flags flags[open_flags], mode const[0]) audio_fd
+openat$msm_g711alaw_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_g711alaw"]], flags flags[open_flags], mode const[0]) audio_fd
+openat$msm_g711mlaw_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_g711mlaw"]], flags flags[open_flags], mode const[0]) audio_fd
+openat$msm_wma_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_wma"]], flags flags[open_flags], mode const[0]) audio_fd
+openat$msm_wmapro_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_wmapro"]], flags flags[open_flags], mode const[0]) audio_fd
+openat$msm_sps_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_sps"]], flags flags[open_flags], mode const[0]) audio_fd
+

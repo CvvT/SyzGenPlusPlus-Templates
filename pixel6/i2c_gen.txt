@@ -1,0 +1,229 @@
+resource i2c_fd[fd]
+
+syz_open_dev$i2c__syzgen(dev ptr[in, string["/dev/i2c-#"]], id intptr, flags flags[open_flags]) i2c_fd
+
+read$i2c_syzgen(fd i2c_fd, data ptr[out, array[int8]], size len[data]) 
+ioctl$i2c_Group701_0(fd i2c_fd, cmd const[1793], arg intptr[0:2147483647]) 
+ioctl$i2c_Group704_0(fd i2c_fd, cmd const[1796], arg intptr) 
+ioctl$i2c_Group705_0(fd i2c_fd, cmd const[1797], arg intptr) 
+ioctl$i2c_Group708_0(fd i2c_fd, cmd const[1800], arg intptr) 
+i2c_Group720_0_struct_1 {
+    i2c_Group720_0_const_2  const[0, int8]
+    i2c_Group720_0_buffer_3  int8
+    i2c_Group720_0_buffer_4  int16
+    i2c_Group720_0_const_5  const[0, int8]
+    i2c_Group720_0_const_6  const[0, int8]
+    i2c_Group720_0_const_7  const[0, int8]
+    i2c_Group720_0_const_8  const[0, int8]
+    i2c_Group720_0_buffer_9  int64
+} [packed]
+ioctl$i2c_Group720_0(fd i2c_fd, cmd const[1824], arg ptr[in, i2c_Group720_0_struct_1]) 
+i2c_Group720_1_flag_5 = 2, 3, 5, 6
+i2c_Group720_1_struct_9 {
+    i2c_Group720_1_range_10  int8[0:32]
+    i2c_Group720_1_buffer_11  array[int8, 33]
+} [packed]
+i2c_Group720_1_struct_1 {
+    i2c_Group720_1_const_2  const[0, int8]
+    i2c_Group720_1_buffer_3  int8
+    i2c_Group720_1_buffer_4  int16
+    i2c_Group720_1_flag_5  flags[i2c_Group720_1_flag_5, int8]
+    i2c_Group720_1_const_6  const[0, int8]
+    i2c_Group720_1_const_7  const[0, int8]
+    i2c_Group720_1_const_8  const[0, int8]
+    i2c_Group720_1_ptr_12  ptr[in, i2c_Group720_1_struct_9]
+} [packed]
+ioctl$i2c_Group720_1(fd i2c_fd, cmd const[1824], arg ptr[in, i2c_Group720_1_struct_1]) 
+i2c_Group720_2_struct_1 {
+    i2c_Group720_2_const_2  const[1, int8]
+    i2c_Group720_2_buffer_3  int8
+    i2c_Group720_2_buffer_4  int16
+    i2c_Group720_2_range_5  int8[1:6]
+    i2c_Group720_2_const_6  const[0, int8]
+    i2c_Group720_2_const_7  const[0, int8]
+    i2c_Group720_2_const_8  const[0, int8]
+    i2c_Group720_2_buffer_9  int64
+} [packed]
+ioctl$i2c_Group720_2(fd i2c_fd, cmd const[1824], arg ptr[in, i2c_Group720_2_struct_1]) 
+i2c_Group720_3_flag_5 = 8, 4, 7
+i2c_Group720_3_struct_9 {
+    i2c_Group720_3_buffer_10  int8
+    i2c_Group720_3_buffer_11  int8
+    i2c_Group720_3_buffer_12  int8
+    i2c_Group720_3_buffer_13  int8
+    i2c_Group720_3_buffer_14  int8
+    i2c_Group720_3_buffer_15  int8
+    i2c_Group720_3_buffer_16  int8
+    i2c_Group720_3_buffer_17  int8
+    i2c_Group720_3_buffer_18  int8
+    i2c_Group720_3_buffer_19  int8
+    i2c_Group720_3_buffer_20  int8
+    i2c_Group720_3_buffer_21  int8
+    i2c_Group720_3_buffer_22  int8
+    i2c_Group720_3_buffer_23  int8
+    i2c_Group720_3_buffer_24  int8
+    i2c_Group720_3_buffer_25  int8
+    i2c_Group720_3_buffer_26  int8
+    i2c_Group720_3_buffer_27  int8
+    i2c_Group720_3_buffer_28  int8
+    i2c_Group720_3_buffer_29  int8
+    i2c_Group720_3_buffer_30  int8
+    i2c_Group720_3_buffer_31  int8
+    i2c_Group720_3_buffer_32  int8
+    i2c_Group720_3_buffer_33  int8
+    i2c_Group720_3_buffer_34  array[int8, 10]
+} [packed]
+i2c_Group720_3_struct_1 {
+    i2c_Group720_3_range_2  int8[0:1]
+    i2c_Group720_3_buffer_3  int8
+    i2c_Group720_3_buffer_4  int16
+    i2c_Group720_3_flag_5  flags[i2c_Group720_3_flag_5, int8]
+    i2c_Group720_3_const_6  const[0, int8]
+    i2c_Group720_3_const_7  const[0, int8]
+    i2c_Group720_3_const_8  const[0, int8]
+    i2c_Group720_3_ptr_35  ptr[in, i2c_Group720_3_struct_9]
+} [packed]
+ioctl$i2c_Group720_3(fd i2c_fd, cmd const[1824], arg ptr[in, i2c_Group720_3_struct_1]) 
+i2c_Group720_4_flag_2 = 0, 1
+i2c_Group720_4_struct_1 {
+    i2c_Group720_4_flag_2  flags[i2c_Group720_4_flag_2, int8]
+    i2c_Group720_4_buffer_3  int8
+    i2c_Group720_4_buffer_4  int16
+    i2c_Group720_4_const_5  const[1, int8]
+    i2c_Group720_4_const_6  const[0, int8]
+    i2c_Group720_4_const_7  const[0, int8]
+    i2c_Group720_4_const_8  const[0, int8]
+    i2c_Group720_4_buffer_9  int64
+} [packed]
+ioctl$i2c_Group720_4(fd i2c_fd, cmd const[1824], arg ptr[in, i2c_Group720_4_struct_1]) 
+i2c_Group707_0_struct_19 {
+    i2c_Group707_0_buffer_3  int16
+    i2c_Group707_0_range_4  int16[0:64510, 2]
+    i2c_Group707_0_buffer_5  int16
+    i2c_Group707_0_buffer_6  int16
+    i2c_Group707_0_ptr_8  ptr[in, array[int8, 4096]]
+} [packed]
+i2c_Group707_0_struct_1 {
+    i2c_Group707_0_ptr_16  ptr[in, array[i2c_Group707_0_struct_19, 1:42]]
+    i2c_Group707_0_range_17  len[i2c_Group707_0_ptr_16, int32]
+    i2c_Group707_0_buffer_18  int32
+} [packed]
+ioctl$i2c_Group707_0(fd i2c_fd, cmd const[1799], arg ptr[in, i2c_Group707_0_struct_1]) 
+i2c_Group707_1_struct_14 {
+    i2c_Group707_1_buffer_3  int16
+    i2c_Group707_1_range_4  int8[1:255]
+    i2c_Group707_1_range_5  int8[0:251]
+    i2c_Group707_1_buffer_6  int16
+    i2c_Group707_1_buffer_7  int16
+    i2c_Group707_1_ptr_9  ptr[in, array[int8, 4096]]
+} [packed]
+i2c_Group707_1_struct_1 {
+    i2c_Group707_1_ptr_11  ptr[in, array[i2c_Group707_1_struct_14, 1:42]]
+    i2c_Group707_1_range_12  len[i2c_Group707_1_ptr_11, int32]
+    i2c_Group707_1_buffer_13  int32
+} [packed]
+ioctl$i2c_Group707_1(fd i2c_fd, cmd const[1799], arg ptr[in, i2c_Group707_1_struct_1]) 
+i2c_Group707_2_struct_20 {
+    i2c_Group707_2_buffer_3  int16
+    i2c_Group707_2_range_4  int8[0:254, 2]
+    i2c_Group707_2_range_5  int8[0:251]
+    i2c_Group707_2_buffer_6  int16
+    i2c_Group707_2_buffer_7  int16
+    i2c_Group707_2_ptr_9  ptr[in, array[int8, 4096]]
+} [packed]
+i2c_Group707_2_struct_1 {
+    i2c_Group707_2_ptr_17  ptr[in, array[i2c_Group707_2_struct_20, 1:42]]
+    i2c_Group707_2_range_18  len[i2c_Group707_2_ptr_17, int32]
+    i2c_Group707_2_buffer_19  int32
+} [packed]
+ioctl$i2c_Group707_2(fd i2c_fd, cmd const[1799], arg ptr[in, i2c_Group707_2_struct_1]) 
+i2c_Group707_3_struct_13 {
+    i2c_Group707_3_buffer_3  int16
+    i2c_Group707_3_buffer_4  int16
+    i2c_Group707_3_buffer_5  int16
+    i2c_Group707_3_buffer_6  int16
+    i2c_Group707_3_ptr_8  ptr[in, array[int8, 4096]]
+} [packed]
+i2c_Group707_3_struct_1 {
+    i2c_Group707_3_ptr_10  ptr[in, array[i2c_Group707_3_struct_13, 1:42]]
+    i2c_Group707_3_range_11  len[i2c_Group707_3_ptr_10, int32]
+    i2c_Group707_3_buffer_12  int32
+} [packed]
+ioctl$i2c_Group707_3(fd i2c_fd, cmd const[1799], arg ptr[in, i2c_Group707_3_struct_1]) 
+i2c_Group707_4_struct_16 {
+    i2c_Group707_4_buffer_3  int16
+    i2c_Group707_4_range_4  int16[0:64511]
+    i2c_Group707_4_buffer_5  int16
+    i2c_Group707_4_buffer_6  int16
+    i2c_Group707_4_ptr_8  ptr[in, array[int8, 4096]]
+} [packed]
+i2c_Group707_4_struct_1 {
+    i2c_Group707_4_ptr_13  ptr[in, array[i2c_Group707_4_struct_16, 1:42]]
+    i2c_Group707_4_range_14  len[i2c_Group707_4_ptr_13, int32]
+    i2c_Group707_4_buffer_15  int32
+} [packed]
+ioctl$i2c_Group707_4(fd i2c_fd, cmd const[1799], arg ptr[in, i2c_Group707_4_struct_1]) 
+i2c_Group707_5_struct_21 {
+    i2c_Group707_5_buffer_3  int16
+    i2c_Group707_5_range_4  int16[0:64511]
+    i2c_Group707_5_buffer_5  int16
+    i2c_Group707_5_buffer_6  int16
+    i2c_Group707_5_ptr_8  ptr[in, array[int8, 4096]]
+} [packed]
+i2c_Group707_5_struct_1 {
+    i2c_Group707_5_ptr_18  ptr[in, array[i2c_Group707_5_struct_21, 1:42]]
+    i2c_Group707_5_range_19  len[i2c_Group707_5_ptr_18, int32]
+    i2c_Group707_5_buffer_20  int32
+} [packed]
+ioctl$i2c_Group707_5(fd i2c_fd, cmd const[1799], arg ptr[in, i2c_Group707_5_struct_1]) 
+i2c_Group707_6_struct_18 {
+    i2c_Group707_6_buffer_3  int16
+    i2c_Group707_6_buffer_4  int16
+    i2c_Group707_6_buffer_5  int16
+    i2c_Group707_6_buffer_6  int16
+    i2c_Group707_6_ptr_8  ptr[in, array[int8, 4096]]
+} [packed]
+i2c_Group707_6_struct_1 {
+    i2c_Group707_6_ptr_15  ptr[in, array[i2c_Group707_6_struct_18, 1:42]]
+    i2c_Group707_6_range_16  len[i2c_Group707_6_ptr_15, int32]
+    i2c_Group707_6_buffer_17  int32
+} [packed]
+ioctl$i2c_Group707_6(fd i2c_fd, cmd const[1799], arg ptr[in, i2c_Group707_6_struct_1]) 
+i2c_Group707_7_struct_7 {
+    i2c_Group707_7_buffer_8  int8
+    i2c_Group707_7_buffer_9  array[int8]
+} [packed]
+i2c_Group707_7_struct_2 {
+    i2c_Group707_7_buffer_3  int16
+    i2c_Group707_7_range_4  int16[0:64511]
+    i2c_Group707_7_range_5  int16[0:8192]
+    i2c_Group707_7_buffer_6  int16
+    i2c_Group707_7_ptr_10  ptr[in, i2c_Group707_7_struct_7]
+} [packed]
+i2c_Group707_7_struct_1 {
+    i2c_Group707_7_ptr_11  ptr[in, i2c_Group707_7_struct_2]
+    i2c_Group707_7_const_12  const[1, int32]
+    i2c_Group707_7_buffer_13  int32
+} [packed]
+ioctl$i2c_Group707_7(fd i2c_fd, cmd const[1799], arg ptr[in, i2c_Group707_7_struct_1]) 
+i2c_Group707_8_struct_7 {
+    i2c_Group707_8_range_8  int8[1:255]
+    i2c_Group707_8_buffer_9  array[int8]
+} [packed]
+i2c_Group707_8_struct_2 {
+    i2c_Group707_8_buffer_3  int16
+    i2c_Group707_8_range_4  int16[1025:65535]
+    i2c_Group707_8_range_5  int16[33:8192]
+    i2c_Group707_8_buffer_6  int16
+    i2c_Group707_8_ptr_10  ptr[in, i2c_Group707_8_struct_7]
+} [packed]
+i2c_Group707_8_struct_1 {
+    i2c_Group707_8_ptr_11  ptr[in, i2c_Group707_8_struct_2]
+    i2c_Group707_8_const_12  const[1, int32]
+    i2c_Group707_8_buffer_13  int32
+} [packed]
+ioctl$i2c_Group707_8(fd i2c_fd, cmd const[1799], arg ptr[in, i2c_Group707_8_struct_1]) 
+ioctl$i2c_Group702_0(fd i2c_fd, cmd const[1794], arg intptr[0:2147483647]) 
+ioctl$i2c_Group706_0(fd i2c_fd, cmd const[1798], arg intptr[0:1023]) 
+ioctl$i2c_Group703_0(fd i2c_fd, cmd const[1795], arg intptr[0:1023]) 
+write$i2c_Group0_0(fd i2c_fd, data ptr[in, array[int8]], size len[data]) 

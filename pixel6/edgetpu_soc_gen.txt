@@ -1,0 +1,837 @@
+resource edgetpu_soc_fd[fd]
+
+openat$edgetpu_soc_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/edgetpu-soc"]], flags flags[open_flags], mode const[0]) edgetpu_soc_fd
+openat$abrolhos_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/abrolhos"]], flags flags[open_flags], mode const[0]) edgetpu_soc_fd
+
+mmap$edgetpu_soc(addr vma, len len[addr], prot flags[mmap_prot], flags flags[mmap_flags], fd edgetpu_soc_fd, offset const[0]) 
+ioctl$edgetpu_soc_Grouped08_0(fd edgetpu_soc_fd, cmd const[60680], arg intptr) 
+ioctl$edgetpu_soc_Groupc028ed11_0(fd edgetpu_soc_fd, cmd const[3223907601], arg ptr[in, array[int8, 40]]) 
+ioctl$edgetpu_soc_Group8010ed1d_0(fd edgetpu_soc_fd, cmd const[2148592925], arg ptr[out, array[int8, 16]]) 
+ioctl$edgetpu_soc_Group8004ed20_0(fd edgetpu_soc_fd, cmd const[2147806496], arg ptr[out, int32]) 
+edgetpu_soc_Group4008ed05_0_struct_1 {
+    edgetpu_soc_Group4008ed05_0_range_2  int8[0:1]
+    edgetpu_soc_Group4008ed05_0_const_3  const[0, int8]
+    edgetpu_soc_Group4008ed05_0_const_4  const[0, int8]
+    edgetpu_soc_Group4008ed05_0_const_5  const[0, int8]
+    edgetpu_soc_Group4008ed05_0_range_6  int32[0:4294967294]
+} [packed]
+ioctl$edgetpu_soc_Group4008ed05_0(fd edgetpu_soc_fd, cmd const[1074326789], arg ptr[in, edgetpu_soc_Group4008ed05_0_struct_1]) 
+edgetpu_soc_Group4008ed05_1_struct_1 {
+    edgetpu_soc_Group4008ed05_1_buffer_2  int8
+    edgetpu_soc_Group4008ed05_1_buffer_3  int8
+    edgetpu_soc_Group4008ed05_1_buffer_4  int8
+    edgetpu_soc_Group4008ed05_1_buffer_5  int8
+    edgetpu_soc_Group4008ed05_1_range_6  int32[0:4294967294]
+} [packed]
+ioctl$edgetpu_soc_Group4008ed05_1(fd edgetpu_soc_fd, cmd const[1074326789], arg ptr[in, edgetpu_soc_Group4008ed05_1_struct_1]) 
+edgetpu_soc_Group4008ed05_2_struct_1 {
+    edgetpu_soc_Group4008ed05_2_buffer_2  int32
+    edgetpu_soc_Group4008ed05_2_buffer_3  int32
+} [packed]
+ioctl$edgetpu_soc_Group4008ed05_2(fd edgetpu_soc_fd, cmd const[1074326789], arg ptr[in, edgetpu_soc_Group4008ed05_2_struct_1]) 
+ioctl$edgetpu_soc_Group4004ed07_0(fd edgetpu_soc_fd, cmd const[1074064647], edgetpu_soc_Group4004ed07_0_range_56 intptr[0:4294967294]) 
+edgetpu_soc_Group4014ed06_0_struct_1 {
+    edgetpu_soc_Group4014ed06_0_range_2  int16[1:4096]
+    edgetpu_soc_Group4014ed06_0_const_3  const[0, int8]
+    edgetpu_soc_Group4014ed06_0_const_4  const[0, int8]
+    edgetpu_soc_Group4014ed06_0_range_5  int16[1:4096]
+    edgetpu_soc_Group4014ed06_0_const_6  const[0, int8]
+    edgetpu_soc_Group4014ed06_0_const_7  const[0, int8]
+    edgetpu_soc_Group4014ed06_0_range_8  int32[2:4194304]
+    edgetpu_soc_Group4014ed06_0_range_9  int32[2:4194304]
+    edgetpu_soc_Group4014ed06_0_buffer_10  int32
+} [packed]
+ioctl$edgetpu_soc_Group4014ed06_0(fd edgetpu_soc_fd, cmd const[1075113222], arg ptr[in, edgetpu_soc_Group4014ed06_0_struct_1]) 
+edgetpu_soc_Group4014ed06_1_struct_1 {
+    edgetpu_soc_Group4014ed06_1_range_2  int32[1:4096]
+    edgetpu_soc_Group4014ed06_1_range_3  int32[1:4096]
+    edgetpu_soc_Group4014ed06_1_range_4  int32[2:4194304]
+    edgetpu_soc_Group4014ed06_1_range_5  int32[2:4194304]
+    edgetpu_soc_Group4014ed06_1_buffer_6  int32
+} [packed]
+ioctl$edgetpu_soc_Group4014ed06_1(fd edgetpu_soc_fd, cmd const[1075113222], arg ptr[in, edgetpu_soc_Group4014ed06_1_struct_1]) 
+ioctl$edgetpu_soc_Grouped19_0(fd edgetpu_soc_fd, cmd const[60697], arg intptr) 
+ioctl$edgetpu_soc_Groupc088ed14_0(fd edgetpu_soc_fd, cmd const[3230199060], arg ptr[in, array[int8, 136]]) 
+edgetpu_soc_Groupc008ed18_0_struct_1 {
+    edgetpu_soc_Groupc008ed18_0_range_2  int32[0:4294967294]
+    edgetpu_soc_Groupc008ed18_0_buffer_3  int32
+} [packed]
+ioctl$edgetpu_soc_Groupc008ed18_0(fd edgetpu_soc_fd, cmd const[3221810456], arg ptr[inout, edgetpu_soc_Groupc008ed18_0_struct_1]) 
+ioctl$edgetpu_soc_Group8008ed1c_0(fd edgetpu_soc_fd, cmd const[2148068636], arg ptr[out, int64]) 
+edgetpu_soc_Group4008ed09_0_struct_1 {
+    edgetpu_soc_Group4008ed09_0_range_2  int8[0:1]
+    edgetpu_soc_Group4008ed09_0_const_3  const[16, int8]
+    edgetpu_soc_Group4008ed09_0_const_4  const[0, int8]
+    edgetpu_soc_Group4008ed09_0_const_5  const[0, int8]
+    edgetpu_soc_Group4008ed09_0_buffer_6  int32
+} [packed]
+ioctl$edgetpu_soc_Group4008ed09_0(fd edgetpu_soc_fd, cmd const[1074326793], arg ptr[in, edgetpu_soc_Group4008ed09_0_struct_1]) 
+ioctl$edgetpu_soc_Group4004ed0e_0(fd edgetpu_soc_fd, cmd const[1074064654], edgetpu_soc_Group4004ed0e_0_range_54 intptr[0:1]) 
+edgetpu_soc_Group4018ed1e_0_struct_1 {
+    edgetpu_soc_Group4018ed1e_0_buffer_2  array[int8, 16]
+    edgetpu_soc_Group4018ed1e_0_const_3  const[1, int8]
+    edgetpu_soc_Group4018ed1e_0_const_4  const[0, int8]
+    edgetpu_soc_Group4018ed1e_0_const_5  const[0, int8]
+    edgetpu_soc_Group4018ed1e_0_const_6  const[0, int8]
+    edgetpu_soc_Group4018ed1e_0_const_7  const[1, int8]
+    edgetpu_soc_Group4018ed1e_0_const_8  const[0, int8]
+    edgetpu_soc_Group4018ed1e_0_const_9  const[0, int8]
+    edgetpu_soc_Group4018ed1e_0_const_10  const[0, int8]
+} [packed]
+ioctl$edgetpu_soc_Group4018ed1e_0(fd edgetpu_soc_fd, cmd const[1075375390], arg ptr[in, edgetpu_soc_Group4018ed1e_0_struct_1]) 
+edgetpu_soc_Group4028ed12_0_struct_1 {
+    edgetpu_soc_Group4028ed12_0_buffer_2  array[int8, 16]
+    edgetpu_soc_Group4028ed12_0_buffer_3  int64
+    edgetpu_soc_Group4028ed12_0_buffer_4  int64
+    edgetpu_soc_Group4028ed12_0_buffer_5  int32
+    edgetpu_soc_Group4028ed12_0_buffer_6  int32
+} [packed]
+ioctl$edgetpu_soc_Group4028ed12_0(fd edgetpu_soc_fd, cmd const[1076423954], arg ptr[in, edgetpu_soc_Group4028ed12_0_struct_1]) 
+edgetpu_soc_Group4028ed12_1_struct_1 {
+    edgetpu_soc_Group4028ed12_1_buffer_2  array[int8, 16]
+    edgetpu_soc_Group4028ed12_1_range_3  int64[1:18446744069414584321]
+    edgetpu_soc_Group4028ed12_1_buffer_4  int64
+    edgetpu_soc_Group4028ed12_1_buffer_5  int32
+    edgetpu_soc_Group4028ed12_1_buffer_6  int32
+} [packed]
+ioctl$edgetpu_soc_Group4028ed12_1(fd edgetpu_soc_fd, cmd const[1076423954], arg ptr[in, edgetpu_soc_Group4028ed12_1_struct_1]) 
+edgetpu_soc_Group4020ed04_0_struct_1 {
+    edgetpu_soc_Group4020ed04_0_buffer_2  array[int8, 16]
+    edgetpu_soc_Group4020ed04_0_buffer_3  int64
+    edgetpu_soc_Group4020ed04_0_buffer_4  int32
+    edgetpu_soc_Group4020ed04_0_buffer_5  int8
+    edgetpu_soc_Group4020ed04_0_buffer_6  int8
+    edgetpu_soc_Group4020ed04_0_buffer_7  int8
+    edgetpu_soc_Group4020ed04_0_buffer_8  int8
+} [packed]
+ioctl$edgetpu_soc_Group4020ed04_0(fd edgetpu_soc_fd, cmd const[1075899652], arg ptr[in, edgetpu_soc_Group4020ed04_0_struct_1]) 
+edgetpu_soc_Group4020ed04_1_struct_1 {
+    edgetpu_soc_Group4020ed04_1_buffer_2  array[int8, 16]
+    edgetpu_soc_Group4020ed04_1_range_3  int64[1:18446744069414584321]
+    edgetpu_soc_Group4020ed04_1_buffer_4  int32
+    edgetpu_soc_Group4020ed04_1_const_5  const[255, int8]
+    edgetpu_soc_Group4020ed04_1_const_6  const[255, int8]
+    edgetpu_soc_Group4020ed04_1_const_7  const[255, int8]
+    edgetpu_soc_Group4020ed04_1_const_8  const[255, int8]
+} [packed]
+ioctl$edgetpu_soc_Group4020ed04_1(fd edgetpu_soc_fd, cmd const[1075899652], arg ptr[in, edgetpu_soc_Group4020ed04_1_struct_1]) 
+edgetpu_soc_Group4020ed04_2_struct_1 {
+    edgetpu_soc_Group4020ed04_2_buffer_2  array[int8, 16]
+    edgetpu_soc_Group4020ed04_2_range_3  int64[1:18446744069414584321]
+    edgetpu_soc_Group4020ed04_2_buffer_4  int32
+    edgetpu_soc_Group4020ed04_2_range_5  int32[0:4294967294]
+} [packed]
+ioctl$edgetpu_soc_Group4020ed04_2(fd edgetpu_soc_fd, cmd const[1075899652], arg ptr[in, edgetpu_soc_Group4020ed04_2_struct_1]) 
+edgetpu_soc_Group4020ed04_3_struct_1 {
+    edgetpu_soc_Group4020ed04_3_buffer_2  array[int8, 16]
+    edgetpu_soc_Group4020ed04_3_buffer_3  int64
+    edgetpu_soc_Group4020ed04_3_buffer_4  int32
+    edgetpu_soc_Group4020ed04_3_const_5  const[255, int8]
+    edgetpu_soc_Group4020ed04_3_const_6  const[255, int8]
+    edgetpu_soc_Group4020ed04_3_const_7  const[255, int8]
+    edgetpu_soc_Group4020ed04_3_const_8  const[255, int8]
+} [packed]
+ioctl$edgetpu_soc_Group4020ed04_3(fd edgetpu_soc_fd, cmd const[1075899652], arg ptr[in, edgetpu_soc_Group4020ed04_3_struct_1]) 
+ioctl$edgetpu_soc_Grouped1a_0(fd edgetpu_soc_fd, cmd const[60698], arg intptr) 
+edgetpu_soc_Groupc0a8ed16_0_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_0_buffer_2  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_3  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_4  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_6  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_7  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_8  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_9  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_10  int64
+    edgetpu_soc_Groupc0a8ed16_0_range_11  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_0_buffer_12  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_13  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_14  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_15  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_16  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_17  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_18  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_19  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_20  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_21  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_22  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_23  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_24  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_25  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_26  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_27  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_28  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_29  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_30  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_31  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_32  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_33  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_34  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_35  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_36  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_37  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_38  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_39  int8
+    edgetpu_soc_Groupc0a8ed16_0_buffer_40  array[int8, 120]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_0(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_0_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_1_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_1_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_1_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_1_range_4  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_1_range_5  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_1_const_6  const[0, int32]
+    edgetpu_soc_Groupc0a8ed16_1_const_7  const[0, int32]
+    edgetpu_soc_Groupc0a8ed16_1_buffer_8  array[int8, 136]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_1(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_1_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_2_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_2_buffer_2  int8
+    edgetpu_soc_Groupc0a8ed16_2_buffer_3  int8
+    edgetpu_soc_Groupc0a8ed16_2_buffer_4  int8
+    edgetpu_soc_Groupc0a8ed16_2_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_2_buffer_6  int8
+    edgetpu_soc_Groupc0a8ed16_2_buffer_7  int8
+    edgetpu_soc_Groupc0a8ed16_2_buffer_8  int8
+    edgetpu_soc_Groupc0a8ed16_2_buffer_9  int8
+    edgetpu_soc_Groupc0a8ed16_2_buffer_10  int64
+    edgetpu_soc_Groupc0a8ed16_2_range_11  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_2_buffer_12  int8
+    edgetpu_soc_Groupc0a8ed16_2_buffer_13  int16
+    edgetpu_soc_Groupc0a8ed16_2_range_14  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_2_buffer_15  int32
+    edgetpu_soc_Groupc0a8ed16_2_buffer_16  int32
+    edgetpu_soc_Groupc0a8ed16_2_buffer_17  array[int8, 136]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_2(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_2_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_3_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_3_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_3_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_3_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_3_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_3_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_3_range_7  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_3_const_8  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_3_const_9  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_3_const_10  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_3_const_11  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_3_const_12  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_3_buffer_13  int32
+    edgetpu_soc_Groupc0a8ed16_3_buffer_14  array[int8, 120]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_3(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_3_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_4_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_4_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_4_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_4_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_4_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_4_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_4_range_7  int32[0:4294967293]
+    edgetpu_soc_Groupc0a8ed16_4_const_8  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_const_9  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_const_10  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_const_11  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_const_12  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_const_13  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_const_14  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_const_15  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_const_16  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_const_17  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_const_18  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_const_19  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_const_20  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_const_21  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_const_22  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_const_23  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_4_range_24  int32[1:4294967294]
+    edgetpu_soc_Groupc0a8ed16_4_buffer_25  array[int8, 124]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_4(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_4_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_5_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_5_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_5_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_5_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_5_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_5_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_5_range_7  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_5_const_8  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_const_9  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_const_10  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_const_11  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_const_12  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_const_13  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_const_14  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_const_15  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_const_16  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_const_17  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_const_18  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_const_19  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_const_20  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_const_21  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_const_22  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_const_23  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_5_buffer_24  int8
+    edgetpu_soc_Groupc0a8ed16_5_buffer_25  int8
+    edgetpu_soc_Groupc0a8ed16_5_buffer_26  int8
+    edgetpu_soc_Groupc0a8ed16_5_buffer_27  int8
+    edgetpu_soc_Groupc0a8ed16_5_buffer_28  array[int8, 124]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_5(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_5_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_6_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_6_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_6_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_6_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_6_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_6_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_6_range_7  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_6_const_8  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_6_const_9  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_6_const_10  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_6_const_11  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_6_const_12  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_6_const_13  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_6_const_14  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_6_const_15  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_6_const_16  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_6_const_17  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_6_const_18  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_6_const_19  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_6_range_20  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_6_buffer_21  array[int8, 128]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_6(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_6_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_7_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_7_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_7_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_7_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_7_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_7_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_7_range_7  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_7_const_8  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_7_const_9  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_7_const_10  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_7_const_11  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_7_const_12  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_7_const_13  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_7_const_14  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_7_const_15  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_7_range_16  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_7_buffer_17  array[int8, 132]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_7(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_7_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_8_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_8_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_8_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_8_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_8_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_8_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_8_buffer_7  int32
+    edgetpu_soc_Groupc0a8ed16_8_const_8  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_8_const_9  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_8_const_10  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_8_const_11  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_8_range_12  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_8_buffer_13  int8
+    edgetpu_soc_Groupc0a8ed16_8_buffer_14  int8
+    edgetpu_soc_Groupc0a8ed16_8_buffer_15  int8
+    edgetpu_soc_Groupc0a8ed16_8_buffer_16  int8
+    edgetpu_soc_Groupc0a8ed16_8_buffer_17  array[int8, 132]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_8(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_8_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_9_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_9_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_9_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_9_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_9_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_9_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_9_range_7  int32[0:4294967293]
+    edgetpu_soc_Groupc0a8ed16_9_const_8  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_9_const_9  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_9_const_10  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_9_const_11  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_9_const_12  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_9_const_13  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_9_const_14  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_9_const_15  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_9_range_16  int32[1:4294967294]
+    edgetpu_soc_Groupc0a8ed16_9_buffer_17  array[int8, 132]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_9(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_9_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_10_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_10_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_10_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_10_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_10_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_10_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_10_range_7  int32[0:4294967293]
+    edgetpu_soc_Groupc0a8ed16_10_const_8  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_10_const_9  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_10_const_10  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_10_const_11  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_10_range_12  int32[1:4294967294]
+    edgetpu_soc_Groupc0a8ed16_10_buffer_13  array[int8, 136]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_10(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_10_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_11_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_11_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_11_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_11_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_11_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_11_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_11_range_7  int32[0:4294967293]
+    edgetpu_soc_Groupc0a8ed16_11_range_8  int32[1:4294967294]
+    edgetpu_soc_Groupc0a8ed16_11_buffer_9  array[int8, 140]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_11(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_11_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_12_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_12_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_12_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_12_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_12_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_12_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_12_range_7  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_12_buffer_8  int32
+    edgetpu_soc_Groupc0a8ed16_12_buffer_9  array[int8, 140]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_12(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_12_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_13_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_13_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_13_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_13_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_13_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_13_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_13_range_7  int32[0:4294967293]
+    edgetpu_soc_Groupc0a8ed16_13_const_8  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_13_const_9  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_13_const_10  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_13_const_11  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_13_const_12  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_13_const_13  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_13_const_14  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_13_const_15  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_13_const_16  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_13_const_17  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_13_const_18  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_13_const_19  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_13_range_20  int32[1:4294967294]
+    edgetpu_soc_Groupc0a8ed16_13_buffer_21  array[int8, 128]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_13(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_13_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_14_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_14_buffer_2  int8
+    edgetpu_soc_Groupc0a8ed16_14_buffer_3  int8
+    edgetpu_soc_Groupc0a8ed16_14_buffer_4  int8
+    edgetpu_soc_Groupc0a8ed16_14_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_14_buffer_6  int8
+    edgetpu_soc_Groupc0a8ed16_14_buffer_7  int8
+    edgetpu_soc_Groupc0a8ed16_14_buffer_8  int8
+    edgetpu_soc_Groupc0a8ed16_14_buffer_9  int8
+    edgetpu_soc_Groupc0a8ed16_14_buffer_10  int64
+    edgetpu_soc_Groupc0a8ed16_14_range_11  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_14_const_12  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_14_range_13  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_14_buffer_14  int32
+    edgetpu_soc_Groupc0a8ed16_14_buffer_15  array[int8, 136]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_14(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_14_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_15_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_15_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_15_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_15_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_15_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_15_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_15_const_7  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_15_range_8  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_15_const_9  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_15_const_10  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_15_const_11  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_15_buffer_12  int32
+    edgetpu_soc_Groupc0a8ed16_15_buffer_13  array[int8, 124]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_15(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_15_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_16_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_16_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_16_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_16_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_16_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_16_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_16_const_7  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_16_range_8  int32[0:4294967293]
+    edgetpu_soc_Groupc0a8ed16_16_const_9  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_16_const_10  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_16_const_11  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_16_const_12  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_16_const_13  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_16_const_14  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_16_const_15  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_16_const_16  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_16_range_17  int32[1:4294967294]
+    edgetpu_soc_Groupc0a8ed16_16_buffer_18  array[int8, 128]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_16(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_16_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_17_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_17_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_17_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_17_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_17_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_17_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_17_const_7  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_17_range_8  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_17_const_9  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_17_const_10  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_17_const_11  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_17_const_12  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_17_const_13  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_17_const_14  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_17_const_15  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_17_const_16  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_17_buffer_17  int8
+    edgetpu_soc_Groupc0a8ed16_17_buffer_18  int8
+    edgetpu_soc_Groupc0a8ed16_17_buffer_19  int8
+    edgetpu_soc_Groupc0a8ed16_17_buffer_20  int8
+    edgetpu_soc_Groupc0a8ed16_17_buffer_21  array[int8, 128]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_17(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_17_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_18_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_18_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_18_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_18_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_18_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_18_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_18_const_7  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_18_range_8  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_18_const_9  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_18_const_10  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_18_const_11  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_18_const_12  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_18_range_13  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_18_buffer_14  array[int8, 132]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_18(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_18_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_19_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_19_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_19_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_19_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_19_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_19_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_19_const_7  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_19_buffer_8  int32
+    edgetpu_soc_Groupc0a8ed16_19_range_9  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_19_buffer_10  int8
+    edgetpu_soc_Groupc0a8ed16_19_buffer_11  int8
+    edgetpu_soc_Groupc0a8ed16_19_buffer_12  int8
+    edgetpu_soc_Groupc0a8ed16_19_buffer_13  int8
+    edgetpu_soc_Groupc0a8ed16_19_buffer_14  array[int8, 132]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_19(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_19_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_20_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_20_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_20_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_20_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_20_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_20_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_20_const_7  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_20_range_8  int32[0:4294967293]
+    edgetpu_soc_Groupc0a8ed16_20_range_9  int32[1:4294967294]
+    edgetpu_soc_Groupc0a8ed16_20_buffer_10  array[int8, 136]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_20(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_20_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_21_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_21_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_21_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_21_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_21_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_21_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_21_const_7  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_21_range_8  int32[0:4294967293]
+    edgetpu_soc_Groupc0a8ed16_21_const_9  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_21_const_10  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_21_const_11  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_21_const_12  const[255, int8]
+    edgetpu_soc_Groupc0a8ed16_21_range_13  int32[1:4294967294]
+    edgetpu_soc_Groupc0a8ed16_21_buffer_14  array[int8, 132]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_21(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_21_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_22_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_22_buffer_2  int8
+    edgetpu_soc_Groupc0a8ed16_22_buffer_3  int8
+    edgetpu_soc_Groupc0a8ed16_22_buffer_4  int8
+    edgetpu_soc_Groupc0a8ed16_22_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_22_buffer_6  int8
+    edgetpu_soc_Groupc0a8ed16_22_buffer_7  int8
+    edgetpu_soc_Groupc0a8ed16_22_buffer_8  int8
+    edgetpu_soc_Groupc0a8ed16_22_buffer_9  int8
+    edgetpu_soc_Groupc0a8ed16_22_buffer_10  int64
+    edgetpu_soc_Groupc0a8ed16_22_range_11  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_22_const_12  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_22_const_13  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_22_range_14  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_22_buffer_15  array[int8, 136]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_22(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_22_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_23_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_23_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_23_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_23_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_23_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_23_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_23_const_7  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_23_const_8  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_23_range_9  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_23_const_10  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_23_buffer_11  int32
+    edgetpu_soc_Groupc0a8ed16_23_buffer_12  array[int8, 128]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_23(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_23_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_24_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_24_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_24_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_24_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_24_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_24_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_24_const_7  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_24_const_8  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_24_range_9  int32[0:4294967293]
+    edgetpu_soc_Groupc0a8ed16_24_range_10  int32[1:4294967294]
+    edgetpu_soc_Groupc0a8ed16_24_buffer_11  array[int8, 132]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_24(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_24_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_25_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_25_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc0a8ed16_25_buffer_3  int64
+    edgetpu_soc_Groupc0a8ed16_25_range_4  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_25_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_25_buffer_6  int16
+    edgetpu_soc_Groupc0a8ed16_25_const_7  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_25_const_8  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_25_range_9  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_25_buffer_10  int32
+    edgetpu_soc_Groupc0a8ed16_25_buffer_11  array[int8, 132]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_25(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_25_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_26_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_26_buffer_2  int8
+    edgetpu_soc_Groupc0a8ed16_26_buffer_3  int8
+    edgetpu_soc_Groupc0a8ed16_26_buffer_4  int8
+    edgetpu_soc_Groupc0a8ed16_26_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_26_buffer_6  int8
+    edgetpu_soc_Groupc0a8ed16_26_buffer_7  int8
+    edgetpu_soc_Groupc0a8ed16_26_buffer_8  int8
+    edgetpu_soc_Groupc0a8ed16_26_buffer_9  int8
+    edgetpu_soc_Groupc0a8ed16_26_buffer_10  int64
+    edgetpu_soc_Groupc0a8ed16_26_range_11  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_26_const_12  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_26_const_13  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_26_const_14  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_26_range_15  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_26_buffer_16  array[int8, 132]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_26(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_26_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_27_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_27_buffer_2  int8
+    edgetpu_soc_Groupc0a8ed16_27_buffer_3  int8
+    edgetpu_soc_Groupc0a8ed16_27_buffer_4  int8
+    edgetpu_soc_Groupc0a8ed16_27_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_27_buffer_6  int8
+    edgetpu_soc_Groupc0a8ed16_27_buffer_7  int8
+    edgetpu_soc_Groupc0a8ed16_27_buffer_8  int8
+    edgetpu_soc_Groupc0a8ed16_27_buffer_9  int8
+    edgetpu_soc_Groupc0a8ed16_27_buffer_10  int64
+    edgetpu_soc_Groupc0a8ed16_27_range_11  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_27_const_12  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_27_const_13  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_27_const_14  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_27_const_15  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_27_range_16  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_27_buffer_17  array[int8, 128]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_27(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_27_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_28_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_28_buffer_2  int8
+    edgetpu_soc_Groupc0a8ed16_28_buffer_3  int8
+    edgetpu_soc_Groupc0a8ed16_28_buffer_4  int8
+    edgetpu_soc_Groupc0a8ed16_28_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_28_buffer_6  int8
+    edgetpu_soc_Groupc0a8ed16_28_buffer_7  int8
+    edgetpu_soc_Groupc0a8ed16_28_buffer_8  int8
+    edgetpu_soc_Groupc0a8ed16_28_buffer_9  int8
+    edgetpu_soc_Groupc0a8ed16_28_buffer_10  int64
+    edgetpu_soc_Groupc0a8ed16_28_range_11  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_28_const_12  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_28_const_13  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_28_const_14  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_28_const_15  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_28_const_16  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_28_range_17  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_28_buffer_18  array[int8, 124]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_28(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_28_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_29_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_29_buffer_2  int8
+    edgetpu_soc_Groupc0a8ed16_29_buffer_3  int8
+    edgetpu_soc_Groupc0a8ed16_29_buffer_4  int8
+    edgetpu_soc_Groupc0a8ed16_29_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_29_buffer_6  int8
+    edgetpu_soc_Groupc0a8ed16_29_buffer_7  int8
+    edgetpu_soc_Groupc0a8ed16_29_buffer_8  int8
+    edgetpu_soc_Groupc0a8ed16_29_buffer_9  int8
+    edgetpu_soc_Groupc0a8ed16_29_buffer_10  int64
+    edgetpu_soc_Groupc0a8ed16_29_range_11  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_29_buffer_12  int8
+    edgetpu_soc_Groupc0a8ed16_29_buffer_13  int16
+    edgetpu_soc_Groupc0a8ed16_29_const_14  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_29_const_15  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_29_const_16  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_29_const_17  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_29_const_18  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_29_range_19  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_29_buffer_20  array[int8, 124]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_29(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_29_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_30_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_30_buffer_2  int8
+    edgetpu_soc_Groupc0a8ed16_30_buffer_3  int8
+    edgetpu_soc_Groupc0a8ed16_30_buffer_4  int8
+    edgetpu_soc_Groupc0a8ed16_30_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_30_buffer_6  int8
+    edgetpu_soc_Groupc0a8ed16_30_buffer_7  int8
+    edgetpu_soc_Groupc0a8ed16_30_buffer_8  int8
+    edgetpu_soc_Groupc0a8ed16_30_buffer_9  int8
+    edgetpu_soc_Groupc0a8ed16_30_buffer_10  int64
+    edgetpu_soc_Groupc0a8ed16_30_range_11  int8[0:254]
+    edgetpu_soc_Groupc0a8ed16_30_buffer_12  int8
+    edgetpu_soc_Groupc0a8ed16_30_buffer_13  int16
+    edgetpu_soc_Groupc0a8ed16_30_const_14  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_30_const_15  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_30_const_16  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_30_const_17  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_30_const_18  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_30_const_19  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_30_range_20  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_30_buffer_21  array[int8, 120]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_30(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_30_struct_1]) 
+edgetpu_soc_Groupc0a8ed16_31_struct_1 {
+    edgetpu_soc_Groupc0a8ed16_31_buffer_2  int8
+    edgetpu_soc_Groupc0a8ed16_31_buffer_3  int8
+    edgetpu_soc_Groupc0a8ed16_31_buffer_4  int8
+    edgetpu_soc_Groupc0a8ed16_31_buffer_5  int8
+    edgetpu_soc_Groupc0a8ed16_31_buffer_6  int8
+    edgetpu_soc_Groupc0a8ed16_31_buffer_7  int8
+    edgetpu_soc_Groupc0a8ed16_31_buffer_8  int8
+    edgetpu_soc_Groupc0a8ed16_31_buffer_9  int8
+    edgetpu_soc_Groupc0a8ed16_31_buffer_10  int64
+    edgetpu_soc_Groupc0a8ed16_31_range_11  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_31_const_12  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_31_const_13  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_31_const_14  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_31_const_15  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_31_const_16  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_31_const_17  const[4294967295, int32]
+    edgetpu_soc_Groupc0a8ed16_31_range_18  int32[0:4294967294]
+    edgetpu_soc_Groupc0a8ed16_31_buffer_19  array[int8, 120]
+} [packed]
+ioctl$edgetpu_soc_Groupc0a8ed16_31(fd edgetpu_soc_fd, cmd const[3232296214], arg ptr[in, edgetpu_soc_Groupc0a8ed16_31_struct_1]) 
+edgetpu_soc_Groupc020ed00_0_struct_1 {
+    edgetpu_soc_Groupc020ed00_0_buffer_2  int8
+    edgetpu_soc_Groupc020ed00_0_buffer_3  int8
+    edgetpu_soc_Groupc020ed00_0_buffer_4  int8
+    edgetpu_soc_Groupc020ed00_0_buffer_5  int8
+    edgetpu_soc_Groupc020ed00_0_buffer_6  int8
+    edgetpu_soc_Groupc020ed00_0_buffer_7  int8
+    edgetpu_soc_Groupc020ed00_0_buffer_8  int8
+    edgetpu_soc_Groupc020ed00_0_buffer_9  int8
+    edgetpu_soc_Groupc020ed00_0_range_10  int64[1:18446744069414584321]
+    edgetpu_soc_Groupc020ed00_0_buffer_11  int64
+    edgetpu_soc_Groupc020ed00_0_range_12  int8[0:254]
+    edgetpu_soc_Groupc020ed00_0_buffer_13  int8
+    edgetpu_soc_Groupc020ed00_0_buffer_14  int16
+    edgetpu_soc_Groupc020ed00_0_buffer_15  int32
+} [packed]
+ioctl$edgetpu_soc_Groupc020ed00_0(fd edgetpu_soc_fd, cmd const[3223383296], arg ptr[in, edgetpu_soc_Groupc020ed00_0_struct_1]) 
+ioctl$edgetpu_soc_Group8010ed1b_0(fd edgetpu_soc_fd, cmd const[2148592923], arg ptr[out, array[int8, 16]]) 
+edgetpu_soc_Group4008ed15_0_struct_1 {
+    edgetpu_soc_Group4008ed15_0_buffer_2  int32
+    edgetpu_soc_Group4008ed15_0_range_3  int32[4096:4294963200]
+} [packed]
+ioctl$edgetpu_soc_Group4008ed15_0(fd edgetpu_soc_fd, cmd const[1074326805], arg ptr[in, edgetpu_soc_Group4008ed15_0_struct_1]) 
+ioctl$edgetpu_soc_Group4004ed0f_0(fd edgetpu_soc_fd, cmd const[1074064655], edgetpu_soc_Group4004ed0f_0_range_52 intptr[4096:4097]) 
+edgetpu_soc_Group4018ed1f_0_struct_1 {
+    edgetpu_soc_Group4018ed1f_0_buffer_2  array[int8, 16]
+    edgetpu_soc_Group4018ed1f_0_const_3  const[1, int8]
+    edgetpu_soc_Group4018ed1f_0_const_4  const[0, int8]
+    edgetpu_soc_Group4018ed1f_0_const_5  const[0, int8]
+    edgetpu_soc_Group4018ed1f_0_const_6  const[0, int8]
+    edgetpu_soc_Group4018ed1f_0_const_7  const[1, int8]
+    edgetpu_soc_Group4018ed1f_0_const_8  const[0, int8]
+    edgetpu_soc_Group4018ed1f_0_const_9  const[0, int8]
+    edgetpu_soc_Group4018ed1f_0_const_10  const[0, int8]
+} [packed]
+ioctl$edgetpu_soc_Group4018ed1f_0(fd edgetpu_soc_fd, cmd const[1075375391], arg ptr[in, edgetpu_soc_Group4018ed1f_0_struct_1]) 
+edgetpu_soc_Group40a8ed17_0_struct_1 {
+    edgetpu_soc_Group40a8ed17_0_buffer_2  int64
+    edgetpu_soc_Group40a8ed17_0_buffer_3  int8
+    edgetpu_soc_Group40a8ed17_0_buffer_4  int8
+    edgetpu_soc_Group40a8ed17_0_buffer_5  int8
+    edgetpu_soc_Group40a8ed17_0_buffer_6  int8
+    edgetpu_soc_Group40a8ed17_0_buffer_7  int8
+    edgetpu_soc_Group40a8ed17_0_buffer_8  int8
+    edgetpu_soc_Group40a8ed17_0_buffer_9  int8
+    edgetpu_soc_Group40a8ed17_0_buffer_10  int8
+    edgetpu_soc_Group40a8ed17_0_buffer_11  array[int8, 152]
+} [packed]
+ioctl$edgetpu_soc_Group40a8ed17_0(fd edgetpu_soc_fd, cmd const[1084812567], arg ptr[in, edgetpu_soc_Group40a8ed17_0_struct_1]) 
+edgetpu_soc_Group4020ed10_0_struct_1 {
+    edgetpu_soc_Group4020ed10_0_buffer_2  int64
+    edgetpu_soc_Group4020ed10_0_buffer_3  int64
+    edgetpu_soc_Group4020ed10_0_buffer_4  int64
+    edgetpu_soc_Group4020ed10_0_buffer_5  int32
+    edgetpu_soc_Group4020ed10_0_buffer_6  int32
+} [packed]
+ioctl$edgetpu_soc_Group4020ed10_0(fd edgetpu_soc_fd, cmd const[1075899664], arg ptr[in, edgetpu_soc_Group4020ed10_0_struct_1]) 
+edgetpu_soc_Group4020ed10_1_struct_1 {
+    edgetpu_soc_Group4020ed10_1_buffer_2  int64
+    edgetpu_soc_Group4020ed10_1_range_3  int64[1:18446744069414584321]
+    edgetpu_soc_Group4020ed10_1_range_4  int64[0:18446744069414584320]
+    edgetpu_soc_Group4020ed10_1_buffer_5  int32
+    edgetpu_soc_Group4020ed10_1_range_6  int8[0:254]
+    edgetpu_soc_Group4020ed10_1_buffer_7  int8
+    edgetpu_soc_Group4020ed10_1_buffer_8  int16
+} [packed]
+ioctl$edgetpu_soc_Group4020ed10_1(fd edgetpu_soc_fd, cmd const[1075899664], arg ptr[in, edgetpu_soc_Group4020ed10_1_struct_1]) 
+edgetpu_soc_Group4020ed10_2_struct_1 {
+    edgetpu_soc_Group4020ed10_2_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Group4020ed10_2_range_3  int64[1:18446744069414584321]
+    edgetpu_soc_Group4020ed10_2_range_4  int64[0:18446744069414584320]
+    edgetpu_soc_Group4020ed10_2_const_5  const[255, int8]
+    edgetpu_soc_Group4020ed10_2_const_6  const[255, int8]
+    edgetpu_soc_Group4020ed10_2_const_7  const[255, int8]
+    edgetpu_soc_Group4020ed10_2_const_8  const[255, int8]
+    edgetpu_soc_Group4020ed10_2_range_9  int8[0:254]
+    edgetpu_soc_Group4020ed10_2_buffer_10  int8
+    edgetpu_soc_Group4020ed10_2_buffer_11  int16
+} [packed]
+ioctl$edgetpu_soc_Group4020ed10_2(fd edgetpu_soc_fd, cmd const[1075899664], arg ptr[in, edgetpu_soc_Group4020ed10_2_struct_1]) 
+edgetpu_soc_Group4020ed10_3_struct_1 {
+    edgetpu_soc_Group4020ed10_3_range_2  int64[1:18446744069414584321]
+    edgetpu_soc_Group4020ed10_3_range_3  int64[1:18446744069414584321]
+    edgetpu_soc_Group4020ed10_3_range_4  int64[0:18446744069414584320]
+    edgetpu_soc_Group4020ed10_3_range_5  int32[0:4294967294]
+    edgetpu_soc_Group4020ed10_3_range_6  int8[0:254]
+    edgetpu_soc_Group4020ed10_3_buffer_7  int8
+    edgetpu_soc_Group4020ed10_3_buffer_8  int16
+} [packed]
+ioctl$edgetpu_soc_Group4020ed10_3(fd edgetpu_soc_fd, cmd const[1075899664], arg ptr[in, edgetpu_soc_Group4020ed10_3_struct_1]) 
+edgetpu_soc_Group4020ed10_4_struct_1 {
+    edgetpu_soc_Group4020ed10_4_buffer_2  int64
+    edgetpu_soc_Group4020ed10_4_range_3  int64[1:18446744069414584321]
+    edgetpu_soc_Group4020ed10_4_range_4  int64[0:18446744069414584320]
+    edgetpu_soc_Group4020ed10_4_const_5  const[255, int8]
+    edgetpu_soc_Group4020ed10_4_const_6  const[255, int8]
+    edgetpu_soc_Group4020ed10_4_const_7  const[255, int8]
+    edgetpu_soc_Group4020ed10_4_const_8  const[255, int8]
+    edgetpu_soc_Group4020ed10_4_range_9  int8[0:254]
+    edgetpu_soc_Group4020ed10_4_buffer_10  int8
+    edgetpu_soc_Group4020ed10_4_buffer_11  int16
+} [packed]
+ioctl$edgetpu_soc_Group4020ed10_4(fd edgetpu_soc_fd, cmd const[1075899664], arg ptr[in, edgetpu_soc_Group4020ed10_4_struct_1]) 

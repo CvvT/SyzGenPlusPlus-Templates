@@ -1,0 +1,16 @@
+resource ipc_fd[fd]
+
+syz_open_dev$oem_ipc_syzgen(dev ptr[in, string["/dev/oem_ipc#"]], id intptr, flags flags[open_flags]) ipc_fd
+syz_open_dev$umts_ipc_syzgen(dev ptr[in, string["/dev/umts_ipc#"]], id intptr, flags flags[open_flags]) ipc_fd
+openat$umts_loopback_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/umts_loopback"]], flags flags[open_flags], mode const[0]) ipc_fd
+syz_open_dev$umts_rcs_syzgen(dev ptr[in, string["/dev/umts_rcs#"]], id intptr, flags flags[open_flags]) ipc_fd
+openat$umts_rfs0_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/umts_rfs0"]], flags flags[open_flags], mode const[0]) ipc_fd
+openat$umts_router_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/umts_router"]], flags flags[open_flags], mode const[0]) ipc_fd
+syz_open_dev$umts_wfc_syzgen(dev ptr[in, string["/dev/umts_wfc#"]], id intptr, flags flags[open_flags]) ipc_fd
+
+read$ipc_syzgen(fd ipc_fd, data ptr[out, array[int8]], size len[data]) 
+ioctl$ipc_Group0_0(fd ipc_fd, cmd int32, arg intptr)
+ioctl$ipc_Group6f27_0(fd ipc_fd, cmd const[28455], arg intptr) 
+ioctl$ipc_Group6f34_0(fd ipc_fd, cmd const[28468], arg ptr[in, array[int8, 512]]) 
+write$ipc_Group0_0(fd ipc_fd, data ptr[in, array[int8]], size len[data]) 
+write$ipc_Group0_1(fd ipc_fd, data ptr[in, array[int8]], size len[data]) 

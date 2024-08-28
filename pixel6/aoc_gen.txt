@@ -1,0 +1,37 @@
+resource aoc_fd[fd]
+
+openat$aoc_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/aoc"]], flags flags[open_flags], mode const[0]) aoc_fd
+ioctl$aoc_Group8004ac05_0(fd aoc_fd, cmd const[2147789829], arg ptr[out, int32]) 
+aoc_Group4004acce_0_struct_1 {
+    aoc_Group4004acce_0_buffer_2  int8
+    aoc_Group4004acce_0_buffer_3  int8
+    aoc_Group4004acce_0_buffer_4  int8
+    aoc_Group4004acce_0_buffer_5  int8
+} [packed]
+ioctl$aoc_Group4004acce_0(fd aoc_fd, cmd const[1074048206], arg ptr[in, aoc_Group4004acce_0_struct_1]) 
+aoc_Group4004accf_0_struct_1 {
+    aoc_Group4004accf_0_buffer_2  int8
+    aoc_Group4004accf_0_buffer_3  int8
+    aoc_Group4004accf_0_buffer_4  int8
+    aoc_Group4004accf_0_buffer_5  int8
+} [packed]
+ioctl$aoc_Group4004accf_0(fd aoc_fd, cmd const[1074048207], arg ptr[in, aoc_Group4004accf_0_struct_1]) 
+aoc_Group4004acd0_0_struct_1 {
+    aoc_Group4004acd0_0_buffer_2  int8
+    aoc_Group4004acd0_0_buffer_3  int8
+    aoc_Group4004acd0_0_buffer_4  int8
+    aoc_Group4004acd0_0_buffer_5  int8
+} [packed]
+ioctl$aoc_Group4004acd0_0(fd aoc_fd, cmd const[1074048208], arg ptr[in, aoc_Group4004acd0_0_struct_1]) 
+aoc_Group4004accd_0_struct_1 {
+    aoc_Group4004accd_0_buffer_2  int8
+    aoc_Group4004accd_0_buffer_3  int8
+    aoc_Group4004accd_0_buffer_4  int8
+    aoc_Group4004accd_0_buffer_5  int8
+} [packed]
+ioctl$aoc_Group4004accd_0(fd aoc_fd, cmd const[1074048205], arg ptr[in, aoc_Group4004accd_0_struct_1]) 
+aoc_Groupc008accc_0_struct_1 {
+    aoc_Groupc008accc_0_buffer_2  int32
+    aoc_Groupc008accc_0_range_3  int32[0:4294967294]
+} [packed]
+ioctl$aoc_Groupc008accc_0(fd aoc_fd, cmd const[3221793996], arg ptr[inout, aoc_Groupc008accc_0_struct_1]) 

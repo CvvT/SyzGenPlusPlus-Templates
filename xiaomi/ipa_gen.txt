@@ -1,0 +1,550 @@
+resource ipa_fd[fd]
+resource ipa_connection_1[int32]
+resource ipa_connection_0[int32]
+
+openat$ipa_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/ipa"]], flags flags[open_flags], mode const[0]) ipa_fd
+ioctl$ipa_Group8004cf21_0(fd ipa_fd, cmd const[2147798817], ipa_Group8004cf21_0_range_220 intptr[0:125]) 
+ioctl$ipa_Group8004cf21_1(fd ipa_fd, cmd const[2147798817], arg intptr[126:4294967295]) 
+ioctl$ipa_Groupcf07_0(fd ipa_fd, cmd const[52999], arg intptr) 
+ipa_Groupc002cf4d_0_struct_1 {
+    ipa_Groupc002cf4d_0_buffer_2  int8
+    ipa_Groupc002cf4d_0_buffer_3  int8
+} [packed]
+ioctl$ipa_Groupc002cf4d_0(fd ipa_fd, cmd const[3221409613], arg ptr[in, ipa_Groupc002cf4d_0_struct_1]) 
+ipa_Groupc002cf4d_1_struct_1 {
+    ipa_Groupc002cf4d_1_range_2  int8[1:128]
+    ipa_Groupc002cf4d_1_buffer_3  int8
+} [packed]
+ioctl$ipa_Groupc002cf4d_1(fd ipa_fd, cmd const[3221409613], arg ptr[in, ipa_Groupc002cf4d_1_struct_1]) 
+ipa_Groupc002cf4d_2_struct_1 {
+    ipa_Groupc002cf4d_2_range_2  int8[1:128]
+    ipa_Groupc002cf4d_2_range_3  int8[1:128]
+} [packed]
+ioctl$ipa_Groupc002cf4d_2(fd ipa_fd, cmd const[3221409613], arg ptr[in, ipa_Groupc002cf4d_2_struct_1]) 
+ioctl$ipa_Groupc004cf4f_0(fd ipa_fd, cmd const[3221540687], arg intptr) 
+ioctl$ipa_Groupc004cf4f_1(fd ipa_fd, cmd const[3221540687], arg intptr) 
+ipa_Groupc008cf49_0_struct_1 {
+    ipa_Groupc008cf49_0_buffer_2  int8
+    ipa_Groupc008cf49_0_buffer_3  array[int8, 3]
+    ipa_Groupc008cf49_0_buffer_4  int32
+    ipa_Groupc008cf49_0_buffer_5  int8
+    ipa_Groupc008cf49_0_buffer_6  array[int8, 3]
+    ipa_Groupc008cf49_0_buffer_7  int32
+    ipa_Groupc008cf49_0_buffer_8  int64
+    ipa_Groupc008cf49_0_ptr_10  ptr[out, array[int8, 10]]
+} [packed]
+ioctl$ipa_Groupc008cf49_0(fd ipa_fd, cmd const[3221802825], arg ptr[in, ipa_Groupc008cf49_0_struct_1]) 
+ipa_Groupc008cf49_1_struct_1 {
+    ipa_Groupc008cf49_1_buffer_2  int8
+    ipa_Groupc008cf49_1_buffer_3  array[int8, 3]
+    ipa_Groupc008cf49_1_buffer_4  int32
+    ipa_Groupc008cf49_1_buffer_5  int8
+    ipa_Groupc008cf49_1_buffer_6  array[int8, 3]
+    ipa_Groupc008cf49_1_range_7  int32[0:372]
+    ipa_Groupc008cf49_1_buffer_8  int64
+    ipa_Groupc008cf49_1_ptr_10  ptr[out, array[int8, 12]]
+} [packed]
+ioctl$ipa_Groupc008cf49_1(fd ipa_fd, cmd const[3221802825], arg ptr[in, ipa_Groupc008cf49_1_struct_1]) 
+ioctl$ipa_Groupc008cf31_0(fd ipa_fd, cmd const[3221802801], arg ptr[in, array[int8, 84]]) ipa_connection_1
+ipa_Groupc008cf35_0_struct_1 {
+    ipa_Groupc008cf35_0_buffer_2  int8
+    ipa_Groupc008cf35_0_buffer_3  int8
+    ipa_Groupc008cf35_0_buffer_4  int8
+    ipa_Groupc008cf35_0_buffer_5  int8
+    ipa_Groupc008cf35_0_buffer_6  int8
+    ipa_Groupc008cf35_0_buffer_7  int8
+    ipa_Groupc008cf35_0_buffer_8  int8
+    ipa_Groupc008cf35_0_buffer_9  int8
+    ipa_Groupc008cf35_0_buffer_10  int64
+} [packed]
+ioctl$ipa_Groupc008cf35_0(fd ipa_fd, cmd const[3221802805], arg ptr[in, ipa_Groupc008cf35_0_struct_1]) 
+ipa_Groupc008cf34_0_struct_1 {
+    ipa_Groupc008cf34_0_buffer_2  int8
+    ipa_Groupc008cf34_0_buffer_3  int8
+    ipa_Groupc008cf34_0_buffer_4  int8
+    ipa_Groupc008cf34_0_buffer_5  int8
+    ipa_Groupc008cf34_0_buffer_6  int8
+    ipa_Groupc008cf34_0_buffer_7  int8
+    ipa_Groupc008cf34_0_buffer_8  int8
+    ipa_Groupc008cf34_0_buffer_9  int8
+    ipa_Groupc008cf34_0_buffer_10  int64
+} [packed]
+ioctl$ipa_Groupc008cf34_0(fd ipa_fd, cmd const[3221802804], arg ptr[in, ipa_Groupc008cf34_0_struct_1]) 
+ipa_Groupc008cf12_0_struct_1 {
+    ipa_Groupc008cf12_0_buffer_2  array[int8, 32]
+    ipa_Groupc008cf12_0_buffer_3  int32
+    ipa_Groupc008cf12_0_buffer_4  array[int8]
+} [packed]
+ioctl$ipa_Groupc008cf12_0(fd ipa_fd, cmd const[3221802770], arg ptr[inout, ipa_Groupc008cf12_0_struct_1]) 
+ipa_Groupc008cf12_1_struct_1 {
+    ipa_Groupc008cf12_1_buffer_2  array[int8, 32]
+    ipa_Groupc008cf12_1_range_3  int8[0:35]
+    ipa_Groupc008cf12_1_const_4  const[0, int8]
+    ipa_Groupc008cf12_1_const_5  const[0, int8]
+    ipa_Groupc008cf12_1_const_6  const[0, int8]
+} [packed]
+ioctl$ipa_Groupc008cf12_1(fd ipa_fd, cmd const[3221802770], arg ptr[inout, ipa_Groupc008cf12_1_struct_1]) 
+ipa_Groupc008cf44_0_struct_1 {
+    ipa_Groupc008cf44_0_buffer_2  int32
+    ipa_Groupc008cf44_0_resource_3  ipa_connection_1
+    ipa_Groupc008cf44_0_buffer_4  array[int8, 32]
+    ipa_Groupc008cf44_0_buffer_5  int8
+    ipa_Groupc008cf44_0_buffer_6  array[int8, 3]
+    ipa_Groupc008cf44_0_buffer_7  int32
+    ipa_Groupc008cf44_0_buffer_8  int64
+    ipa_Groupc008cf44_0_buffer_9  int8
+    ipa_Groupc008cf44_0_buffer_10  int8
+    ipa_Groupc008cf44_0_buffer_11  int8
+    ipa_Groupc008cf44_0_buffer_12  int8
+    ipa_Groupc008cf44_0_buffer_13  int8
+    ipa_Groupc008cf44_0_buffer_14  int8
+    ipa_Groupc008cf44_0_buffer_15  int8
+    ipa_Groupc008cf44_0_buffer_16  int8
+} [packed]
+ioctl$ipa_Groupc008cf44_0(fd ipa_fd, cmd const[3221802820], arg ptr[in, ipa_Groupc008cf44_0_struct_1]) ipa_connection_1
+ioctl$ipa_Groupc008cf30_0(fd ipa_fd, cmd const[3221802800], arg ptr[in, array[int8, 34]]) ipa_connection_1
+ioctl$ipa_Groupc008cf27_0(fd ipa_fd, cmd const[3221802791], arg ptr[in, array[int8, 88]]) ipa_connection_1
+ipa_Groupc008cf17_0_struct_1 {
+    ipa_Groupc008cf17_0_buffer_2  int8
+    ipa_Groupc008cf17_0_buffer_3  array[int8, 3]
+    ipa_Groupc008cf17_0_buffer_4  int32
+    ipa_Groupc008cf17_0_buffer_5  array[int8, 12]
+    ipa_Groupc008cf17_0_buffer_6  int8
+    ipa_Groupc008cf17_0_buffer_7  int8
+    ipa_Groupc008cf17_0_buffer_8  array[int8, 6]
+    ipa_Groupc008cf17_0_buffer_9  int8
+    ipa_Groupc008cf17_0_buffer_10  array[int8, 3]
+} [packed]
+ioctl$ipa_Groupc008cf17_0(fd ipa_fd, cmd const[3221802775], arg ptr[in, ipa_Groupc008cf17_0_struct_1]) 
+ipa_Groupc008cf17_1_struct_1 {
+    ipa_Groupc008cf17_1_const_2  const[0, int8]
+    ipa_Groupc008cf17_1_buffer_3  array[int8, 3]
+    ipa_Groupc008cf17_1_buffer_4  int32
+    ipa_Groupc008cf17_1_buffer_5  array[int8, 12]
+    ipa_Groupc008cf17_1_range_6  int16[1:65535]
+    ipa_Groupc008cf17_1_buffer_7  array[int8, 6]
+    ipa_Groupc008cf17_1_range_8  int8[2:255]
+    ipa_Groupc008cf17_1_buffer_9  array[int8, 3]
+} [packed]
+ioctl$ipa_Groupc008cf17_1(fd ipa_fd, cmd const[3221802775], arg ptr[in, ipa_Groupc008cf17_1_struct_1]) 
+ipa_Groupc008cf17_2_struct_1 {
+    ipa_Groupc008cf17_2_const_2  const[0, int8]
+    ipa_Groupc008cf17_2_buffer_3  array[int8, 3]
+    ipa_Groupc008cf17_2_buffer_4  int32
+    ipa_Groupc008cf17_2_buffer_5  array[int8, 12]
+    ipa_Groupc008cf17_2_buffer_6  int8
+    ipa_Groupc008cf17_2_buffer_7  int8
+    ipa_Groupc008cf17_2_buffer_8  array[int8, 6]
+    ipa_Groupc008cf17_2_range_9  int8[0:1]
+    ipa_Groupc008cf17_2_buffer_10  array[int8, 3]
+} [packed]
+ioctl$ipa_Groupc008cf17_2(fd ipa_fd, cmd const[3221802775], arg ptr[in, ipa_Groupc008cf17_2_struct_1]) 
+ipa_Groupc008cf46_0_struct_1 {
+    ipa_Groupc008cf46_0_buffer_2  int32
+    ipa_Groupc008cf46_0_buffer_3  int32
+    ipa_Groupc008cf46_0_buffer_4  int8
+    ipa_Groupc008cf46_0_buffer_5  array[int8, 3]
+    ipa_Groupc008cf46_0_buffer_6  int32
+    ipa_Groupc008cf46_0_buffer_7  int64
+    ipa_Groupc008cf46_0_buffer_8  int8
+    ipa_Groupc008cf46_0_buffer_9  int8
+    ipa_Groupc008cf46_0_buffer_10  int8
+    ipa_Groupc008cf46_0_buffer_11  int8
+    ipa_Groupc008cf46_0_buffer_12  int8
+    ipa_Groupc008cf46_0_buffer_13  int8
+    ipa_Groupc008cf46_0_buffer_14  int8
+    ipa_Groupc008cf46_0_buffer_15  int8
+} [packed]
+ioctl$ipa_Groupc008cf46_0(fd ipa_fd, cmd const[3221802822], arg ptr[in, ipa_Groupc008cf46_0_struct_1]) 
+ipa_Groupc008cf46_1_struct_1 {
+    ipa_Groupc008cf46_1_buffer_2  int8
+    ipa_Groupc008cf46_1_buffer_3  array[int8, 3]
+    ipa_Groupc008cf46_1_buffer_4  int32
+    ipa_Groupc008cf46_1_buffer_5  int8
+    ipa_Groupc008cf46_1_buffer_6  array[int8, 3]
+    ipa_Groupc008cf46_1_buffer_7  int32
+    ipa_Groupc008cf46_1_buffer_8  int64
+    ipa_Groupc008cf46_1_ptr_10  ptr[out, array[int8, 180]]
+} [packed]
+ioctl$ipa_Groupc008cf46_1(fd ipa_fd, cmd const[3221802822], arg ptr[in, ipa_Groupc008cf46_1_struct_1]) 
+ipa_Groupc008cf46_2_struct_1 {
+    ipa_Groupc008cf46_2_buffer_2  int8
+    ipa_Groupc008cf46_2_buffer_3  array[int8, 3]
+    ipa_Groupc008cf46_2_buffer_4  int32
+    ipa_Groupc008cf46_2_buffer_5  int8
+    ipa_Groupc008cf46_2_buffer_6  array[int8, 3]
+    ipa_Groupc008cf46_2_range_7  int32[0:180]
+    ipa_Groupc008cf46_2_buffer_8  int64
+    ipa_Groupc008cf46_2_ptr_10  ptr[out, array[int8, 180]]
+} [packed]
+ioctl$ipa_Groupc008cf46_2(fd ipa_fd, cmd const[3221802822], arg ptr[in, ipa_Groupc008cf46_2_struct_1]) 
+ipa_Groupc008cf19_0_struct_1 {
+    ipa_Groupc008cf19_0_buffer_2  int32
+    ipa_Groupc008cf19_0_buffer_3  int32
+    ipa_Groupc008cf19_0_buffer_4  int8
+    ipa_Groupc008cf19_0_buffer_5  int8
+    ipa_Groupc008cf19_0_buffer_6  int16
+    ipa_Groupc008cf19_0_buffer_7  int8
+    ipa_Groupc008cf19_0_buffer_8  array[int8, 3]
+} [packed]
+ioctl$ipa_Groupc008cf19_0(fd ipa_fd, cmd const[3221802777], arg ptr[in, ipa_Groupc008cf19_0_struct_1]) 
+ipa_Groupc008cf3a_0_struct_1 {
+    ipa_Groupc008cf3a_0_range_2  int32[0:4]
+    ipa_Groupc008cf3a_0_buffer_3  int32
+} [packed]
+ioctl$ipa_Groupc008cf3a_0(fd ipa_fd, cmd const[3221802810], arg ptr[inout, ipa_Groupc008cf3a_0_struct_1]) 
+ipa_Groupc008cf23_0_struct_1 {
+    ipa_Groupc008cf23_0_buffer_2  int32
+    ipa_Groupc008cf23_0_buffer_3  int32
+} [packed]
+ioctl$ipa_Groupc008cf23_0(fd ipa_fd, cmd const[3221802787], arg ptr[in, ipa_Groupc008cf23_0_struct_1]) 
+ioctl$ipa_Groupc008cf2f_0(fd ipa_fd, cmd const[3221802799], arg ptr[in, array[int8, 34]]) ipa_connection_1
+ipa_Groupc008cf48_0_struct_1 {
+    ipa_Groupc008cf48_0_buffer_2  int32
+    ipa_Groupc008cf48_0_buffer_3  int32
+    ipa_Groupc008cf48_0_buffer_4  int32
+    ipa_Groupc008cf48_0_buffer_5  int8
+    ipa_Groupc008cf48_0_buffer_6  array[int8, 7]
+    ipa_Groupc008cf48_0_buffer_7  int32
+    ipa_Groupc008cf48_0_buffer_8  int64
+    ipa_Groupc008cf48_0_buffer_9  int8
+    ipa_Groupc008cf48_0_buffer_10  int8
+    ipa_Groupc008cf48_0_buffer_11  int8
+    ipa_Groupc008cf48_0_buffer_12  int8
+    ipa_Groupc008cf48_0_buffer_13  int8
+    ipa_Groupc008cf48_0_buffer_14  int8
+    ipa_Groupc008cf48_0_buffer_15  int8
+    ipa_Groupc008cf48_0_buffer_16  int8
+} [packed]
+ioctl$ipa_Groupc008cf48_0(fd ipa_fd, cmd const[3221802824], arg ptr[in, ipa_Groupc008cf48_0_struct_1]) 
+ipa_Groupc008cf48_1_struct_1 {
+    ipa_Groupc008cf48_1_buffer_2  int32
+    ipa_Groupc008cf48_1_buffer_3  int32
+    ipa_Groupc008cf48_1_buffer_4  int32
+    ipa_Groupc008cf48_1_buffer_5  int8
+    ipa_Groupc008cf48_1_buffer_6  array[int8, 7]
+    ipa_Groupc008cf48_1_range_7  int32[0:376]
+    ipa_Groupc008cf48_1_buffer_8  int64
+    ipa_Groupc008cf48_1_range_9  int64[1:18446744069414584321]
+} [packed]
+ioctl$ipa_Groupc008cf48_1(fd ipa_fd, cmd const[3221802824], arg ptr[in, ipa_Groupc008cf48_1_struct_1]) 
+ioctl$ipa_Groupc008cf1d_0(fd ipa_fd, cmd const[3221802781], arg intptr) 
+ioctl$ipa_Groupc008cf26_0(fd ipa_fd, cmd const[3221802790], arg ptr[in, array[int8, 88]]) ipa_connection_1
+ipa_Groupc008cf2b_0_struct_1 {
+    ipa_Groupc008cf2b_0_buffer_2  array[int8, 40]
+    ipa_Groupc008cf2b_0_buffer_3  int8
+    ipa_Groupc008cf2b_0_buffer_4  array[int8, 7]
+    ipa_Groupc008cf2b_0_buffer_5  array[int8, 1440]
+} [packed]
+ioctl$ipa_Groupc008cf2b_0(fd ipa_fd, cmd const[3221802795], arg ptr[inout, ipa_Groupc008cf2b_0_struct_1]) 
+ipa_Groupc008cf37_0_struct_1 {
+    ipa_Groupc008cf37_0_buffer_2  int8
+    ipa_Groupc008cf37_0_buffer_3  int8
+} [packed]
+ioctl$ipa_Groupc008cf37_0(fd ipa_fd, cmd const[3221802807], arg ptr[in, ipa_Groupc008cf37_0_struct_1]) 
+ioctl$ipa_Groupc008cf2d_0(fd ipa_fd, cmd const[3221802797], arg ptr[out, int32]) 
+ipa_Groupc008cf36_0_struct_1 {
+    ipa_Groupc008cf36_0_buffer_2  int8
+    ipa_Groupc008cf36_0_buffer_3  int8
+} [packed]
+ioctl$ipa_Groupc008cf36_0(fd ipa_fd, cmd const[3221802806], arg ptr[in, ipa_Groupc008cf36_0_struct_1]) 
+ipa_Groupc008cf22_0_struct_1 {
+    ipa_Groupc008cf22_0_resource_2  ipa_connection_1
+    ipa_Groupc008cf22_0_buffer_3  array[int8, 36]
+} [packed]
+ioctl$ipa_Groupc008cf22_0(fd ipa_fd, cmd const[3221802786], arg ptr[inout, ipa_Groupc008cf22_0_struct_1]) 
+ioctl$ipa_Groupc008cf1e_0(fd ipa_fd, cmd const[3221802782], arg intptr) 
+ioctl$ipa_Groupc008cf25_0(fd ipa_fd, cmd const[3221802789], arg ptr[in, array[int8, 88]]) ipa_connection_1
+ioctl$ipa_Groupc008cf10_0(fd ipa_fd, cmd const[3221802768], arg ptr[inout, array[int8, 48]]) 
+ipa_Groupc008cf2a_0_struct_1 {
+    ipa_Groupc008cf2a_0_buffer_2  int64
+    ipa_Groupc008cf2a_0_buffer_3  int8
+    ipa_Groupc008cf2a_0_buffer_4  array[int8, 3]
+    ipa_Groupc008cf2a_0_buffer_5  array[int8, 352]
+} [packed]
+ioctl$ipa_Groupc008cf2a_0(fd ipa_fd, cmd const[3221802794], arg ptr[inout, ipa_Groupc008cf2a_0_struct_1]) 
+ipa_Groupc008cf03_0_struct_1 {
+    ipa_Groupc008cf03_0_buffer_2  int64
+    ipa_Groupc008cf03_0_buffer_3  int8
+    ipa_Groupc008cf03_0_buffer_4  array[int8, 3]
+    ipa_Groupc008cf03_0_buffer_5  array[int8, 88]
+} [packed]
+ioctl$ipa_Groupc008cf03_0(fd ipa_fd, cmd const[3221802755], arg ptr[inout, ipa_Groupc008cf03_0_struct_1]) 
+ipa_Groupc008cf43_0_struct_1 {
+    ipa_Groupc008cf43_0_buffer_2  int32
+    ipa_Groupc008cf43_0_resource_3  ipa_connection_1
+    ipa_Groupc008cf43_0_buffer_4  array[int8, 32]
+    ipa_Groupc008cf43_0_buffer_5  int8
+    ipa_Groupc008cf43_0_buffer_6  array[int8, 3]
+    ipa_Groupc008cf43_0_buffer_7  int32
+    ipa_Groupc008cf43_0_buffer_8  int64
+    ipa_Groupc008cf43_0_buffer_9  int8
+    ipa_Groupc008cf43_0_buffer_10  int8
+    ipa_Groupc008cf43_0_buffer_11  int8
+    ipa_Groupc008cf43_0_buffer_12  int8
+    ipa_Groupc008cf43_0_buffer_13  int8
+    ipa_Groupc008cf43_0_buffer_14  int8
+    ipa_Groupc008cf43_0_buffer_15  int8
+    ipa_Groupc008cf43_0_buffer_16  int8
+} [packed]
+ioctl$ipa_Groupc008cf43_0(fd ipa_fd, cmd const[3221802819], arg ptr[in, ipa_Groupc008cf43_0_struct_1]) ipa_connection_1
+ipa_Groupc008cf1b_0_struct_1 {
+    ipa_Groupc008cf1b_0_buffer_2  int16
+    ipa_Groupc008cf1b_0_buffer_3  int16
+} [packed]
+ioctl$ipa_Groupc008cf1b_0(fd ipa_fd, cmd const[3221802779], arg ptr[in, ipa_Groupc008cf1b_0_struct_1]) 
+ipa_Groupc008cf1b_1_struct_1 {
+    ipa_Groupc008cf1b_1_buffer_2  int16
+    ipa_Groupc008cf1b_1_range_3  int16[1:65535]
+} [packed]
+ioctl$ipa_Groupc008cf1b_1(fd ipa_fd, cmd const[3221802779], arg ptr[in, ipa_Groupc008cf1b_1_struct_1]) 
+ipa_Groupc008cf2c_0_struct_1 {
+    ipa_Groupc008cf2c_0_buffer_2  array[int8, 12]
+    ipa_Groupc008cf2c_0_buffer_3  int8
+    ipa_Groupc008cf2c_0_buffer_4  array[int8, 7]
+} [packed]
+ioctl$ipa_Groupc008cf2c_0(fd ipa_fd, cmd const[3221802796], arg ptr[in, ipa_Groupc008cf2c_0_struct_1]) 
+ipa_Groupc008cf18_0_struct_1 {
+    ipa_Groupc008cf18_0_buffer_2  int8
+    ipa_Groupc008cf18_0_buffer_3  array[int8, 3]
+} [packed]
+ioctl$ipa_Groupc008cf18_0(fd ipa_fd, cmd const[3221802776], arg ptr[in, ipa_Groupc008cf18_0_struct_1]) 
+ipa_Groupc008cf1a_0_struct_1 {
+    ipa_Groupc008cf1a_0_range_2  int8[1:255]
+    ipa_Groupc008cf1a_0_buffer_3  array[int8, 7]
+} [packed]
+ioctl$ipa_Groupc008cf1a_0(fd ipa_fd, cmd const[3221802778], arg ptr[in, ipa_Groupc008cf1a_0_struct_1]) 
+ipa_Groupc008cf1a_1_struct_1 {
+    ipa_Groupc008cf1a_1_buffer_2  int8
+    ipa_Groupc008cf1a_1_buffer_3  array[int8, 7]
+} [packed]
+ioctl$ipa_Groupc008cf1a_1(fd ipa_fd, cmd const[3221802778], arg ptr[in, ipa_Groupc008cf1a_1_struct_1]) 
+ipa_Groupc008cf02_0_struct_1 {
+    ipa_Groupc008cf02_0_resource_2  ipa_connection_1
+    ipa_Groupc008cf02_0_buffer_3  array[int8, 36]
+    ipa_Groupc008cf02_0_buffer_4  int8
+    ipa_Groupc008cf02_0_buffer_5  array[int8, 3]
+    ipa_Groupc008cf02_0_buffer_6  array[int8, 720]
+} [packed]
+ioctl$ipa_Groupc008cf02_0(fd ipa_fd, cmd const[3221802754], arg ptr[inout, ipa_Groupc008cf02_0_struct_1]) ipa_connection_1
+ioctl$ipa_Groupc008cf0f_0(fd ipa_fd, cmd const[3221802767], arg ptr[in, array[int8, 108]]) 
+ipa_Groupc008cf05_0_struct_1 {
+    ipa_Groupc008cf05_0_buffer_2  int64
+    ipa_Groupc008cf05_0_buffer_3  int8
+    ipa_Groupc008cf05_0_buffer_4  array[int8, 3]
+    ipa_Groupc008cf05_0_buffer_5  array[int8, 56]
+} [packed]
+ioctl$ipa_Groupc008cf05_0(fd ipa_fd, cmd const[3221802757], arg ptr[inout, ipa_Groupc008cf05_0_struct_1]) 
+ipa_Groupc008cf24_0_struct_1 {
+    ipa_Groupc008cf24_0_buffer_2  int64
+    ipa_Groupc008cf24_0_buffer_3  int8
+    ipa_Groupc008cf24_0_buffer_4  array[int8, 3]
+    ipa_Groupc008cf24_0_buffer_5  array[int8, 736]
+} [packed]
+ioctl$ipa_Groupc008cf24_0(fd ipa_fd, cmd const[3221802788], arg ptr[inout, ipa_Groupc008cf24_0_struct_1]) 
+ipa_Groupc008cf11_0_struct_1 {
+    ipa_Groupc008cf11_0_buffer_2  array[int8, 32]
+    ipa_Groupc008cf11_0_buffer_3  int32
+    ipa_Groupc008cf11_0_buffer_4  array[int8]
+} [packed]
+ioctl$ipa_Groupc008cf11_0(fd ipa_fd, cmd const[3221802769], arg ptr[inout, ipa_Groupc008cf11_0_struct_1]) 
+ipa_Groupc008cf11_1_struct_1 {
+    ipa_Groupc008cf11_1_buffer_2  array[int8, 32]
+    ipa_Groupc008cf11_1_range_3  int8[0:35]
+    ipa_Groupc008cf11_1_const_4  const[0, int8]
+    ipa_Groupc008cf11_1_const_5  const[0, int8]
+    ipa_Groupc008cf11_1_const_6  const[0, int8]
+} [packed]
+ioctl$ipa_Groupc008cf11_1(fd ipa_fd, cmd const[3221802769], arg ptr[inout, ipa_Groupc008cf11_1_struct_1]) 
+ipa_Groupc008cf45_0_struct_1 {
+    ipa_Groupc008cf45_0_buffer_2  int8
+    ipa_Groupc008cf45_0_buffer_3  array[int8, 3]
+    ipa_Groupc008cf45_0_resource_4  ipa_connection_1
+    ipa_Groupc008cf45_0_buffer_5  array[int8, 32]
+    ipa_Groupc008cf45_0_buffer_6  int8
+    ipa_Groupc008cf45_0_buffer_7  array[int8, 3]
+    ipa_Groupc008cf45_0_buffer_8  int32
+    ipa_Groupc008cf45_0_buffer_9  int32
+    ipa_Groupc008cf45_0_buffer_10  int32
+    ipa_Groupc008cf45_0_ptr_12  ptr[out, array[int8, 12]]
+} [packed]
+ioctl$ipa_Groupc008cf45_0(fd ipa_fd, cmd const[3221802821], arg ptr[in, ipa_Groupc008cf45_0_struct_1]) 
+ipa_Groupc008cf04_0_struct_1 {
+    ipa_Groupc008cf04_0_buffer_2  array[int8, 13]
+    ipa_Groupc008cf04_0_buffer_3  int8
+    ipa_Groupc008cf04_0_buffer_4  int16
+    ipa_Groupc008cf04_0_buffer_5  array[int8, 1116]
+} [packed]
+ioctl$ipa_Groupc008cf04_0(fd ipa_fd, cmd const[3221802756], arg ptr[inout, ipa_Groupc008cf04_0_struct_1]) 
+ipa_Groupc008cf29_0_struct_1 {
+    ipa_Groupc008cf29_0_buffer_2  int8
+    ipa_Groupc008cf29_0_buffer_3  int8
+    ipa_Groupc008cf29_0_buffer_4  int16
+    ipa_Groupc008cf29_0_buffer_5  array[int8, 128]
+} [packed]
+ioctl$ipa_Groupc008cf29_0(fd ipa_fd, cmd const[3221802793], arg ptr[inout, ipa_Groupc008cf29_0_struct_1]) 
+ipa_Groupc008cf29_1_struct_1 {
+    ipa_Groupc008cf29_1_buffer_2  int8
+    ipa_Groupc008cf29_1_range_3  int8[1:255]
+    ipa_Groupc008cf29_1_buffer_4  int16
+} [packed]
+ioctl$ipa_Groupc008cf29_1(fd ipa_fd, cmd const[3221802793], arg ptr[inout, ipa_Groupc008cf29_1_struct_1]) 
+ipa_Groupc008cf20_0_struct_1 {
+    ipa_Groupc008cf20_0_buffer_2  array[int8, 32]
+    ipa_Groupc008cf20_0_buffer_3  int32
+    ipa_Groupc008cf20_0_buffer_4  array[int8]
+} [packed]
+ioctl$ipa_Groupc008cf20_0(fd ipa_fd, cmd const[3221802784], arg ptr[inout, ipa_Groupc008cf20_0_struct_1]) 
+ipa_Groupc008cf20_1_struct_1 {
+    ipa_Groupc008cf20_1_buffer_2  array[int8, 32]
+    ipa_Groupc008cf20_1_range_3  int8[0:35]
+    ipa_Groupc008cf20_1_const_4  const[0, int8]
+    ipa_Groupc008cf20_1_const_5  const[0, int8]
+    ipa_Groupc008cf20_1_const_6  const[0, int8]
+} [packed]
+ioctl$ipa_Groupc008cf20_1(fd ipa_fd, cmd const[3221802784], arg ptr[inout, ipa_Groupc008cf20_1_struct_1]) 
+ipa_Groupc008cf2e_0_struct_1 {
+    ipa_Groupc008cf2e_0_resource_2  ipa_connection_1
+    ipa_Groupc008cf2e_0_buffer_3  array[int8, 36]
+    ipa_Groupc008cf2e_0_buffer_4  int8
+    ipa_Groupc008cf2e_0_buffer_5  array[int8, 3]
+    ipa_Groupc008cf2e_0_buffer_6  array[int8, 552]
+} [packed]
+ioctl$ipa_Groupc008cf2e_0(fd ipa_fd, cmd const[3221802798], arg ptr[inout, ipa_Groupc008cf2e_0_struct_1]) ipa_connection_1
+ipa_Groupc008cf16_0_struct_1 {
+    ipa_Groupc008cf16_0_buffer_2  array[int8, 32]
+    ipa_Groupc008cf16_0_range_3  int64[1:18446744069414584321]
+    ipa_Groupc008cf16_0_buffer_4  int64
+} [packed]
+ioctl$ipa_Groupc008cf16_0(fd ipa_fd, cmd const[3221802774], arg ptr[in, ipa_Groupc008cf16_0_struct_1]) 
+ipa_Groupc008cf16_1_struct_1 {
+    ipa_Groupc008cf16_1_buffer_2  array[int8, 32]
+    ipa_Groupc008cf16_1_buffer_3  int64
+    ipa_Groupc008cf16_1_buffer_4  int64
+} [packed]
+ioctl$ipa_Groupc008cf16_1(fd ipa_fd, cmd const[3221802774], arg ptr[in, ipa_Groupc008cf16_1_struct_1]) 
+ipa_Groupc008cf0d_0_struct_1 {
+    ipa_Groupc008cf2e_0_resource_2  ipa_connection_1
+    ipa_Groupc008cf0d_0_buffer_2  array[int8, 36]
+} [packed]
+ioctl$ipa_Groupc008cf0d_0(fd ipa_fd, cmd const[3221802765], arg ptr[in, ipa_Groupc008cf0d_0_struct_1]) 
+ipa_Groupc008cf33_0_struct_1 {
+    ipa_Groupc008cf33_0_buffer_2  int8
+    ipa_Groupc008cf33_0_buffer_3  array[int8, 3]
+    ipa_Groupc008cf33_0_buffer_4  int32
+    ipa_Groupc008cf33_0_buffer_5  int32
+    ipa_Groupc008cf33_0_buffer_6  int32
+} [packed]
+ioctl$ipa_Groupc008cf33_0(fd ipa_fd, cmd const[3221802803], arg ptr[in, ipa_Groupc008cf33_0_struct_1]) 
+ipa_Groupc008cf28_0_struct_1 {
+    ipa_Groupc008cf28_0_buffer_2  int8
+    ipa_Groupc008cf28_0_buffer_3  int8
+    ipa_Groupc008cf28_0_buffer_4  int16
+} [packed]
+ioctl$ipa_Groupc008cf28_0(fd ipa_fd, cmd const[3221802792], arg ptr[in, ipa_Groupc008cf28_0_struct_1]) 
+ioctl$ipa_Groupc008cf32_0(fd ipa_fd, cmd const[3221802802], arg ptr[in, array[int8, 84]]) ipa_connection_1
+ipa_Groupc008cf01_0_struct_1 {
+    ipa_Groupc008cf01_0_buffer_2  int8
+    ipa_Groupc008cf01_0_buffer_3  int8
+    ipa_Groupc008cf01_0_buffer_4  int16
+    ipa_Groupc008cf01_0_buffer_5  array[int8, 64]
+} [packed]
+ioctl$ipa_Groupc008cf01_0(fd ipa_fd, cmd const[3221802753], arg ptr[inout, ipa_Groupc008cf01_0_struct_1]) 
+ipa_Groupc008cf47_0_struct_1 {
+    ipa_Groupc008cf47_0_buffer_2  int8
+    ipa_Groupc008cf47_0_buffer_3  array[int8, 3]
+    ipa_Groupc008cf47_0_buffer_4  int32
+    ipa_Groupc008cf47_0_buffer_5  int32
+    ipa_Groupc008cf47_0_buffer_6  int8
+    ipa_Groupc008cf47_0_buffer_7  int8
+    ipa_Groupc008cf47_0_buffer_8  int16
+    ipa_Groupc008cf47_0_buffer_9  int32
+    ipa_Groupc008cf47_0_buffer_10  array[int8, 12]
+    ipa_Groupc008cf47_0_ptr_12  ptr[in, const[0, int32]]
+} [packed]
+ioctl$ipa_Groupc008cf47_0(fd ipa_fd, cmd const[3221802823], arg ptr[in, ipa_Groupc008cf47_0_struct_1]) 
+ipa_Groupc008cf47_1_struct_1 {
+    ipa_Groupc008cf47_1_buffer_2  int8
+    ipa_Groupc008cf47_1_buffer_3  array[int8, 3]
+    ipa_Groupc008cf47_1_buffer_4  int32
+    ipa_Groupc008cf47_1_buffer_5  int32
+    ipa_Groupc008cf47_1_buffer_6  int8
+    ipa_Groupc008cf47_1_buffer_7  int8
+    ipa_Groupc008cf47_1_buffer_8  int16
+    ipa_Groupc008cf47_1_range_9  int32[0:376]
+    ipa_Groupc008cf47_1_buffer_10  array[int8, 12]
+    ipa_Groupc008cf47_1_ptr_12  ptr[out, array[int8, 376]]
+} [packed]
+ioctl$ipa_Groupc008cf47_1(fd ipa_fd, cmd const[3221802823], arg ptr[in, ipa_Groupc008cf47_1_struct_1]) 
+ipa_Groupc008cf1f_0_struct_1 {
+    ipa_Groupc008cf1f_0_buffer_2  int32
+    ipa_Groupc008cf1f_0_buffer_3  array[int8, 336]
+} [packed]
+ioctl$ipa_Groupc008cf1f_0(fd ipa_fd, cmd const[3221802783], arg ptr[in, ipa_Groupc008cf1f_0_struct_1]) 
+ipa_Groupc008cf00_0_struct_1 {
+    ipa_Groupc008cf00_0_buffer_2  int8
+    ipa_Groupc008cf00_0_buffer_3  int8
+    ipa_Groupc008cf00_0_buffer_4  int16
+    ipa_Groupc008cf00_0_resource_5  ipa_connection_0
+    ipa_Groupc008cf00_0_buffer_6  array[int8, 1316]
+} [packed]
+ioctl$ipa_Groupc008cf00_0(fd ipa_fd, cmd const[3221802752], arg ptr[inout, ipa_Groupc008cf00_0_struct_1]) ipa_connection_0
+ioctl$ipa_Groupc008cf13_0(fd ipa_fd, cmd const[3221802771], arg ptr[inout, array[int8, 36]]) 
+ipa_Groupc018cf4c_0_struct_1 {
+    ipa_Groupc018cf4c_0_buffer_2  len[ipa_Groupc018cf4c_0_ptr_8, int16]
+    ipa_Groupc018cf4c_0_buffer_4  int16
+    ipa_Groupc018cf4c_0_buffer_5  int32
+    ipa_Groupc018cf4c_0_buffer_6  int64
+    ipa_Groupc018cf4c_0_ptr_8  ptr[out, array[int8, 16]]
+} [packed]
+ioctl$ipa_Groupc018cf4c_0(fd ipa_fd, cmd const[3222851404], arg ptr[in, ipa_Groupc018cf4c_0_struct_1]) 
+ipa_Groupc018cf4c_1_struct_1 {
+    ipa_Groupc018cf4c_1_buffer_2  len[ipa_Groupc018cf4c_1_ptr_8, int16]
+    ipa_Groupc018cf4c_1_buffer_4  int16
+    ipa_Groupc018cf4c_1_range_5  int32[0:16]
+    ipa_Groupc018cf4c_1_buffer_6  int64
+    ipa_Groupc018cf4c_1_ptr_8  ptr[out, array[int8, 16]]
+} [packed]
+ioctl$ipa_Groupc018cf4c_1(fd ipa_fd, cmd const[3222851404], arg ptr[in, ipa_Groupc018cf4c_1_struct_1]) 
+ipa_Groupc00ccf4a_0_struct_1 {
+    ipa_Groupc00ccf4a_0_buffer_2  int32
+    ipa_Groupc00ccf4a_0_buffer_3  int8
+    ipa_Groupc00ccf4a_0_buffer_4  array[int8, 3]
+    ipa_Groupc00ccf4a_0_buffer_5  int8
+    ipa_Groupc00ccf4a_0_buffer_6  int8
+    ipa_Groupc00ccf4a_0_buffer_7  int16
+} [packed]
+ioctl$ipa_Groupc00ccf4a_0(fd ipa_fd, cmd const[3222064970], arg ptr[inout, ipa_Groupc00ccf4a_0_struct_1]) 
+ipa_Groupc00ccf4a_1_struct_1 {
+    ipa_Groupc00ccf4a_1_buffer_2  int32
+    ipa_Groupc00ccf4a_1_range_3  int8[0:120]
+    ipa_Groupc00ccf4a_1_buffer_4  array[int8, 3]
+    ipa_Groupc00ccf4a_1_buffer_5  int8
+    ipa_Groupc00ccf4a_1_buffer_6  int8
+    ipa_Groupc00ccf4a_1_buffer_7  int16
+} [packed]
+ioctl$ipa_Groupc00ccf4a_1(fd ipa_fd, cmd const[3222064970], arg ptr[inout, ipa_Groupc00ccf4a_1_struct_1]) 
+ioctl$ipa_Groupc020cf41_0(fd ipa_fd, cmd const[3223375681], arg ptr[in, array[int8, 32]]) ipa_connection_1
+ioctl$ipa_Groupc02ccf3c_0(fd ipa_fd, cmd const[3224162108], arg ptr[in, array[int8, 44]]) ipa_connection_1
+ioctl$ipa_Groupcf38_0(fd ipa_fd, cmd const[53048], arg intptr) 
+ioctl$ipa_Group4004cf08_0(fd ipa_fd, cmd const[1074056968], arg intptr) 
+ioctl$ipa_Group4004cf09_0(fd ipa_fd, cmd const[1074056969], ipa_Groupc008cf00_0_resource_5 ipa_connection_0) 
+ioctl$ipa_Group4004cf0b_0(fd ipa_fd, cmd const[1074056971], ipa_Group4004cf0b_0_resource_228 ipa_connection_0) 
+ioctl$ipa_Group4004cf15_0(fd ipa_fd, cmd const[1074056981], arg intptr) 
+ioctl$ipa_Group4004cf0a_0(fd ipa_fd, cmd const[1074056970], arg intptr) 
+ioctl$ipa_Group4004cf0e_0(fd ipa_fd, cmd const[1074056974], arg intptr) 
+ioctl$ipa_Group4004cf14_0(fd ipa_fd, cmd const[1074056980], arg intptr) 
+ioctl$ipa_Groupc004cf4b_0(fd ipa_fd, cmd const[3221540683], arg intptr) 
+ioctl$ipa_Groupc004cf56_0(fd ipa_fd, cmd const[3221540694], arg ptr[out, int32]) 
+ioctl$ipa_Groupc020cf40_0(fd ipa_fd, cmd const[3223375680], arg ptr[in, array[int8, 32]]) ipa_connection_1
+ioctl$ipa_Groupc00ccf4e_0(fd ipa_fd, cmd const[3222064974], arg intptr) 
+ioctl$ipa_Groupc02ccf3b_0(fd ipa_fd, cmd const[3224162107], arg ptr[in, array[int8, 44]]) ipa_connection_1
+ipa_Groupc02ccf42_0_struct_1 {
+    ipa_Groupc02ccf42_0_buffer_2  array[int8, 32]
+    ipa_Groupc02ccf42_0_buffer_3  array[int8, 6]
+    ipa_Groupc02ccf42_0_buffer_4  int16
+    ipa_Groupc02ccf42_0_buffer_5  int32
+} [packed]
+ioctl$ipa_Groupc02ccf42_0(fd ipa_fd, cmd const[3224162114], arg ptr[in, ipa_Groupc02ccf42_0_struct_1]) 
+ioctl$ipa_Groupcf39_0(fd ipa_fd, cmd const[53049], arg intptr) ipa_connection_1
+ioctl$ipa_Groupcf06_0(fd ipa_fd, cmd const[52998], arg intptr) 

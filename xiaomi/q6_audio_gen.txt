@@ -1,0 +1,63 @@
+resource q6_audio_fd[fd]
+
+openat$q6_audio_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/msm_audio_cal"]], flags flags[open_flags], mode const[0]) q6_audio_fd
+q6_audio_Groupc00861ca_0_struct_1 {
+    q6_audio_Groupc00861ca_0_range_2  int32[36:512]
+    q6_audio_Groupc00861ca_0_buffer_3  int32
+    q6_audio_Groupc00861ca_0_range_4  int32[0:51]
+    q6_audio_Groupc00861ca_0_range_5  int32[20:356]
+    q6_audio_Groupc00861ca_0_buffer_6  int32
+    q6_audio_Groupc00861ca_0_range_7  int32[0:2147483647]
+    q6_audio_Groupc00861ca_0_buffer_8  array[int8, 488]
+} [packed]
+ioctl$q6_audio_Groupc00861ca_0(fd q6_audio_fd, cmd const[3221774794], arg ptr[in, q6_audio_Groupc00861ca_0_struct_1]) 
+q6_audio_Groupc00861cb_0_struct_1 {
+    q6_audio_Groupc00861cb_0_range_2  int32[36:512]
+    q6_audio_Groupc00861cb_0_buffer_3  int32
+    q6_audio_Groupc00861cb_0_range_4  int32[0:51]
+    q6_audio_Groupc00861cb_0_range_5  int32[20:356]
+    q6_audio_Groupc00861cb_0_buffer_6  int32
+    q6_audio_Groupc00861cb_0_range_7  int32[0:2147483647]
+    q6_audio_Groupc00861cb_0_buffer_8  array[int8, 488]
+} [packed]
+ioctl$q6_audio_Groupc00861cb_0(fd q6_audio_fd, cmd const[3221774795], arg ptr[in, q6_audio_Groupc00861cb_0_struct_1]) 
+q6_audio_Groupc00861c8_0_struct_1 {
+    q6_audio_Groupc00861c8_0_range_2  int32[36:512]
+    q6_audio_Groupc00861c8_0_buffer_3  int32
+    q6_audio_Groupc00861c8_0_range_4  int32[0:51]
+    q6_audio_Groupc00861c8_0_range_5  int32[20:356]
+    q6_audio_Groupc00861c8_0_buffer_6  int32
+    q6_audio_Groupc00861c8_0_range_7  int32[0:2147483647]
+    q6_audio_Groupc00861c8_0_buffer_8  array[int8, 488]
+} [packed]
+ioctl$q6_audio_Groupc00861c8_0(fd q6_audio_fd, cmd const[3221774792], arg ptr[in, q6_audio_Groupc00861c8_0_struct_1]) 
+q6_audio_Groupc00861cd_0_struct_1 {
+    q6_audio_Groupc00861cd_0_range_2  int32[36:512]
+    q6_audio_Groupc00861cd_0_buffer_3  int32
+    q6_audio_Groupc00861cd_0_range_4  int32[0:51]
+    q6_audio_Groupc00861cd_0_range_5  int32[20:356]
+    q6_audio_Groupc00861cd_0_buffer_6  int32
+    q6_audio_Groupc00861cd_0_range_7  int32[0:2147483647]
+    q6_audio_Groupc00861cd_0_buffer_8  array[int8, 488]
+} [packed]
+ioctl$q6_audio_Groupc00861cd_0(fd q6_audio_fd, cmd const[3221774797], arg ptr[in, q6_audio_Groupc00861cd_0_struct_1]) 
+q6_audio_Groupc00861c9_0_struct_1 {
+    q6_audio_Groupc00861c9_0_range_2  int32[36:512]
+    q6_audio_Groupc00861c9_0_buffer_3  int32
+    q6_audio_Groupc00861c9_0_range_4  int32[0:51]
+    q6_audio_Groupc00861c9_0_range_5  int32[20:356]
+    q6_audio_Groupc00861c9_0_buffer_6  int32
+    q6_audio_Groupc00861c9_0_range_7  int32[0:2147483647]
+    q6_audio_Groupc00861c9_0_buffer_8  array[int8, 488]
+} [packed]
+ioctl$q6_audio_Groupc00861c9_0(fd q6_audio_fd, cmd const[3221774793], arg ptr[in, q6_audio_Groupc00861c9_0_struct_1]) 
+q6_audio_Groupc00861cc_0_struct_1 {
+    q6_audio_Groupc00861cc_0_range_2  int32[36:512]
+    q6_audio_Groupc00861cc_0_buffer_3  int32
+    q6_audio_Groupc00861cc_0_range_4  int32[0:51]
+    q6_audio_Groupc00861cc_0_range_5  int32[20:356]
+    q6_audio_Groupc00861cc_0_buffer_6  int32
+    q6_audio_Groupc00861cc_0_range_7  int32[0:2147483647]
+    q6_audio_Groupc00861cc_0_buffer_8  array[int8, 488]
+} [packed]
+ioctl$q6_audio_Groupc00861cc_0(fd q6_audio_fd, cmd const[3221774796], arg ptr[in, q6_audio_Groupc00861cc_0_struct_1]) 

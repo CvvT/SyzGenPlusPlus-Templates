@@ -1,0 +1,6 @@
+resource fuse_fd[fd]
+
+openat$fuse_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/fuse"]], flags flags[open_flags], mode const[0]) fuse_fd
+ioctl$fuse_Group8004e500_0(fd fuse_fd, cmd const[2147804416], arg ptr[in, fd])
+ioctl$fuse_Group8004e500_1(fd fuse_fd, cmd const[2147804416], arg intptr)
+

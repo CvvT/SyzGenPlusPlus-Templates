@@ -1,0 +1,1047 @@
+resource dma_heap_fd[fd]
+resource dma_heap_connection_0[int32]
+
+openat$aaudio_capture_heap_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dma_heap/aaudio_capture_heap"]], flags flags[open_flags], mode const[0]) dma_heap_fd
+openat$aaudio_playback_heap_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dma_heap/aaudio_playback_heap"]], flags flags[open_flags], mode const[0]) dma_heap_fd
+openat$sensor_direct_heap_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dma_heap/sensor_direct_heap"]], flags flags[open_flags], mode const[0]) dma_heap_fd
+openat$dma_system_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dma_heap/system"]], flags flags[open_flags], mode const[0]) dma_heap_fd
+openat$system_uncached_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dma_heap/system-uncached"]], flags flags[open_flags], mode const[0]) dma_heap_fd
+openat$tui_secure_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dma_heap/tui-secure"]], flags flags[open_flags], mode const[0]) dma_heap_fd
+openat$vframe_secure_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dma_heap/vframe-secure"]], flags flags[open_flags], mode const[0]) dma_heap_fd
+openat$video_system_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dma_heap/video_system"]], flags flags[open_flags], mode const[0]) dma_heap_fd
+openat$video_system_uncached_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dma_heap/video_system-uncached"]], flags flags[open_flags], mode const[0]) dma_heap_fd
+openat$vscaler_secure_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dma_heap/vscaler-secure"]], flags flags[open_flags], mode const[0]) dma_heap_fd
+openat$vstream_secure_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dma_heap/vstream-secure"]], flags flags[open_flags], mode const[0]) dma_heap_fd
+
+
+dma_heap_Group1_0_struct_1 {
+    dma_heap_Group1_0_const_2  const[4, int8]
+    dma_heap_Group1_0_const_3  const[0, int8]
+    dma_heap_Group1_0_const_4  const[0, int8]
+    dma_heap_Group1_0_const_5  const[0, int8]
+    dma_heap_Group1_0_range_6  int8[0:44]
+    dma_heap_Group1_0_const_7  const[0, int8]
+    dma_heap_Group1_0_const_8  const[0, int8]
+    dma_heap_Group1_0_const_9  const[0, int8]
+    dma_heap_Group1_0_buffer_10  int32
+    dma_heap_Group1_0_range_11  int32[305:4294967295]
+    dma_heap_Group1_0_buffer_12  array[int8, 12]
+    dma_heap_Group1_0_buffer_13  int32
+    dma_heap_Group1_0_buffer_14  array[int8, 273]
+} [packed]
+ioctl$dma_heap_Group1_0(fd dma_heap_fd, cmd const[0xfffffd01], arg ptr[inout, dma_heap_Group1_0_struct_1]) 
+dma_heap_Group4_0_struct_1 {
+    dma_heap_Group4_0_resource_2  dma_heap_connection_0
+    dma_heap_Group4_0_range_3  int8[0:44]
+    dma_heap_Group4_0_const_4  const[0, int8]
+    dma_heap_Group4_0_const_5  const[0, int8]
+    dma_heap_Group4_0_const_6  const[0, int8]
+    dma_heap_Group4_0_buffer_7  int32
+    dma_heap_Group4_0_range_8  int32[305:4294967295]
+    dma_heap_Group4_0_buffer_9  int8
+    dma_heap_Group4_0_buffer_10  int8
+    dma_heap_Group4_0_buffer_11  int8
+    dma_heap_Group4_0_buffer_12  int8
+    dma_heap_Group4_0_buffer_13  int8
+    dma_heap_Group4_0_buffer_14  int8
+    dma_heap_Group4_0_buffer_15  int8
+    dma_heap_Group4_0_buffer_16  int8
+    dma_heap_Group4_0_buffer_17  int32
+    dma_heap_Group4_0_range_18  int32[0:4294934527]
+    dma_heap_Group4_0_buffer_19  int64
+    dma_heap_Group4_0_buffer_20  int64
+    dma_heap_Group4_0_buffer_21  array[int8, 128]
+    dma_heap_Group4_0_buffer_22  int8
+    dma_heap_Group4_0_buffer_23  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Group4_0(fd dma_heap_fd, cmd const[0xfffffd04], arg ptr[inout, dma_heap_Group4_0_struct_1]) 
+dma_heap_Group4_1_struct_1 {
+    dma_heap_Group4_1_const_2  const[4, int8]
+    dma_heap_Group4_1_const_3  const[0, int8]
+    dma_heap_Group4_1_const_4  const[0, int8]
+    dma_heap_Group4_1_const_5  const[0, int8]
+    dma_heap_Group4_1_range_6  int8[0:44]
+    dma_heap_Group4_1_const_7  const[0, int8]
+    dma_heap_Group4_1_const_8  const[0, int8]
+    dma_heap_Group4_1_const_9  const[0, int8]
+    dma_heap_Group4_1_buffer_10  int32
+    dma_heap_Group4_1_range_11  int32[305:4294967295]
+    dma_heap_Group4_1_buffer_12  int64
+    dma_heap_Group4_1_buffer_13  int32
+    dma_heap_Group4_1_buffer_14  int8
+    dma_heap_Group4_1_buffer_15  int8
+    dma_heap_Group4_1_buffer_16  int8
+    dma_heap_Group4_1_buffer_17  int8
+    dma_heap_Group4_1_buffer_18  int64
+    dma_heap_Group4_1_resource_19  dma_heap_connection_0
+    dma_heap_Group4_1_buffer_20  int8
+    dma_heap_Group4_1_buffer_21  int8
+    dma_heap_Group4_1_buffer_22  int8
+    dma_heap_Group4_1_buffer_23  int8
+    dma_heap_Group4_1_buffer_24  int8
+    dma_heap_Group4_1_buffer_25  array[int8, 83]
+    dma_heap_Group4_1_buffer_26  int32
+    dma_heap_Group4_1_buffer_27  array[int8, 40]
+    dma_heap_Group4_1_buffer_28  int8
+    dma_heap_Group4_1_buffer_29  int8
+    dma_heap_Group4_1_buffer_30  int8
+    dma_heap_Group4_1_buffer_31  array[int8, 126]
+} [packed]
+ioctl$dma_heap_Group4_1(fd dma_heap_fd, cmd const[0xfffffd04], arg ptr[inout, dma_heap_Group4_1_struct_1]) 
+dma_heap_Group4_2_struct_1 {
+    dma_heap_Group4_2_const_2  const[4, int8]
+    dma_heap_Group4_2_const_3  const[0, int8]
+    dma_heap_Group4_2_const_4  const[0, int8]
+    dma_heap_Group4_2_const_5  const[0, int8]
+    dma_heap_Group4_2_range_6  int8[0:44]
+    dma_heap_Group4_2_const_7  const[0, int8]
+    dma_heap_Group4_2_const_8  const[0, int8]
+    dma_heap_Group4_2_const_9  const[0, int8]
+    dma_heap_Group4_2_buffer_10  int32
+    dma_heap_Group4_2_range_11  int32[305:4294967295]
+    dma_heap_Group4_2_buffer_12  int64
+    dma_heap_Group4_2_buffer_13  int32
+    dma_heap_Group4_2_range_14  int16[0:32767]
+    dma_heap_Group4_2_buffer_15  int8
+    dma_heap_Group4_2_buffer_16  int8
+    dma_heap_Group4_2_buffer_17  int64
+    dma_heap_Group4_2_resource_18  dma_heap_connection_0
+    dma_heap_Group4_2_buffer_19  int32
+    dma_heap_Group4_2_buffer_20  int8
+    dma_heap_Group4_2_buffer_21  array[int8, 127]
+    dma_heap_Group4_2_buffer_22  int8
+    dma_heap_Group4_2_buffer_23  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Group4_2(fd dma_heap_fd, cmd const[0xfffffd04], arg ptr[inout, dma_heap_Group4_2_struct_1]) 
+dma_heap_Group4_3_struct_1 {
+    dma_heap_Group4_3_const_2  const[4, int8]
+    dma_heap_Group4_3_const_3  const[0, int8]
+    dma_heap_Group4_3_const_4  const[0, int8]
+    dma_heap_Group4_3_const_5  const[0, int8]
+    dma_heap_Group4_3_range_6  int8[0:44]
+    dma_heap_Group4_3_const_7  const[0, int8]
+    dma_heap_Group4_3_const_8  const[0, int8]
+    dma_heap_Group4_3_const_9  const[0, int8]
+    dma_heap_Group4_3_buffer_10  int32
+    dma_heap_Group4_3_range_11  int32[305:4294967295]
+    dma_heap_Group4_3_buffer_12  int64
+    dma_heap_Group4_3_const_13  const[0, int32]
+    dma_heap_Group4_3_buffer_14  int16
+    dma_heap_Group4_3_range_15  int8[0:1]
+    dma_heap_Group4_3_const_16  const[0, int8]
+    dma_heap_Group4_3_buffer_17  int64
+    dma_heap_Group4_3_resource_18  dma_heap_connection_0
+    dma_heap_Group4_3_buffer_19  array[int8, 88]
+    dma_heap_Group4_3_buffer_20  int32
+    dma_heap_Group4_3_buffer_21  array[int8, 40]
+    dma_heap_Group4_3_buffer_22  int8
+    dma_heap_Group4_3_buffer_23  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Group4_3(fd dma_heap_fd, cmd const[0xfffffd04], arg ptr[inout, dma_heap_Group4_3_struct_1]) 
+dma_heap_Group4_4_struct_1 {
+    dma_heap_Group4_4_const_2  const[4, int8]
+    dma_heap_Group4_4_const_3  const[0, int8]
+    dma_heap_Group4_4_const_4  const[0, int8]
+    dma_heap_Group4_4_const_5  const[0, int8]
+    dma_heap_Group4_4_range_6  int8[0:44]
+    dma_heap_Group4_4_const_7  const[0, int8]
+    dma_heap_Group4_4_const_8  const[0, int8]
+    dma_heap_Group4_4_const_9  const[0, int8]
+    dma_heap_Group4_4_buffer_10  int32
+    dma_heap_Group4_4_range_11  int32[305:4294967295]
+    dma_heap_Group4_4_buffer_12  int64
+    dma_heap_Group4_4_buffer_13  int32
+    dma_heap_Group4_4_range_14  int32[32768:4294967295]
+    dma_heap_Group4_4_buffer_15  int64
+    dma_heap_Group4_4_resource_16  dma_heap_connection_0
+    dma_heap_Group4_4_buffer_17  int8
+    dma_heap_Group4_4_buffer_18  int8
+    dma_heap_Group4_4_buffer_19  int8
+    dma_heap_Group4_4_buffer_20  int8
+    dma_heap_Group4_4_range_21  int8[1:255]
+    dma_heap_Group4_4_buffer_22  array[int8, 127]
+    dma_heap_Group4_4_const_23  const[0, int8]
+    dma_heap_Group4_4_buffer_24  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Group4_4(fd dma_heap_fd, cmd const[0xfffffd04], arg ptr[inout, dma_heap_Group4_4_struct_1]) 
+dma_heap_Group4_5_struct_1 {
+    dma_heap_Group4_5_const_2  const[4, int8]
+    dma_heap_Group4_5_const_3  const[0, int8]
+    dma_heap_Group4_5_const_4  const[0, int8]
+    dma_heap_Group4_5_const_5  const[0, int8]
+    dma_heap_Group4_5_range_6  int8[0:44]
+    dma_heap_Group4_5_const_7  const[0, int8]
+    dma_heap_Group4_5_const_8  const[0, int8]
+    dma_heap_Group4_5_const_9  const[0, int8]
+    dma_heap_Group4_5_buffer_10  int32
+    dma_heap_Group4_5_range_11  int32[305:4294967295]
+    dma_heap_Group4_5_buffer_12  int64
+    dma_heap_Group4_5_buffer_13  int32
+    dma_heap_Group4_5_buffer_14  int8
+    dma_heap_Group4_5_buffer_15  int8
+    dma_heap_Group4_5_buffer_16  int8
+    dma_heap_Group4_5_buffer_17  int8
+    dma_heap_Group4_5_buffer_18  int64
+    dma_heap_Group4_5_resource_19  dma_heap_connection_0
+    dma_heap_Group4_5_buffer_20  int8
+    dma_heap_Group4_5_buffer_21  int8
+    dma_heap_Group4_5_buffer_22  int8
+    dma_heap_Group4_5_buffer_23  int8
+    dma_heap_Group4_5_range_24  int8[1:255]
+    dma_heap_Group4_5_buffer_25  array[int8, 127]
+    dma_heap_Group4_5_const_26  const[0, int8]
+    dma_heap_Group4_5_buffer_27  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Group4_5(fd dma_heap_fd, cmd const[0xfffffd04], arg ptr[inout, dma_heap_Group4_5_struct_1]) 
+dma_heap_Group6_0_struct_1 {
+    dma_heap_Group6_0_const_2  const[4, int8]
+    dma_heap_Group6_0_const_3  const[0, int8]
+    dma_heap_Group6_0_const_4  const[0, int8]
+    dma_heap_Group6_0_const_5  const[0, int8]
+    dma_heap_Group6_0_range_6  int8[0:44]
+    dma_heap_Group6_0_const_7  const[0, int8]
+    dma_heap_Group6_0_const_8  const[0, int8]
+    dma_heap_Group6_0_const_9  const[0, int8]
+    dma_heap_Group6_0_buffer_10  int32
+    dma_heap_Group6_0_range_11  int32[305:4294967295]
+    dma_heap_Group6_0_buffer_12  int64
+    dma_heap_Group6_0_buffer_13  int32
+    dma_heap_Group6_0_range_14  int32[0:4294967293]
+    dma_heap_Group6_0_buffer_15  int64
+    dma_heap_Group6_0_resource_16  dma_heap_connection_0
+    dma_heap_Group6_0_buffer_17  int8
+    dma_heap_Group6_0_buffer_18  int8
+    dma_heap_Group6_0_buffer_19  int8
+    dma_heap_Group6_0_buffer_20  int8
+    dma_heap_Group6_0_buffer_21  int8
+    dma_heap_Group6_0_buffer_22  array[int8, 127]
+    dma_heap_Group6_0_buffer_23  int8
+    dma_heap_Group6_0_buffer_24  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Group6_0(fd dma_heap_fd, cmd const[0xfffffd06], arg ptr[inout, dma_heap_Group6_0_struct_1]) 
+dma_heap_Group6_1_struct_1 {
+    dma_heap_Group6_1_const_2  const[4, int8]
+    dma_heap_Group6_1_const_3  const[0, int8]
+    dma_heap_Group6_1_const_4  const[0, int8]
+    dma_heap_Group6_1_const_5  const[0, int8]
+    dma_heap_Group6_1_range_6  int8[0:44]
+    dma_heap_Group6_1_const_7  const[0, int8]
+    dma_heap_Group6_1_const_8  const[0, int8]
+    dma_heap_Group6_1_const_9  const[0, int8]
+    dma_heap_Group6_1_buffer_10  int32
+    dma_heap_Group6_1_range_11  int32[305:4294967295]
+    dma_heap_Group6_1_buffer_12  int64
+    dma_heap_Group6_1_buffer_13  int32
+    dma_heap_Group6_1_buffer_14  int8
+    dma_heap_Group6_1_buffer_15  int8
+    dma_heap_Group6_1_buffer_16  int8
+    dma_heap_Group6_1_buffer_17  int8
+    dma_heap_Group6_1_buffer_18  int64
+    dma_heap_Group6_1_resource_19  dma_heap_connection_0
+    dma_heap_Group6_1_buffer_20  int8
+    dma_heap_Group6_1_buffer_21  int8
+    dma_heap_Group6_1_buffer_22  int8
+    dma_heap_Group6_1_buffer_23  int8
+    dma_heap_Group6_1_buffer_24  int8
+    dma_heap_Group6_1_buffer_25  array[int8, 127]
+    dma_heap_Group6_1_buffer_26  int8
+    dma_heap_Group6_1_buffer_27  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Group6_1(fd dma_heap_fd, cmd const[0xfffffd06], arg ptr[inout, dma_heap_Group6_1_struct_1]) 
+dma_heap_Group6_2_struct_1 {
+    dma_heap_Group6_2_const_2  const[4, int8]
+    dma_heap_Group6_2_const_3  const[0, int8]
+    dma_heap_Group6_2_const_4  const[0, int8]
+    dma_heap_Group6_2_const_5  const[0, int8]
+    dma_heap_Group6_2_range_6  int8[0:44]
+    dma_heap_Group6_2_const_7  const[0, int8]
+    dma_heap_Group6_2_const_8  const[0, int8]
+    dma_heap_Group6_2_const_9  const[0, int8]
+    dma_heap_Group6_2_buffer_10  int32
+    dma_heap_Group6_2_range_11  int32[305:4294967295]
+    dma_heap_Group6_2_buffer_12  int64
+    dma_heap_Group6_2_buffer_13  int32
+    dma_heap_Group6_2_buffer_14  int8
+    dma_heap_Group6_2_range_15  int8[0:127]
+    dma_heap_Group6_2_buffer_16  int8
+    dma_heap_Group6_2_buffer_17  int8
+    dma_heap_Group6_2_buffer_18  int64
+    dma_heap_Group6_2_resource_19  dma_heap_connection_0
+    dma_heap_Group6_2_buffer_20  int8
+    dma_heap_Group6_2_buffer_21  int8
+    dma_heap_Group6_2_buffer_22  int8
+    dma_heap_Group6_2_buffer_23  int8
+    dma_heap_Group6_2_buffer_24  array[int8, 128]
+    dma_heap_Group6_2_const_25  const[0, int8]
+    dma_heap_Group6_2_buffer_26  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Group6_2(fd dma_heap_fd, cmd const[0xfffffd06], arg ptr[inout, dma_heap_Group6_2_struct_1]) 
+dma_heap_Group6_3_struct_1 {
+    dma_heap_Group6_3_const_2  const[4, int8]
+    dma_heap_Group6_3_const_3  const[0, int8]
+    dma_heap_Group6_3_const_4  const[0, int8]
+    dma_heap_Group6_3_const_5  const[0, int8]
+    dma_heap_Group6_3_range_6  int8[0:44]
+    dma_heap_Group6_3_const_7  const[0, int8]
+    dma_heap_Group6_3_const_8  const[0, int8]
+    dma_heap_Group6_3_const_9  const[0, int8]
+    dma_heap_Group6_3_buffer_10  int32
+    dma_heap_Group6_3_range_11  int32[305:4294967295]
+    dma_heap_Group6_3_buffer_12  int64
+    dma_heap_Group6_3_buffer_13  int32
+    dma_heap_Group6_3_buffer_14  int32
+    dma_heap_Group6_3_buffer_15  int64
+    dma_heap_Group6_3_resource_16  dma_heap_connection_0
+    dma_heap_Group6_3_buffer_17  int8
+    dma_heap_Group6_3_buffer_18  int8
+    dma_heap_Group6_3_buffer_19  int8
+    dma_heap_Group6_3_buffer_20  int8
+    dma_heap_Group6_3_const_21  const[0, int8]
+    dma_heap_Group6_3_buffer_22  array[int8, 83]
+    dma_heap_Group6_3_buffer_23  int32
+    dma_heap_Group6_3_buffer_24  array[int8, 40]
+    dma_heap_Group6_3_range_25  int8[1:255]
+    dma_heap_Group6_3_buffer_26  int8
+    dma_heap_Group6_3_buffer_27  int8
+    dma_heap_Group6_3_buffer_28  int8
+    dma_heap_Group6_3_buffer_29  int8
+    dma_heap_Group6_3_buffer_30  int8
+    dma_heap_Group6_3_buffer_31  array[int8, 123]
+} [packed]
+ioctl$dma_heap_Group6_3(fd dma_heap_fd, cmd const[0xfffffd06], arg ptr[inout, dma_heap_Group6_3_struct_1]) 
+dma_heap_Group6_4_struct_1 {
+    dma_heap_Group6_4_const_2  const[4, int8]
+    dma_heap_Group6_4_const_3  const[0, int8]
+    dma_heap_Group6_4_const_4  const[0, int8]
+    dma_heap_Group6_4_const_5  const[0, int8]
+    dma_heap_Group6_4_range_6  int8[0:44]
+    dma_heap_Group6_4_const_7  const[0, int8]
+    dma_heap_Group6_4_const_8  const[0, int8]
+    dma_heap_Group6_4_const_9  const[0, int8]
+    dma_heap_Group6_4_buffer_10  int32
+    dma_heap_Group6_4_range_11  int32[305:4294967295]
+    dma_heap_Group6_4_buffer_12  int64
+    dma_heap_Group6_4_buffer_13  int32
+    dma_heap_Group6_4_buffer_14  int8
+    dma_heap_Group6_4_buffer_15  int8
+    dma_heap_Group6_4_buffer_16  int8
+    dma_heap_Group6_4_buffer_17  int8
+    dma_heap_Group6_4_buffer_18  int64
+    dma_heap_Group6_4_resource_19  dma_heap_connection_0
+    dma_heap_Group6_4_buffer_20  int8
+    dma_heap_Group6_4_buffer_21  int8
+    dma_heap_Group6_4_buffer_22  int8
+    dma_heap_Group6_4_buffer_23  int8
+    dma_heap_Group6_4_range_24  int8[1:255]
+    dma_heap_Group6_4_buffer_25  int8
+    dma_heap_Group6_4_buffer_26  int8
+    dma_heap_Group6_4_buffer_27  int8
+    dma_heap_Group6_4_buffer_28  int8
+    dma_heap_Group6_4_buffer_29  int8
+    dma_heap_Group6_4_buffer_30  array[int8, 78]
+    dma_heap_Group6_4_buffer_31  int32
+    dma_heap_Group6_4_buffer_32  array[int8, 40]
+    dma_heap_Group6_4_const_33  const[0, int8]
+    dma_heap_Group6_4_buffer_34  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Group6_4(fd dma_heap_fd, cmd const[0xfffffd06], arg ptr[inout, dma_heap_Group6_4_struct_1]) 
+dma_heap_Group7_0_struct_1 {
+    dma_heap_Group7_0_const_2  const[4, int8]
+    dma_heap_Group7_0_const_3  const[0, int8]
+    dma_heap_Group7_0_const_4  const[0, int8]
+    dma_heap_Group7_0_const_5  const[0, int8]
+    dma_heap_Group7_0_range_6  int8[0:44]
+    dma_heap_Group7_0_const_7  const[0, int8]
+    dma_heap_Group7_0_const_8  const[0, int8]
+    dma_heap_Group7_0_const_9  const[0, int8]
+    dma_heap_Group7_0_buffer_10  int32
+    dma_heap_Group7_0_range_11  int32[305:4294967295]
+    dma_heap_Group7_0_buffer_12  int64
+    dma_heap_Group7_0_buffer_13  int32
+    dma_heap_Group7_0_range_14  int32[0:4294934527]
+    dma_heap_Group7_0_buffer_15  int64
+    dma_heap_Group7_0_resource_16  dma_heap_connection_0
+    dma_heap_Group7_0_buffer_17  int8
+    dma_heap_Group7_0_buffer_18  int8
+    dma_heap_Group7_0_buffer_19  int8
+    dma_heap_Group7_0_buffer_20  int8
+    dma_heap_Group7_0_buffer_21  int8
+    dma_heap_Group7_0_buffer_22  int8
+    dma_heap_Group7_0_buffer_23  int8
+    dma_heap_Group7_0_buffer_24  int8
+    dma_heap_Group7_0_buffer_25  int8
+    dma_heap_Group7_0_buffer_26  int8
+    dma_heap_Group7_0_buffer_27  int8
+    dma_heap_Group7_0_buffer_28  int8
+    dma_heap_Group7_0_buffer_29  array[int8, 120]
+    dma_heap_Group7_0_buffer_30  int8
+    dma_heap_Group7_0_buffer_31  int8
+    dma_heap_Group7_0_buffer_32  int8
+    dma_heap_Group7_0_buffer_33  int8
+    dma_heap_Group7_0_buffer_34  int8
+    dma_heap_Group7_0_buffer_35  int8
+    dma_heap_Group7_0_buffer_36  int8
+    dma_heap_Group7_0_buffer_37  int8
+    dma_heap_Group7_0_buffer_38  array[int8, 121]
+} [packed]
+ioctl$dma_heap_Group7_0(fd dma_heap_fd, cmd const[0xfffffd07], arg ptr[inout, dma_heap_Group7_0_struct_1]) 
+dma_heap_Group7_1_struct_1 {
+    dma_heap_Group7_1_const_2  const[4, int8]
+    dma_heap_Group7_1_const_3  const[0, int8]
+    dma_heap_Group7_1_const_4  const[0, int8]
+    dma_heap_Group7_1_const_5  const[0, int8]
+    dma_heap_Group7_1_range_6  int8[0:44]
+    dma_heap_Group7_1_const_7  const[0, int8]
+    dma_heap_Group7_1_const_8  const[0, int8]
+    dma_heap_Group7_1_const_9  const[0, int8]
+    dma_heap_Group7_1_buffer_10  int32
+    dma_heap_Group7_1_range_11  int32[305:4294967295]
+    dma_heap_Group7_1_buffer_12  int64
+    dma_heap_Group7_1_buffer_13  int32
+    dma_heap_Group7_1_buffer_14  int16
+    dma_heap_Group7_1_buffer_15  int8
+    dma_heap_Group7_1_buffer_16  int8
+    dma_heap_Group7_1_buffer_17  int64
+    dma_heap_Group7_1_resource_18  dma_heap_connection_0
+    dma_heap_Group7_1_buffer_19  int8
+    dma_heap_Group7_1_buffer_20  int8
+    dma_heap_Group7_1_buffer_21  int8
+    dma_heap_Group7_1_buffer_22  int8
+    dma_heap_Group7_1_const_23  const[0, int8]
+    dma_heap_Group7_1_buffer_24  array[int8, 127]
+    dma_heap_Group7_1_const_25  const[0, int8]
+    dma_heap_Group7_1_buffer_26  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Group7_1(fd dma_heap_fd, cmd const[0xfffffd07], arg ptr[inout, dma_heap_Group7_1_struct_1]) 
+dma_heap_Group7_2_flag_14 = 8448, 256, 8192, 0
+dma_heap_Group7_2_struct_1 {
+    dma_heap_Group7_2_const_2  const[4, int8]
+    dma_heap_Group7_2_const_3  const[0, int8]
+    dma_heap_Group7_2_const_4  const[0, int8]
+    dma_heap_Group7_2_const_5  const[0, int8]
+    dma_heap_Group7_2_range_6  int8[0:44]
+    dma_heap_Group7_2_const_7  const[0, int8]
+    dma_heap_Group7_2_const_8  const[0, int8]
+    dma_heap_Group7_2_const_9  const[0, int8]
+    dma_heap_Group7_2_buffer_10  int32
+    dma_heap_Group7_2_range_11  int32[305:4294967295]
+    dma_heap_Group7_2_buffer_12  int64
+    dma_heap_Group7_2_const_13  const[0, int32]
+    dma_heap_Group7_2_flag_14  flags[dma_heap_Group7_2_flag_14, int16]
+    dma_heap_Group7_2_range_15  int8[0:1]
+    dma_heap_Group7_2_const_16  const[0, int8]
+    dma_heap_Group7_2_buffer_17  int64
+    dma_heap_Group7_2_resource_18  dma_heap_connection_0
+    dma_heap_Group7_2_buffer_19  int8
+    dma_heap_Group7_2_buffer_20  int8
+    dma_heap_Group7_2_buffer_21  int8
+    dma_heap_Group7_2_buffer_22  int8
+    dma_heap_Group7_2_const_23  const[0, int8]
+    dma_heap_Group7_2_buffer_24  array[int8, 127]
+    dma_heap_Group7_2_const_25  const[0, int8]
+    dma_heap_Group7_2_buffer_26  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Group7_2(fd dma_heap_fd, cmd const[0xfffffd07], arg ptr[inout, dma_heap_Group7_2_struct_1]) 
+dma_heap_Group7_3_struct_1 {
+    dma_heap_Group7_3_const_2  const[4, int8]
+    dma_heap_Group7_3_const_3  const[0, int8]
+    dma_heap_Group7_3_const_4  const[0, int8]
+    dma_heap_Group7_3_const_5  const[0, int8]
+    dma_heap_Group7_3_range_6  int8[0:44]
+    dma_heap_Group7_3_const_7  const[0, int8]
+    dma_heap_Group7_3_const_8  const[0, int8]
+    dma_heap_Group7_3_const_9  const[0, int8]
+    dma_heap_Group7_3_buffer_10  int32
+    dma_heap_Group7_3_range_11  int32[305:4294967295]
+    dma_heap_Group7_3_buffer_12  int64
+    dma_heap_Group7_3_buffer_13  int32
+    dma_heap_Group7_3_range_14  int16[0:32767]
+    dma_heap_Group7_3_buffer_15  int8
+    dma_heap_Group7_3_buffer_16  int8
+    dma_heap_Group7_3_buffer_17  int64
+    dma_heap_Group7_3_resource_18  dma_heap_connection_0
+    dma_heap_Group7_3_buffer_19  int8
+    dma_heap_Group7_3_buffer_20  int8
+    dma_heap_Group7_3_buffer_21  int8
+    dma_heap_Group7_3_buffer_22  int8
+    dma_heap_Group7_3_const_23  const[0, int8]
+    dma_heap_Group7_3_buffer_24  array[int8, 127]
+    dma_heap_Group7_3_const_25  const[0, int8]
+    dma_heap_Group7_3_buffer_26  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Group7_3(fd dma_heap_fd, cmd const[0xfffffd07], arg ptr[inout, dma_heap_Group7_3_struct_1]) 
+dma_heap_Group7_4_struct_1 {
+    dma_heap_Group7_4_const_2  const[4, int8]
+    dma_heap_Group7_4_const_3  const[0, int8]
+    dma_heap_Group7_4_const_4  const[0, int8]
+    dma_heap_Group7_4_const_5  const[0, int8]
+    dma_heap_Group7_4_range_6  int8[0:44]
+    dma_heap_Group7_4_const_7  const[0, int8]
+    dma_heap_Group7_4_const_8  const[0, int8]
+    dma_heap_Group7_4_const_9  const[0, int8]
+    dma_heap_Group7_4_buffer_10  int32
+    dma_heap_Group7_4_range_11  int32[305:4294967295]
+    dma_heap_Group7_4_buffer_12  int64
+    dma_heap_Group7_4_buffer_13  int32
+    dma_heap_Group7_4_range_14  int32[32768:4294967295]
+    dma_heap_Group7_4_buffer_15  int64
+    dma_heap_Group7_4_resource_16  dma_heap_connection_0
+    dma_heap_Group7_4_buffer_17  int8
+    dma_heap_Group7_4_buffer_18  int8
+    dma_heap_Group7_4_buffer_19  int8
+    dma_heap_Group7_4_buffer_20  int8
+    dma_heap_Group7_4_range_21  int8[1:255]
+    dma_heap_Group7_4_buffer_22  int8
+    dma_heap_Group7_4_buffer_23  int8
+    dma_heap_Group7_4_buffer_24  int8
+    dma_heap_Group7_4_buffer_25  int8
+    dma_heap_Group7_4_buffer_26  int8
+    dma_heap_Group7_4_buffer_27  int8
+    dma_heap_Group7_4_buffer_28  int8
+    dma_heap_Group7_4_buffer_29  int8
+    dma_heap_Group7_4_buffer_30  int8
+    dma_heap_Group7_4_buffer_31  int8
+    dma_heap_Group7_4_buffer_32  int8
+    dma_heap_Group7_4_buffer_33  int8
+    dma_heap_Group7_4_buffer_34  int8
+    dma_heap_Group7_4_buffer_35  int8
+    dma_heap_Group7_4_buffer_36  int8
+    dma_heap_Group7_4_buffer_37  int8
+    dma_heap_Group7_4_buffer_38  int8
+    dma_heap_Group7_4_buffer_39  int8
+    dma_heap_Group7_4_buffer_40  int8
+    dma_heap_Group7_4_buffer_41  int8
+    dma_heap_Group7_4_buffer_42  int8
+    dma_heap_Group7_4_buffer_43  int8
+    dma_heap_Group7_4_buffer_44  int8
+    dma_heap_Group7_4_buffer_45  int8
+    dma_heap_Group7_4_buffer_46  int8
+    dma_heap_Group7_4_buffer_47  int8
+    dma_heap_Group7_4_buffer_48  int8
+    dma_heap_Group7_4_buffer_49  int8
+    dma_heap_Group7_4_buffer_50  int8
+    dma_heap_Group7_4_buffer_51  int8
+    dma_heap_Group7_4_buffer_52  int8
+    dma_heap_Group7_4_buffer_53  int8
+    dma_heap_Group7_4_buffer_54  int8
+    dma_heap_Group7_4_buffer_55  int8
+    dma_heap_Group7_4_buffer_56  int8
+    dma_heap_Group7_4_buffer_57  int8
+    dma_heap_Group7_4_buffer_58  int8
+    dma_heap_Group7_4_buffer_59  int8
+    dma_heap_Group7_4_buffer_60  int8
+    dma_heap_Group7_4_buffer_61  int8
+    dma_heap_Group7_4_buffer_62  int8
+    dma_heap_Group7_4_buffer_63  int8
+    dma_heap_Group7_4_buffer_64  int8
+    dma_heap_Group7_4_buffer_65  int8
+    dma_heap_Group7_4_buffer_66  int8
+    dma_heap_Group7_4_buffer_67  int8
+    dma_heap_Group7_4_buffer_68  int8
+    dma_heap_Group7_4_buffer_69  int8
+    dma_heap_Group7_4_buffer_70  int8
+    dma_heap_Group7_4_buffer_71  int8
+    dma_heap_Group7_4_buffer_72  int8
+    dma_heap_Group7_4_buffer_73  int8
+    dma_heap_Group7_4_buffer_74  int8
+    dma_heap_Group7_4_buffer_75  int8
+    dma_heap_Group7_4_buffer_76  int8
+    dma_heap_Group7_4_buffer_77  int8
+    dma_heap_Group7_4_buffer_78  int8
+    dma_heap_Group7_4_buffer_79  int8
+    dma_heap_Group7_4_buffer_80  int8
+    dma_heap_Group7_4_buffer_81  int8
+    dma_heap_Group7_4_buffer_82  int8
+    dma_heap_Group7_4_buffer_83  int8
+    dma_heap_Group7_4_buffer_84  int8
+    dma_heap_Group7_4_buffer_85  int8
+    dma_heap_Group7_4_buffer_86  int8
+    dma_heap_Group7_4_buffer_87  int8
+    dma_heap_Group7_4_buffer_88  int8
+    dma_heap_Group7_4_buffer_89  int8
+    dma_heap_Group7_4_buffer_90  int8
+    dma_heap_Group7_4_buffer_91  int8
+    dma_heap_Group7_4_buffer_92  int8
+    dma_heap_Group7_4_buffer_93  int8
+    dma_heap_Group7_4_buffer_94  int8
+    dma_heap_Group7_4_buffer_95  int8
+    dma_heap_Group7_4_buffer_96  int8
+    dma_heap_Group7_4_buffer_97  int8
+    dma_heap_Group7_4_buffer_98  int8
+    dma_heap_Group7_4_buffer_99  int8
+    dma_heap_Group7_4_buffer_100  int8
+    dma_heap_Group7_4_buffer_101  int8
+    dma_heap_Group7_4_buffer_102  int8
+    dma_heap_Group7_4_buffer_103  int8
+    dma_heap_Group7_4_buffer_104  int8
+    dma_heap_Group7_4_buffer_105  int8
+    dma_heap_Group7_4_buffer_106  int8
+    dma_heap_Group7_4_buffer_107  int8
+    dma_heap_Group7_4_buffer_108  int8
+    dma_heap_Group7_4_buffer_109  int8
+    dma_heap_Group7_4_buffer_110  int8
+    dma_heap_Group7_4_buffer_111  int8
+    dma_heap_Group7_4_buffer_112  int8
+    dma_heap_Group7_4_buffer_113  int8
+    dma_heap_Group7_4_buffer_114  int8
+    dma_heap_Group7_4_buffer_115  int8
+    dma_heap_Group7_4_buffer_116  int8
+    dma_heap_Group7_4_buffer_117  int8
+    dma_heap_Group7_4_buffer_118  int8
+    dma_heap_Group7_4_buffer_119  int8
+    dma_heap_Group7_4_buffer_120  int8
+    dma_heap_Group7_4_buffer_121  int8
+    dma_heap_Group7_4_buffer_122  int8
+    dma_heap_Group7_4_buffer_123  int8
+    dma_heap_Group7_4_buffer_124  int8
+    dma_heap_Group7_4_buffer_125  int8
+    dma_heap_Group7_4_buffer_126  int8
+    dma_heap_Group7_4_buffer_127  int8
+    dma_heap_Group7_4_buffer_128  int8
+    dma_heap_Group7_4_buffer_129  int8
+    dma_heap_Group7_4_buffer_130  int8
+    dma_heap_Group7_4_buffer_131  int8
+    dma_heap_Group7_4_buffer_132  int8
+    dma_heap_Group7_4_buffer_133  int8
+    dma_heap_Group7_4_buffer_134  int8
+    dma_heap_Group7_4_buffer_135  int8
+    dma_heap_Group7_4_buffer_136  int8
+    dma_heap_Group7_4_buffer_137  int8
+    dma_heap_Group7_4_buffer_138  int8
+    dma_heap_Group7_4_buffer_139  int8
+    dma_heap_Group7_4_buffer_140  int8
+    dma_heap_Group7_4_buffer_141  int8
+    dma_heap_Group7_4_buffer_142  int8
+    dma_heap_Group7_4_buffer_143  int8
+    dma_heap_Group7_4_buffer_144  int8
+    dma_heap_Group7_4_buffer_145  int8
+    dma_heap_Group7_4_buffer_146  int8
+    dma_heap_Group7_4_buffer_147  int8
+    dma_heap_Group7_4_buffer_148  int8
+    dma_heap_Group7_4_buffer_149  int8
+    dma_heap_Group7_4_buffer_150  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Group7_4(fd dma_heap_fd, cmd const[0xfffffd07], arg ptr[inout, dma_heap_Group7_4_struct_1]) 
+dma_heap_Group7_5_struct_1 {
+    dma_heap_Group7_5_const_2  const[4, int8]
+    dma_heap_Group7_5_const_3  const[0, int8]
+    dma_heap_Group7_5_const_4  const[0, int8]
+    dma_heap_Group7_5_const_5  const[0, int8]
+    dma_heap_Group7_5_range_6  int8[0:44]
+    dma_heap_Group7_5_const_7  const[0, int8]
+    dma_heap_Group7_5_const_8  const[0, int8]
+    dma_heap_Group7_5_const_9  const[0, int8]
+    dma_heap_Group7_5_buffer_10  int32
+    dma_heap_Group7_5_range_11  int32[305:4294967295]
+    dma_heap_Group7_5_buffer_12  int64
+    dma_heap_Group7_5_buffer_13  int32
+    dma_heap_Group7_5_range_14  int32[32768:4294967295]
+    dma_heap_Group7_5_buffer_15  int64
+    dma_heap_Group7_5_resource_16  dma_heap_connection_0
+    dma_heap_Group7_5_buffer_17  int8
+    dma_heap_Group7_5_buffer_18  int8
+    dma_heap_Group7_5_buffer_19  int8
+    dma_heap_Group7_5_buffer_20  int8
+    dma_heap_Group7_5_const_21  const[0, int8]
+    dma_heap_Group7_5_buffer_22  array[int8, 127]
+    dma_heap_Group7_5_range_23  int8[1:255]
+    dma_heap_Group7_5_buffer_24  int8
+    dma_heap_Group7_5_buffer_25  int8
+    dma_heap_Group7_5_buffer_26  int8
+    dma_heap_Group7_5_buffer_27  int8
+    dma_heap_Group7_5_buffer_28  int8
+    dma_heap_Group7_5_buffer_29  int8
+    dma_heap_Group7_5_buffer_30  int8
+    dma_heap_Group7_5_buffer_31  int8
+    dma_heap_Group7_5_buffer_32  int8
+    dma_heap_Group7_5_buffer_33  int8
+    dma_heap_Group7_5_buffer_34  int8
+    dma_heap_Group7_5_buffer_35  int8
+    dma_heap_Group7_5_buffer_36  int8
+    dma_heap_Group7_5_buffer_37  int8
+    dma_heap_Group7_5_buffer_38  int8
+    dma_heap_Group7_5_buffer_39  int8
+    dma_heap_Group7_5_buffer_40  int8
+    dma_heap_Group7_5_buffer_41  int8
+    dma_heap_Group7_5_buffer_42  int8
+    dma_heap_Group7_5_buffer_43  int8
+    dma_heap_Group7_5_buffer_44  int8
+    dma_heap_Group7_5_buffer_45  int8
+    dma_heap_Group7_5_buffer_46  int8
+    dma_heap_Group7_5_buffer_47  int8
+    dma_heap_Group7_5_buffer_48  int8
+    dma_heap_Group7_5_buffer_49  int8
+    dma_heap_Group7_5_buffer_50  int8
+    dma_heap_Group7_5_buffer_51  int8
+    dma_heap_Group7_5_buffer_52  int8
+    dma_heap_Group7_5_buffer_53  int8
+    dma_heap_Group7_5_buffer_54  int8
+    dma_heap_Group7_5_buffer_55  int8
+    dma_heap_Group7_5_buffer_56  int8
+    dma_heap_Group7_5_buffer_57  int8
+    dma_heap_Group7_5_buffer_58  int8
+    dma_heap_Group7_5_buffer_59  int8
+    dma_heap_Group7_5_buffer_60  int8
+    dma_heap_Group7_5_buffer_61  int8
+    dma_heap_Group7_5_buffer_62  int8
+    dma_heap_Group7_5_buffer_63  int8
+    dma_heap_Group7_5_buffer_64  int8
+    dma_heap_Group7_5_buffer_65  int8
+    dma_heap_Group7_5_buffer_66  int8
+    dma_heap_Group7_5_buffer_67  int8
+    dma_heap_Group7_5_buffer_68  int8
+    dma_heap_Group7_5_buffer_69  int8
+    dma_heap_Group7_5_buffer_70  int8
+    dma_heap_Group7_5_buffer_71  int8
+    dma_heap_Group7_5_buffer_72  int8
+    dma_heap_Group7_5_buffer_73  int8
+    dma_heap_Group7_5_buffer_74  int8
+    dma_heap_Group7_5_buffer_75  int8
+    dma_heap_Group7_5_buffer_76  int8
+    dma_heap_Group7_5_buffer_77  int8
+    dma_heap_Group7_5_buffer_78  int8
+    dma_heap_Group7_5_buffer_79  int8
+    dma_heap_Group7_5_buffer_80  int8
+    dma_heap_Group7_5_buffer_81  int8
+    dma_heap_Group7_5_buffer_82  int8
+    dma_heap_Group7_5_buffer_83  int8
+    dma_heap_Group7_5_buffer_84  int8
+    dma_heap_Group7_5_buffer_85  int8
+    dma_heap_Group7_5_buffer_86  int8
+    dma_heap_Group7_5_buffer_87  int8
+    dma_heap_Group7_5_buffer_88  int8
+    dma_heap_Group7_5_buffer_89  int8
+    dma_heap_Group7_5_buffer_90  int8
+    dma_heap_Group7_5_buffer_91  int8
+    dma_heap_Group7_5_buffer_92  int8
+    dma_heap_Group7_5_buffer_93  int8
+    dma_heap_Group7_5_buffer_94  int8
+    dma_heap_Group7_5_buffer_95  int8
+    dma_heap_Group7_5_buffer_96  int8
+    dma_heap_Group7_5_buffer_97  int8
+    dma_heap_Group7_5_buffer_98  int8
+    dma_heap_Group7_5_buffer_99  int8
+    dma_heap_Group7_5_buffer_100  int8
+    dma_heap_Group7_5_buffer_101  int8
+    dma_heap_Group7_5_buffer_102  int8
+    dma_heap_Group7_5_buffer_103  int8
+    dma_heap_Group7_5_buffer_104  int8
+    dma_heap_Group7_5_buffer_105  int8
+    dma_heap_Group7_5_buffer_106  int8
+    dma_heap_Group7_5_buffer_107  int8
+    dma_heap_Group7_5_buffer_108  int8
+    dma_heap_Group7_5_buffer_109  int8
+    dma_heap_Group7_5_buffer_110  int8
+    dma_heap_Group7_5_buffer_111  int8
+    dma_heap_Group7_5_buffer_112  int8
+    dma_heap_Group7_5_buffer_113  int8
+    dma_heap_Group7_5_buffer_114  int8
+    dma_heap_Group7_5_buffer_115  int8
+    dma_heap_Group7_5_buffer_116  int8
+    dma_heap_Group7_5_buffer_117  int8
+    dma_heap_Group7_5_buffer_118  int8
+    dma_heap_Group7_5_buffer_119  int8
+    dma_heap_Group7_5_buffer_120  int8
+    dma_heap_Group7_5_buffer_121  int8
+    dma_heap_Group7_5_buffer_122  int8
+    dma_heap_Group7_5_buffer_123  int8
+    dma_heap_Group7_5_buffer_124  int8
+    dma_heap_Group7_5_buffer_125  int8
+    dma_heap_Group7_5_buffer_126  int8
+    dma_heap_Group7_5_buffer_127  int8
+    dma_heap_Group7_5_buffer_128  int8
+    dma_heap_Group7_5_buffer_129  int8
+    dma_heap_Group7_5_buffer_130  int8
+    dma_heap_Group7_5_buffer_131  int8
+    dma_heap_Group7_5_buffer_132  int8
+    dma_heap_Group7_5_buffer_133  int8
+    dma_heap_Group7_5_buffer_134  int8
+    dma_heap_Group7_5_buffer_135  int8
+    dma_heap_Group7_5_buffer_136  int8
+    dma_heap_Group7_5_buffer_137  int8
+    dma_heap_Group7_5_buffer_138  int8
+    dma_heap_Group7_5_buffer_139  int8
+    dma_heap_Group7_5_buffer_140  int8
+    dma_heap_Group7_5_buffer_141  int8
+    dma_heap_Group7_5_buffer_142  int8
+    dma_heap_Group7_5_buffer_143  int8
+    dma_heap_Group7_5_buffer_144  int8
+    dma_heap_Group7_5_buffer_145  int8
+    dma_heap_Group7_5_buffer_146  int8
+    dma_heap_Group7_5_buffer_147  int8
+    dma_heap_Group7_5_buffer_148  int8
+    dma_heap_Group7_5_buffer_149  int8
+    dma_heap_Group7_5_buffer_150  int8
+    dma_heap_Group7_5_buffer_151  int8
+} [packed]
+ioctl$dma_heap_Group7_5(fd dma_heap_fd, cmd const[0xfffffd07], arg ptr[inout, dma_heap_Group7_5_struct_1]) 
+dma_heap_Groupa_0_struct_1 {
+    dma_heap_Groupa_0_const_2  const[4, int8]
+    dma_heap_Groupa_0_const_3  const[0, int8]
+    dma_heap_Groupa_0_const_4  const[0, int8]
+    dma_heap_Groupa_0_const_5  const[0, int8]
+    dma_heap_Groupa_0_range_6  int8[0:44]
+    dma_heap_Groupa_0_const_7  const[0, int8]
+    dma_heap_Groupa_0_const_8  const[0, int8]
+    dma_heap_Groupa_0_const_9  const[0, int8]
+    dma_heap_Groupa_0_buffer_10  int32
+    dma_heap_Groupa_0_range_11  int32[305:4294967295]
+    dma_heap_Groupa_0_buffer_12  int64
+    dma_heap_Groupa_0_buffer_13  int32
+    dma_heap_Groupa_0_buffer_14  int8
+    dma_heap_Groupa_0_buffer_15  int8
+    dma_heap_Groupa_0_buffer_16  int8
+    dma_heap_Groupa_0_buffer_17  int8
+    dma_heap_Groupa_0_buffer_18  int64
+    dma_heap_Groupa_0_resource_19  dma_heap_connection_0
+    dma_heap_Groupa_0_buffer_20  int8
+    dma_heap_Groupa_0_buffer_21  int8
+    dma_heap_Groupa_0_buffer_22  int8
+    dma_heap_Groupa_0_buffer_23  int8
+    dma_heap_Groupa_0_buffer_24  array[int8, 84]
+    dma_heap_Groupa_0_buffer_25  int32
+    dma_heap_Groupa_0_buffer_26  array[int8, 40]
+    dma_heap_Groupa_0_buffer_27  int8
+    dma_heap_Groupa_0_buffer_28  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Groupa_0(fd dma_heap_fd, cmd const[0xfffffd0a], arg ptr[inout, dma_heap_Groupa_0_struct_1]) 
+dma_heap_Groupa_1_struct_1 {
+    dma_heap_Groupa_1_const_2  const[4, int8]
+    dma_heap_Groupa_1_const_3  const[0, int8]
+    dma_heap_Groupa_1_const_4  const[0, int8]
+    dma_heap_Groupa_1_const_5  const[0, int8]
+    dma_heap_Groupa_1_range_6  int8[0:44]
+    dma_heap_Groupa_1_const_7  const[0, int8]
+    dma_heap_Groupa_1_const_8  const[0, int8]
+    dma_heap_Groupa_1_const_9  const[0, int8]
+    dma_heap_Groupa_1_buffer_10  int32
+    dma_heap_Groupa_1_range_11  int32[305:4294967295]
+    dma_heap_Groupa_1_buffer_12  int64
+    dma_heap_Groupa_1_buffer_13  int32
+    dma_heap_Groupa_1_range_14  int16[0:32767]
+    dma_heap_Groupa_1_buffer_15  int8
+    dma_heap_Groupa_1_buffer_16  int8
+    dma_heap_Groupa_1_buffer_17  int64
+    dma_heap_Groupa_1_resource_18  dma_heap_connection_0
+    dma_heap_Groupa_1_buffer_19  int32
+    dma_heap_Groupa_1_buffer_20  int8
+    dma_heap_Groupa_1_buffer_21  array[int8, 127]
+    dma_heap_Groupa_1_buffer_22  int8
+    dma_heap_Groupa_1_buffer_23  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Groupa_1(fd dma_heap_fd, cmd const[0xfffffd0a], arg ptr[inout, dma_heap_Groupa_1_struct_1]) 
+dma_heap_Groupa_2_struct_1 {
+    dma_heap_Groupa_2_const_2  const[4, int8]
+    dma_heap_Groupa_2_const_3  const[0, int8]
+    dma_heap_Groupa_2_const_4  const[0, int8]
+    dma_heap_Groupa_2_const_5  const[0, int8]
+    dma_heap_Groupa_2_range_6  int8[0:44]
+    dma_heap_Groupa_2_const_7  const[0, int8]
+    dma_heap_Groupa_2_const_8  const[0, int8]
+    dma_heap_Groupa_2_const_9  const[0, int8]
+    dma_heap_Groupa_2_buffer_10  int32
+    dma_heap_Groupa_2_range_11  int32[305:4294967295]
+    dma_heap_Groupa_2_buffer_12  int64
+    dma_heap_Groupa_2_const_13  const[0, int32]
+    dma_heap_Groupa_2_buffer_14  int16
+    dma_heap_Groupa_2_range_15  int8[0:1]
+    dma_heap_Groupa_2_const_16  const[0, int8]
+    dma_heap_Groupa_2_buffer_17  int64
+    dma_heap_Groupa_2_resource_18  dma_heap_connection_0
+    dma_heap_Groupa_2_buffer_19  array[int8, 88]
+    dma_heap_Groupa_2_buffer_20  int32
+    dma_heap_Groupa_2_buffer_21  array[int8, 40]
+    dma_heap_Groupa_2_buffer_22  int8
+    dma_heap_Groupa_2_buffer_23  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Groupa_2(fd dma_heap_fd, cmd const[0xfffffd0a], arg ptr[inout, dma_heap_Groupa_2_struct_1]) 
+dma_heap_Groupa_3_struct_1 {
+    dma_heap_Groupa_3_const_2  const[4, int8]
+    dma_heap_Groupa_3_const_3  const[0, int8]
+    dma_heap_Groupa_3_const_4  const[0, int8]
+    dma_heap_Groupa_3_const_5  const[0, int8]
+    dma_heap_Groupa_3_range_6  int8[0:44]
+    dma_heap_Groupa_3_const_7  const[0, int8]
+    dma_heap_Groupa_3_const_8  const[0, int8]
+    dma_heap_Groupa_3_const_9  const[0, int8]
+    dma_heap_Groupa_3_buffer_10  int32
+    dma_heap_Groupa_3_range_11  int32[305:4294967295]
+    dma_heap_Groupa_3_buffer_12  int64
+    dma_heap_Groupa_3_buffer_13  int32
+    dma_heap_Groupa_3_buffer_14  int8
+    dma_heap_Groupa_3_buffer_15  int8
+    dma_heap_Groupa_3_buffer_16  int8
+    dma_heap_Groupa_3_buffer_17  int8
+    dma_heap_Groupa_3_buffer_18  int64
+    dma_heap_Groupa_3_resource_19  dma_heap_connection_0
+    dma_heap_Groupa_3_buffer_20  int8
+    dma_heap_Groupa_3_buffer_21  int8
+    dma_heap_Groupa_3_buffer_22  int8
+    dma_heap_Groupa_3_buffer_23  int8
+    dma_heap_Groupa_3_range_24  int8[1:255]
+    dma_heap_Groupa_3_buffer_25  array[int8, 83]
+    dma_heap_Groupa_3_buffer_26  int32
+    dma_heap_Groupa_3_buffer_27  array[int8, 40]
+    dma_heap_Groupa_3_const_28  const[0, int8]
+    dma_heap_Groupa_3_buffer_29  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Groupa_3(fd dma_heap_fd, cmd const[0xfffffd0a], arg ptr[inout, dma_heap_Groupa_3_struct_1]) 
+dma_heap_Groupa_4_struct_1 {
+    dma_heap_Groupa_4_const_2  const[4, int8]
+    dma_heap_Groupa_4_const_3  const[0, int8]
+    dma_heap_Groupa_4_const_4  const[0, int8]
+    dma_heap_Groupa_4_const_5  const[0, int8]
+    dma_heap_Groupa_4_range_6  int8[0:44]
+    dma_heap_Groupa_4_const_7  const[0, int8]
+    dma_heap_Groupa_4_const_8  const[0, int8]
+    dma_heap_Groupa_4_const_9  const[0, int8]
+    dma_heap_Groupa_4_buffer_10  int32
+    dma_heap_Groupa_4_range_11  int32[305:4294967295]
+    dma_heap_Groupa_4_buffer_12  int64
+    dma_heap_Groupa_4_buffer_13  int32
+    dma_heap_Groupa_4_buffer_14  int32
+    dma_heap_Groupa_4_buffer_15  int64
+    dma_heap_Groupa_4_resource_16  dma_heap_connection_0
+    dma_heap_Groupa_4_buffer_17  int32
+    dma_heap_Groupa_4_const_18  const[0, int8]
+    dma_heap_Groupa_4_buffer_19  array[int8, 83]
+    dma_heap_Groupa_4_buffer_20  int32
+    dma_heap_Groupa_4_buffer_21  array[int8, 40]
+    dma_heap_Groupa_4_range_22  int8[1:255]
+    dma_heap_Groupa_4_buffer_23  int8
+    dma_heap_Groupa_4_buffer_24  int8
+    dma_heap_Groupa_4_buffer_25  array[int8, 126]
+} [packed]
+ioctl$dma_heap_Groupa_4(fd dma_heap_fd, cmd const[0xfffffd0a], arg ptr[inout, dma_heap_Groupa_4_struct_1]) 
+dma_heap_Group10_0_struct_1 {
+    dma_heap_Group10_0_const_2  const[4, int8]
+    dma_heap_Group10_0_const_3  const[0, int8]
+    dma_heap_Group10_0_const_4  const[0, int8]
+    dma_heap_Group10_0_const_5  const[0, int8]
+    dma_heap_Group10_0_range_6  int8[0:44]
+    dma_heap_Group10_0_const_7  const[0, int8]
+    dma_heap_Group10_0_const_8  const[0, int8]
+    dma_heap_Group10_0_const_9  const[0, int8]
+    dma_heap_Group10_0_buffer_10  int32
+    dma_heap_Group10_0_range_11  int32[305:4294967295]
+    dma_heap_Group10_0_buffer_12  array[int8, 12]
+    dma_heap_Group10_0_buffer_13  int32
+    dma_heap_Group10_0_buffer_14  array[int8, 16]
+    dma_heap_Group10_0_buffer_15  int8
+    dma_heap_Group10_0_buffer_16  array[int8, 127]
+    dma_heap_Group10_0_buffer_17  int8
+    dma_heap_Group10_0_buffer_18  array[int8, 128]
+} [packed]
+ioctl$dma_heap_Group10_0(fd dma_heap_fd, cmd const[0xfffffd10], arg ptr[inout, dma_heap_Group10_0_struct_1]) 
+dma_heap_Group3_0_struct_1 {
+    dma_heap_Group3_0_const_2  const[4, int8]
+    dma_heap_Group3_0_const_3  const[0, int8]
+    dma_heap_Group3_0_const_4  const[0, int8]
+    dma_heap_Group3_0_const_5  const[0, int8]
+    dma_heap_Group3_0_range_6  int8[0:44]
+    dma_heap_Group3_0_const_7  const[0, int8]
+    dma_heap_Group3_0_const_8  const[0, int8]
+    dma_heap_Group3_0_const_9  const[0, int8]
+    dma_heap_Group3_0_resource_10  dma_heap_connection_0
+    dma_heap_Group3_0_range_11  int32[305:4294967295]
+    dma_heap_Group3_0_buffer_12  array[int8, 12]
+    dma_heap_Group3_0_buffer_13  int32
+    dma_heap_Group3_0_buffer_14  int64
+    dma_heap_Group3_0_resource_15 dma_heap_connection_0
+    dma_heap_Group3_0_buffer_19  int32
+    dma_heap_Group3_0_range_20  int8[1:255]
+    dma_heap_Group3_0_buffer_21  int8
+    dma_heap_Group3_0_buffer_22  int8
+    dma_heap_Group3_0_buffer_23  int8
+    dma_heap_Group3_0_buffer_24  int8
+    dma_heap_Group3_0_buffer_25  array[int8, 252]
+} [packed]
+ioctl$dma_heap_Group3_0(fd dma_heap_fd, cmd const[0xfffffd03], arg ptr[inout, dma_heap_Group3_0_struct_1])
+dma_heap_Group3_1_struct_1 {
+    dma_heap_Group3_0_const_0  const[4, int32]
+    dma_heap_Group3_1_range_5  int8[0:44]
+    dma_heap_Group3_1_const_6  const[0, int8]
+    dma_heap_Group3_1_const_7  const[0, int8]
+    dma_heap_Group3_1_const_8  const[0, int8]
+    dma_heap_Group3_1_buffer_9  int32
+    dma_heap_Group3_1_range_10  int32[305:4294967295]
+    dma_heap_Group3_1_buffer_11  array[int8, 12]
+    dma_heap_Group3_1_range_12  int32[8:4294967295]
+    dma_heap_Group3_1_buffer_13  int64
+    dma_heap_Group3_0_resource_14 dma_heap_connection_0
+    dma_heap_Group3_1_buffer_18  int32
+    dma_heap_Group3_1_range_19  int8[1:255]
+    dma_heap_Group3_1_buffer_20  int8
+    dma_heap_Group3_1_buffer_21  int8
+    dma_heap_Group3_1_buffer_22  int8
+    dma_heap_Group3_1_buffer_23  int8
+    dma_heap_Group3_1_buffer_24  array[int8, 252]
+} [packed]
+ioctl$dma_heap_Group3_1(fd dma_heap_fd, cmd const[0xfffffd03], arg ptr[inout, dma_heap_Group3_1_struct_1]) 
+dma_heap_Group2_0_struct_1 {
+    dma_heap_Group2_0_const_2  const[4, int8]
+    dma_heap_Group2_0_const_3  const[0, int8]
+    dma_heap_Group2_0_const_4  const[0, int8]
+    dma_heap_Group2_0_const_5  const[0, int8]
+    dma_heap_Group2_0_range_6  int8[0:44]
+    dma_heap_Group2_0_const_7  const[0, int8]
+    dma_heap_Group2_0_const_8  const[0, int8]
+    dma_heap_Group2_0_const_9  const[0, int8]
+    dma_heap_Group2_0_buffer_10  int32
+    dma_heap_Group2_0_range_11  int32[305:2147483952]
+    dma_heap_Group2_0_buffer_12  int64
+    dma_heap_Group2_0_buffer_13  int32
+    dma_heap_Group2_0_buffer_14  int16
+    dma_heap_Group2_0_buffer_15  int8
+    dma_heap_Group2_0_buffer_16  int8
+    dma_heap_Group2_0_buffer_17  array[int8, 100]
+    dma_heap_Group2_0_buffer_18  int32
+    dma_heap_Group2_0_buffer_19  array[int8, 960]
+    dma_heap_Group2_0_buffer_20  int32
+    dma_heap_Group2_0_buffer_21  int32
+    dma_heap_Group2_0_buffer_22  array[int8]
+} [packed]
+ioctl$dma_heap_Group2_0(fd dma_heap_fd, cmd const[0xfffffd02], arg ptr[inout, dma_heap_Group2_0_struct_1]) 
+dma_heap_Group2_1_struct_1 {
+    dma_heap_Group2_1_const_2  const[4, int8]
+    dma_heap_Group2_1_const_3  const[0, int8]
+    dma_heap_Group2_1_const_4  const[0, int8]
+    dma_heap_Group2_1_const_5  const[0, int8]
+    dma_heap_Group2_1_range_6  int8[0:44]
+    dma_heap_Group2_1_const_7  const[0, int8]
+    dma_heap_Group2_1_const_8  const[0, int8]
+    dma_heap_Group2_1_const_9  const[0, int8]
+    dma_heap_Group2_1_buffer_10  int32
+    dma_heap_Group2_1_range_11  int32[305:2147483952]
+    dma_heap_Group2_1_buffer_12  int64
+    dma_heap_Group2_1_const_13  const[0, int32]
+    dma_heap_Group2_1_buffer_14  int16
+    dma_heap_Group2_1_range_15  int8[0:1]
+    dma_heap_Group2_1_const_16  const[0, int8]
+    dma_heap_Group2_1_buffer_17  array[int8, 100]
+    dma_heap_Group2_1_buffer_18  int32
+    dma_heap_Group2_1_buffer_19  array[int8, 960]
+    dma_heap_Group2_1_buffer_20  int32
+    dma_heap_Group2_1_buffer_21  int32
+    dma_heap_Group2_1_buffer_22  array[int8]
+} [packed]
+ioctl$dma_heap_Group2_1(fd dma_heap_fd, cmd const[0xfffffd02], arg ptr[inout, dma_heap_Group2_1_struct_1]) 
+dma_heap_Group2_2_struct_1 {
+    dma_heap_Group2_2_const_2  const[4, int8]
+    dma_heap_Group2_2_const_3  const[0, int8]
+    dma_heap_Group2_2_const_4  const[0, int8]
+    dma_heap_Group2_2_const_5  const[0, int8]
+    dma_heap_Group2_2_range_6  int8[0:44]
+    dma_heap_Group2_2_const_7  const[0, int8]
+    dma_heap_Group2_2_const_8  const[0, int8]
+    dma_heap_Group2_2_const_9  const[0, int8]
+    dma_heap_Group2_2_buffer_10  int32
+    dma_heap_Group2_2_range_11  int32[305:2147483952]
+    dma_heap_Group2_2_buffer_12  int64
+    dma_heap_Group2_2_buffer_13  int32
+    dma_heap_Group2_2_range_14  int32[0:4294934527]
+    dma_heap_Group2_2_buffer_15  array[int8, 1064]
+    dma_heap_Group2_2_buffer_16  int32
+    dma_heap_Group2_2_buffer_17  array[int8]
+} [packed]
+ioctl$dma_heap_Group2_2(fd dma_heap_fd, cmd const[0xfffffd02], arg ptr[inout, dma_heap_Group2_2_struct_1]) 

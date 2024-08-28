@@ -1,0 +1,23 @@
+resource btrfs_control_fd[fd]
+
+openat$btrfs_control_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/btrfs-control"]], flags flags[open_flags], mode const[0]) btrfs_control_fd
+read$btrfs_control_syzgen(fd btrfs_control_fd, data ptr[out, array[int8]], size len[data]) 
+ioctl$btrfs_control_Group80489439_0(fd btrfs_control_fd, cmd const[2152240185], arg ptr[inout, array[int8, 4096]]) 
+btrfs_control_Group50009404_0_struct_1 {
+    btrfs_control_Group50009404_0_buffer_2  int64
+    btrfs_control_Group50009404_0_range_3  int8[1:255]
+    btrfs_control_Group50009404_0_buffer_4  array[int8]
+} [packed]
+ioctl$btrfs_control_Group50009404_0(fd btrfs_control_fd, cmd const[1342215172], arg ptr[in, btrfs_control_Group50009404_0_struct_1]) 
+btrfs_control_Group90009427_0_struct_1 {
+    btrfs_control_Group90009427_0_buffer_2  int64
+    btrfs_control_Group90009427_0_range_3  int8[1:255]
+    btrfs_control_Group90009427_0_buffer_4  array[int8]
+} [packed]
+ioctl$btrfs_control_Group90009427_0(fd btrfs_control_fd, cmd const[2415957031], arg ptr[in, btrfs_control_Group90009427_0_struct_1]) 
+btrfs_control_Group50009405_0_struct_1 {
+    btrfs_control_Group50009405_0_buffer_2  int64
+    btrfs_control_Group50009405_0_const_3  const[0, int8]
+    btrfs_control_Group50009405_0_buffer_4  array[int8]
+} [packed]
+ioctl$btrfs_control_Group50009405_0(fd btrfs_control_fd, cmd const[1342215173], arg ptr[in, btrfs_control_Group50009405_0_struct_1]) 

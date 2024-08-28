@@ -1,0 +1,244 @@
+resource renderD128_fd[fd]
+# resource renderD128_connection_0[int32]
+type renderD128_connection_0 int32
+
+openat$renderD128_syzgen(fd const[AT_FDCWD], file ptr[in, string["/dev/dri/renderD128"]], flags flags[open_flags], mode const[0]) renderD128_fd
+read$renderD128_syzgen(fd renderD128_fd, data ptr[out, array[int8]], size len[data]) 
+renderD128_Group0_0_struct_1 {
+    renderD128_Group0_0_buffer_2  array[int8, 16]
+    renderD128_Group0_0_buffer_3  len[renderD128_Group0_0_ptr_6, int32]
+    renderD128_Group0_0_buffer_4  int32
+    renderD128_Group0_0_ptr_6  ptr[out, int32]
+    renderD128_Group0_0_buffer_7  len[renderD128_Group0_0_ptr_10, int32]
+    renderD128_Group0_0_buffer_8  int32
+    renderD128_Group0_0_ptr_10  ptr[out, int64]
+    renderD128_Group0_0_buffer_11  len[renderD128_Group0_0_ptr_14, int32]
+    renderD128_Group0_0_buffer_12  int32
+    renderD128_Group0_0_ptr_14  ptr[out, array[int8, 20]]
+    renderD128_Group0_0_buffer_15  array[int8]
+} [packed]
+ioctl$renderD128_Group0_0(fd renderD128_fd, cmd const[0xffff6400], arg ptr[inout, renderD128_Group0_0_struct_1]) 
+ioctl$renderD128_Group2_0(fd renderD128_fd, cmd const[0xffff6402], arg ptr[out, array[int8]]) 
+ioctl$renderD128_Group3_0(fd renderD128_fd, cmd const[0x80ff6403], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group3_1(fd renderD128_fd, cmd const[0xbfff6403], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group3_2(fd renderD128_fd, cmd const[0xffff6403], arg ptr[inout, array[int8]]) 
+renderD128_Group5_0_struct_1 {
+    renderD128_Group5_0_const_2  const[0, int32]
+    renderD128_Group5_0_buffer_3  array[int8]
+} [packed]
+ioctl$renderD128_Group5_0(fd renderD128_fd, cmd const[0xffff6405], arg ptr[inout, renderD128_Group5_0_struct_1]) 
+ioctl$renderD128_Group6_0(fd renderD128_fd, cmd const[0xffff6406], arg ptr[out, array[int8]]) 
+renderD128_Group7_0_struct_1 {
+    renderD128_Group7_0_const_2  const[1, int8]
+    renderD128_Group7_0_const_3  const[0, int8]
+    renderD128_Group7_0_const_4  const[0, int8]
+    renderD128_Group7_0_const_5  const[0, int8]
+    renderD128_Group7_0_range_6  int32[0:4]
+    renderD128_Group7_0_const_7  const[1, int8]
+    renderD128_Group7_0_const_8  const[0, int8]
+    renderD128_Group7_0_const_9  const[0, int8]
+    renderD128_Group7_0_const_10  const[0, int8]
+    renderD128_Group7_0_const_11  const[0, int16]
+    renderD128_Group7_0_const_12  const[0, int8]
+    renderD128_Group7_0_const_13  const[0, int8]
+    renderD128_Group7_0_buffer_14  array[int8]
+} [packed]
+ioctl$renderD128_Group7_0(fd renderD128_fd, cmd const[0xffff6407], arg ptr[inout, renderD128_Group7_0_struct_1]) 
+renderD128_Group7_1_struct_1 {
+    renderD128_Group7_1_const_2  const[255, int8]
+    renderD128_Group7_1_const_3  const[255, int8]
+    renderD128_Group7_1_const_4  const[255, int8]
+    renderD128_Group7_1_const_5  const[255, int8]
+    renderD128_Group7_1_buffer_6  int32
+    renderD128_Group7_1_const_7  const[1, int8]
+    renderD128_Group7_1_const_8  const[0, int8]
+    renderD128_Group7_1_const_9  const[0, int8]
+    renderD128_Group7_1_const_10  const[0, int8]
+    renderD128_Group7_1_const_11  const[0, int16]
+    renderD128_Group7_1_const_12  const[0, int8]
+    renderD128_Group7_1_const_13  const[0, int8]
+    renderD128_Group7_1_buffer_14  array[int8]
+} [packed]
+ioctl$renderD128_Group7_1(fd renderD128_fd, cmd const[0xffff6407], arg ptr[inout, renderD128_Group7_1_struct_1]) 
+renderD128_Group7_2_struct_1 {
+    renderD128_Group7_2_const_2  const[1, int8]
+    renderD128_Group7_2_const_3  const[0, int8]
+    renderD128_Group7_2_const_4  const[0, int8]
+    renderD128_Group7_2_const_5  const[0, int8]
+    renderD128_Group7_2_range_6  int32[0:4]
+    renderD128_Group7_2_const_7  const[255, int8]
+    renderD128_Group7_2_const_8  const[255, int8]
+    renderD128_Group7_2_const_9  const[255, int8]
+    renderD128_Group7_2_const_10  const[255, int8]
+    renderD128_Group7_2_buffer_11  array[int8]
+} [packed]
+ioctl$renderD128_Group7_2(fd renderD128_fd, cmd const[0xffff6407], arg ptr[inout, renderD128_Group7_2_struct_1]) 
+renderD128_Group7_3_struct_1 {
+    renderD128_Group7_3_const_2  const[255, int8]
+    renderD128_Group7_3_const_3  const[255, int8]
+    renderD128_Group7_3_const_4  const[255, int8]
+    renderD128_Group7_3_const_5  const[255, int8]
+    renderD128_Group7_3_buffer_6  int32
+    renderD128_Group7_3_const_7  const[255, int8]
+    renderD128_Group7_3_const_8  const[255, int8]
+    renderD128_Group7_3_const_9  const[255, int8]
+    renderD128_Group7_3_const_10  const[255, int8]
+    renderD128_Group7_3_buffer_11  array[int8]
+} [packed]
+ioctl$renderD128_Group7_3(fd renderD128_fd, cmd const[0xffff6407], arg ptr[inout, renderD128_Group7_3_struct_1]) 
+ioctl$renderD128_Group8_0(fd renderD128_fd, cmd const[0xffff6408], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group8_1(fd renderD128_fd, cmd const[0xbfff6408], arg ptr[in, array[int8]]) 
+renderD128_Group9_0_struct_1 {
+    renderD128_Group9_0_resource_2  renderD128_connection_0
+    renderD128_Group9_0_buffer_3  array[int8]
+} [packed]
+ioctl$renderD128_Group9_0(fd renderD128_fd, cmd const[0xffff6409], arg ptr[in, renderD128_Group9_0_struct_1]) 
+renderD128_Groupa_0_struct_1 {
+    renderD128_Groupa_0_resource_2  renderD128_connection_0
+    renderD128_Groupa_0_buffer_3  array[int8]
+} [packed]
+ioctl$renderD128_Groupa_0(fd renderD128_fd, cmd const[0xffff640a], arg ptr[in, renderD128_Groupa_0_struct_1]) 
+renderD128_Groupc_0_flag_2 = 19, 20, 5, 6
+renderD128_Groupc_0_struct_1 {
+    renderD128_Groupc_0_flag_2  flags[renderD128_Groupc_0_flag_2, int8]
+    renderD128_Groupc_0_const_3  const[0, int8]
+    renderD128_Groupc_0_const_4  const[0, int8]
+    renderD128_Groupc_0_const_5  const[0, int8]
+    renderD128_Groupc_0_const_6  const[0, int8]
+    renderD128_Groupc_0_const_7  const[0, int8]
+    renderD128_Groupc_0_const_8  const[0, int8]
+    renderD128_Groupc_0_const_9  const[0, int8]
+    renderD128_Groupc_0_buffer_10  array[int8]
+} [packed]
+ioctl$renderD128_Groupc_0(fd renderD128_fd, cmd const[0xffff640c], arg ptr[inout, renderD128_Groupc_0_struct_1]) 
+ioctl$renderD128_Group10_0(fd renderD128_fd, cmd const[0xbfff6410], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group10_1(fd renderD128_fd, cmd const[0xffff6410], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group12_0(fd renderD128_fd, cmd const[0x80ff6412], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group12_1(fd renderD128_fd, cmd const[0xbfff6412], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group12_2(fd renderD128_fd, cmd const[0xffff6412], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group13_0(fd renderD128_fd, cmd const[0x80ff6413], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group13_1(fd renderD128_fd, cmd const[0xbfff6413], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group13_2(fd renderD128_fd, cmd const[0xffff6413], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group14_0(fd renderD128_fd, cmd const[0xbfff6414], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group14_1(fd renderD128_fd, cmd const[0xffff6414], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group15_0(fd renderD128_fd, cmd const[0x80ff6415], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group15_1(fd renderD128_fd, cmd const[0xbfff6415], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group15_2(fd renderD128_fd, cmd const[0xffff6415], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group16_0(fd renderD128_fd, cmd const[0x80ff6416], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group16_1(fd renderD128_fd, cmd const[0xbfff6416], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group16_2(fd renderD128_fd, cmd const[0xffff6416], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group17_0(fd renderD128_fd, cmd const[0xbfff6417], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group17_1(fd renderD128_fd, cmd const[0xffff6417], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group1c_0(fd renderD128_fd, cmd const[0xbfff641c], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group1c_1(fd renderD128_fd, cmd const[0xffff641c], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group1e_0(fd renderD128_fd, cmd const[0xffff641e], arg ptr[in, const[0, int32]]) 
+ioctl$renderD128_Group1f_0(fd renderD128_fd, cmd const[0xffff641f], arg ptr[in, const[0, int32]]) 
+ioctl$renderD128_Group20_0(fd renderD128_fd, cmd const[0x80ff6420], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group20_1(fd renderD128_fd, cmd const[0xbfff6420], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group20_2(fd renderD128_fd, cmd const[0xffff6420], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group21_0(fd renderD128_fd, cmd const[0x80ff6421], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group21_1(fd renderD128_fd, cmd const[0xbfff6421], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group21_2(fd renderD128_fd, cmd const[0xffff6421], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group22_0(fd renderD128_fd, cmd const[0xbfff6422], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group22_1(fd renderD128_fd, cmd const[0xffff6422], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group24_0(fd renderD128_fd, cmd const[0xbfff6424], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group24_1(fd renderD128_fd, cmd const[0xffff6424], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group25_0(fd renderD128_fd, cmd const[0xbfff6425], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group25_1(fd renderD128_fd, cmd const[0xffff6425], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group27_0(fd renderD128_fd, cmd const[0x80ff6427], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group27_1(fd renderD128_fd, cmd const[0xbfff6427], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group27_2(fd renderD128_fd, cmd const[0xffff6427], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group28_0(fd renderD128_fd, cmd const[0x80ff6428], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group28_1(fd renderD128_fd, cmd const[0xbfff6428], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group28_2(fd renderD128_fd, cmd const[0xffff6428], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group2c_0(fd renderD128_fd, cmd const[0xffff642c], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group2c_1(fd renderD128_fd, cmd const[0xbfff642c], arg ptr[in, array[int8]]) 
+renderD128_Group2d_0_flag_3 = 0, 2
+renderD128_Group2d_0_flag_5 = 0, 8
+renderD128_Group2d_0_struct_1 {
+    renderD128_Group2d_0_resource_2  renderD128_connection_0
+    renderD128_Group2d_0_flag_3  flags[renderD128_Group2d_0_flag_3, int8]
+    renderD128_Group2d_0_const_4  const[0, int8]
+    renderD128_Group2d_0_flag_5  flags[renderD128_Group2d_0_flag_5, int8]
+    renderD128_Group2d_0_buffer_6  int8
+    renderD128_Group2d_0_buffer_7  array[int8]
+} [packed]
+ioctl$renderD128_Group2d_0(fd renderD128_fd, cmd const[0xffff642d], arg ptr[in, renderD128_Group2d_0_struct_1]) 
+ioctl$renderD128_Group2e_0(fd renderD128_fd, cmd const[0xbfff642e], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group2e_1(fd renderD128_fd, cmd const[0x80ff642e], arg ptr[inout, array[int8]]) 
+renderD128_Group2e_2_struct_1 {
+    renderD128_Group2e_2_buffer_2  int64
+    renderD128_Group2e_2_known_3  fd
+    renderD128_Group2e_2_buffer_4  array[int8]
+} [packed]
+ioctl$renderD128_Group2e_2(fd renderD128_fd, cmd const[0xffff642e], arg ptr[inout, renderD128_Group2e_2_struct_1]) 
+ioctl$renderD128_Group30_0(fd renderD128_fd, cmd const[0xffff6430], arg ptr[in, const[0, int32]]) 
+ioctl$renderD128_Group31_0(fd renderD128_fd, cmd const[0xffff6431], arg ptr[in, const[0, int32]]) 
+ioctl$renderD128_Group32_0(fd renderD128_fd, cmd const[0xbfff6432], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group32_1(fd renderD128_fd, cmd const[0xffff6432], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group34_0(fd renderD128_fd, cmd const[0x80ff6434], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group34_1(fd renderD128_fd, cmd const[0xbfff6434], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group34_2(fd renderD128_fd, cmd const[0xffff6434], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group35_0(fd renderD128_fd, cmd const[0xbfff6435], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group35_1(fd renderD128_fd, cmd const[0xffff6435], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group36_0(fd renderD128_fd, cmd const[0xbfff6436], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group36_1(fd renderD128_fd, cmd const[0xffff6436], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group37_0(fd renderD128_fd, cmd const[0xbfff6437], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group37_1(fd renderD128_fd, cmd const[0xffff6437], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group38_0(fd renderD128_fd, cmd const[0x80ff6438], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group38_1(fd renderD128_fd, cmd const[0xbfff6438], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group38_2(fd renderD128_fd, cmd const[0xffff6438], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Group39_0(fd renderD128_fd, cmd const[0xbfff6439], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group39_1(fd renderD128_fd, cmd const[0xffff6439], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group3f_0(fd renderD128_fd, cmd const[0xbfff643f], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Group3f_1(fd renderD128_fd, cmd const[0xffff643f], arg ptr[in, array[int8]]) 
+ioctl$renderD128_Groupa8_0(fd renderD128_fd, cmd const[0xffff64a8], arg ptr[inout, array[int8]]) 
+ioctl$renderD128_Groupa9_0(fd renderD128_fd, cmd const[0xffff64a9], arg ptr[inout, array[int8]]) 
+renderD128_Groupb2_0_struct_1 {
+    renderD128_Groupa_0_resource_2  renderD128_connection_0
+    renderD128_Groupb2_0_range_2  int32[1:4294967291]
+    renderD128_Groupb2_0_range_3  int32[1:4294967287]
+    renderD128_Groupb2_0_buffer_4  array[int8]
+} [packed]
+ioctl$renderD128_Groupb2_0(fd renderD128_fd, cmd const[0xffff64b2], arg ptr[inout, renderD128_Groupb2_0_struct_1]) 
+# renderD128_connection_0
+renderD128_Groupb3_0_struct_1 {
+    renderD128_Groupb3_0_resource_2  renderD128_connection_0
+    renderD128_Groupb3_0_buffer_3  array[int8]
+} [packed]
+ioctl$renderD128_Groupb3_0(fd renderD128_fd, cmd const[0xffff64b3], arg ptr[in, renderD128_Groupb3_0_struct_1]) 
+renderD128_Groupb4_0_struct_1 {
+    renderD128_Groupb4_0_resource_2  renderD128_connection_0
+    renderD128_Groupb4_0_buffer_3  array[int8]
+} [packed]
+ioctl$renderD128_Groupb4_0(fd renderD128_fd, cmd const[0xffff64b4], arg ptr[inout, renderD128_Groupb4_0_struct_1]) 
+renderD128_Group41_0_struct_1 {
+    renderD128_Group41_0_resource_2  renderD128_connection_0
+    renderD128_Group41_0_range_3  int8[0:1]
+    renderD128_Group41_0_const_4  const[0, int8]
+    renderD128_Group41_0_const_5  const[0, int8]
+    renderD128_Group41_0_const_6  const[0, int8]
+    renderD128_Group41_0_buffer_7  int32
+    renderD128_Group41_0_const_8  const[0, int8]
+    renderD128_Group41_0_const_9  const[0, int8]
+    renderD128_Group41_0_const_10  const[0, int8]
+    renderD128_Group41_0_const_11  const[0, int8]
+    renderD128_Group41_0_buffer_12  array[int8]
+} [packed]
+ioctl$renderD128_Group41_0(fd renderD128_fd, cmd const[0xffff6441], arg ptr[inout, renderD128_Group41_0_struct_1]) 
+renderD128_Group41_1_struct_1 {
+    renderD128_Group41_0_resource_2  renderD128_connection_0
+    renderD128_Group41_1_range_2  int32[0:1]
+    renderD128_Group41_1_buffer_3  array[int8]
+} [packed]
+ioctl$renderD128_Group41_1(fd renderD128_fd, cmd const[0xffff6441], arg ptr[inout, renderD128_Group41_1_struct_1]) 
+ioctl$renderD128_Group42_0(fd renderD128_fd, cmd const[0xffff6442], arg ptr[inout, array[int8]]) 
+renderD128_Group42_1_struct_1 {
+    renderD128_Group42_1_buffer_2  int32
+    renderD128_Group42_1_const_3  const[0, int8]
+    renderD128_Group42_1_const_4  const[0, int8]
+    renderD128_Group42_1_const_5  const[0, int8]
+    renderD128_Group42_1_const_6  const[0, int8]
+    renderD128_Group42_1_buffer_7  array[int8]
+} [packed]
+ioctl$renderD128_Group42_1(fd renderD128_fd, cmd const[0xffff6442], arg ptr[inout, renderD128_Group42_1_struct_1]) 

@@ -1,0 +1,6 @@
+
+resource _rdma_cm_ucma_fops_fd[fd]
+
+openat$_rdma_cm_ucma_fops_syzgen_1(fd const[AT_FDCWD], file ptr[in, string["/dev/infiniband/rdma_cm"]], flags flags[open_flags], mode const[0]) _rdma_cm_ucma_fops_fd
+write$_rdma_cm_ucma_fops(fd _rdma_cm_ucma_fops_fd, data buffer[in], size len[data]) 
+

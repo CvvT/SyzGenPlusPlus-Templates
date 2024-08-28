@@ -1,0 +1,8 @@
+
+resource _loop_ctl_fops_fd[fd]
+
+openat$_loop_ctl_fops_syzgen_1(fd const[AT_FDCWD], file ptr[in, string["/dev/loop-control"]], flags flags[open_flags], mode const[0]) _loop_ctl_fops_fd
+ioctl$_loop_ctl_fops_4c80_0_2(fd _loop_ctl_fops_fd, cmd const[19584], arg intptr) 
+ioctl$_loop_ctl_fops_4c81_0_3(fd _loop_ctl_fops_fd, cmd const[19585], arg intptr) 
+ioctl$_loop_ctl_fops_4c82_0_4(fd _loop_ctl_fops_fd, cmd const[19586], arg intptr) 
+
